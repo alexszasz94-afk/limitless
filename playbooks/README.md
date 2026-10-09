@@ -27,7 +27,7 @@ link în bio, pagina, ofertă
 ```
 
 ## Surse de completat
-- [ ] Szasz (metodele proprii, HeatGrump)
-- [ ] Esteban (planificat deja în HeatGrump: „playbook Esteban”)
+- [ ] Szasz (metodele proprii)
+- [ ] Esteban
 - [ ] princesscomfortt · merry.jammies · snuglore · thecozykitty.us (conturile de referință folosite deja)
 - [ ] alți dropshipperi organici pe care îi numește Szasz

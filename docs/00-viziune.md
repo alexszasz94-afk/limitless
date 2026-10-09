@@ -11,7 +11,7 @@
 
 **Concluzia:** ținta cere ~13 M vizualizări organice pe zi, în medie, pe toate conturile și platformele (IG, FB, TikTok, YouTube Shorts). Asta înseamnă:
 - **multe conturi** (10–30), nu unul;
-- **multe videouri** (10–20 pe cont pe zi, deja facem 10–15 pentru HeatGrump);
+- **multe videouri** (10–20 pe cont pe zi);
 - **rată mare de virale**: fiecare punct în plus la hook (retenție la 3 s) se multiplică pe tot volumul.
 
 ## Pârghiile, în ordinea impactului

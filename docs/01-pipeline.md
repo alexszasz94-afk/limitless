@@ -1,15 +1,15 @@
 # Pipeline-ul: fiecare pas manual → modul automat
 
-Stare: ✅ automat în HeatGrump Engine · 🟡 parțial / cu Szasz în buclă · ⬜ de construit
+Stare: ✅ metoda e dovedită, trebuie doar construit modulul · 🟡 parțial / cu Szasz în buclă · ⬜ de descoperit
 
-| # | Pas | Cum se face azi (HeatGrump) | Modul LIMITLESS | Stare |
+| # | Pas | Metoda | Modul LIMITLESS | Stare |
 |---|---|---|---|---|
 | 1 | Research virale | Apify IG/FB/Ad Library, outlier ≥ 3× media contului | `engine/research` | ✅ |
 | 2 | Analiză viral | 8 cadre + audio, hook descris în format standard | `engine/analyze` | ✅ |
 | 3 | Alegere hook | virale nefolosite din conturile de referință + hook-urile lui Szasz | `engine/hooks` (scor + rotație) | 🟡 |
 | 4 | Seturi (personaj + cameră) | Pinterest, poze ≥ 1080 px | `engine/sets` | ✅ |
 | 5 | Producție B-roll | Genjutsu motion control, clipuri de mișcare rotite | `engine/produce` | ✅ |
-| 6 | Clipuri fixe | telecomandă / conector, după gen și piele | `library/fixed` | ✅ |
+| 6 | Clipuri fixe | demonstrații de produs făcute o dată, refolosite după gen și piele | `library/fixed` | ✅ |
 | 7 | Hook video | viral tăiat → Genjutsu cu setul nostru; fallback placă + seedance | `engine/produce` | ✅ |
 | 8 | QA vizual | Claude cu vedere, reguli per clip, max 3 regenerări | `engine/qa` | ✅ |
 | 9 | Montaj | tăieturi, text TikTok Sans, emoji, muzică de la secunda competitorului | `engine/edit` | ✅ |

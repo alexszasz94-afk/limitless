@@ -4,6 +4,7 @@ Stare: ✅ metoda e dovedită, trebuie doar construit modulul · 🟡 parțial /
 
 | # | Pas | Metoda | Modul LIMITLESS | Stare |
 |---|---|---|---|---|
+| 0 | Detectare produs | link / poze → profil + strategie | `engine/product-profile` | ⬜ |
 | 1 | Research virale | Apify IG/FB/Ad Library, outlier ≥ 3× media contului | `engine/research` | ✅ |
 | 2 | Analiză viral | 8 cadre + audio, hook descris în format standard | `engine/analyze` | ✅ |
 | 3 | Alegere hook | virale nefolosite din conturile de referință + hook-urile lui Szasz | `engine/hooks` (scor + rotație) | 🟡 |

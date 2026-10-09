@@ -7,7 +7,8 @@ Citește în ordinea asta:
 2. `docs/01-pipeline.md` — fiecare pas și modulul care îl face.
 3. `docs/02-reguli.md` — regulile absolute (cea mai recentă câștigă).
 4. `playbooks/` — metodele dovedite, cu sursa.
-5. `products/<produs>.md` — produsul pe care lucrăm.
+5. `docs/04-produs-universal.md` — cum se detectează produsul și se alege strategia.
+6. `products/<produs>.md` — profilul produsului pe care lucrăm.
 
 Reguli de lucru:
 - Orice regulă nouă de la Szasz (`regula: ...`) → linie datată în `docs/02-reguli.md`.

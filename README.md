@@ -9,7 +9,7 @@ Sistemul care transformă organic dropshipping-ul într-o mașină: **research �
 2. **Fiecare pas manual devine un modul.** Ce face un om de două ori, sistemul face a treia oară.
 3. **Volum × calitate.** Zeci de videouri pe zi, fiecare la nivel ultra-realist, verificat vizual înainte de livrare.
 4. **Cunoașterea se adună, nu se pierde.** Tot ce aflăm (de la noi și de la cei mai buni dropshipperi organici) devine regulă datată în `docs/`, cu sursa.
-5. **Multi-produs.** Motorul e construit ca orice produs nou să intre cu un singur fișier în `products/`.
+5. **Universal.** Funcționează pe orice produs: primește linkul sau pozele, detectează ce fel de produs e și alege singur ce videouri să facă și cum (`docs/04-produs-universal.md`).
 
 ## Structura
 | Folder | Ce conține |

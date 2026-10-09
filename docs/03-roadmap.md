@@ -6,6 +6,7 @@
 - [ ] Playbook-urile completate (Szasz + cei mai buni dropshipperi organici — vezi `playbooks/`)
 
 ## Faza 1 — Motorul de producție (pe orice produs)
+- [ ] Detectarea produsului: link / poze → profil → strategie
 - [ ] Primul produs LIMITLESS în `products/`
 - [ ] research, analyze, sets, produce, qa, edit — cu produsul ca parametru
 - [ ] skill-urile pentru fiecare comandă

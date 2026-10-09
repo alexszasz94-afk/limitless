@@ -11,4 +11,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - „A funcționat” = cifră (retenție / views peste mediană), nu impresie.
 
 ## Noi
-(se adaugă cu `regula: ...`)
+- (9 oct) Sistemul e universal: funcționează pe orice produs și detectează singur ce și cum să facă în funcție de produs — Szasz.

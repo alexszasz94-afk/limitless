@@ -13,22 +13,28 @@
       "sursa": "get_cost 10 oct, 1080p: referință ≤ ~4 s = 44 (minim), ~5 s = 55 (~11 cr/s). 720p 5 s = 35, 480p 5 s = 15"
     },
     "seedance_2_5_clip": {
-      "min": 60,
+      "min": 28,
       "typ": 60,
       "max": 60,
-      "sursa": "get_cost 10 oct: t2v 5 s 1080p 9:16 = 60"
+      "sursa": "get_cost 10 oct: 1080p 5 s = 60 (12 cr/s), 15 s = 180; 720p 4 s = 28; draft 480p 5 s = 15; video_edit 5 s 1080p = 57"
     },
     "gpt_image": {
-      "min": 6.5,
-      "typ": 11,
-      "max": 11,
-      "sursa": "observat la GPT Image 2 (6,5 / 11); GPT Image 2.5 de măsurat"
+      "min": 0.25,
+      "typ": 4.25,
+      "max": 15,
+      "sursa": "get_cost 10 oct GPT Image 2.5: 1k low 0,25; 2k medium 1; 4k high 4,25; 4k max 15"
     },
     "sound_fx": {
       "min": 0.1,
       "typ": 0.5,
       "max": 1.5,
       "sursa": "observat"
+    },
+    "genjutsu_replace_object": {
+      "min": 55,
+      "typ": 55,
+      "max": 55,
+      "sursa": "get_cost 10 oct, 1080p ~5 s"
     }
   },
   "retete_video": {

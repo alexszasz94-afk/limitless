@@ -13,7 +13,12 @@ De măsurat înainte de scalare: prețul real al creditului pe planul „scale�
 | Genjutsu | 1080p, ~5 s | 55 (~11 credite/s) |
 | Genjutsu | 720p, ~5 s | 35 |
 | Genjutsu | 480p, ~5 s | 15 (bun pentru teste de mișcare) |
-| Seedance 2.5 | 5 s, 1080p, 9:16 | 60 |
+| Seedance 2.5 | 5 s, 1080p, 9:16 | 60 (12 credite/s; 15 s = 180) |
+| Seedance 2.5 | omni_reference, 4 s, 720p | 28 |
+| Seedance 2.5 | draft 480p, 5 s (finalizabil la 1080p) | 15 |
+| Seedance 2.5 | video_edit pe un clip de ~5 s, 1080p | 57 |
+| Genjutsu replace_object | 1080p, ~5 s | 55 |
+| GPT Image 2.5 | 1k low / 2k medium / 4k high / 4k max | 0,25 / 1 / 4,25 / 15 |
 Consecințe: bucățile Genjutsu se fac de ~4 s (sub 4 s se plătește oricum minimul); testele de mișcare la 480p (15 cr), finalul la 1080p.
 
 ## Apify: scanare zilnică (estimare 10 oct 2026)

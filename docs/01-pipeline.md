@@ -19,5 +19,5 @@ Stare: ✅ metoda e dovedită, trebuie doar construit modulul · 🟡 parțial /
 | 12 | Feedback cifre | tracker orar prin Apify: vizualizări, câștig zilnic, urmăritori, top videouri, cifre la 24 h și 7 zile | `social_tracker/` | 🟡 cod gata, de instalat |
 | 13 | Promovare hook | scor > mediană → dovedit | `engine/hooks` | 🟡 |
 | 14 | Conversie | — | `engine/store` (pagina, oferta, A/B) | ⬜ |
-| 15 | Produse noi | — | `products/` + `engine/product-scout` | ⬜ |
+| 15 | Produse noi | Meta Ad Library: produse cu reclame plătite care rulează de mult, cu multe variante (`docs/07-scout-meta-ads.md`) | `engine/product-scout` | ⬜ |
 | 16 | Raport zilnic | tabla HTML | `engine/report` (dashboard + Telegram) | 🟡 |

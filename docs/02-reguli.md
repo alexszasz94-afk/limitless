@@ -14,3 +14,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - (9 oct) Sistemul e universal: funcționează pe orice produs și detectează singur ce și cum să facă în funcție de produs — Szasz.
 - (10 oct) Distribuția (portal de postare cu echipă + conturi multiple) și tracker-ul de cifre fac parte din LIMITLESS — Szasz.
 - (10 oct) Aplicația lucrează singură și în paralel: găsește viralele, le reproduce cu Higgsfield la cel mai mic cost (alt personaj, altă cameră), le montează complet, același stil la toate — Szasz.
+- (10 oct) Produsele noi se caută în Meta Ads (Ad Library): ce vinde deja pe plătit aducem în organic — Szasz.

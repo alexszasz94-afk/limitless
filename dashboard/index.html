@@ -145,6 +145,11 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 .step a.btn{text-decoration:none}
 .calcout{margin-top:12px;padding:12px 14px;border-radius:12px;border:1px solid var(--edge);font-size:14px}
 .calcout.good{border-color:var(--ok);background:var(--ok-soft)}.calcout.bad{border-color:var(--bad);background:var(--bad-soft)}
+.take summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;font-size:12px}
+.take summary::-webkit-details-marker{display:none}
+.take dl{margin:6px 0 0;display:grid;gap:2px;font-size:12px}
+.take dt{color:var(--ion);font-family:var(--f-data);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
+.take dd{margin:0;color:var(--text)}
 .verdict{font-size:13px;border-radius:10px;padding:8px 12px;margin-bottom:12px;border:1px solid var(--edge)}
 .verdict.v-ok{border-color:var(--ok);background:var(--ok-soft)}.verdict.v-warn{border-color:var(--warn);background:var(--warn-soft)}.verdict.v-bad{border-color:var(--bad);background:var(--bad-soft)}
 .link{font:inherit;font-size:12.5px;background:none;border:0;color:var(--ion);cursor:pointer;text-decoration:underline;padding:0 0 0 6px}
@@ -192,7 +197,7 @@ const STADII=["găsit","analizat","planificat","produs","verificat","montat","po
 const SE={"găsit":"found","analizat":"analyzed","planificat":"planned","produs":"produced","verificat":"QA passed","montat":"edited","postat":"posted","măsurat":"measured"};
 const STATE_EN={"activ":"active","așteaptă":"waiting","în construcție":"building"};
 const AGENTI=[["vanator","Hunter","finds UGC virals ≥100k / 24 h"],["analist","Analyst","breaks each viral down shot by shot"],["planificator","Planner","picks the cheapest recipe"],["producator","Producer","Genjutsu · Seedance · GPT Image"],["qa","QA","checks every clip"],["montaj","Editor","text, pacing, music"],["distributie","Distribution","accounts and posters"],["invatare","Learner","numbers → new rules"],["strateg","Strategist","studies the market, finds a better way"]];
-const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",launch:{},ai:{},finder:[],strategy:null,fq:"",fg:"",posters:{}};
+const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",launch:{},ai:{},finder:[],strategy:null,fq:"",fg:"",posters:{},takes:{}};
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt=n=>(n==null||n==="")?"–":Number(n).toLocaleString("en-US");
@@ -321,6 +326,8 @@ function acctCard(a,variation){
     <span class="vt">${esc(variation)}</span>
     ${a.media?`<button class="vid" data-act="play" data-src="${esc(a.media)}" data-poster="${esc(a.mkey||"")}" aria-label="Play @${esc(a.handle)} video" style="${S.posters[a.mkey]?`background-image:url(${S.posters[a.mkey]})`:""}"><span class="pl">▶</span>${a.dur?`<span class="du">0:${String(Math.round(a.dur)).padStart(2,"0")}</span>`:""}</button>`:`<div class="vid none">no video</div>`}
     <div class="nums"><div><b>${fmt(a.followers)}</b><small>Followers</small></div><div><b>${fmt(a.avg_views)}</b><small>Avg views · current product</small></div></div>
+    ${(()=>{const k=S.takes[a.mkey];if(!k)return "";const sc=Number(k.score)||0;return `<details class="take"><summary><span class="chip ${sc>=8?"c-ok":sc>=6?"c-ion":"c-warn"}">Brain ${sc}/10</span> <span class="muted">${esc(k.type||"")}</span></summary>
+      <dl><dt>Hook</dt><dd>${esc(k.hook)}</dd><dt>Text</dt><dd>${esc(k.text)}</dd><dt>Trigger</dt><dd>${esc(k.trigger)}</dd><dt>Beats</dt><dd>${esc((k.beats||[]).join(" → "))}</dd><dt>Why it works</dt><dd>${esc(k.why)}</dd><dt>Our remake</dt><dd>${esc(k.remake)}</dd><dt>Risk</dt><dd>${esc(k.risk)}</dd></dl></details>`})()}
     <footer><span><b>${tv}</b> top video</span>${a.top_video?`<a href="${esc(a.top_video)}" target="_blank" rel="noopener">Open</a>`:""}${a.website?`<a href="${esc(a.website)}" target="_blank" rel="noopener">Store</a>`:""}</footer>
   </article>`;
 }
@@ -517,6 +524,7 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};if(S
   if(!db){$("#who").textContent="Live data isn't available in this view.";S.write=false;render();return}
   const live=(path,key)=>db.collection(path).onSnapshot(s=>{S[key]=s.docs.map(d=>({_id:d.id,...d.data()}));if(key==="inbox")S.inbox.sort((a,b)=>String(b.creat).localeCompare(String(a.creat)));if(key==="finder"&&document.activeElement?.id==="fq"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}render()},()=>{});
   live("products","products");live("finder","finder");
+  db.collection("takes").onSnapshot(s=>{const m={};s.docs.forEach(d=>m[d.id]=d.data());S.takes=m;if(S.route==="finder"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}},()=>{});
   db.doc("config/strategy").onSnapshot(s=>{S.strategy=s.exists?s.data():null;if(S.route==="strategy")render()},()=>{});live("virals","virals");live("inbox","inbox");
   db.doc("config/main").onSnapshot(s=>{S.cfg=s.exists?s.data():null;render()},()=>{});
   db.doc("config/launch").onSnapshot(s=>{S.launch=s.exists?s.data():{};if(S.route==="launch")render()},()=>{});

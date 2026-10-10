@@ -182,6 +182,8 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 .ins{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:10px}
 .ins h4{margin:0 0 4px;font-family:var(--f-data);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--plasma)}
 .ins p,.ins li{font-size:13.5px;margin:0 0 4px}.ins ul{margin:0;padding-left:18px}
+.broll{margin-top:14px;border-top:1px solid var(--edge);padding-top:10px}.broll h4{margin:0 0 4px;font-family:var(--f-data);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--plasma)}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin:8px 0}.shot{background:var(--deck-2);border:1px solid var(--edge);border-radius:12px;padding:10px}.shot p{font-size:13px;margin:6px 0}.shot video{width:100%;max-height:300px;border-radius:8px;background:#000}
 .exact{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin:10px 0 8px;font-size:14px}
 .tog{flex-direction:row;align-items:center;gap:6px;color:var(--text);font-size:13px}
 .verdict{font-size:13px;border-radius:10px;padding:8px 12px;margin-bottom:12px;border:1px solid var(--edge)}
@@ -234,7 +236,7 @@ const STADII=["găsit","analizat","planificat","produs","verificat","montat","po
 const SE={"găsit":"found","analizat":"analyzed","planificat":"planned","produs":"produced","verificat":"QA passed","montat":"edited","postat":"posted","măsurat":"measured"};
 const STATE_EN={"activ":"active","așteaptă":"waiting","în construcție":"building"};
 const AGENTI=[["vanator","Hunter","finds UGC virals ≥100k / 24 h"],["analist","Analyst","breaks each viral down shot by shot"],["planificator","Planner","picks the cheapest recipe"],["producator","Producer","Genjutsu · Seedance · GPT Image"],["qa","QA","checks every clip"],["montaj","Editor","text, pacing, music"],["distributie","Distribution","accounts and posters"],["invatare","Learner","numbers → new rules"],["strateg","Strategist","studies the market, finds a better way"]];
-const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",launch:{},ai:{},finder:[],strategy:null,fq:"",fg:"",posters:{},takes:{},top:null,fmedia:{},boards:[],board:"",lanes:{},insights:{},rows:null,ugcOnly:false};
+const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",launch:{},ai:{},finder:[],strategy:null,fq:"",fg:"",posters:{},takes:{},top:null,fmedia:{},boards:[],board:"",lanes:{},insights:{},broll:{},rows:null,ugcOnly:false};
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt=n=>(n==null||n==="")?"–":Number(n).toLocaleString("en-US");
@@ -376,7 +378,10 @@ function insightBlock(f){const I=S.insights[f._id];if(!I)return "";
    <section><h4>Make the videos better</h4><ul>${li(I.better_videos)}</ul></section>
    <section><h4>Genius variations</h4><ul>${li(I.variations)}</ul></section>
    <section><h4>Take the concept higher</h4><ul>${li(I.concept_upgrades)}</ul></section>
-   <section><h4>Landing page angle</h4><p>${esc(I.landing_angle||"")}</p><p class="muted">Risks: ${esc(I.risks||"")}</p></section></div></details>`}
+   <section><h4>Landing page angle</h4><p>${esc(I.landing_angle||"")}</p><p class="muted">Risks: ${esc(I.risks||"")}</p></section></div>${brollBlock(f)}</details>`}
+function brollBlock(f){const B=S.broll[f._id];if(!B||!B.rows)return "";
+  const rows=Object.entries(B.rows).filter(([,r])=>(r.recurring_shots||[]).length);if(!rows.length)return B.type?`<p class="muted" style="margin-top:10px">Video type: <b>${esc(B.type)}</b> · ${esc(B.note||"")}</p>`:"";
+  return `<div class="broll"><h4>Recurring B-roll shots · start image → Seedance</h4><p class="muted">Shots that repeat across sellers. Each one: GPT Image 2.5 start frame, then Seedance 2.5 copies the viral's motion.</p>${rows.map(([rid,r])=>`<div class="exact"><b>${esc(rid.replace(/_/g," "))}</b>${chip(r.type||"","ion")}</div><div class="shots">${(r.recurring_shots||[]).map(x=>`<article class="shot"><div class="row" style="justify-content:space-between"><b>${esc(x.name)}</b>${chip("in "+(x.seen_in?.count??(x.seen_in?.mkeys||x.seen_in||[]).length)+" videos","ok")}</div><p>${esc(x.what_happens||"")}</p>${x.viral_ref_mkey?`<video src="fv/${esc(x.viral_ref_mkey)}.mp4" poster="${esc(S.posters[x.viral_ref_mkey]||"")}" preload="none" controls playsinline></video>`:""}<div class="pblk"><div class="row" style="justify-content:space-between"><b>Start image</b><button class="link" data-act="copy">Copy</button></div><pre>${esc(x.start_frame_prompt||"")}</pre></div><div class="pblk"><div class="row" style="justify-content:space-between"><b>Seedance</b><button class="link" data-act="copy">Copy</button></div><pre>${esc(x.seedance_prompt||"")}</pre></div></article>`).join("")}</div>${(r.human_shots_genjutsu||[]).length?`<p class="muted">With Genjutsu (person): ${esc(r.human_shots_genjutsu.join(" · "))}</p>`:""}`).join("")}</div>`}
 function brainVerdict(f){
   const n=f.accounts,b=f.best_avg_views;
   if(b<100000)return{k:"bad",t:`weak demand: best account averages ${fmt(b)} views. Skip unless a new angle changes the game.`};
@@ -627,6 +632,7 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};if(S
   if(!db){$("#who").textContent="Live data isn't available in this view.";S.write=false;render();return}
   const live=(path,key)=>db.collection(path).onSnapshot(s=>{S[key]=s.docs.map(d=>({_id:d.id,...d.data()}));if(key==="inbox")S.inbox.sort((a,b)=>String(b.creat).localeCompare(String(a.creat)));if(key==="finder"&&document.activeElement?.id==="fq"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}render()},()=>{});
   live("products","products");live("finder","finder");
+  db.collection("broll").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.broll=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")render()},()=>{});
   db.collection("insights").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.insights=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")render()},()=>{});
   db.doc("config/rows").onSnapshot(s=>{S.rows=s.exists?s.data():null;if(S.route==="finder"&&document.activeElement?.id!=="fq")render()},()=>{});
   db.collection("boards").onSnapshot(s=>{S.boards=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")render()},()=>{});

@@ -2,6 +2,8 @@
 
 (10 oct 2026, Szasz) O aplicație care lucrează **singură** și **în paralel**: găsește cele mai virale videouri, le reproduce cu Higgsfield (Genjutsu și restul uneltelor) la **cel mai mic cost**, cu alt personaj și altă cameră, le montează complet, respectă toate regulile ca toate videourile să aibă **același stil**, le trimite la postare și învață din cifre.
 
+**Formatul principal (10 oct): UGC.** Vânătorul caută în primul rând videouri UGC reale care au mers (persoană reală, filmat cu telefonul, recenzie / demonstrație / reacție / unboxing); Planificatorul le reface cadru cu cadru cu Genjutsu motion control, cu personajul, camera și produsul nostru.
+
 ## Bucla (rulează continuu)
 ```
  VÂNĂTOR ─► ANALIST ─► PLANIFICATOR ─► PRODUCĂTOR ─► QA ─► MONTAJ ─► QA final ─► DISTRIBUȚIE ─► TRACKER

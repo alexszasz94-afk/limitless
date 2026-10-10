@@ -23,3 +23,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - (10 oct) La început TOTUL se face cu Genjutsu (cel mai ieftin): un video = viralul refăcut integral cu Genjutsu, personaj + cameră noi. Seedance 2.5 / GPT Image 2.5 doar când Genjutsu e respins sau nu se poate — Szasz.
 - (10 oct) Din familia Genjutsu folosim MOTION CONTROL (`hf_mult_motion_control`): mișcarea din viral pe personajul + camera + produsul nostru. `hf_mult_replace_object` nu intră în producție — Szasz.
 - (10 oct) Motion control rămâne implicit, dar la primul produs se TESTEAZĂ ambele (motion control vs replace_object) pe aceleași virale; câștigă cel cu calitate + rată de refuz + cost mai bune, apoi se decide definitiv — Szasz.
+- (10 oct) Mergem mai ales pe videouri UGC: copiem videouri REALE (UGC care au mers) și le refacem cu personajul + camera + produsul nostru (Genjutsu motion control). Hook-urile și formatele se iau din UGC reale, nu se inventează — Szasz.
+- (10 oct) LIMITLESS trebuie să fie o PLATFORMĂ (aplicație completă cu pagini: produse, virale, producție, distribuție, cifre, reguli), nu doar un panou — Szasz.

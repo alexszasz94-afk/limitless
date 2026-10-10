@@ -204,9 +204,35 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 .nums small{font-size:10.5px;color:var(--dim);line-height:1.2;display:block}
 .acct footer{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;font-size:12px;color:var(--dim);border-top:1px solid var(--edge);padding-top:6px}
 .acct footer b{color:var(--text);font-family:var(--f-data)}
+/* ---- depth layer: 3D floor behind everything, tilting glass, extruded controls ---- */
+#space{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;display:block}
+.app{position:relative;z-index:1}
+body{background-size:auto,auto,0 0,0 0}
+main{perspective:1600px}
+.card,.acct,.shot,.agent,.kpi,.panel{--rx:0deg;--ry:0deg;--mx:50%;--my:0%;transform:perspective(1100px) rotateX(var(--rx)) rotateY(var(--ry));transform-style:preserve-3d;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s;
+  box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 18px 40px -22px rgba(0,0,0,.55),0 4px 12px -6px rgba(0,0,0,.35)}
+.card,.acct,.shot,.agent,.kpi{position:relative;isolation:isolate}
+.card::before,.acct::before,.shot::before,.agent::before,.kpi::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;opacity:0;transition:opacity .35s;
+  background:radial-gradient(420px circle at var(--mx) var(--my),var(--ion-soft),transparent 45%)}
+.t3d{transition:transform .08s linear,box-shadow .35s,border-color .35s;border-color:color-mix(in srgb,var(--ion) 45%,var(--edge))!important;
+  box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 30px 60px -24px rgba(0,0,0,.6),0 0 0 1px var(--ion-soft),0 10px 30px -12px var(--plasma-soft)}
+.t3d::before{opacity:1}
+.t3d > *{transform:translateZ(18px)}
+.btn,nav.rail a[aria-current="page"]{box-shadow:0 1px 0 rgba(255,255,255,.12) inset,0 -2px 0 rgba(0,0,0,.25) inset,0 6px 14px -6px rgba(0,0,0,.5)}
+.btn{transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(1px);box-shadow:0 1px 0 rgba(0,0,0,.3) inset}
+nav.rail a[aria-current="page"]{transform:translateX(4px)}
+.brain{transform:perspective(1400px) rotateX(var(--brx,0deg));box-shadow:0 40px 80px -40px var(--plasma-soft),0 30px 60px -30px rgba(0,0,0,.6)}
+#view.enter > *{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+#view.enter > *:nth-child(2){animation-delay:.05s}#view.enter > *:nth-child(3){animation-delay:.1s}#view.enter > *:nth-child(4){animation-delay:.15s}#view.enter > *:nth-child(n+5){animation-delay:.2s}
+@keyframes rise{from{opacity:.35;transform:perspective(1100px) rotateX(10deg) translateY(26px) translateZ(-60px)}to{opacity:1;transform:perspective(1100px) rotateX(0) translateY(0)}}
+@media (hover:none){.t3d > *{transform:none}}
 @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
 </style>
 
+<canvas id="space" aria-hidden="true"></canvas>
 <div class="app">
 <nav class="rail" aria-label="Modules">
   <div class="brand">LIMIT<b>LESS</b></div>
@@ -497,7 +523,8 @@ function vBoards(){
 async function loadLanes(b){for(const l of b.lanes||[]){if(S.lanes[l.doc])continue;try{const s=await S.db.doc("lanes/"+l.doc).get();if(s.exists)S.lanes[l.doc]=s.data();}catch(e){}}if(S.route==="boards")render()}
 const VIEWS={top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
 
-function render(){
+function render(){_render();const v=$("#view");if(v&&S._lastR!==S.route){S._lastR=S.route;v.classList.remove("enter");void v.offsetWidth;v.classList.add("enter");setTimeout(()=>v.classList.remove("enter"),900)}}
+function _render(){
   const r=VIEWS[S.route]?S.route:"brain";
   document.querySelectorAll("nav.rail a").forEach(a=>{if(a.dataset.r===r)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
   const keepNet=r==="brain"&&NET.alive&&$("#net");
@@ -644,4 +671,39 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};if(S
   db.doc("config/launch").onSnapshot(s=>{S.launch=s.exists?s.data():{};if(S.route==="launch")render()},()=>{});
   db.doc("config/agents").onSnapshot(s=>{S.agents=s.exists?s.data():{};render()},()=>{});
 })();
+
+/* ---- depth layer ---- */
+const SPACE={start(){const cv=document.getElementById("space");if(!cv||!window.THREE)return;
+  const still=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let r;try{r=new THREE.WebGLRenderer({canvas:cv,antialias:false,alpha:true})}catch(e){return}
+  r.setPixelRatio(Math.min(devicePixelRatio,1.5));
+  const sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(60,1,.1,200);cam.position.set(0,2.4,10);
+  const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const col=()=>({ion:new THREE.Color(css("--ion")||"#5de4ff"),pl:new THREE.Color(css("--plasma")||"#b48cff"),light:matchMedia("(prefers-color-scheme: light)").matches&&document.documentElement.dataset.theme!=="dark"||document.documentElement.dataset.theme==="light"});
+  let C=col();
+  const grid=new THREE.GridHelper(220,110,C.pl,C.ion);grid.material.transparent=true;grid.material.opacity=.16;grid.position.y=-3;sc.add(grid);
+  const g2=new THREE.GridHelper(220,110,C.pl,C.ion);g2.material.transparent=true;g2.material.opacity=.06;g2.position.y=14;sc.add(g2);
+  const N=700,pos=new Float32Array(N*3);for(let i=0;i<N;i++){pos[i*3]=(Math.random()-.5)*80;pos[i*3+1]=Math.random()*16-3;pos[i*3+2]=-Math.random()*90+10}
+  const pg=new THREE.BufferGeometry();pg.setAttribute("position",new THREE.BufferAttribute(pos,3));
+  const pm=new THREE.PointsMaterial({color:C.ion,size:.07,transparent:true,opacity:.55,depthWrite:false});const pts=new THREE.Points(pg,pm);sc.add(pts);
+  const recolor=()=>{C=col();[grid,g2].forEach(g=>{const c=g.geometry.attributes.color;for(let i=0;i<c.count;i++){const k=(i>>1)%10===0?C.pl:C.ion;c.setXYZ(i,k.r,k.g,k.b)}c.needsUpdate=true;g.material.opacity=(g===grid?.16:.06)*(C.light?1.6:1)});pm.color.copy(C.ion);pm.opacity=C.light?.4:.55;draw()};
+  matchMedia("(prefers-color-scheme: light)").addEventListener?.("change",recolor);new MutationObserver(recolor).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+  let mx=0,my=0,tx=0,ty=0,t=0,run=true;
+  addEventListener("pointermove",e=>{tx=e.clientX/innerWidth-.5;ty=e.clientY/innerHeight-.5},{passive:true});
+  const size=()=>{r.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()};addEventListener("resize",()=>{size();draw()});size();
+  const draw=()=>{const sy=scrollY||0;mx+=(tx-mx)*.04;my+=(ty-my)*.04;cam.position.x=mx*3;cam.position.y=2.4-my*1.2-Math.min(sy,3000)*.0006;cam.lookAt(mx*2,0,-30);
+    grid.position.z=(t*1.6)%2;g2.position.z=(t*1.6)%2;pts.rotation.y=t*.01;r.render(sc,cam)};
+  document.addEventListener("visibilitychange",()=>{run=!document.hidden;if(run&&!still)loop()});
+  let last=performance.now();const loop=()=>{if(!run)return;const n=performance.now();t+=Math.min(.05,(n-last)/1000);last=n;draw();requestAnimationFrame(loop)};
+  if(still)draw();else loop();}};
+const TILT={on(){if(matchMedia("(hover:none)").matches||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  const SEL=".card,.acct,.shot,.agent,.kpi";let cur=null;
+  const reset=el=>{el.classList.remove("t3d");el.style.removeProperty("--rx");el.style.removeProperty("--ry")};
+  document.addEventListener("pointermove",e=>{const el=e.target.closest?.(SEL);if(cur&&cur!==el){reset(cur);cur=null}if(!el)return;cur=el;
+    const b=el.getBoundingClientRect(),x=(e.clientX-b.left)/b.width,y=(e.clientY-b.top)/b.height,m=b.width>420?3:8;
+    el.classList.add("t3d");el.style.setProperty("--ry",((x-.5)*m).toFixed(2)+"deg");el.style.setProperty("--rx",((.5-y)*m).toFixed(2)+"deg");
+    el.style.setProperty("--mx",(x*100).toFixed(1)+"%");el.style.setProperty("--my",(y*100).toFixed(1)+"%")},{passive:true});
+  document.addEventListener("pointerleave",()=>{if(cur)reset(cur)},true);
+  addEventListener("scroll",()=>{const b=document.querySelector(".brain");if(b){const k=Math.max(-1,Math.min(1,b.getBoundingClientRect().top/innerHeight));b.style.setProperty("--brx",(k*-6).toFixed(2)+"deg")}},{passive:true});}};
+SPACE.start();TILT.on();
 </script>

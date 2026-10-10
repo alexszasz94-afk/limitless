@@ -16,7 +16,7 @@ Citește în ordinea asta:
 
 Distribuție și cifre: `distribution/` (portalul de postare) și `social_tracker/` (tracker-ul). Instalare și rețete zilnice: `SETUP-DISTRIBUTIE.md`; fiecare are propriul `CLAUDE.md`. Orice push pe `main` ajunge pe server în ~2 minute (după instalare).
 
-Unelte de producție: EXCLUSIV Genjutsu, Seedance 2.5, GPT Image 2.5 (regula din 10 oct).
+Unelte de producție: EXCLUSIV Genjutsu motion control (`hf_mult_motion_control`), Seedance 2.5, GPT Image 2.5 (regulile din 10 oct). Fără `hf_mult_replace_object`.
 
 Reguli de lucru:
 - Orice regulă nouă de la Szasz (`regula: ...`) → linie datată în `docs/02-reguli.md`.

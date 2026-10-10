@@ -1,5 +1,7 @@
 # Higgsfield — mecanica uneltelor (Genjutsu · Seedance 2.5 · GPT Image 2.5)
 
+> **Regula din 10 oct (Szasz):** din Genjutsu folosim DOAR motion control (`hf_mult_motion_control`). Secțiunile despre `hf_mult_replace_object` rămân doar ca informație — nu intră în producție.
+
 Manual tehnic pentru agenții LIMITLESS (Planificator, Producător, QA) care refac virale de produs cu alt personaj și altă cameră. Arată ce face fiecare unealtă cu fiecare intrare: prompt, imagini, video, audio. Data: 10 oct 2026.
 Completează `playbooks/higgsfield.md` (sinteza YouTube): acolo sunt regulile generale, aici sunt mecanismele și rețetele.
 

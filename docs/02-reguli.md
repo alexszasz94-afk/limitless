@@ -21,3 +21,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - (10 oct) Reguli clare pentru ce produs merită încercat și când facem variații, pornite din regulile lui Esteban (organic, ca noi) — `docs/09-reguli-produs.md` — Szasz.
 - (10 oct) Site-ul fiecărui produs se face automat pe Shopify, pe baza întrebărilor lui Szasz; plățile prin alt procesator, nu Shopify Payments — `docs/10-site-shopify.md` — Szasz.
 - (10 oct) La început TOTUL se face cu Genjutsu (cel mai ieftin): un video = viralul refăcut integral cu Genjutsu, personaj + cameră noi. Seedance 2.5 / GPT Image 2.5 doar când Genjutsu e respins sau nu se poate — Szasz.
+- (10 oct) Din familia Genjutsu folosim MOTION CONTROL (`hf_mult_motion_control`): mișcarea din viral pe personajul + camera + produsul nostru. `hf_mult_replace_object` nu intră în producție — Szasz.

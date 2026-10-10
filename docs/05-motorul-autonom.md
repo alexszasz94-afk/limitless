@@ -27,7 +27,7 @@ Pentru fiecare cadru, Planificatorul încearcă în ordinea costului și urcă d
 **Baza de unelte (regula din 10 oct): EXCLUSIV Genjutsu, Seedance 2.5 și GPT Image 2.5. La început totul se face FULL GENJUTSU: viralul întreg refăcut cu Genjutsu, bucată cu bucată, cu personajul și camera noastră (de pe Pinterest, 0 credite). Celelalte trepte intră doar când Genjutsu e respins.**
 1. **Reutilizare** — clip din bibliotecă deja aprobat (0 credite).
 2. **Montaj fără AI** — apropiere lentă / mișcare din imagine statică cu ffmpeg (0 credite).
-3. **Genjutsu** (`hf_mult_motion_control`) — mișcarea din viral + personajul + camera noastră.
+3. **Genjutsu motion control** (`hf_mult_motion_control`, singurul mod Genjutsu folosit) — mișcarea din viral + personajul + camera noastră.
 4. **GPT Image 2.5 → Seedance 2.5** — imagine de start, apoi animație `omni_reference` (când Genjutsu e respins, ex. `ip_detected`, sau când viralul nu are mișcare reutilizabilă).
 5. **Seedance 2.5 video_edit** — editarea directă a unui clip existent (de testat costul față de Genjutsu).
 

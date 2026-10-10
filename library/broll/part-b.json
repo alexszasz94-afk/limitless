@@ -1,0 +1,1103 @@
+{
+ "memory_displays": {
+  "type": "skipped",
+  "note": "Skipped: only 1 video with a sheet (ig_diy_museum_of_us_3989140550342757392)."
+ },
+ "mini_phones": {
+  "type": "skipped",
+  "note": "Skipped: only 1 video with a sheet (ig_pockifymini_DBMtOXmyWa0)."
+ },
+ "toothbrushes": {
+  "type": "skipped",
+  "note": "Skipped: only 1 video with a sheet (ig_snugglesmile_usa_DdkHAjzyr5j)."
+ },
+ "wall_garlands": {
+  "type": "skipped",
+  "note": "Skipped: only 1 video with a sheet (ig_cozywalllco_3991501904318315667)."
+ },
+ "novelty_clothing": {
+  "type": "human",
+  "note": "Apparel worn and shown off by a person (sweaters, hoodies, lounge sets); all key shots are human motion -> Genjutsu."
+ },
+ "onesies": {
+  "type": "human",
+  "note": "Onesies worn by people doing comedic moves; motion is the star -> Genjutsu."
+ },
+ "pet_hoodies": {
+  "type": "human",
+  "note": "Person wearing a pouch hoodie with a pet inside; human movement carries every shot -> Genjutsu (pet in pouch from product refs)."
+ },
+ "posture_bras": {
+  "type": "human",
+  "note": "Worn garment, before/after posture and try-on body motion -> Genjutsu."
+ },
+ "ski_masks": {
+  "type": "human",
+  "note": "Novelty balaclavas worn by skiers/people; face + body motion is the shot -> Genjutsu."
+ },
+ "support_braces": {
+  "type": "human",
+  "note": "Worn lumbar brace, pulling straps / posture demo by a person -> Genjutsu."
+ },
+ "travel_sleep": {
+  "type": "human",
+  "note": "Sleep hoods and pillows worn by travelers on planes/cars; human posture and motion -> Genjutsu."
+ },
+ "snow_gear": {
+  "type": "human",
+  "note": "Inflatable vehicle sleds: unveil, inflate, people riding downhill and celebrating; riders carry every shot -> Genjutsu."
+ },
+ "lounge_seating": {
+  "type": "human",
+  "note": "Two rows with 1 video each (cap beanbag, rocking chair); key shots are a person tossing/sitting/sinking into the seat -> Genjutsu."
+ },
+ "pattern_projectors": {
+  "type": "effect",
+  "note": "All 4 rows are light-projection products; the payoff is always the room/ceiling filling with projected patterns. seen_in counts videos across the whole family when the same shot appears in different rows (the rows share the same shot grammar). Original themes only (snowflakes, stars, generic Santa, trees, gifts) - no religious scenes, no characters.",
+  "rows": {
+   "slide_night_light_projector": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Hand switches on the plug-in projector at the wall outlet",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_cosmora117_3980718485323097851",
+        "ig_hollyglow_co_3981790204849024232",
+        "ig_lumalaceus_3991574124318555043",
+        "ig_snugz_store_DeHHRVozOeA"
+       ]
+      },
+      "what_happens": "Close-up of a wall outlet beside a nightstand in a dim bedroom; a hand reaches in and switches on / slots a slide into the small plug-in night-light projector, which starts to glow.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_snugz_store_DeHHRVozOeA",
+      "needs_person": true,
+      "start_frame_prompt": "Close-up, slightly high angle, of a white wall outlet just above a wooden nightstand in an ordinary American bedroom at night, lit only by a warm bedside lamp off-frame. Plugged into the outlet: a small white plug-in night-light projector with a short flexible gooseneck and a round lens head, switched off. A relaxed adult hand enters from the lower left, fingertips about to touch the projector head. Clean lived-in details: a folded paperback, a glass of water. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The hand reaches in, presses the button on the projector head and pulls back slightly. The lens clicks on: a soft cool-white glow blooms on the fingers first, then small crisp star and snowflake shapes appear on the nightstand surface and spread outward, gently shimmering. Room light stays dim and real, projected shapes are sharp. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Projected stars appear on the nightstand surface",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_cosmora117_3980718485323097851",
+        "ig_snugz_store_DeHHRVozOeA"
+       ]
+      },
+      "what_happens": "Tight shot of the nightstand top in near darkness: sharp projected stars bloom across the surface and the hand, then drift slowly.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_snugz_store_DeHHRVozOeA",
+      "needs_person": true,
+      "start_frame_prompt": "Tight close-up of a dark wooden nightstand top in a bedroom at night, almost dark, a hand resting palm-up in frame. Above, partly visible at the top edge, the small white plug-in night-light projector on the wall outlet, off. Faint blue moonlight from a window. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The projector head turns on: cool-white crisp star shapes pop onto the nightstand and across the open palm, one large star in the center, smaller ones around, then the whole pattern rotates very slowly. The hand turns slightly to catch the stars. Deep shadows, real light falloff. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Lights out: the whole wall/ceiling fills with the projected scene",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_hollyglow_co_3981790204849024232",
+        "ig_lumalaceus_3991574124318555043",
+        "ig_holly_jigle_DeDBoEkTWg8",
+        "ig_snugz_store_DeHHRVozOeA"
+       ]
+      },
+      "what_happens": "Wide view of a dark bedroom; the wall and ceiling are suddenly covered edge to edge by the projected pattern, slow handheld drift across it.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_hollyglow_co_3981790204849024232",
+      "needs_person": false,
+      "start_frame_prompt": "Wide handheld view from the bedroom doorway of an ordinary American bedroom at night, main light off: made bed with a plaid quilt, nightstand with the small white plug-in night-light projector glowing faintly at the wall outlet, plain white ceiling and walls still dark, a small decorated Christmas tree with warm fairy lights in the corner. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "Two seconds in, the projector brightens and a full pattern of colorful snowflakes, stars, little trees and gift boxes spreads from the projector across the ceiling and the far wall within about one second, covering every surface edge to edge; the shapes drift and rotate slowly. Camera drifts slowly upward toward the ceiling with natural micro-shake. Projected light reflects softly on the quilt. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "hook/meme setup (child scared of the dark, adult reaction)",
+     "person lying in bed looking up at the projection"
+    ]
+   },
+   "tree_plug_projector": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Hand plugs the mini-tree projector into the wall outlet",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_cosmora117_3980718485323097851",
+        "ig_hollyglow_co_3981790204849024232",
+        "ig_lumalaceus_3991574124318555043",
+        "ig_snugz_store_DeHHRVozOeA"
+       ]
+      },
+      "what_happens": "POV: a hand pushes the small tree-shaped projector into a wall outlet; it lights up.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_hollyglow_co_3981790204849024232",
+      "needs_person": true,
+      "start_frame_prompt": "POV close-up of a white wall outlet on a cream wall in an American bedroom, evening lamp light. A right hand holds a small green flocked Christmas-tree-shaped plug-in projector by its trunk, prongs 3 cm from the outlet. Soft background blur of a bed with a red throw and a wreath on the wall. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The hand pushes the tree projector into the outlet with a small click and lets go. The tree's tip starts to glow and tiny colored dots of light appear on the wall around it. Hand pulls out of frame. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Light switch off: ceiling and walls covered in Christmas projection",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_hollyglow_co_3981790204849024232",
+        "ig_lumalaceus_3991574124318555043",
+        "ig_holly_jigle_DeDBoEkTWg8",
+        "ig_snugz_store_DeHHRVozOeA"
+       ]
+      },
+      "what_happens": "A hand flips the wall light switch; the dark room is revealed covered in colorful Christmas projections across the ceiling.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_hollyglow_co_3981790204849024232",
+      "needs_person": true,
+      "start_frame_prompt": "Handheld view of an ordinary American bedroom in the evening with the ceiling light on: iron bed with red Christmas throw, small decorated tree by the window, wreath, the tree-shaped plug projector in the outlet near the floor. In the foreground right, an index finger rests on a white wall light switch. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The finger flips the switch down; the room drops to darkness and instantly the ceiling and walls are covered by sharp colorful projected Christmas shapes - snowflakes, stars, little trees, presents, a jolly Santa figure - which rotate slowly. Camera tilts slowly up to the ceiling. Tree fairy lights stay warm. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "POV hands cut open a brown paper shipping bag (hook)"
+    ]
+   },
+   "rotating_egg_projector": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Hand plugs the cable into the egg projector",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_cosmora117_3980718485323097851",
+        "ig_hollyglow_co_3981790204849024232",
+        "ig_lumalaceus_3991574124318555043",
+        "ig_snugz_store_DeHHRVozOeA"
+       ]
+      },
+      "what_happens": "Close-up: hand holds the egg projector on a side table and plugs in its cable.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_lumalaceus_3991574124318555043",
+      "needs_person": true,
+      "start_frame_prompt": "Close-up of a warm wooden side table next to a lit Christmas tree in an American living room at dusk. A white egg-shaped pattern projector with a small gold crown top sits on the table, off. One hand rests on top of it, the other holds the USB cable end next to its port. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The hand slides the cable into the port; a soft glow starts inside the egg and the top begins to rotate slowly, throwing first faint colored dots on the hand and table. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Ceiling of the living room fills with rotating Christmas projection",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_hollyglow_co_3981790204849024232",
+        "ig_lumalaceus_3991574124318555043",
+        "ig_holly_jigle_DeDBoEkTWg8",
+        "ig_snugz_store_DeHHRVozOeA"
+       ]
+      },
+      "what_happens": "Wide living-room shot; the projection rises onto the vaulted ceiling and rotates slowly.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_lumalaceus_3991574124318555043",
+      "needs_person": false,
+      "start_frame_prompt": "Wide handheld view of an ordinary American family living room at night: sectional sofa, coffee table with the white egg projector on it switched off, lit Christmas tree near the window, beige ceiling still dark. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The egg projector turns on and rotates: colorful sleighs, reindeer, snowflakes and stars spread across the ceiling and upper walls in a second and keep rotating slowly; colored light dapples the sofa. Camera tilts gently up to the ceiling. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "DIY-fail hook: couple on ladder taping paper decor that falls",
+     "family on sofa reacting"
+    ]
+   },
+   "santa_hat_projector_lamp": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Lamp turns on and the ceiling fills with projected snowflakes",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_hollyglow_co_3981790204849024232",
+        "ig_lumalaceus_3991574124318555043",
+        "ig_holly_jigle_DeDBoEkTWg8",
+        "ig_snugz_store_DeHHRVozOeA"
+       ]
+      },
+      "what_happens": "The hanging Santa-hat lamp lights up and colorful snowflakes spread across the ceiling around it.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_holly_jigle_DeDBoEkTWg8",
+      "needs_person": false,
+      "start_frame_prompt": "Low angle in an ordinary American living room at night: a red plush Santa-hat lamp with white fur trim hangs from a black ceiling hook, strands of small gold stars and mini ornaments dangling below the rim, lamp off; plain white ceiling, a decorated tree and stockings softly blurred in the background with warm string lights. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The lamp switches on: warm light glows through the hat and the dangling stars, then colorful snowflake projections bloom across the ceiling all around it and drift slowly in a circle. The dangling strands sway slightly. Slow handheld drift. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "woman hanging the lamp on the ceiling hook",
+     "hands lifting a blanket off the hidden product (hook)"
+    ]
+   }
+  }
+ },
+ "pet_spheres": {
+  "type": "effect",
+  "note": "No human motion in the payoff: the cat inside the mesh ball and the ball rolling is the star (animal motion, Genjutsu does not apply). Only 2 videos.",
+  "rows": {
+   "rolling_mesh_pet_ball": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Cat rolls across the lawn inside the mesh ball, dog trotting alongside",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_zoomieball1_DeHRm9aqHb2",
+        "ig_thesnugroo_DeIWfOjtReB"
+       ]
+      },
+      "what_happens": "Outdoors on grass, a cat walks inside the black mesh sphere so it rolls forward; a dog sniffs and trots next to it.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_thesnugroo_DeIWfOjtReB",
+      "needs_person": false,
+      "start_frame_prompt": "Low handheld angle on a mowed green backyard lawn of an American suburban house with a wooden privacy fence, soft afternoon sun. A black collapsible mesh pet sphere about 70 cm wide stands on the grass with a grey tabby cat standing calmly inside it; a friendly golden retriever stands a meter behind, looking at it. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The cat walks forward inside the sphere and the mesh ball rolls slowly toward the camera across the grass, the cat's paws stepping on the inner mesh; the dog trots alongside sniffing the ball, tail wagging. Grass blades bend under the ball. Natural sunlight and shadows. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Empty mesh ball(s) set down, cat steps inside",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_zoomieball1_DeHRm9aqHb2",
+        "ig_thesnugroo_DeIWfOjtReB"
+       ]
+      },
+      "what_happens": "The mesh sphere sits on the floor/lawn; the cat approaches and steps inside through the opening.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_thesnugroo_DeIWfOjtReB",
+      "needs_person": false,
+      "start_frame_prompt": "Handheld eye-level-low view of a beige round rug in a bright ordinary American living room: a black collapsible mesh pet sphere with an open door flap sits on the rug, empty; a white cat stands beside it looking at the opening. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The cat sniffs the opening, steps in through the door flap and stands inside; the sphere rocks gently and rolls a few centimeters as the cat moves. Soft daylight from a window. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "woman chasing the cat that escapes over the fence (problem hook)",
+     "DIY cardboard ball concept with owner"
+    ]
+   }
+  }
+ },
+ "pixel_lights": {
+  "type": "effect",
+  "note": "Star of the payoff is the LED pixel animation. The viral 'app' shot shows a phone in the hand; to respect the no-phone rule our version shows the kit's small handheld controller instead (flag to Szasz if he wants the phone app shot). Displays show original pictures only (Santa, snowman, sleigh, gingerbread) - no team crests or cartoon IP.",
+  "rows": {
+   "app_led_curtain_lights": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Street-level night view: balcony/house LED curtain plays a Christmas animation",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_tryfestilight_Dd5zi2pzcHy",
+        "ig_jollyview_co_3988916184822211561",
+        "ig_hollyview12_3986911767097113478",
+        "fb_61593744249395_2026788527999173"
+       ]
+      },
+      "what_happens": "From the street at night, the LED curtain on a balcony railing / facade lights up and plays an animated pixel scene.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_jollyview_co_3988916184822211561",
+      "needs_person": false,
+      "start_frame_prompt": "Handheld view from a snowy sidewalk at blue hour looking up at an ordinary American brick apartment building; on a second-floor balcony railing hangs a rectangular LED curtain light grid, currently dark; warm lit windows, a street lamp, light snow on the ground. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The LED curtain switches on and plays a crisp pixel animation: a snowy village line, then a pixel Santa and snowman waving, small snowflakes falling across the grid. The colored glow reflects on the snow on the railing. Camera slowly tilts up a few degrees with micro-shake. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "POV: controller in hand, curtain changes animation",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_tryfestilight_Dd5zi2pzcHy",
+        "ig_jollyview_co_3988916184822211561",
+        "ig_hollyview12_3986911767097113478"
+       ]
+      },
+      "what_happens": "POV holding the kit controller in the foreground; behind it the LED curtain switches from one animation to another.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_hollyview12_3986911767097113478",
+      "needs_person": true,
+      "start_frame_prompt": "POV from a snowy wooden back deck of an American house at dusk: a hand in a knit sleeve holds the LED kit's small white handheld controller in the lower foreground; behind it a large LED curtain grid hangs across a sliding glass wall, showing a calm blue starry-night pixel image. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The thumb presses a button; the curtain switches to a pixel snowy-village animation with Santa's sleigh flying across the grid, snowflakes drifting. Colored light spills on the deck boards. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Passerby looks up and points at the lit balcony",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_tryfestilight_Dd5zi2pzcHy",
+        "ig_jollyview_co_3988916184822211561"
+       ]
+      },
+      "what_happens": "Night street shot: a person on the sidewalk looks up and points at the animated LED balcony.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_jollyview_co_3988916184822211561",
+      "needs_person": true,
+      "start_frame_prompt": "Night, snowy American city sidewalk with a street lamp; a man in a winter parka and beanie stands in the foreground three-quarter back to camera, looking up toward an apartment balcony whose LED curtain shows a pixel Santa and snowman scene. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The man raises his arm and points up at the display, turning his head back toward camera with a delighted smile; the pixel Santa waves on the curtain. Light snow falls. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "'decor in 1965' struggle on the balcony (tangled lights / falling inflatable Santa)",
+     "hanging the curtain on the railing or ladder"
+    ]
+   },
+   "app_christmas_tree_led_kit": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Dark living room: the tree's LED net switches to a pixel animation",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_pinedazzle_us_3983284254493929583",
+        "ig_jinglebead_3985088592363173717_av",
+        "ig_themerryview__3996470940115335413"
+       ]
+      },
+      "what_happens": "Wide shot of a tall tree in a dim living room; the LED strands light up and display an animated picture (Santa sleigh, train, snowman).",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_pinedazzle_us_3983284254493929583",
+      "needs_person": false,
+      "start_frame_prompt": "Wide handheld view of an ordinary American living room in the evening, lamps low: a tall artificial Christmas tree near the window wrapped top-to-bottom in vertical LED strands from a star topper, the LEDs showing plain warm white; sofa and coffee table with a candle in the foreground. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The tree LEDs switch to a full pixel animation: blue snowflakes appear, then a red-and-gold Santa sleigh with reindeer slides across the tree, then the scene fades into a small train; the colored glow spills onto the ceiling and floor. Slow handheld drift toward the tree. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "POV: controller pressed, tree picture changes",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_pinedazzle_us_3983284254493929583",
+        "ig_jinglebead_3985088592363173717_av",
+        "ig_themerryview__3996470940115335413"
+       ]
+      },
+      "what_happens": "POV hand holds the controller in front of the lit tree; on a press the picture on the tree changes.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_themerryview__3996470940115335413",
+      "needs_person": true,
+      "start_frame_prompt": "POV in an American living room at night: a hand in the lower foreground holds the LED kit's small white handheld controller; behind it a tall Christmas tree covered in LED strands displays a pixel snowman. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "Thumb presses the button; the snowman on the tree dissolves into falling pixel snowflakes and a gingerbread figure with candy canes appears. Warm room light stays steady. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "woman on a ladder hanging the LED strands from the tree top",
+     "store-find excitement hook",
+     "struggling with old inflatable decor"
+    ]
+   }
+  }
+ },
+ "pov_cameras": {
+  "type": "mixed",
+  "note": "Product shots that sell it are POV footage (wide fish-eye first-person view of the activity) and hand-held close-ups - camera/effect shots, not motion transfer. Reaction hooks and wearing shots are human. POV footage counted across both rows (4 videos).",
+  "rows": {
+   "camera_earbuds": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Wide first-person footage 'recorded by the earbud'",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_clippercutzcam_Dd7q572gVjN",
+        "ig_aceviewco_3995605363165554796",
+        "fb_61594514248371_1839502480794847"
+       ]
+      },
+      "what_happens": "Fish-eye, eye-level first-person footage of the activity (tennis rally, volleyball, haircut) as if filmed by the earbud camera.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_aceviewco_3995605363165554796",
+      "needs_person": false,
+      "start_frame_prompt": "Ultra-wide slightly fish-eye first-person view from head height on an outdoor public hard tennis court in an American park on an overcast day: blue court, white lines, net ahead, a tennis ball bouncing toward the viewer, the tip of a racket at lower right. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "First-person footage: the viewer steps forward and swings, the racket enters frame and hits the ball back over the net, horizon tilting naturally with head movement, light motion blur, action-camera look. Ambient court sound. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Close-up: hand holds the camera earbud, lens toward viewer",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_aceviewco_3995605363165554796",
+        "fb_61594514248371_1839502480794847"
+       ]
+      },
+      "what_happens": "Tight close-up of fingers holding the open-ear camera earbud, slowly turning it to show the tiny lens.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_aceviewco_3995605363165554796",
+      "needs_person": true,
+      "start_frame_prompt": "Tight close-up at golden hour beside a public tennis court: fingers hold one white open-ear hook earbud with a small round camera lens on its outer face, lens facing the viewer; court and net softly blurred behind. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The fingers rotate the earbud slowly a quarter turn toward the light so the lens catches a small reflection, then back toward camera. Slight handheld sway; the background bokeh shifts. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "shocked reaction / point at display hook",
+     "putting the earbud on the ear",
+     "fist-bump / celebration"
+    ]
+   },
+   "camera_ski_goggles": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "First-person ski run at sunset 'filmed by the goggles'",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_clippercutzcam_Dd7q572gVjN",
+        "ig_aceviewco_3995605363165554796",
+        "fb_61594514248371_1839502480794847",
+        "ig_snowview_co_3973061436898389994"
+       ]
+      },
+      "what_happens": "Wide first-person footage of skiing down a slope at sunset, ski tips in frame.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_snowview_co_3973061436898389994",
+      "needs_person": false,
+      "start_frame_prompt": "Ultra-wide first-person view from goggle height at the top of a groomed ski slope at sunset: ski tips at the bottom of frame, pink-purple sky, pine trees, a distant skier ahead. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "First-person ski run: the skis start sliding downhill, carving gently left and right, snow spray flicking up at the tips, horizon tilting with the turns, sunset light flaring. Action-camera look, natural speed. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "skier pulling the goggles out of a pouch (hook)",
+     "pressing the record button / holding goggles up to the face"
+    ]
+   }
+  }
+ },
+ "rc_mowers": {
+  "type": "effect",
+  "note": "The star is the small RC farm-machine model mowing on its own; people only sit with a controller. Paint the model in an original color (e.g. red/grey or blue/white), never green-and-yellow look-alike.",
+  "rows": {
+   "rc_model_mower": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Low-angle: mini mower drives toward camera cutting a clean stripe",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "tt_grassworks_co_7678436004805479712",
+        "ig_mymowtor_3989962186552442304"
+       ]
+      },
+      "what_happens": "Ground-level shot in tall backyard grass: the remote-control model tractor/combine drives straight at the lens, leaving a short neat stripe behind it.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_mymowtor_3989962186552442304",
+      "needs_person": false,
+      "start_frame_prompt": "Ground-level handheld view in an ordinary American suburban backyard on a sunny afternoon, wooden privacy fence behind: overgrown grass about 15 cm tall, one freshly mowed stripe already running away from camera. Two meters ahead on the stripe edge sits a 1:16 scale remote-control farm tractor model with wide folding side mowing decks, painted red and grey, wheels in the tall grass, not moving yet. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The model tractor drives forward toward the camera at walking-toy speed, its decks cutting the tall grass into a clean, even stripe; grass clippings flick out at the sides, blades spin, grass bends then disappears under the deck. It stops just before the lens. Natural sunlight and shadows, light handheld shake. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Owner relaxes in a lawn chair with the controller while the mower works",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "tt_grassworks_co_7678436004805479712",
+        "ig_mymowtor_3989962186552442304"
+       ]
+      },
+      "what_happens": "Wider shot: a man sits in a camping chair on the patio holding a controller; in front, the model mower cuts stripes toward camera.",
+      "duration_s": 5,
+      "viral_ref_mkey": "tt_grassworks_co_7678436004805479712",
+      "needs_person": true,
+      "start_frame_prompt": "Handheld eye-level view of an American backyard patio in summer: a man in a plain grey t-shirt and jeans sits relaxed in a folding camping chair at the edge of the pavers, holding a plain black RC controller in both hands; in the foreground, on the lawn, the red-and-grey RC farm tractor model with side mowing decks sits at the start of a fresh stripe in tall grass. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The man tilts the controller sticks with small thumb moves while leaning back; the model tractor drives forward toward camera cutting a neat stripe through tall grass, clippings flying. He smiles and crosses one leg. Sunny, natural shadows. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "man pushing an old mower through tall grass ('2006' contrast)",
+     "unboxing the model on the patio",
+     "spouse-quote reaction"
+    ]
+   }
+  }
+ },
+ "reactive_clothing": {
+  "type": "effect",
+  "note": "Garments are worn, but the star of every key shot is the color change (water or breath); the wearer stands almost still, so Seedance from a start frame works better than motion transfer. The water/heat effect must look like the real product (no exaggeration). seen_in for the paint-brush hook counts both rows.",
+  "rows": {
+   "water_reactive_jacket": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Water poured on the worn jacket, hidden print spreads",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_astanazoo_3987556599027018645",
+        "ig_rainmorph_us_DeGtHmNOJxR",
+        "ig_rainshift_fr_DeCKnc4tzPT",
+        "ig_buchan_3969450312567315340"
+       ]
+      },
+      "what_happens": "A person stands still in the jacket; water is poured from a bottle over the hood/shoulders and a bright print blooms wherever the water runs.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_buchan_3969450312567315340",
+      "needs_person": true,
+      "start_frame_prompt": "Waist-up handheld shot of a young woman standing still in an ordinary American suburban backyard on an overcast day, wearing a plain dusty-pink hooded rain shell jacket zipped up, hood on, neutral face; a hand from the top edge holds a clear plastic water bottle tilted just above her shoulder. Jacket surface dry and uniform. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "Water pours from the bottle onto the hood and right shoulder and runs down the jacket; within a second, wherever the water flows, a darker leopard-spot print appears on the fabric, following the exact drip paths down the chest, while dry areas stay plain. She looks down at it. Real water splashes and droplets. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Flat-lay jacket sprayed, print blooms",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_astanazoo_3987556599027018645",
+        "ig_buchan_3969450312567315340",
+        "ig_snowshift_co_3989271994590824063"
+       ]
+      },
+      "what_happens": "Overhead: the jacket lies flat outdoors; a spray bottle mists it and the hidden print appears in patches.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_buchan_3969450312567315340",
+      "needs_person": true,
+      "start_frame_prompt": "Overhead handheld shot of a plain black hooded rain shell jacket laid flat on grey wooden deck boards of an American backyard, overcast daylight; a hand holding a clear spray bottle enters from the right edge. Fabric fully dry, plain black. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The hand squeezes the spray bottle several times across the chest and sleeves; where the mist lands, bright neon-pink paint-splash shapes bloom out of the black fabric in irregular patches, growing over one second each. Droplets bead on the surface. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Close-up of chest in rain, color appears drop by drop",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_astanazoo_3987556599027018645",
+        "ig_rainmorph_us_DeGtHmNOJxR",
+        "ig_buchan_3969450312567315340"
+       ]
+      },
+      "what_happens": "Tight close-up on the jacket chest while rain/water hits it; colored splashes appear where each drop lands.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_astanazoo_3987556599027018645",
+      "needs_person": true,
+      "start_frame_prompt": "Tight close-up of the chest and zipper of a plain black rain shell jacket worn by a person standing outdoors in light rain in an ordinary American neighborhood street, overcast; fabric still mostly dry, a few drops starting to land. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "Rain drops hit the fabric and each impact blooms into a small bright neon-pink splash mark; the marks multiply and merge across the chest within four seconds. The person breathes slightly; zipper pull sways. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Fake paint-brush hook (looks painted, actually reactive)",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_snowshift_co_3989271994590824063",
+        "ig_vaprmask_store_3995141647980905907"
+       ]
+      },
+      "what_happens": "A gloved hand brushes paint on the garment (what people think) before the cut to the real reactive effect.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_snowshift_co_3989271994590824063",
+      "needs_person": true,
+      "start_frame_prompt": "Chest-level handheld shot outdoors on a snowy hill behind an American house: a person in a plain black shell jacket holds a small open can of bright blue paint in one gloved hand and a wide paintbrush loaded with paint in the other, brush touching the chest. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The gloved hand drags the brush across the chest in two strokes, leaving a thick bright-blue paint smear; a drip runs down. Snow falls lightly. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "group running/riding in fully colored jackets",
+     "biker / runner in the rain",
+     "store-queue or shock hook"
+    ]
+   },
+   "heat_reactive_balaclava": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Fake paint-brush hook on the balaclava",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_snowshift_co_3989271994590824063",
+        "ig_vaprmask_store_3995141647980905907"
+       ]
+      },
+      "what_happens": "A gloved hand brushes paint onto the face mask, as the 'what people think' opener.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_vaprmask_store_3995141647980905907",
+      "needs_person": true,
+      "start_frame_prompt": "Close handheld portrait outdoors in a snowy American neighborhood: a man wearing a plain light-blue full-face balaclava and dark ski goggles, holding a small open can of lime-green paint and a loaded paintbrush near his face, neutral winter jacket without logos. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "He brushes a thick stroke of lime paint across the mouth area of the balaclava; paint drips down to the chin. He looks at camera. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "pulling the balaclava on",
+     "breath color-shift close-up (only 1 video - not yet recurring)"
+    ]
+   }
+  }
+ },
+ "scene_projectors": {
+  "type": "effect",
+  "note": "14 videos, one product (white dome projector, theme = design). Fixed shot grammar: hook (store cover-reveal or DIY-fail) -> hands with the dome -> plug in -> POV door opens -> room covered in scene. Use original themes only (default below: an original enchanted night-sky fantasy scene: floating lanterns, a distant glowing castle on cliffs, waterfalls, drifting snow and stars; swap for dinosaurs, outer space, underwater reef, snowy village, generic stadium with no logos). Children appear in 10/14 videos - our version uses adults or no people.",
+  "rows": {
+   "dome_scene_projector": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "POV: hand opens the bedroom door, room already covered in the projected scene",
+      "seen_in": {
+       "count": 9,
+       "mkeys": [
+        "ig_midglows_DeA-Ysdtduw",
+        "ig_nyxveil_usa_3994907013017832610",
+        "ig_fifaglow_us_3995156233563232784",
+        "ig_jurrasiglow_us_3992164320010063398",
+        "ig_roarium_shop_3993477424630661182",
+        "ig_mineglow_us_DeCq54PB9_y",
+        "ig_stadiumglowprojector_3997106068211287066",
+        "ig_hogwartslights1_3994520964228027237",
+        "fb_61585713497873_1687332270059652"
+       ]
+      },
+      "what_happens": "POV from a dark hallway: a hand turns the knob and pushes the door; the room behind is fully covered (walls + ceiling) by the glowing themed projection.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_midglows_DeA-Ysdtduw",
+      "needs_person": true,
+      "start_frame_prompt": "POV handheld from a dim upstairs hallway of an ordinary American house at night: a hand on the knob of a white bedroom door that is open only 5 cm; through the gap a strong blue and gold glow spills onto the hallway floor. Hallway light off, real darkness. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The hand pushes the door open slowly; the camera steps into the doorway, revealing the whole bedroom - walls and ceiling - covered edge to edge by an original enchanted night-sky fantasy scene: floating lanterns, a distant glowing castle on cliffs, waterfalls, drifting snow and stars; the lanterns and snow drift slowly, the projected light moves softly over the bed and rug. The white dome projector glows on the nightstand. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Hands plug the cable into the white dome projector",
+      "seen_in": {
+       "count": 8,
+       "mkeys": [
+        "ig_enchantelle_store_DeByu74zva9",
+        "ig_fairyglow12_Dd47l9PoOgy",
+        "ig_codglow_us_DeBgqI4vwUZ",
+        "ig_nyxveil_usa_3994907013017832610",
+        "ig_multiglow_us_3994633905210164162",
+        "ig_hogwartslights1_3994520964228027237",
+        "ig_snowlit_store_3990683374667734616",
+        "fb_61585713497873_1687332270059652"
+       ]
+      },
+      "what_happens": "Close-up on a kitchen counter or nightstand: one hand steadies the white dome projector, the other inserts the cable; it lights up.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_snowlit_store_3990683374667734616",
+      "needs_person": true,
+      "start_frame_prompt": "Close handheld shot of a white quartz kitchen counter in an ordinary American kitchen in the evening, warm under-cabinet light: the white dome/orb scene projector on its small white stand, off; one hand rests on top of the dome, the other holds the white cable plug 2 cm from the port at the back. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The hand pushes the cable into the port; a soft colored glow starts inside the lens grille, then the hand on top presses the top button and the glow brightens with faint moving colors. Fingers lift off. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Hands present / unbox the dome projector toward camera",
+      "seen_in": {
+       "count": 8,
+       "mkeys": [
+        "ig_midglows_DeA-Ysdtduw",
+        "ig_nyxveil_usa_3994907013017832610",
+        "ig_fifaglow_us_3995156233563232784",
+        "ig_jurrasiglow_us_3992164320010063398",
+        "ig_mineglow_us_DeCq54PB9_y",
+        "ig_multiglow_us_3994633905210164162",
+        "ig_hogwartslights1_3994520964228027237",
+        "ig_snowlit_store_3990683374667734616"
+       ]
+      },
+      "what_happens": "POV: two hands lift the white dome projector out of its box or hold it up toward the lens ('Vs...' beat).",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_fifaglow_us_3995156233563232784",
+      "needs_person": true,
+      "start_frame_prompt": "POV close-up over a wooden desk in an ordinary American bedroom, daylight lamp: two hands hold the white dome/orb scene projector on its small stand just above a plain white open box with no print, lens grille facing camera. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The hands lift the projector out of the box and raise it toward the lens, turning it slowly a little left and right to show the lens grille and stand. Gentle handheld sway. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Empty room fully transformed, slow pan across the projected scene",
+      "seen_in": {
+       "count": 6,
+       "mkeys": [
+        "ig_codglow_us_DeBgqI4vwUZ",
+        "ig_midglows_DeA-Ysdtduw",
+        "ig_nyxveil_usa_3994907013017832610",
+        "ig_enchantelle_store_DeByu74zva9",
+        "ig_hogwartslights1_3994520964228027237",
+        "ig_multiglow_us_3994633905210164162"
+       ]
+      },
+      "what_happens": "No people: a slow handheld pan across a bedroom or living room whose walls and ceiling are covered by the moving projected scene.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_nyxveil_usa_3994907013017832610",
+      "needs_person": false,
+      "start_frame_prompt": "Handheld wide view of an ordinary American bedroom at night, all lights off: made bed with grey comforter, string lights over the headboard turned off, desk and dresser, the white dome projector on the nightstand, off; walls and ceiling dark. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The projector turns on and within a second the walls and ceiling fill with an original enchanted night-sky fantasy scene: floating lanterns, a distant glowing castle on cliffs, waterfalls, drifting snow and stars; then the camera pans slowly from the bed up across the ceiling, lanterns drifting, snow falling in the projection, waterfall shimmering; colored light falls on the comforter. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Projector glowing on the coffee table, living room transformed",
+      "seen_in": {
+       "count": 5,
+       "mkeys": [
+        "ig_codglow_us_DeBgqI4vwUZ",
+        "ig_roarium_shop_3993477424630661182",
+        "ig_fifaglow_us_3995156233563232784",
+        "ig_fairyglow12_Dd47l9PoOgy",
+        "ig_jurrasiglow_us_3992164320010063398"
+       ]
+      },
+      "what_happens": "Wide living-room shot with the dome glowing on the coffee table and the scene covering the walls/ceiling around it.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_codglow_us_DeBgqI4vwUZ",
+      "needs_person": false,
+      "start_frame_prompt": "Low handheld view across an ordinary American living room coffee table at night: the white dome projector glowing softly in the foreground on the wooden table, a sofa and TV wall behind, room lights off, walls already lit by the projected scene. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The projected an original enchanted night-sky fantasy scene: floating lanterns, a distant glowing castle on cliffs, waterfalls, drifting snow and stars moves slowly across the ceiling and walls - lanterns rising, clouds drifting - while the camera slides slowly past the glowing dome toward the sofa. Light from the scene flickers gently on the table. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "store staff pull a cover off a pallet of boxes (cover-reveal hook)",
+     "DIY-fail on a ladder (decor falls / person falls)",
+     "people standing in the projected room looking up and reaching (use adults; kids in 10/14 virals)"
+    ]
+   }
+  }
+ },
+ "seasonal_props": {
+  "type": "effect",
+  "note": "3 different products, 1 video each; seen_in counts the shot across the family (same 'prop alive at night outside the house' grammar). The prop itself (light / animation / RC crawl) is the star.",
+  "rows": {
+   "climbing_santa_led_ladder": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Night: the lit prop on the house front",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_jollyladdertm_DdzREWJvPAf",
+        "fb_61593827999159_28284616164491574",
+        "fb_61593402544032_3819557844887011"
+       ]
+      },
+      "what_happens": "Night exterior of the house: the LED ladder glows on the facade with the little Santa climbing it, decorated porch around.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_jollyladdertm_DdzREWJvPAf",
+      "needs_person": false,
+      "start_frame_prompt": "Handheld view from the front lawn at night of an ordinary two-story American house with grey siding, snow on the ground, a lit wreath on the window; a 2-meter warm-white LED rope-light ladder leans against the wall from the porch roof to the flower box, with a plush Santa figure holding a rung halfway up, lights off. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The ladder switches on, its warm-white LED rungs lighting up one after another from bottom to top; the Santa figure climbs slowly up one rung with a small mechanical motion. Snow falls lightly, porch lights glow. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "man wrestling a giant inflatable Santa onto the siding (1960 contrast)",
+     "woman on ladder installing the LED ladder"
+    ]
+   },
+   "flying_witch_prop": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Night doorbell-camera view: passerby meets the glowing prop",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "fb_61593827999159_28284616164491574",
+        "fb_61593402544032_3819557844887011"
+       ]
+      },
+      "what_happens": "High fish-eye 'porch camera' angle at night: the glowing prop stands by the walkway as someone walks past and reacts.",
+      "duration_s": 5,
+      "viral_ref_mkey": "fb_61593827999159_28284616164491574",
+      "needs_person": true,
+      "start_frame_prompt": "High wide-angle security-camera style view at night over the front walkway of an ordinary American house, slight fish-eye, cool grey night tones with a warm porch light: by the walkway hangs a life-size witch figure on a broomstick with a purple cape and grey hair, eyes dark; a teen boy in a dark t-shirt walks toward it on the sidewalk. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "As the boy passes, the witch's eyes light up bright green and its head turns toward him, cape stirring; the boy jumps sideways and stares, then hurries on. Camera static like a fixed porch camera with tiny compression noise. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Hand with controller triggers the prop",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "fb_61593827999159_28284616164491574",
+        "fb_61593402544032_3819557844887011"
+       ]
+      },
+      "what_happens": "Hand in the foreground holds the controller and presses; the prop in front reacts.",
+      "duration_s": 4,
+      "viral_ref_mkey": "fb_61593827999159_28284616164491574",
+      "needs_person": true,
+      "start_frame_prompt": "Handheld POV in an American front yard in autumn, fallen leaves on a brick path: a hand holds a small plain black remote control in the lower right; on the lawn ahead the life-size witch-on-broomstick figure hangs from a stand, unlit. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The thumb presses the remote button; the witch's eyes glow green, the figure bobs slightly as if flying and the cape flutters. Leaves move in a light breeze. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "older man unboxing the witch in the driveway",
+     "hanging it from a ladder"
+    ]
+   },
+   "rc_spider_prop": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Hand with remote drives the prop toward someone",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "fb_61593827999159_28284616164491574",
+        "fb_61593402544032_3819557844887011"
+       ]
+      },
+      "what_happens": "POV: remote in hand; the creepy spider prop crawls across the floor toward the person.",
+      "duration_s": 4,
+      "viral_ref_mkey": "fb_61593402544032_3819557844887011",
+      "needs_person": true,
+      "start_frame_prompt": "POV handheld from a couch in an ordinary American living room in October evening, warm lamp, pumpkins on the mantel: a hand holds a plain black remote in the foreground; on the carpet ahead sits a large creepy spider prop with long jointed black legs and a pale doll-like head with red eyes, unlit. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The thumb presses the remote; the spider's eyes light red and it scuttles forward across the carpet on its eight legs, head bobbing. Lamp light steady, slight handheld shake. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Night porch-camera view: neighbor surprised by the prop",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "fb_61593827999159_28284616164491574",
+        "fb_61593402544032_3819557844887011"
+       ]
+      },
+      "what_happens": "Fish-eye porch camera at night: a neighbor at the door is startled by the creepy prop next to the doorstep.",
+      "duration_s": 5,
+      "viral_ref_mkey": "fb_61593402544032_3819557844887011",
+      "needs_person": true,
+      "start_frame_prompt": "High wide-angle security-camera style view at night over the front porch of an American house, warm porch light, carved pumpkins: a middle-aged woman holds a pie at the door; at the corner of the porch the large spider prop with pale doll head sits still. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The spider's red eyes light up and it crawls toward her; she jerks back, nearly dropping the pie, and gasps. Camera static like a fixed porch camera. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "dad jumping behind the couch / kid running in hallway (scare reactions)",
+     "woman leaping onto the bed"
+    ]
+   }
+  }
+ },
+ "ski_lights": {
+  "type": "effect",
+  "note": "The glow of the LED strips at night is the star. POV looking down at glowing skis/board is effect (Seedance); the carving rider at night is body motion but the payoff is the light on the snow - try Seedance first, Genjutsu as fallback. seen_in counts both rows.",
+  "rows": {
+   "ski_led_strip_kit": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "POV at night: looking down at glowing skis",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_alpineglow_us_3984144345749442896",
+        "ig_slopelit_3988519813147178713_av",
+        "ig_ledboards2026_3984853583245271991"
+       ]
+      },
+      "what_happens": "First-person look down at the skis (or board) on a dark lit slope; the LED strips along the edges glow and the skis start sliding.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_slopelit_3988519813147178713_av",
+      "needs_person": true,
+      "start_frame_prompt": "First-person view looking down at a pair of skis on a groomed ski slope at night, slope lights far behind, dark pine trees; along both ski edges run thin LED strips, currently off; gloved hands holding poles at the bottom corners. Snow lit only by distant floodlights. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The LED strips switch on bright icy blue along both skis, lighting the snow around them in a soft blue halo; the skis start to slide forward downhill, snow crystals sparkling in the blue light, tips shaking gently. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Night: skier carves past with glowing skis and lit snow spray",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_alpineglow_us_3984144345749442896",
+        "ig_slopelit_3988519813147178713_av",
+        "ig_ledboards2026_3984853583245271991"
+       ]
+      },
+      "what_happens": "Follow shot at night: a skier carves a turn, the LED skis throw a colored glow onto the spraying snow.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_alpineglow_us_3984144345749442896",
+      "needs_person": true,
+      "start_frame_prompt": "Handheld follow view from behind and slightly to the side on a dark groomed ski slope at night, distant town lights in the valley: a skier in a plain dark jacket and helmet without logos, mid-slope, skis with LED edge strips glowing purple. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The skier carves a long turn across the slope; the purple LED glow lights the snow spray kicked up by the edges, leaving a glowing trail; camera follows with natural shake and slight motion blur. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "shock/faint reaction in a ski shop",
+     "towel reveal of the product box on the slope",
+     "unboxing on the chairlift"
+    ]
+   },
+   "snowboard_led_strip_kit": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "POV at night: looking down at the glowing snowboard",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_alpineglow_us_3984144345749442896",
+        "ig_slopelit_3988519813147178713_av",
+        "ig_ledboards2026_3984853583245271991"
+       ]
+      },
+      "what_happens": "First-person look down past the knees at the board on a night slope; the LED outline lights up teal.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_ledboards2026_3984853583245271991",
+      "needs_person": true,
+      "start_frame_prompt": "First-person view looking down at a snowboard strapped to the rider's boots, sitting on a groomed slope at night, dark pine trees, distant lift lights; a thin LED strip runs around the board's edge, off; knees in plain black snow pants. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The LED strip switches on bright teal around the whole board outline, glowing on the snow; the rider stands up and the board starts to slide, snow sparkling in the teal light. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Night: rider carves with a glowing board outline",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_alpineglow_us_3984144345749442896",
+        "ig_slopelit_3988519813147178713_av",
+        "ig_ledboards2026_3984853583245271991"
+       ]
+      },
+      "what_happens": "Third-person night follow: snowboarder carves, the lit board outline glows on the snow.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_ledboards2026_3984853583245271991",
+      "needs_person": true,
+      "start_frame_prompt": "Handheld view on a groomed slope at night under a lift tower light: a snowboarder in a plain cream jacket and black pants, no logos, riding toward and past camera, board edge glowing pink. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The rider carves heel-side past the camera, the pink LED outline lighting the snow spray in a glowing arc; camera pans to follow with slight motion blur. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "DIY taping a messy LED strip onto the board (concept)",
+     "holding the boxed product in a cabin"
+    ]
+   }
+  }
+ },
+ "video_projectors": {
+  "type": "effect",
+  "note": "Both rows are mini projectors; the projected image is the star. Book pages must be original illustrations (no real book covers or titles), window scenes generic (snowy alpine village, ocean cliff, gothic arches without castle IP, no block-game worlds). 'Cloth pulled off the glowing projector' appears in both rows (counted across the family).",
+  "rows": {
+   "storybook_projector": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Giant picture-book page projected on the bedroom wall",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_readingprojector_usa_3981075352280967679",
+        "ig_storybeamofficial_3982687560254023415",
+        "ig_dreamora_usa_3979974092135777015",
+        "ig_storyglow_us_3971085244878526630"
+       ]
+      },
+      "what_happens": "Dim kid-friendly bedroom: a huge open picture-book spread glows on the wall above the bed.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_storybeamofficial_3982687560254023415",
+      "needs_person": false,
+      "start_frame_prompt": "Handheld view of an ordinary American bedroom at night, lamps off, one small nightlight: twin bed with a patterned comforter and plush toys, a bookshelf, plain light wall above the headboard still dark; the small white mini projector sits on the dresser opposite. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The projector turns on and an original illustrated picture-book spread: a friendly brown bear and a little fox under a crescent moon in a forest, with a few short paragraphs of soft blurred unreadable text appears large on the wall above the bed, sharp and bright, glowing softly onto the comforter; camera drifts slowly closer with natural micro-shake. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Page-turn animation on the wall",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_storybeamofficial_3982687560254023415",
+        "ig_storyglow_us_3971085244878526630"
+       ]
+      },
+      "what_happens": "Close on the projected open book: the right page lifts and turns, revealing the next illustrated spread.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_storyglow_us_3971085244878526630",
+      "needs_person": false,
+      "start_frame_prompt": "Handheld view of a large projected open picture book on a plain bedroom wall in a dark room, showing an original illustrated picture-book spread: a friendly brown bear and a little fox under a crescent moon in a forest, with a few short paragraphs of soft blurred unreadable text; edge of a headboard visible at the bottom. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The projected right-hand page lifts, curls and turns over smoothly in about one second, revealing a new original spread (the bear and fox sitting by a campfire under stars); a soft light flicker crosses the wall as the page passes. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Book projected on the ceiling above the bed",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_readingprojector_usa_3981075352280967679",
+        "ig_storybeamofficial_3982687560254023415"
+       ]
+      },
+      "what_happens": "Lying-in-bed angle: the open picture book glows on the sloped ceiling; an adult and child under the covers look up.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_readingprojector_usa_3981075352280967679",
+      "needs_person": true,
+      "start_frame_prompt": "Low handheld view from the pillows in an ordinary American kid's bedroom at night with a sloped ceiling, colorful string lights over the window, small lamps; an adult and a child lie under a star-pattern comforter looking up, seen from behind their heads; the ceiling above is plain and dark. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The projection appears on the sloped ceiling: an original illustrated picture-book spread: a friendly brown bear and a little fox under a crescent moon in a forest, with a few short paragraphs of soft blurred unreadable text, large and sharp; the adult raises a small white remote and the page turns; the child points up. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Watching the projected book from a cozy chair/couch by the fireplace",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_readingprojector_usa_3981075352280967679",
+        "ig_dreamora_usa_3979974092135777015",
+        "ig_storyglow_us_3971085244878526630"
+       ]
+      },
+      "what_happens": "Wide living-room shot: an adult (with a child) sits in an armchair or sofa by a fireplace looking at the book projected on the wall.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_storyglow_us_3971085244878526630",
+      "needs_person": true,
+      "start_frame_prompt": "Handheld wide view of an ordinary American living room at night with a lit fireplace, wood beams, bookshelves: a woman in a pink lounge set sits curled in a cream armchair holding a mug, facing a plain wall that is still dark; the mini projector on a side table. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The wall lights up with an original illustrated picture-book spread: a friendly brown bear and a little fox under a crescent moon in a forest, with a few short paragraphs of soft blurred unreadable text; she settles back and sips, firelight flickering, projected glow on her face; the page turns once. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "mom gasping in a store aisle (hook)",
+     "POV hands cutting open a paper shipping bag"
+    ]
+   },
+   "fake_window_projector": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "Hand pulls a cloth off the glowing projector by the bed",
+      "seen_in": {
+       "count": 5,
+       "mkeys": [
+        "ig_readingprojector_usa_3981075352280967679",
+        "ig_oklumiofficial_3879144005468601415",
+        "ig_realmprojector_3950781323838506829",
+        "ig_lumina_noel_3989744719883266404",
+        "ig_shoppixelprojector_3926563634679444184"
+       ]
+      },
+      "what_happens": "Over-the-shoulder close-up: a hand in a knit sleeve pulls a thin white cloth off the small projector on a tripod at the bed's edge; its light shines through.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_lumina_noel_3989744719883266404",
+      "needs_person": true,
+      "start_frame_prompt": "Close over-the-shoulder handheld shot in an ordinary American bedroom in the evening, warm lamp light: a small white cylindrical mini projector on a short tripod at the foot of the bed, covered by a thin white cloth with its lens glowing bright through the fabric; a hand in a cream cable-knit sleeve pinches the cloth. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The hand slowly lifts the cloth away, the glowing lens light sweeping across the fabric and the comforter; the uncovered projector shines a clean beam. Slight handheld sway. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 4 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "POV: small remote pressed from the bed",
+      "seen_in": {
+       "count": 4,
+       "mkeys": [
+        "ig_oklumiofficial_3879144005468601415",
+        "ig_realmprojector_3950781323838506829",
+        "ig_lumina_noel_3989744719883266404",
+        "ig_merrybeam_official_3983200849668903131"
+       ]
+      },
+      "what_happens": "POV from the bed: a hand holds the small white remote and presses toward the wall.",
+      "duration_s": 3,
+      "viral_ref_mkey": "ig_realmprojector_3950781323838506829",
+      "needs_person": true,
+      "start_frame_prompt": "POV handheld from the edge of a bed in a dim American bedroom: a hand holds a small plain white remote control with simple button shapes, pointed at a plain wall above a checkered comforter; lights low. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The thumb presses a button; the wall in front starts to light up with a soft wash of blue light as the projection begins. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 3 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     },
+     {
+      "name": "Wall above the bed becomes a giant glowing window view",
+      "seen_in": {
+       "count": 5,
+       "mkeys": [
+        "ig_oklumiofficial_3879144005468601415",
+        "ig_realmprojector_3950781323838506829",
+        "ig_lumina_noel_3989744719883266404",
+        "ig_merrybeam_official_3983200849668903131",
+        "ig_shoppixelprojector_3926563634679444184"
+       ]
+      },
+      "what_happens": "Dark bedroom: the wall over the bed turns into a huge realistic window with a moving outdoor scene (snowy village, seaside, sunset).",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_lumina_noel_3989744719883266404",
+      "needs_person": false,
+      "start_frame_prompt": "Handheld wide view from the foot of the bed of an ordinary American bedroom at night, lights off: bed with white rumpled duvet against a plain wall, still dark, faint string lights. Vertical 9:16 frame, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light, natural vivid colors, true-to-life skin and materials. No text, no captions, no logos, no brand names, no licensed characters, no phone visible in frame.",
+      "seedance_prompt": "The wall lights up as a huge realistic multi-pane wooden window looking out on a snowy alpine village at blue hour - warm lit chalets, falling snow, a few twinkling lights; snowflakes drift past the panes and the blue light falls on the duvet. Camera holds, slight micro-shake. Handheld iPhone micro-shake throughout, no digital zoom, no cuts, real-time speed, duration 5 s. The product keeps exactly the shape, size and colors of the start frame. No text, no logos, no brands, no licensed characters, no phone visible in frame."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "picking a small item / meme setup hook (person)",
+     "pillow thrown on bed"
+    ]
+   }
+  }
+ }
+}

@@ -252,6 +252,10 @@ nav.rail a[aria-current="page"]{transform:translateX(4px)}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
+const ERRQ=[];function report(err,where){try{const e={where:String(where||""),msg:String(err&&err.message||err).slice(0,500),stack:String(err&&err.stack||"").slice(0,1500),route:(typeof S!=="undefined"&&S.route)||"",ua:navigator.userAgent.slice(0,200),at:new Date().toISOString()};
+  ERRQ.push(e);console.error("[LIMITLESS]",e);if(typeof S!=="undefined"&&S.db)S.db.collection("errors").add(e).catch(()=>{});}catch(_){}}
+window.addEventListener("error",ev=>report(ev.error||ev.message,"window"));window.addEventListener("unhandledrejection",ev=>report(ev.reason,"promise"));
+
 const CRIT=["Proven demand (≥100k views in 24 h or long-running paid ads)","≤ 4 active organic competitors","Price ≥ $38.99","≥ $2,000 per 1M views (test order)","US buyers with money (25+)","Understood in 1–3 seconds","We can do it better than competitors","Renders faithfully with our tools","Reliable US shipping, low chargeback risk","Fits the season / evergreen"];
 const STADII=["găsit","analizat","planificat","produs","verificat","montat","postat","măsurat"];
 const SE={"găsit":"found","analizat":"analyzed","planificat":"planned","produs":"produced","verificat":"QA passed","montat":"edited","postat":"posted","măsurat":"measured"};
@@ -520,7 +524,7 @@ function vBoards(){
 async function loadLanes(b){for(const l of b.lanes||[]){if(S.lanes[l.doc])continue;try{const s=await S.db.doc("lanes/"+l.doc).get();if(s.exists)S.lanes[l.doc]=s.data();}catch(e){}}if(S.route==="boards")render()}
 const VIEWS={top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
 
-function render(){_render();const v=$("#view");if(v&&S._lastR!==S.route){S._lastR=S.route;v.classList.remove("enter");void v.offsetWidth;v.classList.add("enter");setTimeout(()=>v.classList.remove("enter"),900)}}
+function render(){try{_render()}catch(err){report(err,"render "+S.route);const v=$("#view");if(v)v.innerHTML=`<section class="panel"><h2>Something broke on this page</h2><p class="muted">${esc(String(err&&err.message||err))}</p><p class="muted">It was sent to Claude automatically.</p></section>`;return}const v=$("#view");if(v&&S._lastR!==S.route){S._lastR=S.route;v.classList.remove("enter");void v.offsetWidth;v.classList.add("enter");setTimeout(()=>v.classList.remove("enter"),900)}}
 let _rq=0;function soon(){if(_rq)return;_rq=requestAnimationFrame(()=>{_rq=0;render()})}
 function _render(){
   const r=VIEWS[S.route]?S.route:"brain";
@@ -647,15 +651,15 @@ Reply ONLY with JSON: {"read":"2 sentences on what this data says","angles":["3 
 /* ---------- boot ---------- */
 function route(){const h=(location.hash||"#launch").slice(1);S.route=VIEWS[h]?h:"launch";NET.stop();render()}
 /* navigation works without relying on the host passing hash changes through */
-function go(h){if(!VIEWS[h])return;S.route=h;try{history.replaceState(null,"","#"+h)}catch(e){}NET.stop();render();try{scrollTo(0,0)}catch(e){}}
-document.addEventListener("click",e=>{const a=e.target.closest?.('a[href^="#"]');if(!a)return;const h=a.getAttribute("href").slice(1);if(VIEWS[h]){e.preventDefault();go(h)}},true);
+function go(h){if(!VIEWS[h])return;try{S.db&&S.db.collection("errors").add({where:"nav",msg:"tap "+h,route:S.route,at:new Date().toISOString()}).catch(()=>{})}catch(e){}S.route=h;try{history.replaceState(null,"","#"+h)}catch(e){}NET.stop();render();try{scrollTo(0,0)}catch(e){}}
+document.addEventListener("click",e=>{const a=e.target.closest?.('a[href^="#"]');if(!a)return;const h=a.getAttribute("href").slice(1);if(VIEWS[h]){e.preventDefault();try{go(h)}catch(err){report(err,"go "+h)}}},true);
 addEventListener("hashchange",route);
 route();
 fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};setTimeout(()=>{if(typeof POST!=="undefined")POST.scan()},0);if(S.route==="finder"){const l=$("#flist");if(l)l.innerHTML=finderList()}}).catch(()=>{});
 (async()=>{
   const C=window.claude;if(!C){$("#who").textContent="Open this page in claude.ai to see live data.";return}
   const [db,user,sample]=await Promise.all([C.use("db"),C.use("user"),C.use("sample")]);
-  S.db=db;S.user=user;S.sample=sample;
+  S.db=db;S.user=user;S.sample=sample;if(db)ERRQ.forEach(e=>db.collection("errors").add(e).catch(()=>{}));db&&db.collection("errors").add({where:"boot",msg:"page opened",route:S.route,ua:navigator.userAgent.slice(0,200),at:new Date().toISOString()}).catch(()=>{});
   if(user){const w=await user.can?.("data.write");S.write=w!==false;$("#who").textContent=user.isOwner?.()?"Owner · full control":S.write?"You can edit":"View only"}
   if(!db){$("#who").textContent="Live data isn't available in this view.";S.write=false;soon();return}
   const live=(path,key)=>db.collection(path).onSnapshot(s=>{S[key]=s.docs.map(d=>({_id:d.id,...d.data()}));if(key==="inbox")S.inbox.sort((a,b)=>String(b.creat).localeCompare(String(a.creat)));if(key==="finder"&&document.activeElement?.id==="fq"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}soon()},()=>{});

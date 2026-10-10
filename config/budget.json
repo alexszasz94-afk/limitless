@@ -1,0 +1,6 @@
+{
+  "_note": "Frâne de buget. Planificatorul nu programează producție peste aceste limite.",
+  "credits_per_day": 2000,
+  "max_credits_per_video": 300,
+  "target_credits_per_video": 200
+}

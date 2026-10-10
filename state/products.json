@@ -1,0 +1,82 @@
+[
+  {
+    "id": "P1",
+    "nume": "Halat încălzit cu glugă",
+    "categorie": "îmbrăcăminte cozy",
+    "status": "test",
+    "metrici": {
+      "pret": 59.99,
+      "concurenti": 3,
+      "usd1m": 5500,
+      "marja": 0.62,
+      "usor": 8
+    },
+    "criterii": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true,
+      "8": true,
+      "9": true,
+      "10": true
+    },
+    "viteza_max": 240000,
+    "scor": 65,
+    "verdict": "trece",
+    "adaugat": "2026-10-10 10:09",
+    "link": null
+  },
+  {
+    "id": "P2",
+    "nume": "Lampă LED cu proiecție de zăpadă",
+    "categorie": "decor sărbători",
+    "status": "candidat",
+    "metrici": {
+      "pret": 44.99,
+      "concurenti": 2,
+      "usd1m": 3100,
+      "marja": 0.58,
+      "usor": 7
+    },
+    "criterii": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true
+    },
+    "viteza_max": 130000,
+    "scor": 49,
+    "verdict": "în evaluare",
+    "adaugat": "2026-10-10 10:09",
+    "link": null
+  },
+  {
+    "id": "P3",
+    "nume": "Pernă de masaj pentru gât",
+    "categorie": "wellness",
+    "status": "respins",
+    "metrici": {
+      "pret": 29.99,
+      "concurenti": 9,
+      "usd1m": 1400,
+      "marja": 0.55,
+      "usor": 6
+    },
+    "criterii": {
+      "2": false,
+      "3": false,
+      "4": false
+    },
+    "viteza_max": 60000,
+    "scor": 0,
+    "verdict": "picat",
+    "adaugat": "2026-10-10 10:09",
+    "link": null
+  }
+]

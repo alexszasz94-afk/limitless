@@ -18,6 +18,13 @@ Distribuție și cifre: `distribution/` (portalul de postare) și `social_tracke
 
 Unelte de producție: EXCLUSIV Genjutsu motion control (`hf_mult_motion_control`), Seedance 2.5, GPT Image 2.5 (regulile din 10 oct). Fără `hf_mult_replace_object`.
 
+Comenzile lui Szasz (motorul: `python3 engine/limitless.py ...`, starea în `state/`):
+- `start` / `panou` → `status`, apoi `dashboard` și republică `dashboard/index.html` ca Artifact (același link: https://claude.ai/artifact/2rZYir23Hs1HxZokVQbYRd).
+- `produs nou <link>` → `produs-nou`, apoi fișa din docs/04 și `evalueaza` pe cele 10 condiții din docs/09.
+- `viral <link> <views> <ore>` → `viral-nou` (≥100k/24 h = dovedit).
+- `planifică` → `planifica` (rețeta full_genjutsu, în bugetul din config/budget.json).
+- Când apare primul produs real: șterge datele de exemplu (`state/`, meta.demo).
+
 Reguli de lucru:
 - Orice regulă nouă de la Szasz (`regula: ...`) → linie datată în `docs/02-reguli.md`.
 - Orice afirmație de tip „merge” trebuie legată de o cifră (retenție, views, CTR, comenzi). Fără cifră e ipoteză și se marchează ca atare.

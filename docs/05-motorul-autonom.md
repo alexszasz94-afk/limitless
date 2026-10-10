@@ -1,0 +1,58 @@
+# Motorul autonom LIMITLESS
+
+(10 oct 2026, Szasz) O aplicație care lucrează **singură** și **în paralel**: găsește cele mai virale videouri, le reproduce cu Higgsfield (Genjutsu și restul uneltelor) la **cel mai mic cost**, cu alt personaj și altă cameră, le montează complet, respectă toate regulile ca toate videourile să aibă **același stil**, le trimite la postare și învață din cifre.
+
+## Bucla (rulează continuu)
+```
+ VÂNĂTOR ─► ANALIST ─► PLANIFICATOR ─► PRODUCĂTOR ─► QA ─► MONTAJ ─► QA final ─► DISTRIBUȚIE ─► TRACKER
+    ▲                                                                                              │
+    └──────────────────────────────── ÎNVĂȚARE (scor, reguli, prețuri) ◄────────────────────────────┘
+```
+
+| Agent | Ce face | Intrare → ieșire |
+|---|---|---|
+| **Vânător** | caută zilnic videourile outlier (views ≥ 3× media contului) pe IG / TikTok / FB / YT Shorts, în nișa produsului | conturi + cuvinte cheie → `queue/virale` |
+| **Analist** | taie viralul pe cadre: hook, acțiune, ritm, text, audio, structură; dă scor de potrivire cu produsul | viral → fișă de cadre |
+| **Planificator** | pentru fiecare cadru alege **unealta cea mai ieftină care trece QA** (vezi mai jos), alege setul (personaj + cameră) din rotație, estimează costul | fișă → rețetă de producție + cost |
+| **Producător** | trimite generările în paralel, în limita bugetului zilnic de credite | rețetă → clipuri brute |
+| **QA** | verifică vizual fiecare clip (produs identic, personaj = referința, fără text / branduri, format 9:16) — max 3 încercări, apoi trece la unealta următoare | clip → acceptat / refă |
+| **Montaj** | tăieturi, ritm, text pe ecran, emoji, muzică, durată — după **Cartea de stil** | clipuri → MP4 final + caption |
+| **Distribuție** | pune MP4-ul în coada portalului (`distribution/`), pe conturi, fără repetări | MP4 → postat |
+| **Tracker + Învățare** | cifrele la 24 h / 7 zile → scor pe hook, pe unealtă, pe set, pe cont; actualizează regulile și prețurile | cifre → reguli noi |
+
+Toți agenții lucrează **în același timp** pe videouri diferite (coadă comună, fiecare video are o stare: `găsit → analizat → planificat → produs → verificat → montat → postat → măsurat`).
+
+## Cel mai mic cost: scara uneltelor
+Pentru fiecare cadru, Planificatorul încearcă în ordinea costului și urcă doar când QA pică:
+1. **Reutilizare** — clip din bibliotecă deja aprobat (0 credite).
+2. **Montaj fără AI** — apropiere lentă / mișcare din imagine statică cu ffmpeg (0 credite).
+3. **Genjutsu motion control** — mișcarea din viral + personajul + camera noastră.
+4. **Placă imagine + video** — imagine de start, apoi animație (când Genjutsu e respins, ex. `ip_detected`).
+5. Unelte noi descoperite în research-ul Higgsfield (`playbooks/higgsfield.md`).
+
+Se măsoară **costul pe secundă acceptată** (credite / secunde care trec QA) pe fiecare unealtă și tip de cadru; scara se reordonează singură după cifre. Prețurile exacte se completează din research-ul Higgsfield și din tranzacțiile reale.
+
+## Același stil: Cartea de stil
+Fișier unic (`library/stil.json` + `docs/06-carte-de-stil.md`) pe care îl citesc Planificatorul, Montajul și QA:
+- durată, structură (hook → demonstrație → detaliu → final), ritm de tăiere;
+- font, mărime, poziție, contur, emoji pentru textul de pe ecran;
+- reguli de muzică și sunet;
+- lumină, culori, cameră fixă, fără zoom, fără text ars, fără branduri;
+- regulile per categorie de produs (`docs/04-produs-universal.md`).
+Orice regulă nouă de la Szasz intră aici și se aplică automat la toate videourile următoare.
+
+## Cum rulează singur
+- **Creierul**: sesiuni Claude Code programate (Routines) — dimineața research + plan, apoi loturi de producție la câteva ore, seara raport. Fiecare sesiune folosește Higgsfield prin MCP și agenți în paralel.
+- **Mâinile**: scripturi Python în `engine/` (descărcare, tăiere, montaj ffmpeg, cozi, buget) — deterministe, ieftine, fără AI unde nu e nevoie.
+- **Memoria**: starea în repo (`state/`), commit după fiecare lot.
+- **Frâne**: buget zilnic de credite Higgsfield și Apify; oprire și raport când se atinge; niciodată același viral / set / hook prea des.
+- **Szasz** primește doar raportul zilnic și poate interveni cu `regula: ...`.
+
+## Ordinea de construcție
+1. Cozi + stări + buget (`engine/queue`, `engine/budget`).
+2. Vânător + Analist (Apify + cadre + audio).
+3. Cartea de stil + Montaj automat.
+4. Planificator cu scara uneltelor + Producător + QA.
+5. Legătura cu `distribution/` și `social_tracker/`.
+6. Învățarea (scoruri, reordonarea scării, promovarea hook-urilor).
+7. Programarea (Routines) — sistemul pornește singur.

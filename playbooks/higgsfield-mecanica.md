@@ -1,6 +1,6 @@
 # Higgsfield — mecanica uneltelor (Genjutsu · Seedance 2.5 · GPT Image 2.5)
 
-> **Regula din 10 oct (Szasz):** din Genjutsu folosim DOAR motion control (`hf_mult_motion_control`). Secțiunile despre `hf_mult_replace_object` rămân doar ca informație — nu intră în producție.
+> **Regula din 10 oct (Szasz):** din Genjutsu folosim DOAR motion control (`hf_mult_motion_control`). Secțiunile despre `hf_mult_replace_object` rămân doar ca informație până la testul A/B de mai jos (§10.0), după care se decide definitiv.
 
 Manual tehnic pentru agenții LIMITLESS (Planificator, Producător, QA) care refac virale de produs cu alt personaj și altă cameră. Arată ce face fiecare unealtă cu fiecare intrare: prompt, imagini, video, audio. Data: 10 oct 2026.
 Completează `playbooks/higgsfield.md` (sinteza YouTube): acolo sunt regulile generale, aici sunt mecanismele și rețetele.
@@ -585,6 +585,14 @@ Pentru video extragi cadre la 0/20/40/60/80/100% plus **ultimul cadru mărit** (
 ---
 
 ## 10. Experimente de făcut la primul produs
+
+### 10.0 Test A/B: motion control vs replace_object (cerut de Szasz, 10 oct)
+Pe primul produs, 3 virale diferite, fiecare făcut în ambele feluri:
+- **A. Motion control** — clipul viralului (curățat de text) + personajul nostru + camera noastră + 1–2 referințe produs, 1080p.
+- **B. Replace_object** — aplicat pe un clip **al nostru** (ex. rezultatul A sau o filmare proprie), ca să schimbe produsul / varianta; NU pe viralul brut al competitorului (personajul și camera lui ar rămâne → conținut neoriginal, risc de restricție pe Facebook).
+- **B'. (doar ca test intern, nepostat)** replace_object direct pe viral, ca să vedem fidelitatea produsului — rezultatul nu se postează.
+Se notează pentru fiecare: fidelitatea produsului (QA), naturalețea mișcării, fața/personajul, refuzuri (ip_detected), credite consumate, timp. Mai întâi la 480p (15 credite/clip) pentru comparație ieftină, apoi câștigătorul la 1080p.
+Decizia intră în `docs/02-reguli.md` cu cifrele.
 
 Ce nu știm sigur. Fiecare test are o singură variabilă și un cost mic. Rezultatul (cifra) se trece înapoi aici și în `config/costs.json`.
 

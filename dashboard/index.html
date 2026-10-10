@@ -158,6 +158,24 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 .topc p{margin:4px 0;max-width:80ch}
 .topc a.btn{text-decoration:none}
 .tb{display:flex;flex-direction:column;gap:6px;min-width:0}
+.lane{display:grid;grid-template-columns:240px minmax(0,1fr);gap:14px;border:1px solid var(--edge);border-radius:20px;background:var(--glass);padding:14px;min-width:0}
+.lside{display:flex;flex-direction:column;gap:8px;min-width:0}
+.lside h3{margin:0;font-family:var(--f-display);font-weight:600;font-size:16px}
+.lside .cap{margin:0;font-size:13px;color:var(--text)}
+.lside .vid{max-width:220px}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin:0;font-size:12px}.meta dt{color:var(--dim)}.meta dd{margin:0;text-align:right;font-family:var(--f-data)}
+.lgroups{display:flex;flex-direction:column;gap:12px;min-width:0}
+.ghead{display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:8px}
+.gdot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+.shots{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px}
+.shot{flex:none;width:280px;border:1px solid var(--edge);border-top:3px solid var(--gc);border-radius:14px;background:var(--deck);padding:12px;display:flex;flex-direction:column;gap:6px}
+.shot h4{margin:0;font-size:14px}.shot p{margin:0;font-size:12.5px}
+.sid{font-family:var(--f-data);font-size:12px;color:var(--ion)}
+.mono{font-family:var(--f-data);font-size:11px}
+.pr summary{cursor:pointer;font-size:12.5px;color:var(--ion)}
+.pblk{border-top:1px solid var(--edge);padding-top:6px;margin-top:6px}
+.pblk pre{white-space:pre-wrap;font-family:var(--f-data);font-size:11px;max-height:220px;overflow:auto;background:var(--deck-2);border-radius:8px;padding:8px;margin:4px 0 0}
+@media (max-width:860px){.lane{grid-template-columns:1fr}.lside .vid{max-width:200px}}
 .verdict{font-size:13px;border-radius:10px;padding:8px 12px;margin-bottom:12px;border:1px solid var(--edge)}
 .verdict.v-ok{border-color:var(--ok);background:var(--ok-soft)}.verdict.v-warn{border-color:var(--warn);background:var(--warn-soft)}.verdict.v-bad{border-color:var(--bad);background:var(--bad-soft)}
 .link{font:inherit;font-size:12.5px;background:none;border:0;color:var(--ion);cursor:pointer;text-decoration:underline;padding:0 0 0 6px}
@@ -189,6 +207,7 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
   <a href="#finder" data-r="finder"><i>01</i>Product finder</a>
   <a href="#products" data-r="products"><i>02</i>Products</a>
   <a href="#virals" data-r="virals"><i>03</i>Virals</a>
+  <a href="#boards" data-r="boards"><i>04</i>Video boards</a>
   <a href="#production" data-r="production"><i>04</i>Production</a>
   <a href="#strategy" data-r="strategy"><i>05</i>Strategy</a>
   <a href="#business" data-r="business"><i>06</i>Business</a>
@@ -207,7 +226,7 @@ const STADII=["găsit","analizat","planificat","produs","verificat","montat","po
 const SE={"găsit":"found","analizat":"analyzed","planificat":"planned","produs":"produced","verificat":"QA passed","montat":"edited","postat":"posted","măsurat":"measured"};
 const STATE_EN={"activ":"active","așteaptă":"waiting","în construcție":"building"};
 const AGENTI=[["vanator","Hunter","finds UGC virals ≥100k / 24 h"],["analist","Analyst","breaks each viral down shot by shot"],["planificator","Planner","picks the cheapest recipe"],["producator","Producer","Genjutsu · Seedance · GPT Image"],["qa","QA","checks every clip"],["montaj","Editor","text, pacing, music"],["distributie","Distribution","accounts and posters"],["invatare","Learner","numbers → new rules"],["strateg","Strategist","studies the market, finds a better way"]];
-const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",launch:{},ai:{},finder:[],strategy:null,fq:"",fg:"",posters:{},takes:{},top:null,fmedia:{}};
+const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",launch:{},ai:{},finder:[],strategy:null,fq:"",fg:"",posters:{},takes:{},top:null,fmedia:{},boards:[],board:"",lanes:{}};
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt=n=>(n==null||n==="")?"–":Number(n).toLocaleString("en-US");
@@ -329,7 +348,7 @@ function vRequests(){
   ${S.write?`<section class="panel"><form id="fCerere" style="display:flex;flex-direction:column;gap:10px"><label for="ct">Your request<textarea id="ct" name="text" required placeholder="e.g. Find me 3 winter products for women 30+ under $60"></textarea></label><div><button class="btn solid" type="submit">Send</button></div></form></section>`:""}
   ${S.inbox.length?inboxList(S.inbox):`<div class="empty"><b>No requests yet</b>Write the first one above.</div>`}`;
 }
-function acctCard(a,variation){const mm=S.fmedia[a.handle];if(mm&&!a.mkey){a={...a,mkey:mm.mkey,dur:mm.dur};}
+function acctCard(a,variation){const mm=S.fmedia[a.handle];if(mm&&!a.mkey){a={...a,mkey:mm.mkey,dur:mm.dur,media:"fv/"+mm.mkey+".mp4"};}
   const tv=a.top_views?fmt(a.top_views):"–";
   return `<article class="acct">
     <header><a href="${esc(a.url)}" target="_blank" rel="noopener">@${esc(a.handle)}</a><span class="chip c-ion">${esc((a.platform||"IG").slice(0,2).toUpperCase())}</span></header>
@@ -412,7 +431,38 @@ function vTop(){
     <p><b>Why:</b> ${esc(it.why)}</p><p><b>How we win:</b> ${esc(it.edge)}</p><p class="muted"><b>Watch out:</b> ${esc(it.risk)}</p>
     <div class="row"><a class="btn" href="#finder" data-act="seefind" data-q="${esc(it.q||it.title)}">See the videos</a>${S.write?`<button class="btn ${ok?"":"solid"}" data-act="approve" data-id="${esc(it.id)}">${ok?"Withdraw approval":"Approve for test"}</button>`:""}</div></div></li>`}).join("")}</ol>`;
 }
-const VIEWS={top:vTop,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
+function shotCard(c,g){
+  const st=c.status||"";const k=st==="approved"?"ok":st==="rejected"?"bad":"warn";
+  return `<article class="shot" style="--gc:${esc(g.color||"var(--ion)")}"><div class="row" style="justify-content:space-between"><b class="sid">${esc((c.clip||"").toUpperCase())}</b>${chip(st||"–",k)}</div>
+    <h4>${esc(c.title)}</h4><p class="muted">${esc(c.desc||"")}</p>
+    ${c.variant?chip(c.variant,"pl"):""}
+    <div class="row">${Object.entries(c.tags||{}).map(([a,b])=>`<span class="chip c-ion">${esc(b)}</span>`).join("")}${c.driver?chip("motion transfer","pl"):""}</div>
+    ${c.take_info?`<div class="muted mono">${esc([].concat(c.take_info).join(" · "))}</div>`:""}
+    ${c.prompts?.length?`<details class="pr"><summary>Prompts · ${c.prompts.length}</summary>${c.prompts.map((pp,i)=>`<div class="pblk"><div class="row" style="justify-content:space-between"><b>${esc(pp.label||"")}</b>${pp.text?`<button class="link" data-act="copy" data-t="${esc(c.clip)}" data-i="${i}">Copy</button>`:""}</div>${pp.meta?`<div class="muted mono">${esc(pp.meta)}</div>`:""}<pre>${esc(pp.text||"")}</pre></div>`).join("")}</details>`:""}
+  </article>`;
+}
+function laneRow(L){
+  const meta=Object.fromEntries(L.meta||[]);const fin=L.has_final?`bv/${L.board}_v${L.n}.mp4`:null;
+  return `<section class="lane"><aside class="lside"><div class="kicker">Video ${L.n}</div><h3>${esc(L.title)}</h3>${L.caption?`<p class="cap">“${esc(L.caption)}”</p>`:""}
+    ${fin?`<button class="vid" data-act="play" data-src="${esc(fin)}" aria-label="Play video ${L.n}"><span class="pl">▶</span></button>`:`<div class="vid none">Not cut yet</div>`}
+    <dl class="meta">${(L.meta||[]).map(([a,b])=>`<dt>${esc(a)}</dt><dd>${esc(b)}</dd>`).join("")}</dl>
+    ${L.source?`<p class="muted">Copies ${esc(L.source.account||"")} · ${esc(L.source.views||"")} ${L.source.url?`<a href="${esc(L.source.url)}" target="_blank" rel="noopener">open reel</a>`:""}</p>`:""}</aside>
+    <div class="lgroups">${(L.groups||[]).map(g=>`<div class="grp"><div class="ghead"><span class="gdot" style="background:${esc(g.color||"var(--ion)")}"></span><b>${esc(g.name)}</b><span class="muted">${esc(g.sub||"")}</span></div><div class="shots">${(g.cards||[]).map(c=>shotCard(c,g)).join("")}</div></div>`).join("")}</div></section>`;
+}
+function vBoards(){
+  const B=S.boards;if(!B.length)return `<div class="top"><div><div class="kicker">video boards</div><h1>Video boards</h1></div></div><div class="empty"><b>Loading boards…</b></div>`;
+  const cur=B.find(b=>b._id===S.board)||B[0];S.board=cur._id;
+  const lanes=(cur.lanes||[]).map(l=>S.lanes[l.doc]).filter(Boolean).sort((a,b)=>b.n-a.n);
+  if(!S._lanesub||S._lanesub!==cur._id){S._lanesub=cur._id;loadLanes(cur)}
+  const posted=(cur.lanes||[]).filter(l=>String(l.status||"").startsWith("Posted")).length;
+  return `<div class="top"><div><div class="kicker">video boards · how every video was made</div><h1>${esc(cur.brand)}</h1></div><div class="sub">${(cur.lanes||[]).length} videos · ${posted} posted · newest first</div></div>
+  <section class="panel sticky"><div class="row">${B.map(b=>`<button class="btn ${b._id===cur._id?"solid":""}" data-act="board" data-id="${b._id}">${esc(b.brand)}</button>`).join("")}</div>
+   ${cur.legend?.length?`<div class="row" style="margin-top:8px">${cur.legend.map(l=>`<span class="row" style="gap:6px"><span class="gdot" style="background:${esc(l.color)}"></span>${esc(l.text)}</span>`).join("")}</div>`:""}</section>
+  ${(cur.panels||[]).filter(p=>p.items?.length&&p.items.join("").trim()).map(p=>`<details class="panel"><summary><b>${esc(p.title)}</b></summary><ol class="rules">${p.items.map(i=>`<li>${esc(i)}</li>`).join("")}</ol></details>`).join("")}
+  ${lanes.length?lanes.map(laneRow).join(""):`<div class="empty"><b>Loading videos…</b></div>`}`;
+}
+async function loadLanes(b){for(const l of b.lanes||[]){if(S.lanes[l.doc])continue;try{const s=await S.db.doc("lanes/"+l.doc).get();if(s.exists)S.lanes[l.doc]=s.data();}catch(e){}}if(S.route==="boards")render()}
+const VIEWS={top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
 
 function render(){
   const r=VIEWS[S.route]?S.route:"brain";
@@ -505,6 +555,8 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="step")run(async()=>{const k=b.dataset.k,cur={...(S.launch||{})};cur[k]=!cur[k];await S.db.doc("config/launch").set(cur)},b);
   if(a==="approve")run(async()=>{const id=b.dataset.id,ap={...((S.top||{}).approved||{})};ap[id]=!ap[id];if(!ap[id])delete ap[id];await S.db.doc("config/top10").update({approved:ap})},b);
   if(a==="seefind"){S.fq=b.dataset.q;S.fg="";}
+  if(a==="board"){S.board=b.dataset.id;S._lanesub=null;render();return}
+  if(a==="copy"){const L=Object.values(S.lanes).find(l=>(l.groups||[]).some(g=>(g.cards||[]).some(c=>c.clip===b.dataset.t&&b.closest(".lane")&&true)));const pre=b.closest(".pblk")?.querySelector("pre");if(pre){navigator.clipboard?.writeText(pre.textContent).then(()=>toast("Prompt copied"),()=>{const r=document.createRange();r.selectNodeContents(pre);const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Selected — copy it")})}return}
   if(a==="ai")analyze(b.dataset.id);
   if(a==="angles")angles(b.dataset.id);
   if(a==="tofind")run(async()=>{const f=S.finder.find(x=>x._id===b.dataset.id);if(!f)return;const best=f.variations.flatMap(v=>v.accounts).sort((x,y)=>y.avg_views-x.avg_views)[0];
@@ -547,6 +599,7 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};if(S
   if(!db){$("#who").textContent="Live data isn't available in this view.";S.write=false;render();return}
   const live=(path,key)=>db.collection(path).onSnapshot(s=>{S[key]=s.docs.map(d=>({_id:d.id,...d.data()}));if(key==="inbox")S.inbox.sort((a,b)=>String(b.creat).localeCompare(String(a.creat)));if(key==="finder"&&document.activeElement?.id==="fq"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}render()},()=>{});
   live("products","products");live("finder","finder");
+  db.collection("boards").onSnapshot(s=>{S.boards=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")render()},()=>{});
   db.collection("takes").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.takes=m;if(S.route==="finder"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}},()=>{});
   db.doc("config/strategy").onSnapshot(s=>{S.strategy=s.exists?s.data():null;if(S.route==="strategy")render()},()=>{});live("virals","virals");live("inbox","inbox");
   db.doc("config/main").onSnapshot(s=>{S.cfg=s.exists?s.data():null;render()},()=>{});

@@ -1,120 +1,428 @@
-<title>LIMITLESS Control</title>
+<title>LIMITLESS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
-/* Layout: o coloană de lucru, rezumatul sus, apoi fluxul, produsele, coada și prețurile. */
+/* Layout: glass command rail on the left (bottom dock on phones) + module stage; the Brain opens with a live 3D neural core. Dark-first. */
 :root{
-  --bg:#eef1f3; --panel:#ffffff; --ink:#15212b; --muted:#5b6873; --line:#d6dde2;
-  --accent:#0b6e88; --accent-soft:#d8ecf1;
-  --ok:#1f7a4a; --ok-soft:#dcefe4; --warn:#9a6200; --warn-soft:#f6ead2; --bad:#a3322a; --bad-soft:#f5dfdc;
-  --f-display:"Archivo",system-ui,sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-data:"IBM Plex Mono",ui-monospace,monospace;
+  --void:#05060d; --deck:#0b0e1d; --deck-2:#11152b; --edge:#20274a; --text:#eef0ff; --dim:#8a92c4;
+  --ion:#5de4ff; --plasma:#b48cff; --flare:#ff7ad9; --ion-soft:rgba(93,228,255,.12); --plasma-soft:rgba(180,140,255,.14);
+  --ok:#43e6a0; --ok-soft:rgba(67,230,160,.13); --warn:#ffc65c; --warn-soft:rgba(255,198,92,.13); --bad:#ff6b8b; --bad-soft:rgba(255,107,139,.13);
+  --glass:rgba(17,21,43,.62); --grid:rgba(93,228,255,.06);
+  --f-display:"Unbounded",system-ui,sans-serif; --f-body:"Sora",system-ui,sans-serif; --f-data:"JetBrains Mono",ui-monospace,monospace;
+  color-scheme:dark;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0f1519; --panel:#172027; --ink:#e3eaee; --muted:#93a2ad; --line:#26333c;
-  --accent:#4fb7d1; --accent-soft:#143440;
-  --ok:#5cc38a; --ok-soft:#173326; --warn:#e0a640; --warn-soft:#3a2c12; --bad:#ec7a70; --bad-soft:#3c1d1a; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0f1519; --panel:#172027; --ink:#e3eaee; --muted:#93a2ad; --line:#26333c;
-  --accent:#4fb7d1; --accent-soft:#143440;
-  --ok:#5cc38a; --ok-soft:#173326; --warn:#e0a640; --warn-soft:#3a2c12; --bad:#ec7a70; --bad-soft:#3c1d1a; color-scheme:dark}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --void:#eceefb; --deck:#ffffff; --deck-2:#f3f4fd; --edge:#d7daf1; --text:#11142f; --dim:#5a618f;
+  --ion:#0086b0; --plasma:#6a3fd6; --flare:#c2268f; --ion-soft:rgba(0,134,176,.10); --plasma-soft:rgba(106,63,214,.10);
+  --ok:#0f8f5c; --ok-soft:rgba(15,143,92,.12); --warn:#a76a00; --warn-soft:rgba(167,106,0,.12); --bad:#c42b4f; --bad-soft:rgba(196,43,79,.10);
+  --glass:rgba(255,255,255,.72); --grid:rgba(0,134,176,.07); color-scheme:light}}
+:root[data-theme="light"]{
+  --void:#eceefb; --deck:#ffffff; --deck-2:#f3f4fd; --edge:#d7daf1; --text:#11142f; --dim:#5a618f;
+  --ion:#0086b0; --plasma:#6a3fd6; --flare:#c2268f; --ion-soft:rgba(0,134,176,.10); --plasma-soft:rgba(106,63,214,.10);
+  --ok:#0f8f5c; --ok-soft:rgba(15,143,92,.12); --warn:#a76a00; --warn-soft:rgba(167,106,0,.12); --bad:#c42b4f; --bad-soft:rgba(196,43,79,.10);
+  --glass:rgba(255,255,255,.72); --grid:rgba(0,134,176,.07); color-scheme:light}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;padding-inline:16px;padding-block:20px 48px}
-.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
-header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px}
-.mark{font-family:var(--f-display);font-weight:800;font-size:clamp(28px,5vw,40px);letter-spacing:.14em;margin:0}
-.mark span{color:var(--accent)}
-.sub{color:var(--muted);font-family:var(--f-data);font-size:12.5px}
-.demo{background:var(--warn-soft);color:var(--warn);border:1px solid var(--warn);border-radius:6px;padding:10px 14px;font-size:14px}
-h2{font-family:var(--f-display);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;font-weight:700}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-.kpi{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
-.kpi b{font-family:var(--f-data);font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
-.kpi small{color:var(--muted);font-size:13px}
-.meter{height:8px;border-radius:4px;background:var(--line);overflow:hidden;margin-top:6px}
-.meter i{display:block;height:100%;background:var(--accent)}
-.flow{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px}
-.stage{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 8px;text-align:center;min-width:0}
-.stage b{display:block;font-family:var(--f-data);font-size:22px;font-variant-numeric:tabular-nums}
-.stage span{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
-.stage.on{border-color:var(--accent);background:var(--accent-soft)}
-@media (max-width:640px){.flow{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
-.prod{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
-.prod h3{margin:0;font-family:var(--f-display);font-size:18px;text-wrap:balance}
-.row{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:13px;color:var(--muted)}
-.row b{color:var(--ink);font-family:var(--f-data);font-weight:500}
-.score{display:flex;align-items:center;gap:10px}
-.score .meter{flex:1;margin:0}
-.score b{font-family:var(--f-data);font-size:20px;min-width:2.5ch;text-align:right}
-.chip{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap}
-.c-ok{background:var(--ok-soft);color:var(--ok)} .c-warn{background:var(--warn-soft);color:var(--warn)}
-.c-bad{background:var(--bad-soft);color:var(--bad)} .c-acc{background:var(--accent-soft);color:var(--accent)}
+html,body{height:100%}
+body{margin:0;background:var(--void);color:var(--text);font-family:var(--f-body);font-size:15px;line-height:1.5;
+  background-image:radial-gradient(1100px 620px at 88% -12%,var(--plasma-soft),transparent 60%),radial-gradient(900px 520px at -8% 108%,var(--ion-soft),transparent 60%),
+  linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:auto,auto,44px 44px,44px 44px;background-attachment:fixed}
+.app{display:grid;grid-template-columns:240px minmax(0,1fr);min-height:100%}
+nav.rail{position:sticky;top:env(safe-area-inset-top,0px);height:100vh;padding:22px 14px;border-right:1px solid var(--edge);display:flex;flex-direction:column;gap:3px;background:var(--glass);backdrop-filter:blur(16px) saturate(140%)}
+.brand{font-family:var(--f-display);font-weight:800;font-size:19px;letter-spacing:.2em;padding:4px 10px 4px}
+.brand b{background:linear-gradient(90deg,var(--ion),var(--plasma),var(--flare));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{font-family:var(--f-data);font-size:10.5px;letter-spacing:.18em;color:var(--dim);padding:0 10px 18px;text-transform:uppercase}
+nav.rail a{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;color:var(--dim);text-decoration:none;font-size:14px;font-weight:500;transition:background .2s,color .2s}
+nav.rail a:hover{color:var(--text);background:var(--deck-2)}
+nav.rail a[aria-current="page"]{color:var(--text);background:linear-gradient(90deg,var(--ion-soft),transparent);box-shadow:inset 2px 0 0 var(--ion)}
+nav.rail a i{font-style:normal;font-family:var(--f-data);font-size:10.5px;width:22px;color:var(--ion)}
+nav.rail .sp{flex:1}
+.who{font-size:12px;color:var(--dim);padding:10px;border-top:1px solid var(--edge);display:flex;gap:8px;align-items:center}
+.who::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px var(--ok);flex:none}
+main{padding-inline:30px;padding-block:26px 96px;max-width:1260px;width:100%;display:flex;flex-direction:column;gap:22px;min-width:0}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 20px}
+h1{font-family:var(--f-display);font-weight:600;font-size:clamp(22px,3.2vw,34px);margin:0;letter-spacing:.01em;text-wrap:balance}
+.kicker{font-family:var(--f-data);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ion)}
+.sub{color:var(--dim);font-size:13.5px}
+h2{font-family:var(--f-data);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:0 0 10px;font-weight:600}
+.panel{background:var(--glass);backdrop-filter:blur(14px);border:1px solid var(--edge);border-radius:18px;padding:18px;min-width:0}
+.banner{border:1px solid var(--warn);background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:10px 14px;font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between}
+/* brain */
+.brain{position:relative;overflow:hidden;padding:0;height:min(460px,62vw);min-height:320px;border-radius:22px;border:1px solid var(--edge);
+  background:radial-gradient(60% 80% at 65% 50%,var(--plasma-soft),transparent 70%),var(--deck)}
+.brain::after{content:"";position:absolute;inset:0;border-radius:22px;padding:1px;background:linear-gradient(120deg,var(--ion),transparent 30%,transparent 70%,var(--plasma));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.7}
+.brain canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.brain .ov{position:absolute;left:0;top:0;padding:22px 24px;display:flex;flex-direction:column;gap:8px;pointer-events:none;max-width:400px}
+.brain .ov b{font-family:var(--f-display);font-weight:600;font-size:clamp(20px,2.6vw,28px);line-height:1.2}
+.brain .ov .stats{display:flex;gap:18px;margin-top:6px;font-family:var(--f-data);font-size:12px;color:var(--dim)}
+.brain .ov .stats b{font-size:20px;color:var(--text);display:block;font-family:var(--f-data)}
+.brain .hint{position:absolute;right:16px;bottom:12px;font-family:var(--f-data);font-size:11px;color:var(--dim)}
+.agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.agent{display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid var(--edge);border-radius:14px;background:var(--glass);min-width:0;transition:border-color .2s,transform .2s}
+.agent:hover{border-color:var(--ion);transform:translateY(-1px)}
+.agent .dot{width:9px;height:9px;border-radius:50%;margin-top:6px;flex:none;background:var(--plasma)}
+.agent .dot.on{background:var(--ok);box-shadow:0 0 12px var(--ok)}
+.agent .dot.wait{background:var(--warn)}
+.agent b{font-size:14px;display:block}
+.agent span{font-size:12.5px;color:var(--dim);overflow-wrap:anywhere}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.kpi{padding:14px 16px;border:1px solid var(--edge);border-radius:16px;background:var(--glass);display:flex;flex-direction:column;gap:2px;position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--ion),var(--plasma));opacity:.8}
+.kpi small{color:var(--dim);font-size:12.5px}
+.kpi b{font-family:var(--f-data);font-size:28px;font-weight:600;font-variant-numeric:tabular-nums}
+.bar{height:6px;border-radius:3px;background:var(--edge);overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--ion),var(--plasma))}
+.flow{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;position:relative}
+.st{padding:10px 6px;border:1px solid var(--edge);border-radius:12px;text-align:center;background:var(--glass);min-width:0}
+.st b{display:block;font-family:var(--f-data);font-size:20px}
+.st span{font-size:11px;color:var(--dim);overflow-wrap:anywhere;font-family:var(--f-data);letter-spacing:.04em}
+.st.on{border-color:var(--ion);background:var(--ion-soft);box-shadow:0 0 24px -10px var(--ion)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:14px}
+.card{border:1px solid var(--edge);border-radius:16px;background:var(--glass);padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.card h3{margin:0;font-family:var(--f-display);font-size:16px;font-weight:600;text-wrap:balance}
+.row{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:13px;color:var(--dim)}
+.row b{color:var(--text);font-family:var(--f-data);font-weight:400}
+.chip{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap;font-family:var(--f-data);letter-spacing:.03em}
+.c-ok{background:var(--ok-soft);color:var(--ok)}.c-warn{background:var(--warn-soft);color:var(--warn)}.c-bad{background:var(--bad-soft);color:var(--bad)}.c-ion{background:var(--ion-soft);color:var(--ion)}.c-pl{background:var(--plasma-soft);color:var(--plasma)}
+.score{display:flex;align-items:center;gap:10px}.score .bar{flex:1;margin:0}.score b{font-family:var(--f-data);font-size:22px;min-width:3ch;text-align:right}
 .crit{display:grid;grid-template-columns:repeat(10,1fr);gap:4px}
-.crit i{height:22px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-style:normal;font-family:var(--f-data);font-size:11px;border:1px solid var(--line);color:var(--muted)}
-.crit i.y{background:var(--ok-soft);color:var(--ok);border-color:transparent}
-.crit i.n{background:var(--bad-soft);color:var(--bad);border-color:transparent}
-.tbl{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
-table{width:100%;border-collapse:collapse;font-size:14px}
-th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
-th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
-td.n{font-family:var(--f-data);font-variant-numeric:tabular-nums;text-align:right}
+.crit button{height:26px;border-radius:7px;border:1px solid var(--edge);background:transparent;color:var(--dim);font-family:var(--f-data);font-size:11px;cursor:pointer;padding:0}
+.crit button.y{background:var(--ok-soft);color:var(--ok);border-color:transparent}
+.crit button.n{background:var(--bad-soft);color:var(--bad);border-color:transparent}
+.crit button:disabled{cursor:default}
+.tbl{overflow-x:auto;border:1px solid var(--edge);border-radius:16px;background:var(--glass)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--edge);white-space:nowrap}
+th{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-weight:600;font-family:var(--f-data)}
+td.n{font-family:var(--f-data);text-align:right;font-variant-numeric:tabular-nums}
 tr:last-child td{border-bottom:0}
-a{color:var(--accent)}
-.legend{font-size:12.5px;color:var(--muted);margin-top:8px}
-.cmds{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
-.cmd{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0}
-.cmd code{font-family:var(--f-data);font-size:13.5px;color:var(--accent);font-weight:600}
-.cmd p{margin:4px 0 0;font-size:13.5px;color:var(--muted)}
+a{color:var(--ion)}
+form.f{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;align-items:end}
+label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--dim)}
+input,select,textarea{font:inherit;font-size:14px;color:var(--text);background:var(--deck-2);border:1px solid var(--edge);border-radius:10px;padding:9px 10px;min-width:0}
+textarea{min-height:84px;resize:vertical}
+input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid var(--ion);outline-offset:2px}
+.btn{font:inherit;font-size:13.5px;font-weight:600;border-radius:10px;padding:9px 14px;cursor:pointer;border:1px solid var(--ion);background:var(--ion-soft);color:var(--text)}
+.btn.solid{background:linear-gradient(90deg,var(--ion),var(--plasma));color:#05060d;border:0;box-shadow:0 8px 28px -10px var(--plasma)}
+.btn:disabled{opacity:.5;cursor:default}
+.muted{color:var(--dim);font-size:13px}
+.empty{border:1px dashed var(--edge);border-radius:16px;padding:22px;color:var(--dim);font-size:14px;display:flex;flex-direction:column;gap:6px;background:var(--glass)}
+.empty b{color:var(--text);font-family:var(--f-display);font-weight:600;font-size:15px}
+.ai{border:1px solid var(--plasma);background:var(--plasma-soft);border-radius:12px;padding:12px;font-size:13.5px;white-space:pre-wrap;overflow-wrap:anywhere}
+.mods{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.mod{border:1px solid var(--edge);border-radius:16px;padding:16px;background:var(--glass);display:flex;flex-direction:column;gap:6px}
+.mod b{font-family:var(--f-display);font-weight:600;font-size:15px}
+.rules{padding-left:18px;margin:0;columns:2 380px;column-gap:28px}
+.rules li{margin-bottom:8px;font-size:14px;break-inside:avoid}
+@media (max-width:860px){
+  .app{grid-template-columns:1fr}
+  nav.rail{position:fixed;bottom:0;top:auto;left:0;right:0;height:auto;flex-direction:row;overflow-x:auto;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));border-right:0;border-top:1px solid var(--edge);z-index:5}
+  nav.rail .brand,nav.rail .tag,nav.rail .sp,.who{display:none}
+  nav.rail a{flex:none;flex-direction:column;gap:2px;font-size:11px;padding:6px 10px}
+  main{padding-inline:16px;padding-block:18px 116px}
+  .flow{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .brain .ov{max-width:100%}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
 </style>
-<div class="wrap">
-<header><h1 class="mark">LIMIT<span>LESS</span></h1><span class="sub">actualizat 2026-10-10 10:09 UTC · țintă 5.000.000 $ · unelte: Genjutsu motion control, Seedance 2.5, GPT Image 2.5</span></header>
-<div class="demo" role="note"><b>Date de exemplu.</b> Produsele și viralele de mai jos sunt inventate ca să vezi cum arată panoul. Dispar la primul produs real.</div>
 
-<section class="kpis" aria-label="Rezumat">
-  <div class="kpi"><small>Produse urmărite</small><b>3</b><small>1 trec toate cele 10 condiții</small></div>
-  <div class="kpi"><small>Virale dovedite (≥100k/24 h)</small><b>4</b><small>din 6 găsite</small></div>
-  <div class="kpi"><small>Videouri în lucru</small><b>4</b><small>planificate → montate</small></div>
-  <div class="kpi"><small>Credite planificate azi</small><b>344 / 2,000</b><div class="meter" role="img" aria-label="17% din bugetul zilnic"><i style="width:17%"></i></div></div>
-  <div class="kpi"><small>Cost estimat pe video (full Genjutsu)</small><b>~172</b><small>credite ≈ $7–10</small></div>
-</section>
-<section><h2>Fluxul fiecărui video</h2><div class="flow"><div class="stage on"><b>2</b><span>găsit</span></div><div class="stage"><b>0</b><span>analizat</span></div><div class="stage on"><b>2</b><span>planificat</span></div><div class="stage on"><b>1</b><span>produs</span></div><div class="stage"><b>0</b><span>verificat</span></div><div class="stage on"><b>1</b><span>montat</span></div><div class="stage"><b>0</b><span>postat</span></div><div class="stage"><b>0</b><span>măsurat</span></div></div></section>
-<section><h2>Produse</h2><div class="prods">
-<article class="prod">
-  <div class="row" style="justify-content:space-between"><span>îmbrăcăminte cozy</span><span class="chip c-ok">trece</span></div>
-  <h3>Halat încălzit cu glugă</h3>
-  <div class="score"><div class="meter" role="img" aria-label="scor 65 din 100"><i style="width:65%"></i></div><b>65</b></div>
-  <div class="crit" aria-label="Cele 10 condiții"><i class="y" title="1. Dovadă de cerere (≥100k/24 h sau reclame care rulează)">1</i><i class="y" title="2. ≤ 4 concurenți organici activi">2</i><i class="y" title="3. Preț ≥ 38,99 $">3</i><i class="y" title="4. ≥ 2.000 $ la 1M vizualizări (test order)">4</i><i class="y" title="5. Public american cu bani (25+)">5</i><i class="y" title="6. Se înțelege în 1–3 s cum funcționează">6</i><i class="y" title="7. Îl putem face mai bine decât concurenții">7</i><i class="y" title="8. Iese fidel cu uneltele noastre">8</i><i class="y" title="9. Livrare sigură în SUA, risc mic de chargeback">9</i><i class="y" title="10. Se potrivește sezonului / evergreen">10</i></div>
-  <div class="row"><span>Preț <b>$59.99</b></span><span>$/1M <b>5,500</b></span><span>Concurenți <b>3</b></span><span>Viral max <b>240,000/24h</b></span></div>
-</article>
-<article class="prod">
-  <div class="row" style="justify-content:space-between"><span>decor sărbători</span><span class="chip c-warn">în evaluare</span></div>
-  <h3>Lampă LED cu proiecție de zăpadă</h3>
-  <div class="score"><div class="meter" role="img" aria-label="scor 49 din 100"><i style="width:49%"></i></div><b>49</b></div>
-  <div class="crit" aria-label="Cele 10 condiții"><i class="y" title="1. Dovadă de cerere (≥100k/24 h sau reclame care rulează)">1</i><i class="y" title="2. ≤ 4 concurenți organici activi">2</i><i class="y" title="3. Preț ≥ 38,99 $">3</i><i class="y" title="4. ≥ 2.000 $ la 1M vizualizări (test order)">4</i><i class="y" title="5. Public american cu bani (25+)">5</i><i class="y" title="6. Se înțelege în 1–3 s cum funcționează">6</i><i class="y" title="7. Îl putem face mai bine decât concurenții">7</i><i class="" title="8. Iese fidel cu uneltele noastre">8</i><i class="" title="9. Livrare sigură în SUA, risc mic de chargeback">9</i><i class="" title="10. Se potrivește sezonului / evergreen">10</i></div>
-  <div class="row"><span>Preț <b>$44.99</b></span><span>$/1M <b>3,100</b></span><span>Concurenți <b>2</b></span><span>Viral max <b>130,000/24h</b></span></div>
-</article>
-<article class="prod">
-  <div class="row" style="justify-content:space-between"><span>wellness</span><span class="chip c-bad">picat</span></div>
-  <h3>Pernă de masaj pentru gât</h3>
-  <div class="score"><div class="meter" role="img" aria-label="scor 0 din 100"><i style="width:0%"></i></div><b>0</b></div>
-  <div class="crit" aria-label="Cele 10 condiții"><i class="" title="1. Dovadă de cerere (≥100k/24 h sau reclame care rulează)">1</i><i class="n" title="2. ≤ 4 concurenți organici activi">2</i><i class="n" title="3. Preț ≥ 38,99 $">3</i><i class="n" title="4. ≥ 2.000 $ la 1M vizualizări (test order)">4</i><i class="" title="5. Public american cu bani (25+)">5</i><i class="" title="6. Se înțelege în 1–3 s cum funcționează">6</i><i class="" title="7. Îl putem face mai bine decât concurenții">7</i><i class="" title="8. Iese fidel cu uneltele noastre">8</i><i class="" title="9. Livrare sigură în SUA, risc mic de chargeback">9</i><i class="" title="10. Se potrivește sezonului / evergreen">10</i></div>
-  <div class="row"><span>Preț <b>$29.99</b></span><span>$/1M <b>1,400</b></span><span>Concurenți <b>9</b></span><span>Viral max <b>60,000/24h</b></span></div>
-</article></div>
-<p class="legend">Pătratele 1–10 sunt condițiile din docs/09: verde = trece, roșu = pică, gol = de verificat. Un singur roșu oprește produsul.</p></section>
-<section><h2>Coada de virale</h2><div class="tbl"><table><thead><tr><th>Cont</th><th>Produs</th><th style="text-align:right">Vizualizări / 24 h</th><th>Semnal</th><th>Stadiu</th><th>Rețetă</th><th style="text-align:right">Credite</th></tr></thead><tbody><tr><td><a href="https://www.instagram.com/reel/EXEMPLU3/">@warm.example</a></td><td>Halat încălzit cu glugă</td>
-<td class="n">76,000</td><td><span class="chip c-warn">sub prag</span></td>
-<td><span class="chip c-acc">găsit</span></td><td>–</td><td class="n">–</td></tr><tr><td><a href="https://www.instagram.com/reel/EXEMPLU6/">@decor.example</a></td><td>Lampă LED cu proiecție de zăpadă</td>
-<td class="n">70,000</td><td><span class="chip c-warn">sub prag</span></td>
-<td><span class="chip c-acc">găsit</span></td><td>–</td><td class="n">–</td></tr><tr><td><a href="https://www.instagram.com/reel/EXEMPLU1/">@cozy.example</a></td><td>Halat încălzit cu glugă</td>
-<td class="n">372,000</td><td><span class="chip c-ok">dovedit</span></td>
-<td><span class="chip c-acc">planificat</span></td><td>full_genjutsu</td><td class="n">172</td></tr><tr><td><a href="https://www.instagram.com/reel/EXEMPLU4/">@glow.example</a></td><td>Lampă LED cu proiecție de zăpadă</td>
-<td class="n">186,667</td><td><span class="chip c-ok">dovedit</span></td>
-<td><span class="chip c-acc">planificat</span></td><td>full_genjutsu</td><td class="n">172</td></tr><tr><td><a href="https://www.instagram.com/reel/EXEMPLU2/">@snug.example</a></td><td>Halat încălzit cu glugă</td>
-<td class="n">196,364</td><td><span class="chip c-ok">dovedit</span></td>
-<td><span class="chip c-acc">produs</span></td><td>full_genjutsu</td><td class="n">172</td></tr><tr><td><a href="https://www.instagram.com/reel/EXEMPLU5/">@home.example</a></td><td>Halat încălzit cu glugă</td>
-<td class="n">240,000</td><td><span class="chip c-ok">dovedit</span></td>
-<td><span class="chip c-acc">montat</span></td><td>full_genjutsu</td><td class="n">172</td></tr></tbody></table></div></section>
-<section><h2>Prețuri Higgsfield (măsurate)</h2><div class="tbl"><table><thead><tr><th>Unealtă</th><th style="text-align:right">Credite</th><th>Detalii</th></tr></thead><tbody><tr><td>genjutsu clip</td><td class="n">44–55</td><td style="white-space:normal;min-width:240px">get_cost 10 oct, 1080p: referință ≤ ~4 s = 44 (minim), ~5 s = 55 (~11 cr/s). 720p 5 s = 35, 480p 5 s = 15</td></tr><tr><td>seedance 2 5 clip</td><td class="n">28–60</td><td style="white-space:normal;min-width:240px">get_cost 10 oct: 1080p 5 s = 60 (12 cr/s), 15 s = 180; 720p 4 s = 28; draft 480p 5 s = 15; video_edit 5 s 1080p = 57</td></tr><tr><td>gpt image</td><td class="n">0.25–15</td><td style="white-space:normal;min-width:240px">get_cost 10 oct GPT Image 2.5: 1k low 0,25; 2k medium 1; 4k high 4,25; 4k max 15</td></tr><tr><td>sound fx</td><td class="n">0.1–1.5</td><td style="white-space:normal;min-width:240px">observat</td></tr><tr><td>genjutsu replace object</td><td class="n">55–55</td><td style="white-space:normal;min-width:240px">get_cost 10 oct, 1080p ~5 s</td></tr></tbody></table></div>
-<p class="legend">1 credit ≈ $0.04–0.06 (de confirmat cu prețul planului tău).</p></section>
-<section><h2>Ce îmi spui ca să lucrez</h2><div class="cmds"><div class="cmd"><code>produs nou &lt;link&gt;</code><p>Fac fișa produsului și îl trec prin cele 10 condiții.</p></div><div class="cmd"><code>evaluează P1</code><p>Completez prețul, concurenții, $/1M (test order) și recalculez scorul.</p></div><div class="cmd"><code>viral &lt;link&gt; &lt;views&gt; &lt;ore&gt;</code><p>Calculez viteza; peste 100k/24 h intră direct în coadă.</p></div><div class="cmd"><code>planifică</code><p>Aleg viralele dovedite, rețeta cea mai ieftină și le programez în bugetul zilei.</p></div><div class="cmd"><code>status</code><p>Îți spun unde e fiecare produs și fiecare video.</p></div><div class="cmd"><code>regula: …</code><p>O trec datată în reguli și se aplică la tot ce urmează.</p></div></div></section>
+<div class="app">
+<nav class="rail" aria-label="Modules">
+  <div class="brand">LIMIT<b>LESS</b></div>
+  <div class="tag">organic commerce brain</div>
+  <a href="#brain" data-r="brain"><i>00</i>Brain</a>
+  <a href="#finder" data-r="finder"><i>01</i>Product finder</a>
+  <a href="#products" data-r="products"><i>02</i>Products</a>
+  <a href="#virals" data-r="virals"><i>03</i>Virals</a>
+  <a href="#production" data-r="production"><i>04</i>Production</a>
+  <a href="#strategy" data-r="strategy"><i>05</i>Strategy</a>
+  <a href="#business" data-r="business"><i>06</i>Business</a>
+  <a href="#rules" data-r="rules"><i>07</i>Rules & costs</a>
+  <a href="#requests" data-r="requests"><i>08</i>Ask Claude</a>
+  <div class="sp"></div>
+  <div class="who" id="who">Connecting…</div>
+</nav>
+<main id="view" aria-live="polite"></main>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const CRIT=["Proven demand (≥100k views in 24 h or long-running paid ads)","≤ 4 active organic competitors","Price ≥ $38.99","≥ $2,000 per 1M views (test order)","US buyers with money (25+)","Understood in 1–3 seconds","We can do it better than competitors","Renders faithfully with our tools","Reliable US shipping, low chargeback risk","Fits the season / evergreen"];
+const STADII=["găsit","analizat","planificat","produs","verificat","montat","postat","măsurat"];
+const SE={"găsit":"found","analizat":"analyzed","planificat":"planned","produs":"produced","verificat":"QA passed","montat":"edited","postat":"posted","măsurat":"measured"};
+const STATE_EN={"activ":"active","așteaptă":"waiting","în construcție":"building"};
+const AGENTI=[["vanator","Hunter","finds UGC virals ≥100k / 24 h"],["analist","Analyst","breaks each viral down shot by shot"],["planificator","Planner","picks the cheapest recipe"],["producator","Producer","Genjutsu · Seedance · GPT Image"],["qa","QA","checks every clip"],["montaj","Editor","text, pacing, music"],["distributie","Distribution","accounts and posters"],["invatare","Learner","numbers → new rules"],["strateg","Strategist","studies the market, finds a better way"]];
+const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",ai:{},finder:[],strategy:null,fq:"",fg:""};
+const $=s=>document.querySelector(s);
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=n=>(n==null||n==="")?"–":Number(n).toLocaleString("en-US");
+const chip=(t,k)=>`<span class="chip c-${k}">${esc(t)}</span>`;
+const vel=(views,h)=>Math.round(views/Math.max(Number(h)||1,1)*24);
+const nowIso=()=>new Date().toISOString().slice(0,16).replace("T"," ");
+const VERDICT={"trece":"passes","picat":"rejected","în evaluare":"in review"};
+
+function scor(p){
+  const m=p.metrici||{},c=p.criterii||{};
+  if(Object.values(c).some(v=>v===false)) return [0,"picat"];
+  const usd=Math.min((m.usd1m||0)/10000,1),vit=Math.min((p.viteza_max||0)/300000,1);
+  const conc=m.concurenti==null?0:Math.max(0,1-m.concurenti/5),marja=Math.min((m.marja||0)/.7,1),usor=(m.usor||0)/10;
+  const s=Math.round(100*(.4*usd+.2*vit+.15*conc+.15*marja+.1*usor));
+  return [s,CRIT.every((_,i)=>c[i+1]===true)?"trece":"în evaluare"];
+}
+function autoCrit(p){const m=p.metrici||{},c={...(p.criterii||{})};
+  if(m.pret!=null)c[3]=Number(m.pret)>=38.99;
+  if(m.concurenti!=null)c[2]=Number(m.concurenti)<=4;
+  if(m.usd1m!=null)c[4]=Number(m.usd1m)>=2000;
+  return c;}
+const costVideo=()=>S.cfg?.cost_video_est??172;
+const buget=()=>S.cfg?.buget?.credits_per_day??2000;
+
+/* ---------- views ---------- */
+function demoBanner(){return S.cfg?.demo?`<div class="banner"><span><b>Sample data.</b> These products and virals are made up so you can see the platform working.</span>${S.write?`<button class="btn" data-act="cleardemo">Clear samples</button>`:""}</div>`:""}
+function vBrain(){
+  const dov=S.virals.filter(v=>v.dovedit).length, work=S.virals.filter(v=>["planificat","produs","verificat","montat"].includes(v.stadiu)).length;
+  const plan=S.virals.filter(v=>v.stadiu==="planificat").reduce((a,v)=>a+(v.credite_est||0),0);
+  const pct=Math.min(100,Math.round(100*plan/buget()));
+  const flow=STADII.map(s=>{const n=S.virals.filter(v=>v.stadiu===s).length;return `<div class="st${n?" on":""}"><b>${n}</b><span>${SE[s]}</span></div>`}).join("");
+  const ag=AGENTI.map(([k,n,d])=>{const a=S.agents[k]||{};const st=a.stare||"în construcție";const cls=st==="activ"?"on":st==="așteaptă"?"wait":"";
+    return `<div class="agent"><span class="dot ${cls}"></span><div><b>${n}</b><span>${esc(a.ultima_en||d)}</span><br><span class="chip ${cls==="on"?"c-ok":cls==="wait"?"c-warn":"c-pl"}">${STATE_EN[st]||esc(st)}</span></div></div>`}).join("");
+  const active=AGENTI.filter(([k])=>S.agents[k]?.stare==="activ").length;
+  return `${demoBanner()}
+  <div class="top"><div><div class="kicker">LIMITLESS · brain</div><h1>Everything happening right now</h1></div><div class="sub">target $5,000,000 · Genjutsu motion control · Seedance 2.5 · GPT Image 2.5</div></div>
+  <section class="brain" aria-label="3D agent network"><canvas id="net"></canvas>
+    <div class="ov"><span class="kicker">9 agents · one loop</span><b>find → remake → post → learn</b><span class="sub">Each node is an agent. Pulses are videos moving through the loop.</span>
+      <div class="stats"><span><b>${active}/9</b>agents live</span><span><b>${dov}</b>proven virals</span><span><b>${work}</b>in production</span></div></div>
+    <span class="hint">drag to rotate</span></section>
+  <section class="kpis">
+    <div class="kpi"><small>Products tracked</small><b>${S.products.length}</b><small>${S.products.filter(p=>scor(p)[1]==="trece").length} pass all 10 checks</small></div>
+    <div class="kpi"><small>Proven virals</small><b>${dov}</b><small>≥100,000 views in 24 h</small></div>
+    <div class="kpi"><small>Videos in production</small><b>${work}</b><small>planned → edited</small></div>
+    <div class="kpi"><small>Credits scheduled today</small><b>${fmt(plan)}</b><div class="bar"><i style="width:${pct}%"></i></div><small>of ${fmt(buget())} daily budget</small></div>
+  </section>
+  <section><h2>Agents</h2><div class="agents">${ag}</div></section>
+  <section><h2>Video pipeline</h2><div class="flow">${flow}</div></section>
+  <section><h2>Latest requests</h2>${S.inbox.length?inboxList(S.inbox.slice(0,4)):`<div class="empty"><b>No requests yet</b>Write one in “Ask Claude”. I pick them up when you tell me “requests” in chat.</div>`}</section>`;
+}
+function vProducts(){
+  const cards=[...S.products].sort((a,b)=>scor(b)[0]-scor(a)[0]).map(p=>{
+    const [s,ver]=scor(p),m=p.metrici||{},c=p.criterii||{},k=ver==="trece"?"ok":ver==="picat"?"bad":"warn";
+    const crit=CRIT.map((t,i)=>{const v=c[i+1];return `<button ${S.write?"":"disabled"} class="${v===true?"y":v===false?"n":""}" data-act="crit" data-id="${p._id}" data-i="${i+1}" title="${i+1}. ${esc(t)}" aria-label="Check ${i+1}: ${esc(t)} — ${v===true?"pass":v===false?"fail":"unchecked"}">${i+1}</button>`}).join("");
+    const ai=S.ai[p._id];
+    return `<article class="card"><div class="row" style="justify-content:space-between"><span>${esc(p.categorie_en||p.categorie||"no category")}${p.demo?" · sample":""}</span>${chip(VERDICT[ver],k)}</div>
+      <h3>${esc(p.nume_en||p.nume)}</h3>
+      <div class="score"><div class="bar"><i style="width:${s}%"></i></div><b>${s}</b></div>
+      <div class="crit">${crit}</div>
+      <div class="row"><span>Price <b>${m.pret?"$"+m.pret:"–"}</b></span><span>$/1M <b>${fmt(m.usd1m)}</b></span><span>Competitors <b>${m.concurenti??"–"}</b></span><span>Top viral <b>${fmt(p.viteza_max||0)}/24h</b></span></div>
+      ${p.link?`<a href="${esc(p.link)}" target="_blank" rel="noopener">Product page</a>`:""}
+      ${S.sample?`<div class="row"><button class="btn" data-act="ai" data-id="${p._id}">Analyze with Claude</button></div>`:""}
+      ${ai?`<div class="ai">${ai.html||esc(ai.text||"")}</div>`:""}
+      ${p.idei?`<div class="ai"><b>Saved ideas</b>\n${esc(p.idei)}</div>`:""}
+    </article>`}).join("");
+  return `<div class="top"><div><div class="kicker">01 · products</div><h1>What's worth running</h1></div><div class="sub">Tap a square to mark it: empty → pass → fail. One red stops the product.</div></div>
+  ${S.write?`<section class="panel"><h2>Add a product</h2><form class="f" id="fProd">
+    <label for="pn">Name<input id="pn" name="nume" required placeholder="e.g. Christmas star projector"></label>
+    <label for="pl">Link<input id="pl" name="link" type="url" placeholder="https://…"></label>
+    <label for="pc">Category<input id="pc" name="categorie" placeholder="holiday decor"></label>
+    <label for="pp">Price ($)<input id="pp" name="pret" type="number" step="0.01"></label>
+    <label for="pk">Organic competitors<input id="pk" name="concurenti" type="number"></label>
+    <label for="pu">$ per 1M views<input id="pu" name="usd1m" type="number"></label>
+    <label for="pm">Margin (%)<input id="pm" name="marja" type="number"></label>
+    <label for="pe">Ease to produce (0–10)<input id="pe" name="usor" type="number" min="0" max="10"></label>
+    <button class="btn solid" type="submit">Add product</button></form></section>`:""}
+  ${cards?`<div class="grid2">${cards}</div>`:`<div class="empty"><b>No products yet</b>Add one above or send me “new product” with its link in chat.</div>`}`;
+}
+function vVirals(){
+  const pn=Object.fromEntries(S.products.map(p=>[p._id,p.nume_en||p.nume]));
+  const rows=[...S.virals].sort((a,b)=>STADII.indexOf(a.stadiu)-STADII.indexOf(b.stadiu)||b.viteza24h-a.viteza24h).map(v=>`<tr>
+    <td><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.cont||"link")}</a></td><td>${esc(v.format||"UGC")}</td><td>${esc(pn[v.produs]||"–")}</td>
+    <td class="n">${fmt(v.viteza24h)}</td><td>${v.dovedit?chip("proven","ok"):chip("below bar","warn")}</td>
+    <td>${S.write?`<select aria-label="Stage" data-act="stadiu" data-id="${v._id}">${STADII.map(s=>`<option value="${s}" ${s===v.stadiu?"selected":""}>${SE[s]}</option>`).join("")}</select>`:chip(SE[v.stadiu],"ion")}</td>
+    <td>${esc(v.reteta||"–")}</td><td class="n">${v.credite_est||"–"}</td></tr>`).join("");
+  return `<div class="top"><div><div class="kicker">02 · virals</div><h1>UGC viral queue</h1></div><div class="sub">Over 100,000 views in 24 h = proven to sell.</div></div>
+  ${S.write?`<section class="panel"><h2>Add a viral</h2><form class="f" id="fViral">
+    <label for="vu">Link<input id="vu" name="url" type="url" required></label>
+    <label for="vc">Account<input id="vc" name="cont" placeholder="@account"></label>
+    <label for="vf">Format<select id="vf" name="format"><option>UGC</option><option>review</option><option>demo</option><option>unboxing</option><option>reaction</option><option>other</option></select></label>
+    <label for="vp">Product<select id="vp" name="produs"><option value="">–</option>${S.products.map(p=>`<option value="${p._id}">${esc(p.nume_en||p.nume)}</option>`).join("")}</select></label>
+    <label for="vv">Views<input id="vv" name="views" type="number" required></label>
+    <label for="vo">Hours since posted<input id="vo" name="ore" type="number" step="0.5" required></label>
+    <button class="btn solid" type="submit">Add viral</button></form></section>`:""}
+  ${rows?`<div class="tbl"><table><thead><tr><th>Account</th><th>Format</th><th>Product</th><th style="text-align:right">Views / 24 h</th><th>Signal</th><th>Stage</th><th>Recipe</th><th style="text-align:right">Credits</th></tr></thead><tbody>${rows}</tbody></table></div>`:`<div class="empty"><b>The queue is empty</b>Add a viral above. Once scanning is on, the Hunter fills it by itself.</div>`}`;
+}
+function vProduction(){
+  const cols=["planificat","produs","verificat","montat","postat"].map(s=>{const it=S.virals.filter(v=>v.stadiu===s);
+    return `<div class="card"><div class="row" style="justify-content:space-between"><b style="font-family:var(--f-display);font-weight:600;color:var(--text)">${SE[s]}</b>${chip(String(it.length),"ion")}</div>${it.map(v=>`<div class="row"><span>${esc(v.cont||"viral")}</span><b>${v.credite_est||"–"} cr</b></div>`).join("")||`<span class="muted">nothing here</span>`}</div>`}).join("");
+  const cand=S.virals.filter(v=>v.dovedit&&["găsit","analizat"].includes(v.stadiu)).length;
+  return `<div class="top"><div><div class="kicker">03 · production</div><h1>What gets made today</h1></div><div class="sub">Base recipe: full Genjutsu motion control · ~${costVideo()} credits / video · ${fmt(buget())} credits / day</div></div>
+  <section class="panel"><h2>Plan the day</h2><p class="muted">Takes proven virals from the queue, fastest first, and schedules them until today's budget is full. ${cand} waiting now.</p>${S.write?`<button class="btn solid" data-act="plan" ${cand?"":"disabled"}>Plan today</button>`:""}</section>
+  <div class="grid2">${cols}</div>`;
+}
+function vBusiness(){
+  const mods=[["Shopify stores","One store per product, built automatically from your questions. Payments through your own processor.","to connect"],["Orders","Orders from every store, by day and by product.","to connect"],["Customer support","Shared inbox, ready-made replies, returns.","building"],["Fulfillment","Suppliers, US delivery times, parcel tracking.","building"],["Distribution","Posters, accounts and 3 videos a day per account.","code ready"],["Analytics","Views, followers, top videos at 24 h and 7 days.","code ready"],["Money","Revenue, cost per video, credits, profit per product.","building"],["Product scout","Meta Ads + rising competitors → new products.","paused"]];
+  return `<div class="top"><div><div class="kicker">04 · business</div><h1>The whole business in one place</h1></div><div class="sub">Each module lights up as soon as we connect it.</div></div>
+  <div class="mods">${mods.map(([t,d,s])=>`<div class="mod"><div class="row" style="justify-content:space-between"><b style="color:var(--text)">${t}</b>${chip(s,s==="code ready"?"ion":s==="to connect"?"warn":s==="paused"?"bad":"pl")}</div><span class="muted">${d}</span></div>`).join("")}</div>`;
+}
+function vRules(){
+  const r=S.cfg?.rules_en||[],pr=S.cfg?.prices_en||S.cfg?.preturi||[];
+  return `<div class="top"><div><div class="kicker">05 · rules & costs</div><h1>How the brain works</h1></div><div class="sub">Newer rules beat older ones. Add one by telling me “rule: …”.</div></div>
+  <section class="panel"><h2>Higgsfield prices (measured)</h2>${pr.length?`<div class="tbl"><table><thead><tr><th>Tool</th><th>Setting</th><th style="text-align:right">Credits</th></tr></thead><tbody>${pr.map(x=>`<tr><td>${esc(x[0])}</td><td>${esc(x[1])}</td><td class="n">${esc(x[2])}</td></tr>`).join("")}</tbody></table></div>`:`<p class="muted">Loading…</p>`}</section>
+  <section class="panel"><h2>Rules</h2>${r.length?`<ol class="rules">${r.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>`:`<p class="muted">Loading…</p>`}</section>`;
+}
+function inboxList(items){return `<div class="tbl"><table><thead><tr><th>Request</th><th>Status</th><th>When</th></tr></thead><tbody>${items.map(i=>`<tr><td style="white-space:normal;min-width:240px">${esc(i.text)}${i.raspuns?`<div class="muted" style="margin-top:4px">↳ ${esc(i.raspuns)}</div>`:""}</td><td>${chip({nou:"new",preluat:"in progress",gata:"done"}[i.status||"nou"]||i.status,i.status==="gata"?"ok":i.status==="preluat"?"ion":"warn")}</td><td class="n">${esc(i.creat||"")}</td></tr>`).join("")}</tbody></table></div>`}
+function vRequests(){
+  return `<div class="top"><div><div class="kicker">06 · ask claude</div><h1>Tell the brain what you want</h1></div><div class="sub">I pick these up when you write “requests” in chat. The answer shows under each one.</div></div>
+  ${S.write?`<section class="panel"><form id="fCerere" style="display:flex;flex-direction:column;gap:10px"><label for="ct">Your request<textarea id="ct" name="text" required placeholder="e.g. Find me 3 winter products for women 30+ under $60"></textarea></label><div><button class="btn solid" type="submit">Send</button></div></form></section>`:""}
+  ${S.inbox.length?inboxList(S.inbox):`<div class="empty"><b>No requests yet</b>Write the first one above.</div>`}`;
+}
+function finderList(){
+  const q=S.fq.toLowerCase(),g=S.fg;
+  const items=S.finder.filter(f=>(!g||f.group===g)&&(!q||(f.title+" "+f.variations.map(v=>v.title).join(" ")).toLowerCase().includes(q))).sort((a,b)=>b.best_avg_views-a.best_avg_views);
+  if(!items.length)return `<div class="empty"><b>Nothing matches</b>Try another word or category.</div>`;
+  return `<div class="grid2">${items.map(f=>{const tv=f.top_video;return `<article class="card"><div class="row" style="justify-content:space-between"><span>${esc(f.group)}</span>${chip(fmt(f.best_avg_views)+" avg views","ion")}</div>
+    <h3>${esc(f.title)}</h3>
+    <div class="row"><span>Accounts <b>${f.accounts}</b></span><span>Variations <b>${f.variations.length}</b></span><span>Followers <b>${fmt(f.followers)}</b></span></div>
+    ${tv?`<div class="row"><span>Top video <b>${fmt(tv.views)}</b> views</span><a href="${esc(tv.url)}" target="_blank" rel="noopener">watch @${esc(tv.handle)}</a></div>`:""}
+    <details><summary class="muted" style="cursor:pointer">Variations and accounts</summary><div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">${f.variations.map(v=>`<div><b style="font-size:13.5px">${esc(v.title)}</b>${v.accounts.map(a=>`<div class="row"><a href="${esc(a.url)}" target="_blank" rel="noopener">@${esc(a.handle)}</a><span><b>${fmt(a.avg_views)}</b> avg</span><span><b>${fmt(a.followers)}</b> followers</span>${a.website?`<a href="${esc(a.website)}" target="_blank" rel="noopener">store</a>`:""}</div>`).join("")}</div>`).join("")}</div></details>
+    ${S.write?`<div><button class="btn" data-act="tofind" data-id="${f._id}">Send to Products</button></div>`:""}</article>`}).join("")}</div>`;
+}
+function vFinder(){
+  const groups=[...new Set(S.finder.map(f=>f.group))].sort();
+  return `<div class="top"><div><div class="kicker">01 · product finder</div><h1>${S.finder.length||""} products already selling</h1></div><div class="sub">From the archive: ${fmt(S.finder.reduce((a,f)=>a+f.accounts,0))} accounts, checked ${esc(S.finder[0]?.checked||"")}. Ranked by average views of each account's current product.</div></div>
+  <section class="panel"><form class="f" id="fFind" role="search"><label for="fq">Search<input id="fq" value="${esc(S.fq)}" placeholder="robe, projector, ski…"></label><label for="fg">Category<select id="fg"><option value="">All</option>${groups.map(g=>`<option ${g===S.fg?"selected":""}>${esc(g)}</option>`).join("")}</select></label></form></section>
+  <div id="flist">${S.finder.length?finderList():`<div class="empty"><b>Loading the product finder…</b></div>`}</div>`;
+}
+function vStrategy(){
+  const s=S.strategy;
+  if(!s)return `<div class="top"><div><div class="kicker">05 · strategy</div><h1>The Strategist's view</h1></div></div><div class="empty"><b>No report yet</b>The Strategist writes here after each market study.</div>`;
+  return `<div class="top"><div><div class="kicker">05 · strategy</div><h1>${esc(s.headline||"The Strategist's view")}</h1></div><div class="sub">${esc(s.date||"")} · full report: docs/12-strateg.md</div></div>
+  <section class="kpis">${(s.numbers||[]).map(n=>`<div class="kpi"><small>${esc(n[0])}</small><b>${esc(n[1])}</b><small>${esc(n[2]||"")}</small></div>`).join("")}</section>
+  <section><h2>Do better: top ideas</h2><div class="grid2">${(s.ideas||[]).map((i,k)=>`<article class="card"><div class="row" style="justify-content:space-between"><span>#${k+1}</span>${chip(i.impact||"","pl")}</div><h3>${esc(i.title)}</h3><span class="muted">${esc(i.why)}</span></article>`).join("")}</div></section>
+  <section class="panel"><h2>Big risks</h2><ol class="rules">${(s.risks||[]).map(r=>`<li>${esc(r)}</li>`).join("")}</ol></section>
+  <section class="panel"><h2>Decisions waiting on you</h2><ol class="rules">${(s.questions||[]).map(r=>`<li>${esc(r)}</li>`).join("")}</ol></section>`;
+}
+const VIEWS={brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
+
+function render(){
+  const r=VIEWS[S.route]?S.route:"brain";
+  document.querySelectorAll("nav.rail a").forEach(a=>{if(a.dataset.r===r)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  const keepNet=r==="brain"&&NET.alive&&$("#net");
+  if(keepNet){ /* update only the parts around the 3D scene so it keeps spinning */
+    const tmp=document.createElement("div");tmp.innerHTML=vBrain();const old=$("#view");const cv=$("#net");
+    tmp.querySelector("#net").replaceWith(cv);old.replaceChildren(...tmp.childNodes);NET.refresh();return;}
+  $("#view").innerHTML=VIEWS[r]();
+  if(r==="brain")NET.start($("#net"));else NET.stop();
+}
+
+/* ---------- 3D neural core (three.js) ---------- */
+const NET={alive:false,raf:0,
+  stop(){cancelAnimationFrame(this.raf);this.alive=false;if(this.r){this.r.dispose();this.r=null}},
+  refresh(){if(this.nodes)this.nodes.forEach(n=>{const on=S.agents[n.k]?.stare==="activ";n.mesh.material.color.set(on?this.c.ok:this.c.pl);n.halo.material.opacity=on?.55:.25})},
+  start(cv){
+    this.stop();if(!cv)return;
+    if(!window.THREE){cv.parentElement.querySelector(".hint").textContent="";return}
+    const css=getComputedStyle(document.documentElement),g=n=>css.getPropertyValue(n).trim();
+    this.c={ion:g("--ion"),pl:g("--plasma"),ok:g("--ok"),fl:g("--flare"),edge:g("--edge"),txt:g("--dim")};
+    const still=matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const r=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});this.r=r;r.setPixelRatio(Math.min(devicePixelRatio,2));
+    const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1,.1,100);cam.position.set(0,1.6,9);
+    const root=new THREE.Group();scene.add(root);
+    const wide=()=>cv.clientWidth>700;
+    const fit=()=>{const w=cv.clientWidth,h=cv.clientHeight;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();root.position.x=wide()?1.8:0;root.position.y=wide()?0:-.6};
+    fit();this._fit=fit;addEventListener("resize",fit);
+    // core: wire icosahedron + point cloud shell
+    const core=new THREE.Mesh(new THREE.IcosahedronGeometry(1.15,2),new THREE.MeshBasicMaterial({color:this.c.pl,wireframe:true,transparent:true,opacity:.55}));root.add(core);
+    const inner=new THREE.Mesh(new THREE.IcosahedronGeometry(.55,1),new THREE.MeshBasicMaterial({color:this.c.ion,transparent:true,opacity:.85}));root.add(inner);
+    const pts=new THREE.BufferGeometry(),P=[];for(let i=0;i<900;i++){const u=Math.random()*2-1,t=Math.random()*Math.PI*2,rr=1.6+Math.random()*1.4,s=Math.sqrt(1-u*u);P.push(rr*s*Math.cos(t),rr*u*.7,rr*s*Math.sin(t))}
+    pts.setAttribute("position",new THREE.Float32BufferAttribute(P,3));const cloud=new THREE.Points(pts,new THREE.PointsMaterial({color:this.c.ion,size:.025,transparent:true,opacity:.6}));root.add(cloud);
+    // agent ring
+    const R=3.1,ring=new THREE.Mesh(new THREE.TorusGeometry(R,.006,8,200),new THREE.MeshBasicMaterial({color:this.c.ion,transparent:true,opacity:.35}));ring.rotation.x=Math.PI/2;root.add(ring);
+    this.nodes=AGENTI.map(([k,n],i)=>{const a=i/AGENTI.length*Math.PI*2,pos=new THREE.Vector3(Math.cos(a)*R,Math.sin(a*2)*.25,Math.sin(a)*R);
+      const on=S.agents[k]?.stare==="activ";
+      const mesh=new THREE.Mesh(new THREE.SphereGeometry(.13,20,20),new THREE.MeshBasicMaterial({color:on?this.c.ok:this.c.pl}));mesh.position.copy(pos);root.add(mesh);
+      const halo=new THREE.Mesh(new THREE.SphereGeometry(.3,20,20),new THREE.MeshBasicMaterial({color:this.c.ion,transparent:true,opacity:on?.55:.25,blending:THREE.AdditiveBlending,depthWrite:false}));halo.position.copy(pos);root.add(halo);
+      const lg=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(),pos]);root.add(new THREE.Line(lg,new THREE.LineBasicMaterial({color:this.c.pl,transparent:true,opacity:.28})));
+      // label sprite
+      const c2=document.createElement("canvas");c2.width=512;c2.height=128;const x=c2.getContext("2d");x.font="600 54px JetBrains Mono, monospace";x.fillStyle=this.c.txt;x.textAlign="center";x.fillText(n.toUpperCase(),256,80);
+      const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(c2),transparent:true,depthWrite:false}));sp.scale.set(1.3,.33,1);sp.position.copy(pos).add(new THREE.Vector3(0,.42,0));root.add(sp);
+      return{k,mesh,halo,pos}});
+    // pulses travelling agent → agent along the ring
+    const pulses=[];const pg=new THREE.SphereGeometry(.06,12,12);
+    const spawn=()=>{const m=new THREE.Mesh(pg,new THREE.MeshBasicMaterial({color:this.c.fl,transparent:true,blending:THREE.AdditiveBlending}));root.add(m);pulses.push({m,i:0,p:0})};
+    // drag to rotate
+    let drag=null,vy=still?0:.0025,rx=.18;
+    cv.addEventListener("pointerdown",e=>{drag={x:e.clientX,y:e.clientY};cv.setPointerCapture(e.pointerId)});
+    cv.addEventListener("pointermove",e=>{if(!drag)return;root.rotation.y+=(e.clientX-drag.x)*.006;rx=Math.max(-.6,Math.min(.8,rx+(e.clientY-drag.y)*.004));drag={x:e.clientX,y:e.clientY}});
+    cv.addEventListener("pointerup",()=>drag=null);cv.style.cursor="grab";cv.style.touchAction="pan-y";
+    let t=0;this.alive=true;
+    const tick=()=>{t++;if(!drag)root.rotation.y+=vy;root.rotation.x+=(rx-root.rotation.x)*.05;
+      core.rotation.y-=.004;core.rotation.x+=.002;inner.scale.setScalar(1+Math.sin(t/25)*.06);cloud.rotation.y+=.0008;
+      if(!still&&t%55===0)spawn();
+      for(const q of pulses){q.p+=.012;if(q.p>=1){q.p=0;q.i++}const a=this.nodes[q.i%this.nodes.length].pos,b=this.nodes[(q.i+1)%this.nodes.length].pos;q.m.position.lerpVectors(a,b,q.p)}
+      for(let j=pulses.length-1;j>=0;j--)if(pulses[j].i>=this.nodes.length){root.remove(pulses[j].m);pulses.splice(j,1)}
+      this.nodes.forEach((n,i)=>n.halo.scale.setScalar(1+Math.sin(t/20+i)*.15));
+      r.render(scene,cam);if(!still)this.raf=requestAnimationFrame(tick)};
+    tick();
+  }};
+
+/* ---------- actions ---------- */
+async function run(fn,btn){try{if(btn)btn.disabled=true;await fn()}catch(e){toast(e?.code==="invalid_argument"?"You can't edit this.":"Not saved. Try again.")}finally{if(btn)btn.disabled=false}}
+function toast(m){let t=$("#toast");if(!t){t=document.createElement("div");t.id="toast";t.setAttribute("role","status");t.style.cssText="position:fixed;left:50%;transform:translateX(-50%);bottom:calc(90px + env(safe-area-inset-bottom,0px));background:var(--deck-2);border:1px solid var(--ion);border-radius:10px;padding:10px 14px;z-index:9;font-size:13.5px;box-shadow:0 10px 40px -10px var(--ion)";document.body.append(t)}t.textContent=m;t.hidden=false;clearTimeout(t._h);t._h=setTimeout(()=>t.hidden=true,2600)}
+const stripId=o=>{const {_id,...r}=o;return r};
+document.addEventListener("submit",e=>{e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));if(!S.db)return;
+  if(f.id==="fProd")run(async()=>{const metrici={};for(const k of["pret","concurenti","usd1m","usor"])if(d[k]!=="")metrici[k]=Number(d[k]);if(d.marja!=="")metrici.marja=Number(d.marja)/100;
+    const p={nume:d.nume,link:d.link||null,categorie:d.categorie||null,status:"candidat",metrici,criterii:{},viteza_max:0,adaugat:nowIso()};p.criterii=autoCrit(p);
+    await S.db.collection("products").add(p);f.reset();toast("Product added");},f.querySelector("button"));
+  if(f.id==="fViral")run(async()=>{const views=Number(d.views),ore=Number(d.ore),v24=vel(views,ore);
+    await S.db.collection("virals").add({url:d.url,cont:d.cont||null,format:d.format,produs:d.produs||null,views,ore,viteza24h:v24,dovedit:v24>=100000,stadiu:"găsit",adaugat:nowIso()});
+    if(d.produs){const p=S.products.find(x=>x._id===d.produs);if(p&&v24>(p.viteza_max||0))await S.db.doc("products/"+p._id).update({viteza_max:v24})}
+    f.reset();toast(v24>=100000?`Proven: ${fmt(v24)} / 24 h`:`Added: ${fmt(v24)} / 24 h, below the bar`);},f.querySelector("button"));
+  if(f.id==="fCerere")run(async()=>{await S.db.collection("inbox").add({text:d.text,status:"nou",creat:nowIso()});f.reset();toast("Sent. Write “requests” in chat.");},f.querySelector("button"));
+});
+document.addEventListener("input",e=>{if(e.target.id==="fq"){S.fq=e.target.value;const l=$("#flist");if(l)l.innerHTML=finderList()}});
+document.addEventListener("change",e=>{const el=e.target;if(el.id==="fg"){S.fg=el.value;const l=$("#flist");if(l)l.innerHTML=finderList();return}if(el.dataset.act==="stadiu")run(()=>S.db.doc("virals/"+el.dataset.id).update({stadiu:el.value}))});
+document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(!b||b.tagName==="SELECT")return;const a=b.dataset.act;
+  if(a==="crit")run(async()=>{const p=S.products.find(x=>x._id===b.dataset.id);const c={...(p.criterii||{})},i=b.dataset.i;c[i]=c[i]===true?false:c[i]===false?null:true;if(c[i]===null)delete c[i];
+    const [s,ver]=scor({...p,criterii:c});await S.db.doc("products/"+p._id).set({...stripId(p),criterii:c,scor:s,verdict:ver})});
+  if(a==="plan")run(async()=>{let used=S.virals.filter(v=>v.stadiu==="planificat").reduce((x,v)=>x+(v.credite_est||0),0);const est=costVideo(),max=S.cfg?.buget?.max_credits_per_video??300;let n=0;
+    for(const v of S.virals.filter(v=>v.dovedit&&["găsit","analizat"].includes(v.stadiu)).sort((a,b)=>b.viteza24h-a.viteza24h)){if(est>max||used+est>buget())break;
+      await S.db.doc("virals/"+v._id).update({stadiu:"planificat",reteta:"full_genjutsu",credite_est:est,planificat_la:nowIso()});used+=est;n++}
+    toast(n?`${n} videos planned`:"Today's budget is full");},b);
+  if(a==="cleardemo")run(async()=>{for(const p of S.products.filter(x=>x.demo))await S.db.doc("products/"+p._id).delete();for(const v of S.virals.filter(x=>x.demo))await S.db.doc("virals/"+v._id).delete();await S.db.doc("config/main").update({demo:false});toast("Samples cleared");},b);
+  if(a==="ai")analyze(b.dataset.id);
+  if(a==="tofind")run(async()=>{const f=S.finder.find(x=>x._id===b.dataset.id);if(!f)return;const best=f.variations.flatMap(v=>v.accounts).sort((x,y)=>y.avg_views-x.avg_views)[0];
+    const p={nume:f.title,nume_en:f.title,categorie:f.group,categorie_en:f.group,link:best?.website||null,status:"candidat",metrici:{},criterii:{},viteza_max:0,sursa:"finder:"+f._id,adaugat:nowIso()};
+    await S.db.collection("products").add(p);toast("Added to Products");location.hash="#products";},b);
+  if(a==="apply")run(async()=>{const r=S.ai[b.dataset.id]?.json,p=S.products.find(x=>x._id===b.dataset.id);if(!r||!p)return;const c={...(p.criterii||{})};
+    for(const [k,v] of Object.entries(r.checks||{}))if(v===true||v===false)c[k]=v;
+    const idei=[...(r.ugc_angles||[]).map(x=>"UGC: "+x),...(r.hooks||[]).map(x=>"Hook: "+x),...(r.variations||[]).map(x=>"Variation: "+x)].join("\n");
+    const [s,ver]=scor({...p,criterii:c});await S.db.doc("products/"+p._id).set({...stripId(p),criterii:c,scor:s,verdict:ver,idei});delete S.ai[p._id];toast("Analysis saved");},b);
+});
+async function analyze(id){const p=S.products.find(x=>x._id===id);if(!p||!S.sample)return;
+  S.ai[id]={text:"Claude is thinking…"};render();
+  const prompt=`You are the product analyst of an organic dropshipping operation (short UGC videos, US buyers 25+, winter 2026). Evaluate the product below against the 10 checks. Use true/false only where the information clearly supports it, otherwise null.
+Checks:\n${CRIT.map((c,i)=>`${i+1}. ${c}`).join("\n")}
+Product: ${JSON.stringify({name:p.nume_en||p.nume,link:p.link,category:p.categorie,metrics:p.metrici,top_viral_views_24h:p.viteza_max})}
+Reply ONLY with JSON: {"checks":{"1":true|false|null,...,"10":...},"reasons":"2-4 sentences","ugc_angles":["3 UGC angles"],"hooks":["3 on-screen hook lines, max 10 words, no false promises"],"variations":["3 feasible custom variations of the product"]}`;
+  try{const r=await S.sample.json(prompt,{modelTier:"default"});
+    const crit=CRIT.map((c,i)=>{const v=r?.checks?.[i+1];return `${i+1}. ${v===true?"✓":v===false?"✗":"?"} ${c}`}).join("\n");
+    S.ai[id]={json:r,html:`<b>Claude's analysis</b>\n${esc(r?.reasons||"")}\n\n${esc(crit)}\n\n<b>UGC angles</b>\n${esc((r?.ugc_angles||[]).join("\n"))}\n\n<b>Hooks</b>\n${esc((r?.hooks||[]).join("\n"))}\n\n<b>Variations</b>\n${esc((r?.variations||[]).join("\n"))}${S.write?`\n\n<button class="btn solid" data-act="apply" data-id="${id}">Save to product</button>`:""}`};
+  }catch(e){S.ai[id]={text:e?.code==="not_granted"||e?.code==="sampling_disabled"?"Claude analysis isn't allowed on this page.":e?.code==="rate_limited"?"Too many requests. Try again in a minute.":"The analysis didn't finish. Try again."}}
+  render();}
+
+/* ---------- boot ---------- */
+function route(){const h=(location.hash||"#brain").slice(1);S.route=VIEWS[h]?h:"brain";NET.stop();render()}
+addEventListener("hashchange",route);
+route();
+(async()=>{
+  const C=window.claude;if(!C){$("#who").textContent="Open this page in claude.ai to see live data.";return}
+  const [db,user,sample]=await Promise.all([C.use("db"),C.use("user"),C.use("sample")]);
+  S.db=db;S.user=user;S.sample=sample;
+  if(user){const w=await user.can?.("data.write");S.write=w!==false;$("#who").textContent=user.isOwner?.()?"Owner · full control":S.write?"You can edit":"View only"}
+  if(!db){$("#who").textContent="Live data isn't available in this view.";S.write=false;render();return}
+  const live=(path,key)=>db.collection(path).onSnapshot(s=>{S[key]=s.docs.map(d=>({_id:d.id,...d.data()}));if(key==="inbox")S.inbox.sort((a,b)=>String(b.creat).localeCompare(String(a.creat)));if(key==="finder"&&document.activeElement?.id==="fq"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}render()},()=>{});
+  live("products","products");live("finder","finder");
+  db.doc("config/strategy").onSnapshot(s=>{S.strategy=s.exists?s.data():null;if(S.route==="strategy")render()},()=>{});live("virals","virals");live("inbox","inbox");
+  db.doc("config/main").onSnapshot(s=>{S.cfg=s.exists?s.data():null;render()},()=>{});
+  db.doc("config/agents").onSnapshot(s=>{S.agents=s.exists?s.data():{};render()},()=>{});
+})();
+</script>

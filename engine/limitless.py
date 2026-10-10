@@ -203,11 +203,7 @@ def cmd_demo(a):
 
 
 def cmd_dashboard(a):
-    import dashboard
-    out = os.path.join(ROOT, "dashboard", "index.html")
-    dashboard.build(out, load("products", []), load("virals", []), load("meta", {}), cfg("costs"), cfg("budget"),
-                    CRITERII, STADII, cost_reteta)
-    print("scris", out)
+    print("Panoul e acum platforma live (dashboard/index.html + baza de date a artifactului); vezi CLAUDE.md.")
 
 
 def main():

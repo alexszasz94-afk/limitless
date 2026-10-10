@@ -7,16 +7,16 @@
   },
   "credits": {
     "genjutsu_clip": {
-      "min": 28,
+      "min": 44,
       "typ": 44,
-      "max": 66,
-      "sursa": "observat 9 oct (variază cu durata/rezoluția; 44 = 1080p ~4 s)"
+      "max": 55,
+      "sursa": "get_cost 10 oct, 1080p: referință ≤ ~4 s = 44 (minim), ~5 s = 55 (~11 cr/s). 720p 5 s = 35, 480p 5 s = 15"
     },
     "seedance_2_5_clip": {
-      "min": 35,
-      "typ": 35,
-      "max": 55,
-      "sursa": "observat 35 (9 oct); 55 la 1080p 4-5 s (sept)"
+      "min": 60,
+      "typ": 60,
+      "max": 60,
+      "sursa": "get_cost 10 oct: t2v 5 s 1080p 9:16 = 60"
     },
     "gpt_image": {
       "min": 6.5,
@@ -83,5 +83,14 @@
       "val": 15,
       "sursa": "estimat — de verificat"
     }
+  },
+  "apify_usd_per_item": {
+    "instagram": 0.0027,
+    "instagram_reel": 0.0026,
+    "tiktok": 0.0037,
+    "facebook_post": 0.005,
+    "ads_library": 0.00075,
+    "video_download": 0.02,
+    "sursa": "prețurile actorilor Apify, 10 oct, nivel FREE"
   }
 }

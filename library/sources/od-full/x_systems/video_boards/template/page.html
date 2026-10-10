@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Built by x_systems/video_boards/tools/build_board.py from content/_board_thumbs/board_data.json. Do not edit by hand: change the data file and rebuild. -->
+<title>{{TITLE}}</title>
+<link rel="icon" type="image/svg+xml" href="{{FAVICON}}">
+{{THEME_HEAD}}
+<style>
+{{CSS}}
+</style>
+</head>
+<body>
+<div id="vp"><div id="world">
+{{HEADER}}{{PANELS}}
+{{LANES}}
+</div></div>
+<section id="nb" data-key="{{KEY}}"><div class="nb-h"><svg class="chev" viewBox="0 0 10 10"><path d="M3 1l4 4-4 4"/></svg><span class="nb-t">Notes</span><span class="nb-sub">autosaves as you type</span><span class="nb-sp"></span><span class="nb-st"></span></div><div class="nb-b"><textarea spellcheck="false" placeholder="Ideas, angles to try, what worked, what to fix next&hellip; Everything you type is saved automatically."></textarea><div class="nb-f"><button class="nb-btn" type="button" id="nblink" title="Pick content/_board_thumbs/board_notes.txt once; after that every change is written into it automatically">Connect board_notes.txt (once)</button><span class="nb-file"></span><span class="nb-c"></span></div></div></section>
+<div id="zoom"><button class="fit" id="zlast" title="Jump to the newest video">Latest</button><button class="fit" id="zfit">Fit all</button><button class="fit rvw" id="zreview" title="Show only cards waiting for review">Review 0</button><button class="fit" id="zcopy" title="Copy every Approve / Reject decision">Copy decisions</button>{{THEME_BTN}}</div>
+<div id="lb"><button class="x" type="button" aria-label="Close">&times;</button><img alt=""></div>
+<div id="toast"></div>
+<script>
+{{JS}}
+</script>
+</body>
+</html>

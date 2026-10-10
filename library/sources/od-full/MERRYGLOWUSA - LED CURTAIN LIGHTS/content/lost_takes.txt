@@ -1,0 +1,28 @@
+# Takes destroyed on 2026-09-18 by a bad crash-recovery step in the naming
+# migration (completed moves were re-applied, overwriting the earlier take in
+# each re-roll chain). These names are permanently missing; the numbering holes
+# they leave are expected and check_naming.py ignores them.
+#
+# Restored from their surviving 2K upscales: v24_c04_g3.mp4, v29_c04_g7.mp4
+# Not recoverable - no Higgsfield job id was recorded for any of these takes.
+# 2026-09-30: v33_c02_g1.png recovered from its Higgsfield job f05993a3 (the frame the clip was
+#   animated from - media id = job id; picture matches the surviving thumbnail) and removed from this list.
+#
+# Checked 2026-09-23 against the Higgsfield history:
+# - removed from this list: v13_c05_g2.mp4, v14_c05_g2.mp4, v17_c01_g2.mp4, v17_c04_g2.png,
+#   v17_c05_g3.png, v17_c05_g4.png - they are on disk and match their Higgsfield jobs.
+# - v13_c03_g2, v13_c05_g4, v17_c04_g2, v17_c08_g2, v21_c02_g2, v21_c07_g2, v22_c06_g2 (.mp4):
+#   the take that was in the cut is on disk under the previous take number (g1, or g3 for
+#   v13_c05) - same Higgsfield prompt, frames match the export. What is really gone is the
+#   original earlier take. The board plays the file on disk; the names stay listed here.
+v13_c03_g2.mp4
+v13_c05_g4.mp4
+v17_c04_g2.mp4
+v17_c08_g2.mp4
+v21_c02_g2.mp4
+v21_c07_g2.mp4
+v22_c06_g2.mp4
+v24_c01_g2.mp4
+v29_c01_g2.mp4
+v29_c03_g2.mp4
+v29_c04_g6.mp4

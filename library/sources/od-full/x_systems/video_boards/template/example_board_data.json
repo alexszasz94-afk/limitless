@@ -1,0 +1,637 @@
+{
+ "schema": "video-board/1",
+ "product": "EXAMPLEBRAND - EXAMPLE PRODUCT",
+ "brand": "ExampleBrand",
+ "key": "examplebrand_example_product",
+ "legend": [
+  {
+   "color": "#E8452C",
+   "text": "Hook — C01"
+  },
+  {
+   "color": "#2D6BF0",
+   "text": "B-roll 1 — the product · C02–C04"
+  },
+  {
+   "color": "#1F9D6B",
+   "text": "B-roll 2 — the payoff · C05–C07"
+  }
+ ],
+ "source_note_html": "<b>Source of truth</b>: prompts, settings and attachments come from the Higgsfield job that made each file. Full history of every take: <code>content/video_N_assets/prompts.md</code> &sect; Verified record.",
+ "panels": [
+  {
+   "type": "list",
+   "title": "Frame rules — what the image rounds taught",
+   "items_html": [
+    "<b>Attach the medias, or the prompt is fiction.</b> One lesson per line, written after each round."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Clip rules — what the animation rounds taught",
+   "items_html": [
+    "<b>A video reference imports its own audio.</b> Attach a silenced copy."
+   ]
+  }
+ ],
+ "lanes": [
+  {
+   "n": 1,
+   "title": "Store aisle → the shelf",
+   "caption": "Do NOT let a Christmas mom see this🎁🎄",
+   "final": "videos_to_post/video_1.mp4",
+   "meta": [
+    [
+     "Status",
+     "Posted · Sep 18"
+    ],
+    [
+     "Hook",
+     "Store discovery · Systems #01"
+    ],
+    [
+     "Song",
+     "not recorded"
+    ],
+    [
+     "Runtime",
+     "14.20 s"
+    ],
+    [
+     "Resolution",
+     "2160×3840 · 30 fps"
+    ]
+   ],
+   "groups": [
+    {
+     "name": "Hook",
+     "sub": "opening beat",
+     "color": "#E8452C",
+     "cards": [
+      {
+       "clip": "c01",
+       "stage": "clip",
+       "status": "approved",
+       "title": "Store aisle → the shelf",
+       "desc": "She pushes the cart and finds the shelf full of our boxes",
+       "frames": [
+        {
+         "label": "START FRAME",
+         "file": "content/video_1_assets/starting_frames/v1_c01_g1.png"
+        },
+        {
+         "label": "FRAME 2 · THE SHELF",
+         "file": "content/video_1_assets/references/v1_c01_r1.png"
+        }
+       ],
+       "tags": {
+        "image": "gpt_image_2_5",
+        "clip": "seedance_2_5 · 1080p · 5 s"
+       },
+       "take": {
+        "file": "content/video_1_assets/clips/v1_c01_g2.mp4",
+        "play": "content/video_1_assets/clips/upscaled/v1_c01_g2.mp4",
+        "info": [
+         "seedance_2_5 · 1080p · 5 s · audio on",
+         "job 4d5e6f70 · 2K 1440×2560"
+        ]
+       },
+       "det": [
+        {
+         "k": "head",
+         "text": "START FRAME — v1_c01_g1.png"
+        },
+        {
+         "k": "refs",
+         "items": [
+          {
+           "n": "@Image 1",
+           "file": "references/ref01.png",
+           "note_html": "framing + camera position &middot; <i>media 1a2b3c4d</i>"
+          },
+          {
+           "n": "@Image 2",
+           "file": "product_images/box_g1.png",
+           "note_html": "our box &mdash; artwork and proportions &middot; <i>media 5e6f7a8b</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Image prompt · v1_c01_g1.png",
+         "meta": "gpt_image_2_5 · sunburst · 9:16 · 2k · medium · 1520×2688 · job 0f1e2d3c",
+         "text": "Copy the attached reference photo EXACTLY: same camera position, same height, same lens... (the exact text sent to Higgsfield goes here, pasted verbatim)"
+        },
+        {
+         "k": "split"
+        },
+        {
+         "k": "head",
+         "text": "CLIP IN THE CUT — v1_c01_g2.mp4"
+        },
+        {
+         "k": "refs",
+         "vid": true,
+         "items": [
+          {
+           "n": "start frame",
+           "file": "v1_c01_g1.png",
+           "note_html": "frame 0.0 s &middot; <i>media 9c8b7a6d</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Clip prompt · v1_c01_g2.mp4",
+         "meta": "seedance_2_5 · 720p · 4 s · 9:16 · audio on · job 4d5e6f70",
+         "text": "The attached start frame is frame one. Animate it exactly as it is... (the exact clip prompt sent to Higgsfield goes here, pasted verbatim)"
+        },
+        {
+         "k": "alts",
+         "rows": [
+          {
+           "media": "content/video_1_assets/clips/v1_c01_g1.mp4",
+           "why_html": "job 11aa22bb &mdash; hands too big, re-rolled"
+          }
+         ]
+        },
+        {
+         "k": "notes",
+         "html": "<div class=\"learn\"><span class=\"r-lbl\">Read</span><p>What held, what broke, what to keep for the next round.</p></div>"
+        },
+        {
+         "k": "arch",
+         "html": "Every take of this shot &rarr; <code>content/video_1_assets/prompts.md</code> &sect; Verified record &middot; C01"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "B-roll 1",
+     "sub": "the product",
+     "color": "#2D6BF0",
+     "cards": [
+      {
+       "clip": "c02",
+       "stage": "clip",
+       "status": "approved",
+       "title": "Hands on the box",
+       "desc": "Two hands on the carton, festive table",
+       "frames": [
+        {
+         "label": "START FRAME",
+         "file": "content/video_1_assets/starting_frames/v1_c02_g1.png"
+        }
+       ],
+       "tags": {
+        "image": "gpt_image_2_5",
+        "clip": "seedance_2_5 · 720p · 4 s"
+       },
+       "take": {
+        "file": "content/video_1_assets/clips/v1_c02_g1.mp4",
+        "info": [
+         "seedance_2_5 · 720p · 4 s · audio on",
+         "job 5e6f7081"
+        ]
+       },
+       "det": [
+        {
+         "k": "head",
+         "text": "START FRAME — v1_c02_g1.png"
+        },
+        {
+         "k": "refs",
+         "items": [
+          {
+           "n": "@Image 1",
+           "file": "references/ref01.png",
+           "note_html": "framing + camera position &middot; <i>media 1a2b3c4d</i>"
+          },
+          {
+           "n": "@Image 2",
+           "file": "product_images/box_g1.png",
+           "note_html": "our box &mdash; artwork and proportions &middot; <i>media 5e6f7a8b</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Image prompt · v1_c02_g1.png",
+         "meta": "gpt_image_2_5 · sunburst · 9:16 · 2k · medium · 1520×2688 · job 0f1e2d3c",
+         "text": "Copy the attached reference photo EXACTLY: same camera position, same height, same lens... (the exact text sent to Higgsfield goes here, pasted verbatim)"
+        },
+        {
+         "k": "split"
+        },
+        {
+         "k": "head",
+         "text": "CLIP IN THE CUT — v1_c02_g1.mp4"
+        },
+        {
+         "k": "refs",
+         "vid": true,
+         "items": [
+          {
+           "n": "start frame",
+           "file": "v1_c02_g1.png",
+           "note_html": "frame 0.0 s &middot; <i>media 9c8b7a6d</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Clip prompt · v1_c02_g1.mp4",
+         "meta": "seedance_2_5 · 720p · 4 s · 9:16 · audio on · job 4d5e6f70",
+         "text": "The attached start frame is frame one. Animate it exactly as it is... (the exact clip prompt sent to Higgsfield goes here, pasted verbatim)"
+        },
+        {
+         "k": "notes",
+         "html": "<div class=\"learn\"><span class=\"r-lbl\">Read</span><p>What held, what broke, what to keep for the next round.</p></div>"
+        },
+        {
+         "k": "arch",
+         "html": "Every take of this shot &rarr; <code>content/video_1_assets/prompts.md</code> &sect; Verified record &middot; C02"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Round in progress",
+   "caption": "Every Christmas mom NEEDS this🎄",
+   "final": null,
+   "meta": [
+    [
+     "Status",
+     "In production"
+    ],
+    [
+     "Hook",
+     "Store discovery · from video 1"
+    ],
+    [
+     "Song",
+     "not chosen"
+    ]
+   ],
+   "groups": [
+    {
+     "name": "Hook",
+     "sub": "opening beat",
+     "color": "#E8452C",
+     "cards": [
+      {
+       "clip": "c01",
+       "stage": "clip",
+       "status": "review",
+       "title": "Clip waiting for Daniel",
+       "desc": "Frame was approved; this is the clip to judge",
+       "frames": [
+        {
+         "label": "START FRAME",
+         "file": "content/video_2_assets/starting_frames/v2_c01_g1.png"
+        }
+       ],
+       "tags": {
+        "image": "gpt_image_2_5",
+        "clip": "seedance_2_5 · 1080p · 5 s"
+       },
+       "take": {
+        "file": "content/video_2_assets/clips/v2_c01_g1.mp4",
+        "label": "Clip for review",
+        "info": [
+         "seedance_2_5 · 1080p · 5 s · audio on",
+         "job 6f708192"
+        ]
+       },
+       "det": [
+        {
+         "k": "head",
+         "text": "START FRAME — v2_c01_g1.png"
+        },
+        {
+         "k": "refs",
+         "items": [
+          {
+           "n": "@Image 1",
+           "file": "references/ref01.png",
+           "note_html": "framing + camera position &middot; <i>media 1a2b3c4d</i>"
+          },
+          {
+           "n": "@Image 2",
+           "file": "product_images/box_g1.png",
+           "note_html": "our box &mdash; artwork and proportions &middot; <i>media 5e6f7a8b</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Image prompt · v2_c01_g1.png",
+         "meta": "gpt_image_2_5 · sunburst · 9:16 · 2k · medium · 1520×2688 · job 0f1e2d3c",
+         "text": "Copy the attached reference photo EXACTLY: same camera position, same height, same lens... (the exact text sent to Higgsfield goes here, pasted verbatim)"
+        },
+        {
+         "k": "split"
+        },
+        {
+         "k": "head",
+         "text": "CLIP IN THE CUT — v2_c01_g1.mp4"
+        },
+        {
+         "k": "refs",
+         "vid": true,
+         "items": [
+          {
+           "n": "start frame",
+           "file": "v2_c01_g1.png",
+           "note_html": "frame 0.0 s &middot; <i>media 9c8b7a6d</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Clip prompt · v2_c01_g1.mp4",
+         "meta": "seedance_2_5 · 720p · 4 s · 9:16 · audio on · job 4d5e6f70",
+         "text": "The attached start frame is frame one. Animate it exactly as it is... (the exact clip prompt sent to Higgsfield goes here, pasted verbatim)"
+        },
+        {
+         "k": "notes",
+         "html": "<div class=\"learn\"><span class=\"r-lbl\">Read</span><p>What held, what broke, what to keep for the next round.</p></div>"
+        },
+        {
+         "k": "arch",
+         "html": "Every take of this shot &rarr; <code>content/video_2_assets/prompts.md</code> &sect; Verified record &middot; C01"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "B-roll 1",
+     "sub": "the product",
+     "color": "#2D6BF0",
+     "cards": [
+      {
+       "clip": "c02",
+       "stage": "frame",
+       "status": "review",
+       "title": "Frame waiting for Daniel",
+       "desc": "No clip yet - the frame is judged first",
+       "frames": [
+        {
+         "label": "START FRAME",
+         "file": "content/video_2_assets/starting_frames/v2_c02_g1.png"
+        }
+       ],
+       "tags": {
+        "image": "gpt_image_2_5"
+       },
+       "det": [
+        {
+         "k": "head",
+         "text": "START FRAME — v2_c02_g1.png"
+        },
+        {
+         "k": "refs",
+         "items": [
+          {
+           "n": "@Image 1",
+           "file": "references/ref01.png",
+           "note_html": "framing + camera position &middot; <i>media 1a2b3c4d</i>"
+          },
+          {
+           "n": "@Image 2",
+           "file": "product_images/box_g1.png",
+           "note_html": "our box &mdash; artwork and proportions &middot; <i>media 5e6f7a8b</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Image prompt · v2_c02_g1.png",
+         "meta": "gpt_image_2_5 · sunburst · 9:16 · 2k · medium · 1520×2688 · job 0f1e2d3c",
+         "text": "Copy the attached reference photo EXACTLY: same camera position, same height, same lens... (the exact text sent to Higgsfield goes here, pasted verbatim)"
+        },
+        {
+         "k": "notes",
+         "html": "<div class=\"learn\"><span class=\"r-lbl\">Read</span><p>What held, what broke, what to keep for the next round.</p></div>"
+        },
+        {
+         "k": "arch",
+         "html": "Every take of this shot &rarr; <code>content/video_2_assets/prompts.md</code> &sect; Verified record &middot; C02"
+        }
+       ]
+      },
+      {
+       "clip": "c03",
+       "stage": "frame",
+       "status": "approved",
+       "title": "Frame approved",
+       "desc": "Next step: animate it",
+       "frames": [
+        {
+         "label": "START FRAME",
+         "file": "content/video_2_assets/starting_frames/v2_c03_g2.png"
+        }
+       ],
+       "tags": {
+        "image": "gpt_image_2_5"
+       },
+       "det": [
+        {
+         "k": "head",
+         "text": "START FRAME — v2_c03_g2.png"
+        },
+        {
+         "k": "refs",
+         "items": [
+          {
+           "n": "@Image 1",
+           "file": "references/ref01.png",
+           "note_html": "framing + camera position &middot; <i>media 1a2b3c4d</i>"
+          },
+          {
+           "n": "@Image 2",
+           "file": "product_images/box_g1.png",
+           "note_html": "our box &mdash; artwork and proportions &middot; <i>media 5e6f7a8b</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Image prompt · v2_c03_g2.png",
+         "meta": "gpt_image_2_5 · sunburst · 9:16 · 2k · medium · 1520×2688 · job 0f1e2d3c",
+         "text": "Copy the attached reference photo EXACTLY: same camera position, same height, same lens... (the exact text sent to Higgsfield goes here, pasted verbatim)"
+        },
+        {
+         "k": "alts",
+         "rows": [
+          {
+           "media": "content/video_2_assets/starting_frames/v2_c03_g1.png",
+           "why_html": "job 11aa22bb &mdash; hands too big, re-rolled"
+          }
+         ]
+        },
+        {
+         "k": "notes",
+         "html": "<div class=\"learn\"><span class=\"r-lbl\">Read</span><p>What held, what broke, what to keep for the next round.</p></div>"
+        },
+        {
+         "k": "arch",
+         "html": "Every take of this shot &rarr; <code>content/video_2_assets/prompts.md</code> &sect; Verified record &middot; C03"
+        }
+       ]
+      },
+      {
+       "clip": "c04",
+       "stage": "clip",
+       "status": "review",
+       "title": "Motion transfer — no start frame",
+       "desc": "Clip made straight from a driving video: shown up top and in the clip strip",
+       "frames": [],
+       "driver": "content/video_2_assets/references/v2_c04_r1.mp4",
+       "tags": {
+        "clip": "hf_mult_motion_control · 480p · 5 s"
+       },
+       "take": {
+        "file": "content/video_2_assets/clips/v2_c04_g1.mp4",
+        "label": "Clip for review",
+        "info": [
+         "hf_mult_motion_control · 480p · 5 s · audio off",
+         "job 1a2b3c4d"
+        ]
+       },
+       "det": [
+        {
+         "k": "head",
+         "text": "CLIP — v2_c04_g1.mp4"
+        },
+        {
+         "k": "refs",
+         "vid": true,
+         "items": [
+          {
+           "n": "image ref 1",
+           "file": "product_images/box_g1.png",
+           "note_html": "the product box &middot; <i>media 5e6f7a8b</i>"
+          },
+          {
+           "n": "video ref 1",
+           "file": "v2_c04_r1.mp4",
+           "note_html": "the driving video &middot; <i>media 9c0d1e2f</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Clip prompt · v2_c04_g1.mp4",
+         "meta": "hf_mult_motion_control · 480p · 5 s · 9:16 · audio off · job 1a2b3c4d",
+         "text": "Recreate the reference video shot for shot with the exact same camera motion, timing and action ... (example text)"
+        },
+        {
+         "k": "arch",
+         "html": "Every take of this shot &rarr; <code>content/video_2_assets/prompts.md</code> &sect; C04"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "B-roll 2",
+     "sub": "the payoff",
+     "color": "#1F9D6B",
+     "cards": [
+      {
+       "clip": "c05",
+       "stage": "clip",
+       "status": "rejected",
+       "title": "Clip rejected",
+       "desc": "Daniel: projection drifts off the wall - re-roll as g2",
+       "frames": [
+        {
+         "label": "START FRAME",
+         "file": "content/video_2_assets/starting_frames/v2_c05_g1.png"
+        }
+       ],
+       "tags": {
+        "image": "gpt_image_2_5",
+        "clip": "seedance_2_5 · 720p · 5 s"
+       },
+       "take": {
+        "file": "content/video_2_assets/clips/v2_c05_g1.mp4",
+        "label": "Rejected clip",
+        "info": [
+         "seedance_2_5 · 720p · 5 s · audio on",
+         "job 708192a3"
+        ]
+       },
+       "det": [
+        {
+         "k": "head",
+         "text": "START FRAME — v2_c05_g1.png"
+        },
+        {
+         "k": "refs",
+         "items": [
+          {
+           "n": "@Image 1",
+           "file": "references/ref01.png",
+           "note_html": "framing + camera position &middot; <i>media 1a2b3c4d</i>"
+          },
+          {
+           "n": "@Image 2",
+           "file": "product_images/box_g1.png",
+           "note_html": "our box &mdash; artwork and proportions &middot; <i>media 5e6f7a8b</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Image prompt · v2_c05_g1.png",
+         "meta": "gpt_image_2_5 · sunburst · 9:16 · 2k · medium · 1520×2688 · job 0f1e2d3c",
+         "text": "Copy the attached reference photo EXACTLY: same camera position, same height, same lens... (the exact text sent to Higgsfield goes here, pasted verbatim)"
+        },
+        {
+         "k": "split"
+        },
+        {
+         "k": "head",
+         "text": "CLIP IN THE CUT — v2_c05_g1.mp4"
+        },
+        {
+         "k": "refs",
+         "vid": true,
+         "items": [
+          {
+           "n": "start frame",
+           "file": "v2_c05_g1.png",
+           "note_html": "frame 0.0 s &middot; <i>media 9c8b7a6d</i>"
+          }
+         ]
+        },
+        {
+         "k": "prompt",
+         "label": "Clip prompt · v2_c05_g1.mp4",
+         "meta": "seedance_2_5 · 720p · 4 s · 9:16 · audio on · job 4d5e6f70",
+         "text": "The attached start frame is frame one. Animate it exactly as it is... (the exact clip prompt sent to Higgsfield goes here, pasted verbatim)"
+        },
+        {
+         "k": "notes",
+         "html": "<div class=\"learn\"><span class=\"r-lbl\">Read</span><p>What held, what broke, what to keep for the next round.</p></div>"
+        },
+        {
+         "k": "arch",
+         "html": "Every take of this shot &rarr; <code>content/video_2_assets/prompts.md</code> &sect; Verified record &middot; C05"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

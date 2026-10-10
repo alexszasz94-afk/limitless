@@ -1,0 +1,22 @@
+# Restored 2026-09-21: these names are absent from the local starting_frames folders.
+# Existing context/11_open_threads.md records the 2026-09-20 rejection/staging
+# of C01 hook takes. video_9_assets/prompts.md explicitly confirms v9 g1-g5.
+# v8 g1-g4 and v10 g1-g6 are verified absent beneath their surviving later takes;
+# their specific rejection reasons and original staging location are not re-verified.
+# The old staging folder is not present. Do not reuse these numbers or infer that
+# every associated prompt is complete. No media were deleted during this repair.
+v8_c01_g1.png
+v8_c01_g2.png
+v8_c01_g3.png
+v8_c01_g4.png
+v9_c01_g1.png
+v9_c01_g2.png
+v9_c01_g3.png
+v9_c01_g4.png
+v9_c01_g5.png
+v10_c01_g1.png
+v10_c01_g2.png
+v10_c01_g3.png
+v10_c01_g4.png
+v10_c01_g5.png
+v10_c01_g6.png

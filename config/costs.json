@@ -1,0 +1,23 @@
+{
+  "_note": "Costuri unitare. 'observat' = din tranzacțiile reale Higgsfield (9 oct 2026); 'estimat' = de confirmat. Se actualizează din tranzacții.",
+  "usd_per_credit": {"min": 0.04, "max": 0.06, "sursa": "estimat din notițele Higgsfield; de înlocuit cu prețul planului 'scale' / credite"},
+  "credits": {
+    "genjutsu_clip": {"min": 28, "typ": 44, "max": 66, "sursa": "observat 9 oct (variază cu durata/rezoluția; 44 = 1080p ~4 s)"},
+    "seedance_2_5_clip": {"min": 35, "typ": 35, "max": 55, "sursa": "observat 35 (9 oct); 55 la 1080p 4-5 s (sept)"},
+    "gpt_image": {"min": 6.5, "typ": 11, "max": 11, "sursa": "observat la GPT Image 2 (6,5 / 11); GPT Image 2.5 de măsurat"},
+    "sound_fx": {"min": 0.1, "typ": 0.5, "max": 1.5, "sursa": "observat"}
+  },
+  "retete_video": {
+    "slab_reutilizare": {"genjutsu_clip": 1, "seedance_2_5_clip": 0, "gpt_image": 2, "_desc": "hook nou Genjutsu + B-roll reutilizat din biblioteca produsului"},
+    "standard": {"genjutsu_clip": 3, "seedance_2_5_clip": 1, "gpt_image": 3, "_desc": "hook + 2 B-roll Genjutsu + 1 placă→Seedance"},
+    "complet_nou": {"genjutsu_clip": 5, "seedance_2_5_clip": 3, "gpt_image": 5, "_desc": "tot generat de la zero"}
+  },
+  "factor_reincercari": {"min": 1.3, "max": 2.0, "sursa": "estimat; se măsoară din QA"},
+  "fix_lunar_usd": {
+    "shopify_per_magazin": {"val": 39, "sursa": "estimat (plan Basic) — de verificat"},
+    "domeniu_per_magazin": {"val": 1.5, "sursa": "~15-20 $/an"},
+    "server_hetzner": {"val": 15, "sursa": "estimat, 1 server pentru portal + tracker"},
+    "apify_plan": {"val": 39, "sursa": "estimat (Starter) + consum peste plan"},
+    "manychat_per_cont": {"val": 15, "sursa": "estimat — de verificat"}
+  }
+}

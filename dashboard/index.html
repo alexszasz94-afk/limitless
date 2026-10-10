@@ -208,17 +208,13 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 #space{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;display:block}
 .app{position:relative;z-index:1}
 body{background-size:auto,auto,0 0,0 0}
-main{perspective:1600px}
-.card,.acct,.shot,.agent,.kpi,.panel{--rx:0deg;--ry:0deg;--mx:50%;--my:0%;transform:perspective(1100px) rotateX(var(--rx)) rotateY(var(--ry));transform-style:preserve-3d;
-  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s;
-  box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 18px 40px -22px rgba(0,0,0,.55),0 4px 12px -6px rgba(0,0,0,.35)}
-.card,.acct,.shot,.agent,.kpi{position:relative;isolation:isolate}
-.card::before,.acct::before,.shot::before,.agent::before,.kpi::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;opacity:0;transition:opacity .35s;
-  background:radial-gradient(420px circle at var(--mx) var(--my),var(--ion-soft),transparent 45%)}
-.t3d{transition:transform .08s linear,box-shadow .35s,border-color .35s;border-color:color-mix(in srgb,var(--ion) 45%,var(--edge))!important;
-  box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 30px 60px -24px rgba(0,0,0,.6),0 0 0 1px var(--ion-soft),0 10px 30px -12px var(--plasma-soft)}
-.t3d::before{opacity:1}
-.t3d > *{transform:translateZ(18px)}
+.card,.acct,.shot,.agent,.kpi{position:relative;box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 18px 40px -22px rgba(0,0,0,.55),0 4px 12px -6px rgba(0,0,0,.35);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.panel{box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 24px 50px -30px rgba(0,0,0,.55)}
+@media (hover:hover) and (pointer:fine){
+.t3d{--rx:0deg;--ry:0deg;--mx:50%;--my:0%;transform:perspective(1100px) rotateX(var(--rx)) rotateY(var(--ry)) translateZ(0);transition:transform .08s linear,box-shadow .35s,border-color .35s;
+  border-color:color-mix(in srgb,var(--ion) 45%,var(--edge))!important;z-index:2;
+  background-image:radial-gradient(420px circle at var(--mx) var(--my),var(--ion-soft),transparent 45%);
+  box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 30px 60px -24px rgba(0,0,0,.6),0 0 0 1px var(--ion-soft),0 10px 30px -12px var(--plasma-soft)}}
 .btn,nav.rail a[aria-current="page"]{box-shadow:0 1px 0 rgba(255,255,255,.12) inset,0 -2px 0 rgba(0,0,0,.25) inset,0 6px 14px -6px rgba(0,0,0,.5)}
 .btn{transition:transform .15s,box-shadow .15s}
 .btn:hover{transform:translateY(-2px)}
@@ -226,9 +222,8 @@ main{perspective:1600px}
 nav.rail a[aria-current="page"]{transform:translateX(4px)}
 .brain{transform:perspective(1400px) rotateX(var(--brx,0deg));box-shadow:0 40px 80px -40px var(--plasma-soft),0 30px 60px -30px rgba(0,0,0,.6)}
 #view.enter > *{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
-#view.enter > *:nth-child(2){animation-delay:.05s}#view.enter > *:nth-child(3){animation-delay:.1s}#view.enter > *:nth-child(4){animation-delay:.15s}#view.enter > *:nth-child(n+5){animation-delay:.2s}
+#view.enter > *:nth-child(2){animation-delay:.05s}#view.enter > *:nth-child(3){animation-delay:.1s}#view.enter > *:nth-child(4){animation-delay:.15s}#view.enter > *:nth-child(n+5){animation:none}
 @keyframes rise{from{opacity:.35;transform:perspective(1100px) rotateX(10deg) translateY(26px) translateZ(-60px)}to{opacity:1;transform:perspective(1100px) rotateX(0) translateY(0)}}
-@media (hover:none){.t3d > *{transform:none}}
 @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
 </style>
 
@@ -389,7 +384,7 @@ function acctCard(a,variation,ugc){const mm=S.fmedia[a.handle];if(mm&&!a.mkey){a
   return `<article class="acct">
     <header><a href="${esc(a.url)}" target="_blank" rel="noopener">@${esc(a.handle)}</a><span class="chip c-ion">${esc((a.platform||"IG").slice(0,2).toUpperCase())}</span></header>
     <span class="vt">${ugc?'<span class="chip c-ok">UGC</span> ':""}${esc(variation)}</span>
-    ${a.media?`<button class="vid" data-act="play" data-src="${esc(a.media)}" data-poster="${esc(a.mkey||"")}" aria-label="Play @${esc(a.handle)} video" style="${S.posters[a.mkey]?`background-image:url(${S.posters[a.mkey]})`:""}"><span class="pl">▶</span>${a.dur?`<span class="du">0:${String(Math.round(a.dur)).padStart(2,"0")}</span>`:""}</button>`:(a.top_video?`<a class="vid none" href="${esc(a.top_video)}" target="_blank" rel="noopener"><span class="pl">▶</span><span class="wo">Watch the original</span></a>`:`<div class="vid none">no video</div>`)}
+    ${a.media?`<button class="vid" data-act="play" data-src="${esc(a.media)}" data-poster="${esc(a.mkey||"")}" aria-label="Play @${esc(a.handle)} video" ><span class="pl">▶</span>${a.dur?`<span class="du">0:${String(Math.round(a.dur)).padStart(2,"0")}</span>`:""}</button>`:(a.top_video?`<a class="vid none" href="${esc(a.top_video)}" target="_blank" rel="noopener"><span class="pl">▶</span><span class="wo">Watch the original</span></a>`:`<div class="vid none">no video</div>`)}
     <div class="nums"><div><b>${fmt(a.followers)}</b><small>Followers</small></div><div><b>${fmt(a.avg_views)}</b><small>Avg views · current product</small></div></div>
     ${(()=>{const k=S.takes[a.mkey];if(!k)return "";const sc=Number(k.score)||0;return `<details class="take"><summary><span class="chip ${sc>=8?"c-ok":sc>=6?"c-ion":"c-warn"}">Brain ${sc}/10</span> <span class="muted">${esc(k.type||"")}</span></summary>
       <dl><dt>Hook</dt><dd>${esc(k.hook)}</dd><dt>Text</dt><dd>${esc(k.text)}</dd><dt>Trigger</dt><dd>${esc(k.trigger)}</dd><dt>Beats</dt><dd>${esc((k.beats||[]).join(" → "))}</dd><dt>Why it works</dt><dd>${esc(k.why)}</dd><dt>Our remake</dt><dd>${esc(k.remake)}</dd><dt>Risk</dt><dd>${esc(k.risk)}</dd></dl></details>`})()}
@@ -407,7 +402,7 @@ function insightBlock(f){const I=S.insights[f._id];if(!I)return "";
    <section><h4>Landing page angle</h4><p>${esc(I.landing_angle||"")}</p><p class="muted">Risks: ${esc(I.risks||"")}</p></section></div>${brollBlock(f)}</details>`}
 function brollBlock(f){const B=S.broll[f._id];if(!B||B.skipped)return "";B.rows=B.rows||{};
   const rows=[...((B.family_recurring_shots||[]).length?[["whole family",{type:B.type,recurring_shots:B.family_recurring_shots,human_shots_genjutsu:B.family_human_shots_genjutsu||[]}]]:[]),...Object.entries(B.rows)].filter(([,r])=>(r.recurring_shots||[]).length);if(!rows.length)return B.type?`<p class="muted" style="margin-top:10px">Video type: <b>${esc(B.type)}</b> · ${esc(B.note||"")}</p>`:"";
-  return `<div class="broll"><h4>Recurring B-roll shots · start image → Seedance</h4><p class="muted">Shots that repeat across sellers. Each one: GPT Image 2.5 start frame, then Seedance 2.5 copies the viral's motion.</p>${rows.map(([rid,r])=>`<div class="exact"><b>${esc(rid.replace(/_/g," "))}</b>${chip(r.type||"","ion")}</div><div class="shots">${(r.recurring_shots||[]).map(x=>`<article class="shot"><div class="row" style="justify-content:space-between"><b>${esc(x.name)}</b>${chip("in "+(x.seen_in?.count??(x.seen_in?.mkeys||x.seen_in||[]).length)+" videos","ok")}</div><p>${esc(x.what_happens||"")}</p>${x.viral_ref_mkey?`<video src="fv/${esc(x.viral_ref_mkey)}.mp4" poster="${esc(S.posters[x.viral_ref_mkey]||"")}" preload="none" controls playsinline></video>`:""}<div class="pblk"><div class="row" style="justify-content:space-between"><b>Start image</b><button class="link" data-act="copy">Copy</button></div><pre>${esc(x.start_frame_prompt||"")}</pre></div><div class="pblk"><div class="row" style="justify-content:space-between"><b>Seedance</b><button class="link" data-act="copy">Copy</button></div><pre>${esc(x.seedance_prompt||"")}</pre></div></article>`).join("")}</div>${(r.human_shots_genjutsu||[]).length?`<p class="muted">With Genjutsu (person): ${esc(r.human_shots_genjutsu.join(" · "))}</p>`:""}`).join("")}</div>`}
+  return `<div class="broll"><h4>Recurring B-roll shots · start image → Seedance</h4><p class="muted">Shots that repeat across sellers. Each one: GPT Image 2.5 start frame, then Seedance 2.5 copies the viral's motion.</p>${rows.map(([rid,r])=>`<div class="exact"><b>${esc(rid.replace(/_/g," "))}</b>${chip(r.type||"","ion")}</div><div class="shots">${(r.recurring_shots||[]).map(x=>`<article class="shot"><div class="row" style="justify-content:space-between"><b>${esc(x.name)}</b>${chip("in "+(x.seen_in?.count??(x.seen_in?.mkeys||x.seen_in||[]).length)+" videos","ok")}</div><p>${esc(x.what_happens||"")}</p>${x.viral_ref_mkey?`<video src="fv/${esc(x.viral_ref_mkey)}.mp4" data-pk="${esc(x.viral_ref_mkey)}" preload="none" controls playsinline></video>`:""}<div class="pblk"><div class="row" style="justify-content:space-between"><b>Start image</b><button class="link" data-act="copy">Copy</button></div><pre>${esc(x.start_frame_prompt||"")}</pre></div><div class="pblk"><div class="row" style="justify-content:space-between"><b>Seedance</b><button class="link" data-act="copy">Copy</button></div><pre>${esc(x.seedance_prompt||"")}</pre></div></article>`).join("")}</div>${(r.human_shots_genjutsu||[]).length?`<p class="muted">With Genjutsu (person): ${esc(r.human_shots_genjutsu.join(" · "))}</p>`:""}`).join("")}</div>`}
 function brainVerdict(f){
   const n=f.accounts,b=f.best_avg_views;
   if(b<100000)return{k:"bad",t:`weak demand: best account averages ${fmt(b)} views. Skip unless a new angle changes the game.`};
@@ -524,6 +519,7 @@ async function loadLanes(b){for(const l of b.lanes||[]){if(S.lanes[l.doc])contin
 const VIEWS={top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
 
 function render(){_render();const v=$("#view");if(v&&S._lastR!==S.route){S._lastR=S.route;v.classList.remove("enter");void v.offsetWidth;v.classList.add("enter");setTimeout(()=>v.classList.remove("enter"),900)}}
+let _rq=0;function soon(){if(_rq)return;_rq=requestAnimationFrame(()=>{_rq=0;render()})}
 function _render(){
   const r=VIEWS[S.route]?S.route:"brain";
   document.querySelectorAll("nav.rail a").forEach(a=>{if(a.dataset.r===r)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
@@ -650,40 +646,40 @@ Reply ONLY with JSON: {"read":"2 sentences on what this data says","angles":["3 
 function route(){const h=(location.hash||"#launch").slice(1);S.route=VIEWS[h]?h:"launch";NET.stop();render()}
 addEventListener("hashchange",route);
 route();
-fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};if(S.route==="finder"){const l=$("#flist");if(l)l.innerHTML=finderList()}}).catch(()=>{});
+fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};setTimeout(()=>{if(typeof POST!=="undefined")POST.scan()},0);if(S.route==="finder"){const l=$("#flist");if(l)l.innerHTML=finderList()}}).catch(()=>{});
 (async()=>{
   const C=window.claude;if(!C){$("#who").textContent="Open this page in claude.ai to see live data.";return}
   const [db,user,sample]=await Promise.all([C.use("db"),C.use("user"),C.use("sample")]);
   S.db=db;S.user=user;S.sample=sample;
   if(user){const w=await user.can?.("data.write");S.write=w!==false;$("#who").textContent=user.isOwner?.()?"Owner · full control":S.write?"You can edit":"View only"}
-  if(!db){$("#who").textContent="Live data isn't available in this view.";S.write=false;render();return}
-  const live=(path,key)=>db.collection(path).onSnapshot(s=>{S[key]=s.docs.map(d=>({_id:d.id,...d.data()}));if(key==="inbox")S.inbox.sort((a,b)=>String(b.creat).localeCompare(String(a.creat)));if(key==="finder"&&document.activeElement?.id==="fq"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}render()},()=>{});
+  if(!db){$("#who").textContent="Live data isn't available in this view.";S.write=false;soon();return}
+  const live=(path,key)=>db.collection(path).onSnapshot(s=>{S[key]=s.docs.map(d=>({_id:d.id,...d.data()}));if(key==="inbox")S.inbox.sort((a,b)=>String(b.creat).localeCompare(String(a.creat)));if(key==="finder"&&document.activeElement?.id==="fq"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}soon()},()=>{});
   live("products","products");live("finder","finder");
-  db.collection("broll").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.broll=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")render()},()=>{});
-  db.collection("insights").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.insights=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")render()},()=>{});
-  db.doc("config/rows").onSnapshot(s=>{S.rows=s.exists?s.data():null;if(S.route==="finder"&&document.activeElement?.id!=="fq")render()},()=>{});
-  db.collection("boards").onSnapshot(s=>{S.boards=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")render()},()=>{});
+  db.collection("broll").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.broll=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
+  db.collection("insights").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.insights=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
+  db.doc("config/rows").onSnapshot(s=>{S.rows=s.exists?s.data():null;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
+  db.collection("boards").onSnapshot(s=>{S.boards=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")soon()},()=>{});
   db.collection("takes").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.takes=m;if(S.route==="finder"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}},()=>{});
-  db.doc("config/strategy").onSnapshot(s=>{S.strategy=s.exists?s.data():null;if(S.route==="strategy")render()},()=>{});live("virals","virals");live("inbox","inbox");
-  db.doc("config/main").onSnapshot(s=>{S.cfg=s.exists?s.data():null;render()},()=>{});
-  db.doc("config/finder_media").onSnapshot(s=>{S.fmedia=s.exists?(s.data().by_handle||{}):{};if(S.route==="finder"&&document.activeElement?.id!=="fq")render()},()=>{});
-  db.doc("config/top10").onSnapshot(s=>{S.top=s.exists?s.data():null;if(S.route==="top")render()},()=>{});
-  db.doc("config/launch").onSnapshot(s=>{S.launch=s.exists?s.data():{};if(S.route==="launch")render()},()=>{});
-  db.doc("config/agents").onSnapshot(s=>{S.agents=s.exists?s.data():{};render()},()=>{});
+  db.doc("config/strategy").onSnapshot(s=>{S.strategy=s.exists?s.data():null;if(S.route==="strategy")soon()},()=>{});live("virals","virals");live("inbox","inbox");
+  db.doc("config/main").onSnapshot(s=>{S.cfg=s.exists?s.data():null;soon()},()=>{});
+  db.doc("config/finder_media").onSnapshot(s=>{S.fmedia=s.exists?(s.data().by_handle||{}):{};if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
+  db.doc("config/top10").onSnapshot(s=>{S.top=s.exists?s.data():null;if(S.route==="top")soon()},()=>{});
+  db.doc("config/launch").onSnapshot(s=>{S.launch=s.exists?s.data():{};if(S.route==="launch")soon()},()=>{});
+  db.doc("config/agents").onSnapshot(s=>{S.agents=s.exists?s.data():{};soon()},()=>{});
 })();
 
 /* ---- depth layer ---- */
 const SPACE={start(){const cv=document.getElementById("space");if(!cv||!window.THREE)return;
   const still=matchMedia("(prefers-reduced-motion: reduce)").matches;
   let r;try{r=new THREE.WebGLRenderer({canvas:cv,antialias:false,alpha:true})}catch(e){return}
-  r.setPixelRatio(Math.min(devicePixelRatio,1.5));
+  r.setPixelRatio(matchMedia("(hover:none)").matches?1:Math.min(devicePixelRatio,1.5));
   const sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(60,1,.1,200);cam.position.set(0,2.4,10);
   const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
   const col=()=>({ion:new THREE.Color(css("--ion")||"#5de4ff"),pl:new THREE.Color(css("--plasma")||"#b48cff"),light:matchMedia("(prefers-color-scheme: light)").matches&&document.documentElement.dataset.theme!=="dark"||document.documentElement.dataset.theme==="light"});
   let C=col();
   const grid=new THREE.GridHelper(220,110,C.pl,C.ion);grid.material.transparent=true;grid.material.opacity=.16;grid.position.y=-3;sc.add(grid);
   const g2=new THREE.GridHelper(220,110,C.pl,C.ion);g2.material.transparent=true;g2.material.opacity=.06;g2.position.y=14;sc.add(g2);
-  const N=700,pos=new Float32Array(N*3);for(let i=0;i<N;i++){pos[i*3]=(Math.random()-.5)*80;pos[i*3+1]=Math.random()*16-3;pos[i*3+2]=-Math.random()*90+10}
+  const N=matchMedia("(hover:none)").matches?250:700,pos=new Float32Array(N*3);for(let i=0;i<N;i++){pos[i*3]=(Math.random()-.5)*80;pos[i*3+1]=Math.random()*16-3;pos[i*3+2]=-Math.random()*90+10}
   const pg=new THREE.BufferGeometry();pg.setAttribute("position",new THREE.BufferAttribute(pos,3));
   const pm=new THREE.PointsMaterial({color:C.ion,size:.07,transparent:true,opacity:.55,depthWrite:false});const pts=new THREE.Points(pg,pm);sc.add(pts);
   const recolor=()=>{C=col();[grid,g2].forEach(g=>{const c=g.geometry.attributes.color;for(let i=0;i<c.count;i++){const k=(i>>1)%10===0?C.pl:C.ion;c.setXYZ(i,k.r,k.g,k.b)}c.needsUpdate=true;g.material.opacity=(g===grid?.16:.06)*(C.light?1.6:1)});pm.color.copy(C.ion);pm.opacity=C.light?.4:.55;draw()};
@@ -706,4 +702,12 @@ const TILT={on(){if(matchMedia("(hover:none)").matches||matchMedia("(prefers-red
   document.addEventListener("pointerleave",()=>{if(cur)reset(cur)},true);
   addEventListener("scroll",()=>{const b=document.querySelector(".brain");if(b){const k=Math.max(-1,Math.min(1,b.getBoundingClientRect().top/innerHeight));b.style.setProperty("--brx",(k*-6).toFixed(2)+"deg")}},{passive:true});}};
 SPACE.start();TILT.on();
+/* posters load only when a card scrolls near the screen */
+const POST={io:null,init(){const v=document.getElementById("view");if(!v)return;
+  this.io="IntersectionObserver" in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){this.fill(e.target);this.io.unobserve(e.target)}}),{rootMargin:"600px 0px"}):null;
+  let q=0;new MutationObserver(()=>{if(q)return;q=requestAnimationFrame(()=>{q=0;this.scan()})}).observe(v,{childList:true,subtree:true});this.scan()},
+ fill(el){const k=el.dataset.poster||el.dataset.pk,u=S.posters[k];if(!u)return;if(el.tagName==="VIDEO")el.poster=u;else el.style.backgroundImage=`url(${u})`},
+ scan(){document.querySelectorAll("#view [data-poster]:not([data-pd]),#view video[data-pk]:not([data-pd])").forEach(el=>{if(!S.posters[el.dataset.poster||el.dataset.pk])return;el.dataset.pd="1";if(this.io)this.io.observe(el);else this.fill(el)})}};
+POST.init();
+
 </script>

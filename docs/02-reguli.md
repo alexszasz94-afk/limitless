@@ -25,3 +25,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - (10 oct) Motion control rămâne implicit, dar la primul produs se TESTEAZĂ ambele (motion control vs replace_object) pe aceleași virale; câștigă cel cu calitate + rată de refuz + cost mai bune, apoi se decide definitiv — Szasz.
 - (10 oct) Mergem mai ales pe videouri UGC: copiem videouri REALE (UGC care au mers) și le refacem cu personajul + camera + produsul nostru (Genjutsu motion control). Hook-urile și formatele se iau din UGC reale, nu se inventează — Szasz.
 - (10 oct) LIMITLESS trebuie să fie o PLATFORMĂ (aplicație completă cu pagini: produse, virale, producție, distribuție, cifre, reguli), nu doar un panou — Szasz.
+- (10 oct) Platforma LIMITLESS cuprinde TOATĂ afacerea la nivel mare (produse, conținut, distribuție, magazine, comenzi, customer support, fulfillment, bani). Szasz are controlul, dar totul se face automat — „ca un creier”. Design foarte șmecher, futuristic — Szasz.
+- (10 oct) Hook-urile ating „butoanele sensibile” (psihologie din cele mai bune cărți de marketing) combinate cu tiparele competitorilor — `playbooks/carti-marketing-psihologie.md` — Szasz.

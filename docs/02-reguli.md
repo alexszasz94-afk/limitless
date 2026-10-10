@@ -15,3 +15,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - (10 oct) Distribuția (portal de postare cu echipă + conturi multiple) și tracker-ul de cifre fac parte din LIMITLESS — Szasz.
 - (10 oct) Aplicația lucrează singură și în paralel: găsește viralele, le reproduce cu Higgsfield la cel mai mic cost (alt personaj, altă cameră), le montează complet, același stil la toate — Szasz.
 - (10 oct) Produsele noi se caută în Meta Ads (Ad Library): ce vinde deja pe plătit aducem în organic — Szasz.
+- (10 oct) BAZA DE UNELTE: folosim EXCLUSIV Genjutsu (`hf_mult_motion_control`), Seedance 2.5 (`seedance_2_5`) și GPT Image 2.5 (`gpt_image_2_5`). Alte modele Higgsfield (Kling, Veo, Sora, Soul, Nano Banana, Marketing Studio etc.) nu intră în producție — Szasz.

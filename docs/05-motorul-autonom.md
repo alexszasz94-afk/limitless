@@ -24,11 +24,12 @@ Toți agenții lucrează **în același timp** pe videouri diferite (coadă comu
 
 ## Cel mai mic cost: scara uneltelor
 Pentru fiecare cadru, Planificatorul încearcă în ordinea costului și urcă doar când QA pică:
+**Baza de unelte (regula din 10 oct): EXCLUSIV Genjutsu, Seedance 2.5 și GPT Image 2.5.**
 1. **Reutilizare** — clip din bibliotecă deja aprobat (0 credite).
 2. **Montaj fără AI** — apropiere lentă / mișcare din imagine statică cu ffmpeg (0 credite).
-3. **Genjutsu motion control** — mișcarea din viral + personajul + camera noastră.
-4. **Placă imagine + video** — imagine de start, apoi animație (când Genjutsu e respins, ex. `ip_detected`).
-5. Unelte noi descoperite în research-ul Higgsfield (`playbooks/higgsfield.md`).
+3. **Genjutsu** (`hf_mult_motion_control`) — mișcarea din viral + personajul + camera noastră.
+4. **GPT Image 2.5 → Seedance 2.5** — imagine de start, apoi animație `omni_reference` (când Genjutsu e respins, ex. `ip_detected`, sau când viralul nu are mișcare reutilizabilă).
+5. **Seedance 2.5 video_edit** — editarea directă a unui clip existent (de testat costul față de Genjutsu).
 
 Se măsoară **costul pe secundă acceptată** (credite / secunde care trec QA) pe fiecare unealtă și tip de cadru; scara se reordonează singură după cifre. Prețurile exacte se completează din research-ul Higgsfield și din tranzacțiile reale.
 

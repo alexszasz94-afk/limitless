@@ -13,6 +13,8 @@ Citește în ordinea asta:
 
 Distribuție și cifre: `distribution/` (portalul de postare) și `social_tracker/` (tracker-ul). Instalare și rețete zilnice: `SETUP-DISTRIBUTIE.md`; fiecare are propriul `CLAUDE.md`. Orice push pe `main` ajunge pe server în ~2 minute (după instalare).
 
+Unelte de producție: EXCLUSIV Genjutsu, Seedance 2.5, GPT Image 2.5 (regula din 10 oct).
+
 Reguli de lucru:
 - Orice regulă nouă de la Szasz (`regula: ...`) → linie datată în `docs/02-reguli.md`.
 - Orice afirmație de tip „merge” trebuie legată de o cifră (retenție, views, CTR, comenzi). Fără cifră e ipoteză și se marchează ca atare.

@@ -20,3 +20,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - (10 oct) Aplicația propune mereu idei de variații custom ale produsului care se pot realiza (cu fezabilitate, mockup și test) — Szasz.
 - (10 oct) Reguli clare pentru ce produs merită încercat și când facem variații, pornite din regulile lui Esteban (organic, ca noi) — `docs/09-reguli-produs.md` — Szasz.
 - (10 oct) Site-ul fiecărui produs se face automat pe Shopify, pe baza întrebărilor lui Szasz; plățile prin alt procesator, nu Shopify Payments — `docs/10-site-shopify.md` — Szasz.
+- (10 oct) La început TOTUL se face cu Genjutsu (cel mai ieftin): un video = viralul refăcut integral cu Genjutsu, personaj + cameră noi. Seedance 2.5 / GPT Image 2.5 doar când Genjutsu e respins sau nu se poate — Szasz.

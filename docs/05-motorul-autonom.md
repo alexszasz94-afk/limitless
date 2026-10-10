@@ -24,7 +24,7 @@ Toți agenții lucrează **în același timp** pe videouri diferite (coadă comu
 
 ## Cel mai mic cost: scara uneltelor
 Pentru fiecare cadru, Planificatorul încearcă în ordinea costului și urcă doar când QA pică:
-**Baza de unelte (regula din 10 oct): EXCLUSIV Genjutsu, Seedance 2.5 și GPT Image 2.5.**
+**Baza de unelte (regula din 10 oct): EXCLUSIV Genjutsu, Seedance 2.5 și GPT Image 2.5. La început totul se face FULL GENJUTSU: viralul întreg refăcut cu Genjutsu, bucată cu bucată, cu personajul și camera noastră (de pe Pinterest, 0 credite). Celelalte trepte intră doar când Genjutsu e respins.**
 1. **Reutilizare** — clip din bibliotecă deja aprobat (0 credite).
 2. **Montaj fără AI** — apropiere lentă / mișcare din imagine statică cu ffmpeg (0 credite).
 3. **Genjutsu** (`hf_mult_motion_control`) — mișcarea din viral + personajul + camera noastră.

@@ -1,0 +1,3565 @@
+{
+ "rows": [
+  {
+   "family": "ac_covers",
+   "row_id": "car_front_ac_unit_cover",
+   "exact_product": "Car-front AC unit cover with LED headlights",
+   "definition": "Decorative cover shaped like a car front that fits over a wall/window AC unit, with remote LED headlights",
+   "accounts": [
+    "_revvent"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "advent",
+   "row_id": "diecast_car_advent_calendar",
+   "exact_product": "Die-cast car advent calendar",
+   "definition": "24-door calendar with a miniature die-cast car behind each door (any car theme)",
+   "accounts": [
+    "embergo.co",
+    "paddockadvent.us"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "advent",
+   "row_id": "mini_liquor_advent_calendar",
+   "exact_product": "Miniature liquor advent calendar",
+   "definition": "Advent calendar of miniature spirit bottles",
+   "accounts": [
+    "adventholic1"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "advent",
+   "row_id": "helmet_ornament_advent_calendar",
+   "exact_product": "Racing-helmet ornament advent calendar",
+   "definition": "Advent calendar with mini racing-helmet tree ornaments",
+   "accounts": [
+    "formula1.calendar"
+   ],
+   "ugc_accounts": [
+    "formula1.calendar"
+   ]
+  },
+  {
+   "family": "advent",
+   "row_id": "building_block_flower_advent_calendar",
+   "exact_product": "Building-block flower advent calendar",
+   "definition": "Advent calendar of brick-kit flowers to assemble",
+   "accounts": [
+    "our_petalia"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "advent",
+   "row_id": "tennis_advent_calendar",
+   "exact_product": "Tennis accessories advent calendar",
+   "definition": "Advent calendar with tennis gear/trinkets behind the doors",
+   "accounts": [
+    "thetenniscalendar",
+    "courtsideadvent"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "advent",
+   "row_id": "mini_book_advent_calendar",
+   "exact_product": "Miniature book ornament advent calendar",
+   "definition": "Advent calendar of tiny classic-book ornaments",
+   "accounts": [
+    "tinybookery"
+   ],
+   "ugc_accounts": [
+    "tinybookery"
+   ]
+  },
+  {
+   "family": "advent",
+   "row_id": "coffee_keychain_advent_calendar",
+   "exact_product": "Coffee-cup keychain advent calendar",
+   "definition": "Advent calendar of mini coffee-cup/bear keychains",
+   "accounts": [
+    "cafe_advent"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "advent",
+   "row_id": "car_model_kit_advent_calendar",
+   "exact_product": "Car model-kit advent calendar",
+   "definition": "Advent calendar whose doors hold parts to build one car model",
+   "accounts": [
+    "911.nights"
+   ],
+   "ugc_accounts": [
+    "911.nights"
+   ]
+  },
+  {
+   "family": "advent",
+   "row_id": "golf_advent_calendar",
+   "exact_product": "Golf accessories advent calendar",
+   "definition": "Advent calendar with golf tools/accessories",
+   "accounts": [
+    "golferscountdown"
+   ],
+   "ugc_accounts": [
+    "golferscountdown"
+   ]
+  },
+  {
+   "family": "advent",
+   "row_id": "teacher_advent_calendar",
+   "exact_product": "Teacher trinkets advent calendar",
+   "definition": "Advent calendar of teacher-themed small gifts",
+   "accounts": [
+    "24daysofteaching_"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "advent",
+   "row_id": "tree_candle_advent_calendar",
+   "exact_product": "Christmas-tree tealight advent calendar",
+   "definition": "Advent calendar of mini tree-shaped candles",
+   "accounts": [
+    "noelvolcanoco"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "alarms",
+   "row_id": "target_shooting_alarm_clock",
+   "exact_product": "Target-shooting alarm clock",
+   "definition": "Alarm clock that only stops when you hit the target with the toy gun",
+   "accounts": [
+    "targetalarmm"
+   ],
+   "ugc_accounts": [
+    "targetalarmm"
+   ]
+  },
+  {
+   "family": "art_supplies",
+   "row_id": "silky_gel_crayons",
+   "exact_product": "Silky gel crayons",
+   "definition": "Twist-up gel crayons for kids",
+   "accounts": [
+    "modernmomfinds__"
+   ],
+   "ugc_accounts": [
+    "modernmomfinds__"
+   ]
+  },
+  {
+   "family": "baby_beds",
+   "row_id": "car_baby_lounger",
+   "exact_product": "Car-shaped baby lounger",
+   "definition": "Padded baby lounger/nest shaped like a sports car",
+   "accounts": [
+    "babyrideshop"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "baby_hoodies",
+   "row_id": "babywearing_pouch_hoodie",
+   "exact_product": "Babywearing pouch hoodie",
+   "definition": "Adult hoodie with a front pouch that carries a newborn against the chest",
+   "accounts": [
+    "littlepouch.us",
+    "cozycardle"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "baby_hoodies",
+   "row_id": "babywearing_bear_suit_hoodie",
+   "exact_product": "Babywearing hoodie with attached bear suit",
+   "definition": "Adult hoodie with a zip-in attached baby suit (baby's legs/arms in the suit)",
+   "accounts": [
+    "pookie.hoodie"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "bathrobes",
+   "row_id": "plush_hooded_bathrobe",
+   "exact_product": "Plush hooded bathrobe (not heated)",
+   "definition": "Classic knee/calf-length fleece hooded robe with belt; no heating, no foot pockets",
+   "accounts": [
+    "cozy.army"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "bedding",
+   "row_id": "marshmallow_puffy_comforter",
+   "exact_product": "Marshmallow puffy comforter",
+   "definition": "Extra-thick puffy cloud comforter/duvet",
+   "accounts": [
+    "jessnickolson",
+    "lullor_comfort",
+    "kennyshopsalot"
+   ],
+   "ugc_accounts": [
+    "jessnickolson",
+    "lullor_comfort",
+    "kennyshopsalot"
+   ]
+  },
+  {
+   "family": "bedding",
+   "row_id": "bordered_fitted_sheet",
+   "exact_product": "Fitted sheet with padded border",
+   "definition": "Fitted sheet with a plush raised border around the mattress top",
+   "accounts": [
+    "kaomisleep"
+   ],
+   "ugc_accounts": [
+    "kaomisleep"
+   ]
+  },
+  {
+   "family": "bedding",
+   "row_id": "ribbed_faux_fur_throw",
+   "exact_product": "Ribbed faux-fur throw",
+   "definition": "Ribbed long-pile faux-fur throw blanket",
+   "accounts": [
+    "hannahbentleyshops"
+   ],
+   "ugc_accounts": [
+    "hannahbentleyshops"
+   ]
+  },
+  {
+   "family": "blackout_panels",
+   "row_id": "framed_blackout_window_panel",
+   "exact_product": "Framed blackout window panel",
+   "definition": "Snap-together frame panel that fits inside the window recess for full blackout",
+   "accounts": [
+    "blackoutblissco"
+   ],
+   "ugc_accounts": [
+    "blackoutblissco"
+   ]
+  },
+  {
+   "family": "body_pillows",
+   "row_id": "crescent_body_pillow",
+   "exact_product": "Crescent body pillow",
+   "definition": "Large crescent/C-shaped hug pillow",
+   "accounts": [
+    "moonsleep.co"
+   ],
+   "ugc_accounts": [
+    "moonsleep.co"
+   ]
+  },
+  {
+   "family": "body_pillows",
+   "row_id": "croissant_lounge_pillow",
+   "exact_product": "Giant croissant lounge pillow",
+   "definition": "Oversized croissant-shaped floor/bed lounger",
+   "accounts": [
+    "aalyssasnyderr"
+   ],
+   "ugc_accounts": [
+    "aalyssasnyderr"
+   ]
+  },
+  {
+   "family": "branch_lights",
+   "row_id": "lighted_wall_branches",
+   "exact_product": "Lighted wall branches",
+   "definition": "LED-lit artificial branches mounted on the wall as a tree/decor",
+   "accounts": [
+    "willora.us",
+    "MistyLed",
+    "snugorae.co"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "car_covers",
+   "row_id": "roof_pod_auto_car_cover",
+   "exact_product": "Roof-pod automatic car cover",
+   "definition": "Roof-mounted pod that automatically deploys a full car cover",
+   "accounts": [
+    "shades.tech"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "car_decor",
+   "row_id": "rooftop_christmas_figure",
+   "exact_product": "Rooftop Christmas character figure",
+   "definition": "Life-size Santa/Grinch figure strapped to a vehicle roof",
+   "accounts": [
+    "jolly.tops"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "car_decor",
+   "row_id": "christmas_character_car_cover",
+   "exact_product": "Christmas character car cover",
+   "definition": "Full car cover printed as reindeer/Santa/snowman/gift",
+   "accounts": [
+    "merrymorph"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "car_lights",
+   "row_id": "rear_window_led_display",
+   "exact_product": "Rear-window LED display",
+   "definition": "App-controlled LED panel shown through a car's rear window",
+   "accounts": [
+    "jolly.drive"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "car_lights",
+   "row_id": "motorcycle_led_strips",
+   "exact_product": "Motorcycle LED strips",
+   "definition": "Adhesive LED light strips for motorcycle bodywork",
+   "accounts": [
+    "ironbobr"
+   ],
+   "ugc_accounts": [
+    "ironbobr"
+   ]
+  },
+  {
+   "family": "car_projection",
+   "row_id": "car_window_projector",
+   "exact_product": "Car-window projector",
+   "definition": "Small device in the car that projects a figure/scene onto the window glass",
+   "accounts": [
+    "merry_ride",
+    "christmas_projector",
+    "scaryrideofficial"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "car_projection",
+   "row_id": "car_door_logo_projector",
+   "exact_product": "Car door logo projector",
+   "definition": "Door-mounted puddle light projecting a logo onto the ground when the door opens",
+   "accounts": [
+    "battlelights.co",
+    "drivegrid",
+    "sundaylights.us"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "car_window_tint",
+   "row_id": "smart_electric_window_tint",
+   "exact_product": "Remote smart window tint",
+   "definition": "Electrochromic film that switches tint by remote",
+   "accounts": [
+    "switchtintofficial",
+    "tintiq.co"
+   ],
+   "ugc_accounts": [
+    "tintiq.co"
+   ]
+  },
+  {
+   "family": "car_window_tint",
+   "row_id": "removable_precut_tint",
+   "exact_product": "Removable pre-cut window tint",
+   "definition": "Pre-cut static tint sheet you put on/peel off",
+   "accounts": [
+    "shadextints"
+   ],
+   "ugc_accounts": [
+    "shadextints"
+   ]
+  },
+  {
+   "family": "card_covers",
+   "row_id": "tap_to_pay_card_holder",
+   "exact_product": "Character tap-to-pay card holder",
+   "definition": "Novelty character case holding a payment card for tap payments",
+   "accounts": [
+    "krabbypay"
+   ],
+   "ugc_accounts": [
+    "krabbypay"
+   ]
+  },
+  {
+   "family": "child_car_pillows",
+   "row_id": "kids_car_seat_animal_pillow",
+   "exact_product": "Kids' car-seat animal support pillow",
+   "definition": "Animal-shaped head-and-body pillow strapped to a child car seat",
+   "accounts": [
+    "ridenuzzle"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "coffee_stencils",
+   "row_id": "camera_coffee_stencil_duster",
+   "exact_product": "Camera-shaped coffee stencil duster",
+   "definition": "Retro-camera-shaped powder duster that stamps designs on drinks",
+   "accounts": [
+    "brewshot.us",
+    "sipcanvas1",
+    "getbrewprint"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "color_blankets",
+   "row_id": "colour_in_blanket",
+   "exact_product": "Colour-in blanket kit",
+   "definition": "Printed outline blanket + fabric markers to colour in",
+   "accounts": [
+    "calmcolors.blanket",
+    "thecolormas",
+    "cozy_colors5"
+   ],
+   "ugc_accounts": [
+    "calmcolors.blanket",
+    "thecolormas"
+   ]
+  },
+  {
+   "family": "compression_bags",
+   "row_id": "vacuum_compression_backpack",
+   "exact_product": "Vacuum-compression travel backpack",
+   "definition": "Carry-on backpack with built-in vacuum compression",
+   "accounts": [
+    "packlab.usa"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "concealed_wallets",
+   "row_id": "belt_loop_hidden_pouch",
+   "exact_product": "Belt-loop hidden pouch",
+   "definition": "Pouch that clips to the belt and hides inside the waistband",
+   "accounts": [
+    "modooculto.co"
+   ],
+   "ugc_accounts": [
+    "modooculto.co"
+   ]
+  },
+  {
+   "family": "convertible_heels",
+   "row_id": "convertible_heel_sandals",
+   "exact_product": "Heel-to-flat convertible sandals",
+   "definition": "Sandals whose heel folds/detaches to become flats",
+   "accounts": [
+    "viceversa"
+   ],
+   "ugc_accounts": [
+    "viceversa"
+   ]
+  },
+  {
+   "family": "crochet_bags",
+   "row_id": "christmas_crochet_bag",
+   "exact_product": "Christmas crochet bag",
+   "definition": "Crochet drawstring bag with Christmas design",
+   "accounts": [
+    "Snowmanlight"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "cushioned_socks",
+   "row_id": "padded_no_show_socks",
+   "exact_product": "Padded-sole no-show socks",
+   "definition": "No-show socks with thick cushioned soles",
+   "accounts": [
+    "comf.ortablefeet"
+   ],
+   "ugc_accounts": [
+    "comf.ortablefeet"
+   ]
+  },
+  {
+   "family": "decor_lamps",
+   "row_id": "cat_bookshelf_lantern",
+   "exact_product": "Cat bookshelf lantern",
+   "definition": "Cat figurine holding a lantern that hangs on a bookshelf",
+   "accounts": [
+    "nooklore.us",
+    "chapterlore.us"
+   ],
+   "ugc_accounts": [
+    "nooklore.us"
+   ]
+  },
+  {
+   "family": "decor_lamps",
+   "row_id": "glass_cross_diorama_lamp",
+   "exact_product": "Glass cross diorama lamp",
+   "definition": "Wall-mounted lit glass cross scene lamp",
+   "accounts": [
+    "his._light"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "diffusers",
+   "row_id": "flame_fireplace_diffuser",
+   "exact_product": "Flame-effect fireplace diffuser",
+   "definition": "Fireplace-shaped humidifier with flame light effect",
+   "accounts": [
+    "myfirehome__"
+   ],
+   "ugc_accounts": [
+    "myfirehome__"
+   ]
+  },
+  {
+   "family": "diffusers",
+   "row_id": "steam_train_diffuser",
+   "exact_product": "Steam-train aroma diffuser",
+   "definition": "Train-shaped diffuser puffing mist from the chimney",
+   "accounts": [
+    "holidayyexpresss"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "diffusers",
+   "row_id": "character_humidifier",
+   "exact_product": "Character-head humidifier",
+   "definition": "Cartoon-character humidifier with removable head",
+   "accounts": [
+    "humidiohanaa"
+   ],
+   "ugc_accounts": [
+    "humidiohanaa"
+   ]
+  },
+  {
+   "family": "dog_boots",
+   "row_id": "led_dog_boots",
+   "exact_product": "LED light-up dog boots",
+   "definition": "Dog boots with built-in LED lights",
+   "accounts": [
+    "glowpawsss"
+   ],
+   "ugc_accounts": [
+    "glowpawsss"
+   ]
+  },
+  {
+   "family": "ergo_seating",
+   "row_id": "sit_stand_active_chair",
+   "exact_product": "Sit-stand active chair",
+   "definition": "Tall rocking/leaning perch chair for standing desks",
+   "accounts": [
+    "movably_inc"
+   ],
+   "ugc_accounts": [
+    "movably_inc"
+   ]
+  },
+  {
+   "family": "ergo_seating",
+   "row_id": "cloud_office_chair_footrest",
+   "exact_product": "Cloud office chair with pull-out footrest",
+   "definition": "Fluffy wide office chair with hidden pull-out footrest",
+   "accounts": [
+    "kloudwel",
+    "lumiliving.au"
+   ],
+   "ugc_accounts": [
+    "kloudwel",
+    "lumiliving.au"
+   ]
+  },
+  {
+   "family": "exhaust_paste",
+   "row_id": "exhaust_flame_paste",
+   "exact_product": "Coloured exhaust-flame paste",
+   "definition": "Paste applied in exhaust to colour flames",
+   "accounts": [
+    "streetpipe.us"
+   ],
+   "ugc_accounts": [
+    "streetpipe.us"
+   ]
+  },
+  {
+   "family": "face_zip_hoodies",
+   "row_id": "face_zip_hoodie",
+   "exact_product": "Face-zip hoodie",
+   "definition": "Full-zip hoodie whose zip closes over the face up to the eyes (any print)",
+   "accounts": [
+    "powerhoodies",
+    "revzips",
+    "epstoodies",
+    "hazy_mode",
+    "sundayhoods",
+    "anirogue.store",
+    "ghostwearoficial",
+    "shiestyzip"
+   ],
+   "ugc_accounts": [
+    "powerhoodies",
+    "revzips",
+    "epstoodies",
+    "hazy_mode",
+    "sundayhoods",
+    "anirogue.store",
+    "ghostwearoficial",
+    "shiestyzip"
+   ]
+  },
+  {
+   "family": "football_trainers",
+   "row_id": "light_up_soccer_target_trainer",
+   "exact_product": "Light-up soccer target trainer",
+   "definition": "Mini goal/target that lights and returns the ball",
+   "accounts": [
+    "infinity.kickk"
+   ],
+   "ugc_accounts": [
+    "infinity.kickk"
+   ]
+  },
+  {
+   "family": "footwear",
+   "row_id": "fold_over_knee_boots",
+   "exact_product": "Fold-over knee-high boots",
+   "definition": "Women's knee-high boots with fold-over cuff",
+   "accounts": [
+    "luciavossboots"
+   ],
+   "ugc_accounts": [
+    "luciavossboots"
+   ]
+  },
+  {
+   "family": "footwear",
+   "row_id": "kids_sherpa_boots",
+   "exact_product": "Kids' sherpa mini boots",
+   "definition": "Children's sherpa-lined short boots",
+   "accounts": [
+    "jenessa.kate"
+   ],
+   "ugc_accounts": [
+    "jenessa.kate"
+   ]
+  },
+  {
+   "family": "footwear",
+   "row_id": "christmas_plush_slippers",
+   "exact_product": "Christmas embroidered plush slippers",
+   "definition": "Plush slippers with Christmas embroidery",
+   "accounts": [
+    "snowfallsco"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "gear_knobs",
+   "row_id": "resin_figure_gear_knob",
+   "exact_product": "Resin gear knob with character figure",
+   "definition": "Resin shift knob with embedded figure, lit",
+   "accounts": [
+    "shift_vault"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "glow_sports",
+   "row_id": "glow_golf_balls",
+   "exact_product": "Glowing golf balls",
+   "definition": "LED light-up golf balls",
+   "accounts": [
+    "theglowdriive",
+    "teeglow.us"
+   ],
+   "ugc_accounts": [
+    "theglowdriive"
+   ]
+  },
+  {
+   "family": "glow_sports",
+   "row_id": "glow_tennis_racket_set",
+   "exact_product": "Glowing tennis racket & ball set",
+   "definition": "LED tennis racket with glowing balls",
+   "accounts": [
+    "tennisglow.us"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "glow_sports",
+   "row_id": "glow_volleyball",
+   "exact_product": "Glowing volleyball",
+   "definition": "LED light-up volleyball",
+   "accounts": [
+    "glowspike"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "glow_sports",
+   "row_id": "glow_soccer_ball",
+   "exact_product": "Glowing soccer ball",
+   "definition": "LED light-up soccer ball",
+   "accounts": [
+    "neonsoccerr"
+   ],
+   "ugc_accounts": [
+    "neonsoccerr"
+   ]
+  },
+  {
+   "family": "glow_sports",
+   "row_id": "glow_american_football",
+   "exact_product": "Glowing American football",
+   "definition": "LED light-up American football",
+   "accounts": [
+    "redzonegifts"
+   ],
+   "ugc_accounts": [
+    "redzonegifts"
+   ]
+  },
+  {
+   "family": "glow_sports",
+   "row_id": "glow_basketball",
+   "exact_product": "Glowing basketball",
+   "definition": "LED light-up basketball",
+   "accounts": [
+    "the_night_ball"
+   ],
+   "ugc_accounts": [
+    "the_night_ball"
+   ]
+  },
+  {
+   "family": "glow_sports",
+   "row_id": "glow_pickleball_set",
+   "exact_product": "Glowing pickleball paddle set",
+   "definition": "LED pickleball paddles + balls",
+   "accounts": [
+    "paddleglow.co",
+    "starlit.set"
+   ],
+   "ugc_accounts": [
+    "starlit.set"
+   ]
+  },
+  {
+   "family": "goggle_beanies",
+   "row_id": "goggle_balaclava_beanie",
+   "exact_product": "Beanie-balaclava with built-in goggles",
+   "definition": "Knit beanie/balaclava with integrated goggles",
+   "accounts": [
+    "boggleboyz.co"
+   ],
+   "ugc_accounts": [
+    "boggleboyz.co"
+   ]
+  },
+  {
+   "family": "golf_bag_coolers",
+   "row_id": "golf_bag_drinks_fridge",
+   "exact_product": "Golf cart bag with lit drinks compartment",
+   "definition": "Golf bag with glass-door illuminated drinks cooler",
+   "accounts": [
+    "frostycaddy.us"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "golf_coolers",
+   "row_id": "towable_golf_ball_cooler",
+   "exact_product": "Towable golf-ball cooler",
+   "definition": "Giant golf-ball-shaped cooler towed behind a cart",
+   "accounts": [
+    "golf.bbq"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "golf_drink_dispensers",
+   "row_id": "golf_iron_drink_dispenser",
+   "exact_product": "Golf-iron drink dispenser",
+   "definition": "Flask/dispenser shaped like a golf iron",
+   "accounts": [
+    "fifthiron1"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "golf_scooters",
+   "row_id": "golf_bag_electric_scooter",
+   "exact_product": "Electric golf scooter with bag carrier",
+   "definition": "Stand-up e-scooter that carries a golf bag",
+   "accounts": [
+    "teeriderco"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "hair_removal",
+   "row_id": "facial_threading_tool",
+   "exact_product": "Manual facial threading tool",
+   "definition": "Hand-held spring threading tool for face hair",
+   "accounts": [
+    "volvox_us"
+   ],
+   "ugc_accounts": [
+    "volvox_us"
+   ]
+  },
+  {
+   "family": "hair_tools",
+   "row_id": "cordless_straightening_brush",
+   "exact_product": "Cordless straightening brush",
+   "definition": "Battery hot brush for straightening",
+   "accounts": [
+    "laquere.store"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "handheld_lasers",
+   "row_id": "pocket_burning_laser",
+   "exact_product": "Pocket burning laser",
+   "definition": "Small box-shaped high-power burning laser",
+   "accounts": [
+    "coolshotlab"
+   ],
+   "ugc_accounts": [
+    "coolshotlab"
+   ]
+  },
+  {
+   "family": "headlight_eyes",
+   "row_id": "rgb_headlight_eye_inserts",
+   "exact_product": "RGB headlight eye inserts",
+   "definition": "Reptile/eye-shaped RGB inserts installed in car headlights",
+   "accounts": [
+    "myneonblink"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "headphone_hoodies",
+   "row_id": "headphone_pocket_hoodie",
+   "exact_product": "Hoodie with headphone pocket in the hood",
+   "definition": "Hoodie with zip pocket in the hood holding headphones",
+   "accounts": [
+    "skycall.clothes"
+   ],
+   "ugc_accounts": [
+    "skycall.clothes"
+   ]
+  },
+  {
+   "family": "heat_wraps",
+   "row_id": "heated_red_light_period_briefs",
+   "exact_product": "Heated red-light period-pain briefs",
+   "definition": "Belt-style briefs with heat + red light pad and controller",
+   "accounts": [
+    "theherheatofficial"
+   ],
+   "ugc_accounts": [
+    "theherheatofficial"
+   ]
+  },
+  {
+   "family": "heated_blankets",
+   "row_id": "two_person_heated_wearable_blanket",
+   "exact_product": "Two-person heated wearable blanket",
+   "definition": "One wearable blanket with two head/arm openings for a couple, heated",
+   "accounts": [
+    "snugfor2"
+   ],
+   "ugc_accounts": [
+    "snugfor2"
+   ]
+  },
+  {
+   "family": "heated_blankets",
+   "row_id": "heated_zip_poncho",
+   "exact_product": "Heated zip-front poncho",
+   "definition": "Zip-up wearable fleece/knit poncho (cape-like, no full sleeves) with power-button heating; NOT a robe, NOT a hoodie",
+   "accounts": [
+    "tripkit.lat",
+    "co.zybabe",
+    "thethermawrap",
+    "waemelle",
+    "hugli.cozy"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "heated_hoodies",
+   "row_id": "heated_hoodie_blanket",
+   "exact_product": "Heated oversized hoodie blanket",
+   "definition": "Oversized sherpa hoodie blanket with big front pocket and heat pad/controller (hip/thigh length, not floor-length)",
+   "accounts": [
+    "toastyhoody",
+    "pupshade_",
+    "cozy.corobe"
+   ],
+   "ugc_accounts": [
+    "toastyhoody"
+   ]
+  },
+  {
+   "family": "heated_hoodies",
+   "row_id": "heated_puffer_vest",
+   "exact_product": "Heated puffer vest",
+   "definition": "Battery heated sleeveless puffer vest",
+   "accounts": [
+    "Cozymimico"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "heated_robes",
+   "row_id": "heated_hooded_robe",
+   "exact_product": "Heated hooded robe",
+   "definition": "Floor-length sherpa-lined hooded robe with belt, heating pad + controller (often foot pockets); any print/character",
+   "accounts": [
+    "princesscomfortt",
+    "kushkozy_",
+    "_budcozy",
+    "cozy.snoop",
+    "footballrobes",
+    "stablerobes",
+    "potter_robes",
+    "thecozykitty.us",
+    "cozy.kage",
+    "nocturne_robes",
+    "Cozygrinch0",
+    "Heat-Grump-Official",
+    "thermahugcompany",
+    "gingersnug",
+    "snuglore",
+    "cozyqueen.co",
+    "bookish_robes",
+    "sirendeck"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "heated_slippers",
+   "row_id": "heated_knit_slippers",
+   "exact_product": "Heated knit slippers",
+   "definition": "Slip-on knit slippers with heating",
+   "accounts": [
+    "alwayscold_official"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "hydration",
+   "row_id": "tactical_hydration_vest",
+   "exact_product": "Tactical hydration vest",
+   "definition": "Running vest with bladder and hose",
+   "accounts": [
+    "hydroflux.us"
+   ],
+   "ugc_accounts": [
+    "hydroflux.us"
+   ]
+  },
+  {
+   "family": "inflatable_costumes",
+   "row_id": "inflatable_carry_costume",
+   "exact_product": "Inflatable carry costume",
+   "definition": "Inflatable costume that makes the wearer look carried by another figure",
+   "accounts": [
+    "wifegrab",
+    "thepawsessed"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "inflatable_costumes",
+   "row_id": "inflatable_ride_on_costume",
+   "exact_product": "Inflatable ride-on costume",
+   "definition": "Inflatable costume where the wearer appears to ride an animal",
+   "accounts": [
+    "dinowearables"
+   ],
+   "ugc_accounts": [
+    "dinowearables"
+   ]
+  },
+  {
+   "family": "inversion_boots",
+   "row_id": "inversion_boots",
+   "exact_product": "Hanging inversion boots",
+   "definition": "Boots that hook on a pull-up bar to hang upside down",
+   "accounts": [
+    "thegrvtyboots"
+   ],
+   "ugc_accounts": [
+    "thegrvtyboots"
+   ]
+  },
+  {
+   "family": "keepsakes",
+   "row_id": "recordable_voice_ornament",
+   "exact_product": "Recordable voice ornament",
+   "definition": "Ornament that plays back a recorded voice",
+   "accounts": [
+    "evervoiceco"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "keepsakes",
+   "row_id": "magnetic_disc_music_player",
+   "exact_product": "Magnetic disc music player",
+   "definition": "Player that plays songs from magnetic discs",
+   "accounts": [
+    "jollytunes.co"
+   ],
+   "ugc_accounts": [
+    "jollytunes.co"
+   ]
+  },
+  {
+   "family": "lawn_tools",
+   "row_id": "trimmer_mower_combo",
+   "exact_product": "Cordless trimmer-to-mower",
+   "definition": "Cordless string trimmer that converts into a wheeled mower",
+   "accounts": [
+    "yardfleet"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "light_therapy",
+   "row_id": "sinus_red_light_mask",
+   "exact_product": "Sinus red-light mask",
+   "definition": "Nose/sinus red-light therapy mask",
+   "accounts": [
+    "sinulia_usa"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "light_therapy",
+   "row_id": "red_light_eye_glasses",
+   "exact_product": "Under-eye red-light glasses",
+   "definition": "Glasses-shaped red-light device for under-eye area",
+   "accounts": [
+    "glowlylens"
+   ],
+   "ugc_accounts": [
+    "glowlylens"
+   ]
+  },
+  {
+   "family": "lounge_seating",
+   "row_id": "cap_beanbag_chair",
+   "exact_product": "Baseball-cap beanbag chair",
+   "definition": "Giant beanbag shaped like a baseball cap",
+   "accounts": [
+    "maurice_hats"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "lounge_seating",
+   "row_id": "oversized_rocking_chair",
+   "exact_product": "Oversized cushioned rocking chair",
+   "definition": "Huge cloud-like cushioned rocker",
+   "accounts": [
+    "itschelseahope"
+   ],
+   "ugc_accounts": [
+    "itschelseahope"
+   ]
+  },
+  {
+   "family": "memory_displays",
+   "row_id": "diy_mini_museum_frame",
+   "exact_product": "DIY miniature museum photo frame",
+   "definition": "Shadow box built as a tiny museum with mini frames",
+   "accounts": [
+    "diy.museum.of.us"
+   ],
+   "ugc_accounts": [
+    "diy.museum.of.us"
+   ]
+  },
+  {
+   "family": "mini_fridges",
+   "row_id": "slurp_jar_mini_fridge",
+   "exact_product": "Game-jar mini fridge",
+   "definition": "Mini fridge shaped like a glowing game jar",
+   "accounts": [
+    "slurpjar"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "mini_phones",
+   "row_id": "mini_smartphone",
+   "exact_product": "Mini touchscreen smartphone",
+   "definition": "Credit-card-size working smartphone",
+   "accounts": [
+    "pockifymini"
+   ],
+   "ugc_accounts": [
+    "pockifymini"
+   ]
+  },
+  {
+   "family": "mist_projectors",
+   "row_id": "water_mist_hologram_projector",
+   "exact_product": "Water-mist hologram projector",
+   "definition": "Outdoor projector that shows scenes on a water-mist screen",
+   "accounts": [
+    "thexmaslight"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "motion_glasses",
+   "row_id": "motion_sickness_glasses",
+   "exact_product": "Liquid-ring motion-sickness glasses",
+   "definition": "Frames with liquid-filled rings against car sickness",
+   "accounts": [
+    "calmmotion.lif"
+   ],
+   "ugc_accounts": [
+    "calmmotion.lif"
+   ]
+  },
+  {
+   "family": "novelty_clothing",
+   "row_id": "gag_print_ugly_sweater",
+   "exact_product": "Gag-print ugly Christmas sweater",
+   "definition": "Christmas sweater with an innuendo knit design",
+   "accounts": [
+    "xmasgft"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "novelty_clothing",
+   "row_id": "rhinestone_open_back_hoodie",
+   "exact_product": "Rhinestone mesh-back hoodie",
+   "definition": "Hoodie with sparkly rhinestone mesh panel in the back",
+   "accounts": [
+    "veraaapparel",
+    "divaurabrand"
+   ],
+   "ugc_accounts": [
+    "veraaapparel",
+    "divaurabrand"
+   ]
+  },
+  {
+   "family": "novelty_clothing",
+   "row_id": "plush_teddy_lounge_set",
+   "exact_product": "Plush teddy bralette & shorts set",
+   "definition": "Plush loungewear set with bear-face details",
+   "accounts": [
+    "plushies_shop"
+   ],
+   "ugc_accounts": [
+    "plushies_shop"
+   ]
+  },
+  {
+   "family": "novelty_clothing",
+   "row_id": "santa_bare_chest_sweatshirt",
+   "exact_product": "Santa bare-chest illusion sweatshirt",
+   "definition": "Santa sweatshirt printed with a hairy bare chest",
+   "accounts": [
+    "jingledrip.us"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "novelty_drinkware",
+   "row_id": "christmas_painted_wine_glasses",
+   "exact_product": "Hand-painted Christmas wine glasses",
+   "definition": "Wine glasses painted with Christmas characters",
+   "accounts": [
+    "merrysips.usa"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "novelty_hats",
+   "row_id": "popup_gag_santa_hat",
+   "exact_product": "Santa hat with pop-up gag tip",
+   "definition": "Santa hat whose tip pops up as a gag",
+   "accounts": [
+    "cockyhat"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "onesies",
+   "row_id": "puppet_head_onesie",
+   "exact_product": "Puppet-head onesie",
+   "definition": "Furry full-body onesie with a big puppet-mouth hood",
+   "accounts": [
+    "snugglegoofsinc",
+    "littleonesieco"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "onesies",
+   "row_id": "horror_character_onesie",
+   "exact_product": "Horror character onesie",
+   "definition": "Onesie with horror-movie mask hood",
+   "accounts": [
+    "slashersnugs"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pattern_projectors",
+   "row_id": "slide_night_light_projector",
+   "exact_product": "Plug-in slide night-light projector",
+   "definition": "Wall-plug night light that projects interchangeable slides",
+   "accounts": [
+    "cosmora117",
+    "snugz_store"
+   ],
+   "ugc_accounts": [
+    "cosmora117"
+   ]
+  },
+  {
+   "family": "pattern_projectors",
+   "row_id": "tree_plug_projector",
+   "exact_product": "Mini-tree plug-in projector",
+   "definition": "Christmas-tree-shaped plug projector",
+   "accounts": [
+    "hollyglow.co"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pattern_projectors",
+   "row_id": "rotating_egg_projector",
+   "exact_product": "Rotating egg pattern projector",
+   "definition": "Egg-shaped rotating pattern projector with remote",
+   "accounts": [
+    "lumalaceus"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pattern_projectors",
+   "row_id": "santa_hat_projector_lamp",
+   "exact_product": "Hanging Santa-hat projector lamp",
+   "definition": "Ceiling-hung Santa-hat lamp projecting patterns",
+   "accounts": [
+    "holly.jigle"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "personal_alarms",
+   "row_id": "sos_alert_wristband",
+   "exact_product": "SOS alert wristband",
+   "definition": "Wristband with SOS button that alerts a phone",
+   "accounts": [
+    "by.veloora"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pet_bags",
+   "row_id": "character_face_window_pet_tote",
+   "exact_product": "Character pet tote with face window",
+   "definition": "Character-shaped tote with window for the pet's face",
+   "accounts": [
+    "thebuddybags1"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pet_beds",
+   "row_id": "stadium_dog_bed",
+   "exact_product": "Football-stadium dog bed",
+   "definition": "Plush dog bed shaped like a stadium",
+   "accounts": [
+    "wouf.ball"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pet_car_seats",
+   "row_id": "dragon_pet_car_bed",
+   "exact_product": "Dragon plush pet car booster",
+   "definition": "Dragon-shaped plush pet booster bed for the car",
+   "accounts": [
+    "dragonseats.co"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pet_hoodies",
+   "row_id": "pet_pouch_hoodie",
+   "exact_product": "Pet pouch hoodie",
+   "definition": "Regular-fit adult hoodie with a front pouch (zip peek-hole or open) carrying a cat/small dog; not heated, not blanket-size",
+   "accounts": [
+    "myhuggiecat",
+    "myhuggiedog",
+    "cozypetcarry",
+    "catcozymimi",
+    "catpawcketclub",
+    "pawtee.shop",
+    "paws.aqua",
+    "purrpuptm",
+    "woofclubco.home"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pet_spheres",
+   "row_id": "rolling_mesh_pet_ball",
+   "exact_product": "Rolling mesh pet ball",
+   "definition": "Collapsible mesh sphere a cat rolls around in outdoors",
+   "accounts": [
+    "zoomieball1",
+    "thesnugroo"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pet_trolleys",
+   "row_id": "clear_dome_cat_trolley",
+   "exact_product": "Clear-dome rolling cat carrier",
+   "definition": "Wheeled cat carrier with transparent dome",
+   "accounts": [
+    "cattytrip"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pixel_lights",
+   "row_id": "app_led_curtain_lights",
+   "exact_product": "App-controlled LED curtain lights",
+   "definition": "Programmable LED curtain grid for windows/balconies/facades showing animations",
+   "accounts": [
+    "tryfestilight",
+    "jollyview.co",
+    "hollyview12",
+    "Fallglowusa"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pixel_lights",
+   "row_id": "app_christmas_tree_led_kit",
+   "exact_product": "App-controlled Christmas-tree LED kit",
+   "definition": "Programmable LED strands hung from tree top to show pictures/animations",
+   "accounts": [
+    "pinedazzle.us",
+    "jinglebead",
+    "themerryview_"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "plate_covers",
+   "row_id": "remote_plate_blackout_cover",
+   "exact_product": "Remote blackout plate cover",
+   "definition": "Remote-operated cover that hides a licence plate",
+   "accounts": [
+    "bl4ckoutplates"
+   ],
+   "ugc_accounts": [
+    "bl4ckoutplates"
+   ]
+  },
+  {
+   "family": "plate_covers",
+   "row_id": "anti_camera_plate_film",
+   "exact_product": "Anti-camera plate film",
+   "definition": "Film applied over plate characters to blind cameras",
+   "accounts": [
+    "alite.it"
+   ],
+   "ugc_accounts": [
+    "alite.it"
+   ]
+  },
+  {
+   "family": "plush_bags",
+   "row_id": "realistic_dog_plush_backpack",
+   "exact_product": "Realistic plush dog backpack",
+   "definition": "Backpack that looks like a real puppy",
+   "accounts": [
+    "pupacks"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "posture_bras",
+   "row_id": "pullover_posture_bra",
+   "exact_product": "Pull-over posture bra",
+   "definition": "Pull-over bra with crossed back straps and front hook band for posture",
+   "accounts": [
+    "thevareny",
+    "gercekform",
+    "backalign.official",
+    "elquari_",
+    "marlein.co",
+    "posture.corrector.hub",
+    "velossamco",
+    "the_vitalys",
+    "alynne.us"
+   ],
+   "ugc_accounts": [
+    "thevareny",
+    "gercekform",
+    "backalign.official",
+    "elquari_",
+    "posture.corrector.hub",
+    "velossamco",
+    "the_vitalys",
+    "alynne.us"
+   ]
+  },
+  {
+   "family": "pov_cameras",
+   "row_id": "camera_earbuds",
+   "exact_product": "Camera earbuds",
+   "definition": "Earbuds with built-in POV camera",
+   "accounts": [
+    "clippercutzcam",
+    "aceviewco",
+    "Ocean-Glow"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "pov_cameras",
+   "row_id": "camera_ski_goggles",
+   "exact_product": "Camera ski goggles",
+   "definition": "Ski goggles with built-in camera",
+   "accounts": [
+    "snowview_co"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "prank_tees",
+   "row_id": "exploding_golf_tees",
+   "exact_product": "Exploding powder golf tees",
+   "definition": "Golf tees that burst powder on impact",
+   "accounts": [
+    "teeblastco"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "privacy_film",
+   "row_id": "remote_smart_privacy_film",
+   "exact_product": "Remote smart privacy film",
+   "definition": "Window film switching frosted/clear by remote",
+   "accounts": [
+    "_blurro_",
+    "clearswitch.us"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "puzzle_tables",
+   "row_id": "tilting_puzzle_table",
+   "exact_product": "Rolling tilt-and-height puzzle table",
+   "definition": "Jigsaw table with tilt/height adjust on wheels",
+   "accounts": [
+    "aquawish.us"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "rc_mowers",
+   "row_id": "rc_model_mower",
+   "exact_product": "Remote-control model mower",
+   "definition": "Remote-control farm-machine model (tractor/combine) that actually mows",
+   "accounts": [
+    "grassworks.co",
+    "mymowtor"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "reactive_clothing",
+   "row_id": "water_reactive_jacket",
+   "exact_product": "Water-reactive colour-change jacket",
+   "definition": "Rain/shell jacket whose hidden print appears when wet (splash, leopard...)",
+   "accounts": [
+    "astanazoo",
+    "rainmorph.us",
+    "rainshift.fr",
+    "snowshift.co",
+    "buchan"
+   ],
+   "ugc_accounts": [
+    "snowshift.co",
+    "buchan"
+   ]
+  },
+  {
+   "family": "reactive_clothing",
+   "row_id": "heat_reactive_balaclava",
+   "exact_product": "Heat-reactive balaclava",
+   "definition": "Balaclava that changes colour with breath/heat",
+   "accounts": [
+    "vaprmask.store"
+   ],
+   "ugc_accounts": [
+    "vaprmask.store"
+   ]
+  },
+  {
+   "family": "reflective_clothing",
+   "row_id": "reflective_piping_tracksuit",
+   "exact_product": "Reflective-piping hoodie & tracksuit",
+   "definition": "Tracksuit with reflective piping lines",
+   "accounts": [
+    "aivwear"
+   ],
+   "ugc_accounts": [
+    "aivwear"
+   ]
+  },
+  {
+   "family": "retro_phones",
+   "row_id": "plug_in_retro_handset",
+   "exact_product": "Plug-in retro handset",
+   "definition": "Corded retro handset that plugs into the smartphone",
+   "accounts": [
+    "helloloop.us",
+    "getdialtone",
+    "getdialbop"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "retro_phones",
+   "row_id": "bluetooth_retro_desk_phone",
+   "exact_product": "Bluetooth retro desk phone",
+   "definition": "Rotary-style desk phone that pairs by Bluetooth",
+   "accounts": [
+    "pinkiephones"
+   ],
+   "ugc_accounts": [
+    "pinkiephones"
+   ]
+  },
+  {
+   "family": "retro_speakers",
+   "row_id": "cassette_bluetooth_speaker",
+   "exact_product": "Cassette-style Bluetooth speaker",
+   "definition": "Bluetooth speaker designed like a cassette player",
+   "accounts": [
+    "theofficialtalksy"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "scene_projectors",
+   "row_id": "dome_scene_projector",
+   "exact_product": "Dome room-scene projector",
+   "definition": "White dome/orb projector that fills the whole room/ceiling with a themed scene (theme = design)",
+   "accounts": [
+    "enchantelle.store",
+    "fairyglow12",
+    "codglow.us",
+    "midglows",
+    "nyxveil.usa",
+    "fifaglow.us",
+    "jurrasiglow.us",
+    "roarium.shop",
+    "mineglow.us",
+    "stadiumglowprojector",
+    "multiglow_us",
+    "hogwartslights1",
+    "snowlit.store",
+    "61585713497873"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "seasonal_props",
+   "row_id": "climbing_santa_led_ladder",
+   "exact_product": "Climbing Santa on LED ladder",
+   "definition": "LED ladder with a climbing Santa figure",
+   "accounts": [
+    "jollyladdertm"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "seasonal_props",
+   "row_id": "flying_witch_prop",
+   "exact_product": "Witch-on-broomstick lawn prop",
+   "definition": "Animated witch figure for the yard",
+   "accounts": [
+    "WitchBorneus"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "seasonal_props",
+   "row_id": "rc_spider_prop",
+   "exact_product": "Remote-control baby-head spider",
+   "definition": "Large RC creepy spider prop",
+   "accounts": [
+    "Spiderscare"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "shapewear",
+   "row_id": "high_waist_shaping_briefs",
+   "exact_product": "High-waist shaping briefs",
+   "definition": "Tummy-control high-waist briefs",
+   "accounts": [
+    "sculpte_co"
+   ],
+   "ugc_accounts": [
+    "sculpte_co"
+   ]
+  },
+  {
+   "family": "shapewear",
+   "row_id": "shaping_bodysuit_shorts",
+   "exact_product": "Shaping tank bodysuit with shorts",
+   "definition": "Full shaping bodysuit with shorts legs",
+   "accounts": [
+    "makefullfashion"
+   ],
+   "ugc_accounts": [
+    "makefullfashion"
+   ]
+  },
+  {
+   "family": "ski_lights",
+   "row_id": "ski_led_strip_kit",
+   "exact_product": "Ski LED strip kit",
+   "definition": "LED light strips for skis",
+   "accounts": [
+    "alpineglow.us",
+    "slopelit"
+   ],
+   "ugc_accounts": [
+    "slopelit"
+   ]
+  },
+  {
+   "family": "ski_lights",
+   "row_id": "snowboard_led_strip_kit",
+   "exact_product": "Snowboard LED strip kit",
+   "definition": "LED light strips for snowboards",
+   "accounts": [
+    "ledboards2026"
+   ],
+   "ugc_accounts": [
+    "ledboards2026"
+   ]
+  },
+  {
+   "family": "ski_masks",
+   "row_id": "novelty_face_balaclava",
+   "exact_product": "Novelty face ski balaclava",
+   "definition": "Ski balaclava printed or knitted with a funny face (animal, toy figure, baby, grin, doll, celebrity)",
+   "accounts": [
+    "shred.pals",
+    "artichoundco",
+    "rooog.co",
+    "flashtrunks.us",
+    "cheeksupply.trunks",
+    "slopegeezers",
+    "smileyslopesco",
+    "dollyfacemask",
+    "trigger.time2"
+   ],
+   "ugc_accounts": [
+    "shred.pals"
+   ]
+  },
+  {
+   "family": "snow_gear",
+   "row_id": "inflatable_vehicle_snow_sled",
+   "exact_product": "Inflatable vehicle-shaped snow sled",
+   "definition": "Inflatable sled shaped like a car/jet-ski/snowmobile",
+   "accounts": [
+    "torqueslide.us",
+    "bloatbellyboat",
+    "snowfloat.usa"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "storage",
+   "row_id": "hidden_compartment_nightstand",
+   "exact_product": "Nightstand with hidden compartment",
+   "definition": "Nightstand with a secret lift-up compartment",
+   "accounts": [
+    "pippabrookstt"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "support_braces",
+   "row_id": "pulley_lumbar_brace",
+   "exact_product": "Pulley lumbar brace",
+   "definition": "Lumbar back brace with pulley tightening system",
+   "accounts": [
+    "aligncare.usa",
+    "truekneeofficial"
+   ],
+   "ugc_accounts": [
+    "aligncare.usa",
+    "truekneeofficial"
+   ]
+  },
+  {
+   "family": "tennis_trainers",
+   "row_id": "tennis_rebound_trainer",
+   "exact_product": "Solo tennis rebound trainer",
+   "definition": "Weighted base with ball on elastic string",
+   "accounts": [
+    "traineronee"
+   ],
+   "ugc_accounts": [
+    "traineronee"
+   ]
+  },
+  {
+   "family": "toilet_brushes",
+   "row_id": "novelty_head_toilet_brush",
+   "exact_product": "Novelty head toilet brush",
+   "definition": "Toilet brush topped with a caricature head",
+   "accounts": [
+    "shopretroring"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "toothbrushes",
+   "row_id": "kids_u_shaped_toothbrush",
+   "exact_product": "Kids' U-shaped electric toothbrush",
+   "definition": "U-shaped silicone toothbrush children bite on",
+   "accounts": [
+    "snugglesmile.usa"
+   ],
+   "ugc_accounts": [
+    "snugglesmile.usa"
+   ]
+  },
+  {
+   "family": "travel_sleep",
+   "row_id": "travel_sleep_hood_sling",
+   "exact_product": "Travel sleep hood with arm sling",
+   "definition": "Head-hood eye mask attached to a body sling for sleeping upright on planes",
+   "accounts": [
+    "dozewayoffcial",
+    "cloudrestshop",
+    "airwaygirls"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "travel_sleep",
+   "row_id": "inflatable_forward_lean_pillow",
+   "exact_product": "Inflatable forward-lean travel pillow",
+   "definition": "Inflatable pillow on tray table to sleep leaning forward",
+   "accounts": [
+    "napnestt",
+    "getnodaway",
+    "nestlytravel"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "travel_sleep",
+   "row_id": "car_passenger_body_pillow",
+   "exact_product": "Car passenger body pillow",
+   "definition": "U-shaped body pillow for car passenger seat",
+   "accounts": [
+    "thecozycompanion.usa"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "travel_toiletries",
+   "row_id": "refillable_perfume_atomizer",
+   "exact_product": "Refillable perfume atomizer",
+   "definition": "Pocket atomizer refilled from the perfume nozzle",
+   "accounts": [
+    "homey__huess"
+   ],
+   "ugc_accounts": [
+    "homey__huess"
+   ]
+  },
+  {
+   "family": "video_projectors",
+   "row_id": "storybook_projector",
+   "exact_product": "Storybook projector",
+   "definition": "Mini projector that projects picture-book pages on wall/ceiling",
+   "accounts": [
+    "readingprojector.usa",
+    "storybeamofficial",
+    "dreamora.usa",
+    "storyglow.us"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "video_projectors",
+   "row_id": "fake_window_projector",
+   "exact_product": "Fake-window scene projector",
+   "definition": "Mini projector that turns a wall into a window view (scenic, fantasy, Christmas, game worlds)",
+   "accounts": [
+    "oklumiofficial",
+    "realmprojector",
+    "lumina_noel",
+    "merrybeam.official",
+    "shoppixelprojector"
+   ],
+   "ugc_accounts": [
+    "oklumiofficial",
+    "realmprojector",
+    "lumina_noel",
+    "merrybeam.official",
+    "shoppixelprojector"
+   ]
+  },
+  {
+   "family": "wall_garlands",
+   "row_id": "led_christmas_wall_garland",
+   "exact_product": "LED Christmas wall garland scene",
+   "definition": "Lit snow garland with train/snowman/Santa pieces mounted on a wall",
+   "accounts": [
+    "cozywalllco"
+   ],
+   "ugc_accounts": []
+  },
+  {
+   "family": "window_display_film",
+   "row_id": "smart_window_display_film",
+   "exact_product": "Smart window display film",
+   "definition": "App-controlled film on windows displaying Christmas scenes",
+   "accounts": [
+    "mymerryview",
+    "Pinky-Fluff-US"
+   ],
+   "ugc_accounts": []
+  }
+ ],
+ "accounts": {
+  "_revvent": {
+   "row_id": "car_front_ac_unit_cover",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking staged bedroom install, too clean"
+  },
+  "embergo.co": {
+   "row_id": "diecast_car_advent_calendar",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store reaction + rendered product shots"
+  },
+  "paddockadvent.us": {
+   "row_id": "diecast_car_advent_calendar",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store reaction"
+  },
+  "adventholic1": {
+   "row_id": "mini_liquor_advent_calendar",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store scene and product shots"
+  },
+  "formula1.calendar": {
+   "row_id": "helmet_ornament_advent_calendar",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real hands unwrapping and showing ornament at tree"
+  },
+  "our_petalia": {
+   "row_id": "building_block_flower_advent_calendar",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking street opener and staged hotel scenes"
+  },
+  "thetenniscalendar": {
+   "row_id": "tennis_advent_calendar",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store couple and court shots"
+  },
+  "courtsideadvent": {
+   "row_id": "tennis_advent_calendar",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated reveal, same court shots"
+  },
+  "tinybookery": {
+   "row_id": "mini_book_advent_calendar",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "handheld grab in real bookstore, hands demo"
+  },
+  "cafe_advent": {
+   "row_id": "coffee_keychain_advent_calendar",
+   "ugc": false,
+   "ugc_strength": 0,
+   "why": "AI-generated crowd unveiling"
+  },
+  "911.nights": {
+   "row_id": "car_model_kit_advent_calendar",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real hands catch and unbox at home"
+  },
+  "golferscountdown": {
+   "row_id": "golf_advent_calendar",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real store exterior + handheld unboxing"
+  },
+  "24daysofteaching_": {
+   "row_id": "teacher_advent_calendar",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store couple"
+  },
+  "noelvolcanoco": {
+   "row_id": "tree_candle_advent_calendar",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking talking head and candle shots"
+  },
+  "targetalarmm": {
+   "row_id": "target_shooting_alarm_clock",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real person, handheld bed POV"
+  },
+  "modernmomfinds__": {
+   "row_id": "silky_gel_crayons",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "selfie talking-head creator demo at home"
+  },
+  "babyrideshop": {
+   "row_id": "car_baby_lounger",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated nursery and baby shots"
+  },
+  "littlepouch.us": {
+   "row_id": "babywearing_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store and pumpkin-patch scenes"
+  },
+  "cozycardle": {
+   "row_id": "babywearing_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated fake H&M reveal and lifestyle scenes"
+  },
+  "pookie.hoodie": {
+   "row_id": "babywearing_bear_suit_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated park/office/kitchen scenes"
+  },
+  "cozy.army": {
+   "row_id": "plush_hooded_bathrobe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated fake H&M ribbon cutting + AI try-on"
+  },
+  "jessnickolson": {
+   "row_id": "marshmallow_puffy_comforter",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real creator in own bedroom, tripod"
+  },
+  "lullor_comfort": {
+   "row_id": "marshmallow_puffy_comforter",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real hands and real bedroom"
+  },
+  "kennyshopsalot": {
+   "row_id": "marshmallow_puffy_comforter",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real creator bedroom, handheld"
+  },
+  "kaomisleep": {
+   "row_id": "bordered_fitted_sheet",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real person making bed, static phone"
+  },
+  "hannahbentleyshops": {
+   "row_id": "ribbed_faux_fur_throw",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "handheld phone, real hand and bedroom"
+  },
+  "blackoutblissco": {
+   "row_id": "framed_blackout_window_panel",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real install at home, handheld"
+  },
+  "moonsleep.co": {
+   "row_id": "crescent_body_pillow",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real person top-down at home"
+  },
+  "aalyssasnyderr": {
+   "row_id": "croissant_lounge_pillow",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real creator at home"
+  },
+  "willora.us": {
+   "row_id": "lighted_wall_branches",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI store opener + AI rooms"
+  },
+  "MistyLed": {
+   "row_id": "lighted_wall_branches",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI store reaction + AI rooms"
+  },
+  "snugorae.co": {
+   "row_id": "lighted_wall_branches",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI before/after scenes"
+  },
+  "shades.tech": {
+   "row_id": "roof_pod_auto_car_cover",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco reaction + rendered car shots"
+  },
+  "jolly.tops": {
+   "row_id": "rooftop_christmas_figure",
+   "ugc": false,
+   "ugc_strength": 0,
+   "why": "fully AI-generated Santa unboxing and truck scenes"
+  },
+  "merrymorph": {
+   "row_id": "christmas_character_car_cover",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated driveway cover scenes"
+  },
+  "jolly.drive": {
+   "row_id": "rear_window_led_display",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated reveal and street scenes"
+  },
+  "ironbobr": {
+   "row_id": "motorcycle_led_strips",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "handheld real garage install, phone footage"
+  },
+  "merry_ride": {
+   "row_id": "car_window_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store and street scenes"
+  },
+  "christmas_projector": {
+   "row_id": "car_window_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated trunk reveal and reactions"
+  },
+  "scaryrideofficial": {
+   "row_id": "car_window_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking cop scene; only box demo real"
+  },
+  "battlelights.co": {
+   "row_id": "car_door_logo_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco reaction; projections overlaid"
+  },
+  "drivegrid": {
+   "row_id": "car_door_logo_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated cloche reveal and stadium shot"
+  },
+  "sundaylights.us": {
+   "row_id": "car_door_logo_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store reaction"
+  },
+  "switchtintofficial": {
+   "row_id": "smart_electric_window_tint",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking deputy POV + stock car renders"
+  },
+  "tintiq.co": {
+   "row_id": "smart_electric_window_tint",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real handheld POV clips stitched (cop, shop install)"
+  },
+  "shadextints": {
+   "row_id": "removable_precut_tint",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real gas-station and garage phone footage"
+  },
+  "krabbypay": {
+   "row_id": "tap_to_pay_card_holder",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real handheld car/store/drive-thru reactions"
+  },
+  "ridenuzzle": {
+   "row_id": "kids_car_seat_animal_pillow",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Zara queue and kid scenes"
+  },
+  "brewshot.us": {
+   "row_id": "camera_coffee_stencil_duster",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated cafe crowd and barista"
+  },
+  "sipcanvas1": {
+   "row_id": "camera_coffee_stencil_duster",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated cafe opener and kitchen shots"
+  },
+  "getbrewprint": {
+   "row_id": "camera_coffee_stencil_duster",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated cafe scenes"
+  },
+  "calmcolors.blanket": {
+   "row_id": "colour_in_blanket",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "handheld store POV + real people coloring at home"
+  },
+  "thecolormas": {
+   "row_id": "colour_in_blanket",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "POV couch gifting, real home coloring"
+  },
+  "cozy_colors5": {
+   "row_id": "colour_in_blanket",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated warehouse curtain reveal"
+  },
+  "packlab.usa": {
+   "row_id": "vacuum_compression_backpack",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking tarmac/airport opener, staged packing"
+  },
+  "modooculto.co": {
+   "row_id": "belt_loop_hidden_pouch",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real person demo at waist, phone close-up"
+  },
+  "viceversa": {
+   "row_id": "convertible_heel_sandals",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real model hands demo, filmed on street (brand-style)"
+  },
+  "Snowmanlight": {
+   "row_id": "christmas_crochet_bag",
+   "ugc": false,
+   "ugc_strength": 0,
+   "why": "AI-generated fake handmade story"
+  },
+  "comf.ortablefeet": {
+   "row_id": "padded_no_show_socks",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real hands and feet demo at home"
+  },
+  "nooklore.us": {
+   "row_id": "cat_bookshelf_lantern",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "POV couch gifting, handheld bookshelf shots"
+  },
+  "chapterlore.us": {
+   "row_id": "cat_bookshelf_lantern",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated presenter and rendered shelves"
+  },
+  "his._light": {
+   "row_id": "glass_cross_diorama_lamp",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "real-looking opener but product result is AI render"
+  },
+  "myfirehome__": {
+   "row_id": "flame_fireplace_diffuser",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real hands unboxing on nightstand"
+  },
+  "holidayyexpresss": {
+   "row_id": "steam_train_diffuser",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store scream; product shots staged"
+  },
+  "humidiohanaa": {
+   "row_id": "character_humidifier",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "handheld real kitchen demo"
+  },
+  "glowpawsss": {
+   "row_id": "led_dog_boots",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real hands, real dog, night walk phone footage"
+  },
+  "movably_inc": {
+   "row_id": "sit_stand_active_chair",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real person, static phone at desk"
+  },
+  "kloudwel": {
+   "row_id": "cloud_office_chair_footrest",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real person at home desk, static phone"
+  },
+  "lumiliving.au": {
+   "row_id": "cloud_office_chair_footrest",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real person at home gaming desk"
+  },
+  "streetpipe.us": {
+   "row_id": "exhaust_flame_paste",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real handheld POV gag + car meet clips"
+  },
+  "powerhoodies": {
+   "row_id": "face_zip_hoodie",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real selfie and parking-lot try-on"
+  },
+  "revzips": {
+   "row_id": "face_zip_hoodie",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real parking-lot try-on (store opener staged)"
+  },
+  "epstoodies": {
+   "row_id": "face_zip_hoodie",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real man in parking garage try-on"
+  },
+  "hazy_mode": {
+   "row_id": "face_zip_hoodie",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman parking-lot try-on"
+  },
+  "sundayhoods": {
+   "row_id": "face_zip_hoodie",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman parking-lot try-on"
+  },
+  "anirogue.store": {
+   "row_id": "face_zip_hoodie",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman parking-garage try-on"
+  },
+  "ghostwearoficial": {
+   "row_id": "face_zip_hoodie",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman parking-lot try-on"
+  },
+  "shiestyzip": {
+   "row_id": "face_zip_hoodie",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real handheld parking-lot try-on"
+  },
+  "infinity.kickk": {
+   "row_id": "light_up_soccer_target_trainer",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real living room, kid kicking, phone"
+  },
+  "luciavossboots": {
+   "row_id": "fold_over_knee_boots",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real handheld try-on and night out"
+  },
+  "jenessa.kate": {
+   "row_id": "kids_sherpa_boots",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "handheld mom unboxing at home"
+  },
+  "snowfallsco": {
+   "row_id": "christmas_plush_slippers",
+   "ugc": false,
+   "ugc_strength": 0,
+   "why": "AI-generated fake grandpa handmade story"
+  },
+  "shift_vault": {
+   "row_id": "resin_figure_gear_knob",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "stock/AI interior shots and renders"
+  },
+  "theglowdriive": {
+   "row_id": "glow_golf_balls",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real night golf phone footage"
+  },
+  "teeglow.us": {
+   "row_id": "glow_golf_balls",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco line and golf shots"
+  },
+  "tennisglow.us": {
+   "row_id": "glow_tennis_racket_set",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store and court shots"
+  },
+  "glowspike": {
+   "row_id": "glow_volleyball",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking POV beach and night game"
+  },
+  "neonsoccerr": {
+   "row_id": "glow_soccer_ball",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real player on futsal court, phone footage"
+  },
+  "redzonegifts": {
+   "row_id": "glow_american_football",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real field footage, handheld"
+  },
+  "the_night_ball": {
+   "row_id": "glow_basketball",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real handheld court footage"
+  },
+  "paddleglow.co": {
+   "row_id": "glow_pickleball_set",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco couple and court"
+  },
+  "starlit.set": {
+   "row_id": "glow_pickleball_set",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real POV gift box at court; night shots edited"
+  },
+  "boggleboyz.co": {
+   "row_id": "goggle_balaclava_beanie",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real boat/selfie clips; store opener staged"
+  },
+  "frostycaddy.us": {
+   "row_id": "golf_bag_drinks_fridge",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated garage reveal and course"
+  },
+  "golf.bbq": {
+   "row_id": "towable_golf_ball_cooler",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated golfers and cooler"
+  },
+  "fifthiron1": {
+   "row_id": "golf_iron_drink_dispenser",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking couch POV and group shots"
+  },
+  "teeriderco": {
+   "row_id": "golf_bag_electric_scooter",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco couple and course scenes"
+  },
+  "volvox_us": {
+   "row_id": "facial_threading_tool",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real selfie demo outdoors"
+  },
+  "laquere.store": {
+   "row_id": "cordless_straightening_brush",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated mall queue; car demo staged"
+  },
+  "coolshotlab": {
+   "row_id": "pocket_burning_laser",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "shaky handheld real demo"
+  },
+  "myneonblink": {
+   "row_id": "rgb_headlight_eye_inserts",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking garage and night car shots"
+  },
+  "skycall.clothes": {
+   "row_id": "headphone_pocket_hoodie",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real person in park, phone"
+  },
+  "theherheatofficial": {
+   "row_id": "heated_red_light_period_briefs",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman at home demo"
+  },
+  "snugfor2": {
+   "row_id": "two_person_heated_wearable_blanket",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "POV feet + real couple at home"
+  },
+  "tripkit.lat": {
+   "row_id": "heated_zip_poncho",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated plane/field/beach scenes"
+  },
+  "co.zybabe": {
+   "row_id": "heated_zip_poncho",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco frenzy and lifestyle"
+  },
+  "thethermawrap": {
+   "row_id": "heated_zip_poncho",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco cart POV and plane"
+  },
+  "waemelle": {
+   "row_id": "heated_zip_poncho",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated IKEA couple and lifestyle"
+  },
+  "hugli.cozy": {
+   "row_id": "heated_zip_poncho",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking bleacher POV and crowd"
+  },
+  "toastyhoody": {
+   "row_id": "heated_hoodie_blanket",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "handheld real home, real dog in pouch"
+  },
+  "pupshade_": {
+   "row_id": "heated_hoodie_blanket",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store and cabin scenes"
+  },
+  "cozy.corobe": {
+   "row_id": "heated_hoodie_blanket",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated car/school/game scenes"
+  },
+  "Cozymimico": {
+   "row_id": "heated_puffer_vest",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated stadium grandma + staged vest demo"
+  },
+  "princesscomfortt": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated robe unroll + controller close-ups"
+  },
+  "kushkozy_": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated robe reveal"
+  },
+  "_budcozy": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated robe reveal"
+  },
+  "cozy.snoop": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated two-women reveal"
+  },
+  "footballrobes": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated kitchen dance reveal"
+  },
+  "stablerobes": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated gifting scene"
+  },
+  "potter_robes": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated fake H&M reveal"
+  },
+  "thecozykitty.us": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated robe unroll"
+  },
+  "cozy.kage": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated robe unroll"
+  },
+  "nocturne_robes": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated gothic room reveal"
+  },
+  "Cozygrinch0": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store + home reveal"
+  },
+  "Heat-Grump-Official": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated (our own Genjutsu-style) reveal"
+  },
+  "thermahugcompany": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking thrust-to-camera and bedroom"
+  },
+  "gingersnug": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco couple + reveal"
+  },
+  "snuglore": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated robe reveal + controller"
+  },
+  "cozyqueen.co": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco collapse + robe reveal"
+  },
+  "bookish_robes": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated robe reveal"
+  },
+  "sirendeck": {
+   "row_id": "heated_hooded_robe",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated firefighter reveal"
+  },
+  "alwayscold_official": {
+   "row_id": "heated_knit_slippers",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Target reaction + staged bedroom"
+  },
+  "hydroflux.us": {
+   "row_id": "tactical_hydration_vest",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real runner street + race footage"
+  },
+  "wifegrab": {
+   "row_id": "inflatable_carry_costume",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated driveway/DMV/tattoo scenes"
+  },
+  "thepawsessed": {
+   "row_id": "inflatable_carry_costume",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated club/airport/grocery scenes"
+  },
+  "dinowearables": {
+   "row_id": "inflatable_ride_on_costume",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real home/yard phone footage of kids"
+  },
+  "thegrvtyboots": {
+   "row_id": "inversion_boots",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real person in doorway, phone"
+  },
+  "evervoiceco": {
+   "row_id": "recordable_voice_ornament",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store rush + family"
+  },
+  "jollytunes.co": {
+   "row_id": "magnetic_disc_music_player",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "handheld store grab + home demo"
+  },
+  "yardfleet": {
+   "row_id": "trimmer_mower_combo",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated mower race"
+  },
+  "sinulia_usa": {
+   "row_id": "sinus_red_light_mask",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking before/after selfie"
+  },
+  "glowlylens": {
+   "row_id": "red_light_eye_glasses",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real selfie talking-head moms"
+  },
+  "maurice_hats": {
+   "row_id": "cap_beanbag_chair",
+   "ugc": false,
+   "ugc_strength": 0,
+   "why": "studio product throws, no UGC"
+  },
+  "itschelseahope": {
+   "row_id": "oversized_rocking_chair",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real creator at home, static phone"
+  },
+  "diy.museum.of.us": {
+   "row_id": "diy_mini_museum_frame",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real creator at home, hands assembling"
+  },
+  "slurpjar": {
+   "row_id": "slurp_jar_mini_fridge",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "mixed real unboxing but glowing jar shots rendered/AI"
+  },
+  "pockifymini": {
+   "row_id": "mini_smartphone",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real hands on carpet, phone demo"
+  },
+  "thexmaslight": {
+   "row_id": "water_mist_hologram_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store and driveway projection"
+  },
+  "calmmotion.lif": {
+   "row_id": "motion_sickness_glasses",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real kid in car, handheld demo"
+  },
+  "xmasgft": {
+   "row_id": "gag_print_ugly_sweater",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated elevator/club/grocery reactions"
+  },
+  "veraaapparel": {
+   "row_id": "rhinestone_open_back_hoodie",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman in parking garage"
+  },
+  "divaurabrand": {
+   "row_id": "rhinestone_open_back_hoodie",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real handheld try-on in home and car"
+  },
+  "plushies_shop": {
+   "row_id": "plush_teddy_lounge_set",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real hands and try-on at home"
+  },
+  "jingledrip.us": {
+   "row_id": "santa_bare_chest_sweatshirt",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store/street/party scenes"
+  },
+  "merrysips.usa": {
+   "row_id": "christmas_painted_wine_glasses",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated warehouse staff + rendered glasses"
+  },
+  "cockyhat": {
+   "row_id": "popup_gag_santa_hat",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Walmart/party reactions"
+  },
+  "snugglegoofsinc": {
+   "row_id": "puppet_head_onesie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated puppet onesie scenes"
+  },
+  "littleonesieco": {
+   "row_id": "puppet_head_onesie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated H&M reveal and kids"
+  },
+  "slashersnugs": {
+   "row_id": "horror_character_onesie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated horror onesie scenes"
+  },
+  "cosmora117": {
+   "row_id": "slide_night_light_projector",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real handheld dim bedroom demo"
+  },
+  "snugz_store": {
+   "row_id": "slide_night_light_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "real-ish plug-in shot but AI-rendered projection scenes"
+  },
+  "hollyglow.co": {
+   "row_id": "tree_plug_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking POV unbag and rendered projection rooms"
+  },
+  "lumalaceus": {
+   "row_id": "rotating_egg_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated couple fail and rooms"
+  },
+  "holly.jigle": {
+   "row_id": "santa_hat_projector_lamp",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated trunk reveal and room"
+  },
+  "by.veloora": {
+   "row_id": "sos_alert_wristband",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated staged fall and gifting"
+  },
+  "thebuddybags1": {
+   "row_id": "character_face_window_pet_tote",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated H&M queue and street"
+  },
+  "wouf.ball": {
+   "row_id": "stadium_dog_bed",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated stadium bed scenes"
+  },
+  "dragonseats.co": {
+   "row_id": "dragon_pet_car_bed",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Zara queue and car"
+  },
+  "myhuggiecat": {
+   "row_id": "pet_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated H&M reveal and try-ons"
+  },
+  "myhuggiedog": {
+   "row_id": "pet_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated plane and airport"
+  },
+  "cozypetcarry": {
+   "row_id": "pet_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated police and street"
+  },
+  "catcozymimi": {
+   "row_id": "pet_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated plane and airport"
+  },
+  "catpawcketclub": {
+   "row_id": "pet_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated warehouse and lifestyle"
+  },
+  "pawtee.shop": {
+   "row_id": "pet_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated plane and pilots"
+  },
+  "paws.aqua": {
+   "row_id": "pet_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated airport K9 scene"
+  },
+  "purrpuptm": {
+   "row_id": "pet_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated plane and airport"
+  },
+  "woofclubco.home": {
+   "row_id": "pet_pouch_hoodie",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Target reaction + lifestyle"
+  },
+  "zoomieball1": {
+   "row_id": "rolling_mesh_pet_ball",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated yard/store scenes"
+  },
+  "thesnugroo": {
+   "row_id": "rolling_mesh_pet_ball",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated DIY ball and garden"
+  },
+  "cattytrip": {
+   "row_id": "clear_dome_cat_trolley",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated pet store and street"
+  },
+  "tryfestilight": {
+   "row_id": "app_led_curtain_lights",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated balcony and facade"
+  },
+  "jollyview.co": {
+   "row_id": "app_led_curtain_lights",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated balcony and street"
+  },
+  "hollyview12": {
+   "row_id": "app_led_curtain_lights",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated kitchen and patio"
+  },
+  "Fallglowusa": {
+   "row_id": "app_led_curtain_lights",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated facades and patio"
+  },
+  "pinedazzle.us": {
+   "row_id": "app_christmas_tree_led_kit",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated tree scenes, real-looking box hands"
+  },
+  "jinglebead": {
+   "row_id": "app_christmas_tree_led_kit",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Walmart cart POV and tree"
+  },
+  "themerryview_": {
+   "row_id": "app_christmas_tree_led_kit",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Target reaction and tree"
+  },
+  "bl4ckoutplates": {
+   "row_id": "remote_plate_blackout_cover",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real handheld night install on motorcycle"
+  },
+  "alite.it": {
+   "row_id": "anti_camera_plate_film",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real handheld application in parking garage"
+  },
+  "pupacks": {
+   "row_id": "realistic_dog_plush_backpack",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated airport scenes"
+  },
+  "thevareny": {
+   "row_id": "pullover_posture_bra",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real woman try-on at home"
+  },
+  "gercekform": {
+   "row_id": "pullover_posture_bra",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman try-on at home"
+  },
+  "backalign.official": {
+   "row_id": "pullover_posture_bra",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real woman talking to camera at home"
+  },
+  "elquari_": {
+   "row_id": "pullover_posture_bra",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman try-on in gym room"
+  },
+  "marlein.co": {
+   "row_id": "pullover_posture_bra",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking store reaction + reposted try-on clips"
+  },
+  "posture.corrector.hub": {
+   "row_id": "pullover_posture_bra",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman try-on, studio-ish home"
+  },
+  "velossamco": {
+   "row_id": "pullover_posture_bra",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman try-on at home"
+  },
+  "the_vitalys": {
+   "row_id": "pullover_posture_bra",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman try-on in living room"
+  },
+  "alynne.us": {
+   "row_id": "pullover_posture_bra",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real woman bedroom try-on talking"
+  },
+  "clippercutzcam": {
+   "row_id": "camera_earbuds",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking barbershop POV"
+  },
+  "aceviewco": {
+   "row_id": "camera_earbuds",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated IKEA queue; court shots staged"
+  },
+  "Ocean-Glow": {
+   "row_id": "camera_earbuds",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store reaction"
+  },
+  "snowview_co": {
+   "row_id": "camera_ski_goggles",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking slope and rendered sunset footage"
+  },
+  "teeblastco": {
+   "row_id": "exploding_golf_tees",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store reaction and course"
+  },
+  "_blurro_": {
+   "row_id": "remote_smart_privacy_film",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated showroom; window shots staged"
+  },
+  "clearswitch.us": {
+   "row_id": "remote_smart_privacy_film",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco staff reveal"
+  },
+  "aquawish.us": {
+   "row_id": "tilting_puzzle_table",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated warehouse and living room"
+  },
+  "grassworks.co": {
+   "row_id": "rc_model_mower",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated patio unboxing and mowing"
+  },
+  "mymowtor": {
+   "row_id": "rc_model_mower",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated backyard mowing"
+  },
+  "astanazoo": {
+   "row_id": "water_reactive_jacket",
+   "ugc": false,
+   "ugc_strength": 0,
+   "why": "AI-generated mountain jacket scenes"
+  },
+  "rainmorph.us": {
+   "row_id": "water_reactive_jacket",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated moto shop and riding"
+  },
+  "rainshift.fr": {
+   "row_id": "water_reactive_jacket",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated H&M queue and track"
+  },
+  "snowshift.co": {
+   "row_id": "water_reactive_jacket",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real slope selfie footage"
+  },
+  "buchan": {
+   "row_id": "water_reactive_jacket",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real model shoot, brand-made but real people"
+  },
+  "vaprmask.store": {
+   "row_id": "heat_reactive_balaclava",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real man on ski resort, selfie"
+  },
+  "aivwear": {
+   "row_id": "reflective_piping_tracksuit",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real night shoot of reflective set (brand drop)"
+  },
+  "helloloop.us": {
+   "row_id": "plug_in_retro_handset",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Walmart reaction"
+  },
+  "getdialtone": {
+   "row_id": "plug_in_retro_handset",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Costco men"
+  },
+  "getdialbop": {
+   "row_id": "plug_in_retro_handset",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Walmart reaction + home"
+  },
+  "pinkiephones": {
+   "row_id": "bluetooth_retro_desk_phone",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real hands unboxing in pink bedroom"
+  },
+  "theofficialtalksy": {
+   "row_id": "cassette_bluetooth_speaker",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking staged retro room"
+  },
+  "enchantelle.store": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated IKEA reveal and rooms"
+  },
+  "fairyglow12": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store reveal and rooms"
+  },
+  "codglow.us": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated mall and rendered rooms"
+  },
+  "midglows": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated ladder fail and rendered rooms"
+  },
+  "nyxveil.usa": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated ladder fail; real-looking hands unbox"
+  },
+  "fifaglow.us": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store selfie and rooms"
+  },
+  "jurrasiglow.us": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated mom fail and rooms"
+  },
+  "roarium.shop": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated mural fall and rooms"
+  },
+  "mineglow.us": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated mural fall and rooms"
+  },
+  "stadiumglowprojector": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking POV and rendered stadium room"
+  },
+  "multiglow_us": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated dad fail and rooms"
+  },
+  "hogwartslights1": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store reaction and rooms"
+  },
+  "snowlit.store": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated H&M reveal and rooms"
+  },
+  "61585713497873": {
+   "row_id": "dome_scene_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated store family and rooms"
+  },
+  "jollyladdertm": {
+   "row_id": "climbing_santa_led_ladder",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated inflatable fail and houses"
+  },
+  "WitchBorneus": {
+   "row_id": "flying_witch_prop",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated driveway and doorbell cam"
+  },
+  "Spiderscare": {
+   "row_id": "rc_spider_prop",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated POV gifting and scares"
+  },
+  "sculpte_co": {
+   "row_id": "high_waist_shaping_briefs",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real women try-on, mirror selfies"
+  },
+  "makefullfashion": {
+   "row_id": "shaping_bodysuit_shorts",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real woman talking try-on at home"
+  },
+  "alpineglow.us": {
+   "row_id": "ski_led_strip_kit",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated ski-shop faint; POV clips staged"
+  },
+  "slopelit": {
+   "row_id": "ski_led_strip_kit",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real skier on slope + night POV"
+  },
+  "ledboards2026": {
+   "row_id": "snowboard_led_strip_kit",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "handheld DIY in car + real night riding"
+  },
+  "shred.pals": {
+   "row_id": "novelty_face_balaclava",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "handheld chairlift POV and selfies, motion blur"
+  },
+  "artichoundco": {
+   "row_id": "novelty_face_balaclava",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking chairlift and slope selfies"
+  },
+  "rooog.co": {
+   "row_id": "novelty_face_balaclava",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking chairlift and group shots"
+  },
+  "flashtrunks.us": {
+   "row_id": "novelty_face_balaclava",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking chairlift and group shots"
+  },
+  "cheeksupply.trunks": {
+   "row_id": "novelty_face_balaclava",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking selfies and groups"
+  },
+  "slopegeezers": {
+   "row_id": "novelty_face_balaclava",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking chairlift and group shots"
+  },
+  "smileyslopesco": {
+   "row_id": "novelty_face_balaclava",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking chairlift and lodge"
+  },
+  "dollyfacemask": {
+   "row_id": "novelty_face_balaclava",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking chairlift selfies"
+  },
+  "trigger.time2": {
+   "row_id": "novelty_face_balaclava",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking chairlift and slope"
+  },
+  "torqueslide.us": {
+   "row_id": "inflatable_vehicle_snow_sled",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated slope reveal and ride"
+  },
+  "bloatbellyboat": {
+   "row_id": "inflatable_vehicle_snow_sled",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated slope reveal and ride"
+  },
+  "snowfloat.usa": {
+   "row_id": "inflatable_vehicle_snow_sled",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated kids sledding"
+  },
+  "pippabrookstt": {
+   "row_id": "hidden_compartment_nightstand",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated police search story"
+  },
+  "aligncare.usa": {
+   "row_id": "pulley_lumbar_brace",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real mirror selfies and back views at home"
+  },
+  "truekneeofficial": {
+   "row_id": "pulley_lumbar_brace",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real man at home, phone on tripod"
+  },
+  "traineronee": {
+   "row_id": "tennis_rebound_trainer",
+   "ugc": true,
+   "ugc_strength": 3,
+   "why": "real handheld POV and street play"
+  },
+  "shopretroring": {
+   "row_id": "novelty_head_toilet_brush",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated cop restroom scene"
+  },
+  "snugglesmile.usa": {
+   "row_id": "kids_u_shaped_toothbrush",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real-looking mom POV with kid at home"
+  },
+  "dozewayoffcial": {
+   "row_id": "travel_sleep_hood_sling",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking plane cabin scene"
+  },
+  "cloudrestshop": {
+   "row_id": "travel_sleep_hood_sling",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated bodybuilder plane scene"
+  },
+  "airwaygirls": {
+   "row_id": "travel_sleep_hood_sling",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated plane scene"
+  },
+  "napnestt": {
+   "row_id": "inflatable_forward_lean_pillow",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated couple on plane"
+  },
+  "getnodaway": {
+   "row_id": "inflatable_forward_lean_pillow",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking plane scene"
+  },
+  "nestlytravel": {
+   "row_id": "inflatable_forward_lean_pillow",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking plane scene"
+  },
+  "thecozycompanion.usa": {
+   "row_id": "car_passenger_body_pillow",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated oven gag and car"
+  },
+  "homey__huess": {
+   "row_id": "refillable_perfume_atomizer",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "real hands demo at home"
+  },
+  "readingprojector.usa": {
+   "row_id": "storybook_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated rooms with projection"
+  },
+  "storybeamofficial": {
+   "row_id": "storybook_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Target reaction and rooms"
+  },
+  "dreamora.usa": {
+   "row_id": "storybook_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-looking POV unbag and rendered rooms"
+  },
+  "storyglow.us": {
+   "row_id": "storybook_projector",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated mall reaction and rooms"
+  },
+  "oklumiofficial": {
+   "row_id": "fake_window_projector",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "handheld real dorm bedroom unwrap + remote"
+  },
+  "realmprojector": {
+   "row_id": "fake_window_projector",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "handheld real bedroom unwrap + remote"
+  },
+  "lumina_noel": {
+   "row_id": "fake_window_projector",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "handheld real cozy bedroom demo"
+  },
+  "merrybeam.official": {
+   "row_id": "fake_window_projector",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "handheld real room demo"
+  },
+  "shoppixelprojector": {
+   "row_id": "fake_window_projector",
+   "ugc": true,
+   "ugc_strength": 2,
+   "why": "handheld real grass/table demo"
+  },
+  "cozywalllco": {
+   "row_id": "led_christmas_wall_garland",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated before/after rooms"
+  },
+  "mymerryview": {
+   "row_id": "smart_window_display_film",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Walmart scene + rendered windows"
+  },
+  "Pinky-Fluff-US": {
+   "row_id": "smart_window_display_film",
+   "ugc": false,
+   "ugc_strength": 1,
+   "why": "AI-generated Target reaction + rendered windows"
+  }
+ },
+ "moved": []
+}

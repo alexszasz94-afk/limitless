@@ -123,6 +123,33 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
   .flow{grid-template-columns:repeat(4,minmax(0,1fr))}
   .brain .ov{max-width:100%}
 }
+.sticky{position:sticky;top:env(safe-area-inset-top,0px);z-index:3}
+.cat{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.cathead{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;padding-top:6px;border-top:1px solid var(--edge)}
+.catt{font-family:var(--f-display);font-size:22px;letter-spacing:0;text-transform:none;color:var(--text);margin:0}
+.prodblock{border:1px solid var(--edge);border-radius:18px;background:var(--glass);padding:14px;min-width:0}
+.ph{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-bottom:12px}
+.ph h3{margin:0;font-family:var(--f-display);font-weight:600;font-size:16px}
+.ph .dot{width:8px;height:8px;border-radius:50%;background:var(--ion);box-shadow:0 0 10px var(--ion)}
+.ph .btn{margin-left:auto;padding:6px 12px;font-size:12.5px}
+.vrow{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px;scroll-snap-type:x proximity}
+.verdict{font-size:13px;border-radius:10px;padding:8px 12px;margin-bottom:12px;border:1px solid var(--edge)}
+.verdict.v-ok{border-color:var(--ok);background:var(--ok-soft)}.verdict.v-warn{border-color:var(--warn);background:var(--warn-soft)}.verdict.v-bad{border-color:var(--bad);background:var(--bad-soft)}
+.link{font:inherit;font-size:12.5px;background:none;border:0;color:var(--ion);cursor:pointer;text-decoration:underline;padding:0 0 0 6px}
+.acct{flex:none;width:200px;scroll-snap-align:start;border:1px solid var(--edge);border-radius:14px;background:var(--deck);padding:10px;display:flex;flex-direction:column;gap:6px}
+.acct header{display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:13px;font-weight:600;min-width:0}
+.acct header a{color:var(--text);text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.acct .vt{font-size:11.5px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vid{position:relative;aspect-ratio:9/16;width:100%;max-width:100%;border-radius:10px;border:0;background:#0a0c18 center/cover no-repeat;cursor:pointer;padding:0;overflow:hidden;display:block}
+.vid.none{display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:12px;cursor:default}
+.vid .pl{position:absolute;inset:0;margin:auto;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(5,6,13,.55);color:#fff;font-size:16px;backdrop-filter:blur(4px);box-shadow:0 0 0 1px rgba(255,255,255,.25)}
+.vid .du{position:absolute;right:6px;bottom:6px;font-family:var(--f-data);font-size:10.5px;color:#fff;background:rgba(5,6,13,.6);border-radius:5px;padding:1px 5px}
+.vid video{width:100%;height:100%;object-fit:cover;display:block}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.nums b{font-family:var(--f-data);font-size:15px;display:block}
+.nums small{font-size:10.5px;color:var(--dim);line-height:1.2;display:block}
+.acct footer{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;font-size:12px;color:var(--dim);border-top:1px solid var(--edge);padding-top:6px}
+.acct footer b{color:var(--text);font-family:var(--f-data)}
 @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
 </style>
 
@@ -152,7 +179,7 @@ const STADII=["găsit","analizat","planificat","produs","verificat","montat","po
 const SE={"găsit":"found","analizat":"analyzed","planificat":"planned","produs":"produced","verificat":"QA passed","montat":"edited","postat":"posted","măsurat":"measured"};
 const STATE_EN={"activ":"active","așteaptă":"waiting","în construcție":"building"};
 const AGENTI=[["vanator","Hunter","finds UGC virals ≥100k / 24 h"],["analist","Analyst","breaks each viral down shot by shot"],["planificator","Planner","picks the cheapest recipe"],["producator","Producer","Genjutsu · Seedance · GPT Image"],["qa","QA","checks every clip"],["montaj","Editor","text, pacing, music"],["distributie","Distribution","accounts and posters"],["invatare","Learner","numbers → new rules"],["strateg","Strategist","studies the market, finds a better way"]];
-const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",ai:{},finder:[],strategy:null,fq:"",fg:""};
+const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",ai:{},finder:[],strategy:null,fq:"",fg:"",posters:{}};
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt=n=>(n==null||n==="")?"–":Number(n).toLocaleString("en-US");
@@ -274,21 +301,39 @@ function vRequests(){
   ${S.write?`<section class="panel"><form id="fCerere" style="display:flex;flex-direction:column;gap:10px"><label for="ct">Your request<textarea id="ct" name="text" required placeholder="e.g. Find me 3 winter products for women 30+ under $60"></textarea></label><div><button class="btn solid" type="submit">Send</button></div></form></section>`:""}
   ${S.inbox.length?inboxList(S.inbox):`<div class="empty"><b>No requests yet</b>Write the first one above.</div>`}`;
 }
+function acctCard(a,variation){
+  const tv=a.top_views?fmt(a.top_views):"–";
+  return `<article class="acct">
+    <header><a href="${esc(a.url)}" target="_blank" rel="noopener">@${esc(a.handle)}</a><span class="chip c-ion">${esc((a.platform||"IG").slice(0,2).toUpperCase())}</span></header>
+    <span class="vt">${esc(variation)}</span>
+    ${a.media?`<button class="vid" data-act="play" data-src="${esc(a.media)}" data-poster="${esc(a.mkey||"")}" aria-label="Play @${esc(a.handle)} video" style="${S.posters[a.mkey]?`background-image:url(${S.posters[a.mkey]})`:""}"><span class="pl">▶</span>${a.dur?`<span class="du">0:${String(Math.round(a.dur)).padStart(2,"0")}</span>`:""}</button>`:`<div class="vid none">no video</div>`}
+    <div class="nums"><div><b>${fmt(a.followers)}</b><small>Followers</small></div><div><b>${fmt(a.avg_views)}</b><small>Avg views · current product</small></div></div>
+    <footer><span><b>${tv}</b> top video</span>${a.top_video?`<a href="${esc(a.top_video)}" target="_blank" rel="noopener">Open</a>`:""}${a.website?`<a href="${esc(a.website)}" target="_blank" rel="noopener">Store</a>`:""}</footer>
+  </article>`;
+}
+function brainVerdict(f){
+  const n=f.accounts,b=f.best_avg_views;
+  if(b<100000)return{k:"bad",t:`weak demand: best account averages ${fmt(b)} views. Skip unless a new angle changes the game.`};
+  if(n<=4&&b>=300000)return{k:"ok",t:`opportunity: ${fmt(b)} average views with only ${n} organic seller${n>1?"s":""}. Test order next to get $ per 1M views.`};
+  if(n<=4)return{k:"ok",t:`proven and uncrowded (${n} seller${n>1?"s":""}). Worth a test order.`};
+  return{k:"warn",t:`crowded: ${n} organic sellers. Only run it with a better video, a new variation or another niche.`};
+}
 function finderList(){
   const q=S.fq.toLowerCase(),g=S.fg;
-  const items=S.finder.filter(f=>(!g||f.group===g)&&(!q||(f.title+" "+f.variations.map(v=>v.title).join(" ")).toLowerCase().includes(q))).sort((a,b)=>b.best_avg_views-a.best_avg_views);
+  const items=S.finder.filter(f=>(!g||f.group===g)&&(!q||(f.title+" "+f.group+" "+f.variations.map(v=>v.title+" "+v.accounts.map(a=>a.handle).join(" ")).join(" ")).toLowerCase().includes(q)));
   if(!items.length)return `<div class="empty"><b>Nothing matches</b>Try another word or category.</div>`;
-  return `<div class="grid2">${items.map(f=>{const tv=f.top_video;return `<article class="card"><div class="row" style="justify-content:space-between"><span>${esc(f.group)}</span>${chip(fmt(f.best_avg_views)+" avg views","ion")}</div>
-    <h3>${esc(f.title)}</h3>
-    <div class="row"><span>Accounts <b>${f.accounts}</b></span><span>Variations <b>${f.variations.length}</b></span><span>Followers <b>${fmt(f.followers)}</b></span></div>
-    ${tv?`<div class="row"><span>Top video <b>${fmt(tv.views)}</b> views</span><a href="${esc(tv.url)}" target="_blank" rel="noopener">watch @${esc(tv.handle)}</a></div>`:""}
-    <details><summary class="muted" style="cursor:pointer">Variations and accounts</summary><div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">${f.variations.map(v=>`<div><b style="font-size:13.5px">${esc(v.title)}</b>${v.accounts.map(a=>`<div class="row"><a href="${esc(a.url)}" target="_blank" rel="noopener">@${esc(a.handle)}</a><span><b>${fmt(a.avg_views)}</b> avg</span><span><b>${fmt(a.followers)}</b> followers</span>${a.website?`<a href="${esc(a.website)}" target="_blank" rel="noopener">store</a>`:""}</div>`).join("")}</div>`).join("")}</div></details>
-    ${S.write?`<div><button class="btn" data-act="tofind" data-id="${f._id}">Send to Products</button></div>`:""}</article>`}).join("")}</div>`;
+  const groups=[...new Set(items.map(f=>f.group))].sort((a,b)=>Math.max(...items.filter(f=>f.group===b).map(f=>f.best_avg_views))-Math.max(...items.filter(f=>f.group===a).map(f=>f.best_avg_views)));
+  return groups.map((gname,gi)=>{const prods=items.filter(f=>f.group===gname).sort((a,b)=>b.best_avg_views-a.best_avg_views);
+    return `<section class="cat"><div class="cathead"><span class="kicker">Category ${String(gi+1).padStart(2,"0")}</span><h2 class="catt">${esc(gname)}</h2><span class="muted">${prods.length} products · ${prods.reduce((a,f)=>a+f.accounts,0)} accounts</span></div>
+      ${prods.map(f=>{const vd=brainVerdict(f),ai=S.ai["f_"+f._id];return `<div class="prodblock"><div class="ph"><span class="dot"></span><h3>${esc(f.title)}</h3><span class="chip c-pl">${fmt(f.best_avg_views)} best avg views</span>${S.write?`<button class="btn" data-act="tofind" data-id="${f._id}">Send to Products</button>`:""}</div>
+        <div class="verdict v-${vd.k}"><b>Brain:</b> ${esc(vd.t)}${S.sample?` <button class="link" data-act="angles" data-id="${f._id}">Ask the Strategist for a better angle</button>`:""}</div>
+        ${ai?`<div class="ai">${ai.html||esc(ai.text||"")}</div>`:""}
+        <div class="vrow">${f.variations.flatMap(v=>v.accounts.map(a=>acctCard(a,v.title))).join("")}</div></div>`}).join("")}</section>`}).join("");
 }
 function vFinder(){
   const groups=[...new Set(S.finder.map(f=>f.group))].sort();
-  return `<div class="top"><div><div class="kicker">01 · product finder</div><h1>${S.finder.length||""} products already selling</h1></div><div class="sub">From the archive: ${fmt(S.finder.reduce((a,f)=>a+f.accounts,0))} accounts, checked ${esc(S.finder[0]?.checked||"")}. Ranked by average views of each account's current product.</div></div>
-  <section class="panel"><form class="f" id="fFind" role="search"><label for="fq">Search<input id="fq" value="${esc(S.fq)}" placeholder="robe, projector, ski…"></label><label for="fg">Category<select id="fg"><option value="">All</option>${groups.map(g=>`<option ${g===S.fg?"selected":""}>${esc(g)}</option>`).join("")}</select></label></form></section>
+  return `<div class="top"><div><div class="kicker">01 · product finder</div><h1>Product opportunities</h1></div><div class="sub">${fmt(S.finder.reduce((a,f)=>a+f.accounts,0))} source accounts · ${S.finder.length} products · latest product per account · checked ${esc(S.finder[0]?.checked||"")}</div></div>
+  <section class="panel sticky"><form class="f" id="fFind" role="search"><label for="fq">Find a product, variation or account<input id="fq" value="${esc(S.fq)}" placeholder="robe, projector, @account…"></label><label for="fg">Category<select id="fg"><option value="">All categories</option>${groups.map(g=>`<option ${g===S.fg?"selected":""}>${esc(g)}</option>`).join("")}</select></label></form><p class="muted" style="margin:8px 0 0">Category → product → variation → accounts. Tap a video to play it. Scroll each row sideways.</p></section>
   <div id="flist">${S.finder.length?finderList():`<div class="empty"><b>Loading the product finder…</b></div>`}</div>`;
 }
 function vStrategy(){
@@ -388,7 +433,10 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
       await S.db.doc("virals/"+v._id).update({stadiu:"planificat",reteta:"full_genjutsu",credite_est:est,planificat_la:nowIso()});used+=est;n++}
     toast(n?`${n} videos planned`:"Today's budget is full");},b);
   if(a==="cleardemo")run(async()=>{for(const p of S.products.filter(x=>x.demo))await S.db.doc("products/"+p._id).delete();for(const v of S.virals.filter(x=>x.demo))await S.db.doc("virals/"+v._id).delete();await S.db.doc("config/main").update({demo:false});toast("Samples cleared");},b);
+  if(a==="play"){if(e.target.closest("video"))return;document.querySelectorAll(".vid video").forEach(v=>{const p=v.parentElement;v.remove();p.querySelector(".pl")?.removeAttribute("hidden")});
+    const v=document.createElement("video");v.src=b.dataset.src;v.controls=true;v.autoplay=true;v.playsInline=true;b.querySelector(".pl")?.setAttribute("hidden","");b.append(v);v.play().catch(()=>{});return}
   if(a==="ai")analyze(b.dataset.id);
+  if(a==="angles")angles(b.dataset.id);
   if(a==="tofind")run(async()=>{const f=S.finder.find(x=>x._id===b.dataset.id);if(!f)return;const best=f.variations.flatMap(v=>v.accounts).sort((x,y)=>y.avg_views-x.avg_views)[0];
     const p={nume:f.title,nume_en:f.title,categorie:f.group,categorie_en:f.group,link:best?.website||null,status:"candidat",metrici:{},criterii:{},viteza_max:0,sursa:"finder:"+f._id,adaugat:nowIso()};
     await S.db.collection("products").add(p);toast("Added to Products");location.hash="#products";},b);
@@ -409,10 +457,18 @@ Reply ONLY with JSON: {"checks":{"1":true|false|null,...,"10":...},"reasons":"2-
   }catch(e){S.ai[id]={text:e?.code==="not_granted"||e?.code==="sampling_disabled"?"Claude analysis isn't allowed on this page.":e?.code==="rate_limited"?"Too many requests. Try again in a minute.":"The analysis didn't finish. Try again."}}
   render();}
 
+async function angles(id){const f=S.finder.find(x=>x._id===id);if(!f||!S.sample)return;const k="f_"+id;S.ai[k]={text:"The Strategist is thinking…"};const l=$("#flist");if(l)l.innerHTML=finderList();
+  const prompt=`You are the Strategist of an organic dropshipping brand (short UGC remakes with AI, US buyers 25+, winter 2026). A product is already selling organically. Find how WE beat these sellers. Data: ${JSON.stringify({product:f.title,category:f.group,sellers:f.accounts,best_avg_views:f.best_avg_views,variations:f.variations.map(v=>({variation:v.title,accounts:v.accounts.map(a=>({handle:a.handle,followers:a.followers,avg_views:a.avg_views}))}))}).slice(0,6000)}
+Reply ONLY with JSON: {"read":"2 sentences on what this data says","angles":["3 UGC angles nobody is running yet"],"variation":"1 feasible custom variation to stand out","hook":"1 on-screen hook line, max 10 words, no false claims","risk":"1 sentence"}`;
+  try{const r=await S.sample.json(prompt,{modelTier:"default"});S.ai[k]={html:`<b>Strategist</b>\n${esc(r.read||"")}\n\n<b>Angles</b>\n${esc((r.angles||[]).join("\n"))}\n\n<b>Variation</b>\n${esc(r.variation||"")}\n\n<b>Hook</b>\n${esc(r.hook||"")}\n\n<b>Risk</b>\n${esc(r.risk||"")}`}}
+  catch(e){S.ai[k]={text:e?.code==="rate_limited"?"Too many requests. Try again in a minute.":"The Strategist couldn't answer. Try again."}}
+  const l2=$("#flist");if(l2)l2.innerHTML=finderList();}
+
 /* ---------- boot ---------- */
 function route(){const h=(location.hash||"#brain").slice(1);S.route=VIEWS[h]?h:"brain";NET.stop();render()}
 addEventListener("hashchange",route);
 route();
+fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};if(S.route==="finder"){const l=$("#flist");if(l)l.innerHTML=finderList()}}).catch(()=>{});
 (async()=>{
   const C=window.claude;if(!C){$("#who").textContent="Open this page in claude.ai to see live data.";return}
   const [db,user,sample]=await Promise.all([C.use("db"),C.use("user"),C.use("sample")]);

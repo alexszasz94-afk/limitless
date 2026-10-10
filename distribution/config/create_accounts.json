@@ -1,0 +1,37 @@
+{
+  "_note": "Steps for the 'Create the accounts' card, one block per platform (ids from platforms.json). Edit freely; no rebuild needed.",
+  "intro": "Create every account on the phone you will post from. Give each account its own email address, and never sign in to your personal accounts in the same apps.",
+  "platforms": [
+    {
+      "platform": "instagram",
+      "label": "Instagram",
+      "steps": [
+        "Sign up with the handle above (exact spelling, copy it)",
+        "Use the same handle as the name",
+        "Skip every \"find friends\" and contact sync prompt",
+        "Switch to a Professional (Creator) account",
+        "Turn on \"Upload at highest quality\" (Settings → Media quality)"
+      ]
+    },
+    {
+      "platform": "tiktok",
+      "label": "TikTok",
+      "steps": [
+        "Sign up with an email address, not your phone number",
+        "Use the handle above as the username and the name (copy it)",
+        "Skip contact sync and \"find friends\" prompts",
+        "Turn Data Saver off (Settings and privacy → Data Saver) so videos upload in full quality"
+      ]
+    },
+    {
+      "platform": "facebook",
+      "label": "Facebook Page",
+      "steps": [
+        "Create a Page and name it exactly like the handle above (copy it)",
+        "For the Page type, choose \"Creator\"",
+        "Set the category to \"Digital creator\"",
+        "Don't invite friends, don't sync contacts"
+      ]
+    }
+  ]
+}

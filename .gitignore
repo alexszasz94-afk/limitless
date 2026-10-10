@@ -1,0 +1,15 @@
+# Never commit secrets, data or media (each app has its own .gitignore too)
+.env
+.env.local
+node_modules/
+.next/
+data/
+distribution/content/
+*.tsbuildinfo
+next-env.d.ts
+.claude-keys/
+*.pem
+id_*
+*.key
+.DS_Store
+Thumbs.db

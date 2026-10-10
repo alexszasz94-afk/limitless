@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+/* Palette: the dark tile + blue glow.
+   #0E1014 tile · #4D8DFF glow · #79ADFF glyph · #A8C8FF highlight. */
+@theme {
+  --color-bg: #0e1014;
+  --color-surface: #141820;
+  --color-surface-2: #1b212c;
+  --color-surface-3: #222a37;
+  --color-line: #252d3b;
+  --color-line-strong: #323c4e;
+  --color-ink: #eef2fa;
+  --color-ink-dim: #9ba6ba;
+  --color-ink-faint: #5f6a80;
+  --color-accent: #4d8dff;
+  --color-accent-soft: #79adff;
+  --color-accent-pale: #a8c8ff;
+  --color-accent-deep: #2f6feb;
+  --color-warn: #f2b45a;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+html {
+  background: var(--color-bg);
+  color-scheme: dark;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  /* No double-tap zoom: taps register instantly on phones. */
+  touch-action: manipulation;
+}
+
+body {
+  background-color: var(--color-bg);
+  /* The favicon's glow, behind the top of every page. */
+  background-image: radial-gradient(
+    110% 420px at 50% -120px,
+    rgba(77, 141, 255, 0.16),
+    rgba(77, 141, 255, 0.05) 55%,
+    transparent 80%
+  );
+  background-repeat: no-repeat;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  min-height: 100dvh;
+  overscroll-behavior-y: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "tnum" 0;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-accent-soft);
+    outline-offset: 2px;
+  }
+}
+
+/* ---- surfaces & buttons ---------------------------------------------------- */
+
+.card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0) 120px),
+    var(--color-surface);
+  border: 1px solid var(--color-line);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 10px 30px -18px rgba(0, 0, 0, 0.8);
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #5c98ff 0%, #3a78f2 100%);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 10px 26px -12px rgba(77, 141, 255, 0.75);
+  transition: transform 0.12s ease, filter 0.15s ease, opacity 0.15s ease;
+}
+@media (hover: hover) {
+  .btn-primary:hover {
+    filter: brightness(1.06);
+  }
+}
+.btn-primary:active {
+  transform: scale(0.98);
+}
+.btn-primary:disabled {
+  opacity: 0.6;
+}
+
+.btn-quiet {
+  background: var(--color-surface-2);
+  color: var(--color-ink);
+  border: 1px solid var(--color-line);
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+@media (hover: hover) {
+  .btn-quiet:hover {
+    background: var(--color-surface-3);
+  }
+}
+.btn-quiet:active {
+  transform: scale(0.98);
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
+}
+
+/* ---- motion ---------------------------------------------------------------- */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  60% { transform: scale(1.12); }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+
+.animate-fade-up { animation: fade-up 0.35s ease both; }
+.animate-pop { animation: pop 0.3s cubic-bezier(0.2, 1.4, 0.4, 1) both; }
+
+.skeleton {
+  background: linear-gradient(90deg, var(--color-surface-2) 25%, var(--color-surface-3) 50%, var(--color-surface-2) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+/* Task-complete celebration: springy row, check draw, particle burst. */
+@keyframes task-done {
+  0% { transform: scale(0.94); box-shadow: 0 0 0 0 rgba(77, 141, 255, 0); }
+  45% { transform: scale(1.03); box-shadow: 0 0 26px 2px rgba(77, 141, 255, 0.42); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(77, 141, 255, 0); }
+}
+.animate-task-done { animation: task-done 0.45s cubic-bezier(0.2, 1.4, 0.4, 1) both; }
+
+@keyframes check-pop {
+  0% { transform: scale(0); }
+  60% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+.animate-check-pop { animation: check-pop 0.4s cubic-bezier(0.2, 1.4, 0.4, 1) both; }
+
+.check-draw {
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+  animation: check-draw 0.35s ease-out 0.15s forwards;
+}
+@keyframes check-draw { to { stroke-dashoffset: 0; } }
+
+.burst-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  margin: -2.5px 0 0 -2.5px;
+  border-radius: 9999px;
+  pointer-events: none;
+  opacity: 0;
+  animation: burst 0.65s ease-out forwards;
+}
+@keyframes burst {
+  0% { transform: translate(0, 0) scale(1); opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) scale(0.25); opacity: 0; }
+}
+
+.ring-pulse {
+  position: absolute;
+  inset: -2px;
+  border-radius: 9999px;
+  border: 2px solid var(--color-accent);
+  pointer-events: none;
+  animation: ring-pulse 0.6s ease-out 0.1s both;
+}
+@keyframes ring-pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(3); opacity: 0; }
+}
+
+/* Finish screen: soft glow breathing behind the ring. */
+@keyframes glow-breathe {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.08); }
+}
+.finish-glow {
+  position: absolute;
+  inset: -40px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(77, 141, 255, 0.35), transparent 65%);
+  animation: glow-breathe 2.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

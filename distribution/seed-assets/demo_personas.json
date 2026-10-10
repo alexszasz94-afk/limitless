@@ -1,0 +1,113 @@
+{
+  "_note": "DEMO personas for a local test database only. 'npm run seed' loads these (it refuses on a database that holds real personas or progress). The real personas are in config/personas.json.",
+  "personas": [
+    {
+      "id": "persona_demo_home",
+      "name": "Demo · Cozy Home",
+      "handles": {
+        "instagram": "demo.cozyhome",
+        "tiktok": "demo.cozyhome",
+        "facebook": "Demo Cozy Home"
+      },
+      "bio": "Small changes that make a home feel warm ✨ Link in bio",
+      "competitors": [
+        {
+          "platform": "instagram",
+          "handle": "example.homedecor"
+        },
+        {
+          "platform": "instagram",
+          "handle": "example.cozycorner"
+        },
+        {
+          "platform": "instagram",
+          "handle": "example.lightsandlamps"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "example.homefinds"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "example.roommakeover"
+        }
+      ],
+      "keywords": [
+        "home decor",
+        "cozy bedroom",
+        "fairy lights",
+        "room makeover"
+      ],
+      "voice_notes": "Warm, simple, a little playful.",
+      "pinned_comment": "Get yours here 👇 https://example.com"
+    },
+    {
+      "id": "persona_demo_posture",
+      "name": "Demo · Posture Daily",
+      "handles": {
+        "instagram": "demo.posturedaily",
+        "tiktok": "demo.posturedaily",
+        "facebook": "Demo Posture Daily"
+      },
+      "bio": "Stand taller, feel better. Daily posture tips 🌿",
+      "competitors": [
+        {
+          "platform": "instagram",
+          "handle": "example.posturecoach"
+        },
+        {
+          "platform": "instagram",
+          "handle": "example.backcare"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "example.deskstretch"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "example.wellnesshabits"
+        }
+      ],
+      "keywords": [
+        "posture",
+        "back pain relief",
+        "desk stretches",
+        "standing desk"
+      ],
+      "voice_notes": "Calm, encouraging, never salesy.",
+      "pinned_comment": ""
+    },
+    {
+      "id": "persona_demo_gadgets",
+      "name": "Demo · Smart Finds",
+      "handles": {
+        "instagram": "demo.smartfinds",
+        "tiktok": "demo.smartfinds",
+        "facebook": "Demo Smart Finds"
+      },
+      "bio": "The gadgets you didn't know you needed 🔎",
+      "competitors": [
+        {
+          "platform": "instagram",
+          "handle": "example.gadgetdrop"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "example.coolfinds"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "example.techunder50"
+        }
+      ],
+      "keywords": [
+        "gadgets",
+        "amazon finds",
+        "tiktok made me buy it",
+        "home gadgets"
+      ],
+      "voice_notes": "Fast, curious, short sentences.",
+      "pinned_comment": "Link here 👇 https://example.com"
+    }
+  ]
+}

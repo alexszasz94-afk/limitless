@@ -1,0 +1,36 @@
+{
+  "_note": "The real personas (one persona = one brand's set of accounts). 'npm run manage -- import <id>' loads a persona from here together with its content (content-manifests/<id>.json). 'id': lowercase letters, digits and underscores. Every persona needs a handle for each platform in platforms.json. 'competitors' are the accounts the warm-up sends posters to (any platform from platforms.json); 'keywords' are searched on every platform. 'pinned_comment' empty = no pinned comment. Replace the example below with your own brand.",
+  "personas": [
+    {
+      "id": "example_brand",
+      "name": "Example Brand",
+      "handles": {
+        "instagram": "examplebrand.official",
+        "tiktok": "examplebrand.official",
+        "facebook": "examplebrandofficial"
+      },
+      "bio": "One short line about the product ✨",
+      "competitors": [
+        {
+          "platform": "instagram",
+          "handle": "competitor.one"
+        },
+        {
+          "platform": "instagram",
+          "handle": "competitor.two"
+        },
+        {
+          "platform": "tiktok",
+          "handle": "competitor.three"
+        }
+      ],
+      "keywords": [
+        "first niche keyword",
+        "second niche keyword",
+        "third niche keyword"
+      ],
+      "voice_notes": "",
+      "pinned_comment": ""
+    }
+  ]
+}

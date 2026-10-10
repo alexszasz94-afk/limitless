@@ -1,0 +1,51 @@
+# Production stack on the server (see deploy/README.md).
+# Two containers: the portal and Caddy (HTTPS). Only Caddy is reachable from
+# the internet; the portal listens on the private Docker network.
+name: distribution
+
+services:
+  app:
+    build: .
+    image: distribution-app:latest
+    restart: unless-stopped
+    env_file: .env # ADMIN_PASSPHRASE + TIMEZONE (on the server only, never in git)
+    environment:
+      NODE_ENV: production
+      DATA_DIR: /data/db
+      CONTENT_DIR: /data/content
+      CONFIG_DIR: /app/config
+    volumes:
+      - ${DB_DIR:-/srv/distribution/db}:/data/db
+      - ${CONTENT_DIR_HOST:-/srv/distribution/content}:/data/content
+      - ./config:/app/config:ro # config edits arrive with git, no rebuild needed
+    expose:
+      - "3000"
+    stop_grace_period: 20s
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:?set SITE_ADDRESS in .env}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - /srv/caddy-sites:/etc/caddy/sites:ro # other apps' site files (Social Tracker)
+      - caddy_data:/data # certificates: must survive restarts
+      - caddy_config:/config
+    networks:
+      - default
+      - edge # shared with the other apps on this server (Social Tracker)
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  edge:
+    external: true # created by deploy/server-setup.sh (docker network create edge)

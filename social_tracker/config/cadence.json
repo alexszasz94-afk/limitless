@@ -1,0 +1,26 @@
+{
+  "_note": "When the scraper looks at what. Hours are local time in 'timezone'. Discovery finds new posts and refreshes the newest 'resultsPerProfile' of each account. Profiles = follower counts (Instagram and Facebook; TikTok's come with every discovery). Refresh tiers: how often a post is re-checked by age in days; daily and slower tiers run at 'anchorHourLocal' so day-to-day numbers compare like for like. crawlDepthCap: Instagram and Facebook posts are refreshed by re-crawling the profile newest-first, at most this deep (older Instagram posts fall back to by-URL scrapers). Surge: a post whose daily views beat 'deltaMultiple' x its account's median is checked every 'promoteEveryHours' for 'durationHours'.",
+  "timezone": "UTC",
+  "anchorHourLocal": 9,
+  "discovery": {
+    "atHours": [0, 6, 12, 18],
+    "resultsPerProfile": 12
+  },
+  "profiles": {
+    "atHours": [9]
+  },
+  "refreshTiers": [
+    { "maxAgeDays": 2, "everyHours": 12 },
+    { "maxAgeDays": 14, "everyHours": 24 },
+    { "maxAgeDays": 60, "everyHours": 168 },
+    { "maxAgeDays": null, "everyHours": 720 }
+  ],
+  "platformOverrides": {},
+  "crawlDepthCap": { "instagram": 250, "facebook": 500 },
+  "surge": {
+    "enabled": true,
+    "deltaMultiple": 2,
+    "promoteEveryHours": 6,
+    "durationHours": 48
+  }
+}

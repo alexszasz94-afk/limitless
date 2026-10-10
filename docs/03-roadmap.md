@@ -12,8 +12,11 @@
 - [ ] skill-urile pentru fiecare comandă
 
 ## Faza 2 — Volum
-- [ ] Postare programată (IG / FB / TikTok)
-- [ ] Multi-cont, cu variații per cont (personaj, cameră, text, muzică)
+- [x] Portalul de postare + tracker-ul integrate în repo (`distribution/`, `social_tracker/`)
+- [ ] Instalate pe server (Hetzner), după `SETUP-DISTRIBUTIE.md`
+- [ ] Legătura automată: videourile gata din LIMITLESS intră singure în coada portalului
+- [ ] Cifrele din tracker intră în scorul hook-urilor
+- [ ] Variații per cont (personaj, cameră, text, muzică)
 - [ ] Buget de credite pe zi și coadă de producție
 
 ## Faza 3 — Învățare

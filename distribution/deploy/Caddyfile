@@ -1,0 +1,29 @@
+# HTTPS front door. Certificates are fetched and renewed automatically.
+# SITE_ADDRESS comes from .env, e.g. "portal.1-2-3-4.sslip.io" today, a real
+# domain later (several addresses: "a.example.com, b.example.com").
+#
+# No `encode` here on purpose: videos and images must reach phones exactly as
+# stored (byte-identical, range requests intact). Pages are small anyway.
+{$SITE_ADDRESS} {
+	reverse_proxy app:3000 {
+		# stream video bytes straight through, no buffering
+		flush_interval -1
+		# during a redeploy, hold requests up to 30 s instead of failing
+		lb_try_duration 30s
+		lb_try_interval 500ms
+	}
+	header {
+		-Server
+		Strict-Transport-Security "max-age=31536000"
+	}
+	log {
+		output stdout
+		format console
+		level WARN
+	}
+}
+
+# Other apps on this server (the Social Tracker) bring their own site files:
+# /srv/caddy-sites/*.caddy, mounted here read-only. Their containers join the
+# shared "edge" Docker network so this Caddy can reach them.
+import /etc/caddy/sites/*.caddy

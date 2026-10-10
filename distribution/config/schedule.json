@@ -1,0 +1,89 @@
+{
+  "_note": "The daily plan for every persona (default: 3 reels a day from day 3; raise it later based on performance). The app reads this file on every request, no rebuild needed. Fixed days are listed by number; 'repeat_from' is the template for every day from that number on. 'overrides' maps a persona id to its own day list (used instead of the global one). A day a poster has already opened keeps the task list it had then; edits apply to days not opened yet. 'one_day_per_calendar_day': true = the next day opens on the next calendar day at the earliest; false = a finished day offers the next one right away, so a poster with momentum can do several days in one sitting. A 'post_reel' is one video posted on every platform in platforms.json.",
+  "one_day_per_calendar_day": false,
+  "warmup_defaults": {
+    "per_account_minutes": 5,
+    "behaviors": [
+      "Follow the accounts from the list below",
+      "Like roughly 1 in every 3-4 posts you see",
+      "Comment on roughly 1 in every 10 posts",
+      "Save some videos",
+      "Watch videos all the way to the end",
+      "Search the keywords and do the same there"
+    ]
+  },
+  "days": [
+    {
+      "day": 1,
+      "tasks": [
+        {
+          "type": "create_accounts"
+        },
+        {
+          "type": "warmup"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "tasks": [
+        {
+          "type": "warmup"
+        },
+        {
+          "type": "profile_setup"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "tasks": [
+        {
+          "type": "warmup"
+        },
+        {
+          "type": "post_reel"
+        },
+        {
+          "type": "post_reel"
+        },
+        {
+          "type": "post_reel"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "tasks": [
+        {
+          "type": "warmup"
+        },
+        {
+          "type": "post_reel"
+        },
+        {
+          "type": "post_reel"
+        },
+        {
+          "type": "post_reel"
+        }
+      ]
+    },
+    {
+      "day": "repeat_from",
+      "repeat_from": 5,
+      "tasks": [
+        {
+          "type": "post_reel"
+        },
+        {
+          "type": "post_reel"
+        },
+        {
+          "type": "post_reel"
+        }
+      ]
+    }
+  ],
+  "overrides": {}
+}

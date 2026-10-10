@@ -1,0 +1,30 @@
+{
+  "_note": "The products and their accounts the tracker follows. Add a product or an account here and push: the scraper picks it up on its next cycle, no code change. Set \"active\": false to pause an account or a whole product (its history stays). Removing an account from this file pauses it too. Every post is tracked as its own video, per platform and per product. Platforms: instagram, tiktok, facebook. 'handle' = the username without @; 'url' = the full profile address. 'avatar' (optional) = a square picture in public/avatars/, e.g. \"/avatars/example_brand.jpg\". The example below is inactive: replace it with your own accounts and set \"active\": true.",
+  "products": [
+    {
+      "id": "example_brand",
+      "name": "Example Brand",
+      "active": false,
+      "accounts": [
+        {
+          "platform": "instagram",
+          "handle": "examplebrand.official",
+          "url": "https://www.instagram.com/examplebrand.official/",
+          "active": true
+        },
+        {
+          "platform": "tiktok",
+          "handle": "examplebrand.official",
+          "url": "https://www.tiktok.com/@examplebrand.official",
+          "active": true
+        },
+        {
+          "platform": "facebook",
+          "handle": "examplebrandofficial",
+          "url": "https://www.facebook.com/examplebrandofficial",
+          "active": true
+        }
+      ]
+    }
+  ]
+}

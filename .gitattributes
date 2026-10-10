@@ -1,0 +1,3 @@
+# Unix line endings everywhere: the deploy scripts are copied to a Linux server and
+# break with Windows line endings (git on Windows would otherwise convert them).
+* text=auto eol=lf

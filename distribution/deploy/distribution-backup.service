@@ -1,0 +1,7 @@
+[Unit]
+Description=Distribution portal: nightly database + video backup
+After=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/srv/distribution/app/deploy/backup.sh

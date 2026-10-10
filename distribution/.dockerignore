@@ -1,0 +1,9 @@
+node_modules
+.next
+data
+content
+.env
+.git
+.claude-keys
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,52 @@
+# Production stack on the Hetzner server, next to the Distribution portal
+# (see deploy/README.md). One image, two containers:
+#   web      the dashboard (port 3100, private)
+#   scraper  the hourly scheduler that calls Apify
+# HTTPS comes from Distribution's Caddy, which reaches the dashboard over the
+# shared "edge" Docker network as social-tracker:3100.
+name: social_tracker
+
+x-common: &common
+  restart: unless-stopped
+  env_file: .env # TRACKER_PASSPHRASE + APIFY_TOKENS (on the server only, never in git)
+  environment:
+    NODE_ENV: production
+    DATA_DIR: /data/db
+    CONFIG_DIR: /app/config
+  volumes:
+    - ${DB_DIR:-/srv/social_tracker/db}:/data/db
+    # config edits arrive with git and are read live, no rebuild needed
+    - ./config:/app/config:ro
+
+services:
+  web:
+    <<: *common
+    build: .
+    image: social-tracker:latest
+    expose:
+      - "3100"
+    networks:
+      default: {}
+      edge:
+        aliases:
+          - social-tracker
+    stop_grace_period: 20s
+
+  scraper:
+    <<: *common
+    image: social-tracker:latest
+    pull_policy: never
+    depends_on:
+      - web
+    command: ["node", "--import", "tsx", "scraper/scheduler.ts"]
+    healthcheck:
+      test: ["CMD", "node", "scripts/healthcheck.mjs"]
+      interval: 60s
+      timeout: 10s
+      start_period: 60s
+      retries: 3
+    stop_grace_period: 30s
+
+networks:
+  edge:
+    external: true

@@ -1,0 +1,43 @@
+{
+  "_note": "Menu paths change between app versions. Update 'verified_on' whenever you re-check an item against the live app.",
+  "page_note": "A Facebook Page needs a personal Facebook profile behind it, so expect to create the Page from your own profile. That's normal: only the Page represents the persona.",
+  "items": [
+    {
+      "id": "deny_contact_sync",
+      "mode": "deny",
+      "title": "Deny contact sync",
+      "detail": "Whenever an app asks to \"find friends from your contacts\" or sync your address book, say no. On every platform, during signup and again in settings afterwards.",
+      "verified_on": "2026-10-05"
+    },
+    {
+      "id": "no_personal_link",
+      "mode": "deny",
+      "title": "Don't connect your personal accounts",
+      "detail": "Never link your own Facebook, Instagram or Google account to the persona's accounts. If an app offers to connect an account it found on the phone, decline.",
+      "verified_on": "2026-10-05"
+    },
+    {
+      "id": "discovery_off",
+      "mode": "deny",
+      "title": "Turn off account suggestions",
+      "detail": "Turn off \"suggest this account to others\" style settings. TikTok: Settings → Privacy → Suggest your account to others (every toggle off). Instagram: Settings → Account privacy area.",
+      "needs_verification": true,
+      "verified_on": "2026-10-05"
+    },
+    {
+      "id": "own_email",
+      "mode": "deny",
+      "title": "One email per persona",
+      "detail": "Each persona's accounts use their own email address. Never your personal one, and never shared between personas.",
+      "verified_on": "2026-10-05"
+    },
+    {
+      "id": "link_ig_to_page",
+      "mode": "do",
+      "title": "DO link Instagram to the persona's Facebook Page",
+      "detail": "This one is wanted: connect the persona's Instagram (professional account) to the persona's own Facebook Page. It's needed for cross-posting. Only ever to the persona's Page, never to anything personal.",
+      "needs_verification": true,
+      "verified_on": "2026-10-05"
+    }
+  ]
+}

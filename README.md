@@ -19,4 +19,6 @@ Sistemul care transformă organic dropshipping-ul într-o mașină: **research �
 | `products/` | câte un fișier per produs (referințe, unghiuri, public, prețuri) |
 | `library/` | hook-uri dovedite, virale analizate, muzică, fonturi, clipuri de mișcare |
 | `engine/` | modulele automate (research, producție, montaj, QA, feedback, postare) |
+| `distribution/` | portalul de postare: fiecare om din echipă primește un link secret cu lista zilei (conturi, încălzire, 3 videouri/zi) |
+| `social_tracker/` | tracker-ul de cifre: la fiecare oră citește conturile publice IG / TikTok / FB (vizualizări, urmăritori, top videouri, 24 h / 7 zile) |
 | `.claude/skills/` | comenzile pe care Claude le execută când Szasz le cere |

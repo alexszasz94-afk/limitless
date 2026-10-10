@@ -10,6 +10,8 @@ Citește în ordinea asta:
 5. `docs/04-produs-universal.md` — cum se detectează produsul și se alege strategia.
 6. `products/<produs>.md` — profilul produsului pe care lucrăm.
 
+Distribuție și cifre: `distribution/` (portalul de postare) și `social_tracker/` (tracker-ul). Instalare și rețete zilnice: `SETUP-DISTRIBUTIE.md`; fiecare are propriul `CLAUDE.md`. Orice push pe `main` ajunge pe server în ~2 minute (după instalare).
+
 Reguli de lucru:
 - Orice regulă nouă de la Szasz (`regula: ...`) → linie datată în `docs/02-reguli.md`.
 - Orice afirmație de tip „merge” trebuie legată de o cifră (retenție, views, CTR, comenzi). Fără cifră e ipoteză și se marchează ca atare.

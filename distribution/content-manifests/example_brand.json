@@ -1,0 +1,24 @@
+{
+  "_note": "Content for one persona, loaded with: npm run manage -- import example_brand. The file name and 'persona' must equal the persona id in config/personas.json. Files are relative to the content folder <CONTENT_DIR>/<persona>/ (on the server /srv/distribution/content/example_brand/). 'master' = the exact exported video, never changed; 'proxy' = a small H.264 copy for the in-page player (README: Video quality). 'caption' is one string for every platform, or an object per platform id, e.g. {\"instagram\": \"...\", \"tiktok\": \"...\", \"facebook\": \"...\"}. 'kind': reel, story or highlight_cover. Items are handed out in this order. Re-running the import adds new items, updates captions/files of existing ones and re-applies this order to the videos not handed out yet; it never deletes and never touches progress.",
+  "persona": "example_brand",
+  "profile_image": "images/profile.jpg",
+  "cover_image": "images/cover.jpg",
+  "items": [
+    {
+      "id": "video_1",
+      "kind": "reel",
+      "master": "reels/video_1.mp4",
+      "proxy": "reels/video_1_proxy.mp4",
+      "duration_seconds": 12.5,
+      "caption": "First caption here ✨ #hashtag1 #hashtag2"
+    },
+    {
+      "id": "video_2",
+      "kind": "reel",
+      "master": "reels/video_2.mp4",
+      "proxy": "reels/video_2_proxy.mp4",
+      "duration_seconds": 9.8,
+      "caption": "Second caption here 👇 #hashtag1 #hashtag3"
+    }
+  ]
+}

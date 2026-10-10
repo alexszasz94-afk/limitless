@@ -12,3 +12,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 
 ## Noi
 - (9 oct) Sistemul e universal: funcționează pe orice produs și detectează singur ce și cum să facă în funcție de produs — Szasz.
+- (10 oct) Distribuția (portal de postare cu echipă + conturi multiple) și tracker-ul de cifre fac parte din LIMITLESS — Szasz.

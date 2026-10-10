@@ -1,0 +1,8 @@
+[Unit]
+Description=Distribution portal: deploy new commits from GitHub
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/srv/distribution/app/deploy/pull-deploy.sh

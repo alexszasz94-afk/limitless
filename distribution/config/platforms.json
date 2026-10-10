@@ -1,0 +1,34 @@
+{
+  "_note": "The platforms every persona posts on, in tab order. Add or remove one here; no rebuild needed. 'profile_steps' drives the profile setup card, 'pinned_comment' shows the persona's pinned comment on that platform's tab. Personas need a handle per platform (personas.json).",
+  "platforms": [
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "tab_label": "Instagram",
+      "profile_steps": [
+        "picture",
+        "bio"
+      ]
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "tab_label": "TikTok",
+      "profile_steps": [
+        "picture",
+        "bio"
+      ]
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook Page",
+      "tab_label": "Facebook",
+      "profile_steps": [
+        "picture",
+        "cover",
+        "bio"
+      ],
+      "pinned_comment": true
+    }
+  ]
+}

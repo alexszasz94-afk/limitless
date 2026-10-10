@@ -1,0 +1,7 @@
+[Unit]
+Description=Social Tracker: nightly database backup
+After=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/srv/social_tracker/app/deploy/backup.sh

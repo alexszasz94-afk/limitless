@@ -1,0 +1,6 @@
+{
+  "_note": "Hard ceiling for this tracker's own Apify spend per calendar month (UTC). Every scraper run is checked against it first; over the ceiling = the run is skipped and logged as budget_stop. perRunMaxItems caps one run. keyMinHeadroomUsd: a key needs at least this much left on top of the run's estimate.",
+  "monthlyBudgetUsd": 5,
+  "perRunMaxItems": 300,
+  "keyMinHeadroomUsd": 0.1
+}

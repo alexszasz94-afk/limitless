@@ -1,0 +1,8 @@
+[Unit]
+Description=Social Tracker: deploy new commits from GitHub
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/srv/social_tracker/app/deploy/pull-deploy.sh

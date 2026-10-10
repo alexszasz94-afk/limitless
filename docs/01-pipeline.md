@@ -14,9 +14,9 @@ Stare: ✅ metoda e dovedită, trebuie doar construit modulul · 🟡 parțial /
 | 7 | Hook video | viral tăiat → Genjutsu cu setul nostru; fallback placă + seedance | `engine/produce` | ✅ |
 | 8 | QA vizual | Claude cu vedere, reguli per clip, max 3 regenerări | `engine/qa` | ✅ |
 | 9 | Montaj | tăieturi, text TikTok Sans, emoji, muzică de la secunda competitorului | `engine/edit` | ✅ |
-| 10 | Postare | manual | `engine/publish` (IG/FB/TikTok programat) | ⬜ |
-| 11 | Multi-cont | un cont | `engine/accounts` (variații per cont) | ⬜ |
-| 12 | Feedback cifre | Meta Graph API, scor hook la 72 h | `engine/feedback` | 🟡 |
+| 10 | Postare | echipă de posteri, fiecare cu link secret și lista zilei; videourile se împart în ordine, niciunul de două ori | `distribution/` | 🟡 cod gata, de instalat |
+| 11 | Multi-cont | conturi noi pe persoană: creare → încălzire 2 zile → profil → 3 videouri/zi pe IG + TikTok + FB | `distribution/` (`config/schedule.json`, `personas.json`) | 🟡 cod gata, de instalat |
+| 12 | Feedback cifre | tracker orar prin Apify: vizualizări, câștig zilnic, urmăritori, top videouri, cifre la 24 h și 7 zile | `social_tracker/` | 🟡 cod gata, de instalat |
 | 13 | Promovare hook | scor > mediană → dovedit | `engine/hooks` | 🟡 |
 | 14 | Conversie | — | `engine/store` (pagina, oferta, A/B) | ⬜ |
 | 15 | Produse noi | — | `products/` + `engine/product-scout` | ⬜ |

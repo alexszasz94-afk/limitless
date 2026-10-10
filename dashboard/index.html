@@ -176,6 +176,14 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 .pblk{border-top:1px solid var(--edge);padding-top:6px;margin-top:6px}
 .pblk pre{white-space:pre-wrap;font-family:var(--f-data);font-size:11px;max-height:220px;overflow:auto;background:var(--deck-2);border-radius:8px;padding:8px;margin:4px 0 0}
 @media (max-width:860px){.lane{grid-template-columns:1fr}.lside .vid{max-width:200px}}
+.insight{border:1px solid var(--plasma);border-radius:12px;background:var(--plasma-soft);padding:10px 12px;margin-bottom:10px}
+.insight summary{cursor:pointer;list-style:none;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px}
+.insight summary::-webkit-details-marker{display:none}
+.ins{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:10px}
+.ins h4{margin:0 0 4px;font-family:var(--f-data);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--plasma)}
+.ins p,.ins li{font-size:13.5px;margin:0 0 4px}.ins ul{margin:0;padding-left:18px}
+.exact{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin:10px 0 8px;font-size:14px}
+.tog{flex-direction:row;align-items:center;gap:6px;color:var(--text);font-size:13px}
 .verdict{font-size:13px;border-radius:10px;padding:8px 12px;margin-bottom:12px;border:1px solid var(--edge)}
 .verdict.v-ok{border-color:var(--ok);background:var(--ok-soft)}.verdict.v-warn{border-color:var(--warn);background:var(--warn-soft)}.verdict.v-bad{border-color:var(--bad);background:var(--bad-soft)}
 .link{font:inherit;font-size:12.5px;background:none;border:0;color:var(--ion);cursor:pointer;text-decoration:underline;padding:0 0 0 6px}
@@ -203,16 +211,16 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
   <div class="tag">organic commerce brain</div>
   <a href="#launch" data-r="launch"><i>▶</i>Start here</a>
   <a href="#top" data-r="top"><i>★</i>Top 10 picks</a>
-  <a href="#brain" data-r="brain"><i>00</i>Brain</a>
   <a href="#finder" data-r="finder"><i>01</i>Product finder</a>
-  <a href="#products" data-r="products"><i>02</i>Products</a>
-  <a href="#virals" data-r="virals"><i>03</i>Virals</a>
-  <a href="#boards" data-r="boards"><i>04</i>Video boards</a>
-  <a href="#production" data-r="production"><i>04</i>Production</a>
-  <a href="#strategy" data-r="strategy"><i>05</i>Strategy</a>
-  <a href="#business" data-r="business"><i>06</i>Business</a>
-  <a href="#rules" data-r="rules"><i>07</i>Rules & costs</a>
-  <a href="#requests" data-r="requests"><i>08</i>Ask Claude</a>
+  <a href="#boards" data-r="boards"><i>02</i>Video boards</a>
+  <a href="#products" data-r="products"><i>03</i>My products</a>
+  <a href="#virals" data-r="virals"><i>04</i>Virals queue</a>
+  <a href="#production" data-r="production"><i>05</i>Production</a>
+  <a href="#brain" data-r="brain"><i>06</i>Brain</a>
+  <a href="#strategy" data-r="strategy"><i>07</i>Strategy</a>
+  <a href="#business" data-r="business"><i>08</i>Business</a>
+  <a href="#rules" data-r="rules"><i>09</i>Rules & costs</a>
+  <a href="#requests" data-r="requests"><i>10</i>Ask Claude</a>
   <div class="sp"></div>
   <div class="who" id="who">Connecting…</div>
 </nav>
@@ -226,7 +234,7 @@ const STADII=["găsit","analizat","planificat","produs","verificat","montat","po
 const SE={"găsit":"found","analizat":"analyzed","planificat":"planned","produs":"produced","verificat":"QA passed","montat":"edited","postat":"posted","măsurat":"measured"};
 const STATE_EN={"activ":"active","așteaptă":"waiting","în construcție":"building"};
 const AGENTI=[["vanator","Hunter","finds UGC virals ≥100k / 24 h"],["analist","Analyst","breaks each viral down shot by shot"],["planificator","Planner","picks the cheapest recipe"],["producator","Producer","Genjutsu · Seedance · GPT Image"],["qa","QA","checks every clip"],["montaj","Editor","text, pacing, music"],["distributie","Distribution","accounts and posters"],["invatare","Learner","numbers → new rules"],["strateg","Strategist","studies the market, finds a better way"]];
-const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",launch:{},ai:{},finder:[],strategy:null,fq:"",fg:"",posters:{},takes:{},top:null,fmedia:{},boards:[],board:"",lanes:{}};
+const S={db:null,user:null,sample:null,write:true,products:[],virals:[],inbox:[],cfg:null,agents:{},route:"brain",launch:{},ai:{},finder:[],strategy:null,fq:"",fg:"",posters:{},takes:{},top:null,fmedia:{},boards:[],board:"",lanes:{},insights:{},rows:null,ugcOnly:false};
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt=n=>(n==null||n==="")?"–":Number(n).toLocaleString("en-US");
@@ -348,11 +356,11 @@ function vRequests(){
   ${S.write?`<section class="panel"><form id="fCerere" style="display:flex;flex-direction:column;gap:10px"><label for="ct">Your request<textarea id="ct" name="text" required placeholder="e.g. Find me 3 winter products for women 30+ under $60"></textarea></label><div><button class="btn solid" type="submit">Send</button></div></form></section>`:""}
   ${S.inbox.length?inboxList(S.inbox):`<div class="empty"><b>No requests yet</b>Write the first one above.</div>`}`;
 }
-function acctCard(a,variation){const mm=S.fmedia[a.handle];if(mm&&!a.mkey){a={...a,mkey:mm.mkey,dur:mm.dur,media:"fv/"+mm.mkey+".mp4"};}
+function acctCard(a,variation,ugc){const mm=S.fmedia[a.handle];if(mm&&!a.mkey){a={...a,mkey:mm.mkey,dur:mm.dur,media:"fv/"+mm.mkey+".mp4"};}
   const tv=a.top_views?fmt(a.top_views):"–";
   return `<article class="acct">
     <header><a href="${esc(a.url)}" target="_blank" rel="noopener">@${esc(a.handle)}</a><span class="chip c-ion">${esc((a.platform||"IG").slice(0,2).toUpperCase())}</span></header>
-    <span class="vt">${esc(variation)}</span>
+    <span class="vt">${ugc?'<span class="chip c-ok">UGC</span> ':""}${esc(variation)}</span>
     ${a.media?`<button class="vid" data-act="play" data-src="${esc(a.media)}" data-poster="${esc(a.mkey||"")}" aria-label="Play @${esc(a.handle)} video" style="${S.posters[a.mkey]?`background-image:url(${S.posters[a.mkey]})`:""}"><span class="pl">▶</span>${a.dur?`<span class="du">0:${String(Math.round(a.dur)).padStart(2,"0")}</span>`:""}</button>`:(a.top_video?`<a class="vid none" href="${esc(a.top_video)}" target="_blank" rel="noopener"><span class="pl">▶</span><span class="wo">Watch the original</span></a>`:`<div class="vid none">no video</div>`)}
     <div class="nums"><div><b>${fmt(a.followers)}</b><small>Followers</small></div><div><b>${fmt(a.avg_views)}</b><small>Avg views · current product</small></div></div>
     ${(()=>{const k=S.takes[a.mkey];if(!k)return "";const sc=Number(k.score)||0;return `<details class="take"><summary><span class="chip ${sc>=8?"c-ok":sc>=6?"c-ion":"c-warn"}">Brain ${sc}/10</span> <span class="muted">${esc(k.type||"")}</span></summary>
@@ -360,12 +368,31 @@ function acctCard(a,variation){const mm=S.fmedia[a.handle];if(mm&&!a.mkey){a={..
     <footer><span><b>${tv}</b> top video</span>${a.top_video?`<a href="${esc(a.top_video)}" target="_blank" rel="noopener">Open</a>`:""}${a.website?`<a href="${esc(a.website)}" target="_blank" rel="noopener">Store</a>`:""}</footer>
   </article>`;
 }
+function insightBlock(f){const I=S.insights[f._id];if(!I)return "";
+  const li=a=>(a||[]).map(x=>`<li>${esc(typeof x==="string"?x:(x.name?`${x.name}: ${x.why}${x.feasibility?` (${x.feasibility})`:""}`:JSON.stringify(x)))}</li>`).join("");
+  return `<details class="insight"><summary><span class="chip c-pl">Why it sells · how to win</span><span class="muted"> ${esc(I.verdict||"")}</span></summary>
+   <div class="ins"><section><h4>Why it works</h4><p>${esc(I.why_it_works)}</p><p class="muted">${esc(I.who_buys||"")}</p></section>
+   <section><h4>Winning patterns</h4><ul>${li(I.winning_patterns)}</ul></section>
+   <section><h4>Make the videos better</h4><ul>${li(I.better_videos)}</ul></section>
+   <section><h4>Genius variations</h4><ul>${li(I.variations)}</ul></section>
+   <section><h4>Take the concept higher</h4><ul>${li(I.concept_upgrades)}</ul></section>
+   <section><h4>Landing page angle</h4><p>${esc(I.landing_angle||"")}</p><p class="muted">Risks: ${esc(I.risks||"")}</p></section></div></details>`}
 function brainVerdict(f){
   const n=f.accounts,b=f.best_avg_views;
   if(b<100000)return{k:"bad",t:`weak demand: best account averages ${fmt(b)} views. Skip unless a new angle changes the game.`};
   if(n<=4&&b>=300000)return{k:"ok",t:`opportunity: ${fmt(b)} average views with only ${n} organic seller${n>1?"s":""}. Test order next to get $ per 1M views.`};
   if(n<=4)return{k:"ok",t:`proven and uncrowded (${n} seller${n>1?"s":""}). Worth a test order.`};
   return{k:"warn",t:`crowded: ${n} organic sellers. Only run it with a better video, a new variation or another niche.`};
+}
+function rowsFor(f){
+  const accs=f.variations.flatMap(v=>v.accounts.map(a=>({...a,_var:v.title})));
+  const R=S.rows;let groups;
+  if(R){const by={};accs.forEach(a=>{const ra=R.accounts?.[a.handle];const rid=ra?.row_id||"other";(by[rid]=by[rid]||[]).push({...a,_ugc:ra?.ugc,_ugcs:ra?.ugc_strength||0})});
+    groups=Object.entries(by).map(([rid,list])=>{const row=(R.rows||[]).find(r=>r.row_id===rid);return{title:row?.exact_product||rid.replace(/_/g," "),def:row?.definition||"",list}});}
+  else groups=[{title:"",def:"",list:accs}];
+  return groups.map(g=>{let list=g.list.slice().sort((a,b)=>((b._ugcs||0)-(a._ugcs||0))||((b.avg_views||0)-(a.avg_views||0)));if(S.ugcOnly)list=list.filter(a=>a._ugc);if(!list.length)return "";
+    const nu=list.filter(a=>a._ugc).length;
+    return `${g.title?`<div class="exact"><b>${esc(g.title)}</b><span class="muted">${esc(g.def)}</span>${R?chip(nu+" UGC of "+list.length,"ok"):""}</div>`:""}<div class="vrow">${list.map(a=>acctCard(a,a._var,a._ugc)).join("")}</div>`}).join("");
 }
 function finderList(){
   const q=S.fq.toLowerCase(),g=S.fg;
@@ -375,14 +402,15 @@ function finderList(){
   return groups.map((gname,gi)=>{const prods=items.filter(f=>f.group===gname).sort((a,b)=>b.best_avg_views-a.best_avg_views);
     return `<section class="cat"><div class="cathead"><span class="kicker">Category ${String(gi+1).padStart(2,"0")}</span><h2 class="catt">${esc(gname)}</h2><span class="muted">${prods.length} products · ${prods.reduce((a,f)=>a+f.accounts,0)} accounts</span></div>
       ${prods.map(f=>{const vd=brainVerdict(f),ai=S.ai["f_"+f._id];return `<div class="prodblock"><div class="ph"><span class="dot"></span><h3>${esc(f.title)}</h3><span class="chip c-pl">${fmt(f.best_avg_views)} best avg views</span>${S.write?`<button class="btn" data-act="tofind" data-id="${f._id}">Send to Products</button>`:""}</div>
+        ${insightBlock(f)}
         <div class="verdict v-${vd.k}"><b>Brain:</b> ${esc(vd.t)}${S.sample?` <button class="link" data-act="angles" data-id="${f._id}">Ask the Strategist for a better angle</button>`:""}</div>
         ${ai?`<div class="ai">${ai.html||esc(ai.text||"")}</div>`:""}
-        <div class="vrow">${f.variations.flatMap(v=>v.accounts.map(a=>acctCard(a,v.title))).join("")}</div></div>`}).join("")}</section>`}).join("");
+        ${rowsFor(f)}</div>`}).join("")}</section>`}).join("");
 }
 function vFinder(){
   const groups=[...new Set(S.finder.map(f=>f.group))].sort();
   return `<div class="top"><div><div class="kicker">01 · product finder</div><h1>Product opportunities</h1></div><div class="sub">${fmt(S.finder.reduce((a,f)=>a+f.accounts,0))} source accounts · ${S.finder.length} products · latest product per account · checked ${esc(S.finder[0]?.checked||"")}</div></div>
-  <section class="panel sticky"><form class="f" id="fFind" role="search"><label for="fq">Find a product, variation or account<input id="fq" value="${esc(S.fq)}" placeholder="robe, projector, @account…"></label><label for="fg">Category<select id="fg"><option value="">All categories</option>${groups.map(g=>`<option ${g===S.fg?"selected":""}>${esc(g)}</option>`).join("")}</select></label></form><p class="muted" style="margin:8px 0 0">Category → product → variation → accounts. Tap a video to play it. Scroll each row sideways.</p></section>
+  <section class="panel sticky"><form class="f" id="fFind" role="search"><label for="fq">Find a product, variation or account<input id="fq" value="${esc(S.fq)}" placeholder="robe, projector, @account…"></label><label for="fg">Category<select id="fg"><option value="">All categories</option>${groups.map(g=>`<option ${g===S.fg?"selected":""}>${esc(g)}</option>`).join("")}</select></label></form><div class="row" style="margin-top:8px"><label class="tog"><input type="checkbox" id="ugcOnly" ${S.ugcOnly?"checked":""}> Only real UGC videos</label><span class="muted">Category → exact product → sellers. UGC first. Tap ▶ to play. Open “Why it sells” for psychology, better videos and variations.</span></div></section>
   <div id="flist">${S.finder.length?finderList():`<div class="empty"><b>Loading the product finder…</b></div>`}</div>`;
 }
 function vStrategy(){
@@ -541,7 +569,7 @@ document.addEventListener("submit",e=>{e.preventDefault();const f=e.target,d=Obj
   if(f.id==="fCerere")run(async()=>{await S.db.collection("inbox").add({text:d.text,status:"nou",creat:nowIso()});f.reset();toast("Sent. Write “requests” in chat.");},f.querySelector("button"));
 });
 document.addEventListener("input",e=>{if(e.target.closest("#fCalc")){calc();return}if(e.target.id==="fq"){S.fq=e.target.value;const l=$("#flist");if(l)l.innerHTML=finderList()}});
-document.addEventListener("change",e=>{const el=e.target;if(el.id==="fg"){S.fg=el.value;const l=$("#flist");if(l)l.innerHTML=finderList();return}if(el.dataset.act==="stadiu")run(()=>S.db.doc("virals/"+el.dataset.id).update({stadiu:el.value}))});
+document.addEventListener("change",e=>{const el=e.target;if(el.id==="ugcOnly"){S.ugcOnly=el.checked;const l=$("#flist");if(l)l.innerHTML=finderList();return}if(el.id==="fg"){S.fg=el.value;const l=$("#flist");if(l)l.innerHTML=finderList();return}if(el.dataset.act==="stadiu")run(()=>S.db.doc("virals/"+el.dataset.id).update({stadiu:el.value}))});
 document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(!b||b.tagName==="SELECT")return;const a=b.dataset.act;
   if(a==="crit")run(async()=>{const p=S.products.find(x=>x._id===b.dataset.id);const c={...(p.criterii||{})},i=b.dataset.i;c[i]=c[i]===true?false:c[i]===false?null:true;if(c[i]===null)delete c[i];
     const [s,ver]=scor({...p,criterii:c});await S.db.doc("products/"+p._id).set({...stripId(p),criterii:c,scor:s,verdict:ver})});
@@ -599,6 +627,8 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};if(S
   if(!db){$("#who").textContent="Live data isn't available in this view.";S.write=false;render();return}
   const live=(path,key)=>db.collection(path).onSnapshot(s=>{S[key]=s.docs.map(d=>({_id:d.id,...d.data()}));if(key==="inbox")S.inbox.sort((a,b)=>String(b.creat).localeCompare(String(a.creat)));if(key==="finder"&&document.activeElement?.id==="fq"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}render()},()=>{});
   live("products","products");live("finder","finder");
+  db.collection("insights").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.insights=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")render()},()=>{});
+  db.doc("config/rows").onSnapshot(s=>{S.rows=s.exists?s.data():null;if(S.route==="finder"&&document.activeElement?.id!=="fq")render()},()=>{});
   db.collection("boards").onSnapshot(s=>{S.boards=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")render()},()=>{});
   db.collection("takes").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.takes=m;if(S.route==="finder"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}},()=>{});
   db.doc("config/strategy").onSnapshot(s=>{S.strategy=s.exists?s.data():null;if(S.route==="strategy")render()},()=>{});live("virals","virals");live("inbox","inbox");

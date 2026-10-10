@@ -1,0 +1,220 @@
+<title>Heated Hooded Poncho</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one-product store page. Sticky buy box beside a tall vertical video on desktop, stacked on phones, sticky add-to-cart bar on mobile. */
+:root{
+  --snow:#f5f6f8; --card:#ffffff; --ink:#1b2130; --soft:#5b6476; --line:#e2e5eb;
+  --ember:#ff5a36; --ember-deep:#d9411f; --ember-soft:#ffe8e1; --pine:#1f4d45; --pine-soft:#e3efec; --gold:#f2b84b;
+  --f-display:"Bricolage Grotesque",system-ui,sans-serif; --f-body:"Figtree",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --snow:#12151c; --card:#1a1f29; --ink:#eef1f6; --soft:#a5adbd; --line:#2a3140;
+  --ember:#ff6a47; --ember-deep:#ff825f; --ember-soft:#3a1f19; --pine:#6fc2b0; --pine-soft:#173430; --gold:#f2b84b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --snow:#12151c; --card:#1a1f29; --ink:#eef1f6; --soft:#a5adbd; --line:#2a3140;
+  --ember:#ff6a47; --ember-deep:#ff825f; --ember-soft:#3a1f19; --pine:#6fc2b0; --pine-soft:#173430; --gold:#f2b84b; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--snow);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;margin:0}
+a{color:var(--ember-deep)}
+.demo{background:var(--ink);color:var(--snow);font-size:13px;text-align:center;padding:8px 16px}
+.bar{background:var(--pine);color:#fff;font-size:14px;font-weight:600;text-align:center;padding:9px 16px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding-block:16px}
+.logo{font-family:var(--f-display);font-weight:800;font-size:22px;letter-spacing:-.01em}
+.logo span{color:var(--ember)}
+.cartbtn{font-size:14px;color:var(--soft)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;padding-block:16px 48px;align-items:start}
+.media{display:grid;grid-template-columns:72px minmax(0,1fr);gap:12px}
+.thumbs{display:flex;flex-direction:column;gap:10px}
+.thumbs div{aspect-ratio:3/4;border-radius:10px;background:linear-gradient(160deg,var(--ember-soft),var(--pine-soft));border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--soft);text-align:center;padding:4px}
+.video{position:relative;aspect-ratio:9/16;max-height:720px;width:100%;max-width:100%;border-radius:22px;overflow:hidden;background:
+ radial-gradient(60% 40% at 50% 62%,rgba(255,90,54,.55),transparent 70%),linear-gradient(180deg,#2a3242,#141821);display:flex;flex-direction:column;justify-content:space-between;padding:22px;color:#fff}
+.video .cap{font-family:var(--f-display);font-weight:800;font-size:clamp(22px,2.4vw,30px);line-height:1.15;text-align:center;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.video .glow{align-self:center;width:58%;aspect-ratio:3/4;border-radius:46% 46% 18% 18%;background:linear-gradient(180deg,#b7c4bf,#7f938d);box-shadow:0 0 80px 10px rgba(255,90,54,.45);position:relative}
+.video .glow::after{content:"";position:absolute;left:24%;right:24%;top:10%;height:26%;border-radius:50%;background:#2a3242}
+.video .note{font-size:12.5px;opacity:.85;text-align:center}
+.buy{position:sticky;top:16px;display:flex;flex-direction:column;gap:16px}
+.rating{font-size:14px;color:var(--soft)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(32px,4vw,48px);line-height:1.05;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.sub{font-size:18px;color:var(--soft);margin:0}
+.price{display:flex;align-items:baseline;gap:12px}
+.price b{font-family:var(--f-display);font-size:34px}
+.price s{color:var(--soft);font-size:18px}
+.save{background:var(--ember-soft);color:var(--ember-deep);font-weight:700;font-size:13px;padding:4px 10px;border-radius:999px}
+.bundles{display:flex;flex-direction:column;gap:10px;border:0;padding:0;margin:0}
+.bundles legend{font-weight:700;margin-bottom:8px}
+.opt{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:12px;align-items:center;border:2px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--card);cursor:pointer;position:relative}
+.opt:has(input:checked){border-color:var(--ember);background:var(--ember-soft)}
+.opt input{accent-color:var(--ember);width:18px;height:18px;margin:0}
+.opt b{display:block}.opt small{color:var(--soft)}
+.opt .tag{position:absolute;top:-11px;right:14px;background:var(--ember);color:#fff;font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px}
+.opt .pp{text-align:right;font-weight:700}
+.opt .pp s{display:block;font-weight:400;color:var(--soft);font-size:13px}
+.heat{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.heat button{font:inherit;border:1px solid var(--line);background:var(--snow);color:var(--ink);border-radius:10px;width:40px;height:40px;cursor:pointer}
+.dots{display:flex;gap:6px}.dots i{width:12px;height:12px;border-radius:50%;background:var(--line);display:block;transition:background .2s,box-shadow .2s}
+.dots i.on{background:var(--ember);box-shadow:0 0 10px var(--ember)}
+.cta{font:inherit;font-size:18px;font-weight:700;border:0;border-radius:14px;padding:18px;background:var(--ember);color:#fff;cursor:pointer;box-shadow:0 12px 30px -12px var(--ember)}
+.cta:hover{background:var(--ember-deep)}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--pine);outline-offset:2px}
+.trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;font-size:13px;color:var(--soft);text-align:center}
+.trust div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 6px}
+.trust b{display:block;color:var(--ink);font-size:14px}
+.ship{font-size:14px;background:var(--pine-soft);color:var(--pine);border-radius:12px;padding:10px 14px;font-weight:600}
+section.band{padding-block:56px;border-top:1px solid var(--line)}
+h2{font-family:var(--f-display);font-weight:800;font-size:clamp(26px,3vw,38px);letter-spacing:-.015em;margin:0 0 20px;text-wrap:balance}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;counter-increment:s}
+.step::before{content:counter(s);display:inline-flex;width:36px;height:36px;border-radius:50%;background:var(--ember);color:#fff;font-weight:800;align-items:center;justify-content:center;margin-bottom:10px}
+.step h3,.feat h3{margin:0 0 6px;font-size:18px}
+.step p,.feat p{margin:0;color:var(--soft)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
+.feats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.cmp{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:18px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:left}
+th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--soft)}
+td.us{font-weight:700;color:var(--pine)}
+tr:last-child td{border-bottom:0}
+.gift{background:linear-gradient(135deg,var(--pine),#163a34);color:#fff;border-radius:24px;padding:36px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;align-items:center}
+.gift h2{color:#fff}.gift p{color:#d6e7e2;margin:0 0 10px}
+.gift .box{aspect-ratio:1;border-radius:18px;background:linear-gradient(160deg,#ff7a5c,#d9411f);position:relative;max-width:260px;justify-self:center;width:100%}
+.gift .box::before{content:"";position:absolute;left:46%;width:8%;top:0;bottom:0;background:var(--gold)}
+.gift .box::after{content:"";position:absolute;top:40%;height:8%;left:0;right:0;background:var(--gold)}
+.reviews{background:var(--card);border:1px dashed var(--line);border-radius:18px;padding:24px;color:var(--soft)}
+details.faq{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+details.faq summary{cursor:pointer;font-weight:700}
+details.faq p{color:var(--soft);margin:8px 0 0}
+footer{padding-block:36px;color:var(--soft);font-size:14px;border-top:1px solid var(--line)}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:none;gap:12px;align-items:center;justify-content:space-between;z-index:5}
+.sticky .cta{padding:14px 20px;font-size:16px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:90px;background:var(--ink);color:var(--snow);padding:12px 18px;border-radius:12px;font-weight:600}
+@media (max-width:860px){
+  .hero,.split,.gift{grid-template-columns:1fr}
+  .media{grid-template-columns:1fr}.thumbs{flex-direction:row;order:2}.thumbs div{width:64px}
+  .buy{position:static}.steps,.feats{grid-template-columns:1fr}
+  .sticky{display:flex}body{padding-bottom:84px}
+  .video{max-height:none}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="demo">Example landing page for a product test. Store name, prices and media are placeholders until the product is approved.</div>
+<div class="bar">Free US shipping · Order by Dec 12 for Christmas delivery</div>
+<div class="wrap">
+<header class="top"><div class="logo">LIMITLESS <span>Home</span></div><div class="cartbtn">Cart (<span id="cartCount">0</span>)</div></header>
+
+<main>
+<section class="hero">
+  <div class="media">
+    <div class="thumbs" aria-hidden="true"><div>UGC video</div><div>Lining close-up</div><div>Heat controller</div><div>Gift box</div></div>
+    <div class="video" role="img" aria-label="Vertical UGC video area: a woman wraps herself in the heated poncho on the couch">
+      <div class="cap">“Every cold-aholic needs this… 🥶➡️🔥”</div>
+      <div class="glow" aria-hidden="true"></div>
+      <div class="note">Our best-performing UGC video plays here (remade with a new person and room).</div>
+    </div>
+  </div>
+
+  <div class="buy">
+    <div class="rating">Ships in 24 h · 30-day warm-or-it's-free guarantee</div>
+    <h1>The Heated Hooded Poncho</h1>
+    <p class="sub">Warm in 60 seconds. Wear it on the couch, at the game, in the car or at your desk, without turning up the heat.</p>
+    <div class="price"><b id="price">$59.99</b><s id="was">$89.99</s><span class="save" id="save">Save 33%</span></div>
+
+    <fieldset class="bundles">
+      <legend>Choose your bundle</legend>
+      <label class="opt"><input type="radio" name="b" value="1" checked><span><b>1 Poncho</b><small>For you</small></span><span class="pp">$59.99<s>$89.99</s></span></label>
+      <label class="opt"><span class="tag">Most gifted</span><input type="radio" name="b" value="2"><span><b>2 Ponchos</b><small>One for you, one to gift · $47.50 each</small></span><span class="pp">$94.99<s>$179.98</s></span></label>
+      <label class="opt"><input type="radio" name="b" value="3"><span><b>3 Ponchos</b><small>Family pack · $43.33 each</small></span><span class="pp">$129.99<s>$269.97</s></span></label>
+    </fieldset>
+
+    <div class="heat" aria-label="Heat level preview">
+      <button type="button" id="minus" aria-label="Lower heat">−</button>
+      <div class="dots" id="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+      <button type="button" id="plus" aria-label="Raise heat">+</button>
+      <span id="heatLabel">Level 3 · Toasty</span>
+    </div>
+
+    <button class="cta" id="add">Add to cart · <span id="ctaPrice">$59.99</span></button>
+    <div class="ship">🎁 Add a gift box at checkout. Arrives wrapped, ready for under the tree.</div>
+    <div class="trust"><div><b>30 days</b>money-back</div><div><b>Secure</b>checkout</div><div><b>Free</b>US shipping</div></div>
+  </div>
+</section>
+
+<section class="band">
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step"><h3>Plug in</h3><p>Connect any USB power bank and slip it into the hidden pocket.</p></div>
+    <div class="step"><h3>Pick your heat</h3><p>Choose from 5 heat levels on the controller. It warms up in about a minute.</p></div>
+    <div class="step"><h3>Wrap up</h3><p>Pull up the hood, close the front and stay warm wherever you are.</p></div>
+  </div>
+</section>
+
+<section class="band split">
+  <div>
+    <h2>Turn down the heating, not your comfort</h2>
+    <p class="sub">Heating a whole house to warm one person is expensive. The poncho puts the heat where you are: back, shoulders and core.</p>
+  </div>
+  <div class="feats">
+    <div class="feat"><h3>3 heat zones</h3><p>Back, shoulders and core warm evenly.</p></div>
+    <div class="feat"><h3>Thick sherpa lining</h3><p>Soft plush outside, thick sherpa inside.</p></div>
+    <div class="feat"><h3>Oversized hood</h3><p>Covers ears and neck, the places that get cold first.</p></div>
+    <div class="feat"><h3>Machine washable</h3><p>Unplug the heating pad and wash on gentle.</p></div>
+  </div>
+</section>
+
+<section class="band">
+  <h2>Why not just a blanket or a space heater?</h2>
+  <div class="cmp"><table>
+    <tr><th></th><th>Heated poncho</th><th>Regular blanket</th><th>Space heater</th></tr>
+    <tr><td>Warms you, not the room</td><td class="us">Yes</td><td>Slowly</td><td>No</td></tr>
+    <tr><td>Hands free, you can move</td><td class="us">Yes</td><td>No</td><td>Stuck in one spot</td></tr>
+    <tr><td>Works at games, in the car, outdoors</td><td class="us">Yes</td><td>Barely</td><td>No</td></tr>
+    <tr><td>Power used</td><td class="us">A power bank</td><td>None</td><td>Up to 1,500 W</td></tr>
+  </table></div>
+</section>
+
+<section class="band">
+  <div class="gift">
+    <div><h2>The gift for the person who's always cold</h2><p>Every family has one. This year they stop stealing your hoodie.</p><p>Add the gift box and a handwritten card at checkout.</p></div>
+    <div class="box" role="img" aria-label="Wrapped gift box"></div>
+  </div>
+</section>
+
+<section class="band">
+  <h2>Reviews</h2>
+  <div class="reviews">Reviews from verified buyers appear here after launch. We collect them automatically after delivery and never write our own.</div>
+</section>
+
+<section class="band" aria-labelledby="faqh">
+  <h2 id="faqh">Questions</h2>
+  <details class="faq"><summary>Is it safe to wear the heating pad?</summary><p>It runs on a 5V USB power bank with overheat protection and auto shut-off. [Confirm exact certifications with the supplier before launch.]</p></details>
+  <details class="faq"><summary>Is a power bank included?</summary><p>[Depends on supplier option.] Any 5V USB power bank works; 10,000 mAh gives several hours on medium heat.</p></details>
+  <details class="faq"><summary>How long does shipping take?</summary><p>[Set from the supplier: US warehouse 3–7 days, or longer from overseas.] We show the Christmas cut-off date at the top of the page.</p></details>
+  <details class="faq"><summary>How do I wash it?</summary><p>Unplug and remove the battery, then machine wash on gentle and air dry.</p></details>
+  <details class="faq"><summary>What if it doesn't fit or I don't love it?</summary><p>You have 30 days to return it for a full refund.</p></details>
+</section>
+</main>
+
+<footer>LIMITLESS Home (working name) · Shipping · Returns · Privacy · Terms · Contact</footer>
+</div>
+
+<div class="sticky"><div><b id="sPrice">$59.99</b><div class="rating">Free US shipping</div></div><button class="cta" id="add2">Add to cart</button></div>
+
+<script>
+const P={1:[59.99,89.99],2:[94.99,179.98],3:[129.99,269.97]};
+const fmt=n=>"$"+n.toFixed(2);
+function upd(){const v=document.querySelector('input[name="b"]:checked').value;const [p,w]=P[v];
+  document.getElementById("price").textContent=fmt(p);document.getElementById("was").textContent=fmt(w);
+  document.getElementById("save").textContent="Save "+Math.round(100*(1-p/w))+"%";
+  document.getElementById("ctaPrice").textContent=fmt(p);document.getElementById("sPrice").textContent=fmt(p);}
+document.querySelectorAll('input[name="b"]').forEach(r=>r.addEventListener("change",upd));
+let lvl=3;const names=["","Warm","Cozy","Toasty","Hot","Max"];
+function heat(){document.querySelectorAll("#dots i").forEach((d,i)=>d.classList.toggle("on",i<lvl));document.getElementById("heatLabel").textContent=`Level ${lvl} · ${names[lvl]}`}
+document.getElementById("plus").onclick=()=>{lvl=Math.min(5,lvl+1);heat()};
+document.getElementById("minus").onclick=()=>{lvl=Math.max(1,lvl-1);heat()};
+let n=0;function add(){n++;document.getElementById("cartCount").textContent=n;const t=document.createElement("div");t.className="toast";t.setAttribute("role","status");t.textContent="Added to cart (demo)";document.body.append(t);setTimeout(()=>t.remove(),1800)}
+document.getElementById("add").onclick=add;document.getElementById("add2").onclick=add;
+</script>

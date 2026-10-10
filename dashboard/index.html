@@ -619,7 +619,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="angles")angles(b.dataset.id);
   if(a==="tofind")run(async()=>{const f=S.finder.find(x=>x._id===b.dataset.id);if(!f)return;const best=f.variations.flatMap(v=>v.accounts).sort((x,y)=>y.avg_views-x.avg_views)[0];
     const p={nume:f.title,nume_en:f.title,categorie:f.group,categorie_en:f.group,link:best?.website||null,status:"candidat",metrici:{},criterii:{},viteza_max:0,sursa:"finder:"+f._id,adaugat:nowIso()};
-    await S.db.collection("products").add(p);toast("Added to Products");location.hash="#products";},b);
+    await S.db.collection("products").add(p);toast("Added to Products");go("products");},b);
   if(a==="apply")run(async()=>{const r=S.ai[b.dataset.id]?.json,p=S.products.find(x=>x._id===b.dataset.id);if(!r||!p)return;const c={...(p.criterii||{})};
     for(const [k,v] of Object.entries(r.checks||{}))if(v===true||v===false)c[k]=v;
     const idei=[...(r.ugc_angles||[]).map(x=>"UGC: "+x),...(r.hooks||[]).map(x=>"Hook: "+x),...(r.variations||[]).map(x=>"Variation: "+x)].join("\n");
@@ -646,6 +646,9 @@ Reply ONLY with JSON: {"read":"2 sentences on what this data says","angles":["3 
 
 /* ---------- boot ---------- */
 function route(){const h=(location.hash||"#launch").slice(1);S.route=VIEWS[h]?h:"launch";NET.stop();render()}
+/* navigation works without relying on the host passing hash changes through */
+function go(h){if(!VIEWS[h])return;S.route=h;try{history.replaceState(null,"","#"+h)}catch(e){}NET.stop();render();try{scrollTo(0,0)}catch(e){}}
+document.addEventListener("click",e=>{const a=e.target.closest?.('a[href^="#"]');if(!a)return;const h=a.getAttribute("href").slice(1);if(VIEWS[h]){e.preventDefault();go(h)}},true);
 addEventListener("hashchange",route);
 route();
 fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};setTimeout(()=>{if(typeof POST!=="undefined")POST.scan()},0);if(S.route==="finder"){const l=$("#flist");if(l)l.innerHTML=finderList()}}).catch(()=>{});

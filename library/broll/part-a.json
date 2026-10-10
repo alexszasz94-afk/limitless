@@ -1,0 +1,892 @@
+{
+ "ac_covers": {
+  "type": "effect",
+  "rows": {},
+  "skipped": true,
+  "note": "Skipped: only 1 video with sheet (ig_revvent_3963324369525425174). Would be effect (cover lights up by remote), no cross-seller repetition possible."
+ },
+ "advent": {
+  "type": "effect",
+  "rows": {
+   "diecast_car_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "store-aisle gasp/restrain hook"
+    ]
+   },
+   "mini_liquor_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "store-aisle gasp/restrain hook"
+    ]
+   },
+   "helmet_ornament_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": []
+   },
+   "building_block_flower_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": []
+   },
+   "tennis_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "store-aisle gasp/restrain hook"
+    ],
+    "note": "2 videos (thetenniscalendar, courtsideadvent) reuse the same court footage: box opened on indoor court + keychain held to lens."
+   },
+   "mini_book_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": []
+   },
+   "coffee_keychain_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": []
+   },
+   "car_model_kit_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": []
+   },
+   "golf_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": []
+   },
+   "teacher_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "store-aisle gasp/restrain hook"
+    ]
+   },
+   "tree_candle_advent_calendar": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": []
+   }
+  },
+  "family_recurring_shots": [
+   {
+    "name": "door_open_pull_mini_gift",
+    "seen_in": {
+     "count": 12,
+     "mkeys": [
+      "ig_embergo_co_3995008323576987022",
+      "ig_paddockadvent_us_3995232418772338540",
+      "ig_adventholic1_DeC_gU9AgRz",
+      "ig_formula1_calendar_3990002286194684171",
+      "ig_our_petalia_3995711604508872752",
+      "ig_thetenniscalendar_3979083682352204718",
+      "ig_courtsideadvent_3980709757437871237",
+      "ig_cafe_advent_DdsHWsWxa5I",
+      "ig_911_nights_3715081721474748770",
+      "ig_golferscountdown_3744710309568186488",
+      "ig_24daysofteaching__DeJEXMJg8s7",
+      "ig_noelvolcanoco_3995793988287560859"
+     ]
+    },
+    "what_happens": "Close-up: a hand presses/pulls one numbered door of the open calendar, the little box/drawer comes out and the mini gift is pulled out of tissue toward the lens.",
+    "duration_s": 4.5,
+    "viral_ref_mkey": "ig_paddockadvent_us_3995232418772338540",
+    "needs_person": false,
+    "start_frame_prompt": "Close-up, slightly top-down, of an opened [EXACT CALENDAR of the row, e.g. die-cast car advent calendar with 24 numbered doors, original artwork] lying on a cream knit throw on the living-room carpet of an ordinary American home, all doors still closed, a woman's hand with natural short nails resting its fingertip on door number 24; a decorated Christmas tree with soft string lights blurred in the background, late-afternoon window daylight. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "The fingertip presses door 24 and the perforated door pops open in the first second; the hand pulls out the small numbered box, flips its flap open, and lifts the mini gift out of white tissue paper, raising it toward the lens by second 4 and holding it steady. Paper and tissue move naturally, string lights twinkle softly in the background. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   },
+   {
+    "name": "mini_gift_held_to_lens",
+    "seen_in": {
+     "count": 8,
+     "mkeys": [
+      "ig_formula1_calendar_3990002286194684171",
+      "ig_thetenniscalendar_3979083682352204718",
+      "ig_courtsideadvent_3980709757437871237",
+      "ig_cafe_advent_DdsHWsWxa5I",
+      "ig_24daysofteaching__DeJEXMJg8s7",
+      "ig_embergo_co_3995008323576987022",
+      "ig_paddockadvent_us_3995232418772338540",
+      "ig_911_nights_3715081721474748770"
+     ]
+    },
+    "what_happens": "The tiny item from the calendar is held or dangled by its ring close to the lens and slowly turned to show details, background lights in bokeh.",
+    "duration_s": 3,
+    "viral_ref_mkey": "ig_formula1_calendar_3990002286194684171",
+    "needs_person": false,
+    "start_frame_prompt": "Macro close-up of a hand holding the mini gift from the [EXACT CALENDAR of the row, e.g. die-cast car advent calendar with 24 numbered doors, original artwork] by a small gold ring/chain, 20 cm from the lens, in front of a decorated Christmas tree in an ordinary American living room, warm-neutral string-light bokeh behind, item sharp, unbranded original design. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "The hand gently swings the mini item on its chain, then turns it 180 degrees with two fingers to show the back, the item catches small highlights from the tree lights; bokeh shimmers; slight handheld drift, then the item settles facing the lens. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   },
+   {
+    "name": "store_shelf_stack_reach",
+    "seen_in": {
+     "count": 6,
+     "mkeys": [
+      "ig_embergo_co_3995008323576987022",
+      "ig_paddockadvent_us_3995232418772338540",
+      "ig_adventholic1_DeC_gU9AgRz",
+      "ig_tinybookery_3981909913273643248",
+      "ig_golferscountdown_3744710309568186488",
+      "ig_24daysofteaching__DeJEXMJg8s7"
+     ]
+    },
+    "what_happens": "A shelf or pallet stacked with identical calendar boxes in a store; a hand reaches in from the side, points at or grabs one box and pulls it toward camera/basket.",
+    "duration_s": 2.5,
+    "viral_ref_mkey": "ig_tinybookery_3981909913273643248",
+    "needs_person": true,
+    "start_frame_prompt": "Eye-level view of a store shelf in an ordinary American big-box store aisle (generic, no store branding, no price tags with names) fully stacked with identical [EXACT CALENDAR of the row, e.g. die-cast car advent calendar with 24 numbered doors, original artwork] boxes facing out, bright overhead fluorescent light, a woman's arm in a cream sweater entering from the left edge of the frame. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "The hand reaches in, grabs the front box by its side, pulls it off the shelf and swings it down toward a plastic shopping basket below frame within 3 s; camera follows the box with a quick natural handheld tilt; neighbouring boxes wobble slightly. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   },
+   {
+    "name": "box_lid_lift_reveal_grid",
+    "seen_in": {
+     "count": 5,
+     "mkeys": [
+      "ig_embergo_co_3995008323576987022",
+      "ig_paddockadvent_us_3995232418772338540",
+      "ig_911_nights_3715081721474748770",
+      "ig_thetenniscalendar_3979083682352204718",
+      "ig_courtsideadvent_3980709757437871237"
+     ]
+    },
+    "what_happens": "The closed calendar box lies on a rug/table; hands lift the lid off (or open the front cover) to reveal the full grid of numbered doors.",
+    "duration_s": 3,
+    "viral_ref_mkey": "ig_embergo_co_3995008323576987022",
+    "needs_person": false,
+    "start_frame_prompt": "Closed [EXACT CALENDAR of the row, e.g. die-cast car advent calendar with 24 numbered doors, original artwork] box lying flat on a beige carpet in front of a lit fireplace and a Christmas tree with wrapped gifts in an ordinary American living room, two hands resting on the edges of the lid, warm-neutral fire and lamp light mixed with daylight. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "Both hands lift the lid straight up and away to the right in 1.5 s, revealing the grid of 24 numbered doors underneath; the camera tilts down slightly over the grid; small dust motes in the light. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   },
+   {
+    "name": "cover_cloth_reveal",
+    "seen_in": {
+     "count": 3,
+     "mkeys": [
+      "ig_our_petalia_3995711604508872752",
+      "ig_courtsideadvent_3980709757437871237",
+      "ig_cafe_advent_DdsHWsWxa5I"
+     ]
+    },
+    "what_happens": "The calendar is hidden under a cloth/lid (satin wrap, plate, cloth over a display), held a beat, then the cover is pulled away to reveal the box.",
+    "duration_s": 4,
+    "viral_ref_mkey": "ig_courtsideadvent_3980709757437871237",
+    "needs_person": true,
+    "start_frame_prompt": "Torso-level shot of a woman in a white top standing in an ordinary American living room next to a decorated Christmas tree, holding at chest height a box completely wrapped in dark-green satin cloth (the [EXACT CALENDAR of the row, e.g. die-cast car advent calendar with 24 numbered doors, original artwork] hidden inside), face cropped out at the top edge, soft window daylight. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "She holds still for 2 s, then the satin cloth slips off and falls to the floor in one fluid motion, revealing the calendar box front held toward the lens; fabric drapes and falls with realistic physics. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   }
+  ],
+  "family_human_shots_genjutsu": [
+   "store-aisle gasp + partner restrains/grabs face (embergo, paddockadvent, adventholic1, thetenniscalendar, 24daysofteaching = 5 videos)",
+   "talking-head holding wrapped box (noelvolcanoco, our_petalia)"
+  ],
+  "note": "11 exact-product rows, mostly 1 video each, so repetition is measured across the family; same hand/product shots, swap the row's product into [EXACT CALENDAR]. tennis row: both videos share identical court footage (door open + smiley keychain). Account 61594331551435 is in the family file but not in any reclass row. duration_s = estimate from contact-sheet frame spacing (8 frames evenly over clip length), not a measured cut."
+ },
+ "baby_beds": {
+  "type": "human",
+  "rows": {},
+  "skipped": true,
+  "note": "Skipped: only 1 video with sheet (ig_babyrideshop_3994844211111040041). Human (mom lifts lounger, baby in it)."
+ },
+ "baby_hoodies": {
+  "type": "human",
+  "rows": {
+   "babywearing_pouch_hoodie": {
+    "type": "human"
+   },
+   "babywearing_bear_suit_hoodie": {
+    "type": "human"
+   }
+  },
+  "note": "Worn with baby inside; all key shots are human motion (walking, cooking, zipping baby in) -> Genjutsu."
+ },
+ "bedding": {
+  "type": "mixed",
+  "rows": {
+   "marshmallow_puffy_comforter": {
+    "type": "human",
+    "recurring_shots": [
+     {
+      "name": "hand_press_into_puffy_comforter",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_lullor_comfort_3994114750792975830",
+        "ig_kennyshopsalot_3997064344596979838"
+       ]
+      },
+      "what_happens": "Close-up of a hand pressing flat into the thick puffy comforter; it sinks deep and slowly springs back.",
+      "duration_s": 2,
+      "viral_ref_mkey": "ig_kennyshopsalot_3997064344596979838",
+      "needs_person": false,
+      "start_frame_prompt": "Close-up at mattress height of a made bed in an ordinary American bedroom covered by an extra-thick cream marshmallow-puffy tufted comforter, a woman's hand in a brown knit sleeve hovering just above the comforter surface, soft daylight from a side window, warm bedside lamp glow. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The hand presses slowly down into the comforter, sinking almost to the wrist in 1.5 s, the tufts deform around the fingers, then the hand lifts and the filling slowly springs back up; slight handheld drift. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     },
+     {
+      "name": "low_glide_over_comforter_reveal",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_jessnickolson_3997789104507668829",
+        "ig_kennyshopsalot_3997064344596979838"
+       ]
+      },
+      "what_happens": "Camera starts very low against the puffy comforter surface and rises/glides over it to reveal the whole styled bed.",
+      "duration_s": 3,
+      "viral_ref_mkey": "ig_jessnickolson_3997789104507668829",
+      "needs_person": false,
+      "start_frame_prompt": "Extreme low angle, lens almost touching the surface of an extra-thick cream puffy tufted comforter on a king bed in an ordinary American bedroom, the comforter fills most of the frame, headboard and pillows just visible beyond the curve, soft window daylight. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The camera rises and glides forward over the comforter's curve in 3 s, revealing the full bed with pillows and a bedside lamp; the comforter surface subtly moves from air; natural handheld float. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "person sinks/flops into the puffy comforter (3/3 videos)",
+     "peeks out from under comforter / hugs it"
+    ],
+    "note": "Main motion is human (sink/flop) -> Genjutsu; the 2 product-only inserts above repeat across sellers and are Seedance shots."
+   },
+   "bordered_fitted_sheet": {
+    "type": "human",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "tucking the bordered sheet"
+    ],
+    "note": "1 video (kaomisleep)."
+   },
+   "ribbed_faux_fur_throw": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [],
+    "note": "1 video (hannahbentleyshops): product + hand stroking texture; no cross-seller repetition."
+   }
+  },
+  "note": "Comforter row human with 2 recurring product inserts; throw is product-only but single video. duration_s = estimate from contact-sheet frame spacing (8 frames evenly over clip length), not a measured cut."
+ },
+ "body_pillows": {
+  "type": "human",
+  "rows": {
+   "crescent_body_pillow": {
+    "type": "human"
+   },
+   "croissant_lounge_pillow": {
+    "type": "human"
+   }
+  },
+  "note": "Hugging/jumping into the pillow is human motion -> Genjutsu (1 video per row)."
+ },
+ "car_decor": {
+  "type": "effect",
+  "rows": {
+   "rooftop_christmas_figure": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "man hug-lifts the figure out of its box beside the truck"
+    ],
+    "note": "1 video (jolly_tops). Replace any licensed green character with an original elf/snowman figure."
+   },
+   "christmas_character_car_cover": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "man pulls cover from box and throws it over the car"
+    ],
+    "note": "1 video (merrymorph)."
+   }
+  },
+  "family_recurring_shots": [
+   {
+    "name": "decorated_vehicle_hero",
+    "seen_in": {
+     "count": 2,
+     "mkeys": [
+      "ig_jolly_tops_3971129207467749404",
+      "ig_merrymorph_3975512703760481064"
+     ]
+    },
+    "what_happens": "Static/handheld hero shots of the finished vehicle wearing the product parked in a driveway or lot, then two or more decorated vehicles side by side.",
+    "duration_s": 3,
+    "viral_ref_mkey": "ig_merrymorph_3975512703760481064",
+    "needs_person": false,
+    "start_frame_prompt": "A dark sedan parked in the snowy driveway of an ordinary American suburban house at blue-hour dusk, the whole car dressed in [EXACT PRODUCT: brown plush reindeer-shaped fabric car cover with big cartoon eyes, red pom-pom nose, antlers on the roof], porch lights and a wreath on the house, light snow on the ground. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "Slow handheld arc of about 30 degrees around the front of the covered car in 4 s, the plush fabric ripples slightly in a light breeze, a few snowflakes drift, porch lights glow steadily. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   }
+  ],
+  "family_human_shots_genjutsu": [
+   "unbox product from big carton next to the vehicle (2/2 videos)"
+  ],
+  "note": "2 videos, 1 per row; recurring structure across both = unbox next to vehicle (human) + decorated-vehicle hero shots (effect). duration_s = estimate from contact-sheet frame spacing (8 frames evenly over clip length), not a measured cut."
+ },
+ "car_projection": {
+  "type": "effect",
+  "rows": {
+   "car_window_projector": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "window_projection_exterior_reveal",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_merry_ride_3994378279895921641",
+        "ig_christmas_projector_3990572075164478256",
+        "ig_scaryrideofficial_3988314958045274390"
+       ]
+      },
+      "what_happens": "Seen from outside on the street, the car's rear side window shows a large glowing projected character image as if it were a lit screen; people beside the car react.",
+      "duration_s": 5,
+      "viral_ref_mkey": "ig_christmas_projector_3990572075164478256",
+      "needs_person": false,
+      "start_frame_prompt": "A dark grey SUV parked at the curb of an ordinary American suburban street at dusk, light snow on the sidewalk and houses with string lights behind, the rear side window glass dark and plain (projector still off), dim interior. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "In the first second the rear side window glass lights up from inside and an original smiling bearded gift-giver in a red coat waving (Christmas version) fades in, glowing like a backlit screen with a faint flicker and slight edge softness; it waves for 3 s; the handheld camera slowly sidesteps 20 cm. For the Halloween version use an original hooded ghost figure that leans toward the glass. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     },
+     {
+      "name": "plug_projector_into_console",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_merry_ride_3994378279895921641",
+        "ig_christmas_projector_3990572075164478256"
+       ]
+      },
+      "what_happens": "Close-up inside the car: a hand places/plugs the small projector into the cupholder/center console.",
+      "duration_s": 2.5,
+      "viral_ref_mkey": "ig_merry_ride_3994378279895921641",
+      "needs_person": false,
+      "start_frame_prompt": "Close-up of the center console of a modern unbranded car interior in daylight, empty cupholder next to the gear selector, a woman's hand in a cream knit sleeve holding [EXACT PRODUCT: small white car-window projector with round lens] just above the cupholder. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The hand lowers the projector and twists it into the cupholder in 1.5 s, then a finger taps its top button and a tiny status light turns on; the hand withdraws; light handheld shake. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     },
+     {
+      "name": "projection_seen_from_inside",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_merry_ride_3994378279895921641",
+        "ig_christmas_projector_3990572075164478256"
+       ]
+      },
+      "what_happens": "From inside the car (driver/back seat POV), the glowing projected image is visible on the window glass at night with street lights outside.",
+      "duration_s": 3,
+      "viral_ref_mkey": "ig_christmas_projector_3990572075164478256",
+      "needs_person": false,
+      "start_frame_prompt": "POV from the back seat of an unbranded car at night parked on a decorated American main street, the rear window glass dark (projector off), warm string lights and storefront glow blurred outside, two passengers' shoulders in Christmas sweaters at the frame edges. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The rear window lights up within 1 s showing the projected original bearded gift-giver character glowing on the glass, colors bloom slightly onto the headliner; passengers turn their heads toward it; gentle handheld sway. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "store-aisle gasp + point (merry_ride)",
+     "person beside car laughing/reacting at window image (christmas_projector, merry_ride, scaryrideofficial)"
+    ]
+   },
+   "car_door_logo_projector": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "ground_logo_puddle_cycle",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_battlelights_co_3979038116441015827",
+        "fb_61594200984262_1429935378997549",
+        "ig_sundaylights_us_3981312198134540296"
+       ]
+      },
+      "what_happens": "Night close-up of the asphalt next to the open car door: a crisp circular emblem is projected on the ground, then switches to other emblem designs.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_sundaylights_us_3981312198134540296",
+      "needs_person": false,
+      "start_frame_prompt": "Night close-up looking down at dark textured asphalt of an ordinary American driveway next to the lower edge of an open car door, ground unlit except faint porch light, door sill visible at the top of the frame, [EXACT PRODUCT: door puddle-logo projector] mounted under the door, still off. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The projector switches on: a sharp circular original emblem (a stylized star-and-shield crest in two colors) appears on the asphalt with a soft glow halo in 0.5 s, holds 1.5 s, then switches to a second original emblem (a flame-and-wing crest) and then a third (a mountain-and-moon badge); asphalt texture visible through the light; slight handheld drift. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     },
+     {
+      "name": "hand_holds_projector_by_door",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_battlelights_co_3979038116441015827",
+        "ig_sundaylights_us_3981312198134540296"
+       ]
+      },
+      "what_happens": "A hand shows the small black square projector next to the car door / truck before it is fitted.",
+      "duration_s": 2,
+      "viral_ref_mkey": "ig_sundaylights_us_3981312198134540296",
+      "needs_person": false,
+      "start_frame_prompt": "Close-up of a man's open hand holding [EXACT PRODUCT: small black square door logo projector, lens facing camera] in front of a dark pickup truck parked in the driveway of an ordinary American house with a garage door, bright overcast daylight. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The hand turns the projector to show its lens and side, then moves it toward the bottom edge of the open truck door as if clicking it into place; quick natural handheld follow. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "store-aisle gasp + point (battlelights, sundaylights)",
+     "cloche reveal talking head (drivegrid)",
+     "fan sits in open car door (drivegrid)"
+    ]
+   }
+  },
+  "note": "Virals use team/wrestler logos and a licensed horror mask; replace with original emblems/figures. duration_s = estimate from contact-sheet frame spacing (8 frames evenly over clip length), not a measured cut."
+ },
+ "car_window_tint": {
+  "type": "mixed",
+  "rows": {
+   "smart_electric_window_tint": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "officer_tint_meter_pov",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "tt_switchtintofficial_7677169592913104136",
+        "ig_tintiq_co_DbkhY36C1vx"
+       ]
+      },
+      "what_happens": "Driver-seat POV: a uniformed officer at the open window clamps a tint meter on the glass and shows the reading.",
+      "duration_s": 4,
+      "viral_ref_mkey": "tt_switchtintofficial_7677169592913104136",
+      "needs_person": true,
+      "start_frame_prompt": "Driver-seat POV through the half-lowered dark-tinted side window of an unbranded car stopped on a roadside in daylight, an officer in a plain tan uniform shirt with no badges, patches or names standing at the window holding a small handheld window tint meter, driver's hand on the door panel. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The officer slides the meter's two pads over the top edge of the glass, presses it, the meter's small red display lights up, he tilts it toward the driver; slight handheld shake; real outdoor light. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     },
+     {
+      "name": "film_install_squeegee",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "tt_switchtintofficial_7677169592913104136",
+        "ig_tintiq_co_DbkhY36C1vx"
+       ]
+      },
+      "what_happens": "Close-up of a hand squeegeeing wet tint film onto a car side window in a garage.",
+      "duration_s": 2.5,
+      "viral_ref_mkey": "ig_tintiq_co_DbkhY36C1vx",
+      "needs_person": true,
+      "start_frame_prompt": "Close-up of the outside of a dark car's side window in an ordinary American home garage, the glass wet and covered with a sheet of [EXACT PRODUCT film] with small water bubbles, a hand holding a small plastic squeegee pressed at the top edge. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The hand pushes the squeegee down across the film in two strokes, water beads run down and bubbles are pushed out, the film turns smooth and uniformly dark; slight handheld shake. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "key-fob press while walking to car (switchtintofficial)"
+    ],
+    "note": "The tint-switching effect itself appears in only 1 video; repetition is the problem (officer) + install shots. Avoid real police insignia; impersonating police is a risk."
+   },
+   "removable_precut_tint": {
+    "type": "human",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "guy peels pre-cut tint sheet off window"
+    ],
+    "note": "1 video (shadextints); its police-stop opening repeats the officer theme of the other row."
+   }
+  },
+  "note": "Problem/solution format; 3/3 videos open with police (2 meter POV + 1 gas-station stop). duration_s = estimate from contact-sheet frame spacing (8 frames evenly over clip length), not a measured cut."
+ },
+ "card_covers": {
+  "type": "human",
+  "rows": {},
+  "skipped": true,
+  "note": "Skipped: only 1 video with sheet (ig_krabbypay_3943762576339925514). Also licensed character (SpongeBob) product."
+ },
+ "child_car_pillows": {
+  "type": "human",
+  "rows": {},
+  "skipped": true,
+  "note": "Skipped: only 1 video with sheet (ig_ridenuzzle_3979035318027104604). Human (child sleeping in car seat)."
+ },
+ "coffee_stencils": {
+  "type": "effect",
+  "rows": {
+   "camera_coffee_stencil_duster": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "duster_press_on_cup",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_brewshot_us_3994925416634005369_av",
+        "ig_sipcanvas1_3994540300230674749",
+        "ig_getbrewprint_3992669059893490370"
+       ]
+      },
+      "what_happens": "The camera-shaped duster stands on the counter; a hand sets it on top of a mug and presses the top button, then lifts it to show the cocoa design.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_getbrewprint_3992669059893490370",
+      "needs_person": false,
+      "start_frame_prompt": "Close-up of an ordinary American home kitchen counter (granite, coffee machine blurred behind), a white mug of fresh cappuccino with smooth milk foam, next to it [EXACT PRODUCT: cream-white retro-instant-camera-shaped coffee stencil duster with gold top button], a woman's hand resting on the duster, morning window daylight. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The hand lifts the duster and sets it squarely on top of the mug, presses the gold button once with a soft puff of cocoa dust visible at the edge, then lifts it straight up after 2 s revealing a crisp cocoa snowflake design on the foam; light handheld shake. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     },
+     {
+      "name": "finished_latte_art_row",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_brewshot_us_3994925416634005369_av",
+        "ig_sipcanvas1_3994540300230674749",
+        "ig_getbrewprint_3992669059893490370"
+       ]
+      },
+      "what_happens": "Close-up / slow pass over one or several cups with perfect cocoa-powder designs (Christmas motifs, leaf, heart).",
+      "duration_s": 3,
+      "viral_ref_mkey": "ig_brewshot_us_3994925416634005369_av",
+      "needs_person": false,
+      "start_frame_prompt": "Slightly top-down close-up of five white cappuccino cups on saucers on a kitchen island in an ordinary American home decorated for Christmas, each foam top with a crisp cocoa-powder design (snowflake, pine tree, reindeer head, star, heart), pine garland and red berries at the back, soft daylight. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "Slow handheld slide across the row of cups from left to right in 4 s, a faint wisp of steam rises from two cups, cocoa designs stay crisp, background garland lights twinkle. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "busy barista fumbling a paper stencil with a long queue behind (3/3 videos)",
+     "customer smiles and photographs her latte (brewshot, getbrewprint)"
+    ]
+   }
+  },
+  "note": "3/3 videos follow the same problem/vs/solution structure. Virals are in a real coffee chain look (green aprons) - use a generic cafe. duration_s = estimate from contact-sheet frame spacing (8 frames evenly over clip length), not a measured cut."
+ },
+ "color_blankets": {
+  "type": "mixed",
+  "rows": {
+   "colour_in_blanket": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "marker_coloring_closeup",
+      "seen_in": {
+       "count": 3,
+       "mkeys": [
+        "ig_calmcolors_blanket_3924749281892879180",
+        "ig_thecolormas_3968063619933146945",
+        "ig_cozy_colors5_DdFuoSXOTUJ"
+       ]
+      },
+      "what_happens": "Close-up of a hand coloring one printed outline on the blanket with a marker, the color filling in as it goes.",
+      "duration_s": 3,
+      "viral_ref_mkey": "ig_cozy_colors5_DdFuoSXOTUJ",
+      "needs_person": false,
+      "start_frame_prompt": "Close-up of [EXACT PRODUCT: black-and-white printed colour-in fleece blanket with outlined Christmas doodles: gingerbread men, ornaments, pine trees] spread over a lap on a sofa in an ordinary American living room, one pine-tree outline still white, a woman's hand holding an uncapped green fabric marker just above it, lit Christmas tree blurred behind, warm lamp light. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The marker tip touches the tree outline and colors it in with short strokes for 3 s, the fleece fibers take the green ink and the tree fills in solid green; the other hand steadies the fabric; slight handheld shake. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     },
+     {
+      "name": "kit_into_cart",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_calmcolors_blanket_3924749281892879180",
+        "ig_cozy_colors5_DdFuoSXOTUJ"
+       ]
+      },
+      "what_happens": "In a store, a hand grabs the boxed blanket + markers kit and drops it into the shopping cart.",
+      "duration_s": 2.5,
+      "viral_ref_mkey": "ig_calmcolors_blanket_3924749281892879180",
+      "needs_person": true,
+      "start_frame_prompt": "POV in an ordinary American home-goods store aisle (no store branding), a sale bin of boxed [EXACT PRODUCT kit: blanket with a row of markers visible through the window], a hand reaching toward the front box, a red shopping cart edge at the bottom of the frame, bright overhead light. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The hand grabs the box, lifts it out of the bin and drops it into the cart in 2 s, the box lands and slides slightly; quick natural POV handheld motion. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "couple/family coloring together on floor or couch (3/3 videos)",
+     "person wrapped in finished colored blanket on sofa / kid asleep under it (calmcolors, cozy_colors5)"
+    ]
+   }
+  },
+  "note": "Product close-ups (hand + marker) are the recurring hero; people coloring together are human. duration_s = estimate from contact-sheet frame spacing (8 frames evenly over clip length), not a measured cut."
+ },
+ "convertible_heels": {
+  "type": "human",
+  "rows": {},
+  "skipped": true,
+  "note": "Skipped: only 1 video with sheet (ig_viceversa_3400449585648769636). Hands converting heel + worn shots."
+ },
+ "ergo_seating": {
+  "type": "human",
+  "rows": {
+   "sit_stand_active_chair": {
+    "type": "human"
+   },
+   "cloud_office_chair_footrest": {
+    "type": "human"
+   }
+  },
+  "note": "People sitting, rocking, pulling out the footrest -> Genjutsu."
+ },
+ "face_zip_hoodies": {
+  "type": "human",
+  "rows": {
+   "face_zip_hoodie": {
+    "type": "human"
+   }
+  },
+  "note": "8 videos; the repeated shot is hood up + zip over face at night in a parking lot (human motion) -> ideal Genjutsu."
+ },
+ "glow_sports": {
+  "type": "effect",
+  "rows": {
+   "glow_golf_balls": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "glow_tracer_night_sky",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_theglowdriive_3995328351129826023",
+        "ig_teeglow_us_DduuLz0Abww"
+       ]
+      },
+      "what_happens": "At night the glowing ball is hit/thrown and flies as a bright colored dot across the dark sky (or to the hoop), tiny against the night.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_theglowdriive_3995328351129826023",
+      "needs_person": true,
+      "start_frame_prompt": "Night on a public golf course fairway in an ordinary American town, a golfer seen from behind at address in dark polo and cap, at his feet [EXACT PRODUCT: golf ball glowing bright green from inside] lighting the grass around it, distant course lights and tree line, dark navy sky. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The golfer swings, the green glowing ball launches and rises as a bright green dot against the dark sky, arcing away over 3 s and shrinking; the camera tilts up to follow; grass falls dark where the ball was. (Swap ball and setting per row: football throw, basketball shot, volleyball.) Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "store-aisle gasp + point (teeglow)",
+     "golfer swing (both)"
+    ]
+   },
+   "glow_tennis_racket_set": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "men gasp in sports store"
+    ],
+    "note": "1 video; see family shots."
+   },
+   "glow_volleyball": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "POV bump on beach court"
+    ],
+    "note": "1 video; see family shots."
+   },
+   "glow_soccer_ball": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "player holds flag-wrapped ball, pulls cover"
+    ],
+    "note": "1 video; see family shots."
+   },
+   "glow_american_football": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "kid throws ball at night"
+    ],
+    "note": "1 video; fire stunt opening is a safety risk."
+   },
+   "glow_basketball": {
+    "type": "effect",
+    "recurring_shots": [],
+    "human_shots_genjutsu": [
+     "player shooting at dusk"
+    ],
+    "note": "1 video; see family shots."
+   },
+   "glow_pickleball_set": {
+    "type": "effect",
+    "recurring_shots": [
+     {
+      "name": "pov_unbox_glowing_product",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_paddleglow_co_3993399298854696519",
+        "ig_starlit_set_DeDlV8XsTVd"
+       ]
+      },
+      "what_happens": "POV with the box on the lap: lid opened, the glowing product lifted out.",
+      "duration_s": 3.5,
+      "viral_ref_mkey": "ig_starlit_set_DeDlV8XsTVd",
+      "needs_person": false,
+      "start_frame_prompt": "POV looking down at a closed dark-blue gift box resting on the lap (grey shorts) of a person sitting on a bench beside an outdoor court at dusk in an ordinary American neighborhood park, two hands holding the box edges, no print on the box. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "The hands lift the lid up and back, revealing [EXACT PRODUCT] in a foam insert already glowing softly; one hand grips it and lifts it toward the lens, its glow brightening the hands; gentle handheld sway. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     },
+     {
+      "name": "night_court_glow_game_wide",
+      "seen_in": {
+       "count": 2,
+       "mkeys": [
+        "ig_paddleglow_co_3993399298854696519",
+        "ig_starlit_set_DeDlV8XsTVd"
+       ]
+      },
+      "what_happens": "Wide night shot of a game on a dark court: glowing rackets/paddles/ball and glowing court lines streak as players move.",
+      "duration_s": 4,
+      "viral_ref_mkey": "ig_paddleglow_co_3993399298854696519",
+      "needs_person": true,
+      "start_frame_prompt": "Wide night shot of an outdoor public court in an ordinary American park, court lines glowing neon cyan, net edge glowing, two players as dim silhouettes holding [EXACT PRODUCT glowing in green and pink], the rest of the court dark, distant street lights. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+      "seedance_prompt": "Rally: the players swing, glowing paddles leave short light trails, the glowing ball arcs over the net back and forth twice in 4 s; neon lines reflect faintly on the court; slow handheld pan following the ball. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+     }
+    ],
+    "human_shots_genjutsu": [
+     "couple gasp in warehouse aisle (paddleglow)"
+    ]
+   }
+  },
+  "family_recurring_shots": [
+   {
+    "name": "glow_tracer_night_sky",
+    "seen_in": {
+     "count": 5,
+     "mkeys": [
+      "ig_theglowdriive_3995328351129826023",
+      "ig_teeglow_us_DduuLz0Abww",
+      "ig_redzonegifts_3995591476538370756_av",
+      "ig_the_night_ball_Dd4MMrxBJqK",
+      "ig_glowspike_3996312206253125854"
+     ]
+    },
+    "what_happens": "At night the glowing ball is hit/thrown and flies as a bright colored dot across the dark sky (or to the hoop), tiny against the night.",
+    "duration_s": 4,
+    "viral_ref_mkey": "ig_theglowdriive_3995328351129826023",
+    "needs_person": true,
+    "start_frame_prompt": "Night on a public golf course fairway in an ordinary American town, a golfer seen from behind at address in dark polo and cap, at his feet [EXACT PRODUCT: golf ball glowing bright green from inside] lighting the grass around it, distant course lights and tree line, dark navy sky. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "The golfer swings, the green glowing ball launches and rises as a bright green dot against the dark sky, arcing away over 3 s and shrinking; the camera tilts up to follow; grass falls dark where the ball was. (Swap ball and setting per row: football throw, basketball shot, volleyball.) Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   },
+   {
+    "name": "pov_unbox_glowing_product",
+    "seen_in": {
+     "count": 5,
+     "mkeys": [
+      "ig_glowspike_3996312206253125854",
+      "ig_paddleglow_co_3993399298854696519",
+      "ig_starlit_set_DeDlV8XsTVd",
+      "ig_the_night_ball_Dd4MMrxBJqK",
+      "ig_teeglow_us_DduuLz0Abww"
+     ]
+    },
+    "what_happens": "POV with the box on the lap: lid opened, the glowing product lifted out.",
+    "duration_s": 3.5,
+    "viral_ref_mkey": "ig_starlit_set_DeDlV8XsTVd",
+    "needs_person": false,
+    "start_frame_prompt": "POV looking down at a closed dark-blue gift box resting on the lap (grey shorts) of a person sitting on a bench beside an outdoor court at dusk in an ordinary American neighborhood park, two hands holding the box edges, no print on the box. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "The hands lift the lid up and back, revealing [EXACT PRODUCT] in a foam insert already glowing softly; one hand grips it and lifts it toward the lens, its glow brightening the hands; gentle handheld sway. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   },
+   {
+    "name": "night_court_glow_game_wide",
+    "seen_in": {
+     "count": 4,
+     "mkeys": [
+      "ig_tennisglow_us_DdyxW74x1Hv",
+      "ig_paddleglow_co_3993399298854696519",
+      "ig_starlit_set_DeDlV8XsTVd",
+      "ig_glowspike_3996312206253125854"
+     ]
+    },
+    "what_happens": "Wide night shot of a game on a dark court: glowing rackets/paddles/ball and glowing court lines streak as players move.",
+    "duration_s": 4,
+    "viral_ref_mkey": "ig_paddleglow_co_3993399298854696519",
+    "needs_person": true,
+    "start_frame_prompt": "Wide night shot of an outdoor public court in an ordinary American park, court lines glowing neon cyan, net edge glowing, two players as dim silhouettes holding [EXACT PRODUCT glowing in green and pink], the rest of the court dark, distant street lights. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "Rally: the players swing, glowing paddles leave short light trails, the glowing ball arcs over the net back and forth twice in 4 s; neon lines reflect faintly on the court; slow handheld pan following the ball. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   },
+   {
+    "name": "diy_concept_fail",
+    "seen_in": {
+     "count": 4,
+     "mkeys": [
+      "ig_theglowdriive_3995328351129826023",
+      "ig_glowspike_3996312206253125854",
+      "ig_redzonegifts_3995591476538370756_av",
+      "ig_the_night_ball_Dd4MMrxBJqK"
+     ]
+    },
+    "what_happens": "'The concept' joke: hands improvise a glow ball (tape, drill + taped light bulb, fire) before the real product.",
+    "duration_s": 3,
+    "viral_ref_mkey": "ig_the_night_ball_Dd4MMrxBJqK",
+    "needs_person": false,
+    "start_frame_prompt": "Close-up of a plain orange basketball with no logos sitting on a white folding table at a sunny outdoor court in an ordinary American town, a hand pressing it down, a cordless drill with no brand marks held above it, a household light bulb and roll of grey duct tape on the table. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "The drill bit spins into the ball's top for 1 s, then the hand jams the light bulb into the hole and wraps duct tape around it clumsily in quick motions; hard midday shadows; handheld shake. (Avoid the fire versions: safety risk.) Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   },
+   {
+    "name": "glowing_product_held_face_lit",
+    "seen_in": {
+     "count": 3,
+     "mkeys": [
+      "ig_teeglow_us_DduuLz0Abww",
+      "ig_tennisglow_us_DdyxW74x1Hv",
+      "ig_neonsoccerr_3995021251088588755"
+     ]
+    },
+    "what_happens": "At night a person holds the glowing product near the face; the glow lights the face, small smile.",
+    "duration_s": 3,
+    "viral_ref_mkey": "ig_tennisglow_us_DdyxW74x1Hv",
+    "needs_person": true,
+    "start_frame_prompt": "Night on an outdoor court in an ordinary American park, medium shot of a middle-aged man in a white polo holding [EXACT PRODUCT, switched off, dark] at chest height, background dark with one distant light pole. 9:16 vertical, photoreal, shot on iPhone 18 Pro Max, handheld UGC style, real ambient light with vivid semi-warm natural colors, no text, no logos, no brand names, no licensed characters, the phone is never in frame.",
+    "seedance_prompt": "He presses the switch and the product glows bright in 0.5 s, the colored light floods his face and polo; he raises it slightly and smiles; handheld micro-shake. Handheld iPhone micro-shake throughout, natural real-world physics, no zoom, no cuts, no text, no logos, no brands, 9:16 vertical, 4-5 s."
+   }
+  ],
+  "family_human_shots_genjutsu": [
+   "store-aisle gasp/point (teeglow, tennisglow, paddleglow)",
+   "swing/throw silhouettes at night"
+  ],
+  "note": "9 videos across 7 rows; light is the star in every result shot. Row-level shots are the family shots narrowed to that row's videos. duration_s = estimate from contact-sheet frame spacing (8 frames evenly over clip length), not a measured cut."
+ },
+ "headlight_eyes": {
+  "type": "effect",
+  "rows": {},
+  "skipped": true,
+  "note": "Skipped: only 1 video with sheet (ig_myneonblink_3960834301375974421). Would be effect (glowing eye inserts)."
+ },
+ "headphone_hoodies": {
+  "type": "human",
+  "rows": {},
+  "skipped": true,
+  "note": "Skipped: only 1 video with sheet (ig_skycall_clothes_DeBtCWQxomN). Human (hood pocket, walking)."
+ },
+ "heated_blankets": {
+  "type": "human",
+  "rows": {
+   "two_person_heated_wearable_blanket": {
+    "type": "human"
+   },
+   "heated_zip_poncho": {
+    "type": "human"
+   }
+  },
+  "note": "Wearing/zipping poncho in car, plane, bleachers is human; the only product-only repeat is a finger pressing the heat button (tripkit, waemelle, hugli, snugfor2) - same as HeatGrump fixed controller clip."
+ },
+ "heated_robes": {
+  "type": "human",
+  "rows": {
+   "heated_hooded_robe": {
+    "type": "human"
+   }
+  },
+  "note": "17 videos; hold rolled robe overhead -> unroll, open like a cape, wrapped on bed = human (Genjutsu). Controller + connector close-ups repeat but are covered by HeatGrump fixed clips."
+ },
+ "heated_slippers": {
+  "type": "human",
+  "rows": {},
+  "skipped": true,
+  "note": "Skipped: only 1 video with sheet (ig_alwayscold_official_DeCWkkxzx-3). Human (store gasp, feet POV)."
+ },
+ "inflatable_costumes": {
+  "type": "human",
+  "rows": {
+   "inflatable_carry_costume": {
+    "type": "human"
+   },
+   "inflatable_ride_on_costume": {
+    "type": "human"
+   }
+  },
+  "note": "Costume is worn and moved in public scenes -> Genjutsu (full-body motion)."
+ },
+ "light_therapy": {
+  "type": "human",
+  "rows": {
+   "sinus_red_light_mask": {
+    "type": "human"
+   },
+   "red_light_eye_glasses": {
+    "type": "human"
+   }
+  },
+  "note": "2 videos, 1 per row; device worn on face (before/after), red LEDs a minor effect. No cross-seller repetition."
+ }
+}

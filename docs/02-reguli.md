@@ -16,3 +16,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - (10 oct) Aplicația lucrează singură și în paralel: găsește viralele, le reproduce cu Higgsfield la cel mai mic cost (alt personaj, altă cameră), le montează complet, același stil la toate — Szasz.
 - (10 oct) Produsele noi se caută în Meta Ads (Ad Library): ce vinde deja pe plătit aducem în organic — Szasz.
 - (10 oct) BAZA DE UNELTE: folosim EXCLUSIV Genjutsu (`hf_mult_motion_control`), Seedance 2.5 (`seedance_2_5`) și GPT Image 2.5 (`gpt_image_2_5`). Alte modele Higgsfield (Kling, Veo, Sora, Soul, Nano Banana, Marketing Studio etc.) nu intră în producție — Szasz.
+- (10 oct) Competitorii organici: prioritate conturile ON THE RISE pe nișă; un video cu ≥ 100k vizualizări într-o zi = dovedit că vinde → intră imediat în producție — Szasz.
+- (10 oct) Aplicația propune mereu idei de variații custom ale produsului care se pot realiza (cu fezabilitate, mockup și test) — Szasz.

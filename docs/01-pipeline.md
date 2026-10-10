@@ -5,6 +5,7 @@ Stare: ✅ metoda e dovedită, trebuie doar construit modulul · 🟡 parțial /
 | # | Pas | Metoda | Modul LIMITLESS | Stare |
 |---|---|---|---|---|
 | 0 | Detectare produs | link / poze → profil + strategie | `engine/product-profile` | ⬜ |
+| 1a | Competitori on the rise | conturi în creștere pe nișă, verificate de 2 ori/zi; ≥ 100k în 24 h = dovedit (`docs/08`) | `engine/hunter` | ⬜ |
 | 1 | Research virale | Apify IG/FB/Ad Library, outlier ≥ 3× media contului | `engine/research` | ✅ |
 | 2 | Analiză viral | 8 cadre + audio, hook descris în format standard | `engine/analyze` | ✅ |
 | 3 | Alegere hook | virale nefolosite din conturile de referință + hook-urile lui Szasz | `engine/hooks` (scor + rotație) | 🟡 |
@@ -20,4 +21,5 @@ Stare: ✅ metoda e dovedită, trebuie doar construit modulul · 🟡 parțial /
 | 13 | Promovare hook | scor > mediană → dovedit | `engine/hooks` | 🟡 |
 | 14 | Conversie | — | `engine/store` (pagina, oferta, A/B) | ⬜ |
 | 15 | Produse noi | Meta Ad Library: produse cu reclame plătite care rulează de mult, cu multe variante (`docs/07-scout-meta-ads.md`) | `engine/product-scout` | ⬜ |
+| 15b | Variații de produs | idei custom fezabile + mockup + test (`docs/08`) | `engine/variations` | ⬜ |
 | 16 | Raport zilnic | tabla HTML | `engine/report` (dashboard + Telegram) | 🟡 |

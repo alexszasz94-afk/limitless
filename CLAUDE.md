@@ -9,7 +9,8 @@ Citește în ordinea asta:
 4. `playbooks/` — metodele dovedite, cu sursa.
 5. `docs/04-produs-universal.md` — cum se detectează produsul și se alege strategia.
 6. `docs/05-motorul-autonom.md` — cum lucrează aplicația singură, agenții, scara de cost, stilul.
-7. `products/<produs>.md` — profilul produsului pe care lucrăm.
+7. `docs/08-competitori-on-the-rise.md` — pe cine urmărim (≥100k/zi = dovedit) și variațiile de produs.
+8. `products/<produs>.md` — profilul produsului pe care lucrăm.
 
 Distribuție și cifre: `distribution/` (portalul de postare) și `social_tracker/` (tracker-ul). Instalare și rețete zilnice: `SETUP-DISTRIBUTIE.md`; fiecare are propriul `CLAUDE.md`. Orice push pe `main` ajunge pe server în ~2 minute (după instalare).
 

@@ -224,6 +224,67 @@ nav.rail a[aria-current="page"]{transform:translateX(4px)}
 #view.enter > *{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
 #view.enter > *:nth-child(2){animation-delay:.05s}#view.enter > *:nth-child(3){animation-delay:.1s}#view.enter > *:nth-child(4){animation-delay:.15s}#view.enter > *:nth-child(n+5){animation:none}
 @keyframes rise{from{opacity:.35;transform:perspective(1100px) rotateX(10deg) translateY(26px) translateZ(-60px)}to{opacity:1;transform:perspective(1100px) rotateX(0) translateY(0)}}
+
+/* ---- product finder board ---- */
+body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12px}
+.btool{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.bt-l{display:flex;flex-direction:column;gap:2px;min-width:0}.bt-l b{font-family:var(--f-display);font-size:20px;font-weight:600}
+.bt-c{display:flex;flex-wrap:wrap;gap:8px;align-items:center;flex:1;justify-content:center;min-width:0}
+.bt-c input,.bt-c select{background:var(--deck);color:var(--text);border:1px solid var(--edge);border-radius:10px;padding:8px 12px;font:inherit;min-width:0}
+.bt-c input{width:min(340px,100%)}
+.bvp{position:relative;height:calc(100vh - 120px);min-height:420px;border:1px solid var(--edge);border-radius:18px;overflow:hidden;cursor:grab;touch-action:none;user-select:none;
+  background-color:var(--deck);background-image:radial-gradient(var(--edge) 1px,transparent 1px);background-size:28px 28px}
+.bvp.dragging{cursor:grabbing}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+#world.anim{transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.bwire{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}.bwire path{fill:none;stroke:var(--edge);stroke-width:2}
+.broot,.bcat{position:absolute;display:flex;flex-direction:column;gap:4px;background:var(--glass);border:1px solid var(--edge);border-radius:16px;padding:16px 18px;box-shadow:0 18px 40px -24px rgba(0,0,0,.5)}
+.broot{width:340px}.broot b{font-family:var(--f-display);font-size:26px;line-height:1.15}
+.bcat b{font-family:var(--f-display);font-size:22px;line-height:1.15}
+.bfam{position:absolute;background:var(--glass);border:1px solid var(--edge);border-radius:20px;box-shadow:0 30px 60px -36px rgba(0,0,0,.55)}
+.bfh{position:absolute;left:20px;right:20px;top:14px;height:32px;display:flex;flex-wrap:nowrap;gap:8px;align-items:center;overflow:hidden}.bfh h3{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:60px}.bfh .chip{flex:none}.bfh .btn{flex:none;padding:5px 10px;font-size:12.5px}
+.bfh h3{margin:0;font-family:var(--f-display);font-size:19px;font-weight:600}
+.bfh .dot{width:9px;height:9px;border-radius:50%;background:var(--ion);box-shadow:0 0 10px var(--ion)}
+.bfh .btn{margin-left:auto}
+.bfv{position:absolute;left:20px;right:20px;top:54px;margin:0;font-size:12.5px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brow{position:absolute;left:20px;right:20px}
+.brh{height:46px;display:flex;gap:8px;align-items:center;overflow:hidden;white-space:nowrap}.brh b{font-size:14px}.brh .muted{font-size:12px;overflow:hidden;text-overflow:ellipsis}
+.bcards{display:grid;grid-template-columns:repeat(6,236px);gap:16px}
+.bcard{width:236px;height:452px;display:flex;flex-direction:column;gap:6px;padding:10px;border:1px solid var(--edge);border-radius:14px;background:var(--deck);overflow:hidden}
+.bcard header{display:flex;gap:6px;align-items:center;font-size:13px;font-weight:600;min-width:0}.bcard header a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text)}
+.bvar{font-size:11.5px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bcard .vid{max-width:100%;flex:none;height:300px;aspect-ratio:auto}
+.bnums{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}.bnums b{font-family:var(--f-data);font-size:13px;display:block}.bnums small{font-size:10.5px;color:var(--dim)}
+.bcard footer{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:12px}
+.bzoom{position:absolute;left:14px;bottom:14px;display:flex;gap:6px;align-items:center;background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--edge);border-radius:12px;padding:6px}
+.bzoom #bzv{font-family:var(--f-data);font-size:12px;min-width:44px;text-align:center}
+.bhint{position:absolute;left:50%;transform:translateX(-50%);top:10px;white-space:nowrap;font-family:var(--f-data);font-size:11px;color:var(--dim);pointer-events:none}
+.bvp.far .bcard footer,.bvp.far .bnums,.bvp.far .bvar,.bvp.far .brh .muted,.bvp.far .bfv{visibility:hidden}
+.bvp.far .bfh h3{font-size:calc(19px * min(var(--inv),4) * .7)}
+.bvp.far .bfh .chip,.bvp.far .bfh .btn{display:none}
+.bvp.far .bcat b{position:absolute;left:0;bottom:calc(100% - 30px);font-size:calc(22px * min(var(--inv),12) * .55);line-height:1;white-space:nowrap;color:var(--ion)}.bvp.far .bcat{overflow:visible;background:transparent;border-color:transparent;box-shadow:none}.bvp.far .bcat .muted,.bvp.far .bcat .kicker{visibility:hidden}
+.bvp.vfar .bcard{background:var(--deck-2)}
+.bvp.searching .bfam:not(.hit){opacity:.18}.bvp.searching .bcard:not(.hit){opacity:.3}.bvp.searching .bcard.hit{outline:3px solid var(--ion)}
+.bdrawer{position:absolute;top:0;right:0;bottom:0;width:min(460px,100%);overflow:auto;background:var(--deck);border-left:1px solid var(--edge);padding:20px;display:flex;flex-direction:column;gap:10px;cursor:auto;user-select:text;box-shadow:-30px 0 60px -30px rgba(0,0,0,.6)}
+.bdrawer .bclose{align-self:flex-end}.bdrawer .dh{font-family:var(--f-display);font-size:24px;margin:0;text-transform:none;letter-spacing:0;color:var(--text)}
+.bdrawer .vid.big{max-width:240px}.bdrawer .bfv{position:static;white-space:normal}
+.dl dt{font-family:var(--f-data);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--plasma);margin-top:8px}.dl dd{margin:2px 0 0;font-size:13.5px}
+/* ---- chat ---- */
+.botfab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;gap:8px;align-items:center;border:1px solid var(--edge);border-radius:999px;padding:12px 18px;font:600 14px var(--f-body);color:var(--text);
+  background:linear-gradient(135deg,var(--plasma-soft),var(--ion-soft)),var(--deck);box-shadow:0 18px 40px -16px rgba(0,0,0,.6),0 0 0 1px var(--ion-soft);cursor:pointer}
+.botfab .bdot{width:10px;height:10px;border-radius:50%;background:var(--ok);box-shadow:0 0 12px var(--ok)}
+.botp{position:fixed;right:20px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:51;width:min(420px,calc(100vw - 32px));height:min(620px,calc(100vh - 120px));display:flex;flex-direction:column;
+  background:var(--deck);border:1px solid var(--edge);border-radius:20px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7);overflow:hidden}
+.botp[hidden],.bdrawer[hidden]{display:none!important}
+.botp header{display:flex;gap:8px;align-items:baseline;padding:14px 16px;border-bottom:1px solid var(--edge)}.botp header b{font-family:var(--f-display)}.botp header .btn{margin-left:auto;padding:4px 10px}
+.botlog{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.bm{max-width:88%;padding:10px 12px;border-radius:14px;font-size:14px;line-height:1.45;white-space:normal;overflow-wrap:anywhere}
+.bm.ai{background:var(--deck-2);border:1px solid var(--edge);align-self:flex-start}.bm.me{background:var(--ion-soft);border:1px solid var(--ion);align-self:flex-end}
+.bm.typing{opacity:.8}
+.botsug{display:flex;flex-wrap:wrap;gap:6px 12px;padding:0 14px 8px;font-size:12.5px}
+.botf{display:flex;gap:8px;padding:10px;border-top:1px solid var(--edge)}.botf textarea{flex:1;min-width:0;resize:none;background:var(--deck-2);color:var(--text);border:1px solid var(--edge);border-radius:12px;padding:8px 10px;font:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:720px){.botfab{bottom:calc(84px + env(safe-area-inset-bottom,0px))}.botp{bottom:calc(140px + env(safe-area-inset-bottom,0px));right:16px}}
 @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
 </style>
 
@@ -249,6 +310,11 @@ nav.rail a[aria-current="page"]{transform:translateX(4px)}
 </nav>
 <main id="view" aria-live="polite"></main>
 </div>
+<button class="botfab" data-act="bot" aria-label="Talk to the Brain"><span class="bdot"></span>Ask the Brain</button>
+<section id="botp" class="botp" hidden aria-label="Chat with the Brain"><header><b>The Brain</b><span class="muted">Tell it what to do</span><button class="btn" data-act="bot" aria-label="Close chat">✕</button></header>
+<div id="botlog" class="botlog" aria-live="polite"></div>
+<div class="botsug"><button class="link" data-act="botq">Which 3 products should we test first?</button><button class="link" data-act="botq">Show me the heated poncho</button><button class="link" data-act="botq">What needs my approval?</button></div>
+<form id="botf" class="botf"><label for="botin" class="sr">Message</label><textarea id="botin" rows="2" placeholder="Write anything… e.g. „arată-mi proiectoarele cu cele mai multe vizualizări”"></textarea><button class="btn solid" type="submit">Send</button></form></section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
@@ -439,10 +505,10 @@ function finderList(){
         ${ai?`<div class="ai">${ai.html||esc(ai.text||"")}</div>`:""}
         ${rowsFor(f)}</div>`}).join("")}</section>`}).join("");
 }
-function vFinder(){
+function vFinder(){if(S.fmode!=="list"&&S.finder.length)return vFinderBoard();
   const groups=[...new Set(S.finder.map(f=>f.group))].sort();
   return `<div class="top"><div><div class="kicker">01 · product finder</div><h1>Product opportunities</h1></div><div class="sub">${fmt(S.finder.reduce((a,f)=>a+f.accounts,0))} source accounts · ${S.finder.length} products · latest product per account · checked ${esc(S.finder[0]?.checked||"")}</div></div>
-  <section class="panel sticky"><form class="f" id="fFind" role="search"><label for="fq">Find a product, variation or account<input id="fq" value="${esc(S.fq)}" placeholder="robe, projector, @account…"></label><label for="fg">Category<select id="fg"><option value="">All categories</option>${groups.map(g=>`<option ${g===S.fg?"selected":""}>${esc(g)}</option>`).join("")}</select></label></form><div class="row" style="margin-top:8px"><label class="tog"><input type="checkbox" id="ugcOnly" ${S.ugcOnly?"checked":""}> Only real UGC videos</label><span class="muted">Category → exact product → sellers. UGC first. Tap ▶ to watch the original post. Open “Why it sells” for psychology, better videos and variations.</span></div></section>
+  <section class="panel sticky"><form class="f" id="fFind" role="search"><label for="fq">Find a product, variation or account<input id="fq" value="${esc(S.fq)}" placeholder="robe, projector, @account…"></label><label for="fg">Category<select id="fg"><option value="">All categories</option>${groups.map(g=>`<option ${g===S.fg?"selected":""}>${esc(g)}</option>`).join("")}</select></label></form><div class="row" style="margin-top:8px"><label class="tog"><input type="checkbox" id="ugcOnly" ${S.ugcOnly?"checked":""}> Only real UGC videos</label><button class="btn" data-act="fmode" data-m="board">Board view (zoom)</button> <span class="muted">Category → exact product → sellers. UGC first. Tap ▶ to watch the original post. Open “Why it sells” for psychology, better videos and variations.</span></div></section>
   <div id="flist">${S.finder.length?finderList():`<div class="empty"><b>Loading the product finder…</b></div>`}</div>`;
 }
 function vStrategy(){
@@ -510,7 +576,8 @@ function laneRow(L){
     <div class="lgroups">${(L.groups||[]).map(g=>`<div class="grp"><div class="ghead"><span class="gdot" style="background:${esc(g.color||"var(--ion)")}"></span><b>${esc(g.name)}</b><span class="muted">${esc(g.sub||"")}</span></div><div class="shots">${(g.cards||[]).map(c=>shotCard(c,g)).join("")}</div></div>`).join("")}</div></section>`;
 }
 function vBoards(){
-  const B=S.boards;if(!B.length)return `<div class="top"><div><div class="kicker">video boards</div><h1>Video boards</h1></div></div><div class="empty"><b>Loading boards…</b></div>`;
+  const B=S.boards.filter(b=>b.ours);if(!B.length)return `<div class="top"><div><div class="kicker">02 · video boards</div><h1>Our video boards</h1></div><div class="sub">Starting from zero, with our own products</div></div>
+  <section class="panel"><h2>Nothing here yet</h2><p class="muted" style="margin:0">When you approve a product and we make its first videos, each one shows up here: the viral it copies, every clip with its prompt, cost and the finished video. Approve products in <a href="#top">Top 10 picks</a>, or tell the Brain (button bottom right) which product to start with.</p></section>`;
   const cur=B.find(b=>b._id===S.board)||B[0];S.board=cur._id;
   const lanes=(cur.lanes||[]).map(l=>S.lanes[l.doc]).filter(Boolean).sort((a,b)=>b.n-a.n);
   if(!S._lanesub||S._lanesub!==cur._id){S._lanesub=cur._id;loadLanes(cur)}
@@ -524,7 +591,7 @@ function vBoards(){
 async function loadLanes(b){for(const l of b.lanes||[]){if(S.lanes[l.doc])continue;try{const s=await S.db.doc("lanes/"+l.doc).get();if(s.exists)S.lanes[l.doc]=s.data();}catch(e){}}if(S.route==="boards")render()}
 const VIEWS={top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
 
-function render(){try{_render()}catch(err){report(err,"render "+S.route);const v=$("#view");if(v)v.innerHTML=`<section class="panel"><h2>Something broke on this page</h2><p class="muted">${esc(String(err&&err.message||err))}</p><p class="muted">It was sent to Claude automatically.</p></section>`;return}const v=$("#view");if(v&&S._lastR!==S.route){S._lastR=S.route;v.classList.remove("enter");void v.offsetWidth;v.classList.add("enter");setTimeout(()=>v.classList.remove("enter"),900)}}
+function render(){try{_render();document.body.classList.toggle("wide",S.route==="finder"&&S.fmode!=="list");if(S.route==="finder"&&S.fmode!=="list"){BOARD.mount();if(S.fq)BOARD.search(S.fq)}}catch(err){report(err,"render "+S.route);const v=$("#view");if(v)v.innerHTML=`<section class="panel"><h2>Something broke on this page</h2><p class="muted">${esc(String(err&&err.message||err))}</p><p class="muted">It was sent to Claude automatically.</p></section>`;return}const v=$("#view");if(v&&S._lastR!==S.route){S._lastR=S.route;v.classList.remove("enter");void v.offsetWidth;v.classList.add("enter");setTimeout(()=>v.classList.remove("enter"),900)}}
 let _rq=0;function soon(){if(_rq)return;_rq=requestAnimationFrame(()=>{_rq=0;render()})}
 function _render(){
   const r=VIEWS[S.route]?S.route:"brain";
@@ -603,7 +670,7 @@ document.addEventListener("submit",e=>{e.preventDefault();const f=e.target,d=Obj
   if(f.id==="fCerere")run(async()=>{await S.db.collection("inbox").add({text:d.text,status:"nou",creat:nowIso()});f.reset();toast("Sent. Write “requests” in chat.");},f.querySelector("button"));
 });
 document.addEventListener("input",e=>{if(e.target.closest("#fCalc")){calc();return}if(e.target.id==="fq"){S.fq=e.target.value;const l=$("#flist");if(l)l.innerHTML=finderList()}});
-document.addEventListener("change",e=>{const el=e.target;if(el.id==="ugcOnly"){S.ugcOnly=el.checked;const l=$("#flist");if(l)l.innerHTML=finderList();return}if(el.id==="fg"){S.fg=el.value;const l=$("#flist");if(l)l.innerHTML=finderList();return}if(el.dataset.act==="stadiu")run(()=>S.db.doc("virals/"+el.dataset.id).update({stadiu:el.value}))});
+document.addEventListener("change",e=>{const el=e.target;if(el.id==="ugcOnly"){S.ugcOnly=el.checked;const l=$("#flist");if(l)l.innerHTML=finderList();else render();return}if(el.id==="fg"){S.fg=el.value;const l=$("#flist");if(l)l.innerHTML=finderList();return}if(el.dataset.act==="stadiu")run(()=>S.db.doc("virals/"+el.dataset.id).update({stadiu:el.value}))});
 document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(!b||b.tagName==="SELECT")return;const a=b.dataset.act;
   if(a==="crit")run(async()=>{const p=S.products.find(x=>x._id===b.dataset.id);const c={...(p.criterii||{})},i=b.dataset.i;c[i]=c[i]===true?false:c[i]===false?null:true;if(c[i]===null)delete c[i];
     const [s,ver]=scor({...p,criterii:c});await S.db.doc("products/"+p._id).set({...stripId(p),criterii:c,scor:s,verdict:ver})});
@@ -710,6 +777,166 @@ const TILT={on(){if(matchMedia("(hover:none)").matches||matchMedia("(prefers-red
     el.style.setProperty("--mx",(x*100).toFixed(1)+"%");el.style.setProperty("--my",(y*100).toFixed(1)+"%")},{passive:true});
   document.addEventListener("pointerleave",()=>{if(cur)reset(cur)},true);
   addEventListener("scroll",()=>{const b=document.querySelector(".brain");if(b){const k=Math.max(-1,Math.min(1,b.getBoundingClientRect().top/innerHeight));b.style.setProperty("--brx",(k*-6).toFixed(2)+"deg")}},{passive:true});}};
+/* ---- Product finder board: one big canvas, drag to move, zoom in and out ---- */
+function groupsFor(f){
+  const accs=f.variations.flatMap(v=>v.accounts.map(a=>{const mm=S.fmedia[a.handle];return {...a,_var:v.title,mkey:a.mkey||mm?.mkey,dur:a.dur||mm?.dur}}));
+  const R=S.rows;let groups;
+  if(R){const by={};accs.forEach(a=>{const ra=R.accounts?.[a.handle];const rid=ra?.row_id||"other";(by[rid]=by[rid]||[]).push({...a,_ugc:ra?.ugc,_ugcs:ra?.ugc_strength||0})});
+    groups=Object.entries(by).map(([rid,list])=>{const row=(R.rows||[]).find(r=>r.row_id===rid);return{id:rid,title:row?.exact_product||rid.replace(/_/g," "),def:row?.definition||"",list}});}
+  else groups=[{id:"all",title:"",def:"",list:accs}];
+  return groups.map(g=>{let list=g.list.slice().sort((a,b)=>((b._ugcs||0)-(a._ugcs||0))||((b.avg_views||0)-(a.avg_views||0)));if(S.ugcOnly)list=list.filter(a=>a._ugc);return {...g,list}}).filter(g=>g.list.length);
+}
+const BD={CW:236,CH:452,GAP:16,PER:6,HEAD:96,ROWH:58,PAD:20,FGAP:56,CATW:300,X0:420};
+function boardLayout(){
+  const items=S.finder.slice();
+  const cats=[...new Set(items.map(f=>f.group))].sort((a,b)=>Math.max(...items.filter(f=>f.group===b).map(f=>f.best_avg_views||0))-Math.max(...items.filter(f=>f.group===a).map(f=>f.best_avg_views||0)));
+  const L={cats:[],fams:[],w:0,h:0};let y=260;const MAXW=11000;
+  cats.forEach((c,ci)=>{const fams=items.filter(f=>f.group===c).sort((a,b)=>(b.best_avg_views||0)-(a.best_avg_views||0));
+    const cat={name:c,i:ci,x:80,y,n:fams.length,acc:fams.reduce((s,f)=>s+(f.accounts||0),0),fams:[]};
+    let x=BD.X0,shelfY=y,shelfH=0;
+    fams.forEach(f=>{const gs=groupsFor(f);if(!gs.length)return;
+      const cols=Math.min(BD.PER,Math.max(...gs.map(g=>g.list.length)));const w=BD.PAD*2+cols*(BD.CW+BD.GAP)-BD.GAP;
+      let h=BD.HEAD;gs.forEach(g=>{h+=BD.ROWH+Math.ceil(g.list.length/BD.PER)*(BD.CH+BD.GAP)});h+=BD.PAD;
+      if(x>BD.X0&&x+w>MAXW){x=BD.X0;shelfY+=shelfH+BD.FGAP;shelfH=0}
+      const fam={f,gs,x,y:shelfY,w,h,cat:c};L.fams.push(fam);cat.fams.push(fam);x+=w+BD.FGAP;shelfH=Math.max(shelfH,h);L.w=Math.max(L.w,x)});
+    cat.h=Math.max(160,shelfY+shelfH-y);L.cats.push(cat);y+=cat.h+140});
+  L.h=y;L.w=Math.max(L.w,1600);return L;
+}
+function boardCard(a,fam){const href=a.top_video||a.url;const pl=(a.platform||"").toLowerCase();const lbl=pl.startsWith("t")?"TikTok":pl.startsWith("f")?"Facebook":"Instagram";
+  const k=S.takes[a.mkey];const sc=k?Number(k.score)||0:null;
+  return `<article class="bcard" data-h="${esc((a.handle+" "+(a._var||"")).toLowerCase())}">
+    <header><a href="${esc(a.url||href||"#")}" target="_blank" rel="noopener">@${esc(a.handle)}</a><span class="chip c-ion">${esc(lbl.slice(0,2).toUpperCase())}</span>${a._ugc?'<span class="chip c-ok">UGC</span>':""}</header>
+    <span class="bvar">${esc(a._var||"")}</span>
+    ${href?`<a class="vid" href="${esc(href)}" target="_blank" rel="noopener" ${a.mkey?`data-poster="${esc(a.mkey)}"`:""} aria-label="Watch @${esc(a.handle)} on ${lbl}"><span class="pl">▶</span>${a.dur?`<span class="du">0:${String(Math.round(a.dur)).padStart(2,"0")}</span>`:""}<span class="wo">Watch on ${lbl}</span></a>`:`<div class="vid none">no video link</div>`}
+    <div class="bnums"><div><b>${fmt(a.followers)}</b><small>Followers</small></div><div><b>${fmt(a.avg_views)}</b><small>Avg views</small></div><div><b>${a.top_views?fmt(a.top_views):"–"}</b><small>Top video</small></div></div>
+    <footer>${sc!==null?`<span class="chip ${sc>=8?"c-ok":sc>=6?"c-ion":"c-warn"}">Brain ${sc}/10</span>`:'<span class="muted">not analysed</span>'}<button class="link" data-act="bdet" data-fam="${esc(fam)}" data-h="${esc(a.handle)}">Details</button></footer>
+  </article>`}
+function vFinderBoard(){
+  const L=boardLayout();BOARD.L=L;const tot=S.finder.reduce((s,f)=>s+(f.accounts||0),0);
+  const lines=[];const trunkX=40;
+  lines.push(`M${trunkX} 200 V${L.cats.length?L.cats[L.cats.length-1].y+40:200}`);
+  L.cats.forEach(c=>{lines.push(`M${trunkX} ${c.y+40} H${c.x}`);c.fams.forEach(fm=>{const sx=c.x+BD.CATW,sy=c.y+40,mx=sx+(BD.X0-sx)/2;lines.push(`M${sx} ${sy} H${mx} V${fm.y+34} H${fm.x}`)})});
+  const fams=L.fams.map(fm=>{const f=fm.f,I=S.insights[f._id],vd=brainVerdict(f),B=S.broll[f._id];let yy=BD.HEAD;
+    const rows=fm.gs.map(g=>{const top=yy;yy+=BD.ROWH+Math.ceil(g.list.length/BD.PER)*(BD.CH+BD.GAP);const nu=g.list.filter(a=>a._ugc).length;
+      return `<div class="brow" style="top:${top}px"><div class="brh"><b>${esc(g.title||f.title)}</b>${S.rows?chip(nu+" UGC of "+g.list.length,"ok"):""}<span class="muted">${esc(g.def)}</span></div>
+        <div class="bcards">${g.list.map(a=>boardCard(a,f._id)).join("")}</div></div>`}).join("");
+    return `<section class="bfam" id="bf-${esc(f._id)}" style="left:${fm.x}px;top:${fm.y}px;width:${fm.w}px;height:${fm.h}px" data-h="${esc((f.title+" "+fm.gs.map(g=>g.title).join(" ")).toLowerCase())}">
+      <div class="bfh"><span class="dot"></span><h3>${esc(f.title)}</h3><span class="chip c-pl">${fmt(f.best_avg_views)} best avg views</span>${I?`<span class="chip c-${/^run/i.test(I.verdict||"")?"ok":/^skip/i.test(I.verdict||"")?"bad":"warn"}">${esc((I.verdict||"").split(/[-–(]/)[0].trim()||"verdict")}</span>`:""}${B&&B.type?chip(B.type==="human"?"Genjutsu":B.type==="effect"?"B-roll + Seedance":"mixed","ion"):""}
+        <button class="btn" data-act="bwhy" data-fam="${esc(f._id)}">Why it sells · how to win</button></div>
+      <p class="bfv v-${vd.k}">${esc(vd.t)}</p>${rows}</section>`}).join("");
+  const cats=L.cats.map(c=>`<div class="bcat" id="bc-${c.i}" style="left:${c.x}px;top:${c.y}px;width:${BD.CATW}px"><span class="kicker">Category ${String(c.i+1).padStart(2,"0")}</span><b>${esc(c.name)}</b><span class="muted">${c.n} products · ${c.acc} accounts</span></div>`).join("");
+  return `<div class="btool"><div class="bt-l"><span class="kicker">01 · product finder</span><b>Product opportunities</b><span class="muted">${fmt(tot)} accounts · ${S.finder.length} products</span></div>
+    <div class="bt-c"><input id="bq" placeholder="Find a product or @account…" value="${esc(S.fq)}" aria-label="Find a product or account"><select id="bcat" aria-label="Jump to category"><option value="">Jump to category…</option>${L.cats.map(c=>`<option value="${c.i}">${esc(c.name)}</option>`).join("")}</select><label class="tog" style="white-space:nowrap"><input type="checkbox" id="ugcOnly" ${S.ugcOnly?"checked":""}> Only real UGC</label></div>
+    <div class="bt-r"><button class="btn" data-act="fmode" data-m="list">List view</button></div></div>
+  <div id="vp" class="bvp"><div id="world" style="width:${L.w}px;height:${L.h}px">
+    <svg class="bwire" width="${L.w}" height="${L.h}" viewBox="0 0 ${L.w} ${L.h}" aria-hidden="true"><path d="${lines.join(" ")}"/></svg>
+    <div class="broot" style="left:80px;top:60px"><span class="kicker">Research library</span><b>Product opportunities</b><span class="muted">${fmt(tot)} source accounts · ${S.finder.length} products · ${L.cats.length} categories</span></div>
+    ${cats}${fams}</div>
+    <div class="bzoom" role="group" aria-label="Zoom"><button class="btn" data-act="bz" data-z="out" aria-label="Zoom out">−</button><span id="bzv">100%</span><button class="btn" data-act="bz" data-z="in" aria-label="Zoom in">+</button><button class="btn" data-act="bz" data-z="fit">Overview</button><button class="btn" data-act="bz" data-z="home">Top</button></div>
+    <div class="bhint">Drag to move · scroll or pinch to zoom · tap ▶ to watch</div>
+    <aside id="bdrawer" class="bdrawer" hidden><button class="btn bclose" data-act="bclose">Close</button><div id="bdc"></div></aside>
+  </div>`;
+}
+const BOARD={v:null,L:null,
+  mount(){const vp=document.getElementById("vp"),w=document.getElementById("world");if(!vp||!w)return;this.vp=vp;this.w=w;
+    if(!this.v){const k=Math.min(1,Math.max(.25,vp.clientWidth/1500));this.v={x:20,y:10,k}}this.apply();
+    if(vp._m)return;vp._m=1;const P=new Map();let drag=null,moved=0,pinch=null;
+    vp.addEventListener("pointerdown",e=>{if(e.target.closest(".bzoom,.bdrawer,input,select,button,textarea"))return;P.set(e.pointerId,{x:e.clientX,y:e.clientY});
+      if(P.size===1){drag={x:e.clientX,y:e.clientY,vx:this.v.x,vy:this.v.y};moved=0}
+      if(P.size===2){const [a,b]=[...P.values()];pinch={d:Math.hypot(a.x-b.x,a.y-b.y),k:this.v.k,cx:(a.x+b.x)/2,cy:(a.y+b.y)/2};drag=null}});
+    vp.addEventListener("pointermove",e=>{if(!P.has(e.pointerId))return;P.set(e.pointerId,{x:e.clientX,y:e.clientY});
+      if(pinch&&P.size===2){const [a,b]=[...P.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);this.zoomAt(pinch.k*d/pinch.d,pinch.cx,pinch.cy);moved=9;return}
+      if(drag){const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>4){moved=Math.abs(dx)+Math.abs(dy);vp.classList.add("dragging");try{vp.setPointerCapture(e.pointerId)}catch(_){}}
+        if(moved>4){this.v.x=drag.vx+dx;this.v.y=drag.vy+dy;this.apply()}}});
+    const up=e=>{P.delete(e.pointerId);if(P.size<2)pinch=null;if(!P.size){drag=null;vp.classList.remove("dragging")}};
+    vp.addEventListener("pointerup",up);vp.addEventListener("pointercancel",up);
+    vp.addEventListener("click",e=>{if(moved>4){e.preventDefault();e.stopPropagation();moved=0}},true);
+    vp.addEventListener("wheel",e=>{if(e.target.closest(".bdrawer"))return;e.preventDefault();const r=vp.getBoundingClientRect();
+      if(e.ctrlKey||e.metaKey||Math.abs(e.deltaY)>=40&&!e.shiftKey&&e.deltaMode!==0||!e.shiftKey&&Math.abs(e.deltaX)<1&&Math.abs(e.deltaY)>=50){this.zoomAt(this.v.k*Math.exp(-e.deltaY*(e.ctrlKey?.01:.0015)),e.clientX-r.left,e.clientY-r.top)}
+      else{this.v.x-=e.deltaX;this.v.y-=e.deltaY;this.apply()}},{passive:false});
+    document.addEventListener("keydown",e=>{if(S.route!=="finder"||S.fmode==="list"||e.target.closest?.("input,textarea,select"))return;
+      if(e.key==="+"||e.key==="=")this.step(1.25);else if(e.key==="-")this.step(.8);else if(e.key==="0")this.fit();else if(e.key==="1")this.home();});
+  },
+  apply(){if(!this.w)return;const v=this.v;this.w.style.transform=`translate(${v.x}px,${v.y}px) scale(${v.k})`;this.w.style.setProperty("--inv",(1/v.k).toFixed(3));
+    this.vp.classList.toggle("far",v.k<.42);this.vp.classList.toggle("vfar",v.k<.16);const z=document.getElementById("bzv");if(z)z.textContent=Math.round(v.k*100)+"%"},
+  zoomAt(k,cx,cy){k=Math.max(.03,Math.min(2.5,k));const v=this.v;v.x=cx-(cx-v.x)*k/v.k;v.y=cy-(cy-v.y)*k/v.k;v.k=k;this.apply()},
+  step(f){const r=this.vp.getBoundingClientRect();this.zoomAt(this.v.k*f,r.width/2,r.height/2)},
+  fit(){const r=this.vp.getBoundingClientRect(),L=this.L;const k=Math.min(r.width/(L.w+80),r.height/(L.h+80));this.v={x:(r.width-L.w*k)/2,y:20,k};this.apply()},
+  home(){const k=Math.min(1,Math.max(.25,this.vp.clientWidth/1500));this.v={x:20,y:10,k};this.apply()},
+  fly(el,k){if(!el||!this.vp)return;const r=this.vp.getBoundingClientRect();k=k||Math.max(this.v.k,.55);const x=el.offsetLeft+(el.offsetParent&&el.offsetParent!==this.w?el.offsetParent.offsetLeft:0),y=el.offsetTop+(el.offsetParent&&el.offsetParent!==this.w?el.offsetParent.offsetTop:0);
+    this.w.classList.add("anim");this.v={x:r.width/2-(x+Math.min(el.offsetWidth,r.width/k)/2)*k,y:60-y*k,k};this.apply();setTimeout(()=>this.w.classList.remove("anim"),500)},
+  search(q){q=(q||"").trim().toLowerCase();const vp=this.vp;if(!vp)return;vp.classList.toggle("searching",!!q);let first=null;
+    vp.querySelectorAll(".bfam").forEach(f=>{const famHit=q&&f.dataset.h.includes(q);let any=false;f.querySelectorAll(".bcard").forEach(c=>{const hit=!!q&&(famHit||c.dataset.h.includes(q.replace(/^@/,"")));c.classList.toggle("hit",hit);if(hit)any=true});f.classList.toggle("hit",famHit||any);if(!first&&(famHit||any))first=f});
+    if(first)this.fly(first)},
+  drawer(html){const d=document.getElementById("bdrawer");if(!d)return;document.getElementById("bdc").innerHTML=html;d.hidden=false;d.scrollTop=0}
+};
+function famDetail(id){const f=S.finder.find(x=>x._id===id);if(!f)return "";const vd=brainVerdict(f);
+  return `<span class="kicker">${esc(f.group)}</span><h2 class="dh">${esc(f.title)}</h2><p class="bfv v-${vd.k}">${esc(vd.t)}</p>${insightBlock(f).replace('<details class="insight">','<details class="insight" open>')||'<p class="muted">No analysis yet for this product.</p>'}
+   ${S.write?`<button class="btn solid" data-act="tofind" data-id="${f._id}">Send to Products</button>`:""}`}
+function acctDetail(fid,h){const f=S.finder.find(x=>x._id===fid);if(!f)return "";const g=groupsFor(f);let a=null,row=null;g.forEach(x=>x.list.forEach(y=>{if(y.handle===h){a=y;row=x}}));if(!a)return "";
+  const k=S.takes[a.mkey];const href=a.top_video||a.url;
+  return `<span class="kicker">${esc(f.title)} · ${esc(row?.title||"")}</span><h2 class="dh">@${esc(a.handle)}</h2>
+   ${href?`<a class="vid big" href="${esc(href)}" target="_blank" rel="noopener" ${a.mkey?`data-poster="${esc(a.mkey)}"`:""}><span class="pl">▶</span><span class="wo">Watch the original post</span></a>`:""}
+   <div class="bnums"><div><b>${fmt(a.followers)}</b><small>Followers</small></div><div><b>${fmt(a.avg_views)}</b><small>Avg views</small></div><div><b>${a.top_views?fmt(a.top_views):"–"}</b><small>Top video</small></div></div>
+   <p>${a._ugc?chip("Real UGC","ok"):chip("Not real UGC","warn")} ${a.website?`<a href="${esc(a.website)}" target="_blank" rel="noopener">Open their store</a>`:""}</p>
+   ${k?`<dl class="dl"><dt>Brain score</dt><dd>${esc(k.score)}/10 · ${esc(k.type||"")}</dd><dt>Hook</dt><dd>${esc(k.hook)}</dd><dt>On-screen text</dt><dd>${esc(k.text)}</dd><dt>Trigger</dt><dd>${esc(k.trigger)}</dd><dt>Beats</dt><dd>${esc((k.beats||[]).join(" → "))}</dd><dt>Why it works</dt><dd>${esc(k.why)}</dd><dt>Our remake</dt><dd>${esc(k.remake)}</dd><dt>Risk</dt><dd>${esc(k.risk)}</dd></dl>`:'<p class="muted">This video has not been analysed yet.</p>'}
+   <button class="btn" data-act="bwhy" data-fam="${esc(fid)}">Why this product sells</button>`}
+/* ---- The Brain chat: talk to the platform in your own words ---- */
+const BOT={msgs:[],busy:false,ctl:null,
+  load(){try{this.msgs=JSON.parse(localStorage.getItem("lx.chat")||"[]").slice(-40)}catch(e){this.msgs=[]}},
+  save(){try{localStorage.setItem("lx.chat",JSON.stringify(this.msgs.slice(-40)))}catch(e){}},
+  toggle(open){const p=$("#botp");if(!p)return;p.hidden=open===undefined?!p.hidden:!open;if(!p.hidden){this.draw();setTimeout(()=>$("#botin")?.focus(),50)}},
+  draw(){const l=$("#botlog");if(!l)return;
+    l.innerHTML=(this.msgs.length?this.msgs:[{role:"assistant",content:"Hi Szasz. Tell me what you need in your own words, in Romanian or English. I can explain any product, compare products, open pages, approve picks for you, and send real work (videos, research, suppliers) to Claude Code."}]).map(m=>`<div class="bm ${m.role==="user"?"me":"ai"}">${esc(m.content).replace(/\n/g,"<br>")}</div>`).join("")+(this.busy?`<div class="bm ai typing" id="bottyping">${esc(this.partial||"Thinking…")}</div>`:"");
+    l.scrollTop=l.scrollHeight},
+  ctx(){const top=(S.top?.items||[]).map((t,i)=>`${i+1}. ${t.title} [id ${t.id}]${S.top?.approved?.[t.id]?" (APPROVED)":""}`).join("\n");
+    const rules=(S.cfg?.rules_en||[]).slice(-12).map(r=>"- "+r).join("\n");
+    return `You are "the Brain", the assistant inside LIMITLESS, Szasz's organic dropshipping platform (find proven UGC virals, remake them with Higgsfield Genjutsu motion control / Seedance 2.5 / GPT Image 2.5, post organically, sell from one Shopify store). Szasz is not technical. Answer in the language he writes in (usually Romanian), short and plain, no jargon. Use the tools to look things up instead of guessing; never invent numbers. You can open pages and products, and approve or un-approve Top 10 picks when he clearly asks. Anything that needs real work (making videos, spending Higgsfield credits, research, supplier search, landing pages, code changes) goes to Claude Code with send_to_claude_code; tell him it was sent and that Claude Code will do it. Never spend money or credits yourself.
+Current page: ${S.route}. Products in the finder: ${S.finder.length}. Rules (newest last):\n${rules}\nTop 10 picks:\n${top}`},
+  tools(){const self=this;return [
+    {name:"search_products",description:"Search the product finder by words (product, variation, account handle). Returns matching products with ids, numbers, verdicts.",inputSchema:{type:"object",properties:{q:{type:"string"}},required:["q"]},
+      execute({q}){q=(q||"").toLowerCase();return S.finder.filter(f=>(f.title+" "+f.group+" "+f._id+" "+f.variations.map(v=>v.title+" "+v.accounts.map(a=>a.handle).join(" ")).join(" ")).toLowerCase().includes(q)).slice(0,8).map(f=>({id:f._id,title:f.title,category:f.group,best_avg_views:f.best_avg_views,accounts:f.accounts,verdict:S.insights[f._id]?.verdict||null,video_type:S.broll[f._id]?.type||null}))}},
+    {name:"product_details",description:"Full analysis of one product by id: why it works, buyers, winning patterns, better videos, variations, concept upgrades, landing angle, risks, B-roll shots.",inputSchema:{type:"object",properties:{id:{type:"string"}},required:["id"]},
+      execute({id}){const f=S.finder.find(x=>x._id===id);if(!f)throw new Error("unknown product id");const B=S.broll[id];const shots=B?[...(B.family_recurring_shots||[]),...Object.values(B.rows||{}).flatMap(r=>r.recurring_shots||[])].map(s=>({name:s.name,videos:s.seen_in?.count,what:s.what_happens})):[];
+        return {title:f.title,category:f.group,best_avg_views:f.best_avg_views,sellers:groupsFor(f).map(g=>({exact_product:g.title,accounts:g.list.length,ugc:g.list.filter(a=>a._ugc).length})),brain:brainVerdict(f).t,insight:S.insights[id]||null,video_type:B?.type||null,broll_shots:shots}}},
+    {name:"open_page",description:"Open a page of the platform.",inputSchema:{type:"object",properties:{page:{type:"string",enum:Object.keys(VIEWS)}},required:["page"]},
+      execute({page}){go(page);return "opened "+page}},
+    {name:"show_product",description:"Open the product finder board and fly to one product.",inputSchema:{type:"object",properties:{id:{type:"string"}},required:["id"]},
+      execute({id}){S.fmode="board";go("finder");setTimeout(()=>{BOARD.fly(document.getElementById("bf-"+id));BOARD.drawer(famDetail(id))},120);return "shown"}},
+    {name:"set_top10_approval",description:"Approve or un-approve a Top 10 pick by its id, only when Szasz clearly asks.",inputSchema:{type:"object",properties:{id:{type:"string"},approved:{type:"boolean"}},required:["id","approved"]},
+      async execute({id,approved}){if(!S.db||!S.write)throw new Error("no write access");const ap={...((S.top||{}).approved||{})};if(approved)ap[id]=true;else delete ap[id];await S.db.doc("config/top10").update({approved:ap});return approved?"approved":"removed"}},
+    {name:"send_to_claude_code",description:"Send a task to Claude Code (the builder) as a request in the inbox. Use for anything that needs real work or spending.",inputSchema:{type:"object",properties:{task:{type:"string",description:"The task, written clearly, in Szasz's words plus any detail you know"}},required:["task"]},
+      async execute({task}){if(!S.db||!S.write)throw new Error("no write access");await S.db.collection("inbox").add({text:task,status:"nou",creat:nowIso(),via:"chat"});return "sent"}},
+    {name:"list_requests",description:"See the latest requests sent to Claude Code and their answers.",inputSchema:{type:"object",properties:{}},
+      execute(){return S.inbox.slice(0,8).map(r=>({text:r.text,status:r.status,answer:r.raspuns||null}))}}
+  ]},
+  async send(text){text=(text||"").trim();if(!text||this.busy)return;if(!S.sample){this.msgs.push({role:"user",content:text},{role:"assistant",content:"I can't think here: open this page in claude.ai, signed in, and allow it to ask Claude."});this.save();this.draw();return}
+    this.msgs.push({role:"user",content:text});this.busy=true;this.partial="";this.draw();this.ctl=new AbortController();
+    const convo=[{role:"user",content:this.ctx()+"\n\n(Conversation follows.)"},{role:"assistant",content:"Understood."},...this.msgs.slice(-16)];
+    try{const r=await S.sample(convo,{modelTier:"default",cache:false,signal:this.ctl.signal,tools:this.tools(),onText:({text})=>{this.partial=text;const t=$("#bottyping");if(t){t.textContent=text;const l=$("#botlog");l.scrollTop=l.scrollHeight}}});
+      this.msgs.push({role:"assistant",content:(r&&r.text)||this.partial||"(no answer)"})}
+    catch(e){if(e?.code==="not_granted")this.msgs.push({role:"assistant",content:"I need permission to ask Claude. Allow it when the browser asks, then try again."});
+      else if(e?.code==="rate_limited")this.msgs.push({role:"assistant",content:"Too many questions in a short time. Wait a minute and ask again."});
+      else this.msgs.push({role:"assistant",content:(e?.text||this.partial||"")+(e?.name==="AbortError"?"":"\n(Something went wrong: "+(e?.message||e)+")")});report(e,"bot")}
+    this.busy=false;this.partial="";this.save();this.draw()}
+};
+
+/* board + chat wiring */
+document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(!b)return;const a=b.dataset.act;
+  if(a==="bz"){e.stopImmediatePropagation();const z=b.dataset.z;if(z==="in")BOARD.step(1.3);else if(z==="out")BOARD.step(1/1.3);else if(z==="fit")BOARD.fit();else BOARD.home();return}
+  if(a==="bdet"){e.stopImmediatePropagation();BOARD.drawer(acctDetail(b.dataset.fam,b.dataset.h));return}
+  if(a==="bwhy"){e.stopImmediatePropagation();BOARD.drawer(famDetail(b.dataset.fam));return}
+  if(a==="bclose"){e.stopImmediatePropagation();const d=$("#bdrawer");if(d)d.hidden=true;return}
+  if(a==="fmode"){e.stopImmediatePropagation();S.fmode=b.dataset.m;try{localStorage.setItem("lx.fmode",S.fmode)}catch(_){}render();return}
+  if(a==="bot"){e.stopImmediatePropagation();BOT.toggle();return}
+  if(a==="botq"){e.stopImmediatePropagation();BOT.send(b.textContent);return}
+},true);
+let _bqT=0;document.addEventListener("input",e=>{if(e.target.id==="bq"){S.fq=e.target.value;clearTimeout(_bqT);_bqT=setTimeout(()=>BOARD.search(S.fq),250)}});
+document.addEventListener("change",e=>{if(e.target.id==="bcat"&&e.target.value!==""){BOARD.fly(document.getElementById("bc-"+e.target.value),.5);e.target.value=""}},true);
+document.addEventListener("submit",e=>{if(e.target.id!=="botf")return;e.preventDefault();e.stopImmediatePropagation();const i=$("#botin");const t=i.value;i.value="";BOT.send(t)},true);
+document.addEventListener("keydown",e=>{if(e.target.id==="botin"&&e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("#botf").requestSubmit()}});
+try{S.fmode=localStorage.getItem("lx.fmode")||"board"}catch(_){S.fmode="board"}
+BOT.load();
 SPACE.start();TILT.on();
 /* posters load only when a card scrolls near the screen */
 const POST={io:null,init(){const v=document.getElementById("view");if(!v)return;

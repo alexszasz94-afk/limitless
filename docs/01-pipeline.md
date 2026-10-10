@@ -19,7 +19,7 @@ Stare: ✅ metoda e dovedită, trebuie doar construit modulul · 🟡 parțial /
 | 11 | Multi-cont | conturi noi pe persoană: creare → încălzire 2 zile → profil → 3 videouri/zi pe IG + TikTok + FB | `distribution/` (`config/schedule.json`, `personas.json`) | 🟡 cod gata, de instalat |
 | 12 | Feedback cifre | tracker orar prin Apify: vizualizări, câștig zilnic, urmăritori, top videouri, cifre la 24 h și 7 zile | `social_tracker/` | 🟡 cod gata, de instalat |
 | 13 | Promovare hook | scor > mediană → dovedit | `engine/hooks` | 🟡 |
-| 14 | Conversie | — | `engine/store` (pagina, oferta, A/B) | ⬜ |
+| 14 | Conversie | site Shopify automat din întrebările lui Szasz, plăți prin alt procesator (`docs/10`) | `engine/store` | ⬜ |
 | 15 | Produse noi | Meta Ad Library: produse cu reclame plătite care rulează de mult, cu multe variante (`docs/07-scout-meta-ads.md`) | `engine/product-scout` | ⬜ |
 | 15b | Variații de produs | idei custom fezabile + mockup + test (`docs/08`) | `engine/variations` | ⬜ |
 | 16 | Raport zilnic | tabla HTML | `engine/report` (dashboard + Telegram) | 🟡 |

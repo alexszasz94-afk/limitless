@@ -18,3 +18,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - (10 oct) BAZA DE UNELTE: folosim EXCLUSIV Genjutsu (`hf_mult_motion_control`), Seedance 2.5 (`seedance_2_5`) și GPT Image 2.5 (`gpt_image_2_5`). Alte modele Higgsfield (Kling, Veo, Sora, Soul, Nano Banana, Marketing Studio etc.) nu intră în producție — Szasz.
 - (10 oct) Competitorii organici: prioritate conturile ON THE RISE pe nișă; un video cu ≥ 100k vizualizări într-o zi = dovedit că vinde → intră imediat în producție — Szasz.
 - (10 oct) Aplicația propune mereu idei de variații custom ale produsului care se pot realiza (cu fezabilitate, mockup și test) — Szasz.
+- (10 oct) Reguli clare pentru ce produs merită încercat și când facem variații, pornite din regulile lui Esteban (organic, ca noi) — `docs/09-reguli-produs.md` — Szasz.
+- (10 oct) Site-ul fiecărui produs se face automat pe Shopify, pe baza întrebărilor lui Szasz; plățile prin alt procesator, nu Shopify Payments — `docs/10-site-shopify.md` — Szasz.

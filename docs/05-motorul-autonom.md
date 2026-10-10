@@ -56,3 +56,17 @@ Orice regulă nouă de la Szasz intră aici și se aplică automat la toate vide
 5. Legătura cu `distribution/` și `social_tracker/`.
 6. Învățarea (scoruri, reordonarea scării, promovarea hook-urilor).
 7. Programarea (Routines) — sistemul pornește singur.
+
+## Ținta: 10 produse în paralel, fără Szasz (10 oct 2026)
+Fiecare produs e o „linie” separată, cu propria fișă (`products/`), propriile conturi, propria coadă și propriul buget. Agenții lucrează pe toate liniile odată.
+
+| Ce se automatizează complet | Ce rămâne în afara aplicației |
+|---|---|
+| research, analiză, plan, producție, QA, montaj, caption-uri | crearea conturilor noi și postarea din telefon: le fac posterii, prin portal (`distribution/`), sau un serviciu de postare programată, dacă alegem unul |
+| scorul, rotația, regulile noi din cifre | banii: bugetul lunar (Higgsfield, Apify, server) îl aprobă Szasz o dată pe lună |
+| alegerea produselor care primesc mai mult volum, după cifre | adăugarea unui produs nou: un link (sau, mai târziu, scout-ul automat propune, Szasz zice da/nu) |
+
+**Bugetul e frâna principală.** Ordin de mărime, din producția anterioară (sept–oct 2026): un video complet generat cu AI ≈ 300–400 credite. 10 produse × 10 videouri/zi = 100 videouri/zi ≈ 30.000–40.000 credite/zi dacă totul se generează de la zero. De aceea:
+- reutilizarea (clipuri aprobate, B-roll per produs făcut o dată, hook-uri refolosite pe alt produs) e treapta 1 a scării de cost;
+- bugetul se împarte automat între produse după cifre: produsele care vând primesc mai multe videouri, cele care nu, mai puține sau se opresc;
+- ținta de cost pe video se fixează după research-ul Higgsfield și primele loturi.

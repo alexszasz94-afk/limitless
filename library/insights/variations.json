@@ -1,0 +1,5302 @@
+{
+ "ac_covers": {
+  "summary": "A decorative cover shaped like a car front (with LED headlights) that hides a wall/window AC unit. Only one seller does it, the BMW-styled version, and it pulled 1.92M top views (777k average) on an 8k-follower page because 'Don't let a BMW addict see this' turns a boring appliance into a car-fan room trophy.",
+  "groups": [
+   {
+    "name": "Car-brand look",
+    "variations": [
+     "Car-front cover with LED headlights · BMW"
+    ],
+    "accounts": 1,
+    "best_views": 1922062,
+    "note": "Single seller; brand-styled front - IP risk, but proves the car-fan identity hook"
+   }
+  ],
+  "rows": {
+   "car_front_ac_unit_cover": {
+    "variants": "BMW ×1",
+    "best": "BMW — 1.92M top views (_revvent)",
+    "analysis": "Works because of the car-fan identity call-out; missing a brand-free design and a non-AC use (the install looks AI-staged)."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Generic sports-car front (no badge) as LED wall decor",
+    "why": "Same car-fan identity without needing an AC unit or a brand - wider market, gamer-room buyers",
+    "how": "Gamer bedroom, lights off, remote clicks and the 'headlights' flash on; text 'Don't let a car guy see this'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pickup-truck front version",
+    "why": "US truck culture is a huge identity group; dads and country boys gift it to themselves",
+    "how": "Garage/man-cave wall, dad hits the remote, headlights blink twice, kid gasps",
+    "ip_safe": true
+   },
+   {
+    "variation": "Personalized license-plate panel",
+    "why": "Name on the plate kills 'generic gift' guilt and justifies a higher price",
+    "how": "Girlfriend unboxes the plate with his name, clicks it on, boyfriend reaction",
+    "ip_safe": true
+   },
+   {
+    "variation": "Racing-livery colourways (stripes, number)",
+    "why": "Lets one mould sell to motorsport fans without a team licence",
+    "how": "Three colourways lined up on a wall, lights cycle one by one",
+    "ip_safe": true
+   }
+  ]
+ },
+ "advent": {
+  "summary": "Advent calendars with 24 hobby items behind the doors. Die-cast car calendars lead (Hot Wheels 1.38M top views, the Porsche model kit 1.32M) because 'DON'T show this to a ___ fan' plus a store-gasp makes the buyer think of one specific person; flowers (797k), liquor (771k), golf (653k) and tennis (550k) show any hobby works.",
+  "groups": [
+   {
+    "name": "Car & motorsport",
+    "variations": [
+     "Die-cast cars · Hot Wheels",
+     "Die-cast cars · Formula 1",
+     "Helmet ornaments · Formula 1",
+     "Build-a-model · Porsche 911"
+    ],
+    "accounts": 4,
+    "best_views": 1380286,
+    "note": "Strongest group: 3 of the top 4 videos; Hot Wheels/F1/Porsche are licensed - IP risk"
+   },
+   {
+    "name": "Drinks",
+    "variations": [
+     "Miniature liquor bottles · mixed spirits",
+     "Miniature liquor bottles · tequila"
+    ],
+    "accounts": 2,
+    "best_views": 771000,
+    "note": "Liquor minis 771k on Instagram, tequila 392k on Facebook; adult-gift humour"
+   },
+   {
+    "name": "Hobbies & sports",
+    "variations": [
+     "Building-block flowers",
+     "Sport accessories · tennis",
+     "Miniature book ornaments",
+     "Sport accessories · golf"
+    ],
+    "accounts": 5,
+    "best_views": 797057,
+    "note": "Flowers, tennis, books, golf - IP-free and each one a new audience"
+   },
+   {
+    "name": "Coffee & cosy trinkets",
+    "variations": [
+     "Mini keychains · coffee cups & bears",
+     "Christmas-tree tealight candles"
+    ],
+    "accounts": 2,
+    "best_views": 307176,
+    "note": "Low views; the coffee one leans on a real chain"
+   },
+   {
+    "name": "Profession",
+    "variations": [
+     "Small trinkets · teacher theme"
+    ],
+    "accounts": 1,
+    "best_views": 944,
+    "note": "Teacher theme is the right idea but the page has almost no reach yet"
+   }
+  ],
+  "rows": {
+   "diecast_car_advent_calendar": {
+    "variants": "Hot Wheels ×1 · Formula 1 ×1",
+    "best": "Hot Wheels — 1.38M top views (embergo.co)",
+    "analysis": "Fan call-out works, but both sellers lean on Hot Wheels/F1 names; an unbranded 'car guy' version is missing."
+   },
+   "mini_liquor_advent_calendar": {
+    "variants": "mixed spirits ×1",
+    "best": "mixed spirits — 771k top views (adventholic1)",
+    "analysis": "The 'don't show this to an alcoholic' joke carries it; no themed editions (wine, whisky) yet."
+   },
+   "helmet_ornament_advent_calendar": {
+    "variants": "Formula 1 ×1",
+    "best": "Formula 1 — 656k top views (formula1.calendar)",
+    "analysis": "Unwrap-the-box POV is clean but relies on F1 identity; needs generic racing helmets."
+   },
+   "building_block_flower_advent_calendar": {
+    "variants": "Building-block flowers ×1",
+    "best": "Building-block flowers — 797k top views (our_petalia)",
+    "analysis": "Best IP-free result (797k) - 'flower girl' identity plus a build-a-bouquet payoff."
+   },
+   "tennis_advent_calendar": {
+    "variants": "tennis ×2",
+    "best": "tennis — 550k top views (thetenniscalendar)",
+    "analysis": "Two sellers, the store-gasp hook (550k) beats the gift-pose one (97k)."
+   },
+   "mini_book_advent_calendar": {
+    "variants": "Miniature book ornaments ×1",
+    "best": "Miniature book ornaments — 515k top views (tinybookery)",
+    "analysis": "Bookish identity works; the hook names a real bookstore - swap for a generic shelf."
+   },
+   "coffee_keychain_advent_calendar": {
+    "variants": "coffee cups & bears ×1",
+    "best": "coffee cups & bears — 307k top views (cafe_advent)",
+    "analysis": "Weak (307k top, 10k avg); the fake chain-store reveal is the only idea."
+   },
+   "car_model_kit_advent_calendar": {
+    "variants": "Porsche 911 ×1",
+    "best": "Porsche 911 — 1.32M top views (911.nights)",
+    "analysis": "One spike (1.32M) from a toss-and-catch box shot, no text; the build-a-car story is unused."
+   },
+   "golf_advent_calendar": {
+    "variants": "golf ×1",
+    "best": "golf — 653k top views (golferscountdown)",
+    "analysis": "Golf-dad identity got 653k; avg is tiny, so the content is not repeatable yet."
+   },
+   "teacher_advent_calendar": {
+    "variants": "teacher theme ×1",
+    "best": "teacher theme — 944 top views (24daysofteaching_)",
+    "analysis": "Right idea (profession gift) but no reach yet - nothing proves it."
+   },
+   "tree_candle_advent_calendar": {
+    "variants": "Christmas-tree tealight candles ×1",
+    "best": "Christmas-tree tealight candles — 539 top views (noelvolcanoco)",
+    "analysis": "No reach; candles alone have no identity hook."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Nurse / healthcare-worker advent",
+    "why": "Huge US profession group that gets gifted at Christmas; 'For the nurse who works Christmas' is pure guilt-plus-gratitude",
+    "how": "Nurse in scrubs after a night shift opens door #1 in the break room; text 'Do NOT show this to a nurse'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Dog-mom advent (treats + toys for the dog)",
+    "why": "Dog owners treat pets like kids; buyer is the owner herself, self-gift with no guilt",
+    "how": "Dog sits beside the calendar, owner opens a door, dog spins; text 'My dog has a better Christmas than me'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Cozy self-care advent (socks, hand warmers, tea, mini candles)",
+    "why": "Women 25-45 buying for mom/sister or themselves; low-effort gift that feels thoughtful",
+    "how": "Woman in a blanket opens door after door in a montage, each item gets cosier",
+    "ip_safe": true
+   },
+   {
+    "variation": "Couples date-night advent (24 date ideas + small items)",
+    "why": "Partners buy for each other; turns December into shared rituals",
+    "how": "Couple pulls a card 'Dance in the kitchen', cut to them dancing",
+    "ip_safe": true
+   },
+   {
+    "variation": "Personalized name + photo box",
+    "why": "Personalization kills 'generic gift' guilt; works on every theme",
+    "how": "Box with a kid's name and photo is revealed under the tree, kid points at own face",
+    "ip_safe": true
+   },
+   {
+    "variation": "Fishing / tackle advent (lures, hooks)",
+    "why": "Fishing dads are a classic hard-to-gift group with no seller here yet",
+    "how": "Wife hides it in his tackle box; text 'Fishing dads are impossible to gift... until this'",
+    "ip_safe": true
+   }
+  ]
+ },
+ "alarms": {
+  "summary": "An alarm clock you switch off by shooting a target with an infrared toy gun. One seller, 6.82M top views (105k average): the 'Don't show this to your husband' joke makes it a funny man-gift.",
+  "groups": [
+   {
+    "name": "Target-shooting",
+    "variations": [
+     "Target-shooting alarm clock"
+    ],
+    "accounts": 1,
+    "best_views": 6821876,
+    "note": "Single seller; the husband-joke hook carries it"
+   }
+  ],
+  "rows": {
+   "target_shooting_alarm_clock": {
+    "variants": "Target-shooting alarm clock ×1",
+    "best": "Target-shooting alarm clock — 6.82M top views (targetalarmm)",
+    "analysis": "Funny gift angle works, but only one spike; nobody shows the real morning 'shoot to stop' payoff."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Teen-boy bedroom edition (gamer RGB colours)",
+    "why": "Moms buy it for teens who never wake up - real pain plus fun",
+    "how": "Mom films a sleepy teen shooting the clock half-asleep; text 'The only way my son wakes up'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Couples duel set (two guns, two targets)",
+    "why": "Turns waking up into a game for couples - funny duo gift",
+    "how": "Couple in bed both grab guns at 7am, race to hit first",
+    "ip_safe": true
+   },
+   {
+    "variation": "Western cowboy theme (wood + revolver style)",
+    "why": "Country/Western identity buyers, strong US niche, no IP",
+    "how": "Man in cowboy hat quick-draws at the alarm; text 'Yeehaw, it's 6am'",
+    "ip_safe": true
+   }
+  ]
+ },
+ "art_supplies": {
+  "summary": "Silky gel crayons that glide like paint for toddlers. One mom-finds account, 127k top views: the 'pov your toddler finally wants to color' line hits a real parent pain.",
+  "groups": [
+   {
+    "name": "Plain set",
+    "variations": [
+     "Silky gel crayons"
+    ],
+    "accounts": 1,
+    "best_views": 126562,
+    "note": "Single seller; mom-find style, no variation"
+   }
+  ],
+  "rows": {
+   "silky_gel_crayons": {
+    "variants": "Silky gel crayons ×1",
+    "best": "Silky gel crayons — 127k top views (modernmomfinds__)",
+    "analysis": "The toddler-pain hook is good; no themed sets or gift packaging to raise price."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Christmas stocking-stuffer gift tin",
+    "why": "Parents and grandparents need cheap stocking fillers; tin makes it giftable",
+    "how": "Grandma pulls the tin from a stocking, toddler scribbles on a window",
+    "ip_safe": true
+   },
+   {
+    "variation": "Window & mirror washable set",
+    "why": "'Draws on glass and wipes off' is a satisfying demo and solves mess worry",
+    "how": "Toddler draws on the patio door, mom wipes it clean in one swipe",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pastel / neon colour packs",
+    "why": "Second purchase after the first set - collect-them angle",
+    "how": "Side-by-side swatches on black paper; text 'Which pack are you?'",
+    "ip_safe": true
+   }
+  ]
+ },
+ "baby_beds": {
+  "summary": "A baby lounger shaped like a red sports car. One seller, 2.65M top views (397k average): 'New moms... this is for you' plus the car shape gives parents a cute, shareable baby moment.",
+  "groups": [
+   {
+    "name": "Car shape",
+    "variations": [
+     "Car-shaped baby lounger"
+    ],
+    "accounts": 1,
+    "best_views": 2645431,
+    "note": "Single seller; sports-car look"
+   }
+  ],
+  "rows": {
+   "car_baby_lounger": {
+    "variants": "Car-shaped baby lounger ×1",
+    "best": "Car-shaped baby lounger — 2.65M top views (babyrideshop)",
+    "analysis": "Cute novelty sells; the car styling may resemble real models - needs a generic retro car, and no other shapes exist."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Tractor / farm lounger",
+    "why": "Rural and farm-dad families are proud of the identity; grandpa gift",
+    "how": "Dad in a cap places the baby in the tractor lounger in a farmhouse room",
+    "ip_safe": true
+   },
+   {
+    "variation": "Rocket / space lounger",
+    "why": "Gender-neutral, nursery-theme friendly, baby-shower gift",
+    "how": "Baby 'launches' with a countdown text, mom laughs",
+    "ip_safe": true
+   },
+   {
+    "variation": "Embroidered name on the headrest",
+    "why": "Personalized baby gifts justify +$15 and feel special at showers",
+    "how": "Close-up on the name, pull back to the baby asleep inside",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pastel 'princess carriage' version",
+    "why": "Girl-mom identity; pairs with pink nurseries",
+    "how": "Mom reveals it at a baby shower, guests 'awww'",
+    "ip_safe": true
+   }
+  ]
+ },
+ "baby_hoodies": {
+  "summary": "Hoodies with a front pouch that holds a baby skin-to-skin. The attached bear-suit version hit 48.75M top views and the plain pouch hoodie 19.18M (1.17M average) because new-mom emotion plus a cute baby face in the hood is irresistible to gift-buyers.",
+  "groups": [
+   {
+    "name": "Plain pouch",
+    "variations": [
+     "Front-pouch babywearing hoodie"
+    ],
+    "accounts": 2,
+    "best_views": 19180880,
+    "note": "Two sellers; best average (1.17M) - the pregnant-mom gasp hook"
+   },
+   {
+    "name": "Character suit (bear)",
+    "variations": [
+     "Hoodie with attached baby bear-suit"
+    ],
+    "accounts": 1,
+    "best_views": 48746104,
+    "note": "One seller but the biggest single video, 48.75M"
+   }
+  ],
+  "rows": {
+   "babywearing_pouch_hoodie": {
+    "variants": "Front-pouch babywearing hoodie ×2",
+    "best": "Front-pouch babywearing hoodie — 19.18M top views (littlepouch.us)",
+    "analysis": "Gift-for-new-mom emotion works (19.18M); the fake H&M collab reveal is weaker and IP-risky."
+   },
+   "babywearing_bear_suit_hoodie": {
+    "variants": "Hoodie with attached baby bear-suit ×1",
+    "best": "Hoodie with attached baby bear-suit — 48.75M top views (pookie.hoodie)",
+    "analysis": "Baby-in-a-bear-suit is the strongest visual; only one animal and no dad version."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Dad edition ('Dad bear', dark colours)",
+    "why": "Dads want to bond too; wives buy it as a first Father's Day / Christmas gift",
+    "how": "Big bearded dad zips the baby in, both faces peek out; text 'Don't show this to a new dad'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Matching family bear set (mom + dad + baby)",
+    "why": "Family photo moment for Christmas cards; doubles order value",
+    "how": "Family walks into frame in matching hoodies, baby in dad's pouch",
+    "ip_safe": true
+   },
+   {
+    "variation": "Bunny / reindeer baby suit",
+    "why": "Easter and Christmas seasonal editions give reasons to re-buy",
+    "how": "Baby with reindeer antlers in the hood by the tree",
+    "ip_safe": true
+   },
+   {
+    "variation": "Fleece-lined winter-walk edition",
+    "why": "Solves a real pain: taking the newborn outside in the cold",
+    "how": "Mom on a snowy sidewalk, baby warm inside, steam from her coffee",
+    "ip_safe": true
+   },
+   {
+    "variation": "Embroidered baby name",
+    "why": "Personalization makes it a keepsake for the first Christmas",
+    "how": "Close-up of the name on the pouch, baby yawns",
+    "ip_safe": true
+   }
+  ]
+ },
+ "bathrobes": {
+  "summary": "A plush hooded (non-heated) bathrobe. The only seller used a BTS fan theme and got 224k top views (5k average) with a fake store-collab reveal - fandom pulls attention but the idea is IP-risky and not repeatable.",
+  "groups": [
+   {
+    "name": "Licensed fandom (BTS)",
+    "variations": [
+     "BTS logo"
+    ],
+    "accounts": 1,
+    "best_views": 224298,
+    "note": "Single seller; IP risk"
+   }
+  ],
+  "rows": {
+   "plush_hooded_bathrobe": {
+    "variants": "BTS logo ×1",
+    "best": "BTS logo — 224k top views (cozy.army)",
+    "analysis": "Fandom hook gets a spike but borrows IP and a real store; nothing IP-free yet."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Purple 'K-pop fan' aesthetic robe without logos",
+    "why": "Keeps the fan colour code and identity without the licence",
+    "how": "Fan opens the robe on a bed covered with lightsticks-style décor (no logos); text 'For the girls who stan'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Embroidered name robe",
+    "why": "Personal gift for mom/sister; spa feel",
+    "how": "Unfold the robe, name on the chest catches the light",
+    "ip_safe": true
+   },
+   {
+    "variation": "Matching mom-and-daughter set",
+    "why": "Christmas morning photo, doubles order value",
+    "how": "Mom and daughter in matching robes with cocoa by the tree",
+    "ip_safe": true
+   }
+  ]
+ },
+ "bedding": {
+  "summary": "Cosy bedding: puffy 'marshmallow' comforters, fitted sheets with a padded border, and faux-fur throws. The bordered sheet has the best single video (1.05M, 'Designed for anxious sleepers'), while the marshmallow comforter has the most sellers (3) and the best average (181k) because the 'sinking into a cloud' visual sells comfort.",
+  "groups": [
+   {
+    "name": "Puffy comforter",
+    "variations": [
+     "Marshmallow comforter"
+    ],
+    "accounts": 3,
+    "best_views": 181491,
+    "note": "3 sellers; cloud visuals and the 'mom is hard to buy for' gift hook"
+   },
+   {
+    "name": "Fitted sheet with border",
+    "variations": [
+     "Fitted sheet with padded borders"
+    ],
+    "accounts": 1,
+    "best_views": 1053387,
+    "note": "One seller, 1.05M - sells a feeling (anxiety relief)"
+   },
+   {
+    "name": "Faux-fur throw",
+    "variations": [
+     "Ribbed faux-fur throw"
+    ],
+    "accounts": 1,
+    "best_views": 855,
+    "note": "No reach"
+   }
+  ],
+  "rows": {
+   "marshmallow_puffy_comforter": {
+    "variants": "Marshmallow comforter ×3",
+    "best": "Marshmallow comforter — 181k top views (jessnickolson)",
+    "analysis": "Sinking-into-cloud visual works; all in white/cream - no colour or holiday editions."
+   },
+   "bordered_fitted_sheet": {
+    "variants": "Fitted sheet with padded borders ×1",
+    "best": "Fitted sheet with padded borders — 1.05M top views (kaomisleep)",
+    "analysis": "Emotional 'anxious sleepers' angle is strong; only one colour, no kids version."
+   },
+   "ribbed_faux_fur_throw": {
+    "variants": "Ribbed faux-fur throw ×1",
+    "best": "Ribbed faux-fur throw — 855 top views (hannahbentleyshops)",
+    "analysis": "Pretty but no hook or identity; no views."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Christmas-morning puffy set (red/green + matching pillow)",
+    "why": "Seasonal refresh moms buy every December; gift for mom",
+    "how": "Kids jump onto the red marshmallow bed on Christmas morning",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids 'cocoon' bordered sheet (stops falling out)",
+    "why": "Real parent pain: kids rolling off the bed",
+    "how": "Toddler rolls toward the edge and the border stops him; text 'Toddler-proof'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Heated marshmallow throw (USB)",
+    "why": "Combines two winners: puffy comfort + warmth for always-cold women",
+    "how": "Woman wraps herself, phone power bank glows, she sighs",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pastel colour puffs (sage, blush, lavender)",
+    "why": "Aesthetic room-makeover buyers want to match their room",
+    "how": "Three beds side by side, flip-through transition",
+    "ip_safe": true
+   }
+  ]
+ },
+ "blackout_panels": {
+  "summary": "Framed blackout panels that click into adhesive side channels on any window. One seller, 22.45M top views but only 93k average: the mysterious 'snap the corners' close-up plus 'Your sleep schedule is not traditional' speaks to shift workers.",
+  "groups": [
+   {
+    "name": "Plain black frame",
+    "variations": [
+     "Framed panel with adhesive side channels"
+    ],
+    "accounts": 1,
+    "best_views": 22449876,
+    "note": "Single seller; one huge spike"
+   }
+  ],
+  "rows": {
+   "framed_blackout_window_panel": {
+    "variants": "Framed panel with adhesive side channels ×1",
+    "best": "Framed panel with adhesive side channels — 22.45M top views (blackoutblissco)",
+    "analysis": "Mystery close-up + night-shift identity is excellent; no colours, kids or nursery version."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Nursery / baby-nap edition (soft colours)",
+    "why": "New parents fight daytime naps; real pain + gift for a baby shower",
+    "how": "Mom clicks the panel in, room goes dark, baby falls asleep",
+    "ip_safe": true
+   },
+   {
+    "variation": "Night-shift nurse identity version",
+    "why": "Nurses and shift workers are a big identity group; 'Do NOT show this to a night-shift nurse'",
+    "how": "Nurse in scrubs comes home at 8am, snaps the panel, sleeps",
+    "ip_safe": true
+   },
+   {
+    "variation": "Starry-sky printed panel",
+    "why": "Kids' room: dark plus a starry ceiling look, more giftable",
+    "how": "Lights off, the panel shows a soft star print",
+    "ip_safe": true
+   }
+  ]
+ },
+ "body_pillows": {
+  "summary": "Big crescent-shaped body pillows. The crescent pillow hit 49.05M top views (322k average) with 'for big spoons.. / and little spoons' - a cute couples/single-hug feeling; the giant croissant pillow got only 4k.",
+  "groups": [
+   {
+    "name": "Crescent hug pillow",
+    "variations": [
+     "Crescent body pillow"
+    ],
+    "accounts": 1,
+    "best_views": 49051787,
+    "note": "Biggest video in the family; cuddle/spoon emotion"
+   },
+   {
+    "name": "Food-shaped meme pillow",
+    "variations": [
+     "Giant croissant lounge pillow"
+    ],
+    "accounts": 1,
+    "best_views": 3804,
+    "note": "Funny croissant, no reach yet"
+   }
+  ],
+  "rows": {
+   "crescent_body_pillow": {
+    "variants": "Crescent body pillow ×1",
+    "best": "Crescent body pillow — 49.05M top views (moonsleep.co)",
+    "analysis": "The spoon joke is perfect and universal; only cream colour, no heated or couple set."
+   },
+   "croissant_lounge_pillow": {
+    "variants": "Giant croissant lounge pillow ×1",
+    "best": "Giant croissant lounge pillow — 4k top views (aalyssasnyderr)",
+    "analysis": "Meme idea is good but the 'email' joke doesn't connect; no reach."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Heated crescent pillow (USB pad)",
+    "why": "Always-cold women want hug + warmth in one",
+    "how": "Woman hugs the pillow, steam/warm glow implied, text 'big spoon who is ALSO warm'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Long-distance-couple set (two pillows, 'big spoon'/'little spoon' embroidered)",
+    "why": "Couples apart buy as a gift; emotion of missing someone",
+    "how": "Split screen, two cities, each hugs a pillow",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pregnancy-support edition",
+    "why": "Pregnant women need side support; friends gift it",
+    "how": "Pregnant woman sinks in, sighs with relief; text 'my back after week 30'",
+    "ip_safe": true
+   }
+  ]
+ },
+ "branch_lights": {
+  "summary": "Pre-lit decorative branches that mount on a wall. Three sellers; the best video got 2.71M top views with the 'Christmas lover, RUN to the store' gasp, while the 'tangled lights 1965 vs 2026' contrast was the cleverest but smaller (52k).",
+  "groups": [
+   {
+    "name": "Christmas wall branches",
+    "variations": [
+     "Lighted wall branches"
+    ],
+    "accounts": 3,
+    "best_views": 2713386,
+    "note": "All 3 sellers sell the same warm-white Christmas version"
+   }
+  ],
+  "rows": {
+   "lighted_wall_branches": {
+    "variants": "Lighted wall branches ×3",
+    "best": "Lighted wall branches — 2.71M top views (willora.us)",
+    "analysis": "Store-gasp works but names IKEA (risky); all sellers do warm-white Christmas only - no other seasons or colours."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Cherry-blossom pink branches",
+    "why": "Spring/bedroom aesthetic buyers, sells after Christmas too",
+    "how": "Girl's bedroom at night, branches light up pink behind the bed",
+    "ip_safe": true
+   },
+   {
+    "variation": "Autumn maple branches (orange/red leaves)",
+    "why": "Fall decor fans start decorating in September",
+    "how": "Cozy fall living room, lights switched on with a pumpkin latte in hand",
+    "ip_safe": true
+   },
+   {
+    "variation": "Snowy frosted branches with cool-white lights",
+    "why": "Winter-wonderland look that stays up all of January",
+    "how": "Hallway transforms from bare wall to a frosted forest",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids nightlight branch with remote colours",
+    "why": "Parents buy calm nightlights; colours = fun",
+    "how": "Kid presses the remote, colours change, kid giggles",
+    "ip_safe": true
+   }
+  ]
+ },
+ "car_covers": {
+  "summary": "An automatic car cover that unfolds from a roof pod. One seller, 416k top views (73k average) using the warehouse-store gasp and 'JK we make them' twist.",
+  "groups": [
+   {
+    "name": "Roof-pod cover",
+    "variations": [
+     "Roof-pod automatic car cover"
+    ],
+    "accounts": 1,
+    "best_views": 415781,
+    "note": "Single seller, silver cover"
+   }
+  ],
+  "rows": {
+   "roof_pod_auto_car_cover": {
+    "variants": "Roof-pod automatic car cover ×1",
+    "best": "Roof-pod automatic car cover — 416k top views (shades.tech)",
+    "analysis": "The store-gasp twist works; the real payoff (the cover deploying by itself) is underused and no colours exist."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Snow & ice winter edition (thick insulated)",
+    "why": "Northern US drivers hate scraping ice; real daily pain",
+    "how": "Morning snow scene: neighbour scrapes, our guy presses a button and drives off",
+    "ip_safe": true
+   },
+   {
+    "variation": "Hail-protection padded version",
+    "why": "Hail-belt states (Texas, Colorado) - fear plus saving money",
+    "how": "Hail storm sounds, cover deploys, cut to undamaged car",
+    "ip_safe": true
+   },
+   {
+    "variation": "Gift-wrap Christmas edition (red with bow print)",
+    "why": "Funny Christmas gift for a car guy; shareable",
+    "how": "Cover unfolds over the car making it look like a giant present",
+    "ip_safe": true
+   }
+  ]
+ },
+ "car_decor": {
+  "summary": "Christmas decorations for cars: a life-size rooftop Santa figure and character covers (reindeer) for the whole car. The rooftop figure leads with 3.03M top views (319k average) because 'Christmas lovers with a truck' targets a proud identity and the life-size Santa is absurd.",
+  "groups": [
+   {
+    "name": "Rooftop figure",
+    "variations": [
+     "Rooftop Christmas character figure"
+    ],
+    "accounts": 1,
+    "best_views": 3034272,
+    "note": "Best: absurd life-size Santa + truck identity"
+   },
+   {
+    "name": "Full-car character cover",
+    "variations": [
+     "Christmas character car cover"
+    ],
+    "accounts": 1,
+    "best_views": 271024,
+    "note": "Reindeer cover, 271k top, steady 160k average"
+   }
+  ],
+  "rows": {
+   "rooftop_christmas_figure": {
+    "variants": "Rooftop Christmas character figure ×1",
+    "best": "Rooftop Christmas character figure — 3.03M top views (jolly.tops)",
+    "analysis": "Absurd scale is the hook; only Santa - no other characters."
+   },
+   "christmas_character_car_cover": {
+    "variants": "Christmas character car cover ×1",
+    "best": "Christmas character car cover — 271k top views (merrymorph)",
+    "analysis": "Reindeer transformation works; only one character."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Rooftop snowman / elf figure",
+    "why": "Second figure for the same buyers; neighbours compete on decorations",
+    "how": "Truck drives past a house with a giant snowman on the roof, kids wave",
+    "ip_safe": true
+   },
+   {
+    "variation": "Giant bow 'gift-wrapped car' cover",
+    "why": "Turns the car into a present - perfect for 'new car for Christmas' moments and parades",
+    "how": "Wife pulls the bow cover off in the driveway; text 'POV: your car is the gift'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Lighted reindeer antlers + nose kit premium",
+    "why": "Cheap add-on, impulse buy, kids love it",
+    "how": "Car at night, antlers light up, kids in back seat cheer",
+    "ip_safe": true
+   },
+   {
+    "variation": "Halloween monster car cover (eyes + teeth)",
+    "why": "Second season, trunk-or-treat events in the US",
+    "how": "Trunk-or-treat parking lot, car looks like a monster, kids scream-laugh",
+    "ip_safe": true
+   }
+  ]
+ },
+ "car_lights": {
+  "summary": "LED lights for vehicles: a rear-window LED display with Christmas animations and motorcycle LED strips. The rear-window Christmas display got 649k top views (97k average) via a gift-reveal on a snowy car; motorcycle strips got only 4k.",
+  "groups": [
+   {
+    "name": "Holiday display",
+    "variations": [
+     "Rear-window LED display · Christmas"
+    ],
+    "accounts": 1,
+    "best_views": 649000,
+    "note": "Christmas animations, the only one with reach"
+   },
+   {
+    "name": "Motorcycle styling",
+    "variations": [
+     "Motorcycle LED strips"
+    ],
+    "accounts": 1,
+    "best_views": 4340,
+    "note": "Bike-fan hook, no reach"
+   }
+  ],
+  "rows": {
+   "rear_window_led_display": {
+    "variants": "Christmas ×1",
+    "best": "Christmas — 649k top views (jolly.drive)",
+    "analysis": "Christmas animations work as a reveal; no other seasons or custom messages."
+   },
+   "motorcycle_led_strips": {
+    "variants": "Motorcycle LED strips ×1",
+    "best": "Motorcycle LED strips — 4k top views (ironbobr)",
+    "analysis": "Dark close-up has no payoff; no reach."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Custom-text rear display ('Baby on board', 'Just married')",
+    "why": "Personal messages = practical plus funny; weddings and new parents",
+    "how": "Couple drives off from the wedding, display reads 'JUST MARRIED'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Game-day team-colour animation (no logos)",
+    "why": "Sports fans tailgate; colours not crests keep it IP-free",
+    "how": "Tailgate parking lot, display flashes team colours, friends cheer",
+    "ip_safe": true
+   },
+   {
+    "variation": "Emoji reactions for traffic (thank you / sorry)",
+    "why": "Drivers love a 'thank you' wave they can show - funny and useful",
+    "how": "Driver lets someone merge, car behind sees a smiley 'THANKS'",
+    "ip_safe": true
+   }
+  ]
+ },
+ "car_projection": {
+  "summary": "Projectors that shine images onto car windows or the ground by the door. The Christmas window projector dominates (5.20M top views, 468k average) because the snowy, magical image plus 'Every XMAS lover NEEDS this' is a pure wow moment; Halloween horror (412k) and licensed NFL/WWE logos (1.60M / 289k) do less and carry IP risk.",
+  "groups": [
+   {
+    "name": "Holiday themes",
+    "variations": [
+     "Car-window projector · Christmas",
+     "Car-window projector · Halloween horror"
+    ],
+    "accounts": 3,
+    "best_views": 5196100,
+    "note": "Christmas is the clear winner; Halloween shows a second season works"
+   },
+   {
+    "name": "Licensed sports logos",
+    "variations": [
+     "Door logo projector · WWE wrestlers",
+     "Door logo projector · NFL teams"
+    ],
+    "accounts": 3,
+    "best_views": 1600000,
+    "note": "NFL/WWE get spikes (1.60M) but are IP risky"
+   }
+  ],
+  "rows": {
+   "car_window_projector": {
+    "variants": "Christmas ×2 · Halloween horror ×1",
+    "best": "Christmas — 5.20M top views (merry_ride)",
+    "analysis": "Christmas wow-visual sells; nobody does custom or original characters yet."
+   },
+   "car_door_logo_projector": {
+    "variants": "NFL teams ×2 · WWE wrestlers ×1",
+    "best": "NFL teams — 1.60M top views (drivegrid)",
+    "analysis": "Fandom call-out works but every seller uses licensed logos - an IP-free version is missing."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Custom family-name door projector ('The Miller Family')",
+    "why": "Personalized, IP-free, gift-able for dads",
+    "how": "Car door opens at night, the family name lights the driveway; kids gasp",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pet-portrait door projector",
+    "why": "Dog owners treat pets like family; custom portrait is a strong gift",
+    "how": "Door opens, the dog's face lights up the ground, dog sniffs it",
+    "ip_safe": true
+   },
+   {
+    "variation": "Original winter characters pack (own snowman/elf art)",
+    "why": "Keeps the Christmas winner without anyone else's IP",
+    "how": "School run in the dark, kids see a snowman waving on the window",
+    "ip_safe": true
+   },
+   {
+    "variation": "Valentine's hearts / proposal projector",
+    "why": "Couples and proposals - romantic reveal",
+    "how": "He opens her door, 'Will you marry me?' appears on the ground",
+    "ip_safe": true
+   }
+  ]
+ },
+ "car_window_tint": {
+  "summary": "Car window tint you can switch on and off with a remote, or remove and refit. The remote smart tint is the monster here (28.11M and 23.90M top videos, 3.43M / 1.56M average) because the cop-with-tint-meter 'problem vs solution' story is relatable and a little rebellious; the removable pre-cut tint hit 9.95M once but averages only 19k.",
+  "groups": [
+   {
+    "name": "Smart switchable",
+    "variations": [
+     "Remote-controlled smart tint"
+    ],
+    "accounts": 2,
+    "best_views": 28111521,
+    "note": "Two sellers, both huge and consistent; same police-check hook"
+   },
+   {
+    "name": "Removable film",
+    "variations": [
+     "Removable precut tint"
+    ],
+    "accounts": 1,
+    "best_views": 9947439,
+    "note": "One spike, weak average"
+   }
+  ],
+  "rows": {
+   "smart_electric_window_tint": {
+    "variants": "Remote-controlled smart tint ×2",
+    "best": "Remote-controlled smart tint — 28.11M top views (tintiq.co)",
+    "analysis": "The police-check problem/solution is a proven formula; it leans on 'avoid tickets' - a legal-use angle (heat, privacy, parked) is missing."
+   },
+   "removable_precut_tint": {
+    "variants": "Removable precut tint ×1",
+    "best": "Removable precut tint — 9.95M top views (shadextints)",
+    "analysis": "Same ticket pain, one viral hit; no steady content."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Back-seat baby sun-shade tint set",
+    "why": "Parents want to shield babies from sun; legal, emotional, giftable to new parents",
+    "how": "Baby squinting in the back seat, mom taps the remote, shade drops, baby relaxes",
+    "ip_safe": true
+   },
+   {
+    "variation": "Camper / van privacy kit",
+    "why": "Van-life and campers need privacy to sleep - fast-growing US hobby",
+    "how": "Night at a campsite, one tap and the van windows go dark, couple waves goodnight",
+    "ip_safe": true
+   },
+   {
+    "variation": "Parked-car heat-block mode (summer)",
+    "why": "Hot car seats and steering wheels are a universal pain in southern states",
+    "how": "Thermometer shows 120F on a normal car vs cool car with tint on",
+    "ip_safe": true
+   },
+   {
+    "variation": "Home-office / bathroom smart film",
+    "why": "Same tech, new market: privacy at home without curtains",
+    "how": "Neighbour window view, tap, the glass turns frosted",
+    "ip_safe": true
+   }
+  ]
+ },
+ "card_covers": {
+  "summary": "A novelty skin/holder for a tap-to-pay card. The only seller used a SpongeBob 'Krabby patty' design: 5.63M top views (535k average) - cartoon nostalgia plus the funny moment of paying with a burger. Big reach but fully licensed IP.",
+  "groups": [
+   {
+    "name": "Licensed cartoon",
+    "variations": [
+     "SpongeBob tap-to-pay card holder"
+    ],
+    "accounts": 1,
+    "best_views": 5629202,
+    "note": "Single seller; strong but IP-risky"
+   }
+  ],
+  "rows": {
+   "tap_to_pay_card_holder": {
+    "variants": "SpongeBob tap-to-pay card holder ×1",
+    "best": "SpongeBob tap-to-pay card holder — 5.63M top views (krabbypay)",
+    "analysis": "Paying with a 'burger' is funny and shareable; everything depends on SpongeBob IP - no original designs."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Original food shapes (taco, pizza slice, donut)",
+    "why": "Same 'pay with food' joke without a licence; collectible",
+    "how": "Cashier stares as he taps a pizza slice on the reader; text 'my card is a pizza now'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Fake cash-stack look (clear novelty)",
+    "why": "Flex humour; men 20-35 love the 'baller' joke",
+    "how": "Taps a 'stack of hundreds' at a coffee shop, barista laughs",
+    "ip_safe": true
+   },
+   {
+    "variation": "Custom pet-face card skin",
+    "why": "Pet owners show off their dog at every purchase",
+    "how": "Dog's face on the card, owner taps at checkout, cashier 'awww'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Secret Santa 5-pack",
+    "why": "White-elephant parties need cheap funny gifts",
+    "how": "Office party, five people open five designs, laughter",
+    "ip_safe": true
+   }
+  ]
+ },
+ "child_car_pillows": {
+  "summary": "An animal-shaped pillow that supports a child's head and body in the car seat. One seller, 2.14M top views (285k average) with the 'ALL PARENTS RUN to the store... just kidding we sell them' twist; the real pain is kids' heads flopping while asleep on road trips.",
+  "groups": [
+   {
+    "name": "Animal characters",
+    "variations": [
+     "Animal head-and-body support pillow"
+    ],
+    "accounts": 1,
+    "best_views": 2137648,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "kids_car_seat_animal_pillow": {
+    "variants": "Animal head-and-body support pillow ×1",
+    "best": "Animal head-and-body support pillow — 2.14M top views (ridenuzzle)",
+    "analysis": "Store-twist hook works; the head-flop pain and before/after are not shown, and there are no seasonal editions."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Holiday reindeer / gingerbread edition",
+    "why": "Christmas road trips to grandma's; seasonal gift",
+    "how": "Snowy highway, kid asleep on the reindeer pillow, mom smiles in the mirror",
+    "ip_safe": true
+   },
+   {
+    "variation": "Name-embroidered pillow",
+    "why": "Personalized gift for grandparents to give",
+    "how": "Kid finds their name on the pillow, hugs it",
+    "ip_safe": true
+   },
+   {
+    "variation": "Teen/adult travel-neck version",
+    "why": "Parents buy for themselves after seeing the kids' version",
+    "how": "Dad in passenger seat asleep on a big bear pillow, kids laughing",
+    "ip_safe": true
+   }
+  ]
+ },
+ "coffee_stencils": {
+  "summary": "A camera-shaped duster that 'prints' a cocoa or cinnamon design onto a latte. Three sellers all use the same 'busy barista problem vs solution' hook; the best reached 7.08M top views with a 1.23M average because the one-click perfect design is pure satisfying payoff.",
+  "groups": [
+   {
+    "name": "Instant-camera duster",
+    "variations": [
+     "Instant-camera stencil duster"
+    ],
+    "accounts": 3,
+    "best_views": 7077187,
+    "note": "3 sellers, one format; the problem/solution barista story"
+   }
+  ],
+  "rows": {
+   "camera_coffee_stencil_duster": {
+    "variants": "Instant-camera stencil duster ×3",
+    "best": "Instant-camera stencil duster — 7.08M top views (brewshot.us)",
+    "analysis": "Problem-vs-solution is proven (7.08M / 3.38M / 1.11M); everyone shows generic designs - custom stencils and home-gift angles are missing."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Custom monogram / pet-silhouette stencil",
+    "why": "Personal touch = gift; 'your dog on your latte' is shareable",
+    "how": "Morning latte with the dog's silhouette, dog sitting next to the mug",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' hot-cocoa cartoon pack (original characters)",
+    "why": "Parents make Christmas-morning cocoa special for kids",
+    "how": "Kid in pajamas gasps at a snowman on their cocoa",
+    "ip_safe": true
+   },
+   {
+    "variation": "12 Days of Christmas stencil box",
+    "why": "Advent-style gift for coffee lovers; repeat use every day",
+    "how": "Box opens day by day, each latte gets a new design",
+    "ip_safe": true
+   },
+   {
+    "variation": "Gift set with two mugs + cocoa",
+    "why": "Ready-to-gift bundle raises order value",
+    "how": "Wrapped set under the tree, unwrap, first latte made on the spot",
+    "ip_safe": true
+   }
+  ]
+ },
+ "color_blankets": {
+  "summary": "A blanket printed with outlines you colour in with fabric markers. The Christmas prints led (2.81M and 2.20M top views) thanks to the 'I regret buying this for her' boyfriend joke and a fake store-reveal; the plain doodle print has the best average (135k) with the 'Coloringholics' identity line.",
+  "groups": [
+   {
+    "name": "Holiday themes",
+    "variations": [
+     "Christmas print · white base",
+     "Christmas print · black base"
+    ],
+    "accounts": 2,
+    "best_views": 2809922,
+    "note": "Christmas prints on white and black: the two biggest videos"
+   },
+   {
+    "name": "Everyday doodle",
+    "variations": [
+     "Doodle print"
+    ],
+    "accounts": 1,
+    "best_views": 1355679,
+    "note": "Best average; colouring-hobby identity"
+   }
+  ],
+  "rows": {
+   "colour_in_blanket": {
+    "variants": "Doodle print ×1 · white base ×1 · black base ×1",
+    "best": "white base — 2.81M top views (thecolormas)",
+    "analysis": "Christmas + couple humour works; nothing personal yet (family names, couple story)."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Family Christmas tradition blanket (names + year to colour)",
+    "why": "Becomes a yearly ritual and heirloom; moms buy it for the whole family",
+    "how": "Family on the floor colouring, kid fills in '2026', mom tears up",
+    "ip_safe": true
+   },
+   {
+    "variation": "Couples 'our story' blanket (first date, pets, home)",
+    "why": "Anniversary/Valentine's gift that feels custom",
+    "how": "Couple colours their dog on the blanket, then the real dog walks on it",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' road-trip mini blanket",
+    "why": "Keeps kids busy without screens - parents' pain",
+    "how": "Back seat, two kids quiet and colouring; text 'no iPad for 3 hours'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Halloween spooky-cute print",
+    "why": "Second season, October sales before Christmas",
+    "how": "Friends at a Halloween movie night colouring pumpkins",
+    "ip_safe": true
+   }
+  ]
+ },
+ "compression_bags": {
+  "summary": "A travel backpack with a built-in vacuum compressor that shrinks clothes. One seller, 62.10M top views (191k average): the baggage handler throwing suitcases plus 'Luggage in America 2025 vs carry-ons 2027' taps frustration with airline fees.",
+  "groups": [
+   {
+    "name": "Vacuum backpack",
+    "variations": [
+     "Vacuum-compression travel backpack"
+    ],
+    "accounts": 1,
+    "best_views": 62104597,
+    "note": "Single seller, one colour"
+   }
+  ],
+  "rows": {
+   "vacuum_compression_backpack": {
+    "variants": "Vacuum-compression travel backpack ×1",
+    "best": "Vacuum-compression travel backpack — 62.10M top views (packlab.usa)",
+    "analysis": "Airline-pain hook is huge; no colours, sizes or traveller-identity versions."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Kids / family travel set (two sizes)",
+    "why": "Families pay the most bag fees; moms plan holiday trips",
+    "how": "Mom packs 4 kids' clothes into one backpack, dad stares",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pastel 'travel girl' colourway",
+    "why": "Women 20-35 want travel gear that looks cute in airport selfies",
+    "how": "Airport mirror selfie with a blush backpack, packing time-lapse",
+    "ip_safe": true
+   },
+   {
+    "variation": "Business-trip edition (laptop sleeve + suit compression)",
+    "why": "Consultants and sales reps fly weekly; self-purchase",
+    "how": "Man fits a suit and laptop in one bag, skips the check-in line",
+    "ip_safe": true
+   }
+  ]
+ },
+ "concealed_wallets": {
+  "summary": "A hidden pouch that hangs inside your waistband from a belt loop. One Spanish-language seller, 5.80M top views (49k average): the 'go to a concert without checking your pockets' fear of pickpockets is the hook.",
+  "groups": [
+   {
+    "name": "Belt-loop pouch",
+    "variations": [
+     "Belt-loop hidden pouch"
+    ],
+    "accounts": 1,
+    "best_views": 5800000,
+    "note": "Single seller, black only"
+   }
+  ],
+  "rows": {
+   "belt_loop_hidden_pouch": {
+    "variants": "Belt-loop hidden pouch ×1",
+    "best": "Belt-loop hidden pouch — 5.80M top views (modooculto.co)",
+    "analysis": "Pickpocket fear + close-up demo works; one spike, and no English or travel-identity versions."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Europe-trip edition for US tourists",
+    "why": "Americans travelling to Paris/Rome fear pickpockets - strong pre-trip purchase",
+    "how": "Crowded tourist square, hand reaches for pocket - nothing there, wallet hidden",
+    "ip_safe": true
+   },
+   {
+    "variation": "Theme-park / festival pack (waterproof)",
+    "why": "Rides and crowds = lost phones; parents and festival-goers",
+    "how": "Rollercoaster drop, phone stays safe in the hidden pouch",
+    "ip_safe": true
+   },
+   {
+    "variation": "Runner's key-and-card version",
+    "why": "Runners hate bouncing pockets; light self-purchase",
+    "how": "Morning jog, no bulge, card taps at a café after",
+    "ip_safe": true
+   }
+  ]
+ },
+ "convertible_heels": {
+  "summary": "Sandals whose heel detaches so they become flats. One big brand page, 141.82M top views (681k average): a single satisfying transform shot needs no text because the problem (painful heels at events) is universal.",
+  "groups": [
+   {
+    "name": "Strappy heel-to-flat",
+    "variations": [
+     "Heel-to-flat convertible sandals"
+    ],
+    "accounts": 1,
+    "best_views": 141823229,
+    "note": "Single seller; the transform motion is the whole video"
+   }
+  ],
+  "rows": {
+   "convertible_heel_sandals": {
+    "variants": "Heel-to-flat convertible sandals ×1",
+    "best": "Heel-to-flat convertible sandals — 141.82M top views (viceversa)",
+    "analysis": "One-motion transformation is perfect; only summer sandals - no winter, bridal or party editions."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Convertible winter ankle boot",
+    "why": "Holiday parties in the cold - heel for the party, flat for the walk home",
+    "how": "Snowy sidewalk after a party, she clicks off the heel and walks easily",
+    "ip_safe": true
+   },
+   {
+    "variation": "Bridesmaid pack with personalized pouches",
+    "why": "Brides buy for the whole party; high order value",
+    "how": "Bridesmaids line up, all detach heels at once for the dance floor",
+    "ip_safe": true
+   },
+   {
+    "variation": "Glitter New Year's Eve edition",
+    "why": "NYE parties = dancing for hours; seasonal urgency",
+    "how": "Midnight countdown, she pops off the heels and keeps dancing",
+    "ip_safe": true
+   }
+  ]
+ },
+ "crochet_bags": {
+  "summary": "Hand-crocheted Christmas drawstring bags. One Facebook seller, 83k top views (16k average) with an underdog 'no one will buy these ugly bags' sympathy hook - small but a real emotional angle.",
+  "groups": [
+   {
+    "name": "Christmas crochet",
+    "variations": [
+     "Christmas crochet drawstring bag"
+    ],
+    "accounts": 1,
+    "best_views": 83000,
+    "note": "Single seller; sympathy hook"
+   }
+  ],
+  "rows": {
+   "christmas_crochet_bag": {
+    "variants": "Christmas crochet drawstring bag ×1",
+    "best": "Christmas crochet drawstring bag — 83k top views (Snowmanlight)",
+    "analysis": "Sympathy story gets engagement; product is only Christmas-themed and the video quality is low."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Fall pumpkin / sunflower crochet bag",
+    "why": "Cottagecore fans buy autumn accessories from September",
+    "how": "Girl at a pumpkin patch swings the bag",
+    "ip_safe": true
+   },
+   {
+    "variation": "Grandma-made 'handmade gift' story edition",
+    "why": "Handmade emotion: buyers love supporting a grandma",
+    "how": "Grandma's hands crocheting, then a girl unboxing it with a note",
+    "ip_safe": true
+   },
+   {
+    "variation": "Mini crochet gift-card pouch",
+    "why": "Turns a boring gift card into a cute present",
+    "how": "Gift card slides into a tiny crochet stocking, handed over",
+    "ip_safe": true
+   }
+  ]
+ },
+ "cushioned_socks": {
+  "summary": "No-show socks with padded soles for people on their feet all day. One Spanish-language seller, 4.30M top views but only a 3k average: the 'if you work standing, watch this' line hits workers' pain.",
+  "groups": [
+   {
+    "name": "Padded no-show",
+    "variations": [
+     "No-show socks with padded soles"
+    ],
+    "accounts": 1,
+    "best_views": 4300000,
+    "note": "Single seller, white"
+   }
+  ],
+  "rows": {
+   "padded_no_show_socks": {
+    "variants": "No-show socks with padded soles ×1",
+    "best": "No-show socks with padded soles — 4.30M top views (comf.ortablefeet)",
+    "analysis": "Worker-pain hook got one spike; no identity versions or English content."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Nurse / healthcare 12-hour-shift pack",
+    "why": "Nurses stand 12h; 'Do NOT show this to a nurse' identity call-out",
+    "how": "Nurse kicks off shoes after a shift, shows the padded sole, sighs",
+    "ip_safe": true
+   },
+   {
+    "variation": "Restaurant-server / barista pack (black)",
+    "why": "Hospitality workers on their feet all day; cheap self-buy",
+    "how": "Busy restaurant, server smiling at hour 9; text 'my feet used to hate me'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Theme-park / travel walking edition",
+    "why": "20k-steps holiday days; moms buy for the whole family",
+    "how": "Family at a theme park, step counter 25k, still happy",
+    "ip_safe": true
+   }
+  ]
+ },
+ "decor_lamps": {
+  "summary": "Decorative display lamps: a bookshelf lantern with a cat silhouette, and a glass cross diorama lamp. The Christian cross lamp has the biggest video (7.43M) using a 'concept vs result' contrast, while the cat bookshelf lantern has two sellers (1.85M / 965k) on the 'book-aholic' identity.",
+  "groups": [
+   {
+    "name": "Faith",
+    "variations": [
+     "Christian cross diorama lamp"
+    ],
+    "accounts": 1,
+    "best_views": 7426413,
+    "note": "One seller, biggest video - faith identity + contrast hook"
+   },
+   {
+    "name": "Bookish & cosy",
+    "variations": [
+     "Cat bookshelf lantern"
+    ],
+    "accounts": 2,
+    "best_views": 1848426,
+    "note": "Two sellers; reader/cat-lover identity"
+   }
+  ],
+  "rows": {
+   "cat_bookshelf_lantern": {
+    "variants": "Cat bookshelf lantern ×2",
+    "best": "Cat bookshelf lantern — 1.85M top views (chapterlore.us)",
+    "analysis": "Book-lover identity works; only the cat scene - no other reading scenes or personalization."
+   },
+   "glass_cross_diorama_lamp": {
+    "variants": "Christian cross diorama lamp ×1",
+    "best": "Christian cross diorama lamp — 7.43M top views (his._light)",
+    "analysis": "Faith identity + contrast is strong; only one scene (cross), no verse personalization or Nativity edition."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Nativity diorama lamp",
+    "why": "Christian families decorate for Christmas; faith + season",
+    "how": "Lights off, the manger scene glows on the mantel, kids gather",
+    "ip_safe": true
+   },
+   {
+    "variation": "Custom Bible-verse engraved base",
+    "why": "Personal faith gift for mom/grandma, baptism, confirmation",
+    "how": "Grandma reads her favourite verse on the base, tears up",
+    "ip_safe": true
+   },
+   {
+    "variation": "Dog-reading-nook lantern",
+    "why": "Dog owners + readers - a second animal for the bookish audience",
+    "how": "Bookshelf at night, a little dog silhouette glows among the books",
+    "ip_safe": true
+   },
+   {
+    "variation": "Fantasy dragon-library scene (original art)",
+    "why": "Fantasy readers are a huge identity group, no licence needed",
+    "how": "Book-lover pulls a cloth off the lamp: dragon over tiny books",
+    "ip_safe": true
+   }
+  ]
+ },
+ "diffusers": {
+  "summary": "Aroma diffusers and humidifiers in novelty shapes: a flame-effect fireplace, a steam train, and a Stitch character head. The fireplace diffuser wins by far (11.60M top views) because the fake-flame mist is a cosy Christmas visual; the train got 261k and the licensed Stitch only 16k.",
+  "groups": [
+   {
+    "name": "Cosy holiday shapes",
+    "variations": [
+     "Flame-effect fireplace diffuser",
+     "Steam-train aroma diffuser"
+    ],
+    "accounts": 2,
+    "best_views": 11600000,
+    "note": "Fireplace and steam train - visual + Christmas mood"
+   },
+   {
+    "name": "Licensed character",
+    "variations": [
+     "Stitch humidifier"
+    ],
+    "accounts": 1,
+    "best_views": 15558,
+    "note": "Stitch - IP risk, low reach"
+   }
+  ],
+  "rows": {
+   "flame_fireplace_diffuser": {
+    "variants": "Flame-effect fireplace diffuser ×1",
+    "best": "Flame-effect fireplace diffuser — 11.60M top views (myfirehome__)",
+    "analysis": "Fake-flame visual sells itself; no scent bundles or gift sets."
+   },
+   "steam_train_diffuser": {
+    "variants": "Steam-train aroma diffuser ×1",
+    "best": "Steam-train aroma diffuser — 261k top views (holidayyexpresss)",
+    "analysis": "Store-gasp + 'smells like Christmas' works; one spike only."
+   },
+   "character_humidifier": {
+    "variants": "Stitch humidifier ×1",
+    "best": "Stitch humidifier — 16k top views (humidiohanaa)",
+    "analysis": "Licensed character and low views - weakest."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Christmas scent bundle (pine, cinnamon, cookie)",
+    "why": "Bundles raise order value and the scent promise makes the video 'smell'",
+    "how": "Diffuser puffs, woman closes her eyes; text 'my house smells like Christmas morning'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Mini log-cabin diffuser (smoke from chimney)",
+    "why": "Cabin-core fans and Christmas villages; cosy visual like the fireplace",
+    "how": "Mist rises from the tiny chimney on a dark shelf, snow outside",
+    "ip_safe": true
+   },
+   {
+    "variation": "Bedroom 'campfire' sleep diffuser with crackle sound",
+    "why": "Sleep aid + campfire nostalgia; adults with insomnia",
+    "how": "Lights off, mist flames flicker, crackle sound, woman falls asleep",
+    "ip_safe": true
+   }
+  ]
+ },
+ "dog_boots": {
+  "summary": "Dog boots with LED lights for night walks. One seller, 1.97M top views (53k average) via the 'DON'T show these to a dogmom' call-out - safety plus cute glowing paws.",
+  "groups": [
+   {
+    "name": "LED boots",
+    "variations": [
+     "LED light-up dog boots"
+    ],
+    "accounts": 1,
+    "best_views": 1968873,
+    "note": "Single seller, teal"
+   }
+  ],
+  "rows": {
+   "led_dog_boots": {
+    "variants": "LED light-up dog boots ×1",
+    "best": "LED light-up dog boots — 1.97M top views (glowpawsss)",
+    "analysis": "Dog-mom identity works; the night-walk safety payoff is not shown and there are no seasonal styles."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Snow & salt winter boot (non-LED, fleece)",
+    "why": "Road salt burns paws - real winter pain for northern dog owners",
+    "how": "Dog limping on salted sidewalk vs happily trotting in boots",
+    "ip_safe": true
+   },
+   {
+    "variation": "Christmas red/green light-up edition",
+    "why": "Seasonal gift for dog moms and pet photos",
+    "how": "Dog runs around the tree with blinking red-green paws",
+    "ip_safe": true
+   },
+   {
+    "variation": "Matching owner shoelace lights",
+    "why": "Owner + dog matching is a fun, social moment",
+    "how": "Night walk, both owner's shoes and dog's paws glow",
+    "ip_safe": true
+   }
+  ]
+ },
+ "ergo_seating": {
+  "summary": "Office seating: a sit-stand active chair and a fluffy 'cloud' chair with a pull-out footrest. The cloud chair hit the biggest video (6.94M) because it promises sitting 'every way you like' cross-legged at home; the sit-stand chair has the better average (327k vs 134k) with the 'can't sit still at work' line.",
+  "groups": [
+   {
+    "name": "Cosy cloud chair",
+    "variations": [
+     "Cloud office chair with pull-out footrest"
+    ],
+    "accounts": 2,
+    "best_views": 6939763,
+    "note": "Two sellers; 6.94M top, home-office comfort"
+   },
+   {
+    "name": "Active ergonomic",
+    "variations": [
+     "Sit-stand active chair"
+    ],
+    "accounts": 1,
+    "best_views": 3665346,
+    "note": "One seller; best average, fidgety-worker identity"
+   }
+  ],
+  "rows": {
+   "sit_stand_active_chair": {
+    "variants": "Sit-stand active chair ×1",
+    "best": "Sit-stand active chair — 3.67M top views (movably_inc)",
+    "analysis": "Fidget identity hook works; no gamer or kids version."
+   },
+   "cloud_office_chair_footrest": {
+    "variants": "Cloud office chair with pull-out footrest ×2",
+    "best": "Cloud office chair with pull-out footrest — 6.94M top views (kloudwel)",
+    "analysis": "Cosy cross-legged seating sells; only white, no winter/heated edition."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Teddy-fleece winter cover + heated seat pad",
+    "why": "Always-cold WFH women want a cosy desk in winter",
+    "how": "Snow outside the window, she sinks into a teddy chair with a mug",
+    "ip_safe": true
+   },
+   {
+    "variation": "Cross-legged wide-seat gamer version (RGB trim)",
+    "why": "Gamers sit cross-legged for hours; partners gift desk setups",
+    "how": "Gamer spins into the chair, RGB lights on, footrest slides out",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' homework mini cloud chair",
+    "why": "Parents want kids to sit at the desk longer",
+    "how": "Kid happily doing homework in a mini cloud chair",
+    "ip_safe": true
+   }
+  ]
+ },
+ "exhaust_paste": {
+  "summary": "A paste for car exhausts sold as making coloured flames. One seller, 266k top views (54k average) using a 'what people think we sell vs what we actually sell' joke. Small, and fire stunts carry safety and legal risk.",
+  "groups": [
+   {
+    "name": "Coloured flame",
+    "variations": [
+     "Coloured exhaust-flame paste"
+    ],
+    "accounts": 1,
+    "best_views": 265539,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "exhaust_flame_paste": {
+    "variants": "Coloured exhaust-flame paste ×1",
+    "best": "Coloured exhaust-flame paste — 266k top views (streetpipe.us)",
+    "analysis": "Funny contrast hook but low reach; fire stunts risk platform and legal problems."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Exhaust tip colour-coating (heat paint, no flames)",
+    "why": "Car-mod fans want the look without legal risk",
+    "how": "Before/after: plain silver tip vs blue-burnt tip shine",
+    "ip_safe": true
+   },
+   {
+    "variation": "Exhaust-tip LED ring (light only)",
+    "why": "Night car-meet show-off, safe and legal",
+    "how": "Car meet at night, tips glow, friends film it",
+    "ip_safe": true
+   },
+   {
+    "variation": "Car-guy detailing gift kit",
+    "why": "Wives/girlfriends gift it to car guys at Christmas",
+    "how": "Wrapped kit opened in the garage, he immediately polishes the tips",
+    "ip_safe": true
+   }
+  ]
+ },
+ "face_zip_hoodies": {
+  "summary": "Hoodies whose zip closes all the way over the face. The plain versions win (11.27M and 9.93M top views) because the 'it's just a hoodie' / 'anti-social hoodie' night-parking-lot reveal is funny and anyone can relate; licensed prints (Powerpuff 2.40M with the best 416k average, Mercedes 1.40M, NFL, Naruto) get steady views but carry IP risk.",
+  "groups": [
+   {
+    "name": "Plain",
+    "variations": [
+     "Plain"
+    ],
+    "accounts": 2,
+    "best_views": 11274454,
+    "note": "Two sellers, the two biggest videos - the humour does the work, not the print"
+   },
+   {
+    "name": "Licensed characters & brands",
+    "variations": [
+     "Powerpuff Girls",
+     "Mercedes-AMG",
+     "NFL teams",
+     "Naruto Akatsuki"
+    ],
+    "accounts": 4,
+    "best_views": 2400000,
+    "note": "Powerpuff/AMG/NFL/Naruto: best averages but all IP-risky"
+   },
+   {
+    "name": "Edgy & statement prints",
+    "variations": [
+     "Red chest emblem & flag patch",
+     "Cannabis-leaf print"
+    ],
+    "accounts": 2,
+    "best_views": 1059724,
+    "note": "Flag patch and cannabis leaf - 1.06M / 304k, provocative identity"
+   }
+  ],
+  "rows": {
+   "face_zip_hoodie": {
+    "variants": "Plain ×2 · Powerpuff Girls ×1 · Mercedes-AMG ×1 · Red chest emblem & flag patch ×1 · Cannabis-leaf print ×1 · NFL teams ×1 · Naruto Akatsuki ×1",
+    "best": "Plain — 11.27M top views (ghostwearoficial)",
+    "analysis": "Plain + anti-social humour is the proven winner; nobody does original face prints, couple/trio sets or a fleece winter edition."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Original 'grumpy face' print on the face panel",
+    "why": "Funny identity for introverts and grumps, no licence; turns the zip-up into a punchline",
+    "how": "Zip goes up and a grumpy face appears; text 'me when someone says good morning'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Cat-face print (ears on the hood)",
+    "why": "Cat lovers are a huge identity group; cute plus anti-social",
+    "how": "Girl zips up, becomes a cat, her real cat stares",
+    "ip_safe": true
+   },
+   {
+    "variation": "Matching trio / couple set (no licensed art)",
+    "why": "The Powerpuff 'trio friendship' hook proves group buying - do it with original colours",
+    "how": "Three friends zip up at once in a parking lot, each a different colour",
+    "ip_safe": true
+   },
+   {
+    "variation": "Fleece-lined winter commuter edition",
+    "why": "Real use: freezing wind on the walk to work; 25+ buyers",
+    "how": "Snowy bus stop, she zips to the eyes and smiles",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' monster-face version",
+    "why": "Parents love cute monster photos; Halloween and winter",
+    "how": "Kid zips up and roars, little sister laughs",
+    "ip_safe": true
+   }
+  ]
+ },
+ "football_trainers": {
+  "summary": "A light-up mini goal that shows a target and returns the ball for indoor soccer practice. One seller, 3.68M top views but a 5k average: 'Send this to your SOCCER player kid' targets parents.",
+  "groups": [
+   {
+    "name": "Soccer target",
+    "variations": [
+     "Light-up target and ball-return trainer"
+    ],
+    "accounts": 1,
+    "best_views": 3681449,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "light_up_soccer_target_trainer": {
+    "variants": "Light-up target and ball-return trainer ×1",
+    "best": "Light-up target and ball-return trainer — 3.68M top views (infinity.kickk)",
+    "analysis": "Parent call-out works once; no other sports and no family-game angle."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Hockey puck light-up target version",
+    "why": "Hockey families in the northern US/Canada practice indoors all winter",
+    "how": "Kid in a basement slaps a puck into a glowing target",
+    "ip_safe": true
+   },
+   {
+    "variation": "Dad-vs-kid two-player scoring edition",
+    "why": "Family competition = Christmas-morning game",
+    "how": "Dad and son take turns, scoreboard lights up, mom films",
+    "ip_safe": true
+   },
+   {
+    "variation": "Backyard full-size target net with lights",
+    "why": "Teens training at night after school",
+    "how": "Dusk backyard, ball hits the glowing corner, neighbours cheer",
+    "ip_safe": true
+   }
+  ]
+ },
+ "footwear": {
+  "summary": "Mixed footwear: fold-over knee boots, kids' sherpa boots, and Christmas embroidered slippers. Only the knee boots have reach (14.03M top views, 64k average) thanks to a quick 'pull from stack - cut to legs' outfit reveal; the other two have no views.",
+  "groups": [
+   {
+    "name": "Fashion boots",
+    "variations": [
+     "Fold-over knee-high boots"
+    ],
+    "accounts": 1,
+    "best_views": 14026633,
+    "note": "The only one with reach"
+   },
+   {
+    "name": "Cosy kids & holiday",
+    "variations": [
+     "Children's sherpa mini boots",
+     "Christmas embroidered plush slippers"
+    ],
+    "accounts": 2,
+    "best_views": 248,
+    "note": "Kids' sherpa boots and Christmas slippers - zero views"
+   }
+  ],
+  "rows": {
+   "fold_over_knee_boots": {
+    "variants": "Fold-over knee-high boots ×1",
+    "best": "Fold-over knee-high boots — 14.03M top views (luciavossboots)",
+    "analysis": "Outfit-transition reveal works; only cream colour, no holiday party edition."
+   },
+   "kids_sherpa_boots": {
+    "variants": "Children's sherpa mini boots ×1",
+    "best": "Children's sherpa mini boots — 248 top views (jenessa.kate)",
+    "analysis": "Mom-win angle but no hook; no views."
+   },
+   "christmas_plush_slippers": {
+    "variants": "Christmas embroidered plush slippers ×1",
+    "best": "Christmas embroidered plush slippers — 139 top views (snowfallsco)",
+    "analysis": "Handmade sympathy story, poor video; no views."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Mommy-and-me matching sherpa boots",
+    "why": "Matching outfits are a mom favourite for Christmas photos",
+    "how": "Mom and toddler step into the frame in identical boots",
+    "ip_safe": true
+   },
+   {
+    "variation": "Velvet holiday-party knee boots (burgundy, emerald)",
+    "why": "Party season outfit buyers, self-purchase",
+    "how": "Outfit flip: sweatpants to velvet boots at a party door",
+    "ip_safe": true
+   },
+   {
+    "variation": "Gingerbread-cookie slippers",
+    "why": "Cute food/holiday theme without IP; gift for teens and moms",
+    "how": "Feet in gingerbread slippers by the fireplace, cocoa in hand",
+    "ip_safe": true
+   }
+  ]
+ },
+ "gear_knobs": {
+  "summary": "Resin gear-shift knobs with small figures cast inside. One seller, 1.70M top views (47k average) using 'what people think we sell vs what we actually sell'; the figures look like licensed characters.",
+  "groups": [
+   {
+    "name": "Character resin",
+    "variations": [
+     "Resin knobs with character figures"
+    ],
+    "accounts": 1,
+    "best_views": 1701582,
+    "note": "Single seller; likely IP figures"
+   }
+  ],
+  "rows": {
+   "resin_figure_gear_knob": {
+    "variants": "Resin knobs with character figures ×1",
+    "best": "Resin knobs with character figures — 1.70M top views (shift_vault)",
+    "analysis": "Think-vs-actually contrast works; leans on characters, no custom/IP-free designs."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Custom photo / name resin knob",
+    "why": "Personal car gift for a boyfriend; IP-free",
+    "how": "Girlfriend swaps his knob; he sees their photo inside, smiles",
+    "ip_safe": true
+   },
+   {
+    "variation": "Real-flower resin knob",
+    "why": "Women drivers and 'car girlies' - pretty and unique",
+    "how": "Pink car interior, sun hits a rose inside the knob",
+    "ip_safe": true
+   },
+   {
+    "variation": "Fishing-lure / hunting theme knob",
+    "why": "Country/outdoor identity buyers, truck owners",
+    "how": "Pickup cab, hand grabs a knob with a lure inside, engine starts",
+    "ip_safe": true
+   }
+  ]
+ },
+ "glow_sports": {
+  "summary": "Sports balls and gear with an LED core that glow at night. Glowing golf balls lead (3.66M avg on one page) with basketball (3.90M top) close behind, all using 'the concept (absurd DIY) vs the result' or a store-gasp; tennis (457k avg) proves the 'Babe stop buying stupid sh*t' spouse meme works too.",
+  "groups": [
+   {
+    "name": "Golf",
+    "variations": [
+     "Glowing golf balls"
+    ],
+    "accounts": 2,
+    "best_views": 3660519,
+    "note": "Two sellers; best average (3.66M) - concept-vs-result"
+   },
+   {
+    "name": "Ball sports",
+    "variations": [
+     "Glowing volleyball",
+     "Glowing soccer ball",
+     "Glowing American football",
+     "Glowing basketball"
+    ],
+    "accounts": 4,
+    "best_views": 3900000,
+    "note": "Volleyball, soccer, American football, basketball - 631k to 3.90M"
+   },
+   {
+    "name": "Racket sports",
+    "variations": [
+     "Glowing tennis racket & ball",
+     "Glowing pickleball paddle set"
+    ],
+    "accounts": 3,
+    "best_views": 1354516,
+    "note": "Tennis and pickleball - spouse meme and store-gasp"
+   }
+  ],
+  "rows": {
+   "glow_golf_balls": {
+    "variants": "Glowing golf balls ×2",
+    "best": "Glowing golf balls — 3.66M top views (theglowdriive)",
+    "analysis": "Concept-vs-result makes 3.66M; nobody sells a golf-dad gift tin with tee lights."
+   },
+   "glow_tennis_racket_set": {
+    "variants": "Glowing tennis racket & ball ×1",
+    "best": "Glowing tennis racket & ball — 1.35M top views (tennisglow.us)",
+    "analysis": "Spouse meme works (457k avg); no couples doubles set."
+   },
+   "glow_volleyball": {
+    "variants": "Glowing volleyball ×1",
+    "best": "Glowing volleyball — 1.16M top views (glowspike)",
+    "analysis": "DIY vs result gets 1.16M; beach/night-league angle unused."
+   },
+   "glow_soccer_ball": {
+    "variants": "Glowing soccer ball ×1",
+    "best": "Glowing soccer ball — 631k top views (neonsoccerr)",
+    "analysis": "'Hard to gift' line works; no team-colour personalization."
+   },
+   "glow_american_football": {
+    "variants": "Glowing American football ×1",
+    "best": "Glowing American football — 840k top views (redzonegifts)",
+    "analysis": "Fire DIY is risky content; still 840k."
+   },
+   "glow_basketball": {
+    "variants": "Glowing basketball ×1",
+    "best": "Glowing basketball — 3.90M top views (the_night_ball)",
+    "analysis": "Drill DIY gets 3.90M once; average is low (48k)."
+   },
+   "glow_pickleball_set": {
+    "variants": "Glowing pickleball paddle set ×2",
+    "best": "Glowing pickleball paddle set — 253k top views (paddleglow.co)",
+    "analysis": "Two sellers, weak (253k top); the couples audience is not shown playing at night."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Glow fetch ball for dogs",
+    "why": "Same LED core; dog owners walk in the dark all winter",
+    "how": "Night park, dog chases a glowing ball across the grass",
+    "ip_safe": true
+   },
+   {
+    "variation": "Dad-vs-kid two-colour glow duel set",
+    "why": "Family competition and Christmas-morning gifting",
+    "how": "Backyard at night: blue vs red tracers, kid wins",
+    "ip_safe": true
+   },
+   {
+    "variation": "Glow baseball / softball",
+    "why": "Huge US youth sport with no seller here yet",
+    "how": "Night batting practice, glowing ball cracks off the bat",
+    "ip_safe": true
+   },
+   {
+    "variation": "Night-league bundle (ball + LED court/hole markers)",
+    "why": "Turns a ball into a whole night event; bigger order",
+    "how": "Friends set glowing markers, game starts, drone-wide shot",
+    "ip_safe": true
+   },
+   {
+    "variation": "Custom name/number team-colour glow ball",
+    "why": "Personal gift for a player; coaches buy for the team",
+    "how": "Kid unwraps a ball with their number, it lights up",
+    "ip_safe": true
+   }
+  ]
+ },
+ "goggle_beanies": {
+  "summary": "A beanie that pulls down into a balaclava with built-in goggles. One seller, 4.54M top views (3k average): the friend-dare text 'I'll buy one if you will' makes it a funny shared buy.",
+  "groups": [
+   {
+    "name": "Goggle balaclava",
+    "variations": [
+     "Beanie-balaclava with built-in goggles"
+    ],
+    "accounts": 1,
+    "best_views": 4538319,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "goggle_balaclava_beanie": {
+    "variants": "Beanie-balaclava with built-in goggles ×1",
+    "best": "Beanie-balaclava with built-in goggles — 4.54M top views (boggleboyz.co)",
+    "analysis": "Friend-dare hook works once; no colours or family versions, real snow use not shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Kids' animal-face goggle beanie",
+    "why": "Parents buy fun ski gear for kids; cute photos",
+    "how": "Kid pulls it down and becomes a penguin on the slope",
+    "ip_safe": true
+   },
+   {
+    "variation": "Snowmobile / ice-fishing heavy edition",
+    "why": "Northern outdoorsmen need face protection in wind",
+    "how": "Frozen lake, man pulls it down, wind blasts, he gives a thumbs up",
+    "ip_safe": true
+   },
+   {
+    "variation": "Matching friend-group colour pack",
+    "why": "The dare hook proves group buying - bundle it",
+    "how": "Four friends pull down neon goggle beanies at once at the lift",
+    "ip_safe": true
+   }
+  ]
+ },
+ "golf_bag_coolers": {
+  "summary": "A golf cart bag with a lit, glass-door drinks compartment. One seller, 490k top views (91k average) with a garage sheet-reveal and 'Every golfer needs this'.",
+  "groups": [
+   {
+    "name": "Mini-fridge golf bag",
+    "variations": [
+     "Cart bag with lit glass-door drinks compartment"
+    ],
+    "accounts": 1,
+    "best_views": 489673,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "golf_bag_drinks_fridge": {
+    "variants": "Cart bag with lit glass-door drinks compartment ×1",
+    "best": "Cart bag with lit glass-door drinks compartment — 490k top views (frostycaddy.us)",
+    "analysis": "Reveal + golfer identity works; no gift or spouse-humour angle yet."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Personalized name-embroidered edition",
+    "why": "Golf dads love their name on gear; Father's Day/Christmas gift",
+    "how": "Wife reveals his name on the bag, he grabs a cold drink from it",
+    "ip_safe": true
+   },
+   {
+    "variation": "Ladies' golf colourway (pastel)",
+    "why": "Women golfers are a growing group with few fun products",
+    "how": "Girls' golf day, one opens the lit door, friends gasp",
+    "ip_safe": true
+   },
+   {
+    "variation": "Tailgate / beach edition (no clubs, wheels)",
+    "why": "Same product for non-golfers - tailgating fans",
+    "how": "Tailgate lot, bag rolls up, lights on, drinks out",
+    "ip_safe": true
+   }
+  ]
+ },
+ "golf_coolers": {
+  "summary": "A giant golf-ball-shaped drinks cooler you can tow. One seller, 302k top views (64k average) with the spouse meme 'Babe stop buying childish stuff, you're 40'.",
+  "groups": [
+   {
+    "name": "Golf-ball cooler",
+    "variations": [
+     "Towable golf-ball cooler"
+    ],
+    "accounts": 1,
+    "best_views": 301697,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "towable_golf_ball_cooler": {
+    "variants": "Towable golf-ball cooler ×1",
+    "best": "Towable golf-ball cooler — 302k top views (golf.bbq)",
+    "analysis": "Spouse meme works; the cooler is never shown in a fun group moment."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Giant basketball / football cooler",
+    "why": "Same absurd shape for other sports fans",
+    "how": "Backyard BBQ, dad rolls a giant football cooler to friends",
+    "ip_safe": true
+   },
+   {
+    "variation": "Personalized 'Dad's 19th hole' print",
+    "why": "Father's Day gift with his name",
+    "how": "Kids paint-reveal the name, dad laughs",
+    "ip_safe": true
+   },
+   {
+    "variation": "Christmas-ornament style giant bauble cooler",
+    "why": "Seasonal party prop; funny Christmas gift for golfers",
+    "how": "Holiday party, giant red bauble opens full of drinks",
+    "ip_safe": true
+   }
+  ]
+ },
+ "golf_drink_dispensers": {
+  "summary": "A golf iron with a hidden drink reservoir and tap. One seller, 1.14M top views (160k average) with a simple gift-unboxing POV: 'Best gift for a golfer'.",
+  "groups": [
+   {
+    "name": "Golf iron",
+    "variations": [
+     "Golf-iron drink dispenser"
+    ],
+    "accounts": 1,
+    "best_views": 1138875,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "golf_iron_drink_dispenser": {
+    "variants": "Golf-iron drink dispenser ×1",
+    "best": "Golf-iron drink dispenser — 1.14M top views (fifthiron1)",
+    "analysis": "Gift-POV works; the funny 'pour from the club' moment on the course is barely shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Fishing-rod drink dispenser",
+    "why": "Fishing dads are a big identity group; same joke",
+    "how": "Dock at sunset, he pours a drink from the rod handle",
+    "ip_safe": true
+   },
+   {
+    "variation": "Personalized engraved club",
+    "why": "Name engraving makes it a keepsake gift",
+    "how": "Close-up engraving, then the pour at the 18th hole",
+    "ip_safe": true
+   },
+   {
+    "variation": "Two-pack 'buddies trip' set",
+    "why": "Golf trips with friends; group buys",
+    "how": "Four guys clink cups filled from their clubs",
+    "ip_safe": true
+   }
+  ]
+ },
+ "golf_scooters": {
+  "summary": "An electric scooter that carries a golf bag. One TikTok seller, 14k top views (9k average) - the spouse-meme store hook did not land here.",
+  "groups": [
+   {
+    "name": "Golf scooter",
+    "variations": [
+     "Electric scooter with golf-bag carrier"
+    ],
+    "accounts": 1,
+    "best_views": 14000,
+    "note": "Single seller, low reach"
+   }
+  ],
+  "rows": {
+   "golf_bag_electric_scooter": {
+    "variants": "Electric scooter with golf-bag carrier ×1",
+    "best": "Electric scooter with golf-bag carrier — 14k top views (teeriderco)",
+    "analysis": "Spouse meme flopped (14k); the riding-on-the-course fun is not shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Two-seat couples scooter",
+    "why": "Couples golfing together, less walking",
+    "how": "Couple rides the fairway together, laughing",
+    "ip_safe": true
+   },
+   {
+    "variation": "Off-course neighborhood cruiser kit",
+    "why": "Same scooter for retirement communities and campgrounds",
+    "how": "Retirees cruising a sunny community path",
+    "ip_safe": true
+   },
+   {
+    "variation": "Christmas bow gift-reveal edition",
+    "why": "Big-ticket gift - the bow reveal is the hook",
+    "how": "Garage door opens on a scooter with a giant bow, dad gasps",
+    "ip_safe": true
+   }
+  ]
+ },
+ "hair_removal": {
+  "summary": "A manual spring threading tool for brows and facial hair. One seller, 2.01M top views (37k average): 'How did nobody tell me this was this easy?' plus a live demo on the brow.",
+  "groups": [
+   {
+    "name": "Threading tool",
+    "variations": [
+     "Manual facial threading tool"
+    ],
+    "accounts": 1,
+    "best_views": 2011454,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "facial_threading_tool": {
+    "variants": "Manual facial threading tool ×1",
+    "best": "Manual facial threading tool — 2.01M top views (volvox_us)",
+    "analysis": "Live demo + 'easy' discovery works; no gift sets or travel version."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Travel mini kit with mirror",
+    "why": "Women travelling want quick touch-ups",
+    "how": "Hotel mirror, 10-second brow fix",
+    "ip_safe": true
+   },
+   {
+    "variation": "Stocking-stuffer 3-pack for mom/sisters",
+    "why": "Cheap Christmas gift between women",
+    "how": "Three sisters try it at once, giggling",
+    "ip_safe": true
+   },
+   {
+    "variation": "Men's brow/ear grooming edition (black)",
+    "why": "Men groom but feel shy - discreet black version",
+    "how": "Guy tests it, raises an eyebrow, text 'okay this is legit'",
+    "ip_safe": true
+   }
+  ]
+ },
+ "hair_tools": {
+  "summary": "A cordless straightening brush. One seller, 4k top views - the fake beauty-store queue and dropped-drink hook did not work.",
+  "groups": [
+   {
+    "name": "Cordless brush",
+    "variations": [
+     "Cordless straightening brush"
+    ],
+    "accounts": 1,
+    "best_views": 3544,
+    "note": "Single seller, no reach"
+   }
+  ],
+  "rows": {
+   "cordless_straightening_brush": {
+    "variants": "Cordless straightening brush ×1",
+    "best": "Cordless straightening brush — 4k top views (laquere.store)",
+    "analysis": "Store-hype hook flopped; the real use (fixing hair on the go) is not shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Gym-bag after-workout edition",
+    "why": "Women fix hair after the gym or swim; real pain",
+    "how": "Locker room, frizzy to sleek in 30 s",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' gentle low-heat version",
+    "why": "Moms do daughters' hair before school",
+    "how": "Rushed morning, mom straightens a girl's hair in the car",
+    "ip_safe": true
+   },
+   {
+    "variation": "Holiday gift box with satin scrunchies",
+    "why": "Gift-ready set for teens and sisters",
+    "how": "Unboxing under the tree, teen squeals",
+    "ip_safe": true
+   }
+  ]
+ },
+ "handheld_lasers": {
+  "summary": "A pocket-size burning laser. One TikTok seller, 132k top views with shaky no-text demo; legally and safety-wise risky to promote.",
+  "groups": [
+   {
+    "name": "Pocket laser",
+    "variations": [
+     "Pocket box burning laser"
+    ],
+    "accounts": 1,
+    "best_views": 132500,
+    "note": "Single seller; safety risk"
+   }
+  ],
+  "rows": {
+   "pocket_burning_laser": {
+    "variants": "Pocket box burning laser ×1",
+    "best": "Pocket box burning laser — 132k top views (coolshotlab)",
+    "analysis": "Raw demo only; product category is risky for ads and platforms."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Wood-engraving hobby kit (low-power, safe)",
+    "why": "DIY crafters love personalizing gifts",
+    "how": "Engraving a name onto a cutting board, time-lapse",
+    "ip_safe": true
+   },
+   {
+    "variation": "Personalized gift engraver for leather/wood",
+    "why": "Small makers sell custom items on Etsy",
+    "how": "Wallet engraved with initials, gift handover",
+    "ip_safe": true
+   },
+   {
+    "variation": "Astronomy star-pointer (legal class)",
+    "why": "Stargazing families point out constellations",
+    "how": "Dad points a beam at a star, kid says 'whoa'",
+    "ip_safe": true
+   }
+  ]
+ },
+ "headlight_eyes": {
+  "summary": "RGB 'reptile eye' inserts that go inside car headlights. One seller, 91.81M top views (823k average): 'DO NOT show this to a CARGUY' plus the creepy-cool giant eyes are a perfect car-mod wow.",
+  "groups": [
+   {
+    "name": "RGB eyes",
+    "variations": [
+     "RGB reptile-eye inserts"
+    ],
+    "accounts": 1,
+    "best_views": 91812624,
+    "note": "Single seller; huge reach"
+   }
+  ],
+  "rows": {
+   "rgb_headlight_eye_inserts": {
+    "variants": "RGB reptile-eye inserts ×1",
+    "best": "RGB reptile-eye inserts — 91.81M top views (myneonblink)",
+    "analysis": "Car-guy identity + wow visual is massive; nothing for parked show-mode, Halloween or home décor."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Halloween 'demon eyes' parked show-mode",
+    "why": "Trunk-or-treat and Halloween car meets - seasonal spike",
+    "how": "Parked car at night blinks red eyes at trick-or-treaters",
+    "ip_safe": true
+   },
+   {
+    "variation": "Garage / man-cave wall 'eyes' neon decor",
+    "why": "Same look for the wall, no road legality issue; gift for car guys",
+    "how": "Lights off in the garage, eyes open on the wall",
+    "ip_safe": true
+   },
+   {
+    "variation": "Grille 'eyebrow' DRL strips in legal white/amber",
+    "why": "Adds an angry/cute expression legally",
+    "how": "Before/after car face: plain vs angry eyebrows",
+    "ip_safe": true
+   }
+  ]
+ },
+ "headphone_hoodies": {
+  "summary": "A hoodie with built-in headphones/pockets in the hood. One seller, 17.50M top views and a strong 1.59M average: 'The hoodie your teachers will hate' gives teens a rebellious identity.",
+  "groups": [
+   {
+    "name": "Headphone hood",
+    "variations": [
+     "Hoodie with headphone pocket in the hood"
+    ],
+    "accounts": 1,
+    "best_views": 17500000,
+    "note": "Single seller, grey"
+   }
+  ],
+  "rows": {
+   "headphone_pocket_hoodie": {
+    "variants": "Hoodie with headphone pocket in the hood ×1",
+    "best": "Hoodie with headphone pocket in the hood — 17.50M top views (skycall.clothes)",
+    "analysis": "Rebel-teen hook is consistent; no adult use cases (commute, flights, gaming) are shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Flight sleep hoodie (headphone hood + eye-mask pull-down)",
+    "why": "Travellers want to block light and noise on planes",
+    "how": "Plane cabin, he pulls the mask down, music on, out cold",
+    "ip_safe": true
+   },
+   {
+    "variation": "Gamer edition with mic hole and controller pocket",
+    "why": "Gamers 18-30, partners buy for Christmas",
+    "how": "Gamer pulls up the hood, mic pokes out, lights dim",
+    "ip_safe": true
+   },
+   {
+    "variation": "Heated headphone hoodie",
+    "why": "Winter commuters want warm + music",
+    "how": "Snowy bus stop, hood up, warm glow, music on",
+    "ip_safe": true
+   },
+   {
+    "variation": "Built-in Bluetooth speaker hood (no earbuds)",
+    "why": "No earbuds to lose; parents gift teens",
+    "how": "Teen walks, music plays from the hood, friends lean in",
+    "ip_safe": true
+   }
+  ]
+ },
+ "heat_wraps": {
+  "summary": "Heated red-light briefs for period pain. One seller, 15.02M top views (146k average): 'POV: it's second day with Endometriosis' names a specific, painful moment that women instantly recognise.",
+  "groups": [
+   {
+    "name": "Period-pain briefs",
+    "variations": [
+     "Heated red-light period-pain briefs"
+    ],
+    "accounts": 1,
+    "best_views": 15019235,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "heated_red_light_period_briefs": {
+    "variants": "Heated red-light period-pain briefs ×1",
+    "best": "Heated red-light period-pain briefs — 15.02M top views (theherheatofficial)",
+    "analysis": "Specific pain POV is strong; no gift angle (partner buying it) and only one style. Medical claims must stay soft."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Boyfriend-gift 'period care' box",
+    "why": "Partners want to help but don't know how; gift guilt + care",
+    "how": "Boyfriend hands her a box on a bad day, she tears up; text 'He listened'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Lower-back heated wrap for long work shifts",
+    "why": "Same tech for back ache - nurses, warehouse workers",
+    "how": "Nurse straps it on in the break room, exhales",
+    "ip_safe": true
+   },
+   {
+    "variation": "Cute pastel / print editions (clouds, hearts)",
+    "why": "Teens and young women want it to feel less medical",
+    "how": "Flat lay of three prints, teen picks one",
+    "ip_safe": true
+   }
+  ]
+ },
+ "heated_blankets": {
+  "summary": "Battery-heated wearable blankets and zip ponchos. The two-person gingerbread blanket has the best average (975k, top 11.29M) because 'Moms are so hard to gift' plus a funny two-people-in-one-blanket visual; heated zip ponchos have 5 sellers (best 4.10M) all chasing cold sport moms on bleachers.",
+  "groups": [
+   {
+    "name": "Holiday print (couple size)",
+    "variations": [
+     "Two-person heated wearable blanket · gingerbread"
+    ],
+    "accounts": 1,
+    "best_views": 11287072,
+    "note": "One seller, best average - gift-for-mom + gingerbread print"
+   },
+   {
+    "name": "Plain zip poncho",
+    "variations": [
+     "Heated zip poncho"
+    ],
+    "accounts": 5,
+    "best_views": 4100000,
+    "note": "5 sellers; sport-mom / traveller identity, fake warehouse-store reveals"
+   }
+  ],
+  "rows": {
+   "two_person_heated_wearable_blanket": {
+    "variants": "gingerbread ×1",
+    "best": "gingerbread — 11.29M top views (snugfor2)",
+    "analysis": "Gift-for-mom hook + gingerbread print works very well; only one print."
+   },
+   "heated_zip_poncho": {
+    "variants": "Heated zip poncho ×5",
+    "best": "Heated zip poncho — 4.10M top views (waemelle)",
+    "analysis": "Sport-mom identity is proven across 5 sellers; nobody personalizes it with team colours/names or bundles a seat cushion."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Team-colour sideline poncho with embroidered number/name",
+    "why": "Sport moms want to show which kid is theirs; personal + proud",
+    "how": "Bleachers in the cold, mom turns around: '#12 MOM' on her back, kid waves",
+    "ip_safe": true
+   },
+   {
+    "variation": "Heated stadium seat cushion + poncho bundle",
+    "why": "Cold metal bleachers are the real pain; bigger order",
+    "how": "Mom sits on frozen bleachers, then on the heated cushion, smiles",
+    "ip_safe": true
+   },
+   {
+    "variation": "Car-commute poncho with 12V adapter",
+    "why": "Commuters with cold cars every morning",
+    "how": "Icy car at 6am, she plugs in and warms up before the heater does",
+    "ip_safe": true
+   },
+   {
+    "variation": "Mom-and-kid two-person heated blanket",
+    "why": "Same 'two-in-one' visual as the gingerbread hit but with a child - emotional",
+    "how": "Mom and toddler zipped in together watching snow",
+    "ip_safe": true
+   },
+   {
+    "variation": "Plaid / snowflake holiday prints",
+    "why": "More holiday prints without characters; repeat buyers",
+    "how": "Three prints laid on a bed, family picks",
+    "ip_safe": true
+   }
+  ]
+ },
+ "heated_hoodies": {
+  "summary": "Heated oversized hoodie blankets and a heated vest. One hoodie-blanket video hit 103.89M top views but the page averages only 5k, so it is a one-off; the school-pickup 'mind your business' mom joke and the cat-pouch spouse meme got almost nothing.",
+  "groups": [
+   {
+    "name": "Hoodie blanket",
+    "variations": [
+     "Heated hoodie blanket · pet-in-pouch angle",
+     "Heated hoodie blanket"
+    ],
+    "accounts": 3,
+    "best_views": 103885242,
+    "note": "One giant spike (103.89M), otherwise tiny"
+   },
+   {
+    "name": "Heated vest",
+    "variations": [
+     "Heated puffer vest"
+    ],
+    "accounts": 1,
+    "best_views": 960,
+    "note": "No reach"
+   }
+  ],
+  "rows": {
+   "heated_hoodie_blanket": {
+    "variants": "pet-in-pouch angle ×2 · Heated hoodie blanket ×1",
+    "best": "pet-in-pouch angle — 103.89M top views (toastyhoody)",
+    "analysis": "One emotional spike ('I'm literally crying') shows potential, but no repeatable format or identity."
+   },
+   "heated_puffer_vest": {
+    "variants": "Heated puffer vest ×1",
+    "best": "Heated puffer vest — 960 top views (Cozymimico)",
+    "analysis": "Cold-grandma struggle/solution idea, no reach."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Sport-mom team-colour heated hoodie",
+    "why": "Copies the proven poncho audience (cold bleachers) with a hoodie",
+    "how": "Bleachers, mom zips up, team colours, 'Game 3 and I'm WARM'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Couple matching heated hoodies",
+    "why": "Gift for each other, matching photos, winter dates",
+    "how": "Couple on a snowy porch in matching hoodies, cocoa",
+    "ip_safe": true
+   },
+   {
+    "variation": "Dad 'workshop' heated hoodie (dark, rugged)",
+    "why": "Dads in cold garages; wives gift it",
+    "how": "Dad in a cold garage working, steam breath, warm smile",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' heated hoodie for the bus stop",
+    "why": "Parents worry about kids waiting in the cold",
+    "how": "Kid at a snowy bus stop gives a thumbs up",
+    "ip_safe": true
+   }
+  ]
+ },
+ "heated_robes": {
+  "summary": "Battery-heated hooded robes (our HeatGrump category). The plain robe has the biggest video (146.75M with 'I made this for the cold-aholics') and Snow White the best average (1.38M, 21.10M top) with 'Do NOT let a Princess mom see this'; IP-free themes like cannabis leaf (5.03M), gingerbread (2.99M), Santa (1.76M) and gothic (1.10M) prove you don't need a licence when the identity is clear.",
+  "groups": [
+   {
+    "name": "Licensed characters & fandoms",
+    "variations": [
+     "Snow White princess",
+     "Snoopy",
+     "Football club crests",
+     "Harry Potter houses",
+     "Hello Kitty",
+     "Naruto Hokage",
+     "Grinch",
+     "Fourth Wing gold dragon"
+    ],
+    "accounts": 9,
+    "best_views": 21100000,
+    "note": "Snow White leads (1.38M avg); Grinch (incl. our Heat-Grump page, 8.50M top), Snoopy, Hello Kitty, Potter, Naruto, clubs, Fourth Wing - all IP-risky"
+   },
+   {
+    "name": "Holiday themes",
+    "variations": [
+     "Gingerbread",
+     "Santa"
+    ],
+    "accounts": 2,
+    "best_views": 2993874,
+    "note": "Gingerbread 2.99M, Santa 1.76M - IP-free Christmas"
+   },
+   {
+    "name": "Identity & hobby",
+    "variations": [
+     "Cannabis-leaf print",
+     "Horse-ear hood · equestrian",
+     "Gothic",
+     "\"Not spoiled\" slogan print",
+     "Firefighter"
+    ],
+    "accounts": 6,
+    "best_views": 5030964,
+    "note": "Cannabis 5.03M, gothic 1.10M, equestrian, 'spoiled wife', firefighter - each a new audience"
+   },
+   {
+    "name": "Plain",
+    "variations": [
+     "Plain"
+    ],
+    "accounts": 1,
+    "best_views": 146749957,
+    "note": "Biggest video of all (146.75M) - the cold-aholic identity alone sells"
+   }
+  ],
+  "rows": {
+   "heated_hooded_robe": {
+    "variants": "Cannabis-leaf print ×2 · Grinch ×2 · Snow White princess ×1 · Snoopy ×1 · Football club crests ×1 · equestrian ×1 · Harry Potter houses ×1 · Hello Kitty ×1 · Naruto Hokage ×1 · Gothic ×1 · Plain ×1 · Gingerbread ×1 · Santa ×1 · \"Not spoiled\" slogan print ×1 · Fourth Wing gold dragon ×1 · Firefighter ×1",
+    "best": "Plain — 146.75M top views (thermahugcompany)",
+    "analysis": "Everything is in one row: plain + cold-aholic identity is the biggest proof; licensed themes give good averages but risk; professions (nurse, teacher), monograms and matching sets are still empty."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Nurse / night-shift patch robe",
+    "why": "Nurses come home cold after night shifts; 'Do NOT show this to a nurse' is a proven identity call-out and families gift nurses at Christmas",
+    "how": "Nurse in scrubs gets home at 7am, opens the robe from a box, collapses on the couch warm",
+    "ip_safe": true
+   },
+   {
+    "variation": "Teacher 'off duty' robe",
+    "why": "Teachers are a huge gift audience (parents, coworkers); exhausted-teacher humour",
+    "how": "Teacher grading papers at midnight, wraps up; text 'Teachers, I made this for you'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Monogrammed name on the back/hood",
+    "why": "Personalization kills 'generic gift' guilt and justifies +$10-15",
+    "how": "Robe rolled with ribbon, unroll shows 'MOM' or her name on the hood",
+    "ip_safe": true
+   },
+   {
+    "variation": "Matching mom-and-daughter set",
+    "why": "Gift videos already show two women; duo doubles order value and makes a Christmas-morning photo",
+    "how": "Mom and daughter flip the robes on at the same time by the tree",
+    "ip_safe": true
+   },
+   {
+    "variation": "Dog-mom robe (paw-print + dog-ear hood)",
+    "why": "Dog owners are a massive identity group, IP-free",
+    "how": "Woman and her dog on the couch, both hooded, dog's ears and robe ears match",
+    "ip_safe": true
+   },
+   {
+    "variation": "Grandma 'always cold' edition (soft lilac, longer)",
+    "why": "Grandkids buy for grandma; poor circulation, always cold (no medical claims)",
+    "how": "Grandma opens it on Christmas morning, kids help her zip, she laughs",
+    "ip_safe": true
+   }
+  ]
+ },
+ "heated_slippers": {
+  "summary": "Heated knit slip-on slippers. One seller, 160k top views (32k average) with a store-gasp woman 50+ and 'the perfect Christmas gift for yourself' - right audience, small reach.",
+  "groups": [
+   {
+    "name": "Knit slip-on",
+    "variations": [
+     "Knit slip-on heated slippers"
+    ],
+    "accounts": 1,
+    "best_views": 160064,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "heated_knit_slippers": {
+    "variants": "Knit slip-on heated slippers ×1",
+    "best": "Knit slip-on heated slippers — 160k top views (alwayscold_official)",
+    "analysis": "Self-gift for always-cold women 50+ is right; no couple, outdoor or personalized version."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "His & hers couple pack",
+    "why": "Couples gift each other; doubles order",
+    "how": "Two pairs of feet by the fire, one big, one small",
+    "ip_safe": true
+   },
+   {
+    "variation": "Ankle boot-slipper for quick outdoor trips",
+    "why": "Dog walks and mailbox runs in the snow",
+    "how": "She steps out to the snowy mailbox and back, toes still warm",
+    "ip_safe": true
+   },
+   {
+    "variation": "Funny 'grump' face slippers (original character)",
+    "why": "Humour + warmth; gift for grumpy dads/grandpas",
+    "how": "Grumpy grandpa puts on grumpy-face slippers, family laughs",
+    "ip_safe": true
+   }
+  ]
+ },
+ "hydration": {
+  "summary": "A tactical-style running vest with a water bladder and phone pockets. One seller, 2.93M top views (36k average): 'Runners in 2020 vs Runners in 2026' with a dropped phone shows the pain.",
+  "groups": [
+   {
+    "name": "Tactical vest",
+    "variations": [
+     "Tactical hydration vest"
+    ],
+    "accounts": 1,
+    "best_views": 2933485,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "tactical_hydration_vest": {
+    "variants": "Tactical hydration vest ×1",
+    "best": "Tactical hydration vest — 2.93M top views (hydroflux.us)",
+    "analysis": "Then-vs-now contrast works; no women's fit or other sports."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Women's slim-fit pastel vest",
+    "why": "Women runners are the bigger running market",
+    "how": "Female runner, phone stays put, she sips mid-run",
+    "ip_safe": true
+   },
+   {
+    "variation": "Hiker / dog-walker version with treat pouch",
+    "why": "Hikers and dog owners need water for two",
+    "how": "Trail with a dog, she pours water into a fold-out bowl",
+    "ip_safe": true
+   },
+   {
+    "variation": "Hi-vis night-running edition",
+    "why": "Winter darkness - safety plus hydration",
+    "how": "Headlights catch a glowing vest on a dark road",
+    "ip_safe": true
+   }
+  ]
+ },
+ "inflatable_costumes": {
+  "summary": "Inflatable illusion costumes. The 'woman carrying a man' version leads (1.40M average, 9.20M top) because 'DON'T show this to the clown of your friend group' makes people tag a friend; the kids' dinosaur rider got 8.51M with an 'auntie' gift hook and the alien abduction 2.64M.",
+  "groups": [
+   {
+    "name": "Funny carry illusions",
+    "variations": [
+     "Carry costume · woman carrying man",
+     "Carry costume · alien abduction"
+    ],
+    "accounts": 2,
+    "best_views": 9200000,
+    "note": "Wife-carry and alien - tag-a-friend humour"
+   },
+   {
+    "name": "Kids ride-on",
+    "variations": [
+     "Rider costume · kids' dinosaur"
+    ],
+    "accounts": 1,
+    "best_views": 8514870,
+    "note": "Dino rider, auntie gift - 8.51M top"
+   }
+  ],
+  "rows": {
+   "inflatable_carry_costume": {
+    "variants": "woman carrying man ×1 · alien abduction ×1",
+    "best": "woman carrying man — 9.20M top views (wifegrab)",
+    "analysis": "Tag-your-friend humour works very well; no Christmas characters yet."
+   },
+   "inflatable_ride_on_costume": {
+    "variants": "kids' dinosaur ×1",
+    "best": "kids' dinosaur — 8.51M top views (dinowearables)",
+    "analysis": "Auntie-gift angle works; only a dinosaur."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "'Santa carrying me' costume",
+    "why": "Christmas parties and Santa runs need a funny costume",
+    "how": "Office party, guy 'carried' by Santa walks in, room explodes laughing",
+    "ip_safe": true
+   },
+   {
+    "variation": "Reindeer / sleigh rider costume",
+    "why": "Kids' Christmas version of the dino hit",
+    "how": "Toddler 'rides' a reindeer around the tree",
+    "ip_safe": true
+   },
+   {
+    "variation": "Inflatable Christmas tree costume with lights",
+    "why": "Ugly-sweater-party winner, IP-free",
+    "how": "Lights off at a party, friend lights up as a tree",
+    "ip_safe": true
+   },
+   {
+    "variation": "Couple's paired illusion (one gag for two)",
+    "why": "Couples' costume parties; double sale",
+    "how": "Couple enters as one gag, crowd cheers",
+    "ip_safe": true
+   }
+  ]
+ },
+ "inversion_boots": {
+  "summary": "Hanging inversion boots that let you hang upside down from a pull-up bar to decompress the spine. One seller, 74.66M top views (50k average): 'How to get DECOMPRESSED' plus a strange swinging-up motion makes people stop.",
+  "groups": [
+   {
+    "name": "Inversion boots",
+    "variations": [
+     "Hanging inversion boots"
+    ],
+    "accounts": 1,
+    "best_views": 74659520,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "inversion_boots": {
+    "variants": "Hanging inversion boots ×1",
+    "best": "Hanging inversion boots — 74.66M top views (thegrvtyboots)",
+    "analysis": "Odd visual + back-pain promise works once; no beginner or bundle angle."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Doorway bar + boots starter bundle",
+    "why": "Beginners don't own a bar; one-click setup",
+    "how": "Unbox, bar clicks in the doorway, first hang",
+    "ip_safe": true
+   },
+   {
+    "variation": "Desk-worker back-relief edition",
+    "why": "Office workers with back pain - huge audience",
+    "how": "After a long work day, he hangs and sighs; text '8 hours at a desk'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Couples / gym-buddy two-pack",
+    "why": "Gym couples train together",
+    "how": "Two people hang side by side, laughing upside down",
+    "ip_safe": true
+   }
+  ]
+ },
+ "keepsakes": {
+  "summary": "Keepsakes that play voices or music: a recordable voice ornament and a magnetic-disc Christmas music player. The voice ornament leads (1.53M top, 165k average) because recording a loved one's voice is deeply emotional; the music player got 493k.",
+  "groups": [
+   {
+    "name": "Voice recording",
+    "variations": [
+     "Recordable voice ornament"
+    ],
+    "accounts": 1,
+    "best_views": 1525628,
+    "note": "Emotional; best average"
+   },
+   {
+    "name": "Holiday music",
+    "variations": [
+     "Magnetic disc music player · Christmas songs"
+    ],
+    "accounts": 1,
+    "best_views": 493010,
+    "note": "Christmas-lover hook, low average"
+   }
+  ],
+  "rows": {
+   "recordable_voice_ornament": {
+    "variants": "Recordable voice ornament ×1",
+    "best": "Recordable voice ornament — 1.53M top views (evervoiceco)",
+    "analysis": "Store-crowd hook works, but the real emotion (a grandparent's voice) is not shown."
+   },
+   "magnetic_disc_music_player": {
+    "variants": "Christmas songs ×1",
+    "best": "Christmas songs — 493k top views (jollytunes.co)",
+    "analysis": "Cute but generic Christmas-lover hook; one spike."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Baby's first-words ornament",
+    "why": "New parents record the first 'mama'; first-Christmas keepsake",
+    "how": "Ornament pressed, baby's giggle plays, mom tears up",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pet bark/meow memorial ornament",
+    "why": "Pet owners keep a pet's sound forever",
+    "how": "Owner presses it, dog's bark plays, old dog lifts head",
+    "ip_safe": true
+   },
+   {
+    "variation": "Bedtime-story disc set recorded by grandparents",
+    "why": "Long-distance grandparents read to grandkids",
+    "how": "Kid places a disc, grandma's voice reads a story",
+    "ip_safe": true
+   }
+  ]
+ },
+ "lawn_tools": {
+  "summary": "A cordless trimmer that converts into a small mower. One TikTok seller, 11k top views (4k average) with a '$80 vs $250' comparison - weak reach.",
+  "groups": [
+   {
+    "name": "Trimmer-mower",
+    "variations": [
+     "Cordless trimmer that converts into a mower"
+    ],
+    "accounts": 1,
+    "best_views": 11400,
+    "note": "Single seller, low reach"
+   }
+  ],
+  "rows": {
+   "trimmer_mower_combo": {
+    "variants": "Cordless trimmer that converts into a mower ×1",
+    "best": "Cordless trimmer that converts into a mower — 11k top views (yardfleet)",
+    "analysis": "Price comparison is clear but no hook; no reach."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Small-yard / townhouse starter kit",
+    "why": "First-home owners with tiny yards don't want a big mower",
+    "how": "Tiny backyard mowed in 3 minutes, she stores it in a closet",
+    "ip_safe": true
+   },
+   {
+    "variation": "Father's Day gift bundle (batteries + blades)",
+    "why": "Wives gift yard tools to dads",
+    "how": "Dad unwraps it, immediately goes outside",
+    "ip_safe": true
+   },
+   {
+    "variation": "Senior lightweight version",
+    "why": "Older homeowners need light tools",
+    "how": "Grandpa mows easily, neighbor watches",
+    "ip_safe": true
+   }
+  ]
+ },
+ "light_therapy": {
+  "summary": "Red-light devices: a sinus face mask and under-eye glasses. The sinus mask has the best average (452k, 2.19M top) with 'Every SINUSITIS sufferer needs this'; the under-eye glasses got 1.31M once with a tired-mom hook.",
+  "groups": [
+   {
+    "name": "Sinus relief",
+    "variations": [
+     "Sinus red-light face mask"
+    ],
+    "accounts": 1,
+    "best_views": 2187164,
+    "note": "Best average; specific pain call-out"
+   },
+   {
+    "name": "Beauty / under-eye",
+    "variations": [
+     "Under-eye red-light glasses"
+    ],
+    "accounts": 1,
+    "best_views": 1305045,
+    "note": "Tired-mom identity, one spike"
+   }
+  ],
+  "rows": {
+   "sinus_red_light_mask": {
+    "variants": "Sinus red-light face mask ×1",
+    "best": "Sinus red-light face mask — 2.19M top views (sinulia_usa)",
+    "analysis": "Specific sufferer call-out works; claims must stay soft and there is no gift angle."
+   },
+   "red_light_eye_glasses": {
+    "variants": "Under-eye red-light glasses ×1",
+    "best": "Under-eye red-light glasses — 1.31M top views (glowlylens)",
+    "analysis": "Tired-mom hook is good, average weak; no self-care gift set."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "'Cozy night' self-care set (mask + eye pillow)",
+    "why": "Gift for tired moms; self-care ritual",
+    "how": "Mom gets the kids to bed, puts it on, sighs",
+    "ip_safe": true
+   },
+   {
+    "variation": "His & hers couple set",
+    "why": "Couples' self-care night, doubles order",
+    "how": "Couple on the couch, both wearing glowing glasses, laughing",
+    "ip_safe": true
+   },
+   {
+    "variation": "Travel case flight edition",
+    "why": "Dry plane air and puffy eyes after flights",
+    "how": "Plane seat, she puts on the glasses, passengers stare",
+    "ip_safe": true
+   }
+  ]
+ },
+ "lounge_seating": {
+  "summary": "Statement lounge seating: a giant baseball-cap beanbag and an oversized rocking chair. The cap beanbag wins clearly (1.28M average, 4.10M top) because a giant cap thrown at a wall is a surreal, no-text visual; the rocking chair got 8k.",
+  "groups": [
+   {
+    "name": "Giant-object beanbag",
+    "variations": [
+     "Baseball-cap beanbag chair"
+    ],
+    "accounts": 1,
+    "best_views": 4098313,
+    "note": "Surreal visual, very strong average"
+   },
+   {
+    "name": "Cosy rocking chair",
+    "variations": [
+     "Oversized cushioned rocking chair"
+    ],
+    "accounts": 1,
+    "best_views": 8465,
+    "note": "No reach"
+   }
+  ],
+  "rows": {
+   "cap_beanbag_chair": {
+    "variants": "Baseball-cap beanbag chair ×1",
+    "best": "Baseball-cap beanbag chair — 4.10M top views (maurice_hats)",
+    "analysis": "Surreal object visual works; only a cap - other giant objects are open."
+   },
+   "oversized_rocking_chair": {
+    "variants": "Oversized cushioned rocking chair ×1",
+    "best": "Oversized cushioned rocking chair — 8k top views (itschelseahope)",
+    "analysis": "Calm vibe but no hook."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Giant sneaker beanbag",
+    "why": "Sneakerhead identity, same surreal effect as the cap",
+    "how": "Giant sneaker drops into a room, guy flops into it",
+    "ip_safe": true
+   },
+   {
+    "variation": "Giant gift-box / cookie holiday beanbag",
+    "why": "Christmas-season room décor and gifts for teens",
+    "how": "Kid jumps into a giant cookie by the tree",
+    "ip_safe": true
+   },
+   {
+    "variation": "Heated cloud lounger",
+    "why": "Always-cold people want a warm nap spot",
+    "how": "Snowy window, she sinks in and pulls a blanket",
+    "ip_safe": true
+   }
+  ]
+ },
+ "memory_displays": {
+  "summary": "A DIY shadow-box 'mini museum' of your own photos with tiny frames. One seller, 5.65M top views (656k average): 'your mom said she doesn't want anything for her birthday' triggers gift guilt and the handmade result is emotional.",
+  "groups": [
+   {
+    "name": "DIY mini museum",
+    "variations": [
+     "DIY miniature museum photo frame"
+    ],
+    "accounts": 1,
+    "best_views": 5652743,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "diy_mini_museum_frame": {
+    "variants": "DIY miniature museum photo frame ×1",
+    "best": "DIY miniature museum photo frame — 5.65M top views (diy.museum.of.us)",
+    "analysis": "Gift-guilt + handmade emotion is very strong; only a generic version - no themed editions."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Grandparents' museum (gallery of grandkids)",
+    "why": "Grandkids gift grandma; heavy emotion",
+    "how": "Grandma opens it, sees all grandkids framed, cries",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pet memorial museum",
+    "why": "Pet loss is emotional; owners want a keepsake",
+    "how": "Hands place the last tiny frame of the dog; dog's collar beside it",
+    "ip_safe": true
+   },
+   {
+    "variation": "'Our first year' couple edition with date plaque",
+    "why": "Anniversary gift; personal",
+    "how": "Boyfriend reveals it at dinner, she reads the date plaque",
+    "ip_safe": true
+   },
+   {
+    "variation": "Christmas 'year in review' museum with mini tree",
+    "why": "Seasonal gift with snow and lights",
+    "how": "Lights dim, tiny tree glows over the year's photos",
+    "ip_safe": true
+   }
+  ]
+ },
+ "mini_fridges": {
+  "summary": "A mini fridge shaped like an in-game potion jar. One seller, 934k top views (166k average) with 'don't let a Fortnite player see this' - gamer identity, but fully licensed IP.",
+  "groups": [
+   {
+    "name": "Licensed game item",
+    "variations": [
+     "Fortnite Slurp jar"
+    ],
+    "accounts": 1,
+    "best_views": 934240,
+    "note": "Single seller; IP risk"
+   }
+  ],
+  "rows": {
+   "slurp_jar_mini_fridge": {
+    "variants": "Fortnite Slurp jar ×1",
+    "best": "Fortnite Slurp jar — 934k top views (slurpjar)",
+    "analysis": "Gamer identity works; relies on Fortnite IP, no original designs."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Original 'potion bottle' gamer fridge",
+    "why": "Same gamer desk vibe without the licence",
+    "how": "Gamer opens a glowing potion bottle, takes out an energy drink",
+    "ip_safe": true
+   },
+   {
+    "variation": "Retro arcade-cabinet mini fridge",
+    "why": "Nostalgia for 30-45 dads; man-cave gift",
+    "how": "Dad opens the arcade fridge in the basement, kids gasp",
+    "ip_safe": true
+   },
+   {
+    "variation": "Skincare beauty fridge with LED mirror",
+    "why": "Beauty girls keep skincare cold; huge category",
+    "how": "Vanity at night, she opens the glowing fridge and grabs a serum",
+    "ip_safe": true
+   }
+  ]
+ },
+ "mini_phones": {
+  "summary": "A tiny working touchscreen smartphone. One seller, 19.70M top views (706k average): 'The perfect Christmas gift for kids' plus peeling film off a tiny phone is cute and satisfying.",
+  "groups": [
+   {
+    "name": "Mini smartphone",
+    "variations": [
+     "Mini touchscreen smartphone"
+    ],
+    "accounts": 1,
+    "best_views": 19700000,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "mini_smartphone": {
+    "variants": "Mini touchscreen smartphone ×1",
+    "best": "Mini touchscreen smartphone — 19.70M top views (pockifymini)",
+    "analysis": "Cute size + kid-gift hook works; parental-control and adult 'detox' angles missing."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Kids' first phone with parental-control preset",
+    "why": "Parents fear giving kids full phones; safe first phone",
+    "how": "Mom shows the locked apps, kid happily calls grandma",
+    "ip_safe": true
+   },
+   {
+    "variation": "Adult 'digital detox' phone (calls + music only)",
+    "why": "Adults want to quit scrolling - strong trend",
+    "how": "Man puts his big phone in a drawer, walks out with the mini",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pastel collectible colours for teens",
+    "why": "Teens collect cute tech; second purchase",
+    "how": "Five colours fanned out, teen picks lilac",
+    "ip_safe": true
+   }
+  ]
+ },
+ "mist_projectors": {
+  "summary": "An outdoor projector that shows Christmas figures (reindeer, Santa) on a screen of water mist. One seller, 1.04M top views (17k average): 'Do NOT let ur neighbor see this' plays on neighbourhood decoration rivalry.",
+  "groups": [
+   {
+    "name": "Christmas holograms",
+    "variations": [
+     "Christmas reindeer & Santa on a mist screen"
+    ],
+    "accounts": 1,
+    "best_views": 1037734,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "water_mist_hologram_projector": {
+    "variants": "Christmas reindeer & Santa on a mist screen ×1",
+    "best": "Christmas reindeer & Santa on a mist screen — 1.04M top views (thexmaslight)",
+    "analysis": "Neighbour-rivalry hook works once; the night hologram payoff and other seasons are missing."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Halloween ghost & skeleton mist show",
+    "why": "Halloween decorating is huge in the US and ghosts in mist are extra spooky",
+    "how": "Trick-or-treaters walk up, a ghost floats in the mist, kids scream-laugh",
+    "ip_safe": true
+   },
+   {
+    "variation": "Custom family greeting in the mist ('Merry Christmas from the Lees')",
+    "why": "Personal message beats the neighbours and is shareable",
+    "how": "Car pulls into the driveway, the family name floats in the mist",
+    "ip_safe": true
+   },
+   {
+    "variation": "Backyard party / wedding hologram pack",
+    "why": "Party hosts want a wow moment",
+    "how": "Garden party at night, guests turn as a hologram heart appears",
+    "ip_safe": true
+   }
+  ]
+ },
+ "motion_glasses": {
+  "summary": "Glasses with liquid-filled rings that reduce motion sickness. One seller, 8.28M top views (197k average): a little girl about to vomit in her car seat plus 'If you're a mom, you NEED to see this' is a sharp, real parent pain.",
+  "groups": [
+   {
+    "name": "Liquid-ring glasses",
+    "variations": [
+     "Liquid-ring motion-sickness glasses"
+    ],
+    "accounts": 1,
+    "best_views": 8280769,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "motion_sickness_glasses": {
+    "variants": "Liquid-ring motion-sickness glasses ×1",
+    "best": "Liquid-ring motion-sickness glasses — 8.28M top views (calmmotion.lif)",
+    "analysis": "Car-sick child pain is perfect; no adult travel, cruise or kids' fun-colour versions."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Cruise & ferry travel edition",
+    "why": "Cruise passengers dread seasickness; pre-trip purchase",
+    "how": "Cruise deck in rough water, she reads a book calmly",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' fun-colour family 4-pack",
+    "why": "Road-trip families buy for every kid",
+    "how": "Back seat, three kids in colourful glasses playing, no bags needed",
+    "ip_safe": true
+   },
+   {
+    "variation": "Gamer / VR motion-sickness edition",
+    "why": "VR users get sick; growing niche",
+    "how": "Gamer takes off a headset dizzy, then plays again with the glasses on",
+    "ip_safe": true
+   }
+  ]
+ },
+ "novelty_clothing": {
+  "summary": "Joke and statement clothing. The gag-print ugly Christmas sweater crushes it (2.94M average, 19.06M top) because 'The perfect shirt for my bald cousin' is a funny gift with a specific person in mind; the Santa bare-chest sweatshirt (1.17M) and rhinestone open-back hoodies (444k) do far less.",
+  "groups": [
+   {
+    "name": "Gag Christmas sweaters",
+    "variations": [
+     "Ugly Christmas sweater · hairy-balls knit design",
+     "Santa bare-chest illusion sweatshirt"
+    ],
+    "accounts": 2,
+    "best_views": 19058045,
+    "note": "The winner - funny gift for one specific person"
+   },
+   {
+    "name": "Going-out statement hoodies",
+    "variations": [
+     "Rhinestone-mesh back-yoke zip hoodie",
+     "Open-back rhinestone fishnet hoodie"
+    ],
+    "accounts": 2,
+    "best_views": 444413,
+    "note": "Rhinestone/mesh backs - girls' night, modest reach"
+   },
+   {
+    "name": "Cosy lounge",
+    "variations": [
+     "Plush teddy bralette & shorts set"
+    ],
+    "accounts": 1,
+    "best_views": 30528,
+    "note": "Teddy set, low reach"
+   }
+  ],
+  "rows": {
+   "gag_print_ugly_sweater": {
+    "variants": "hairy-balls knit design ×1",
+    "best": "hairy-balls knit design — 19.06M top views (xmasgft)",
+    "analysis": "Specific-person joke ('bald cousin') makes it huge; couple and family gag sets are missing."
+   },
+   "rhinestone_open_back_hoodie": {
+    "variants": "Rhinestone-mesh back-yoke zip hoodie ×1 · Open-back rhinestone fishnet hoodie ×1",
+    "best": "Rhinestone-mesh back-yoke zip hoodie — 444k top views (veraaapparel)",
+    "analysis": "Back-reveal is pretty, but no identity hook; low reach."
+   },
+   "plush_teddy_lounge_set": {
+    "variants": "Plush teddy bralette & shorts set ×1",
+    "best": "Plush teddy bralette & shorts set — 31k top views (plushies_shop)",
+    "analysis": "Unboxing without a hook; low."
+   },
+   "santa_bare_chest_sweatshirt": {
+    "variants": "Santa bare-chest illusion sweatshirt ×1",
+    "best": "Santa bare-chest illusion sweatshirt — 1.17M top views (jingledrip.us)",
+    "analysis": "Spouse meme works once; still a borderline-nude print."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Matching 'couple joke' sweater pair (two halves of one gag)",
+    "why": "Couples go to ugly-sweater parties together; doubles the sale",
+    "how": "Couple walks in separately, then stands together and the joke completes",
+    "ip_safe": true
+   },
+   {
+    "variation": "Light-up ugly sweater with hidden reveal panel",
+    "why": "Party moment when the lights switch on and spell a word",
+    "how": "Lights off at the office party, his sweater lights up 'NAUGHTY'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Bald-head knit beanie with fake comb-over pattern",
+    "why": "Same 'bald cousin' audience as the winner, cheap add-on",
+    "how": "Bald guy pulls on the beanie, family cries laughing",
+    "ip_safe": true
+   },
+   {
+    "variation": "Family ugly sweater with the pet's face",
+    "why": "Personal, wholesome, every family member plus the dog",
+    "how": "Family photo by the tree, the dog wears the matching mini sweater",
+    "ip_safe": true
+   }
+  ]
+ },
+ "novelty_drinkware": {
+  "summary": "Hand-painted Christmas wine glasses. One seller, 985k top views (19k average) with a warehouse-pallet reveal and 'Every Holiday lover NEEDS this'.",
+  "groups": [
+   {
+    "name": "Christmas painted glasses",
+    "variations": [
+     "Hand-painted Christmas wine glasses"
+    ],
+    "accounts": 1,
+    "best_views": 985172,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "christmas_painted_wine_glasses": {
+    "variants": "Hand-painted Christmas wine glasses ×1",
+    "best": "Hand-painted Christmas wine glasses — 985k top views (merrysips.usa)",
+    "analysis": "Holiday-lover hook works once; no personalization or gift set."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Personalized name glasses for a girls' night",
+    "why": "Group gifts for friends; names avoid mix-ups at parties",
+    "how": "Four friends clink glasses with their names painted on",
+    "ip_safe": true
+   },
+   {
+    "variation": "Teacher / nurse 'survived the year' glasses",
+    "why": "Profession humour gift from parents/coworkers",
+    "how": "Teacher pours wine on Friday; glass reads 'I survived 3rd grade'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Fall pumpkin-spice edition",
+    "why": "Second season before Christmas",
+    "how": "Autumn table, cider poured into pumpkin-painted glasses",
+    "ip_safe": true
+   }
+  ]
+ },
+ "novelty_hats": {
+  "summary": "A Santa hat with a pop-up gag tip. One seller, 1.37M top views (60k average): a 45+ man at self-checkout with the spouse meme 'Babe stop buying stupid stuff, you're 45'.",
+  "groups": [
+   {
+    "name": "Gag Santa hat",
+    "variations": [
+     "Santa hat with pop-up gag tip"
+    ],
+    "accounts": 1,
+    "best_views": 1366486,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "popup_gag_santa_hat": {
+    "variants": "Santa hat with pop-up gag tip ×1",
+    "best": "Santa hat with pop-up gag tip — 1.37M top views (cockyhat)",
+    "analysis": "Spouse meme + public reaction works; only Santa - no other characters."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Pop-up reindeer antler hat",
+    "why": "Same gag, family-friendly, kids love it",
+    "how": "Dad at the school pickup, antlers pop up, kids laugh",
+    "ip_safe": true
+   },
+   {
+    "variation": "Light-up Christmas tree hat that spins",
+    "why": "Office party attention-grabber",
+    "how": "Office party, his hat spins and lights up during a speech",
+    "ip_safe": true
+   },
+   {
+    "variation": "Grumpy-face beanie with pop-up eyebrows",
+    "why": "Grumpy dad humour, IP-free",
+    "how": "Grandpa frowns, the eyebrows pop up, family laughs",
+    "ip_safe": true
+   }
+  ]
+ },
+ "onesies": {
+  "summary": "Adult onesies with big character heads. Muppet-style puppet onesies dominate (1.91M average, 26.72M top) because 'Send this to someone who'd wear this with you' turns it into a couple/friend dare; the horror-character version got 2.37M once.",
+  "groups": [
+   {
+    "name": "Puppet characters",
+    "variations": [
+     "Muppet-style puppets"
+    ],
+    "accounts": 2,
+    "best_views": 26719190,
+    "note": "Two sellers; huge average - share-with-a-friend hook"
+   },
+   {
+    "name": "Horror characters",
+    "variations": [
+     "Horror movie characters"
+    ],
+    "accounts": 1,
+    "best_views": 2372034,
+    "note": "Halloween couples; licensed horror masks - IP risk"
+   }
+  ],
+  "rows": {
+   "puppet_head_onesie": {
+    "variants": "Muppet-style puppets ×2",
+    "best": "Muppet-style puppets — 26.72M top views (snugglegoofsinc)",
+    "analysis": "Friend/couple dare is excellent; Muppet look is close to IP; no Christmas family pack."
+   },
+   "horror_character_onesie": {
+    "variants": "Horror movie characters ×1",
+    "best": "Horror movie characters — 2.37M top views (slashersnugs)",
+    "analysis": "Couple-share works once; licensed faces and seasonal only."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Grumpy green monster onesie (own character)",
+    "why": "Our own grumpy character, IP-free, matches the Christmas mood",
+    "how": "Two friends pull on monster heads by the tree, grumpy faces, then laugh",
+    "ip_safe": true
+   },
+   {
+    "variation": "Family Christmas monster pack (adult + kid + dog sizes)",
+    "why": "Matching family photos are a Christmas ritual",
+    "how": "Family + dog walk into frame as monsters",
+    "ip_safe": true
+   },
+   {
+    "variation": "Couple's 'his & hers' monsters in two colours",
+    "why": "Couples buy together; doubles order",
+    "how": "Couple on the couch, each in a different-colour monster",
+    "ip_safe": true
+   },
+   {
+    "variation": "Heated monster onesie",
+    "why": "Cold-aholics plus fun",
+    "how": "Snowy night, she zips into the heated monster",
+    "ip_safe": true
+   }
+  ]
+ },
+ "pattern_projectors": {
+  "summary": "Small projectors that throw patterns onto walls and ceilings. The moon/galaxy slide night light leads (276k average, 2.86M top) with 'DON'T show this to a BOOKWORM'; the Christmas mini-tree projector got 1.73M; the 'concept vs result' egg projector and Santa-hat lamp stayed small.",
+  "groups": [
+   {
+    "name": "Cosy / bookish",
+    "variations": [
+     "Plug-in slide night light · moon & galaxy"
+    ],
+    "accounts": 1,
+    "best_views": 2859949,
+    "note": "Best average - bookworm identity"
+   },
+   {
+    "name": "Christmas",
+    "variations": [
+     "Plug-in mini-tree projector · Christmas",
+     "Rotating egg projector · Christmas patterns",
+     "Hanging Santa-hat projector lamp"
+    ],
+    "accounts": 3,
+    "best_views": 1733945,
+    "note": "Tree projector 1.73M, egg 186k, Santa hat 3k"
+   },
+   {
+    "name": "Faith",
+    "variations": [
+     "Plug-in slide night light · Christian scenes"
+    ],
+    "accounts": 1,
+    "best_views": 782,
+    "note": "Christian scenes for kids - no reach yet"
+   }
+  ],
+  "rows": {
+   "slide_night_light_projector": {
+    "variants": "moon & galaxy ×1 · Christian scenes ×1",
+    "best": "moon & galaxy — 2.86M top views (cosmora117)",
+    "analysis": "Bookworm call-out works; the faith version has no reach; no custom photo slides."
+   },
+   "tree_plug_projector": {
+    "variants": "Christmas ×1",
+    "best": "Christmas — 1.73M top views (hollyglow.co)",
+    "analysis": "Christmas-lover hook works; one spike."
+   },
+   "rotating_egg_projector": {
+    "variants": "Christmas patterns ×1",
+    "best": "Christmas patterns — 186k top views (lumalaceus)",
+    "analysis": "Concept-vs-result is clever but small."
+   },
+   "santa_hat_projector_lamp": {
+    "variants": "Hanging Santa-hat projector lamp ×1",
+    "best": "Hanging Santa-hat projector lamp — 3k top views (holly.jigle)",
+    "analysis": "Tease reveal without text; no reach."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Advent slide set (24 Christmas slides, one per night)",
+    "why": "Turns December bedtime into a ritual for kids",
+    "how": "Kid swaps a slide each night, ceiling shows a new scene",
+    "ip_safe": true
+   },
+   {
+    "variation": "Custom photo slide (family or pet)",
+    "why": "Personal gift; see your dog on the ceiling",
+    "how": "Lights off, the dog's photo glows on the wall, dog barks at it",
+    "ip_safe": true
+   },
+   {
+    "variation": "Ocean / underwater slide pack for kids' rooms",
+    "why": "Calm sleep scenes for kids, year-round",
+    "how": "Bedroom becomes an aquarium, toddler reaches for the fish",
+    "ip_safe": true
+   }
+  ]
+ },
+ "personal_alarms": {
+  "summary": "An SOS wristband that alerts family phones. One Spanish-language seller, 252k top views (43k average) with a staged fall of an elderly mother who lives alone - fear plus family care.",
+  "groups": [
+   {
+    "name": "SOS wristband",
+    "variations": [
+     "SOS button wristband with phone alerts"
+    ],
+    "accounts": 1,
+    "best_views": 252029,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "sos_alert_wristband": {
+    "variants": "SOS button wristband with phone alerts ×1",
+    "best": "SOS button wristband with phone alerts — 252k top views (by.veloora)",
+    "analysis": "Fear of an elderly parent falling is strong; no English, no kids' or runner's version."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Women's night-run / walking safety version",
+    "why": "Women walking alone at night want quick help",
+    "how": "Dark street, she taps the band, phone alert on her sister's screen",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' first-walk-to-school band",
+    "why": "Parents give kids independence safely",
+    "how": "Kid walks to school, mom gets a 'I'm here' tap",
+    "ip_safe": true
+   },
+   {
+    "variation": "Grandparent gift box for Christmas",
+    "why": "Adult children buy peace of mind for parents",
+    "how": "Daughter straps it on her mom's wrist, both hug",
+    "ip_safe": true
+   }
+  ]
+ },
+ "pet_bags": {
+  "summary": "A character tote bag with a window for a small dog's face. One seller, 1.31M top views (29k average) using a fake store-collab queue: 'Small Dog Lovers x H&M'.",
+  "groups": [
+   {
+    "name": "Character face tote",
+    "variations": [
+     "Character tote with face window"
+    ],
+    "accounts": 1,
+    "best_views": 1310901,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "character_face_window_pet_tote": {
+    "variants": "Character tote with face window ×1",
+    "best": "Character tote with face window — 1.31M top views (thebuddybags1)",
+    "analysis": "Small-dog-owner identity works; the fake store collab is risky and the cute dog-face moment is underused."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Cat-ear tote for cat moms",
+    "why": "Cat owners are as big an audience as dog owners",
+    "how": "Cat pokes its head out of the window on a train",
+    "ip_safe": true
+   },
+   {
+    "variation": "Heated winter pet tote",
+    "why": "Small dogs shiver in winter",
+    "how": "Snowy street, dog's face cosy in the window",
+    "ip_safe": true
+   },
+   {
+    "variation": "Owner-and-pet matching tote + bandana",
+    "why": "Matching outfits for pet photos",
+    "how": "Woman and dog match on a city walk",
+    "ip_safe": true
+   }
+  ]
+ },
+ "pet_beds": {
+  "summary": "A dog bed shaped like a football stadium. One French-language seller, 568k top views (82k average) using 'the concept vs the result' - football-fan owners.",
+  "groups": [
+   {
+    "name": "Stadium bed",
+    "variations": [
+     "Football-stadium dog bed"
+    ],
+    "accounts": 1,
+    "best_views": 567696,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "stadium_dog_bed": {
+    "variants": "Football-stadium dog bed ×1",
+    "best": "Football-stadium dog bed — 568k top views (wouf.ball)",
+    "analysis": "Concept-vs-result + fan identity works; no other sports or US version."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "American-football field bed (team colours, no logos)",
+    "why": "US NFL fans treat their dog as part of game day",
+    "how": "Game day, dog lies on the 50-yard line bed in team colours",
+    "ip_safe": true
+   },
+   {
+    "variation": "Basketball-court cat bed",
+    "why": "Cat owners + basketball fans",
+    "how": "Cat jumps into the hoop-shaped bed",
+    "ip_safe": true
+   },
+   {
+    "variation": "Personalized 'name on the scoreboard' bed",
+    "why": "Personal gift for dog owners",
+    "how": "Close-up on the dog's name on the scoreboard, dog curls up",
+    "ip_safe": true
+   }
+  ]
+ },
+ "pet_car_seats": {
+  "summary": "A dragon-shaped plush car booster bed for pets. One seller, 88k top views (54k average) with a fake mall queue 'Cat mamas RUN to Zara'.",
+  "groups": [
+   {
+    "name": "Dragon booster",
+    "variations": [
+     "Dragon-shaped plush car booster bed"
+    ],
+    "accounts": 1,
+    "best_views": 88488,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "dragon_pet_car_bed": {
+    "variants": "Dragon-shaped plush car booster bed ×1",
+    "best": "Dragon-shaped plush car booster bed — 88k top views (dragonseats.co)",
+    "analysis": "Cute shape but weak reach; the car ride itself is not shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Shark-shaped booster for dogs",
+    "why": "Funny shape, dogs look 'eaten' - shareable",
+    "how": "Dog sits in the shark's mouth on a road trip, wind in the ears",
+    "ip_safe": true
+   },
+   {
+    "variation": "Heated winter car booster",
+    "why": "Cold car seats in winter",
+    "how": "Frosty car, pet curls up warm",
+    "ip_safe": true
+   },
+   {
+    "variation": "Holiday road-trip reindeer booster",
+    "why": "Christmas travel to family",
+    "how": "Snowy highway, dog in a reindeer booster",
+    "ip_safe": true
+   }
+  ]
+ },
+ "pet_hoodies": {
+  "summary": "Hoodies with a zip pouch on the chest that holds a cat or small dog. Nine sellers; the zip pouch with peek-hole leads (best 32.78M with 'Cat moms are hard to gift', and 733k / 620k averages) because pet-mom identity plus a cute face peeking out is irresistible; the open kangaroo pouch has smaller averages.",
+  "groups": [
+   {
+    "name": "Zip pouch with peek-hole",
+    "variations": [
+     "Zip pouch with peek-hole"
+    ],
+    "accounts": 7,
+    "best_views": 32775128,
+    "note": "7 sellers, all the biggest videos - cat/dog mom identity and plane/police skits"
+   },
+   {
+    "name": "Open kangaroo pouch",
+    "variations": [
+     "Open kangaroo pouch"
+    ],
+    "accounts": 2,
+    "best_views": 4834667,
+    "note": "2 sellers, weaker averages"
+   }
+  ],
+  "rows": {
+   "pet_pouch_hoodie": {
+    "variants": "Zip pouch with peek-hole ×7 · Open kangaroo pouch ×2",
+    "best": "Zip pouch with peek-hole — 32.78M top views (catpawcketclub)",
+    "analysis": "Pet-mom identity is proven across 9 sellers; nobody does a dad edition, matching pet sweater, heated pouch or embroidered pet name."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Dog-dad edition (bigger, darker colours)",
+    "why": "Men with small dogs are underserved and girlfriends gift them",
+    "how": "Big bearded guy zips a chihuahua into his hoodie; text 'Dog dads, this one's for you'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Matching pet sweater + owner hoodie set",
+    "why": "Matching = photo moment and higher order value",
+    "how": "Owner and cat in matching colours, cat pops out of the pouch",
+    "ip_safe": true
+   },
+   {
+    "variation": "Embroidered pet name above the pouch",
+    "why": "Personalization makes it a keepsake gift",
+    "how": "Close-up on 'MILO', the cat's head pops out under the name",
+    "ip_safe": true
+   },
+   {
+    "variation": "Heated pouch hoodie",
+    "why": "Warm for pet and owner in winter",
+    "how": "Snowy walk, dog snug in the warm pouch",
+    "ip_safe": true
+   }
+  ]
+ },
+ "pet_spheres": {
+  "summary": "A collapsible mesh ball a cat can roll around in outside. Two sellers; the best got 2.59M top views (328k average) with 'the problem (cat escapes the yard) vs the solution' - funny and a real pain.",
+  "groups": [
+   {
+    "name": "Rolling mesh ball",
+    "variations": [
+     "Collapsible rolling mesh pet ball"
+    ],
+    "accounts": 2,
+    "best_views": 2589644,
+    "note": "Two sellers, problem/solution and concept/product"
+   }
+  ],
+  "rows": {
+   "rolling_mesh_pet_ball": {
+    "variants": "Collapsible rolling mesh pet ball ×2",
+    "best": "Collapsible rolling mesh pet ball — 2.59M top views (zoomieball1)",
+    "analysis": "Problem/solution with an escaping cat works; no winter, window or small-dog version."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Winter 'snow globe' version with clear cover",
+    "why": "Indoor cats can enjoy snow safely",
+    "how": "Cat rolls through snow inside a clear ball, owner laughs",
+    "ip_safe": true
+   },
+   {
+    "variation": "Window-mounted 'catio bubble'",
+    "why": "Apartment cats get outside views without going out",
+    "how": "Cat sits in a bubble on the window, watching birds",
+    "ip_safe": true
+   },
+   {
+    "variation": "Small dog / rabbit size",
+    "why": "Same idea for other small pets",
+    "how": "Bunny rolling through the garden in a mini ball",
+    "ip_safe": true
+   }
+  ]
+ },
+ "pet_trolleys": {
+  "summary": "A rolling cat carrier with a clear dome. One seller, 330k top views (57k average): 'The best purchase I've made as a cat mom'.",
+  "groups": [
+   {
+    "name": "Clear-dome trolley",
+    "variations": [
+     "Clear-dome rolling cat carrier"
+    ],
+    "accounts": 1,
+    "best_views": 330456,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "clear_dome_cat_trolley": {
+    "variants": "Clear-dome rolling cat carrier ×1",
+    "best": "Clear-dome rolling cat carrier — 330k top views (cattytrip)",
+    "analysis": "Cat-mom testimonial works mildly; the travel/vet pain is not shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Vet-visit calm edition (covered dome + pheromone pocket)",
+    "why": "Vet trips stress cats and owners",
+    "how": "Cat calm in the trolley in the vet lobby, other cats hissing",
+    "ip_safe": true
+   },
+   {
+    "variation": "Two-cat double trolley",
+    "why": "Multi-cat homes travel together",
+    "how": "Two cats side by side under the dome at the airport",
+    "ip_safe": true
+   },
+   {
+    "variation": "Small-dog airline-size version",
+    "why": "Dog owners fly with small dogs",
+    "how": "Airport walk, dog's face in the dome, people wave",
+    "ip_safe": true
+   }
+  ]
+ },
+ "pixel_lights": {
+  "summary": "App-controlled LED curtains and tree kits that play animations. The LED curtain leads (1.29M average, 19.10M top) with 'Christmas Decor in 1865 vs 2026' - tangled lights vs one-tap animated windows; tree kits got 3.04M / 2.37M; licensed versions (club crests, Snoopy) barely moved.",
+  "groups": [
+   {
+    "name": "Christmas animations",
+    "variations": [
+     "LED curtain · Christmas animations",
+     "Christmas-tree LED kit · Christmas animations"
+    ],
+    "accounts": 5,
+    "best_views": 19100000,
+    "note": "Curtain and tree kits - the 'old vs 2026' contrast"
+   },
+   {
+    "name": "Licensed themes",
+    "variations": [
+     "LED curtain · football club crests",
+     "Christmas-tree LED kit · Snoopy"
+    ],
+    "accounts": 2,
+    "best_views": 62000,
+    "note": "Football crests and Snoopy - near zero, IP risk"
+   }
+  ],
+  "rows": {
+   "app_led_curtain_lights": {
+    "variants": "Christmas animations ×3 · football club crests ×1",
+    "best": "Christmas animations — 19.10M top views (tryfestilight)",
+    "analysis": "Old-vs-2026 contrast is proven; no family-name or year-round holiday packs."
+   },
+   "app_christmas_tree_led_kit": {
+    "variants": "Christmas animations ×2 · Snoopy ×1",
+    "best": "Christmas animations — 3.04M top views (jinglebead)",
+    "analysis": "Store-gasp and contrast both work; no curtain + tree sync bundle."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Family-name / personal message pack ('The Johnsons')",
+    "why": "Personal display beats the neighbours; first-Christmas messages",
+    "how": "Car pulls up, window spells the family name, kids scream",
+    "ip_safe": true
+   },
+   {
+    "variation": "Year-round holiday bundle (July 4, Halloween, game day)",
+    "why": "One purchase used all year - justifies price",
+    "how": "Same window cycles from fireworks to pumpkins to snowflakes",
+    "ip_safe": true
+   },
+   {
+    "variation": "Window-size apartment curtain for renters",
+    "why": "Renters can't decorate outside; easy window version",
+    "how": "Small apartment window lights up the city street",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' bedroom 'Santa tracker' mini panel",
+    "why": "Christmas Eve excitement for kids",
+    "how": "Kid in bed watches Santa's sleigh cross the panel",
+    "ip_safe": true
+   }
+  ]
+ },
+ "plate_covers": {
+  "summary": "Devices that hide car/motorbike number plates (remote blackout cover, anti-camera film). Massive reach (106.65M and 43.30M top videos) but tiny averages (28k / 6k), and the products are illegal in most places - not a direction to copy.",
+  "groups": [
+   {
+    "name": "Plate concealers",
+    "variations": [
+     "Remote blackout plate cover",
+     "Anti-camera plate film"
+    ],
+    "accounts": 2,
+    "best_views": 106649918,
+    "note": "Huge spikes, illegal use - avoid"
+   }
+  ],
+  "rows": {
+   "remote_plate_blackout_cover": {
+    "variants": "Remote blackout plate cover ×1",
+    "best": "Remote blackout plate cover — 106.65M top views (bl4ckoutplates)",
+    "analysis": "Rebel biker hook gets reach, but the product is illegal on roads."
+   },
+   "anti_camera_plate_film": {
+    "variants": "Anti-camera plate film ×1",
+    "best": "Anti-camera plate film — 43.30M top views (alite.it)",
+    "analysis": "Camera-evasion trick; legally risky and banned in ads."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Show-car plate cover for parked car meets (legal display)",
+    "why": "Car-meet culture wants custom plates for photos, legal when parked",
+    "how": "Car meet, he swaps the plate for a custom display for photos",
+    "ip_safe": true
+   },
+   {
+    "variation": "Personalized novelty front plate (non-required states)",
+    "why": "Car guys love custom text on the front",
+    "how": "Close-up of a plate reading his nickname, friends laugh",
+    "ip_safe": true
+   },
+   {
+    "variation": "Motorcycle LED plate frame (legal light)",
+    "why": "Bikers want style without breaking the law",
+    "how": "Night ride, plate frame glows cleanly",
+    "ip_safe": true
+   }
+  ]
+ },
+ "plush_bags": {
+  "summary": "A plush backpack that looks like a real puppy. One seller, 3.27M top views (8k average): a girl at an airport gate with what looks like a real golden retriever plus 'Dog girls hard to gift'.",
+  "groups": [
+   {
+    "name": "Realistic dog",
+    "variations": [
+     "Realistic plush dog backpack"
+    ],
+    "accounts": 1,
+    "best_views": 3267515,
+    "note": "Single seller, golden retriever"
+   }
+  ],
+  "rows": {
+   "realistic_dog_plush_backpack": {
+    "variants": "Realistic plush dog backpack ×1",
+    "best": "Realistic plush dog backpack — 3.27M top views (pupacks)",
+    "analysis": "'Is it real?' illusion + dog-girl identity works once; only one breed."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Choose-your-breed (dachshund, frenchie, husky)",
+    "why": "Owners want THEIR breed; a breed call-out is a new audience each time",
+    "how": "Text 'Do NOT show this to a dachshund mom', bag looks like her real dog",
+    "ip_safe": true
+   },
+   {
+    "variation": "Realistic cat plush bag",
+    "why": "Cat moms are as big an audience as dog girls",
+    "how": "Girl on a train strokes a 'cat' that turns out to be a bag",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' mini puppy bag for school",
+    "why": "Parents gift kids a 'pet' they can take to school",
+    "how": "Kid walks into class, classmates swarm the 'puppy'",
+    "ip_safe": true
+   }
+  ]
+ },
+ "posture_bras": {
+  "summary": "A pull-over posture-corrector bra. Nine sellers across languages; the best videos hit 9.87M and 9.47M, and the best average is 692k with 'Your back has 30 years on your actual age' - an age/posture insecurity line plus a simple pull-over demo.",
+  "groups": [
+   {
+    "name": "Pull-over posture bra",
+    "variations": [
+     "Pull-over posture bra with front hook band"
+    ],
+    "accounts": 9,
+    "best_views": 9868414,
+    "note": "9 sellers; insecurity hooks (age, sagging, hunching, pregnancy)"
+   }
+  ],
+  "rows": {
+   "pullover_posture_bra": {
+    "variants": "Pull-over posture bra with front hook band ×9",
+    "best": "Pull-over posture bra with front hook band — 9.87M top views (gercekform)",
+    "analysis": "Body-insecurity hooks work at scale; nobody does plus-size, a mother-daughter pack or an outerwear-safe cami."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Plus-size / large-cup line",
+    "why": "Larger-chest women have the most back pain and few options",
+    "how": "Woman holds up a large-cup version: 'Finally one in my size'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Mother-daughter 2-pack",
+    "why": "Daughters buy for mothers; gift + shared habit",
+    "how": "Mom and daughter pull them on together, both stand taller",
+    "ip_safe": true
+   },
+   {
+    "variation": "Posture cami with cross-back straps (wear as a top)",
+    "why": "Can be worn visibly at the gym or under a cardigan",
+    "how": "Desk worker slouching, puts it on, sits straight on a Zoom call",
+    "ip_safe": true
+   },
+   {
+    "variation": "Nursing / postpartum version",
+    "why": "New moms hunch while feeding; real pain",
+    "how": "Mom feeding a baby at 3am, back straight",
+    "ip_safe": true
+   }
+  ]
+ },
+ "pov_cameras": {
+  "summary": "Wearable cameras built into earbuds or ski goggles. The camera earbuds lead on average (345k, 1.20M top) with 'Do not let your barber see this' - a working-pro identity; the ski goggles got the bigger single video (1.80M) with 'Don't show this to ski dad'.",
+  "groups": [
+   {
+    "name": "Camera earbuds",
+    "variations": [
+     "Camera earbuds"
+    ],
+    "accounts": 3,
+    "best_views": 1200000,
+    "note": "3 sellers; barber hook works, sports versions weak"
+   },
+   {
+    "name": "Camera goggles",
+    "variations": [
+     "Camera ski goggles"
+    ],
+    "accounts": 1,
+    "best_views": 1797268,
+    "note": "Ski-dad gift hook, one spike"
+   }
+  ],
+  "rows": {
+   "camera_earbuds": {
+    "variants": "Camera earbuds ×3",
+    "best": "Camera earbuds — 1.20M top views (clippercutzcam)",
+    "analysis": "Barber POV is the proven angle; tennis/volleyball hooks flopped."
+   },
+   "camera_ski_goggles": {
+    "variants": "Camera ski goggles ×1",
+    "best": "Camera ski goggles — 1.80M top views (snowview_co)",
+    "analysis": "Ski-dad gift works once; family ski-trip content unused."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Camera sunglasses for fishing dads",
+    "why": "Dads want to film the big catch hands-free; wives gift it",
+    "how": "Fish pulls the line, POV from the glasses, dad shouts",
+    "ip_safe": true
+   },
+   {
+    "variation": "Clip-on dog-collar camera",
+    "why": "Owners love seeing their dog's day; funny POV clips",
+    "how": "Dog-POV run through the park, owner laughs at the footage",
+    "ip_safe": true
+   },
+   {
+    "variation": "Tattoo-artist / nail-tech POV earbuds",
+    "why": "Same 'working pro' hook as barbers - content creators",
+    "how": "Nail tech films the full set from her POV",
+    "ip_safe": true
+   }
+  ]
+ },
+ "prank_tees": {
+  "summary": "Golf tees that puff a cloud of powder when hit. One seller, 564k top views (6k average) with a friend-dare 'I'll buy them if you will'.",
+  "groups": [
+   {
+    "name": "Exploding tees",
+    "variations": [
+     "Exploding powder golf tees"
+    ],
+    "accounts": 1,
+    "best_views": 563751,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "exploding_golf_tees": {
+    "variants": "Exploding powder golf tees ×1",
+    "best": "Exploding powder golf tees — 564k top views (teeblastco)",
+    "analysis": "Dare hook works once; the actual prank moment on a buddy is not shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Gender-reveal colour tees (pink/blue)",
+    "why": "Golf-dad gender reveals are a real trend",
+    "how": "Dad swings, blue powder explodes, family cheers",
+    "ip_safe": true
+   },
+   {
+    "variation": "Golf buddy prank gift box (tees + exploding balls)",
+    "why": "Funny gift for golf friends, white-elephant",
+    "how": "Buddy hits the ball, it explodes, group falls over laughing",
+    "ip_safe": true
+   },
+   {
+    "variation": "Bachelor-party golf pack",
+    "why": "Groups of friends buy for the groom's golf day",
+    "how": "Groom tees off, cloud of smoke, friends cheer",
+    "ip_safe": true
+   }
+  ]
+ },
+ "privacy_film": {
+  "summary": "Window film that switches from clear to frosted with a remote. Two sellers: the fake warehouse-club reveal got 1.03M top views (100k average), the showroom remote demo 547k (127k average) - the instant clear-to-frosted switch is the payoff.",
+  "groups": [
+   {
+    "name": "Remote frosted film",
+    "variations": [
+     "Remote frosted-to-clear film"
+    ],
+    "accounts": 2,
+    "best_views": 1029948,
+    "note": "Two sellers, same demo"
+   }
+  ],
+  "rows": {
+   "remote_smart_privacy_film": {
+    "variants": "Remote frosted-to-clear film ×2",
+    "best": "Remote frosted-to-clear film — 1.03M top views (clearswitch.us)",
+    "analysis": "Instant switch demo works; no room-specific pain (bathroom, home office) is shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Bathroom window kit",
+    "why": "The most common privacy pain at home",
+    "how": "Shower steam, neighbour's window opposite, tap - glass frosts",
+    "ip_safe": true
+   },
+   {
+    "variation": "Home-office 'Zoom background' glass",
+    "why": "WFH people want privacy without blackout",
+    "how": "Video call starts, he taps, the glass wall frosts behind him",
+    "ip_safe": true
+   },
+   {
+    "variation": "Ground-floor apartment street-window kit",
+    "why": "City renters with street-level windows feel watched",
+    "how": "People walking past, she taps, room hidden",
+    "ip_safe": true
+   }
+  ]
+ },
+ "puzzle_tables": {
+  "summary": "A rolling puzzle table that tilts and adjusts height. One seller, 4k top views - the friend-dare store hook did not work here.",
+  "groups": [
+   {
+    "name": "Tilt puzzle table",
+    "variations": [
+     "Rolling tilt-and-height puzzle table"
+    ],
+    "accounts": 1,
+    "best_views": 4064,
+    "note": "Single seller, no reach"
+   }
+  ],
+  "rows": {
+   "tilting_puzzle_table": {
+    "variants": "Rolling tilt-and-height puzzle table ×1",
+    "best": "Rolling tilt-and-height puzzle table — 4k top views (aquawish.us)",
+    "analysis": "No reach; the satisfying puzzle progress and gift-for-grandma angle are missing."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Grandma's puzzle station gift edition",
+    "why": "Grandkids buy for puzzle-loving grandparents",
+    "how": "Grandma rolls the table to her chair, tilts it, smiles",
+    "ip_safe": true
+   },
+   {
+    "variation": "Couple's puzzle date-night table with lights",
+    "why": "Couples doing puzzles together in winter",
+    "how": "Couple at night with wine, LED edge lights on the puzzle",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' Lego / craft tilt table",
+    "why": "Parents want mess off the floor",
+    "how": "Kid building, mom rolls the table away, floor clean",
+    "ip_safe": true
+   }
+  ]
+ },
+ "rc_mowers": {
+  "summary": "Remote-control model farm machines that actually cut grass. The model tractor with folding wing decks leads (3.14M average, 13.00M top) with the spouse meme 'Babe: stop buying stupid stuff, you're 24'; the combine-harvester version got 4.36M with 'Lawn mowers in 2006 vs 2026'.",
+  "groups": [
+   {
+    "name": "Farm machine models",
+    "variations": [
+     "Model tractor with folding wing decks",
+     "Model combine harvester"
+    ],
+    "accounts": 2,
+    "best_views": 13000000,
+    "note": "Tractor and combine - spouse meme and then-vs-now"
+   }
+  ],
+  "rows": {
+   "rc_model_mower": {
+    "variants": "Model tractor with folding wing decks ×1 · Model combine harvester ×1",
+    "best": "Model tractor with folding wing decks — 13M top views (grassworks.co)",
+    "analysis": "Spouse meme + toy-that-really-works is massive; no snow version, father-son set or display model."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Snow-plow attachment version",
+    "why": "Turns a summer toy into a winter tool - and fits the Christmas window",
+    "how": "Snowy driveway, dad clears it with an RC plow from the porch with coffee",
+    "ip_safe": true
+   },
+   {
+    "variation": "Father-son matching set (big RC + kids' version)",
+    "why": "Dad and kid 'mowing' together is wholesome and a double sale",
+    "how": "Dad and son side by side with remotes, two machines cutting",
+    "ip_safe": true
+   },
+   {
+    "variation": "Red barn tractor with towable gift trailer",
+    "why": "Christmas morning: tractor delivers presents",
+    "how": "Tractor pulls a trailer of gifts across the living room",
+    "ip_safe": true
+   },
+   {
+    "variation": "Collector display model with lights",
+    "why": "Farm-equipment fans collect models",
+    "how": "Lit display shelf in a man-cave, tractor headlights glow",
+    "ip_safe": true
+   }
+  ]
+ },
+ "reactive_clothing": {
+  "summary": "Jackets and balaclavas whose print changes when wet or warm. The water-reactive splash jacket leads on average (1.30M and 875k averages, 6.54M top) because rain revealing a hidden pattern is pure magic on video; the leopard-reveal version hit 13.53M once and the heat balaclava 1.66M.",
+  "groups": [
+   {
+    "name": "Hidden-print jackets",
+    "variations": [
+     "Water-reactive jacket · paint-splash reveal",
+     "Water-reactive jacket · leopard reveal"
+    ],
+    "accounts": 5,
+    "best_views": 13528936,
+    "note": "5 sellers; rain reveal is the whole hook"
+   },
+   {
+    "name": "Heat-reactive accessories",
+    "variations": [
+     "Heat-reactive balaclava"
+    ],
+    "accounts": 1,
+    "best_views": 1655324,
+    "note": "Balaclava, think-vs-actually hook"
+   }
+  ],
+  "rows": {
+   "water_reactive_jacket": {
+    "variants": "paint-splash reveal ×4 · leopard reveal ×1",
+    "best": "leopard reveal — 13.53M top views (buchan)",
+    "analysis": "Reveal-on-water is proven; no kids, dog or matching sets."
+   },
+   "heat_reactive_balaclava": {
+    "variants": "Heat-reactive balaclava ×1",
+    "best": "Heat-reactive balaclava — 1.66M top views (vaprmask.store)",
+    "analysis": "Contrast hook works once; only one design."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Kids' rain jacket with hidden dinosaurs/stars",
+    "why": "Kids love magic, parents love rain gear that kids want to wear",
+    "how": "Kid jumps in a puddle, dinosaurs appear on the coat, kid screams with joy",
+    "ip_safe": true
+   },
+   {
+    "variation": "Dog raincoat with hidden pattern",
+    "why": "Dog owners love cute reveals on walks",
+    "how": "Rainy walk, paw prints appear on the dog's coat",
+    "ip_safe": true
+   },
+   {
+    "variation": "Hidden-message umbrella ('Let it rain' appears when wet)",
+    "why": "Cheap impulse gift, same magic",
+    "how": "Umbrella opens in the rain, words appear",
+    "ip_safe": true
+   },
+   {
+    "variation": "Matching parent + kid rain set",
+    "why": "Matching outfits, double sale",
+    "how": "Mom and kid in the rain, both jackets reveal the same print",
+    "ip_safe": true
+   }
+  ]
+ },
+ "reflective_clothing": {
+  "summary": "A hoodie and tracksuit with reflective piping that flashes under light. One seller, 58k top views (10k average) with a moody night flash shot and no text.",
+  "groups": [
+   {
+    "name": "Reflective piping",
+    "variations": [
+     "Reflective-piping hoodie & tracksuit"
+    ],
+    "accounts": 1,
+    "best_views": 57700,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "reflective_piping_tracksuit": {
+    "variants": "Reflective-piping hoodie & tracksuit ×1",
+    "best": "Reflective-piping hoodie & tracksuit — 58k top views (aivwear)",
+    "analysis": "Nice flash effect but no hook or identity; low reach."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Night-runner safety hoodie",
+    "why": "Runners in winter darkness need visibility",
+    "how": "Car headlights catch the runner, hoodie glows",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' walk-to-school reflective jacket",
+    "why": "Parents worry about dark mornings",
+    "how": "Kids cross the street, jackets glow in headlights",
+    "ip_safe": true
+   },
+   {
+    "variation": "Dog-walker matching reflective set (owner + dog vest)",
+    "why": "Dark evening dog walks",
+    "how": "Night walk, owner and dog both shine in headlights",
+    "ip_safe": true
+   }
+  ]
+ },
+ "retro_phones": {
+  "summary": "Retro-style handsets for modern phones. The plug-in handset has 3 sellers and the biggest video (8.93M) with 80s-kid nostalgia, while the 'vintage girl' angle gives the best average (202k) and the pink Bluetooth desk phone got 5.06M.",
+  "groups": [
+   {
+    "name": "Plug-in handset",
+    "variations": [
+     "Plug-in retro handset"
+    ],
+    "accounts": 3,
+    "best_views": 8926781,
+    "note": "3 sellers; 80s-kid nostalgia + vintage girlies"
+   },
+   {
+    "name": "Desk phone",
+    "variations": [
+     "Bluetooth desk phone"
+    ],
+    "accounts": 1,
+    "best_views": 5060637,
+    "note": "Pink aesthetic room, 5.06M top"
+   }
+  ],
+  "rows": {
+   "plug_in_retro_handset": {
+    "variants": "Plug-in retro handset ×3",
+    "best": "Plug-in retro handset — 8.93M top views (getdialbop)",
+    "analysis": "Nostalgia + store-gasp works for two audiences; no gift sets or colours by identity."
+   },
+   "bluetooth_retro_desk_phone": {
+    "variants": "Bluetooth desk phone ×1",
+    "best": "Bluetooth desk phone — 5.06M top views (pinkiephones)",
+    "analysis": "Pink aesthetic sells; only pink."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "WFH 'office line' desk-phone edition (black/cream)",
+    "why": "Remote workers want a 'real' work phone and to protect neck from cradling",
+    "how": "Zoom call, she picks up a cream rotary-style handset",
+    "ip_safe": true
+   },
+   {
+    "variation": "Grandparent-friendly big-button handset",
+    "why": "Seniors struggle holding smartphones to the ear",
+    "how": "Grandpa calls the grandkids on a familiar handset, grins",
+    "ip_safe": true
+   },
+   {
+    "variation": "Christmas red 'hotline to Santa' edition",
+    "why": "Kids 'call Santa' - Christmas magic for parents",
+    "how": "Kid picks up the red phone, 'Santa' answers",
+    "ip_safe": true
+   }
+  ]
+ },
+ "retro_speakers": {
+  "summary": "A cassette-shaped Bluetooth speaker. One seller, no measurable views - the 'don't let your girlfriend see this' hook did not land.",
+  "groups": [
+   {
+    "name": "Cassette speaker",
+    "variations": [
+     "Cassette-style Bluetooth speaker"
+    ],
+    "accounts": 1,
+    "best_views": 401,
+    "note": "Single seller, no reach"
+   }
+  ],
+  "rows": {
+   "cassette_bluetooth_speaker": {
+    "variants": "Cassette-style Bluetooth speaker ×1",
+    "best": "Cassette-style Bluetooth speaker — 401 top views (theofficialtalksy)",
+    "analysis": "No reach; nostalgia not played up (80s/90s kids)."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "'Mixtape' gift edition with custom playlist card",
+    "why": "Romantic retro gift - 'I made you a mixtape'",
+    "how": "Boyfriend hands her a cassette speaker, the playlist card reads their song",
+    "ip_safe": true
+   },
+   {
+    "variation": "Boombox-size party version",
+    "why": "80s/90s nostalgia for dads 35-50",
+    "how": "Backyard BBQ, dad lifts a mini boombox on his shoulder",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pastel colour collectible set",
+    "why": "Aesthetic room buyers collect colours",
+    "how": "Three pastel speakers on a shelf, music changes",
+    "ip_safe": true
+   }
+  ]
+ },
+ "scene_projectors": {
+  "summary": "Dome projectors that fill a room with a full themed scene. Fourteen sellers; princesses/fairy tales have the best average (680k, 6.10M top) and dark fantasy the biggest video (7.96M), with dinosaurs close (7.36M) - most winners use 'the problem (parent on a ladder) vs the solution' or 'decor in 1995 vs 2026'.",
+  "groups": [
+   {
+    "name": "Licensed fandoms",
+    "variations": [
+     "Princesses & fairy tales",
+     "Call of Duty Zombies",
+     "Minecraft",
+     "Harry Potter"
+    ],
+    "accounts": 5,
+    "best_views": 6100000,
+    "note": "Princesses (680k avg), COD, Minecraft, Potter - strong but IP-risky"
+   },
+   {
+    "name": "IP-free kids' worlds",
+    "variations": [
+     "Dinosaurs"
+    ],
+    "accounts": 2,
+    "best_views": 7360929,
+    "note": "Dinosaurs, two sellers up to 7.36M"
+   },
+   {
+    "name": "Fantasy & adult cosy",
+    "variations": [
+     "Dark fantasy"
+    ],
+    "accounts": 2,
+    "best_views": 7964708,
+    "note": "Dark fantasy 7.96M - adults buy for themselves"
+   },
+   {
+    "name": "Sports stadiums",
+    "variations": [
+     "Soccer stadium",
+     "American football stadium"
+    ],
+    "accounts": 3,
+    "best_views": 2308477,
+    "note": "Soccer and American football fan rooms, up to 2.31M"
+   },
+   {
+    "name": "Holiday",
+    "variations": [
+     "Christmas"
+    ],
+    "accounts": 2,
+    "best_views": 1123620,
+    "note": "Christmas - weak so far (1.12M top, near-zero average)"
+   }
+  ],
+  "rows": {
+   "dome_scene_projector": {
+    "variants": "Princesses & fairy tales ×2 · Dark fantasy ×2 · Dinosaurs ×2 · American football stadium ×2 · Christmas ×2 · Call of Duty Zombies ×1 · Soccer stadium ×1 · Minecraft ×1 · Harry Potter ×1",
+    "best": "Dark fantasy — 7.96M top views (midglows)",
+    "analysis": "Problem/solution and 'decor then vs now' are proven; space, ocean, custom-name and a strong Christmas Eve concept are still open."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Outer-space / planets theme",
+    "why": "Huge kids' interest, IP-free, bedtime calm",
+    "how": "Dad on a ladder sticking glow stars, vs one tap and the room is a galaxy",
+    "ip_safe": true
+   },
+   {
+    "variation": "Underwater ocean world",
+    "why": "Calming for kids and adults; sea-life lovers",
+    "how": "Toddler in bed reaches for whales floating across the walls",
+    "ip_safe": true
+   },
+   {
+    "variation": "Custom name disc ('Emma's castle')",
+    "why": "Personalization kills generic-gift guilt",
+    "how": "Lights off, 'Emma's Kingdom' appears on the castle gate, girl gasps",
+    "ip_safe": true
+   },
+   {
+    "variation": "Christmas Eve 'Santa's sky' with countdown",
+    "why": "Turns Christmas Eve into a ritual; fixes the weak Christmas results",
+    "how": "Kids in pajamas watch the sleigh cross the ceiling at bedtime",
+    "ip_safe": true
+   },
+   {
+    "variation": "Cosy 'starry library' reading nook (dark-academia, IP-free)",
+    "why": "Proven by dark fantasy - bookish adults self-buy",
+    "how": "Woman with a book and tea, the room becomes a starry library",
+    "ip_safe": true
+   }
+  ]
+ },
+ "seasonal_props": {
+  "summary": "Holiday yard props: a Santa that climbs an LED ladder, a flying witch, and an RC spider with a baby head. The climbing Santa wins clearly (432k average, 4.60M top) with 'Christmas decor in 1960 vs this year' - a moving, funny prop beats static décor.",
+  "groups": [
+   {
+    "name": "Christmas motion props",
+    "variations": [
+     "Climbing Santa on LED ladder"
+    ],
+    "accounts": 1,
+    "best_views": 4600000,
+    "note": "Best by far - motion + then-vs-now"
+   },
+   {
+    "name": "Halloween scares",
+    "variations": [
+     "Witch-on-broomstick lawn prop",
+     "Remote-control baby-head spider"
+    ],
+    "accounts": 2,
+    "best_views": 315000,
+    "note": "Witch 315k, spider 76k - neighbour/prank hooks"
+   }
+  ],
+  "rows": {
+   "climbing_santa_led_ladder": {
+    "variants": "Climbing Santa on LED ladder ×1",
+    "best": "Climbing Santa on LED ladder — 4.60M top views (jollyladdertm)",
+    "analysis": "Moving Santa + contrast is proven; no other climbers or roof scene."
+   },
+   "flying_witch_prop": {
+    "variants": "Witch-on-broomstick lawn prop ×1",
+    "best": "Witch-on-broomstick lawn prop — 315k top views (WitchBorneus)",
+    "analysis": "Halloween-lover hook works mildly."
+   },
+   "rc_spider_prop": {
+    "variants": "Remote-control baby-head spider ×1",
+    "best": "Remote-control baby-head spider — 76k top views (Spiderscare)",
+    "analysis": "Prank idea, low reach."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Climbing dog in a Santa hat on the ladder",
+    "why": "Pet owners + Christmas lovers; cute and shareable",
+    "how": "Neighbour kids point at a little dog climbing to the roof",
+    "ip_safe": true
+   },
+   {
+    "variation": "Window 'Santa caught in the act' silhouette kit",
+    "why": "Kids' Christmas magic; parents film the reaction",
+    "how": "Kids sneak downstairs and see Santa's shadow in the window",
+    "ip_safe": true
+   },
+   {
+    "variation": "Green grumpy climber character (our own)",
+    "why": "Christmas grump humour without IP; ties to HeatGrump",
+    "how": "Grumpy green guy climbs the ladder to steal lights, neighbours laugh",
+    "ip_safe": true
+   },
+   {
+    "variation": "Climbing skeleton on LED ladder (Halloween)",
+    "why": "Same moving-prop mechanic for the second season",
+    "how": "Dark yard, skeleton climbs toward a window, trick-or-treaters scream",
+    "ip_safe": true
+   }
+  ]
+ },
+ "shapewear": {
+  "summary": "Shaping briefs and bodysuits. Weak reach: the high-waist briefs got 214k top views (72k average) with 'Don't show this to a mom with a tummy'; the bodysuit got 4k.",
+  "groups": [
+   {
+    "name": "Shaping basics",
+    "variations": [
+     "High-waist shaping briefs",
+     "Shaping tank bodysuit with shorts"
+    ],
+    "accounts": 2,
+    "best_views": 214415,
+    "note": "Two sellers, both small"
+   }
+  ],
+  "rows": {
+   "high_waist_shaping_briefs": {
+    "variants": "High-waist shaping briefs ×1",
+    "best": "High-waist shaping briefs — 214k top views (sculpte_co)",
+    "analysis": "Mom-tummy identity hook works mildly; before/after is not clear."
+   },
+   "shaping_bodysuit_shorts": {
+    "variants": "Shaping tank bodysuit with shorts ×1",
+    "best": "Shaping tank bodysuit with shorts — 4k top views (makefullfashion)",
+    "analysis": "Talking head, no hook; no reach."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Holiday-party dress shapewear (seamless under sequins)",
+    "why": "Party season - women want to feel confident in fitted dresses",
+    "how": "Same dress before/after, she spins at the party",
+    "ip_safe": true
+   },
+   {
+    "variation": "Postpartum recovery shorts",
+    "why": "New moms want support and confidence",
+    "how": "Mom with baby in arms, jeans finally button",
+    "ip_safe": true
+   },
+   {
+    "variation": "Bridal / bridesmaid shapewear pack",
+    "why": "Weddings - group purchase",
+    "how": "Bridesmaids zip dresses, all smooth, high-fives",
+    "ip_safe": true
+   }
+  ]
+ },
+ "ski_lights": {
+  "summary": "Stick-on LED strip kits for skis and snowboards. The ski kit leads (665k average, 1.32M top) with gift hooks like 'The perfect gift for a skier doesn't exis-' and a fainting gag; the snowboard kit got 675k with concept-vs-result.",
+  "groups": [
+   {
+    "name": "Ski kit",
+    "variations": [
+     "LED strip kit · skis"
+    ],
+    "accounts": 2,
+    "best_views": 1316161,
+    "note": "Two sellers, gift-for-skier hooks, best average"
+   },
+   {
+    "name": "Snowboard kit",
+    "variations": [
+     "LED strip kit · snowboards"
+    ],
+    "accounts": 1,
+    "best_views": 674921,
+    "note": "One seller, concept vs result"
+   }
+  ],
+  "rows": {
+   "ski_led_strip_kit": {
+    "variants": "skis ×2",
+    "best": "skis — 1.32M top views (slopelit)",
+    "analysis": "Gift-for-skier hooks work; the night-skiing payoff is underused and there is no couple/kids set."
+   },
+   "snowboard_led_strip_kit": {
+    "variants": "snowboards ×1",
+    "best": "snowboards — 675k top views (ledboards2026)",
+    "analysis": "DIY concept-vs-result works mildly; no rider-identity hook."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Matching duo kit (two colours) for couples",
+    "why": "Couples ski together; double sale and a cute night shot",
+    "how": "Two light trails, blue and pink, carve down a dark slope side by side",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' helmet + ski glow safety kit",
+    "why": "Parents want to spot kids on the slope at dusk",
+    "how": "Mom spots her kid's glowing skis in a crowd, relieved",
+    "ip_safe": true
+   },
+   {
+    "variation": "Sled / snow-tube glow kit",
+    "why": "Families sled at night after work - bigger, non-skier market",
+    "how": "Kids fly down a dark hill on glowing sleds, dad cheers",
+    "ip_safe": true
+   },
+   {
+    "variation": "Music-reactive app colour mode",
+    "why": "Party/après-ski vibe for young riders",
+    "how": "Lights pulse to the beat in the lift line",
+    "ip_safe": true
+   }
+  ]
+ },
+ "ski_masks": {
+  "summary": "Funny face-print balaclavas for skiing. Nine sellers; animal faces lead on average (2.14M, 24.05M top) and big-grin faces have the biggest video (33.58M), all with the same chairlift POV 'you finally found the perfect ski mask' - the absurd face reveal on the lift is the hook.",
+  "groups": [
+   {
+    "name": "Funny faces (IP-free)",
+    "variations": [
+     "Printed balaclava · animal faces",
+     "Printed balaclava · baby face",
+     "Printed balaclava · big-grin faces"
+    ],
+    "accounts": 4,
+    "best_views": 33583675,
+    "note": "Animal, baby, big-grin - best average (2.14M) and biggest video (33.58M)"
+   },
+   {
+    "name": "Toy & doll heads",
+    "variations": [
+     "Knitted balaclava · yellow toy-figure head",
+     "Knitted balaclava · makeup doll face"
+    ],
+    "accounts": 4,
+    "best_views": 32655925,
+    "note": "Yellow toy-figure (32.66M, close to a famous toy brand) and makeup doll for 'skier girlies'"
+   },
+   {
+    "name": "Celebrity / politician",
+    "variations": [
+     "Printed balaclava · Trump face"
+    ],
+    "accounts": 1,
+    "best_views": 2532761,
+    "note": "Trump face - real person, risky"
+   }
+  ],
+  "rows": {
+   "novelty_face_balaclava": {
+    "variants": "yellow toy-figure head ×3 · animal faces ×2 · baby face ×1 · big-grin faces ×1 · makeup doll face ×1 · Trump face ×1",
+    "best": "big-grin faces — 33.58M top views (smileyslopesco)",
+    "analysis": "Chairlift POV face-reveal is a proven formula; no squad packs, holiday faces, pet faces or heated versions yet."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Santa-beard and reindeer face edition",
+    "why": "Christmas ski trips and holiday group photos",
+    "how": "Chairlift POV, he pulls on a Santa-beard balaclava, friends in reindeer ones",
+    "ip_safe": true
+   },
+   {
+    "variation": "Squad 4-pack 'family of faces' (grandpa, grandma, baby, cat)",
+    "why": "Ski crews buy matching sets - group laughs on the lift",
+    "how": "Four friends on a chairlift turn around one by one",
+    "ip_safe": true
+   },
+   {
+    "variation": "Custom pet-face balaclava (upload your dog)",
+    "why": "Owners wear their dog's face - personal and hilarious",
+    "how": "Chairlift POV, he pulls on his own dog's face, then cut to the real dog",
+    "ip_safe": true
+   },
+   {
+    "variation": "Grumpy green creature face (our own character)",
+    "why": "Grumpy humour without Grinch IP; ties to HeatGrump",
+    "how": "Lift POV, the grumpy face appears, text 'me at 8am on the slopes'",
+    "ip_safe": true
+   },
+   {
+    "variation": "Fleece-lined heated balaclava with funny print",
+    "why": "Cold faces on the lift are the real pain",
+    "how": "Frozen lift, he switches it on, smiles behind the silly face",
+    "ip_safe": true
+   }
+  ]
+ },
+ "snow_gear": {
+  "summary": "Inflatable snow sleds shaped like vehicles. The supercar shape leads (294k average, 2.40M top) thanks to the friend-dare 'If you buy one, I'll buy one'; the BMW-styled one got 472k and the jet-ski 64k.",
+  "groups": [
+   {
+    "name": "Car-brand shapes",
+    "variations": [
+     "Sports-car shaped · Porsche & supercars",
+     "Sports-car shaped · BMW M4"
+    ],
+    "accounts": 2,
+    "best_views": 2401011,
+    "note": "Supercars/BMW - strong but brand-styled (IP risk)"
+   },
+   {
+    "name": "Other vehicles",
+    "variations": [
+     "Jet-ski shaped"
+    ],
+    "accounts": 1,
+    "best_views": 64468,
+    "note": "Jet-ski, weak"
+   }
+  ],
+  "rows": {
+   "inflatable_vehicle_snow_sled": {
+    "variants": "Porsche & supercars ×1 · BMW M4 ×1 · Jet-ski shaped ×1",
+    "best": "Porsche & supercars — 2.40M top views (torqueslide.us)",
+    "analysis": "Friend-dare + car shape works; relies on brand looks - a generic supercar with a custom plate is missing."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Generic supercar sled with custom name plate",
+    "why": "Same car-fan fun without brand IP; personalization",
+    "how": "Kid reads his name on the plate, jumps on, races down",
+    "ip_safe": true
+   },
+   {
+    "variation": "Monster-truck shaped sled",
+    "why": "Kids and dads love monster trucks; IP-free",
+    "how": "Dad and son race down a hill in a monster truck sled",
+    "ip_safe": true
+   },
+   {
+    "variation": "Snowmobile shaped sled",
+    "why": "Winter-sports identity, northern families",
+    "how": "Snowy hill, friends 'ride' snowmobile sleds in a race",
+    "ip_safe": true
+   },
+   {
+    "variation": "Twin 'race set' pack",
+    "why": "Racing is the fun - sell two",
+    "how": "Two sleds side by side, countdown, race",
+    "ip_safe": true
+   }
+  ]
+ },
+ "storage": {
+  "summary": "A nightstand with a hidden lift-up compartment. One seller, 1.31M top views (79k average) with a police-search joke 'Imagine having this on a house search' - funny but edgy.",
+  "groups": [
+   {
+    "name": "Hidden-top nightstand",
+    "variations": [
+     "Nightstand with hidden lift-up top compartment"
+    ],
+    "accounts": 1,
+    "best_views": 1308650,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "hidden_compartment_nightstand": {
+    "variants": "Nightstand with hidden lift-up top compartment ×1",
+    "best": "Nightstand with hidden lift-up top compartment — 1.31M top views (pippabrookstt)",
+    "analysis": "Secret-stash humour works once; the legit uses (valuables, gifts, kids) are not shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Christmas gift-hiding cabinet",
+    "why": "Parents need a place to hide presents from kids",
+    "how": "Kid searches the room for gifts, mom smirks at the nightstand",
+    "ip_safe": true
+   },
+   {
+    "variation": "Jewelry / valuables safe nightstand with lock",
+    "why": "Safety and peace of mind for homeowners",
+    "how": "Burglar-free scenario: she lifts the top, rings safe inside",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' 'secret treasure' bedside box",
+    "why": "Kids love secrets; parents buy for room makeovers",
+    "how": "Kid opens the hidden top to show his treasures",
+    "ip_safe": true
+   }
+  ]
+ },
+ "support_braces": {
+  "summary": "A lumbar back brace tightened with a pulley system. Two sellers; one does all the work (655k average, 6.12M top) with '$4000 scoliosis treatment vs $200 scoliosis treatment' - price contrast plus a real condition; the other got 1k.",
+  "groups": [
+   {
+    "name": "Pulley lumbar brace",
+    "variations": [
+     "Lumbar brace with pulley tightening"
+    ],
+    "accounts": 2,
+    "best_views": 6117481,
+    "note": "Two sellers; price-contrast hook wins"
+   }
+  ],
+  "rows": {
+   "pulley_lumbar_brace": {
+    "variants": "Lumbar brace with pulley tightening ×2",
+    "best": "Lumbar brace with pulley tightening — 6.12M top views (aligncare.usa)",
+    "analysis": "Price contrast works; medical claims are risky and nobody targets work identities (tradesmen, nurses)."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Heated brace (USB heat pad)",
+    "why": "Heat + support for always-cold back-pain sufferers",
+    "how": "Man at a desk wraps it on, warm glow, shoulders drop",
+    "ip_safe": true
+   },
+   {
+    "variation": "Slim under-the-shirt office version",
+    "why": "Desk workers want invisible support",
+    "how": "He tucks his shirt over it, nobody notices at the meeting",
+    "ip_safe": true
+   },
+   {
+    "variation": "Work-tough tradesman version (hi-vis trim)",
+    "why": "Builders and warehouse workers lift all day; wives gift it",
+    "how": "Construction worker lifts a box with the brace on, thumbs up",
+    "ip_safe": true
+   }
+  ]
+ },
+ "tennis_trainers": {
+  "summary": "A solo tennis trainer: a ball on a string attached to a weighted base. One seller, 870k top views (6k average): 'No partner. No wall. Still getting my reps in.'",
+  "groups": [
+   {
+    "name": "Solo rebound trainer",
+    "variations": [
+     "Solo tennis rebound trainer"
+    ],
+    "accounts": 1,
+    "best_views": 869637,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "tennis_rebound_trainer": {
+    "variants": "Solo tennis rebound trainer ×1",
+    "best": "Solo tennis rebound trainer — 870k top views (traineronee)",
+    "analysis": "Solo-practice pain is clear; one spike, no kids or other sports."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Kids' first-tennis starter kit",
+    "why": "Parents want kids to practice at home",
+    "how": "Kid in the driveway hits rally after rally, dad high-fives",
+    "ip_safe": true
+   },
+   {
+    "variation": "Pickleball version",
+    "why": "Pickleball is the fastest-growing US sport",
+    "how": "Retired couple practices pickleball in the driveway",
+    "ip_safe": true
+   },
+   {
+    "variation": "Gift box for the tennis-mom",
+    "why": "Gift for tennis lovers (like the tennis advent results)",
+    "how": "Box under the tree, she unwraps and goes straight outside",
+    "ip_safe": true
+   }
+  ]
+ },
+ "toilet_brushes": {
+  "summary": "A toilet brush shaped like a politician's head. One seller, 1k top views - political mockery of a real person, no reach and high risk.",
+  "groups": [
+   {
+    "name": "Celebrity head",
+    "variations": [
+     "Trump-head toilet brush"
+    ],
+    "accounts": 1,
+    "best_views": 662,
+    "note": "Single seller; real-person IP, no reach"
+   }
+  ],
+  "rows": {
+   "novelty_head_toilet_brush": {
+    "variants": "Trump-head toilet brush ×1",
+    "best": "Trump-head toilet brush — 662 top views (shopretroring)",
+    "analysis": "No reach and depends on a real person's likeness - avoid."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "'Ex' gag-gift toilet brush with a generic grumpy face",
+    "why": "Breakup humour gift between friends, no real person",
+    "how": "Bestie unwraps it at a girls' night, everyone screams laughing",
+    "ip_safe": true
+   },
+   {
+    "variation": "Cute animal toilet brush (frog, duck)",
+    "why": "Kids' bathroom décor and cute home finds",
+    "how": "Kid laughs at the frog brush, cleans the toilet willingly",
+    "ip_safe": true
+   },
+   {
+    "variation": "White-elephant gag-gift box",
+    "why": "Office parties need funny cheap gifts",
+    "how": "Office party, the gift gets stolen three times",
+    "ip_safe": true
+   }
+  ]
+ },
+ "toothbrushes": {
+  "summary": "A U-shaped electric toothbrush for kids. One seller, 1.50M top views (300k average) with 'My candy-loving kid refuses every toothbrush' - a real parent struggle.",
+  "groups": [
+   {
+    "name": "Kids' U-brush",
+    "variations": [
+     "Children's U-shaped electric toothbrush"
+    ],
+    "accounts": 1,
+    "best_views": 1500000,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "kids_u_shaped_toothbrush": {
+    "variants": "Children's U-shaped electric toothbrush ×1",
+    "best": "Children's U-shaped electric toothbrush — 1.50M top views (snugglesmile.usa)",
+    "analysis": "Parent-struggle hook works; no character shapes or sibling packs."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Original character shapes (dino, rocket)",
+    "why": "Kids brush longer when it's a toy - IP-free",
+    "how": "Toddler 'roars' with a dino brush, laughing",
+    "ip_safe": true
+   },
+   {
+    "variation": "Sibling 2-pack",
+    "why": "Families with two kids buy together",
+    "how": "Two kids race to finish brushing",
+    "ip_safe": true
+   },
+   {
+    "variation": "Christmas stocking-stuffer edition",
+    "why": "Grandparents buy useful stocking gifts",
+    "how": "Kid pulls it from a stocking, brushes immediately",
+    "ip_safe": true
+   }
+  ]
+ },
+ "travel_sleep": {
+  "summary": "Sleep gear for flights and car trips. The 3-in-1 sleep hood with arm sling leads (1.42M and 1.33M averages, 14.55M top) with 'POV: 14 hours on a plane and I didn't move once'; the inflatable forward-lean pillow hit 5.96M as a couples Christmas gift, and the car passenger pillow 322k with 'Passenger Princess'.",
+  "groups": [
+   {
+    "name": "Flight sleep hood",
+    "variations": [
+     "3-in-1 travel sleep set"
+    ],
+    "accounts": 3,
+    "best_views": 14550103,
+    "note": "3 sellers, best averages - long-flight POV"
+   },
+   {
+    "name": "Forward-lean pillow",
+    "variations": [
+     "Inflatable forward-lean travel pillow"
+    ],
+    "accounts": 3,
+    "best_views": 5961372,
+    "note": "3 sellers; couple-gift hook 5.96M"
+   },
+   {
+    "name": "Road-trip pillow",
+    "variations": [
+     "Car passenger body pillow"
+    ],
+    "accounts": 1,
+    "best_views": 321984,
+    "note": "'Passenger princess' identity, 322k"
+   }
+  ],
+  "rows": {
+   "travel_sleep_hood_sling": {
+    "variants": "3-in-1 travel sleep set ×3",
+    "best": "3-in-1 travel sleep set — 14.55M top views (dozewayoffcial)",
+    "analysis": "Long-flight POV is proven (3 sellers); no headphone-pocket or kids version."
+   },
+   "inflatable_forward_lean_pillow": {
+    "variants": "Inflatable forward-lean travel pillow ×3",
+    "best": "Inflatable forward-lean travel pillow — 5.96M top views (napnestt)",
+    "analysis": "Couple-gift angle is the best hook; no two-pack bundle yet."
+   },
+   "car_passenger_body_pillow": {
+    "variants": "Car passenger body pillow ×1",
+    "best": "Car passenger body pillow — 322k top views (thecozycompanion.usa)",
+    "analysis": "Passenger-princess identity is fun; no full road-trip kit."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Couple's travel set (2 pillows + 2 masks in one case)",
+    "why": "The couple-gift hook already works - make it a bundle",
+    "how": "Couple asleep side by side on a plane, matching set",
+    "ip_safe": true
+   },
+   {
+    "variation": "Kids' long-haul sleep set",
+    "why": "Parents dread long flights with kids",
+    "how": "Toddler asleep on a mini forward pillow, parents high-five",
+    "ip_safe": true
+   },
+   {
+    "variation": "Heated travel pillow (USB)",
+    "why": "Cold plane cabins; always-cold travellers",
+    "how": "Freezing cabin, she plugs in, sighs, sleeps",
+    "ip_safe": true
+   },
+   {
+    "variation": "Passenger-princess road-trip kit (pillow + blanket + mask)",
+    "why": "Bundle for the same identity",
+    "how": "Girlfriend in the passenger seat fully cosy, boyfriend drives",
+    "ip_safe": true
+   }
+  ]
+ },
+ "travel_toiletries": {
+  "summary": "Refillable perfume atomizers for travel. One seller, 8k top views - a 'finds' unboxing with no hook.",
+  "groups": [
+   {
+    "name": "Perfume atomizer",
+    "variations": [
+     "Refillable perfume atomizer"
+    ],
+    "accounts": 1,
+    "best_views": 8001,
+    "note": "Single seller, no reach"
+   }
+  ],
+  "rows": {
+   "refillable_perfume_atomizer": {
+    "variants": "Refillable perfume atomizer ×1",
+    "best": "Refillable perfume atomizer — 8k top views (homey__huess)",
+    "analysis": "No hook; the 'take your perfume on a plane' pain is not shown."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Carry-on perfume 'dupe' travel set (3 atomizers)",
+    "why": "Women travel with favourite scents; TSA limits",
+    "how": "Airport security, she breezes through with mini atomizers",
+    "ip_safe": true
+   },
+   {
+    "variation": "Bridesmaid gift atomizers with names",
+    "why": "Personalized wedding favours",
+    "how": "Bride hands each bridesmaid a named atomizer",
+    "ip_safe": true
+   },
+   {
+    "variation": "Men's gym-bag cologne refill",
+    "why": "Men refresh after the gym",
+    "how": "Locker room, one spray, he walks out confident",
+    "ip_safe": true
+   }
+  ]
+ },
+ "video_projectors": {
+  "summary": "Small projectors that show storybook pages or a fake window view. The fake-window version has the biggest video (71.52M, 'I'm afraid to sleep in the dark' vs a sunset beach view) and Christmas-village views reached 3.29M; the storybook projector is steadier (145k best average) with toddler-mom gift hooks.",
+  "groups": [
+   {
+    "name": "Storybook",
+    "variations": [
+     "Storybook pages"
+    ],
+    "accounts": 4,
+    "best_views": 3109137,
+    "note": "4 sellers; toddler-mom gift hooks"
+   },
+   {
+    "name": "Fake window - scenic & holiday",
+    "variations": [
+     "Fake window · scenic & fantasy views",
+     "Fake window · Christmas village views"
+    ],
+    "accounts": 4,
+    "best_views": 71517739,
+    "note": "Biggest reach; afraid-of-the-dark and Christmas-village moods"
+   },
+   {
+    "name": "Licensed game",
+    "variations": [
+     "Minecraft scenes"
+    ],
+    "accounts": 1,
+    "best_views": 2231437,
+    "note": "Minecraft scenes, 2.23M - IP risk"
+   }
+  ],
+  "rows": {
+   "storybook_projector": {
+    "variants": "Storybook pages ×4",
+    "best": "Storybook pages — 3.11M top views (storyglow.us)",
+    "analysis": "Toddler-mom gift hook works across 4 sellers; nobody does grandparent-recorded or bedtime-routine bundles."
+   },
+   "fake_window_projector": {
+    "variants": "scenic & fantasy views ×2 · Christmas village views ×2 · Minecraft scenes ×1",
+    "best": "scenic & fantasy views — 71.52M top views (oklumiofficial)",
+    "analysis": "Afraid-of-the-dark and cosy 3am moods are huge; custom hometown views and a sunrise alarm are still open."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "'Grandma's window' custom view from a family photo",
+    "why": "Emotional gift: see your hometown or grandma's garden",
+    "how": "Grandma sees her old garden on the wall and covers her mouth",
+    "ip_safe": true
+   },
+   {
+    "variation": "Sunrise wake-up window (alarm timer)",
+    "why": "Dark winter mornings; better wake-ups",
+    "how": "6am, the fake window slowly turns to sunrise, she wakes smiling",
+    "ip_safe": true
+   },
+   {
+    "variation": "Fireplace scene pack for apartments",
+    "why": "Renters without a fireplace want the cosy look",
+    "how": "Apartment wall becomes a crackling fireplace, couple with cocoa",
+    "ip_safe": true
+   },
+   {
+    "variation": "Public-domain fairy-tale storybook slides",
+    "why": "Classic stories without licence; parents trust them",
+    "how": "Mom reads Little Red Riding Hood off the ceiling, toddler points",
+    "ip_safe": true
+   }
+  ]
+ },
+ "wall_garlands": {
+  "summary": "LED wall garland scenes (snowy train, snowman, Santa). One seller, 3.76M top views (248k average) with 'Christmas decor in 1865 vs 2026' - cotton snow struggle vs a ready-made lit scene.",
+  "groups": [
+   {
+    "name": "Christmas wall scene",
+    "variations": [
+     "Christmas snow garland · train, snowman, Santa"
+    ],
+    "accounts": 1,
+    "best_views": 3760689,
+    "note": "Single seller"
+   }
+  ],
+  "rows": {
+   "led_christmas_wall_garland": {
+    "variants": "train, snowman, Santa ×1",
+    "best": "train, snowman, Santa — 3.76M top views (cozywalllco)",
+    "analysis": "Then-vs-now contrast works; no moving train, staircase or other-season versions."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Moving-train garland (battery mini train runs along)",
+    "why": "Motion makes kids stop and stare - nostalgia for parents",
+    "how": "Lights dim, a tiny train starts moving along the garland, kids gasp",
+    "ip_safe": true
+   },
+   {
+    "variation": "Staircase / doorway arch version",
+    "why": "Moms decorate stairs and doorways for photos",
+    "how": "Family photo on the lit staircase arch",
+    "ip_safe": true
+   },
+   {
+    "variation": "Halloween haunted-village garland",
+    "why": "Second season, same mechanic",
+    "how": "Dark hallway, a glowing haunted village with bats",
+    "ip_safe": true
+   }
+  ]
+ },
+ "window_display_film": {
+  "summary": "A smart film/screen on a window that shows animated Christmas scenes. Two sellers, 1.53M and 1.70M top views (5k / 4k average) with the same store-gasp 'Every Christmas Lover NEEDS this' - reach spikes, no steady results.",
+  "groups": [
+   {
+    "name": "Christmas window scenes",
+    "variations": [
+     "Christmas window scenes"
+    ],
+    "accounts": 2,
+    "best_views": 1700000,
+    "note": "Two sellers, same hook"
+   }
+  ],
+  "rows": {
+   "smart_window_display_film": {
+    "variants": "Christmas window scenes ×2",
+    "best": "Christmas window scenes — 1.70M top views (Pinky-Fluff-US)",
+    "analysis": "Store-gasp gets spikes only; nobody shows the outside-looking-in neighbour moment or other holidays."
+   }
+  },
+  "not_done": [
+   {
+    "variation": "Santa-sighting scene for kids (silhouette flies past)",
+    "why": "Christmas Eve magic that parents film",
+    "how": "Kids at the window see Santa's sleigh pass, scream",
+    "ip_safe": true
+   },
+   {
+    "variation": "Halloween 'monster at the window' scene",
+    "why": "Trick-or-treat scare from outside",
+    "how": "Trick-or-treaters walk up, a monster appears in the window",
+    "ip_safe": true
+   },
+   {
+    "variation": "Custom family greeting slide",
+    "why": "Personal message beats the neighbours",
+    "how": "Car pulls in, window says 'Welcome home Grandma'",
+    "ip_safe": true
+   }
+  ]
+ }
+}

@@ -317,6 +317,13 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 .ladder{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px}.ladder p{margin:2px 0}.ladder small{color:var(--dim)}
 .jobs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}.job{border:1px solid var(--edge);border-radius:14px;padding:12px;background:var(--deck);display:flex;flex-direction:column;gap:6px}.job p{margin:0;font-size:13.5px}
 @media (max-width:720px){.hgrid{grid-template-columns:1fr}.hcard{grid-template-columns:110px minmax(0,1fr)}}
+
+.bnd{position:absolute;left:20px;right:20px;top:112px;height:52px;overflow:hidden;display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12.5px}
+.bnd b{color:var(--warn);font-family:var(--f-data);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.ndc{border:1px dashed var(--warn);border-radius:999px;padding:3px 10px;background:var(--warn-soft);white-space:nowrap}
+.bra{height:24px;font-size:12px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:-6px}.bra b{color:var(--text)}
+.bfv{white-space:normal!important;height:30px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.xa h4{margin:10px 0 4px;font-family:var(--f-data);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--plasma)}.xa ul{margin:0;padding-left:18px}.xa li{font-size:13.5px;margin-bottom:6px}.xa p{margin:0;font-size:13.5px}
 /* ---- chat ---- */
 .botfab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;gap:8px;align-items:center;border:1px solid var(--edge);border-radius:999px;padding:12px 18px;font:600 14px var(--f-body);color:var(--text);
   background:linear-gradient(135deg,var(--plasma-soft),var(--ion-soft)),var(--deck);box-shadow:0 18px 40px -16px rgba(0,0,0,.6),0 0 0 1px var(--ion-soft);cursor:pointer}
@@ -782,6 +789,7 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};setT
   const live=(path,key)=>db.collection(path).onSnapshot(s=>{S[key]=s.docs.map(d=>({_id:d.id,...d.data()}));if(key==="inbox")S.inbox.sort((a,b)=>String(b.creat).localeCompare(String(a.creat)));if(key==="finder"&&document.activeElement?.id==="fq"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}soon()},()=>{});
   live("products","products");live("finder","finder");
   db.collection("broll").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.broll=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
+  db.collection("famx").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.famx=m;if(S.route==="finder")soon()},()=>{});
   db.collection("hooks").onSnapshot(s=>{const m={};let meta=null;s.docs.forEach(d=>{if(d.id==="meta")meta=d.data();else Object.assign(m,d.data())});HK.list=Object.values(m);HK.byId=m;if(meta){HK.concepts=meta.concepts||[];HK.captions=meta.captions||[];HK.scoring=meta.scoring||""}if(["hooks","studio"].includes(S.route)&&!["hq","sq"].includes(document.activeElement?.id))soon()},()=>{});
   db.collection("jobs").onSnapshot(s=>{S.jobs=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")soon()},()=>{});
   db.collection("insights").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.insights=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
@@ -838,7 +846,7 @@ function groupsFor(f){
   else groups=[{id:"all",title:"",def:"",list:accs}];
   return groups.map(g=>{let list=g.list.slice().sort((a,b)=>((b._ugcs||0)-(a._ugcs||0))||((b.avg_views||0)-(a.avg_views||0)));if(S.ugcOnly)list=list.filter(a=>a._ugc);return {...g,list}}).filter(g=>g.list.length);
 }
-const BD={CW:236,CH:452,GAP:16,PER:6,HEAD:112,ROWH:58,PAD:20,FGAP:56,CATW:300,X0:420};
+const BD={CW:236,CH:452,GAP:16,PER:6,HEAD:176,ROWH:82,PAD:20,FGAP:56,CATW:300,X0:420};
 function boardLayout(){
   const items=S.finder.slice();
   const cats=[...new Set(items.map(f=>f.group))].sort((a,b)=>Math.max(...items.filter(f=>f.group===b).map(f=>f.best_avg_views||0))-Math.max(...items.filter(f=>f.group===a).map(f=>f.best_avg_views||0)));
@@ -868,14 +876,14 @@ function vFinderBoard(){
   const lines=[];const trunkX=40;
   lines.push(`M${trunkX} 200 V${L.cats.length?L.cats[L.cats.length-1].y+40:200}`);
   L.cats.forEach(c=>{lines.push(`M${trunkX} ${c.y+40} H${c.x}`);c.fams.forEach(fm=>{const sx=c.x+BD.CATW,sy=c.y+40,mx=sx+(BD.X0-sx)/2;lines.push(`M${sx} ${sy} H${mx} V${fm.y+34} H${fm.x}`)})});
-  const fams=L.fams.map(fm=>{const f=fm.f,I=S.insights[f._id],vd=brainVerdict(f),B=S.broll[f._id];let yy=BD.HEAD;
+  const fams=L.fams.map(fm=>{const f=fm.f,I=S.insights[f._id],vd=brainVerdict(f),B=S.broll[f._id],X=(S.famx||{})[f._id];let yy=BD.HEAD;
     const rows=fm.gs.map(g=>{const top=yy;yy+=BD.ROWH+Math.ceil(g.list.length/BD.PER)*(BD.CH+BD.GAP);const nu=g.list.filter(a=>a._ugc).length;
-      return `<div class="brow" style="top:${top}px"><div class="brh"><b>${esc(g.title||f.title)}</b>${S.rows?chip(nu+" UGC of "+g.list.length,"ok"):""}<span class="muted">${esc(g.def)}</span></div>
+      return `<div class="brow" style="top:${top}px"><div class="brh"><b>${esc(g.title||f.title)}</b>${S.rows?chip(nu+" UGC of "+g.list.length,"ok"):""}<span class="muted">${esc(g.def)}</span></div>${(()=>{const R=X?.rows?.[g.id];return R?`<div class="bra"><span>${esc(R.variants||"")}</span>${R.best?` · <b>best:</b> ${esc(R.best)}`:""}${R.analysis?` — ${esc(R.analysis)}`:""}</div>`:'<div class="bra"></div>'})()}
         <div class="bcards">${g.list.map(a=>boardCard(a,f._id)).join("")}</div></div>`}).join("");
     return `<section class="bfam" id="bf-${esc(f._id)}" style="left:${fm.x}px;top:${fm.y}px;width:${fm.w}px;height:${fm.h}px" data-h="${esc((f.title+" "+fm.gs.map(g=>g.title).join(" ")).toLowerCase())}">
       <div class="bfh"><h3><span class="dot"></span>${esc(f.title)}</h3><span class="chip c-pl">${fmt(f.best_avg_views)} best avg views</span>${I?`<span class="chip c-${/^run/i.test(I.verdict||"")?"ok":/^skip/i.test(I.verdict||"")?"bad":"warn"}">${esc((I.verdict||"").split(/[-–(]/)[0].trim()||"verdict")}</span>`:""}${B&&B.type?chip(B.type==="human"?"Genjutsu":B.type==="effect"?"B-roll + Seedance":"mixed","ion"):""}
         <button class="btn" data-act="bwhy" data-fam="${esc(f._id)}">Why it sells</button><button class="btn solid" data-act="st-start" data-fam="${esc(f._id)}">Make a clip</button></div>
-      <p class="bfv v-${vd.k}">${esc(vd.t)}</p>${rows}<div class="bfl" aria-hidden="true"><b>${esc(f.title)}</b><small>${fm.gs.reduce((n,g)=>n+g.list.length,0)} videos</small></div></section>`}).join("");
+      <p class="bfv v-${vd.k}">${esc(X?.summary||vd.t)}</p>${X?.not_done?.length?`<div class="bnd"><b>Not done yet:</b>${X.not_done.slice(0,5).map(n=>`<span class="ndc" title="${esc(n.why||"")}">${esc(n.variation)}</span>`).join("")}</div>`:""}${rows}<div class="bfl" aria-hidden="true"><b>${esc(f.title)}</b><small>${fm.gs.reduce((n,g)=>n+g.list.length,0)} videos</small></div></section>`}).join("");
   const cats=L.cats.map(c=>`<div class="bcat" id="bc-${c.i}" style="left:${c.x}px;top:${c.y}px;width:${BD.CATW}px"><span class="kicker">Category ${String(c.i+1).padStart(2,"0")}</span><b>${esc(c.name)}</b><span class="muted">${c.n} products · ${c.acc} accounts</span></div>`).join("");
   return `<div class="btool"><div class="bt-l"><span class="kicker">01 · product finder</span><b>Product opportunities</b><span class="muted">${fmt(tot)} accounts · ${S.finder.length} products</span></div>
     <div class="bt-c"><input id="bq" placeholder="Find a product or @account…" value="${esc(S.fq)}" aria-label="Find a product or account"><select id="bcat" aria-label="Jump to category"><option value="">Jump to category…</option>${L.cats.map(c=>`<option value="${c.i}">${esc(c.name)}</option>`).join("")}</select><label class="tog" style="white-space:nowrap"><input type="checkbox" id="ugcOnly" ${S.ugcOnly?"checked":""}> Only real UGC</label></div>
@@ -928,8 +936,8 @@ const BOARD={v:null,L:null,
     if(first)this.fly(first)},
   drawer(html){const d=document.getElementById("bdrawer");if(!d)return;document.getElementById("bdc").innerHTML=html;d.hidden=false;d.scrollTop=0}
 };
-function famDetail(id){const f=S.finder.find(x=>x._id===id);if(!f)return "";const vd=brainVerdict(f);
-  return `<span class="kicker">${esc(f.group)}</span><h2 class="dh">${esc(f.title)}</h2><p class="bfv v-${vd.k}">${esc(vd.t)}</p>${insightBlock(f).replace('<details class="insight">','<details class="insight" open>')||'<p class="muted">No analysis yet for this product.</p>'}
+function famDetail(id){const f=S.finder.find(x=>x._id===id);if(!f)return "";const vd=brainVerdict(f);const X=(S.famx||{})[id];const xh=X?`<section class="xa"><h4>Short analysis</h4><p>${esc(X.summary||"")}</p>${(X.groups||[]).length?`<h4>Variations sellers do</h4><ul>${X.groups.map(g=>`<li><b>${esc(g.name)}</b> (${esc(g.accounts)} sellers${g.best_views?", best "+fmt(g.best_views)+" views":""}): ${esc((g.variations||[]).join(", "))}${g.note?` — <span class="muted">${esc(g.note)}</span>`:""}</li>`).join("")}</ul>`:""}${(X.not_done||[]).length?`<h4>Not done yet (our chance)</h4><ul>${X.not_done.map(n=>`<li><b>${esc(n.variation)}</b>${n.ip_safe===false?" "+chip("IP risk","warn"):""} — ${esc(n.why||"")}<br><span class="muted">${esc(n.how||"")}</span></li>`).join("")}</ul>`:""}</section>`:"";
+  return `<span class="kicker">${esc(f.group)}</span><h2 class="dh">${esc(f.title)}</h2><p class="bfv v-${vd.k}">${esc(vd.t)}</p>${xh}${insightBlock(f).replace('<details class="insight">','<details class="insight" open>')||'<p class="muted">No analysis yet for this product.</p>'}
    <div class="row"><button class="btn solid" data-act="st-start" data-fam="${esc(f._id)}">Make a clip with this product</button>${S.write?`<button class="btn" data-act="tofind" data-id="${f._id}">Send to Products</button>`:""}</div>`}
 function acctDetail(fid,h){const f=S.finder.find(x=>x._id===fid);if(!f)return "";const g=groupsFor(f);let a=null,row=null;g.forEach(x=>x.list.forEach(y=>{if(y.handle===h){a=y;row=x}}));if(!a)return "";
   const k=S.takes[a.mkey];const href=a.top_video||a.url;

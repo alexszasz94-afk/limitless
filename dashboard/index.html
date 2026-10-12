@@ -989,7 +989,7 @@ function hookPoster(mk){return mk&&S.posters[mk]?`data-poster="${esc(mk)}"`:""}
 function hooksFor(fam){const f=S.finder.find(x=>x._id===fam);const B=S.broll[fam];const effect=B&&B.type==="effect";
   return HK.list.map(h=>{let s=h.now_score||0;if(h.evidence?.family===fam)s+=25;else if(!h.transferable)s-=40;if(effect&&h.genjutsu_ok&&!h.broll_seedance)s-=5;if(h.kind==="proven")s+=5;return {...h,_fit:s}}).filter(h=>h._fit>0).sort((a,b)=>b._fit-a._fit)}
 function clipsFor(fam){const f=S.finder.find(x=>x._id===fam);if(!f)return [];
-  return groupsFor(f).flatMap(g=>g.list.map(a=>({...a,_row:g.title}))).map(a=>{const k=S.takes[a.mkey];const sc=k?Number(k.score)||0:0;return {...a,_k:k,_sc:sc,_rank:sc*10+Math.log10((a.top_views||a.avg_views||1))*8+(a._ugc?12:0)}}).sort((a,b)=>b._rank-a._rank)}
+  return groupsFor(f).flatMap(g=>g.list.map(a=>({...a,_row:g.title}))).map(a=>{const k=S.takes[a.mkey];const sc=k?Number(k.score)||0:0;const bad=/fire|flame|police|illegal|nud|medical|weapon|knife/i.test((k?.risk||"")+" "+(k?.hook||""));return {...a,_k:k,_sc:sc,_bad:bad,_rank:sc*10+Math.log10((a.top_views||a.avg_views||1))*8+(a._ugc?12:0)-(bad?25:0)}}).sort((a,b)=>b._rank-a._rank)}
 function hookCard(h,opts={}){const ev=h.evidence||{};const c=HK.concepts.find(x=>x.id===h.concept);const sel=opts.sel;
   return `<article class="hcard ${sel?"on":""}">
    <div class="hmedia">${ev.url?`<a class="vid" href="${esc(ev.url)}" target="_blank" rel="noopener" ${hookPoster(ev.mkey)}><span class="pl">▶</span><span class="wo">See the original</span></a>`:`<div class="vid none">${h.kind==="proven"?"Proven hook":"no preview"}</div>`}</div>
@@ -1012,7 +1012,7 @@ function vHooks(){
   <div class="hgrid">${L.slice(0,120).map(h=>hookCard(h)).join("")||`<div class="empty"><b>No hook matches</b>Clear a filter.</div>`}</div>`}
 /* studio */
 function stState(){return S.st||(S.st={fam:"",mode:"",hook:"",clip:""})}
-function stEstimate(st){const f=S.finder.find(x=>x._id===st.fam);const clip=clipsFor(st.fam).find(a=>a.mkey===st.clip);const beats=Math.min(6,Math.max(3,(clip?._k?.beats||[]).length||4));
+function stEstimate(st){const f=S.finder.find(x=>x._id===st.fam);const clip=clipsFor(st.fam).find(a=>a.mkey===st.clip);const beats=Math.min(5,Math.max(3,(clip?._k?.beats||[]).length||4));
   const B=S.broll[st.fam];const effect=B&&(B.type==="effect"||B.type==="mixed");const h=HK.byId[st.hook];
   let lo=beats*44,hi=beats*44;if(effect){lo=Math.round(beats*.5)*44+2*64;hi=Math.round(beats*.5)*44+3*64}
   if(st.mode==="hook"&&h){const c=h.genjutsu_ok?44:64;lo+=c;hi+=c}
@@ -1049,7 +1049,7 @@ function vStudio(){const st=stState();const fams=S.finder.slice().sort((a,b)=>(b
       ${h?`<dt>Hook</dt><dd>“${esc(h.caption||h.title)}” — ${esc(h.visual||"")}</dd>`:""}<dt>Viral to copy</dt><dd>@${esc(clip?.handle||"")} · ${esc(clip?._k?.hook||"")}</dd>
       <dt>Shots</dt><dd>${e.beats} shots${e.effect?" (people with Genjutsu, effect shots with start image + Seedance)":" with Genjutsu motion control"}</dd>
       <dt>Look</dt><dd>Shot on iPhone 18 Pro Max, handheld UGC, real room light. No text in frame; text and music added at the edit.</dd>
-      <dt>Estimated cost</dt><dd>${e.lo}–${e.hi} credits (≈ $${e.usd[0]}–${e.usd[1]})</dd></dl>
+      <dt>Estimated cost</dt><dd>${e.lo}–${e.hi} credits (≈ $${e.usd[0]}–${e.usd[1]})${e.hi>300?'<br><span class="chip c-warn">over the 300-credit cap per video: we drop one shot or test at 480p first</span>':""}</dd></dl>${clip?._bad?'<p class="note">This viral has a risky moment (fire, police or similar). We copy the moves with a safe version.</p>':""}
       <div class="row"><button class="btn solid" data-act="st-send">Send for my approval</button><button class="btn" data-act="st-back">Change something</button></div>
       <p class="muted">Nothing is generated and no credits are spent until you approve it in Video boards.</p></section>
      <section class="panel"><h2>How to evolve this product</h2><ol class="ladder">${L.map(x=>`<li><b>${esc(x.r)}</b><p>${esc(x.t)}</p><small>${esc(x.go)}</small></li>`).join("")}</ol></section></div>`}

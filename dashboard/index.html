@@ -1020,11 +1020,13 @@ function vHooks(){
   <div class="hgrid">${L.slice(0,120).map(h=>hookCard(h)).join("")||`<div class="empty"><b>No hook matches</b>Clear a filter.</div>`}</div>`}
 /* studio */
 function stState(){return S.st||(S.st={fam:"",mode:"",hook:"",clip:""})}
-function stEstimate(st){const f=S.finder.find(x=>x._id===st.fam);const clip=clipsFor(st.fam).find(a=>a.mkey===st.clip);const beats=Math.min(5,Math.max(3,(clip?._k?.beats||[]).length||4));
+function stEstimate(st){const clip=clipsFor(st.fam).find(a=>a.mkey===st.clip);const beats=Math.min(5,Math.max(3,(clip?._k?.beats||[]).length||4));
   const B=S.broll[st.fam];const effect=B&&(B.type==="effect"||B.type==="mixed");const h=HK.byId[st.hook];
-  let lo=beats*44,hi=beats*44;if(effect){lo=Math.round(beats*.5)*44+2*64;hi=Math.round(beats*.5)*44+3*64}
+  const dur=Math.max(4,Math.round(clip?.dur||12));const full=Math.round(dur*11);/* one full Genjutsu pass over the whole viral, ~11 credits/s at 1080p */
+  const test=Math.round(dur*3.75);/* the same pass at 480p, to check it first */
+  let lo=full,hi=full;if(effect){lo+=2*64;hi+=3*64}
   if(st.mode==="hook"&&h){const c=h.genjutsu_ok?44:64;lo+=c;hi+=c}
-  return {beats,lo,hi,effect,usd:[(lo*.04).toFixed(0),(hi*.06).toFixed(0)]}}
+  return {beats,dur,full,test,lo,hi,effect,sep:beats*44+(effect?2*64:0),usd:[(lo*.04).toFixed(0),(hi*.06).toFixed(0)]}}
 function stLadder(fam){const I=S.insights[fam]||{};const top=clipsFor(fam)[0];const hs=hooksFor(fam).slice(0,3);
   const vars=(I.variations||[]).slice(0,2).map(v=>typeof v==="string"?v:v.name);
   return [
@@ -1055,7 +1057,7 @@ function vStudio(){const st=stState();const fams=S.finder.slice().sort((a,b)=>(b
   else {const e=stEstimate(st);const clip=clipsFor(st.fam).find(a=>a.mkey===st.clip);const h=HK.byId[st.hook];const L=stLadder(st.fam);
     body=`<div class="plan"><section class="panel"><h2>The clip</h2><dl class="dl"><dt>Product</dt><dd>${esc(f?.title)}</dd><dt>Type</dt><dd>${st.mode==="hook"?"Hook + Genjutsu":"Genjutsu only (1:1 copy)"}</dd>
       ${h?`<dt>Hook</dt><dd>“${esc(h.caption||h.title)}” — ${esc(h.visual||"")}</dd>`:""}<dt>Viral to copy</dt><dd>@${esc(clip?.handle||"")} · ${esc(clip?._k?.hook||"")}</dd>
-      <dt>Shots</dt><dd>${e.beats} shots${e.effect?" (people with Genjutsu, effect shots with start image + Seedance)":" with Genjutsu motion control"}</dd>
+      <dt>How it is made</dt><dd>One full Genjutsu pass over the whole viral (${e.dur} s) with our references: person, room, product. Test first at 480p (~${e.test} credits), then 1080p (~${e.full}).${e.effect?" The light/projection shots that Genjutsu can\u2019t do are made separately with a start image + Seedance.":""} Cheaper than ${e.beats} separate clips (~${e.sep} credits).</dd>
       <dt>Look</dt><dd>Shot on iPhone 18 Pro Max, handheld UGC, real room light. No text in frame; text and music added at the edit.</dd>
       <dt>Estimated cost</dt><dd>${e.lo}–${e.hi} credits (≈ $${e.usd[0]}–${e.usd[1]})${e.hi>300?'<br><span class="chip c-warn">over the 300-credit cap per video: we drop one shot or test at 480p first</span>':""}</dd></dl>${clip?._bad?'<p class="note">This viral has a risky moment (fire, police or similar). We copy the moves with a safe version.</p>':""}
       <div class="row"><button class="btn solid" data-act="st-send">Send for my approval</button><button class="btn" data-act="st-back">Change something</button></div>

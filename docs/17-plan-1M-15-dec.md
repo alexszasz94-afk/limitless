@@ -16,7 +16,7 @@ Nu există plan „sigur 99 %” în organic: viralele vin în valuri și nu le 
 |---|---|---|---|---|
 | 0. Fundația | 14–20 oct | pilot, magazin + plăți gata, stoc confirmat, 12 conturi încălzite, 14 videouri gata în stoc | primele comenzi; $ la 1M views măsurat | reparăm conversia (pagina, prețul) înainte de volum |
 | 1. Testul de volum | 21 oct – 9 nov | 30–40 videouri/zi pe 12 conturi; 3 hook-uri câștigătoare găsite | **60 k$**, ≥1,5 M views/zi | pornim al doilea produs din Top 10 Product finder |
-| 2. Scalarea | 10–26 nov | 50–60 videouri/zi, 20+ conturi, câștigătorii clonați în spaniolă/germană | **250 k$**, ≥5 M views/zi | mutăm toată producția pe cele 3 hook-uri care merg + al doilea produs |
+| 2. Scalarea | 10–26 nov | combinații noi doar pe hook-urile care vând, 20+ conturi, câștigătorii clonați în spaniolă/germană | **250 k$**, ≥5 M views/zi | mutăm toată producția pe cele 3 hook-uri care merg + al doilea produs |
 | 3. Vârful | 27 nov – 15 dec | Black Friday + Crăciun, ofertă de sezon, livrare garantată | **1 M$** (~40 k$/zi ≈ 450 comenzi/zi) | — |
 
 ## Posterii (4 oameni)
@@ -25,11 +25,16 @@ Nu există plan „sigur 99 %” în organic: viralele vin în valuri și nu le 
 - Fiecare poster pune zilnic link-urile postărilor în Results (cu hook-ul). Cifrele le iau eu cu Apify.
 - Plată propusă: fix mic + bonus pe vânzări (link sau cod separat pe poster, ca să știm cine vinde).
 
-## Producția
-- Pe zi: 3–4 seturi noi (personaj + cameră), fiecare refolosit în 5 videouri, + hook-uri. Clipurile fixe (telecomandă, conector) refolosite.
-- Fiecare hook nou întâi test la 480p, finalul doar dacă iese bine.
-- Cost estimat: ~2.500–3.000 credite/zi la 40 de videouri (~100–130 $/zi).
-- Seara: cifrele pe 24 h → a doua zi 3 videouri în plus pe cel mai bun hook, scoatem cele mai slabe 5.
+## Producția — buget 20 $/zi (regula din 13 oct)
+20 $/zi ≈ 350–450 credite Higgsfield. Nu facem videouri noi de la zero: **reciclăm cele 10 videouri bune ale lui Szasz și schimbăm doar hook-ul**.
+- **Corpul videoului** (îmbracă → deschide → telecomandă → cozy) rămâne cel din cele 10 videouri bune. 0 credite.
+- **Hook-uri gratuite (0 credite)**: tăiem din clipurile pe care le avem deja — începem cu momentul în care halatul se desface, cu luminițele telecomenzii 1→5, cu unboxing-ul, cu fața „grumpy” în cozy. Plus text și muzică diferite.
+- **Hook-uri noi plătite**: 6–7 pe zi cu Genjutsu (~44 credite la 1080p, 4 s), fiecare testat întâi la 480p (~12). ≈ 350 credite.
+- **Combinații**: fiecare hook nou merge pe 4–5 corpuri diferite → 30–40 de videouri unice pe zi pentru cei 4 posteri.
+- Același video exact nu apare pe două conturi: fiecare cont primește altă combinație hook + corp + text + muzică.
+- Apify pentru cifrele noastre: ~0,10 $/zi, intră în buget.
+- Bugetul crește doar din vânzări: la primele 100 de comenzi propunem 1 set nou (personaj + cameră) pe săptămână; seturile noi doar pentru hook-urile care deja vând.
+- Seara: cifrele pe 24 h → a doua zi mai multe combinații pe hook-ul câștigător, scoatem cele mai slabe.
 
 ## Ce poate strica tot (și ce facem de acum)
 1. **Plățile blocate.** Procesatorul poate reține banii la creșteri bruște. Vorbim din timp cu procesatorul, avem un al doilea de rezervă, livrare cu tracking pentru dovezi.

@@ -45,3 +45,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 13 oct: PRIMUL VIDEO la orice produs = PILOT, obligatoriu: un singur set, îl vedem împreună, blocăm rețeta, abia apoi producem în serie.
 - 13 oct: JURNAL DE GREȘELI — orice greșeală (tehnică, de producție, de cost) se scrie în platformă (Mistakes log) cu cauza și regula nouă; se citește înainte de producție.
 - 13 oct: FIRUL DATELOR — produs → clip → postare → cifre. Cifrele conturilor noastre se aduc cu Apify (Instagram reels), iar aplicația învață din ele: ce acțiune de hook, ce text și ce viral copiat aduc vizualizări și comenzi; scorul „ce merge acum” ține cont de cifrele noastre.
+- **13 oct 2026** — Buget producție 20 $/zi (~350–450 credite). Reciclăm cele 10 videouri bune ale lui Szasz și schimbăm doar hook-ul; hook-uri gratuite tăiate din clipurile existente + 6–7 hook-uri Genjutsu noi pe zi; același video exact nu se postează pe două conturi.

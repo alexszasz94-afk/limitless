@@ -363,6 +363,7 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 .rphases{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}.rph{padding:12px;border:1px solid var(--edge);border-radius:14px;background:var(--glass);display:flex;flex-direction:column;gap:4px}.rph.now{border-color:#3fcf7a;box-shadow:0 0 0 1px #3fcf7a inset}.rph.hit{opacity:.75}.rph.miss{border-color:#e06060}.rph p{margin:0;font-size:13px}
 .rday{display:grid;gap:8px}.rstep{display:flex;gap:10px;align-items:flex-start}.rstep span{flex:0 0 26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--glass);border:1px solid var(--edge);font-size:12px}.rstep p{margin:2px 0}
 .rmx td,.rmx th{text-align:center}.rmx td:first-child{text-align:left}.rmx td.used{background:rgba(63,207,122,.18);font-weight:600}
+.rsteps{display:grid;gap:12px}.rs{display:flex;gap:12px;align-items:flex-start}.rs>span{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#3fcf7a,#ff7ab8);color:#fff;font-weight:700}.rs>div{flex:1;min-width:0}.rs p{margin:4px 0}
 .rrisk{display:grid;gap:8px}.rr{display:flex;gap:12px;align-items:flex-start}.rr p{margin:2px 0}.rr.ok b{text-decoration:line-through;opacity:.7}
 </style>
 
@@ -1157,6 +1158,25 @@ function vResults(){const P=S.posts||[],A=S.accounts||[],J=S.jobs||[];
   <section class="panel"><h2>Posts</h2>${P.length?`<div class="tbl"><table><thead><tr><th>Post</th><th>Hook action</th><th style="text-align:right">Views</th><th style="text-align:right">Likes</th><th>Posted</th></tr></thead><tbody>${P.slice().sort((a,b)=>(b.views||0)-(a.views||0)).map(p=>`<tr><td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.account||"open")}</a></td><td>${esc(p.action||"")}</td><td style="text-align:right">${fmt(p.views||0)}</td><td style="text-align:right">${fmt(p.likes||0)}</td><td>${esc(p.posted||"")}</td></tr>`).join("")}</tbody></table></div>`:'<p class="muted">No posts yet.</p>'}</section>`}
 /* Robe 2026 brain */
 function robePosts(){return (S.posts||[]).filter(p=>p.product==="heatgrump_robe"||p.product==="heated_robes"||p.robe)}
+function robeStudio(R){const V=R.variants||[];if(!V.length)return "";const vid=S.rsv||V[0].id;const v=V.find(x=>x.id===vid)||V[0];const H=R.hooks||[];
+  const fx=v.fixed||{};const st=k=>{const f=fx[k]||{};return f.url?`<a href="${esc(f.url)}" target="_blank" rel="noopener">✓ ready</a>`:`<span class="chip c-warn">make once · ~${f.est||85} cr</span>`};
+  const mode=S.rsm||"one",hk=S.rsh||"none";const broll=mode==="one"?143:143,hookc=hk==="none"||hk.startsWith("F")?0:56;
+  const once=(fx.controller?.url?0:(fx.controller?.est||85))+(fx.connector?.url?0:(fx.connector?.est||85))+(v.refs_ready?0:120);
+  const tot=broll+hookc;const usd=c=>"$"+(c*0.05).toFixed(0);
+  return `<section class="panel rstudio"><div class="row" style="justify-content:space-between"><h2>Make a robe video</h2><small class="muted">Robe workflow — different from the general “Make a clip”</small></div>
+  <div class="rsteps">
+   <div class="rs"><span>1</span><div><b>Variant</b><div class="row hcon">${V.map(x=>`<button class="chipb ${x.id===v.id?"on":""}" data-act="rsv" data-v="${esc(x.id)}">${esc(x.name)}</button>`).join("")}</div>
+     <p class="muted">References: ${esc(v.refs)}${v.girls_only?" · <b>girls only</b>":""}</p></div></div>
+   <div class="rs"><span>2</span><div><b>Fixed clips (reused in every video)</b><p>Controller ${esc(fx.controller?.look||"")}: ${st("controller")}</p><p>Connector ${esc(fx.connector?.look||"")}: ${st("connector")}</p></div></div>
+   <div class="rs"><span>3</span><div><b>Girl + room</b><p class="muted">From Pinterest (exact photos). A new pair only when the rotation asks; otherwise reuse.</p>
+     <form id="fRobeJob" class="f"><label for="rjc">Character photo link<input id="rjc" name="character" placeholder="Pinterest link or 'reuse'"></label><label for="rjr">Room photo link<input id="rjr" name="room" placeholder="Pinterest link or 'reuse'"></label><label for="rjo">Outfit under the robe<select id="rjo" name="outfit"><option>Christmas pyjamas</option><option>cozy loungewear</option><option>American-style casual</option><option>Claude picks</option></select></label>
+     <input type="hidden" name="variant" value="${esc(v.id)}"><input type="hidden" name="mode" value="${esc(mode)}"><input type="hidden" name="hook" value="${esc(hk)}"><input type="hidden" name="est" value="${tot}">
+     <button class="btn solid" type="submit" ${S.write?"":"disabled"}>Send to Claude · ~${tot} cr (${usd(tot)})</button></form></div></div>
+   <div class="rs"><span>4</span><div><b>B-roll with Genjutsu</b><div class="row hcon"><button class="chipb ${mode==="one"?"on":""}" data-act="rsm" data-m="one">One pass: put on → open → cozy (same room)</button><button class="chipb ${mode==="three"?"on":""}" data-act="rsm" data-m="three">3 separate clips</button></div>
+     <p class="muted">~143 credits at 1080p (13 s). 480p test first (~40). Motion clips rotate between videos. One pass only with clips filmed in one room (Mistakes log).</p></div></div>
+   <div class="rs"><span>5</span><div><b>Hook (optional)</b><div class="row hcon"><button class="chipb ${hk==="none"?"on":""}" data-act="rsh" data-h="none">No hook</button>${H.map(h=>`<button class="chipb ${hk===h.id?"on":""}" data-act="rsh" data-h="${esc(h.id)}">${esc(h.name)}</button>`).join("")}</div></div></div>
+   <div class="rs"><span>6</span><div><b>Claude assembles</b><p class="muted">Hook → put on → open → connector → controller → cozy. QA check, then the MP4 + text/caption/music idea land in Video boards for your OK.</p></div></div>
+  </div>${once?`<p class="lrule">One-time setup still missing for ${esc(v.name)}: ~${once} credits (${usd(once)}) — product sheet + pink controller + connector.</p>`:""}</section>`}
 function robeCopy(R){const C=R.copy||{};const A=C.accounts||[],V=C.videos||[];if(!A.length)return "";const th=S.rth||"";
   const themes=[...new Set(A.map(a=>a.theme))];const f=x=>!th||x.theme===th;
   return `<section class="panel"><div class="row" style="justify-content:space-between"><h2>Who to copy — robe accounts</h2><small class="muted">${esc(C.checked||"")} · ${A.length} accounts · ${V.length} videos 250k+</small></div>
@@ -1182,6 +1202,7 @@ function vRobe(){const R=S.robe||{};const P=robePosts();const price=+R.aov||90;
    <p class="muted">${esc(v.why)}</p><p><b>References:</b> ${esc(v.refs)}</p>${v.ip?`<p class="lrule">⚠ ${esc(v.ip)}</p>`:""}
    <ul class="rules">${(v.virals||[]).map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">@${esc(x.handle)}</a> · ${fmt(x.views)} views${x.what?` — ${esc(x.what)}`:""}</li>`).join("")}</ul>
    ${v.texts?`<p class="muted">Text lines: ${v.texts.map(t=>`“${esc(t)}”`).join(" · ")}</p>`:""}</section>`).join("")}</div>
+  ${robeStudio(R)}
   ${robeCopy(R)}
   <section class="panel"><h2>Today's machine · $${esc(R.budget_day||20)}/day</h2><div class="rday">${(R.daily||[]).map((d,i)=>`<div class="rstep"><span>${i+1}</span><p>${esc(d)}</p></div>`).join("")}</div></section>
   <section class="panel"><h2>Recycle bank — bodies × hooks</h2><p class="muted">Body = the part after the hook (put on → open → controller → cozy) from our good videos. Each cell = how many posts used that combo. Never the same combo on two accounts.</p>
@@ -1215,6 +1236,9 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="st-send"){e.stopImmediatePropagation();run(stSend,b);return}
   if(a==="st-usehook"){e.stopImmediatePropagation();S.st={fam:"",mode:"hook",hook:b.dataset.id,clip:""};toast("Hook chosen. Now pick the product.");go("studio");return}
   if(a==="hcon"){e.stopImmediatePropagation();S.hc=b.dataset.c;render();return}
+  if(a==="rsv"){e.stopImmediatePropagation();S.rsv=b.dataset.v;render();return}
+  if(a==="rsm"){e.stopImmediatePropagation();S.rsm=b.dataset.m;render();return}
+  if(a==="rsh"){e.stopImmediatePropagation();S.rsh=b.dataset.h;render();return}
   if(a==="rth"){e.stopImmediatePropagation();S.rth=b.dataset.t;render();return}
   if(a==="rrisk"){e.stopImmediatePropagation();const i=+b.dataset.i;const RK=((S.robe||{}).risks||[]).map((r,j)=>j===i?{...r,status:r.status==="done"?"open":"done"}:{...r});run(()=>S.db.doc("config/robe").update({risks:RK}),b);return}
   if(a==="larea"){e.stopImmediatePropagation();S.la=b.dataset.a;render();return}
@@ -1225,8 +1249,8 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
 },true);
 let _bqT=0;document.addEventListener("input",e=>{if(e.target.id==="hq"){S.hq=e.target.value;clearTimeout(_bqT);_bqT=setTimeout(()=>{render();const i=$("#hq");if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}},300);return}if(e.target.id==="sq"){S.sq=e.target.value;clearTimeout(_bqT);_bqT=setTimeout(()=>{render();const i=$("#sq");if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}},300);return}if(e.target.id==="bq"){S.fq=e.target.value;clearTimeout(_bqT);_bqT=setTimeout(()=>BOARD.search(S.fq),250)}});
 document.addEventListener("change",e=>{if(e.target.dataset?.hf){S.hf={...(S.hf||{}),[e.target.dataset.hf]:e.target.checked};render();return}if(e.target.id==="bcat"&&e.target.value!==""){BOARD.fly(document.getElementById("bc-"+e.target.value),.5);e.target.value=""}},true);
-document.addEventListener("submit",e=>{const id=e.target.id;if(!["fLesson","fAcc","fPost","fRobe"].includes(id))return;e.preventDefault();e.stopImmediatePropagation();if(!S.db)return;const d=Object.fromEntries(new FormData(e.target));
-  const go2=async()=>{if(id==="fRobe")await S.db.collection("posts").add({...d,product:"heatgrump_robe",robe:true,action:(((S.robe||{}).hooks||[]).find(h=>h.id===d.hook)||{}).name||"",added:nowIso()});if(id==="fLesson")await S.db.collection("lessons").add({...d,date:nowIso().slice(0,10),by:"Szasz"});if(id==="fAcc")await S.db.collection("accounts").add({handle:d.handle.replace(/^@/,""),platform:d.platform,poster:d.poster||"",added:nowIso()});if(id==="fPost"){const c=HK.concepts.find(x=>x.name===d.action);await S.db.collection("posts").add({...d,action_id:c?.id||"",added:nowIso()});await S.db.collection("inbox").add({text:"New post to track: "+d.url,status:"nou",creat:nowIso(),via:"results"})}e.target.reset();toast("Saved")};run(go2,e.target.querySelector("button"))},true);
+document.addEventListener("submit",e=>{const id=e.target.id;if(!["fLesson","fAcc","fPost","fRobe","fRobeJob"].includes(id))return;e.preventDefault();e.stopImmediatePropagation();if(!S.db)return;const d=Object.fromEntries(new FormData(e.target));
+  const go2=async()=>{if(id==="fRobeJob"){await S.db.collection("jobs").add({...d,type:"robe",product:"heatgrump_robe",est:+d.est,status:"queued",created:nowIso()});await S.db.collection("inbox").add({text:`Robe video: ${d.variant} · ${d.mode} · hook ${d.hook} · char ${d.character||"reuse"} · room ${d.room||"reuse"} · ${d.outfit}`,status:"nou",creat:nowIso(),via:"robe"})}if(id==="fRobe")await S.db.collection("posts").add({...d,product:"heatgrump_robe",robe:true,action:(((S.robe||{}).hooks||[]).find(h=>h.id===d.hook)||{}).name||"",added:nowIso()});if(id==="fLesson")await S.db.collection("lessons").add({...d,date:nowIso().slice(0,10),by:"Szasz"});if(id==="fAcc")await S.db.collection("accounts").add({handle:d.handle.replace(/^@/,""),platform:d.platform,poster:d.poster||"",added:nowIso()});if(id==="fPost"){const c=HK.concepts.find(x=>x.name===d.action);await S.db.collection("posts").add({...d,action_id:c?.id||"",added:nowIso()});await S.db.collection("inbox").add({text:"New post to track: "+d.url,status:"nou",creat:nowIso(),via:"results"})}e.target.reset();toast("Saved")};run(go2,e.target.querySelector("button"))},true);
 document.addEventListener("submit",e=>{if(e.target.id!=="botf")return;e.preventDefault();e.stopImmediatePropagation();const i=$("#botin");const t=i.value;i.value="";BOT.send(t)},true);
 document.addEventListener("keydown",e=>{if(e.target.id==="botin"&&e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("#botf").requestSubmit()}});
 try{S.fmode=localStorage.getItem("lx.fmode")||"board"}catch(_){S.fmode="board"}

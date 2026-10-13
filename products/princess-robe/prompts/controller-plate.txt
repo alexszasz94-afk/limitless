@@ -1,0 +1,15 @@
+# PRINȚESA — telecomanda ROZ. Se generează O SINGURĂ DATĂ (mână de fată), apoi clipul se refolosește la toate videourile.
+# model gpt_image_2 · 9:16 · quality high · 4k · medias: 1 controller_real (cb73364c, HeatGrump), 2 personaj fată, 3 cameră, 4-5 refs prințesă (manșeta)
+
+REPRODUCE THE SHAPE OF THE CONTROLLER FROM IMAGE 1 ONE TO ONE — ABSOLUTE RULE, HIGHEST PRIORITY. Same body shape and proportions, same single round button in the same place, the same vertical row of FIVE small indicator lights — same number, size, spacing and position — the same cable coming out of the same place. Do NOT add a light, a screen, a second button or a label. Every light is OFF — dark, unlit, nothing glowing.
+
+WHAT CHANGES — THE COLOUR AND PRINT ONLY: the plastic body is soft pastel PINK with a glossy finish, covered in a cute tiny all-over print of little white hearts, small gold stars and tiny crowns. The round button is white. The cable is pink. The print never covers the lights.
+
+THE SLEEVE: the framing is so tight that the ONLY part of the robe in frame is the wide white sherpa cuff at her wrist (from Images 4-5). Nothing else of the robe.
+
+IMAGE ROLES: Image 2 is the YOUNG WOMAN whose hand this is — matching skin tone, slim feminine hand, natural nails, five fingers, natural anatomy. Image 3 is the ROOM.
+
+FRAMING — TIGHT MACRO: the controller held face-on, filling about three quarters of the frame height, face square to the camera so the five lights and the button read clearly. Thumb on the button, never covering a light. Whole controller and hand inside the frame. Background: soft bokeh of the room from Image 3 with warm fairy lights. Vertical 9:16.
+
+<LIGHT_BLOCK — blocks/light-ultra-real.txt din HeatGrump>
+Candid iPhone photo, photorealistic. No text, no logos, no watermarks.

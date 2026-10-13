@@ -1,0 +1,18 @@
+# FIȘA PRODUSULUI — PRINȚESA (regula 13 oct: generăm cu Higgsfield, Szasz aprobă)
+# model gpt_image_2 · 9:16 · quality high · 4k · declined_preset_id 24bae836-2c4a-48e0-89b6-49fcc0b21612
+# Image 1 = refs/supplier-front-back.jpg (sau varianta generică aprobată). ~15 credite/imagine → 8 imagini ≈ 120 credite.
+# Fiecare imagine = același început (BAZA) + o singură linie VEDERE.
+
+BAZA:
+REPRODUCE THE ROBE FROM IMAGE 1 ONE TO ONE — ABSOLUTE RULE. Same colours, same panels, same trims, same embroidery, same proportions. Copy it, do not design it. Do not add or remove any detail. <ROBE_BLOCK>
+Clean product photo on a plain light-grey seamless background, soft even studio daylight, true colours, sharp fabric texture with visible plush fibres. No person unless the view says so, no text, no logo, no watermark. Vertical 9:16.
+
+VEDERI (8):
+1. FRONT — the robe on an invisible mannequin, closed, sash tied, full length, facing the camera.
+2. BACK — the same, seen from behind, hood down the back.
+3. SIDE — three-quarter side view, showing the puffed shoulder and the depth of the hood.
+4. OPEN — front view with the robe open, showing the white sherpa lining inside.
+5. HOOD DETAIL — close-up of the hood front and its embroidery.
+6. SLEEVE + CUFF DETAIL — close-up of the sleeve band and the white sherpa cuff.
+7. ROLLED — the robe rolled up tight and tied with its sash, lying on the grey background (for the drop-open hook).
+8. WORN — a young woman wearing it with the hood up, standing, full length, natural smile, plain light room.

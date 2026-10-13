@@ -1,0 +1,13 @@
+# PRINȚESA — conectorul ROZ/MOV. O SINGURĂ DATĂ (mâini de fată), apoi se refolosește.
+# model gpt_image_2 · 9:16 · quality high · 4k · medias: 1 connector_approved_frame (da68ee9d), 2 connector_ref (2774615c), 3 personaj fată, 4 cameră, 5-6 refs prințesă (manșeta)
+
+REPRODUCE THE CONNECTOR FROM IMAGE 1 ONE TO ONE IN SHAPE — ABSOLUTE RULE, HIGHEST PRIORITY. The same two-part connector, the same body shape and proportions, the same ribs and edges, the same cable thickness, the same way the two halves face each other. Do NOT turn it into a different plug, do NOT add pins, labels or LEDs. Image 2 confirms the shape.
+
+WHAT CHANGES — COLOUR ONLY: both halves are soft LILAC-PURPLE plastic with a pearly finish, one half slightly pinker than the other; both cables are pastel pink.
+
+HANDS: the hands of the young woman in Image 3 — slim feminine hands, natural nails, matching skin tone, five fingers each. THE SLEEVE: only the wide white sherpa cuffs at her wrists are visible (Images 5-6), nothing else of the robe.
+
+Tight macro, both halves lined up face to face with a clear gap, NOT touching. Each half has its own cable: one goes up out of the top half, one goes down out of the bottom half. Background: soft bokeh of the bed or the Christmas tree from Image 4. Bright, evenly lit, no dark corners. Vertical 9:16.
+
+<LIGHT_BLOCK>
+Candid iPhone photo, photorealistic. No text, no logos, no watermarks.

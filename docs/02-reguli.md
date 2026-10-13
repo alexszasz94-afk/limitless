@@ -50,3 +50,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - **13 oct 2026** — Prințesa: doar fete. Telecomanda roz cu modele drăguțe și conectorul roz/mov se fac o singură dată și se refolosesc la toate videourile prințesei. B-roll cu Genjutsu, hook opțional. Modul de lucru e în Robe 2026 → „Make a robe video”, separat de „Make a clip”.
 - **13 oct 2026** — Toate imaginile și videourile: „Shot on iPhone 18 Pro Max” în prompt, look real de telefon (nu render, nu desen). Obiectele noastre (telecomandă, conector) arată ca produse reale fabricate, dar „faine” pentru publicul țintă (prințesă = bijuterie, perle, coroniță).
 - **13 oct 2026** — Contul nou Higgsfield e pe planul Starter: Seedance 2.5 refuză („Requires plus plan or higher”). Imaginile (GPT Image 2.5) merg. Max 4 generări simultane.
+- **13 oct 2026** — Orice imagine/clip generat i se arată lui Szasz direct în chat (fișier trimis), nu doar în widgetul Higgsfield.

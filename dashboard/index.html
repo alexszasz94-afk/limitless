@@ -294,7 +294,7 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 @media (prefers-reduced-motion: reduce){#world.anim{transition:none}}
 
 /* ---- hooks + studio ---- */
-.hcon{margin-top:8px;gap:6px}.chipb{border:1px solid var(--edge);background:var(--deck);color:var(--text);border-radius:999px;padding:5px 12px;font:13px var(--f-body);cursor:pointer}.chipb.on{background:var(--ion-soft);border-color:var(--ion)}.chipb small{color:var(--dim);font-family:var(--f-data)}
+.hcon{margin-top:8px;gap:6px}.chipb{border:1px solid var(--edge);background:var(--deck);color:var(--text);border-radius:999px;padding:5px 12px;font:13px var(--f-body);cursor:pointer}.chipb.on{background:var(--ion-soft);border-color:var(--ion)}.chipb.big{font-size:14.5px;font-weight:600;padding:8px 16px}.chipb small{color:var(--dim);font-family:var(--f-data)}
 .caps{display:flex;flex-wrap:wrap;gap:8px}.capb{border:1px dashed var(--edge);background:var(--deck-2);color:var(--text);border-radius:10px;padding:8px 12px;font:600 13.5px var(--f-body);cursor:copy;text-align:left}
 .hgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:14px}
 .hcard{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;border:1px solid var(--edge);border-radius:16px;background:var(--glass);padding:12px;min-width:0}.hcard.on{border-color:var(--ion);box-shadow:0 0 0 2px var(--ion-soft)}
@@ -332,6 +332,11 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 
 .hvid{width:150px;aspect-ratio:9/16;border-radius:10px;background:#000;object-fit:cover}
 .pcat{border:1px solid var(--edge);border-radius:14px;padding:10px 14px;background:var(--glass)}.pcat summary{cursor:pointer;font-size:15px}.pcat .pgrid{margin-top:10px}
+
+.card.wide{grid-column:1/-1}.strat{margin-top:8px;border-top:1px solid var(--edge);padding-top:10px}.strat summary{cursor:pointer;font-size:15px}.strat h4{margin:14px 0 6px;font-family:var(--f-data);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--plasma)}
+.strat ul{margin:0;padding-left:18px}.strat li{font-size:13.5px;margin-bottom:4px}.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.stab{display:flex;flex-direction:column;gap:6px}.srow{display:grid;grid-template-columns:minmax(160px,1.1fr) 2fr 1.3fr;gap:10px;font-size:13px;border:1px solid var(--edge);border-radius:10px;padding:8px 10px;background:var(--deck-2)}
+@media (max-width:760px){.srow{grid-template-columns:1fr}}
 /* ---- chat ---- */
 .botfab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;gap:8px;align-items:center;border:1px solid var(--edge);border-radius:999px;padding:12px 18px;font:600 14px var(--f-body);color:var(--text);
   background:linear-gradient(135deg,var(--plasma-soft),var(--ion-soft)),var(--deck);box-shadow:0 18px 40px -16px rgba(0,0,0,.6),0 0 0 1px var(--ion-soft);cursor:pointer}
@@ -443,12 +448,23 @@ function vBrain(){
   <section><h2>Video pipeline</h2><div class="flow">${flow}</div></section>
   <section><h2>Latest requests</h2>${S.inbox.length?inboxList(S.inbox.slice(0,4)):`<div class="empty"><b>No requests yet</b>Write one in “Ask Claude”. I pick them up when you tell me “requests” in chat.</div>`}</section>`;
 }
+
+function stratBlock(T){const L=a=>(a||[]).map(x=>`<li>${typeof x==="string"?esc(x):esc(x.t||"")}</li>`).join("");
+  const link=(u,t)=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t||"open")}</a>`:"";
+  return `<details class="strat" open><summary><b>Strategy · ${esc(T.goal||"")}</b></summary>
+  <div class="sgrid"><section><h4>The math</h4><ul>${L(T.math)}</ul></section><section><h4>Every day</h4><ul>${L(T.daily)}</ul></section></div>
+  <h4>Hooks to use (the action in the first 2–3 s)</h4><div class="stab">${(T.hooks||[]).map(h=>`<div class="srow"><b>${esc(h.action)}</b><span>${esc(h.how||"")}</span><span>${(h.examples||[]).map(x=>link(x.url,(x.label||"example")+(x.views?" · "+fmt(x.views):""))).join(" · ")}${h.hook_id?` · <a href="#hooks">library: ${esc(h.hook_id)}</a>`:""}</span></div>`).join("")}</div>
+  <h4>Viral videos to copy 1:1 with Genjutsu</h4><div class="stab">${(T.copy||[]).map(x=>`<div class="srow"><b>${link(x.url,"@"+x.handle)} · ${fmt(x.views)} views</b><span>${esc(x.what||"")}</span><span class="muted">${esc(x.note||"")}</span></div>`).join("")}</div>
+  <div class="sgrid"><section><h4>Text layer (captions)</h4><ul>${L(T.texts)}</ul></section><section><h4>Turn views into orders</h4><ul>${L(T.convert)}</ul></section></div>
+  <h4>7-day plan</h4><ol class="ladder">${(T.plan||[]).map(x=>`<li><b>${esc(x.day)}</b><p>${esc(x.do)}</p></li>`).join("")}</ol>
+  <div class="sgrid"><section><h4>Watch these numbers</h4><ul>${L(T.kpis)}</ul></section><section><h4>Risks</h4><ul>${L(T.risks)}</ul></section></div>
+  <h4>What we need</h4><ul>${L(T.needs)}</ul></details>`}
 function vProducts(){
   const cards=[...S.products].sort((a,b)=>scor(b)[0]-scor(a)[0]).map(p=>{
     const [s,ver]=scor(p),m=p.metrici||{},c=p.criterii||{},k=ver==="trece"?"ok":ver==="picat"?"bad":"warn";
     const crit=CRIT.map((t,i)=>{const v=c[i+1];return `<button ${S.write?"":"disabled"} class="${v===true?"y":v===false?"n":""}" data-act="crit" data-id="${p._id}" data-i="${i+1}" title="${i+1}. ${esc(t)}" aria-label="Check ${i+1}: ${esc(t)} — ${v===true?"pass":v===false?"fail":"unchecked"}">${i+1}</button>`}).join("");
     const ai=S.ai[p._id];
-    return `<article class="card"><div class="row" style="justify-content:space-between"><span>${esc(p.categorie_en||p.categorie||"no category")}${p.demo?" · sample":""}</span>${chip(VERDICT[ver],k)}</div>
+    return `<article class="card${p.strategy?" wide":""}"><div class="row" style="justify-content:space-between"><span>${esc(p.categorie_en||p.categorie||"no category")}${p.demo?" · sample":""}</span>${chip(VERDICT[ver],k)}</div>
       <h3>${esc(p.nume_en||p.nume)}</h3>
       <div class="score"><div class="bar"><i style="width:${s}%"></i></div><b>${s}</b></div>
       <div class="crit">${crit}</div>
@@ -456,6 +472,7 @@ function vProducts(){
       ${p.link?`<a href="${esc(p.link)}" target="_blank" rel="noopener">Product page</a>`:""}
       ${S.sample?`<div class="row"><button class="btn" data-act="ai" data-id="${p._id}">Analyze with Claude</button></div>`:""}
       ${ai?`<div class="ai">${ai.html||esc(ai.text||"")}</div>`:""}
+      ${p.strategy?stratBlock(p.strategy):""}
       ${p.idei?`<div class="ai"><b>Saved ideas</b>\n${esc(p.idei)}</div>`:""}
     </article>`}).join("");
   return `<div class="top"><div><div class="kicker">01 · products</div><h1>What's worth running</h1></div><div class="sub">Tap a square to mark it: empty → pass → fail. One red stops the product.</div></div>
@@ -1010,6 +1027,9 @@ Current page: ${S.route}. Products in the finder: ${S.finder.length}. Rules (new
 
 /* ---- Hooks library + Clip studio ---- */
 const HK={list:[],concepts:[],captions:[],scoring:"",byId:{}};
+const HFAM=[["store","Store find",["store_shock","store_grab","store_rush"]],["reveal","Reveal",["cover_reveal","drop_open","show_to_lens"]],["puton","Put on / transform",["hood_up","throw_on"]],["unbox","Unboxing",["open_package"]],["gift","Gifting",["gift_handoff"]],["fail","Pattern interrupt / fail",["slapstick_fail","absurd_popout","public_reaction"]],["oldnew","Old way vs new",["old_way_struggle"]],["demo","Demo & cozy",["satisfying_demo","sink_in_cozy"]]];
+function hfamOf(cid){const F=HFAM.find(x=>x[2].includes(cid));return F?F[0]:"other"}
+
 function hookPoster(mk,ev){if(ev&&ev.code){const F=(S.fresh||[]).find(x=>x.shortCode===ev.code);if(F&&F.thumb)return `style="background-image:url(${F.thumb})"`}return mk&&S.posters[mk]?`data-poster="${esc(mk)}"`:""}
 function hooksFor(fam){const f=S.finder.find(x=>x._id===fam);const B=S.broll[fam];const effect=B&&B.type==="effect";
   return HK.list.filter(h=>!h.same_as).map(h=>{let s=h.now_score||0;if(h.evidence?.family===fam)s+=25;else if(!h.transferable)s-=40;if(effect&&h.genjutsu_ok&&!h.broll_seedance)s-=5;if(h.kind==="proven")s+=5;return {...h,_fit:s}}).filter(h=>h._fit>0).sort((a,b)=>b._fit-a._fit)}
@@ -1018,7 +1038,7 @@ function clipsFor(fam){const f=S.finder.find(x=>x._id===fam);if(!f)return [];
 function hookCard(h,opts={}){const ev=h.evidence||{};const c=HK.concepts.find(x=>x.id===h.concept);const sel=opts.sel;
   return `<article class="hcard ${sel?"on":""}">
    <div class="hmedia">${ev.clip?`<video class="hvid" src="${esc(ev.clip)}" poster="${esc(ev.poster||"")}" preload="none" controls playsinline muted loop></video>`:ev.url?`<a class="vid" href="${esc(ev.url)}" target="_blank" rel="noopener" ${hookPoster(ev.mkey,ev)}><span class="pl">▶</span><span class="wo">See the original</span></a>`:`<div class="vid none">${h.kind==="proven"?"Proven hook":"no preview"}</div>`}</div>
-   <div class="hbody"><div class="row">${chip(c?.name||h.concept,"pl")}${h.kind==="proven"?chip("proven","ok"):""}${h.new?chip("new · "+esc(h.evidence?.date||""),"warn"):""}${chip("now "+Math.round(h.now_score||0),"ion")}${h.transferable?chip("any product","ok"):""}${h.genjutsu_ok?chip("Genjutsu","ion"):chip("Seedance","warn")}</div>
+   <div class="hbody"><div class="row">${chip(((HFAM.find(F=>F[2].includes(h.concept))||[])[1]||"")+(c?.name?" · "+c.name:""),"pl")}${h.kind==="proven"?chip("proven","ok"):""}${h.new?chip("new · "+esc(h.evidence?.date||""),"warn"):""}${chip("now "+Math.round(h.now_score||0),"ion")}${h.transferable?chip("any product","ok"):""}${h.genjutsu_ok?chip("Genjutsu","ion"):chip("Seedance","warn")}</div>
     <p class="hcap">${esc(h.action||h.visual||h.title||"")}</p>${h.hook_seconds?`<p class="muted" style="margin:0">first ${esc(h.hook_seconds)} s · copy with ${esc(h.copy_with||"genjutsu")}</p>`:""}${h.caption?`<p class="hvis"><span class="muted">Text used:</span> “${esc(h.caption)}”</p>`:""}
     <p class="muted">${esc(h.trigger||"")}${ev.views?` · ${fmt(ev.views)} views`:""}${ev.brain_score?` · Brain ${ev.brain_score}/10`:""}${ev.family?` · ${esc((S.finder.find(x=>x._id===ev.family)||{}).title||ev.family)}`:""}</p>
     ${h.why?`<details><summary>Why it works</summary><p>${esc(h.why)}</p>${h.risk?`<p class="muted">Risk: ${esc(h.risk)}</p>`:""}</details>`:""}
@@ -1027,11 +1047,12 @@ function hookCard(h,opts={}){const ev=h.evidence||{};const c=HK.concepts.find(x=
 function vHooks(){
   if(!HK.list.length)return `<div class="top"><div><div class="kicker">hooks</div><h1>Hook library</h1></div></div><div class="empty"><b>Loading hooks…</b>The library fills in a moment.</div>`;
   const q=(S.hq||"").toLowerCase(),c=S.hc||"",f=S.hf||{};
-  let L=HK.list.filter(h=>(f.dups||!h.same_as)&&(!c||h.concept===c)&&(!q||((h.action||"")+" "+h.caption+" "+h.visual+" "+h.title+" "+(h.trigger||"")).toLowerCase().includes(q))&&(!f.any||h.transferable)&&(!f.gj||h.genjutsu_ok)&&(!f.proven||h.kind==="proven")).sort((a,b)=>(b.now_score||0)-(a.now_score||0));
+  const fam=S.hfam||"";let L=HK.list.filter(h=>(f.dups||!h.same_as)&&(!fam||hfamOf(h.concept)===fam)&&(!c||h.concept===c)&&(!q||((h.action||"")+" "+h.caption+" "+h.visual+" "+h.title+" "+(h.trigger||"")).toLowerCase().includes(q))&&(!f.any||h.transferable)&&(!f.gj||h.genjutsu_ok)&&(!f.proven||h.kind==="proven")).sort((a,b)=>(b.now_score||0)-(a.now_score||0));
   return `<div class="top"><div><div class="kicker">hooks</div><h1>Hook library</h1></div><div class="sub">${HK.list.filter(h=>!h.same_as).length} hooks · ${HK.concepts.length} actions (what happens in the first 2–3 s) · best for now first</div></div>
   <section class="panel sticky"><div class="row"><input id="hq" value="${esc(S.hq||"")}" placeholder="Search hooks… gift, mom, Costco, 1965" aria-label="Search hooks" style="flex:1;min-width:200px">
    <label class="tog"><input type="checkbox" data-hf="any" ${f.any?"checked":""}> Works for any product</label><label class="tog"><input type="checkbox" data-hf="gj" ${f.gj?"checked":""}> Genjutsu only</label><label class="tog"><input type="checkbox" data-hf="proven" ${f.proven?"checked":""}> Proven only</label><label class="tog"><input type="checkbox" data-hf="dups" ${f.dups?"checked":""}> Show similar ones</label></div>
-   <div class="row hcon"><button class="chipb ${!c?"on":""}" data-act="hcon" data-c="">All</button>${HK.concepts.map(x=>`<button class="chipb ${c===x.id?"on":""}" data-act="hcon" data-c="${esc(x.id)}" title="${esc(x.what||"")}">${esc(x.name)} <small>${HK.list.filter(h=>h.concept===x.id&&(f.dups||!h.same_as)).length}</small></button>`).join("")}</div>
+   <div class="row hcon"><button class="chipb big ${!fam?"on":""}" data-act="hfam" data-f="">All</button>${HFAM.map(F=>`<button class="chipb big ${fam===F[0]?"on":""}" data-act="hfam" data-f="${F[0]}">${esc(F[1])} <small>${HK.list.filter(h=>(f.dups||!h.same_as)&&F[2].includes(h.concept)).length}</small></button>`).join("")}</div>
+   ${fam?`<div class="row hcon"><span class="muted">Action:</span><button class="chipb ${!c?"on":""}" data-act="hcon" data-c="">All in ${esc((HFAM.find(F=>F[0]===fam)||[])[1]||"")}</button>${HK.concepts.filter(x=>hfamOf(x.id)===fam).map(x=>`<button class="chipb ${c===x.id?"on":""}" data-act="hcon" data-c="${esc(x.id)}" title="${esc(x.what||"")}">${esc(x.name)} <small>${HK.list.filter(h=>h.concept===x.id&&(f.dups||!h.same_as)).length}</small></button>`).join("")}</div>`:""}
    ${c?(()=>{const C=HK.concepts.find(x=>x.id===c)||{};return `<p style="margin:6px 0 0"><b>${esc(C.what||"")}</b></p><p class="muted" style="margin:2px 0 0">${esc(C.why||C.why_it_works||"")}</p>${C.genjutsu?`<p class="muted" style="margin:2px 0 0"><b>How we copy it:</b> ${esc(C.genjutsu)}</p>`:""}`})():""}</section>
   ${HK.captions.length&&!c&&!q?`<section class="panel"><h2>Text layer — captions that worked (add on top of any hook)</h2><div class="caps">${HK.captions.slice(0,24).map(x=>`<button class="capb" data-act="copytxt" data-t="${esc(x.template||x.text)}" title="Copy">${esc(x.text)}</button>`).join("")}</div></section>`:""}
   <div class="hgrid">${L.slice(0,120).map(h=>hookCard(h)).join("")||`<div class="empty"><b>No hook matches</b>Clear a filter.</div>`}</div>`}
@@ -1117,6 +1138,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="st-send"){e.stopImmediatePropagation();run(stSend,b);return}
   if(a==="st-usehook"){e.stopImmediatePropagation();S.st={fam:"",mode:"hook",hook:b.dataset.id,clip:""};toast("Hook chosen. Now pick the product.");go("studio");return}
   if(a==="hcon"){e.stopImmediatePropagation();S.hc=b.dataset.c;render();return}
+  if(a==="hfam"){e.stopImmediatePropagation();S.hfam=b.dataset.f;S.hc="";render();return}
   if(a==="copytxt"){e.stopImmediatePropagation();navigator.clipboard?.writeText(b.dataset.t).then(()=>toast("Caption copied"),()=>toast(b.dataset.t));return}
   if(a==="job"){e.stopImmediatePropagation();run(async()=>{await S.db.doc("jobs/"+b.dataset.id).update({status:b.dataset.s,decided:nowIso()});if(b.dataset.s==="approved")await S.db.collection("inbox").add({text:"APPROVED clip job "+b.dataset.id+" — make it (Genjutsu/Seedance as planned, within the estimated credits).",status:"nou",creat:nowIso(),via:"boards"});toast(b.dataset.s==="approved"?"Approved. Claude Code will make it.":"Rejected.")},b);return}
   if(a==="botq"){e.stopImmediatePropagation();BOT.send(b.textContent);return}

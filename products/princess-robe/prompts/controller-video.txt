@@ -1,17 +1,13 @@
-# PRINȚESA — identic cu HeatGrump, start_image = placa ROZ aprobată.
-# model seedance_2_5 · mode omni_reference · start_image = placa de telecomandă · image_references = controller_real (cb73364c) · 5 s · 1080p · 9:16 · bitrate high · generate_audio true
-# PROMPTUL LUI. SE RULEAZĂ CUVÂNT CU CUVÂNT. NU SE MODIFICĂ.
+# PRINȚESA — telecomanda „Crystal tiara” (varianta 1). seedance_2_5 · omni_reference · start_image = 4cc7d831 · 5 s · 1080p · 9:16 · bitrate high · audio. Necesită plan Plus.
 
-THE FRAME NEVER CHANGES: one locked macro camera, one continuous take, no zoom, no cut, no re-frame. The controller, the hand, the printed labels, the background blur and the exposure stay exactly as in the start frame. The controller keeps the same shape, the same pink printed plastic and the same printing throughout — nothing morphs, no label ever changes.
+THE FRAME NEVER CHANGES: one locked camera, one continuous take, no zoom, no cut, no re-frame. The controller, the hand, the Christmas nails, the fluffy white cuff, the Christmas-tree background and the exposure stay exactly as in the start frame. The controller keeps the same crystal-tiara shape, the same pink acrylic and rose-gold frame, the same five crystal light windows and the same numbers 1-5 throughout — nothing morphs.
 
-THE LIGHTS CLIMB FROM THE BOTTOM UPWARDS — ABSOLUTE RULE, HIGHEST PRIORITY: there is a vertical row of five small indicator lights. The BOTTOM one is number 1 and the TOP one is number 5. The lit light travels UPWARD along that row, one step at a time: 1 to 2, 2 to 3, 3 to 4, 4 to 5. It only ever moves UP, never down, never sideways, never skips a step, never jumps back to the bottom.
+THE LIGHTS CLIMB FROM THE BOTTOM UPWARDS — ABSOLUTE RULE: the five crystal windows form a vertical row; the BOTTOM one is 1, the TOP one is 5. A soft lilac-pink glow lights inside ONE crystal at a time and travels UPWARD one step at a time: 1 to 2, 2 to 3, 3 to 4, 4 to 5. Never down, never skipping, never back to the bottom.
 
-EXACTLY ONE LIGHT IS LIT AT ANY MOMENT: when the next light comes on, the previous one goes dark in the same instant. Two are NEVER lit together, not for a single frame. The row NEVER fills up like a battery bar, never lights progressively, never stays lit behind the moving one.
+EXACTLY ONE CRYSTAL IS LIT AT ANY MOMENT: when the next one lights, the previous one goes dark in the same instant. Two are never lit together. The row never fills up like a battery bar.
 
-ACTION, PACED FOR FIVE SECONDS: the clip starts with the BOTTOM light lit and the four above it dark. The thumb presses the button four times, evenly spaced across the five seconds — at roughly 0.6s, 1.7s, 2.8s and 3.9s. On each press the lit light steps one place UP the row. After the fourth press the TOP light is the only one lit and it stays lit while the thumb rests for the remaining second. The thumb visibly travels down and back up on each press — the button movement is readable. The presses are brisk but never rushed or blurred.
+ACTION, FIVE SECONDS: the clip starts with the BOTTOM crystal lit and the four above dark. Her thumb presses the pearl button four times, evenly spaced at about 0.6s, 1.7s, 2.8s and 3.9s; on each press the lit crystal steps one place UP. After the fourth press only the TOP crystal is lit and it stays lit for the last second. The thumb visibly presses down and back up each time.
 
-AUDIO: one short dry button CLICK at exactly the frame of each press, four clicks total, matching the thumb exactly. Quiet indoor room tone otherwise. No music.
+AUDIO: one short soft CLICK at the exact frame of each press, four clicks total. Quiet indoor room tone. No music.
 
-Human-paced movement, correct number of fingers, no extra limbs, no morphing.
-
-Candid raw iPhone 12, film grain, no AI glow, no smoothing.
+Correct number of fingers, no extra limbs, no morphing. Shot on iPhone 18 Pro Max, candid real footage, natural grain, no AI glow, no smoothing. No text, no watermark.

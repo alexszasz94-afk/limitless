@@ -329,6 +329,9 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 .flist{display:flex;flex-direction:column;gap:10px}.fcard{display:grid;grid-template-columns:90px minmax(0,1fr);gap:10px;border:1px solid var(--edge);border-radius:12px;padding:8px;background:var(--deck-2)}
 .fthumb{position:relative;display:block;width:90px;aspect-ratio:9/16;border-radius:8px;background:#0a0c18 center/cover no-repeat}.fthumb .pl{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:20px}
 .fcard b{font-size:14px}.fcard small{display:block;color:var(--dim);font-size:11.5px}.fcard p{margin:4px 0 0;font-size:12.5px}
+
+.hvid{width:150px;aspect-ratio:9/16;border-radius:10px;background:#000;object-fit:cover}
+.pcat{border:1px solid var(--edge);border-radius:14px;padding:10px 14px;background:var(--glass)}.pcat summary{cursor:pointer;font-size:15px}.pcat .pgrid{margin-top:10px}
 /* ---- chat ---- */
 .botfab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;gap:8px;align-items:center;border:1px solid var(--edge);border-radius:999px;padding:12px 18px;font:600 14px var(--f-body);color:var(--text);
   background:linear-gradient(135deg,var(--plasma-soft),var(--ion-soft)),var(--deck);box-shadow:0 18px 40px -16px rgba(0,0,0,.6),0 0 0 1px var(--ion-soft);cursor:pointer}
@@ -1009,12 +1012,12 @@ Current page: ${S.route}. Products in the finder: ${S.finder.length}. Rules (new
 const HK={list:[],concepts:[],captions:[],scoring:"",byId:{}};
 function hookPoster(mk,ev){if(ev&&ev.code){const F=(S.fresh||[]).find(x=>x.shortCode===ev.code);if(F&&F.thumb)return `style="background-image:url(${F.thumb})"`}return mk&&S.posters[mk]?`data-poster="${esc(mk)}"`:""}
 function hooksFor(fam){const f=S.finder.find(x=>x._id===fam);const B=S.broll[fam];const effect=B&&B.type==="effect";
-  return HK.list.map(h=>{let s=h.now_score||0;if(h.evidence?.family===fam)s+=25;else if(!h.transferable)s-=40;if(effect&&h.genjutsu_ok&&!h.broll_seedance)s-=5;if(h.kind==="proven")s+=5;return {...h,_fit:s}}).filter(h=>h._fit>0).sort((a,b)=>b._fit-a._fit)}
+  return HK.list.filter(h=>!h.same_as).map(h=>{let s=h.now_score||0;if(h.evidence?.family===fam)s+=25;else if(!h.transferable)s-=40;if(effect&&h.genjutsu_ok&&!h.broll_seedance)s-=5;if(h.kind==="proven")s+=5;return {...h,_fit:s}}).filter(h=>h._fit>0).sort((a,b)=>b._fit-a._fit)}
 function clipsFor(fam){const f=S.finder.find(x=>x._id===fam);if(!f)return [];
   return groupsFor(f).flatMap(g=>g.list.map(a=>({...a,_row:g.title}))).map(a=>{const k=S.takes[a.mkey];const sc=k?Number(k.score)||0:0;const bad=/fire|flame|police|illegal|nud|medical|weapon|knife/i.test((k?.risk||"")+" "+(k?.hook||""));return {...a,_k:k,_sc:sc,_bad:bad,_rank:sc*10+Math.log10((a.top_views||a.avg_views||1))*8+(a._ugc?12:0)-(bad?25:0)}}).sort((a,b)=>b._rank-a._rank)}
 function hookCard(h,opts={}){const ev=h.evidence||{};const c=HK.concepts.find(x=>x.id===h.concept);const sel=opts.sel;
   return `<article class="hcard ${sel?"on":""}">
-   <div class="hmedia">${ev.url?`<a class="vid" href="${esc(ev.url)}" target="_blank" rel="noopener" ${hookPoster(ev.mkey,ev)}><span class="pl">▶</span><span class="wo">See the original</span></a>`:`<div class="vid none">${h.kind==="proven"?"Proven hook":"no preview"}</div>`}</div>
+   <div class="hmedia">${ev.clip?`<video class="hvid" src="${esc(ev.clip)}" poster="${esc(ev.poster||"")}" preload="none" controls playsinline muted loop></video>`:ev.url?`<a class="vid" href="${esc(ev.url)}" target="_blank" rel="noopener" ${hookPoster(ev.mkey,ev)}><span class="pl">▶</span><span class="wo">See the original</span></a>`:`<div class="vid none">${h.kind==="proven"?"Proven hook":"no preview"}</div>`}</div>
    <div class="hbody"><div class="row">${chip(c?.name||h.concept,"pl")}${h.kind==="proven"?chip("proven","ok"):""}${h.new?chip("new · "+esc(h.evidence?.date||""),"warn"):""}${chip("now "+Math.round(h.now_score||0),"ion")}${h.transferable?chip("any product","ok"):""}${h.genjutsu_ok?chip("Genjutsu","ion"):chip("Seedance","warn")}</div>
     <p class="hcap">${esc(h.action||h.visual||h.title||"")}</p>${h.hook_seconds?`<p class="muted" style="margin:0">first ${esc(h.hook_seconds)} s · copy with ${esc(h.copy_with||"genjutsu")}</p>`:""}${h.caption?`<p class="hvis"><span class="muted">Text used:</span> “${esc(h.caption)}”</p>`:""}
     <p class="muted">${esc(h.trigger||"")}${ev.views?` · ${fmt(ev.views)} views`:""}${ev.brain_score?` · Brain ${ev.brain_score}/10`:""}${ev.family?` · ${esc((S.finder.find(x=>x._id===ev.family)||{}).title||ev.family)}`:""}</p>
@@ -1024,12 +1027,12 @@ function hookCard(h,opts={}){const ev=h.evidence||{};const c=HK.concepts.find(x=
 function vHooks(){
   if(!HK.list.length)return `<div class="top"><div><div class="kicker">hooks</div><h1>Hook library</h1></div></div><div class="empty"><b>Loading hooks…</b>The library fills in a moment.</div>`;
   const q=(S.hq||"").toLowerCase(),c=S.hc||"",f=S.hf||{};
-  let L=HK.list.filter(h=>(!c||h.concept===c)&&(!q||((h.action||"")+" "+h.caption+" "+h.visual+" "+h.title+" "+(h.trigger||"")).toLowerCase().includes(q))&&(!f.any||h.transferable)&&(!f.gj||h.genjutsu_ok)&&(!f.proven||h.kind==="proven")).sort((a,b)=>(b.now_score||0)-(a.now_score||0));
-  return `<div class="top"><div><div class="kicker">hooks</div><h1>Hook library</h1></div><div class="sub">${HK.list.length} hooks · ${HK.concepts.length} concepts · sorted by what works now</div></div>
+  let L=HK.list.filter(h=>(f.dups||!h.same_as)&&(!c||h.concept===c)&&(!q||((h.action||"")+" "+h.caption+" "+h.visual+" "+h.title+" "+(h.trigger||"")).toLowerCase().includes(q))&&(!f.any||h.transferable)&&(!f.gj||h.genjutsu_ok)&&(!f.proven||h.kind==="proven")).sort((a,b)=>(b.now_score||0)-(a.now_score||0));
+  return `<div class="top"><div><div class="kicker">hooks</div><h1>Hook library</h1></div><div class="sub">${HK.list.filter(h=>!h.same_as).length} hooks · ${HK.concepts.length} actions (what happens in the first 2–3 s) · best for now first</div></div>
   <section class="panel sticky"><div class="row"><input id="hq" value="${esc(S.hq||"")}" placeholder="Search hooks… gift, mom, Costco, 1965" aria-label="Search hooks" style="flex:1;min-width:200px">
-   <label class="tog"><input type="checkbox" data-hf="any" ${f.any?"checked":""}> Works for any product</label><label class="tog"><input type="checkbox" data-hf="gj" ${f.gj?"checked":""}> Genjutsu only</label><label class="tog"><input type="checkbox" data-hf="proven" ${f.proven?"checked":""}> Proven only</label></div>
-   <div class="row hcon"><button class="chipb ${!c?"on":""}" data-act="hcon" data-c="">All</button>${HK.concepts.map(x=>`<button class="chipb ${c===x.id?"on":""}" data-act="hcon" data-c="${esc(x.id)}" title="${esc(x.what||"")}">${esc(x.name)} <small>${HK.list.filter(h=>h.concept===x.id).length}</small></button>`).join("")}</div>
-   ${c?`<p class="muted" style="margin:6px 0 0">${esc(HK.concepts.find(x=>x.id===c)?.why_it_works||"")}</p>`:""}</section>
+   <label class="tog"><input type="checkbox" data-hf="any" ${f.any?"checked":""}> Works for any product</label><label class="tog"><input type="checkbox" data-hf="gj" ${f.gj?"checked":""}> Genjutsu only</label><label class="tog"><input type="checkbox" data-hf="proven" ${f.proven?"checked":""}> Proven only</label><label class="tog"><input type="checkbox" data-hf="dups" ${f.dups?"checked":""}> Show similar ones</label></div>
+   <div class="row hcon"><button class="chipb ${!c?"on":""}" data-act="hcon" data-c="">All</button>${HK.concepts.map(x=>`<button class="chipb ${c===x.id?"on":""}" data-act="hcon" data-c="${esc(x.id)}" title="${esc(x.what||"")}">${esc(x.name)} <small>${HK.list.filter(h=>h.concept===x.id&&(f.dups||!h.same_as)).length}</small></button>`).join("")}</div>
+   ${c?(()=>{const C=HK.concepts.find(x=>x.id===c)||{};return `<p style="margin:6px 0 0"><b>${esc(C.what||"")}</b></p><p class="muted" style="margin:2px 0 0">${esc(C.why||C.why_it_works||"")}</p>${C.genjutsu?`<p class="muted" style="margin:2px 0 0"><b>How we copy it:</b> ${esc(C.genjutsu)}</p>`:""}`})():""}</section>
   ${HK.captions.length&&!c&&!q?`<section class="panel"><h2>Text layer — captions that worked (add on top of any hook)</h2><div class="caps">${HK.captions.slice(0,24).map(x=>`<button class="capb" data-act="copytxt" data-t="${esc(x.template||x.text)}" title="Copy">${esc(x.text)}</button>`).join("")}</div></section>`:""}
   <div class="hgrid">${L.slice(0,120).map(h=>hookCard(h)).join("")||`<div class="empty"><b>No hook matches</b>Clear a filter.</div>`}</div>`}
 /* studio */
@@ -1053,10 +1056,14 @@ function vStudio(){const st=stState();const fams=S.finder.slice().sort((a,b)=>(b
   const steps=["Product","Type of clip","Hook and clip","Plan and send"];
   let body="";
   if(step===1){const q=(S.sq||"").toLowerCase();const list=fams.filter(x=>!q||(x.title+" "+x.group).toLowerCase().includes(q));
-    const tl=list.filter(x=>top.includes(x._id)),rest=list.filter(x=>!top.includes(x._id));
-    const pc=x=>{const I=S.insights[x._id];const v=I?(/^run/i.test(I.verdict||"")?"ok":/^skip/i.test(I.verdict||"")?"bad":"warn"):"none";const ap=S.top?.approved?.[x._id];return `<button class="pcard" data-act="st-fam" data-id="${esc(x._id)}"><i class="vdot v-${v}"></i><b>${esc(x.title)}</b><small>${esc(x.group)} · ${fmt(x.best_avg_views)} best avg views${ap?" · approved":""}</small></button>`};
+    const running=x=>!!(S.top?.approved?.[x._id])||(S.products||[]).some(p=>p.sursa==="finder:"+x._id&&p.status!=="respins")||(S.jobs||[]).some(j=>j.product===x._id);
+    const run=list.filter(running),rest=list.filter(x=>!running(x)),tl=rest.filter(x=>top.includes(x._id));
+    const pc=x=>{const I=S.insights[x._id];const v=I?(/^run/i.test(I.verdict||"")?"ok":/^skip/i.test(I.verdict||"")?"bad":"warn"):"none";const ap=S.top?.approved?.[x._id];const nj=(S.jobs||[]).filter(j=>j.product===x._id).length;return `<button class="pcard" data-act="st-fam" data-id="${esc(x._id)}"><i class="vdot v-${v}"></i><b>${esc(x.title)}</b><small>${fmt(x.best_avg_views)} best avg views${ap?" · approved":""}${nj?` · ${nj} clip${nj>1?"s":""} made`:""}</small></button>`};
+    const cats=[...new Set(rest.filter(x=>!top.includes(x._id)).map(x=>x.group))].sort();
     body=`<input id="sq" value="${esc(S.sq||"")}" placeholder="Find a product…" aria-label="Find a product" class="sin">
-      ${tl.length?`<h2>Top 10 picks</h2><div class="pgrid">${tl.map(pc).join("")}</div>`:""}<h2>All products</h2><div class="pgrid">${rest.slice(0,120).map(pc).join("")}</div>`}
+      <h2>Running now</h2>${run.length?`<div class="pgrid">${run.map(pc).join("")}</div>`:`<p class="muted">No product is running yet. Approve products in <a href="#top">Top 10 picks</a> (or send one to My products) and they show up here first.</p>`}
+      ${tl.length?`<h2>Top 10 picks</h2><div class="pgrid">${tl.map(pc).join("")}</div>`:""}
+      ${cats.map(c=>`<details class="pcat" ${q?"open":""}><summary><b>${esc(c)}</b> <small class="muted">${rest.filter(x=>x.group===c&&!top.includes(x._id)).length} products</small></summary><div class="pgrid">${rest.filter(x=>x.group===c&&!top.includes(x._id)).map(pc).join("")}</div></details>`).join("")}`}
   else if(step===2){const B=S.broll[st.fam];body=`<div class="mgrid">
       <button class="mcard" data-act="st-mode" data-m="hook"><b>Hook + Genjutsu</b><span>A strong opening (3–5 s) from the hook library, then the body remade from a viral with Genjutsu. Best for new tests.</span></button>
       <button class="mcard" data-act="st-mode" data-m="copy"><b>Genjutsu only</b><span>Copy one viral 1:1: same moves and timing, our person, room and product. Fastest and cheapest.</span></button></div>

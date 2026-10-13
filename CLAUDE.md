@@ -24,6 +24,12 @@ Platforma (sursa de adevăr) e Artifactul publicat din `dashboard/index.html` (l
 La `start`/`panou`: citește inbox-ul și actualizează config/agents. O regulă nouă intră și în `rules_en`. Republică pagina doar când se schimbă codul.
 `engine/limitless.py` + `state/` rămân pentru calcule offline; `engine/costs.py` pentru costuri.
 
+Comenzi noi (13 oct):
+- `produs nou` / `concept nou de produs` → skill `product-sheet` (referințe generate cu Higgsfield, Szasz aprobă; variațiile ca la HeatGrump, doar la concept nou).
+- Primul video la orice produs → skill `pilot-video` (obligatoriu).
+- `rezultate` → skill `results` (Apify pe conturile noastre → `posts` → ce hook-uri merg la noi).
+- Ceva a picat / Szasz corectează → skill `log-lesson` (Mistakes log). Citește `lessons` înainte de orice producție.
+
 Reguli de lucru:
 - Orice regulă nouă de la Szasz (`regula: ...`) → linie datată în `docs/02-reguli.md`.
 - Orice afirmație de tip „merge” trebuie legată de o cifră (retenție, views, CTR, comenzi). Fără cifră e ipoteză și se marchează ca atare.

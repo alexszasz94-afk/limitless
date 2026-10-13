@@ -337,6 +337,10 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 .strat ul{margin:0;padding-left:18px}.strat li{font-size:13.5px;margin-bottom:4px}.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
 .stab{display:flex;flex-direction:column;gap:6px}.srow{display:grid;grid-template-columns:minmax(160px,1.1fr) 2fr 1.3fr;gap:10px;font-size:13px;border:1px solid var(--edge);border-radius:10px;padding:8px 10px;background:var(--deck-2)}
 @media (max-width:760px){.srow{grid-template-columns:1fr}}
+
+.lessons{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}.lesson{border:1px solid var(--edge);border-radius:14px;padding:12px;background:var(--glass);display:flex;flex-direction:column;gap:4px}.lesson p{margin:0;font-size:13.5px}.lrule{color:var(--ok);font-weight:600}
+.thread{display:flex;flex-direction:column;gap:6px}.trow{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:10px;padding:8px 10px;border:1px solid var(--edge);border-radius:10px;background:var(--deck-2);font-size:13.5px}
+@media (max-width:720px){.trow{grid-template-columns:1fr 1fr}}
 /* ---- chat ---- */
 .botfab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;gap:8px;align-items:center;border:1px solid var(--edge);border-radius:999px;padding:12px 18px;font:600 14px var(--f-body);color:var(--text);
   background:linear-gradient(135deg,var(--plasma-soft),var(--ion-soft)),var(--deck);box-shadow:0 18px 40px -16px rgba(0,0,0,.6),0 0 0 1px var(--ion-soft);cursor:pointer}
@@ -367,6 +371,8 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
   <a href="#studio" data-r="studio"><i>✚</i>Make a clip</a>
   <a href="#hooks" data-r="hooks"><i>❝</i>Hooks</a>
   <a href="#boards" data-r="boards"><i>02</i>Video boards</a>
+  <a href="#results" data-r="results"><i>↗</i>Results</a>
+  <a href="#lessons" data-r="lessons"><i>!</i>Mistakes log</a>
   <a href="#products" data-r="products"><i>03</i>My products</a>
   <a href="#virals" data-r="virals"><i>04</i>Virals queue</a>
   <a href="#production" data-r="production"><i>05</i>Production</a>
@@ -671,7 +677,7 @@ function vBoards(){
   ${lanes.length?lanes.map(laneRow).join(""):`<div class="empty"><b>Loading videos…</b></div>`}`;
 }
 async function loadLanes(b){for(const l of b.lanes||[]){if(S.lanes[l.doc])continue;try{const s=await S.db.doc("lanes/"+l.doc).get();if(s.exists)S.lanes[l.doc]=s.data();}catch(e){}}if(S.route==="boards")render()}
-const VIEWS={hooks:vHooks,studio:vStudio,top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
+const VIEWS={lessons:vLessons,results:vResults,hooks:vHooks,studio:vStudio,top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
 
 function render(){try{_render();document.body.classList.toggle("wide",S.route==="finder"&&S.fmode!=="list");if(S.route==="finder"&&S.fmode!=="list"){BOARD.mount();if(S.fq)BOARD.search(S.fq)}}catch(err){report(err,"render "+S.route);const v=$("#view");if(v)v.innerHTML=`<section class="panel"><h2>Something broke on this page</h2><p class="muted">${esc(String(err&&err.message||err))}</p><p class="muted">It was sent to Claude automatically.</p></section>`;return}const v=$("#view");if(v&&S._lastR!==S.route){S._lastR=S.route;v.classList.remove("enter");void v.offsetWidth;v.classList.add("enter");setTimeout(()=>v.classList.remove("enter"),900)}}
 let _rq=0;function soon(){if(_rq)return;_rq=requestAnimationFrame(()=>{_rq=0;render()})}
@@ -816,6 +822,9 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};setT
   db.collection("broll").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.broll=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
   db.doc("config/pulse").onSnapshot(s=>{S.pulse=s.exists?(s.data().by_handle||{}):{};if(S.route==="finder")soon()},()=>{});
   db.collection("fresh").onSnapshot(s=>{const L=[];s.docs.forEach(d=>L.push(...Object.values(d.data())));S.fresh=L;const by={};L.forEach(x=>{if(x.family)(by[x.family]=by[x.family]||[]).push(x)});S.freshBy=by;if(S.route==="finder")soon()},()=>{});
+  db.collection("lessons").onSnapshot(s=>{S.lessons=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="lessons")soon()},()=>{});
+  db.collection("posts").onSnapshot(s=>{S.posts=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="results")soon()},()=>{});
+  db.collection("accounts").onSnapshot(s=>{S.accounts=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="results")soon()},()=>{});
   db.collection("famx").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.famx=m;if(S.route==="finder")soon()},()=>{});
   db.collection("hooks").onSnapshot(s=>{const m={};let meta=null;s.docs.forEach(d=>{if(d.id==="meta")meta=d.data();else Object.assign(m,d.data())});HK.list=Object.values(m);HK.byId=m;if(meta){HK.concepts=meta.concepts||[];HK.captions=meta.captions||[];HK.scoring=meta.scoring||""}if(["hooks","studio"].includes(S.route)&&!["hq","sq"].includes(document.activeElement?.id))soon()},()=>{});
   db.collection("jobs").onSnapshot(s=>{S.jobs=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")soon()},()=>{});
@@ -1116,6 +1125,28 @@ function jobsPanel(){const J=(S.jobs||[]).slice().sort((a,b)=>String(b.created).
   return `<section class="panel"><h2>Clips in the pipeline</h2><div class="jobs">${J.map(j=>`<article class="job"><div class="row" style="justify-content:space-between"><b>${esc(j.product_title)}</b>${chip(j.status,j.status==="approved"?"ok":j.status==="done"?"ok":j.status==="rejected"?"bad":"warn")}</div>
      <p>${j.mode==="hook"?`Hook “${esc(j.hook_caption||"")}” + `:""}Genjutsu copy of <a href="${esc(j.viral_url)}" target="_blank" rel="noopener">@${esc(j.viral_handle)}</a></p><small class="muted">${esc(j.credits_low)}–${esc(j.credits_high)} credits · ${esc(String(j.created).slice(0,16).replace("T"," "))}</small>
      ${j.status==="waiting approval"&&S.write?`<div class="row"><button class="btn solid" data-act="job" data-id="${esc(j._id)}" data-s="approved">Approve</button><button class="btn" data-act="job" data-id="${esc(j._id)}" data-s="rejected">Reject</button></div>`:""}</article>`).join("")}</div></section>`}
+/* ---- Mistakes log + Results (the data thread) ---- */
+function vLessons(){const L=(S.lessons||[]).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date)));const ar=S.la||"";
+  const areas=[...new Set(L.map(x=>x.area))];
+  return `<div class="top"><div><div class="kicker">learning</div><h1>Mistakes log</h1></div><div class="sub">Every mistake once, then a rule so it never happens again. Read before production.</div></div>
+  ${S.write?`<section class="panel"><form id="fLesson" class="f"><label for="lw">What went wrong<input id="lw" name="what" required placeholder="e.g. the room changed after a cut"></label><label for="lr">The rule from now on<input id="lr" name="rule" placeholder="e.g. stitch only clips from the same room"></label><label for="la">Area<select id="la" name="area"><option>video</option><option>hooks</option><option>app</option><option>cost</option><option>data</option><option>store</option></select></label><button class="btn solid" type="submit">Add</button></form></section>`:""}
+  <div class="row hcon"><button class="chipb ${!ar?"on":""}" data-act="larea" data-a="">All ${L.length}</button>${areas.map(a=>`<button class="chipb ${ar===a?"on":""}" data-act="larea" data-a="${esc(a)}">${esc(a)} <small>${L.filter(x=>x.area===a).length}</small></button>`).join("")}</div>
+  <div class="lessons">${L.filter(x=>!ar||x.area===ar).map(x=>`<article class="lesson"><div class="row" style="justify-content:space-between"><span>${chip(x.area||"","pl")} <small class="muted">${esc(x.date||"")}${x.product?` · ${esc(x.product)}`:""}</small></span>${x.cost?chip(x.cost,"warn"):""}</div>
+    <p><b>${esc(x.what)}</b></p>${x.cause?`<p class="muted">Why: ${esc(x.cause)}</p>`:""}${x.rule?`<p class="lrule">→ ${esc(x.rule)}</p>`:""}</article>`).join("")||`<div class="empty"><b>No entries yet</b></div>`}</div>`}
+function vResults(){const P=S.posts||[],A=S.accounts||[],J=S.jobs||[];
+  const byC={};P.forEach(p=>{const k=p.action||"(no hook set)";(byC[k]=byC[k]||[]).push(p)});
+  const avg=L=>L.length?Math.round(L.reduce((s,p)=>s+(p.views||0),0)/L.length):0;
+  const rows=Object.entries(byC).map(([k,L])=>({k,n:L.length,avg:avg(L),best:Math.max(...L.map(p=>p.views||0)),orders:L.reduce((s,p)=>s+(p.orders||0),0),views:L.reduce((s,p)=>s+(p.views||0),0)})).sort((a,b)=>b.avg-a.avg);
+  const tv=P.reduce((s,p)=>s+(p.views||0),0),to=P.reduce((s,p)=>s+(p.orders||0),0);const price=80;
+  const prods=(S.products||[]).filter(p=>p.status==="running");
+  return `<div class="top"><div><div class="kicker">learning</div><h1>Results</h1></div><div class="sub">One thread: product → clip → post → numbers → what works. Numbers come from our own accounts (Instagram via Apify).</div></div>
+  <section class="kpis">${[["Posts tracked",P.length],["Total views",fmt(tv)],["Orders",to||"–"],["$ per 1M views",tv&&to?"$"+fmt(Math.round(to*price/tv*1e6)):"–"]].map(([l,v])=>`<div class="kpi"><small>${l}</small><b>${v}</b></div>`).join("")}</section>
+  <section class="panel"><h2>The thread</h2><div class="thread">${prods.map(p=>{const pj=J.filter(j=>j.product===(p.sursa||"").replace("finder:",""));const pp=P.filter(x=>x.product===p._id||x.product===(p.sursa||"").replace("finder:",""));return `<div class="trow"><b>${esc(p.nume_en||p.nume)}</b><span>${pj.length} clips</span><span>→ ${pp.length} posts</span><span>→ ${fmt(pp.reduce((s,x)=>s+(x.views||0),0))} views</span><span>→ ${pp.reduce((s,x)=>s+(x.orders||0),0)} orders</span></div>`}).join("")||'<p class="muted">No running product yet.</p>'}</div></section>
+  <section class="panel"><h2>What works for US (by hook action)</h2>${rows.length?`<div class="tbl"><table><thead><tr><th>Hook action</th><th>Posts</th><th style="text-align:right">Avg views</th><th style="text-align:right">Best</th><th style="text-align:right">Orders</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(r.k)}</td><td>${r.n}</td><td style="text-align:right">${fmt(r.avg)}</td><td style="text-align:right">${fmt(r.best)}</td><td style="text-align:right">${r.orders||"–"}</td></tr>`).join("")}</tbody></table></div><p class="muted">The Brain moves the winners up in Hooks and Make a clip once each has 3+ posts.</p>`:`<p class="muted">Nothing posted yet. Add our accounts and the first posts below; Claude pulls the numbers with Apify when you say “rezultate”.</p>`}</section>
+  <div class="grid2"><section class="panel"><h2>Our accounts</h2>${S.write?`<form id="fAcc" class="f"><label for="ah">Instagram handle<input id="ah" name="handle" required placeholder="@ourpage"></label><label for="ap">Platform<select id="ap" name="platform"><option>Instagram</option><option>TikTok</option><option>Facebook</option></select></label><button class="btn solid" type="submit">Add account</button></form>`:""}
+    <ul class="rules">${A.map(a=>`<li>@${esc(a.handle)} · ${esc(a.platform||"")}${a.followers?` · ${fmt(a.followers)} followers`:""}${a.checked?` · checked ${esc(a.checked)}`:""}</li>`).join("")||"<li class='muted'>No accounts yet.</li>"}</ul></section>
+   <section class="panel"><h2>Add a post</h2>${S.write?`<form id="fPost" class="f"><label for="pu">Post link<input id="pu" name="url" required placeholder="https://www.instagram.com/reel/…"></label><label for="pp">Product<select id="pp" name="product">${(S.products||[]).map(p=>`<option value="${esc(p._id)}">${esc(p.nume_en||p.nume)}</option>`).join("")}</select></label><label for="pa">Hook action<select id="pa" name="action"><option value="">—</option>${(HK.concepts||[]).map(c=>`<option>${esc(c.name)}</option>`).join("")}</select></label><label for="pt">Text on screen<input id="pt" name="caption" placeholder="optional"></label><button class="btn solid" type="submit">Add post</button></form>`:""}</section></div>
+  <section class="panel"><h2>Posts</h2>${P.length?`<div class="tbl"><table><thead><tr><th>Post</th><th>Hook action</th><th style="text-align:right">Views</th><th style="text-align:right">Likes</th><th>Posted</th></tr></thead><tbody>${P.slice().sort((a,b)=>(b.views||0)-(a.views||0)).map(p=>`<tr><td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.account||"open")}</a></td><td>${esc(p.action||"")}</td><td style="text-align:right">${fmt(p.views||0)}</td><td style="text-align:right">${fmt(p.likes||0)}</td><td>${esc(p.posted||"")}</td></tr>`).join("")}</tbody></table></div>`:'<p class="muted">No posts yet.</p>'}</section>`}
 /* board + chat wiring */
 document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(!b)return;const a=b.dataset.act;
   if(a==="bz"){e.stopImmediatePropagation();const z=b.dataset.z;if(z==="in")BOARD.step(1.3);else if(z==="out")BOARD.step(1/1.3);else if(z==="fit")BOARD.fit();else BOARD.home();return}
@@ -1138,6 +1169,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="st-send"){e.stopImmediatePropagation();run(stSend,b);return}
   if(a==="st-usehook"){e.stopImmediatePropagation();S.st={fam:"",mode:"hook",hook:b.dataset.id,clip:""};toast("Hook chosen. Now pick the product.");go("studio");return}
   if(a==="hcon"){e.stopImmediatePropagation();S.hc=b.dataset.c;render();return}
+  if(a==="larea"){e.stopImmediatePropagation();S.la=b.dataset.a;render();return}
   if(a==="hfam"){e.stopImmediatePropagation();S.hfam=b.dataset.f;S.hc="";render();return}
   if(a==="copytxt"){e.stopImmediatePropagation();navigator.clipboard?.writeText(b.dataset.t).then(()=>toast("Caption copied"),()=>toast(b.dataset.t));return}
   if(a==="job"){e.stopImmediatePropagation();run(async()=>{await S.db.doc("jobs/"+b.dataset.id).update({status:b.dataset.s,decided:nowIso()});if(b.dataset.s==="approved")await S.db.collection("inbox").add({text:"APPROVED clip job "+b.dataset.id+" — make it (Genjutsu/Seedance as planned, within the estimated credits).",status:"nou",creat:nowIso(),via:"boards"});toast(b.dataset.s==="approved"?"Approved. Claude Code will make it.":"Rejected.")},b);return}
@@ -1145,6 +1177,8 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
 },true);
 let _bqT=0;document.addEventListener("input",e=>{if(e.target.id==="hq"){S.hq=e.target.value;clearTimeout(_bqT);_bqT=setTimeout(()=>{render();const i=$("#hq");if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}},300);return}if(e.target.id==="sq"){S.sq=e.target.value;clearTimeout(_bqT);_bqT=setTimeout(()=>{render();const i=$("#sq");if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}},300);return}if(e.target.id==="bq"){S.fq=e.target.value;clearTimeout(_bqT);_bqT=setTimeout(()=>BOARD.search(S.fq),250)}});
 document.addEventListener("change",e=>{if(e.target.dataset?.hf){S.hf={...(S.hf||{}),[e.target.dataset.hf]:e.target.checked};render();return}if(e.target.id==="bcat"&&e.target.value!==""){BOARD.fly(document.getElementById("bc-"+e.target.value),.5);e.target.value=""}},true);
+document.addEventListener("submit",e=>{const id=e.target.id;if(!["fLesson","fAcc","fPost"].includes(id))return;e.preventDefault();e.stopImmediatePropagation();if(!S.db)return;const d=Object.fromEntries(new FormData(e.target));
+  const go2=async()=>{if(id==="fLesson")await S.db.collection("lessons").add({...d,date:nowIso().slice(0,10),by:"Szasz"});if(id==="fAcc")await S.db.collection("accounts").add({handle:d.handle.replace(/^@/,""),platform:d.platform,added:nowIso()});if(id==="fPost"){const c=HK.concepts.find(x=>x.name===d.action);await S.db.collection("posts").add({...d,action_id:c?.id||"",added:nowIso()});await S.db.collection("inbox").add({text:"New post to track: "+d.url,status:"nou",creat:nowIso(),via:"results"})}e.target.reset();toast("Saved")};run(go2,e.target.querySelector("button"))},true);
 document.addEventListener("submit",e=>{if(e.target.id!=="botf")return;e.preventDefault();e.stopImmediatePropagation();const i=$("#botin");const t=i.value;i.value="";BOT.send(t)},true);
 document.addEventListener("keydown",e=>{if(e.target.id==="botin"&&e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("#botf").requestSubmit()}});
 try{S.fmode=localStorage.getItem("lx.fmode")||"board"}catch(_){S.fmode="board"}

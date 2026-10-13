@@ -358,6 +358,12 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media (max-width:720px){.botfab{bottom:calc(84px + env(safe-area-inset-bottom,0px))}.botp{bottom:calc(140px + env(safe-area-inset-bottom,0px));right:16px}}
 @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+.robe-nav{background:linear-gradient(90deg,rgba(80,200,120,.18),rgba(255,120,190,.14));border:1px solid rgba(120,220,160,.35)}
+.rbar{height:14px;border-radius:99px;background:var(--glass);border:1px solid var(--edge);overflow:hidden;margin:6px 0 14px}.rbar i{display:block;height:100%;background:linear-gradient(90deg,#3fcf7a,#ff7ab8)}
+.rphases{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}.rph{padding:12px;border:1px solid var(--edge);border-radius:14px;background:var(--glass);display:flex;flex-direction:column;gap:4px}.rph.now{border-color:#3fcf7a;box-shadow:0 0 0 1px #3fcf7a inset}.rph.hit{opacity:.75}.rph.miss{border-color:#e06060}.rph p{margin:0;font-size:13px}
+.rday{display:grid;gap:8px}.rstep{display:flex;gap:10px;align-items:flex-start}.rstep span{flex:0 0 26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--glass);border:1px solid var(--edge);font-size:12px}.rstep p{margin:2px 0}
+.rmx td,.rmx th{text-align:center}.rmx td:first-child{text-align:left}.rmx td.used{background:rgba(63,207,122,.18);font-weight:600}
+.rrisk{display:grid;gap:8px}.rr{display:flex;gap:12px;align-items:flex-start}.rr p{margin:2px 0}.rr.ok b{text-decoration:line-through;opacity:.7}
 </style>
 
 <canvas id="space" aria-hidden="true"></canvas>
@@ -365,6 +371,7 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 <nav class="rail" aria-label="Modules">
   <div class="brand">LIMIT<b>LESS</b></div>
   <div class="tag">organic commerce brain</div>
+  <a href="#robe" data-r="robe" class="robe-nav"><i>♛</i>Robe 2026</a>
   <a href="#launch" data-r="launch"><i>▶</i>Start here</a>
   <a href="#top" data-r="top"><i>★</i>Top 10 picks</a>
   <a href="#finder" data-r="finder"><i>01</i>Product finder</a>
@@ -677,7 +684,7 @@ function vBoards(){
   ${lanes.length?lanes.map(laneRow).join(""):`<div class="empty"><b>Loading videos…</b></div>`}`;
 }
 async function loadLanes(b){for(const l of b.lanes||[]){if(S.lanes[l.doc])continue;try{const s=await S.db.doc("lanes/"+l.doc).get();if(s.exists)S.lanes[l.doc]=s.data();}catch(e){}}if(S.route==="boards")render()}
-const VIEWS={lessons:vLessons,results:vResults,hooks:vHooks,studio:vStudio,top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
+const VIEWS={robe:vRobe,lessons:vLessons,results:vResults,hooks:vHooks,studio:vStudio,top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
 
 function render(){try{_render();document.body.classList.toggle("wide",S.route==="finder"&&S.fmode!=="list");if(S.route==="finder"&&S.fmode!=="list"){BOARD.mount();if(S.fq)BOARD.search(S.fq)}}catch(err){report(err,"render "+S.route);const v=$("#view");if(v)v.innerHTML=`<section class="panel"><h2>Something broke on this page</h2><p class="muted">${esc(String(err&&err.message||err))}</p><p class="muted">It was sent to Claude automatically.</p></section>`;return}const v=$("#view");if(v&&S._lastR!==S.route){S._lastR=S.route;v.classList.remove("enter");void v.offsetWidth;v.classList.add("enter");setTimeout(()=>v.classList.remove("enter"),900)}}
 let _rq=0;function soon(){if(_rq)return;_rq=requestAnimationFrame(()=>{_rq=0;render()})}
@@ -804,7 +811,7 @@ Reply ONLY with JSON: {"read":"2 sentences on what this data says","angles":["3 
   const l2=$("#flist");if(l2)l2.innerHTML=finderList();}
 
 /* ---------- boot ---------- */
-function route(){const h=(location.hash||"#launch").slice(1);S.route=VIEWS[h]?h:"launch";NET.stop();render()}
+function route(){const h=(location.hash||"#robe").slice(1);S.route=VIEWS[h]?h:"robe";NET.stop();render()}
 /* navigation works without relying on the host passing hash changes through */
 function go(h){if(!VIEWS[h])return;try{S.db&&S.db.collection("errors").add({where:"nav",msg:"tap "+h,route:S.route,at:new Date().toISOString()}).catch(()=>{})}catch(e){}S.route=h;try{history.replaceState(null,"","#"+h)}catch(e){}NET.stop();render();try{scrollTo(0,0)}catch(e){}}
 document.addEventListener("click",e=>{const a=e.target.closest?.('a[href^="#"]');if(!a)return;const h=a.getAttribute("href").slice(1);if(VIEWS[h]){e.preventDefault();try{go(h)}catch(err){report(err,"go "+h)}}},true);
@@ -822,9 +829,10 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};setT
   db.collection("broll").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.broll=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
   db.doc("config/pulse").onSnapshot(s=>{S.pulse=s.exists?(s.data().by_handle||{}):{};if(S.route==="finder")soon()},()=>{});
   db.collection("fresh").onSnapshot(s=>{const L=[];s.docs.forEach(d=>L.push(...Object.values(d.data())));S.fresh=L;const by={};L.forEach(x=>{if(x.family)(by[x.family]=by[x.family]||[]).push(x)});S.freshBy=by;if(S.route==="finder")soon()},()=>{});
+  db.doc("config/robe").onSnapshot(s=>{S.robe=s.exists?s.data():{};if(S.route==="robe")soon()},()=>{});
   db.collection("lessons").onSnapshot(s=>{S.lessons=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="lessons")soon()},()=>{});
-  db.collection("posts").onSnapshot(s=>{S.posts=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="results")soon()},()=>{});
-  db.collection("accounts").onSnapshot(s=>{S.accounts=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="results")soon()},()=>{});
+  db.collection("posts").onSnapshot(s=>{S.posts=s.docs.map(d=>({_id:d.id,...d.data()}));if(["results","robe"].includes(S.route))soon()},()=>{});
+  db.collection("accounts").onSnapshot(s=>{S.accounts=s.docs.map(d=>({_id:d.id,...d.data()}));if(["results","robe"].includes(S.route))soon()},()=>{});
   db.collection("famx").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.famx=m;if(S.route==="finder")soon()},()=>{});
   db.collection("hooks").onSnapshot(s=>{const m={};let meta=null;s.docs.forEach(d=>{if(d.id==="meta")meta=d.data();else Object.assign(m,d.data())});HK.list=Object.values(m);HK.byId=m;if(meta){HK.concepts=meta.concepts||[];HK.captions=meta.captions||[];HK.scoring=meta.scoring||""}if(["hooks","studio"].includes(S.route)&&!["hq","sq"].includes(document.activeElement?.id))soon()},()=>{});
   db.collection("jobs").onSnapshot(s=>{S.jobs=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")soon()},()=>{});
@@ -1143,10 +1151,41 @@ function vResults(){const P=S.posts||[],A=S.accounts||[],J=S.jobs||[];
   <section class="kpis">${[["Posts tracked",P.length],["Total views",fmt(tv)],["Orders",to||"–"],["$ per 1M views",tv&&to?"$"+fmt(Math.round(to*price/tv*1e6)):"–"]].map(([l,v])=>`<div class="kpi"><small>${l}</small><b>${v}</b></div>`).join("")}</section>
   <section class="panel"><h2>The thread</h2><div class="thread">${prods.map(p=>{const pj=J.filter(j=>j.product===(p.sursa||"").replace("finder:",""));const pp=P.filter(x=>x.product===p._id||x.product===(p.sursa||"").replace("finder:",""));return `<div class="trow"><b>${esc(p.nume_en||p.nume)}</b><span>${pj.length} clips</span><span>→ ${pp.length} posts</span><span>→ ${fmt(pp.reduce((s,x)=>s+(x.views||0),0))} views</span><span>→ ${pp.reduce((s,x)=>s+(x.orders||0),0)} orders</span></div>`}).join("")||'<p class="muted">No running product yet.</p>'}</div></section>
   <section class="panel"><h2>What works for US (by hook action)</h2>${rows.length?`<div class="tbl"><table><thead><tr><th>Hook action</th><th>Posts</th><th style="text-align:right">Avg views</th><th style="text-align:right">Best</th><th style="text-align:right">Orders</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(r.k)}</td><td>${r.n}</td><td style="text-align:right">${fmt(r.avg)}</td><td style="text-align:right">${fmt(r.best)}</td><td style="text-align:right">${r.orders||"–"}</td></tr>`).join("")}</tbody></table></div><p class="muted">The Brain moves the winners up in Hooks and Make a clip once each has 3+ posts.</p>`:`<p class="muted">Nothing posted yet. Add our accounts and the first posts below; Claude pulls the numbers with Apify when you say “rezultate”.</p>`}</section>
-  <div class="grid2"><section class="panel"><h2>Our accounts</h2>${S.write?`<form id="fAcc" class="f"><label for="ah">Instagram handle<input id="ah" name="handle" required placeholder="@ourpage"></label><label for="ap">Platform<select id="ap" name="platform"><option>Instagram</option><option>TikTok</option><option>Facebook</option></select></label><button class="btn solid" type="submit">Add account</button></form>`:""}
+  <div class="grid2"><section class="panel"><h2>Our accounts</h2>${S.write?`<form id="fAcc" class="f"><label for="ah">Instagram handle<input id="ah" name="handle" required placeholder="@ourpage"></label><label for="ap">Platform<select id="ap" name="platform"><option>Instagram</option><option>TikTok</option><option>Facebook</option></select></label><label for="apo">Poster<select id="apo" name="poster">${((S.robe||{}).posters||[]).map(p=>`<option value="${esc(p.id)}">${esc(p.name)}</option>`).join("")}<option value="">none</option></select></label><button class="btn solid" type="submit">Add account</button></form>`:""}
     <ul class="rules">${A.map(a=>`<li>@${esc(a.handle)} · ${esc(a.platform||"")}${a.followers?` · ${fmt(a.followers)} followers`:""}${a.checked?` · checked ${esc(a.checked)}`:""}</li>`).join("")||"<li class='muted'>No accounts yet.</li>"}</ul></section>
    <section class="panel"><h2>Add a post</h2>${S.write?`<form id="fPost" class="f"><label for="pu">Post link<input id="pu" name="url" required placeholder="https://www.instagram.com/reel/…"></label><label for="pp">Product<select id="pp" name="product">${(S.products||[]).map(p=>`<option value="${esc(p._id)}">${esc(p.nume_en||p.nume)}</option>`).join("")}</select></label><label for="pa">Hook action<select id="pa" name="action"><option value="">—</option>${(HK.concepts||[]).map(c=>`<option>${esc(c.name)}</option>`).join("")}</select></label><label for="pt">Text on screen<input id="pt" name="caption" placeholder="optional"></label><button class="btn solid" type="submit">Add post</button></form>`:""}</section></div>
   <section class="panel"><h2>Posts</h2>${P.length?`<div class="tbl"><table><thead><tr><th>Post</th><th>Hook action</th><th style="text-align:right">Views</th><th style="text-align:right">Likes</th><th>Posted</th></tr></thead><tbody>${P.slice().sort((a,b)=>(b.views||0)-(a.views||0)).map(p=>`<tr><td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.account||"open")}</a></td><td>${esc(p.action||"")}</td><td style="text-align:right">${fmt(p.views||0)}</td><td style="text-align:right">${fmt(p.likes||0)}</td><td>${esc(p.posted||"")}</td></tr>`).join("")}</tbody></table></div>`:'<p class="muted">No posts yet.</p>'}</section>`}
+/* Robe 2026 brain */
+function robePosts(){return (S.posts||[]).filter(p=>p.product==="heatgrump_robe"||p.product==="heated_robes"||p.robe)}
+function vRobe(){const R=S.robe||{};const P=robePosts();const price=+R.aov||90;
+  const goal=+R.goal_usd||1e6,dl=R.deadline||"2026-12-15";const days=Math.max(0,Math.ceil((new Date(dl+"T23:59:59")-Date.now())/864e5));
+  const orders=P.reduce((s,p)=>s+(+p.orders||0),0)+(+R.orders_manual||0),rev=+R.revenue_usd||orders*price,views=P.reduce((s,p)=>s+(+p.views||0),0);
+  const pct=Math.min(100,rev/goal*100),need=days?Math.round((goal-rev)/days):0;
+  const ph=(R.phases||[]).find(x=>nowIso().slice(0,10)<=x.end)||{};
+  const V=R.variants||[],B=R.bodies||[],H=R.hooks||[],RK=R.risks||[],PO=R.posters||[];
+  const cnt={};P.forEach(p=>{const k=(p.hook||"")+"|"+(p.body||"");cnt[k]=(cnt[k]||0)+1});
+  const byHook={};P.forEach(p=>{if(!p.hook)return;(byHook[p.hook]=byHook[p.hook]||[]).push(p)});
+  const hookRows=Object.entries(byHook).map(([k,L])=>({k,n:L.length,avg:Math.round(L.reduce((s,p)=>s+(+p.views||0),0)/L.length),o:L.reduce((s,p)=>s+(+p.orders||0),0)})).sort((a,b)=>b.avg-a.avg);
+  const acc=S.accounts||[];
+  return `<div class="top"><div><div class="kicker">product of 2026 · all in</div><h1>Robe brain</h1></div><div class="sub">Heated hooded robe — grumpy green + princess. Everything else is a bonus.</div></div>
+  <section class="kpis">${[["Goal by "+dl.slice(5).replace("-","/"),"$"+fmt(goal)],["Revenue so far","$"+fmt(Math.round(rev))],["Days left",days],["Needed per day","$"+fmt(need)],["Robe views tracked",fmt(views)],["$ per 1M views",views&&rev?"$"+fmt(Math.round(rev/views*1e6)):"–"]].map(([l,v])=>`<div class="kpi"><small>${l}</small><b>${v}</b></div>`).join("")}</section>
+  <section class="panel"><div class="row" style="justify-content:space-between"><h2>Where we are</h2><small class="muted">${esc(ph.name||"")}</small></div>
+   <div class="rbar"><i style="width:${pct.toFixed(1)}%"></i></div>
+   <div class="rphases">${(R.phases||[]).map(x=>{const now=x===ph,done=nowIso().slice(0,10)>x.end,hit=rev>=x.target;return `<div class="rph ${now?"now":""} ${done?(hit?"hit":"miss"):""}"><small>${esc(x.start.slice(5))} → ${esc(x.end.slice(5))}</small><b>${esc(x.name)}</b><span>Target $${fmt(x.target)}</span><p class="muted">${esc(x.do)}</p>${x.else?`<p class="lrule">If not: ${esc(x.else)}</p>`:""}</div>`}).join("")}</div></section>
+  <div class="grid2">${V.map(v=>`<section class="panel rvar"><div class="row" style="justify-content:space-between"><h2>${esc(v.name)}</h2>${chip(v.status,v.status==="running"?"ok":"warn")}</div>
+   <p class="muted">${esc(v.why)}</p><p><b>References:</b> ${esc(v.refs)}</p>${v.ip?`<p class="lrule">⚠ ${esc(v.ip)}</p>`:""}
+   <ul class="rules">${(v.virals||[]).map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">@${esc(x.handle)}</a> · ${fmt(x.views)} views${x.what?` — ${esc(x.what)}`:""}</li>`).join("")}</ul>
+   ${v.texts?`<p class="muted">Text lines: ${v.texts.map(t=>`“${esc(t)}”`).join(" · ")}</p>`:""}</section>`).join("")}</div>
+  <section class="panel"><h2>Today's machine · $${esc(R.budget_day||20)}/day</h2><div class="rday">${(R.daily||[]).map((d,i)=>`<div class="rstep"><span>${i+1}</span><p>${esc(d)}</p></div>`).join("")}</div></section>
+  <section class="panel"><h2>Recycle bank — bodies × hooks</h2><p class="muted">Body = the part after the hook (put on → open → controller → cozy) from our good videos. Each cell = how many posts used that combo. Never the same combo on two accounts.</p>
+   ${B.length&&H.length?`<div class="tbl"><table class="rmx"><thead><tr><th>Hook \\ body</th>${B.map(b=>`<th title="${esc(b.note||"")}">${esc(b.id)}</th>`).join("")}</tr></thead><tbody>${H.map(h=>`<tr><td>${esc(h.name)} <small class="muted">${h.cost?esc(h.cost):""}</small></td>${B.map(b=>{const n=cnt[h.id+"|"+b.id]||0;return `<td class="${n?"used":""}">${n||"·"}</td>`}).join("")}</tr>`).join("")}</tbody></table></div>`:`<div class="empty"><b>Waiting for Szasz's 10 good videos</b><p class="muted">${B.length} bodies · ${H.length} hooks</p></div>`}
+   ${B.length?`<p class="muted">Bodies: ${B.map(b=>`<b>${esc(b.id)}</b>${b.note?" "+esc(b.note):""}${b.ok?" ✓":" (to confirm)"}`).join(" · ")}</p>`:""}</section>
+  <div class="grid2"><section class="panel"><h2>Log a robe post</h2>${S.write?`<form id="fRobe" class="f"><label for="ru">Post link<input id="ru" name="url" required placeholder="https://www.instagram.com/reel/…"></label><label for="ra">Account<select id="ra" name="account">${acc.map(a=>`<option>@${esc(a.handle)}</option>`).join("")}<option value="">other</option></select></label><label for="rh">Hook<select id="rh" name="hook">${H.map(h=>`<option value="${esc(h.id)}">${esc(h.name)}</option>`).join("")}</select></label><label for="rb">Body<select id="rb" name="body">${B.map(b=>`<option>${esc(b.id)}</option>`).join("")}<option value="">new</option></select></label><label for="rv">Variant<select id="rv" name="variant">${V.map(v=>`<option value="${esc(v.id)}">${esc(v.name)}</option>`).join("")}</select></label><button class="btn solid" type="submit">Save</button></form>`:"<p class='muted'>Only Szasz can log posts.</p>"}</section>
+   <section class="panel"><h2>Posters</h2><ul class="rules">${PO.map(p=>{const mine=acc.filter(a=>a.poster===p.id);return `<li><b>${esc(p.name)}</b> · ${mine.length?mine.map(a=>"@"+esc(a.handle)).join(", "):"<span class='muted'>accounts not added yet</span>"} · ${esc(p.quota||"")}</li>`}).join("")}</ul><p class="muted">Add accounts in Results; each poster gets their own link/code so we know who sells.</p></section></div>
+  <section class="panel"><h2>What works for US on the robe</h2>${hookRows.length?`<div class="tbl"><table><thead><tr><th>Hook</th><th>Posts</th><th style="text-align:right">Avg views</th><th style="text-align:right">Orders</th></tr></thead><tbody>${hookRows.map(r=>`<tr><td>${esc((H.find(h=>h.id===r.k)||{}).name||r.k)}</td><td>${r.n}</td><td style="text-align:right">${fmt(r.avg)}</td><td style="text-align:right">${r.o||"–"}</td></tr>`).join("")}</tbody></table></div>`:`<div class="empty"><b>No robe posts yet</b><p class="muted">Log posts above; numbers come in with “rezultate”.</p></div>`}</section>
+  <section class="panel"><h2>What can break the plan</h2><div class="rrisk">${RK.map((r,i)=>`<div class="rr ${r.status==="done"?"ok":""}"><button class="chipb ${r.status==="done"?"on":""}" data-act="rrisk" data-i="${i}" ${S.write?"":"disabled"}>${r.status==="done"?"✓ Solved":"Open"}</button><div><b>${esc(r.name)}</b><p class="muted">${esc(r.do)}</p></div></div>`).join("")}</div></section>
+  <section class="panel"><h2>Bonus products</h2><p class="muted">Other products only after the robe machine runs every day. <a href="#top">Top 10 picks</a> · <a href="#finder">Product finder</a></p></section>`}
+
 /* board + chat wiring */
 document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(!b)return;const a=b.dataset.act;
   if(a==="bz"){e.stopImmediatePropagation();const z=b.dataset.z;if(z==="in")BOARD.step(1.3);else if(z==="out")BOARD.step(1/1.3);else if(z==="fit")BOARD.fit();else BOARD.home();return}
@@ -1169,6 +1208,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="st-send"){e.stopImmediatePropagation();run(stSend,b);return}
   if(a==="st-usehook"){e.stopImmediatePropagation();S.st={fam:"",mode:"hook",hook:b.dataset.id,clip:""};toast("Hook chosen. Now pick the product.");go("studio");return}
   if(a==="hcon"){e.stopImmediatePropagation();S.hc=b.dataset.c;render();return}
+  if(a==="rrisk"){e.stopImmediatePropagation();const i=+b.dataset.i;const RK=((S.robe||{}).risks||[]).map((r,j)=>j===i?{...r,status:r.status==="done"?"open":"done"}:{...r});run(()=>S.db.doc("config/robe").update({risks:RK}),b);return}
   if(a==="larea"){e.stopImmediatePropagation();S.la=b.dataset.a;render();return}
   if(a==="hfam"){e.stopImmediatePropagation();S.hfam=b.dataset.f;S.hc="";render();return}
   if(a==="copytxt"){e.stopImmediatePropagation();navigator.clipboard?.writeText(b.dataset.t).then(()=>toast("Caption copied"),()=>toast(b.dataset.t));return}
@@ -1177,8 +1217,8 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
 },true);
 let _bqT=0;document.addEventListener("input",e=>{if(e.target.id==="hq"){S.hq=e.target.value;clearTimeout(_bqT);_bqT=setTimeout(()=>{render();const i=$("#hq");if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}},300);return}if(e.target.id==="sq"){S.sq=e.target.value;clearTimeout(_bqT);_bqT=setTimeout(()=>{render();const i=$("#sq");if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}},300);return}if(e.target.id==="bq"){S.fq=e.target.value;clearTimeout(_bqT);_bqT=setTimeout(()=>BOARD.search(S.fq),250)}});
 document.addEventListener("change",e=>{if(e.target.dataset?.hf){S.hf={...(S.hf||{}),[e.target.dataset.hf]:e.target.checked};render();return}if(e.target.id==="bcat"&&e.target.value!==""){BOARD.fly(document.getElementById("bc-"+e.target.value),.5);e.target.value=""}},true);
-document.addEventListener("submit",e=>{const id=e.target.id;if(!["fLesson","fAcc","fPost"].includes(id))return;e.preventDefault();e.stopImmediatePropagation();if(!S.db)return;const d=Object.fromEntries(new FormData(e.target));
-  const go2=async()=>{if(id==="fLesson")await S.db.collection("lessons").add({...d,date:nowIso().slice(0,10),by:"Szasz"});if(id==="fAcc")await S.db.collection("accounts").add({handle:d.handle.replace(/^@/,""),platform:d.platform,added:nowIso()});if(id==="fPost"){const c=HK.concepts.find(x=>x.name===d.action);await S.db.collection("posts").add({...d,action_id:c?.id||"",added:nowIso()});await S.db.collection("inbox").add({text:"New post to track: "+d.url,status:"nou",creat:nowIso(),via:"results"})}e.target.reset();toast("Saved")};run(go2,e.target.querySelector("button"))},true);
+document.addEventListener("submit",e=>{const id=e.target.id;if(!["fLesson","fAcc","fPost","fRobe"].includes(id))return;e.preventDefault();e.stopImmediatePropagation();if(!S.db)return;const d=Object.fromEntries(new FormData(e.target));
+  const go2=async()=>{if(id==="fRobe")await S.db.collection("posts").add({...d,product:"heatgrump_robe",robe:true,action:(((S.robe||{}).hooks||[]).find(h=>h.id===d.hook)||{}).name||"",added:nowIso()});if(id==="fLesson")await S.db.collection("lessons").add({...d,date:nowIso().slice(0,10),by:"Szasz"});if(id==="fAcc")await S.db.collection("accounts").add({handle:d.handle.replace(/^@/,""),platform:d.platform,poster:d.poster||"",added:nowIso()});if(id==="fPost"){const c=HK.concepts.find(x=>x.name===d.action);await S.db.collection("posts").add({...d,action_id:c?.id||"",added:nowIso()});await S.db.collection("inbox").add({text:"New post to track: "+d.url,status:"nou",creat:nowIso(),via:"results"})}e.target.reset();toast("Saved")};run(go2,e.target.querySelector("button"))},true);
 document.addEventListener("submit",e=>{if(e.target.id!=="botf")return;e.preventDefault();e.stopImmediatePropagation();const i=$("#botin");const t=i.value;i.value="";BOT.send(t)},true);
 document.addEventListener("keydown",e=>{if(e.target.id==="botin"&&e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("#botf").requestSubmit()}});
 try{S.fmode=localStorage.getItem("lx.fmode")||"board"}catch(_){S.fmode="board"}

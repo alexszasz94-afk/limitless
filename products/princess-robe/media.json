@@ -1,0 +1,25 @@
+{
+ "_account": "Higgsfield cont nou (13 oct)",
+ "_nota": "Job ID-urile se pot folosi direct ca medias (image_job). Referințe halat pentru Genjutsu: 01,02,04,08 (+03). 06-sleeve iese ciudat (mânecă izolată) — nu se folosește.",
+ "supplier_photo": "6eb030cf-33d5-4f6a-a534-e1a5258f6214",
+ "controller_real_heatgrump": "99f72e32-8ba1-4734-bf72-07e854adb8c6",
+ "connector_plate_heatgrump_femeie": "00d1cdeb-4011-4f0a-b1e3-583a2af89e11",
+ "refs": {
+  "01-front": "f9a0dec3-610e-41aa-9950-9621a7c03d1c",
+  "02-back": "7132a85e-753d-4c6c-9231-6fb5fb8f8d1a",
+  "03-side": "491709dd-b088-444e-8b66-58b2289ff36a",
+  "04-open": "1c4a0ee7-f98f-41ef-bf03-8f358cafd6d1",
+  "05-hood": "c3b3280f-eba3-4a58-85bd-b3830f7a3465",
+  "06-sleeve": "ba58a274-9bfb-494a-9139-71ddf3878837",
+  "07-rolled": "dc2af449-aa5f-4ed5-b0c1-fab4caad22fe",
+  "08-worn": "9bcf8824-f503-4f47-86ac-978fbbe84c64"
+ },
+ "fixed_plates": {
+  "controller_pink": "4809cff8-442f-463d-8522-25c29f579248",
+  "connector_lilac": "f704342f-70a8-45ff-bf26-1fbbae655a9d"
+ },
+ "fixed_clips": {
+  "controller_pink_video": null,
+  "connector_lilac_video": null
+ }
+}

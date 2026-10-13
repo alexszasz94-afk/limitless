@@ -250,7 +250,7 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 .brow{position:absolute;left:20px;right:20px}
 .brh{height:46px;display:flex;gap:8px;align-items:center;overflow:hidden;white-space:nowrap}.brh b{font-size:14px}.brh .muted{font-size:12px;overflow:hidden;text-overflow:ellipsis}
 .bcards{display:grid;grid-template-columns:repeat(6,236px);gap:16px}
-.bcard{width:236px;height:452px;display:flex;flex-direction:column;gap:6px;padding:10px;border:1px solid var(--edge);border-radius:14px;background:var(--deck);overflow:hidden}
+.bcard{width:236px;height:470px;display:flex;flex-direction:column;gap:6px;padding:10px;border:1px solid var(--edge);border-radius:14px;background:var(--deck);overflow:hidden}
 .bcard header{display:flex;gap:6px;align-items:center;font-size:13px;font-weight:600;min-width:0}.bcard header a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text)}
 .bvar{font-size:11.5px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bcard .vid{max-width:100%;flex:none;height:300px;aspect-ratio:auto}
@@ -324,6 +324,11 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 .bra{height:24px;font-size:12px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:-6px}.bra b{color:var(--text)}
 .bfv{white-space:normal!important;height:30px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .xa h4{margin:10px 0 4px;font-family:var(--f-data);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--plasma)}.xa ul{margin:0;padding-left:18px}.xa li{font-size:13.5px;margin-bottom:6px}.xa p{margin:0;font-size:13.5px}
+
+.bpulse{font-family:var(--f-data);font-size:11px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.bpulse.hot{color:var(--warn);font-weight:600}.bpulse.none{opacity:.6}
+.flist{display:flex;flex-direction:column;gap:10px}.fcard{display:grid;grid-template-columns:90px minmax(0,1fr);gap:10px;border:1px solid var(--edge);border-radius:12px;padding:8px;background:var(--deck-2)}
+.fthumb{position:relative;display:block;width:90px;aspect-ratio:9/16;border-radius:8px;background:#0a0c18 center/cover no-repeat}.fthumb .pl{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:20px}
+.fcard b{font-size:14px}.fcard small{display:block;color:var(--dim);font-size:11.5px}.fcard p{margin:4px 0 0;font-size:12.5px}
 /* ---- chat ---- */
 .botfab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;gap:8px;align-items:center;border:1px solid var(--edge);border-radius:999px;padding:12px 18px;font:600 14px var(--f-body);color:var(--text);
   background:linear-gradient(135deg,var(--plasma-soft),var(--ion-soft)),var(--deck);box-shadow:0 18px 40px -16px rgba(0,0,0,.6),0 0 0 1px var(--ion-soft);cursor:pointer}
@@ -789,6 +794,8 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};setT
   const live=(path,key)=>db.collection(path).onSnapshot(s=>{S[key]=s.docs.map(d=>({_id:d.id,...d.data()}));if(key==="inbox")S.inbox.sort((a,b)=>String(b.creat).localeCompare(String(a.creat)));if(key==="finder"&&document.activeElement?.id==="fq"){const l=$("#flist");if(l){l.innerHTML=finderList();return}}soon()},()=>{});
   live("products","products");live("finder","finder");
   db.collection("broll").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.broll=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
+  db.doc("config/pulse").onSnapshot(s=>{S.pulse=s.exists?(s.data().by_handle||{}):{};if(S.route==="finder")soon()},()=>{});
+  db.collection("fresh").onSnapshot(s=>{const L=[];s.docs.forEach(d=>L.push(...Object.values(d.data())));S.fresh=L;const by={};L.forEach(x=>{if(x.family)(by[x.family]=by[x.family]||[]).push(x)});S.freshBy=by;if(S.route==="finder")soon()},()=>{});
   db.collection("famx").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.famx=m;if(S.route==="finder")soon()},()=>{});
   db.collection("hooks").onSnapshot(s=>{const m={};let meta=null;s.docs.forEach(d=>{if(d.id==="meta")meta=d.data();else Object.assign(m,d.data())});HK.list=Object.values(m);HK.byId=m;if(meta){HK.concepts=meta.concepts||[];HK.captions=meta.captions||[];HK.scoring=meta.scoring||""}if(["hooks","studio"].includes(S.route)&&!["hq","sq"].includes(document.activeElement?.id))soon()},()=>{});
   db.collection("jobs").onSnapshot(s=>{S.jobs=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")soon()},()=>{});
@@ -846,7 +853,7 @@ function groupsFor(f){
   else groups=[{id:"all",title:"",def:"",list:accs}];
   return groups.map(g=>{let list=g.list.slice().sort((a,b)=>((b._ugcs||0)-(a._ugcs||0))||((b.avg_views||0)-(a.avg_views||0)));if(S.ugcOnly)list=list.filter(a=>a._ugc);return {...g,list}}).filter(g=>g.list.length);
 }
-const BD={CW:236,CH:452,GAP:16,PER:6,HEAD:176,ROWH:82,PAD:20,FGAP:56,CATW:300,X0:420};
+const BD={CW:236,CH:470,GAP:16,PER:6,HEAD:176,ROWH:82,PAD:20,FGAP:56,CATW:300,X0:420};
 function boardLayout(){
   const items=S.finder.slice();
   const cats=[...new Set(items.map(f=>f.group))].sort((a,b)=>Math.max(...items.filter(f=>f.group===b).map(f=>f.best_avg_views||0))-Math.max(...items.filter(f=>f.group===a).map(f=>f.best_avg_views||0)));
@@ -867,6 +874,7 @@ function boardCard(a,fam){const href=a.top_video||a.url;const pl=(a.platform||""
   return `<article class="bcard" data-h="${esc((a.handle+" "+(a._var||"")).toLowerCase())}">
     <header><a href="${esc(a.url||href||"#")}" target="_blank" rel="noopener">@${esc(a.handle)}</a><span class="chip c-ion">${esc(lbl.slice(0,2).toUpperCase())}</span>${a._ugc?'<span class="chip c-ok">UGC</span>':""}</header>
     <span class="bvar">${esc(a._var||"")}</span>
+    ${(()=>{const P=S.pulse?.[a.handle];if(!P)return '<span class="bpulse none">no new reels in 30 days</span>';const hot=P.best_views>=300000&&P.ratio>=3;return `<a class="bpulse ${hot?"hot":""}" href="${esc(P.best_url)}" target="_blank" rel="noopener" title="Best reel in the last 30 days">${hot?"🔥 ":""}30 d: ${fmt(P.best_views)}${P.ratio?` · ${P.ratio}× avg`:""} · ${esc(P.best_date.slice(5))}</a>`})()}
     ${href?`<a class="vid" href="${esc(href)}" target="_blank" rel="noopener" ${a.mkey?`data-poster="${esc(a.mkey)}"`:""} aria-label="Watch @${esc(a.handle)} on ${lbl}"><span class="pl">▶</span>${a.dur?`<span class="du">0:${String(Math.round(a.dur)).padStart(2,"0")}</span>`:""}<span class="wo">Watch on ${lbl}</span></a>`:`<div class="vid none">no video link</div>`}
     <div class="bnums"><div><b>${fmt(a.followers)}</b><small>Followers</small></div><div><b>${fmt(a.avg_views)}</b><small>Avg views</small></div><div><b>${a.top_views?fmt(a.top_views):"–"}</b><small>Top video</small></div></div>
     <footer>${sc!==null?`<span class="chip ${sc>=8?"c-ok":sc>=6?"c-ion":"c-warn"}">Brain ${sc}/10</span>`:'<span class="muted">not analysed</span>'}<button class="link" data-act="bdet" data-fam="${esc(fam)}" data-h="${esc(a.handle)}">Details</button></footer>
@@ -881,13 +889,13 @@ function vFinderBoard(){
       return `<div class="brow" style="top:${top}px"><div class="brh"><b>${esc(g.title||f.title)}</b>${S.rows?chip(nu+" UGC of "+g.list.length,"ok"):""}<span class="muted">${esc(g.def)}</span></div>${(()=>{const R=X?.rows?.[g.id];return R?`<div class="bra"><span>${esc(R.variants||"")}</span>${R.best?` · <b>best:</b> ${esc(R.best)}`:""}${R.analysis?` — ${esc(R.analysis)}`:""}</div>`:'<div class="bra"></div>'})()}
         <div class="bcards">${g.list.map(a=>boardCard(a,f._id)).join("")}</div></div>`}).join("");
     return `<section class="bfam" id="bf-${esc(f._id)}" style="left:${fm.x}px;top:${fm.y}px;width:${fm.w}px;height:${fm.h}px" data-h="${esc((f.title+" "+fm.gs.map(g=>g.title).join(" ")).toLowerCase())}">
-      <div class="bfh"><h3><span class="dot"></span>${esc(f.title)}</h3><span class="chip c-pl">${fmt(f.best_avg_views)} best avg views</span>${I?`<span class="chip c-${/^run/i.test(I.verdict||"")?"ok":/^skip/i.test(I.verdict||"")?"bad":"warn"}">${esc((I.verdict||"").split(/[-–(]/)[0].trim()||"verdict")}</span>`:""}${B&&B.type?chip(B.type==="human"?"Genjutsu":B.type==="effect"?"B-roll + Seedance":"mixed","ion"):""}
+      <div class="bfh"><h3><span class="dot"></span>${esc(f.title)}</h3><span class="chip c-pl">${fmt(f.best_avg_views)} best avg views</span>${I?`<span class="chip c-${/^run/i.test(I.verdict||"")?"ok":/^skip/i.test(I.verdict||"")?"bad":"warn"}">${esc((I.verdict||"").split(/[-–(]/)[0].trim()||"verdict")}</span>`:""}${B&&B.type?chip(B.type==="human"?"Genjutsu":B.type==="effect"?"B-roll + Seedance":"mixed","ion"):""}${(()=>{const n=fm.gs.reduce((c,g)=>c+g.list.filter(a=>{const P=S.pulse?.[a.handle];return P&&P.best_views>=300000&&P.ratio>=3}).length,0);const nf=(S.freshBy?.[f._id]||[]).length;return (n?chip("🔥 "+n+" on the rise","warn"):"")+(nf?chip(nf+" new virals","ok"):"")})()}
         <button class="btn" data-act="bwhy" data-fam="${esc(f._id)}">Why it sells</button><button class="btn solid" data-act="st-start" data-fam="${esc(f._id)}">Make a clip</button></div>
       <p class="bfv v-${vd.k}">${esc(X?.summary||vd.t)}</p>${X?.not_done?.length?`<div class="bnd"><b>Not done yet:</b>${X.not_done.slice(0,5).map(n=>`<span class="ndc" title="${esc(n.why||"")}">${esc(n.variation)}</span>`).join("")}</div>`:""}${rows}<div class="bfl" aria-hidden="true"><b>${esc(f.title)}</b><small>${fm.gs.reduce((n,g)=>n+g.list.length,0)} videos</small></div></section>`}).join("");
   const cats=L.cats.map(c=>`<div class="bcat" id="bc-${c.i}" style="left:${c.x}px;top:${c.y}px;width:${BD.CATW}px"><span class="kicker">Category ${String(c.i+1).padStart(2,"0")}</span><b>${esc(c.name)}</b><span class="muted">${c.n} products · ${c.acc} accounts</span></div>`).join("");
   return `<div class="btool"><div class="bt-l"><span class="kicker">01 · product finder</span><b>Product opportunities</b><span class="muted">${fmt(tot)} accounts · ${S.finder.length} products</span></div>
     <div class="bt-c"><input id="bq" placeholder="Find a product or @account…" value="${esc(S.fq)}" aria-label="Find a product or account"><select id="bcat" aria-label="Jump to category"><option value="">Jump to category…</option>${L.cats.map(c=>`<option value="${c.i}">${esc(c.name)}</option>`).join("")}</select><label class="tog" style="white-space:nowrap"><input type="checkbox" id="ugcOnly" ${S.ugcOnly?"checked":""}> Only real UGC</label></div>
-    <div class="bt-r"><button class="btn" data-act="fmode" data-m="list">List view</button></div></div>
+    <div class="bt-r">${newFinds().length?`<button class="btn solid" data-act="bnew">✨ New finds (${newFinds().length})</button>`:""}<button class="btn" data-act="fmode" data-m="list">List view</button></div></div>
   <div id="vp" class="bvp"><div id="world" style="width:${L.w}px;height:${L.h}px">
     <svg class="bwire" width="${L.w}" height="${L.h}" viewBox="0 0 ${L.w} ${L.h}" aria-hidden="true"><path d="${lines.join(" ")}"/></svg>
     <div class="broot" style="left:80px;top:60px"><span class="kicker">Research library</span><b>Product opportunities</b><span class="muted">${fmt(tot)} source accounts · ${S.finder.length} products · ${L.cats.length} categories</span></div>
@@ -936,8 +944,14 @@ const BOARD={v:null,L:null,
     if(first)this.fly(first)},
   drawer(html){const d=document.getElementById("bdrawer");if(!d)return;document.getElementById("bdc").innerHTML=html;d.hidden=false;d.scrollTop=0}
 };
+
+function freshCard(x){return `<article class="fcard"><a class="fthumb" href="${esc(x.url)}" target="_blank" rel="noopener" style="background-image:url(${esc(x.thumb||"")})"><span class="pl">▶</span></a><div><b>${esc(x.product||"")}</b><small>@${esc(x.handle)} · ${fmt(x.views)} views · ${esc(x.date||"")}${x.score?` · Brain ${x.score}/10`:""}</small>
+  ${x.text?`<p class="hcap" style="font-size:14px">“${esc(x.text)}”</p>`:""}<p class="muted">${esc(x.hook||"")}</p>${x.why?`<p>${esc(x.why)}</p>`:""}${x.remake?`<p class="muted"><b>Remake:</b> ${esc(x.remake)}</p>`:""}${x.risk&&x.risk!=="none"?`<p class="muted">Risk: ${esc(x.risk)}</p>`:""}</div></article>`}
+function freshList(L,title){if(!L.length)return "";return `<section class="xa"><h4>${esc(title)}</h4><div class="flist">${L.slice().sort((a,b)=>b.views-a.views).map(freshCard).join("")}</div></section>`}
+function newFinds(){return (S.fresh||[]).filter(x=>x.new_product&&x.is_product_video!==false).sort((a,b)=>(b.score||0)-(a.score||0)||b.views-a.views)}
 function famDetail(id){const f=S.finder.find(x=>x._id===id);if(!f)return "";const vd=brainVerdict(f);const X=(S.famx||{})[id];const xh=X?`<section class="xa"><h4>Short analysis</h4><p>${esc(X.summary||"")}</p>${(X.groups||[]).length?`<h4>Variations sellers do</h4><ul>${X.groups.map(g=>`<li><b>${esc(g.name)}</b> (${esc(g.accounts)} sellers${g.best_views?", best "+fmt(g.best_views)+" views":""}): ${esc((g.variations||[]).join(", "))}${g.note?` — <span class="muted">${esc(g.note)}</span>`:""}</li>`).join("")}</ul>`:""}${(X.not_done||[]).length?`<h4>Not done yet (our chance)</h4><ul>${X.not_done.map(n=>`<li><b>${esc(n.variation)}</b>${n.ip_safe===false?" "+chip("IP risk","warn"):""} — ${esc(n.why||"")}<br><span class="muted">${esc(n.how||"")}</span></li>`).join("")}</ul>`:""}</section>`:"";
   return `<span class="kicker">${esc(f.group)}</span><h2 class="dh">${esc(f.title)}</h2><p class="bfv v-${vd.k}">${esc(vd.t)}</p>${xh}${insightBlock(f).replace('<details class="insight">','<details class="insight" open>')||'<p class="muted">No analysis yet for this product.</p>'}
+   ${freshList(S.freshBy?.[f._id]||[],"New virals this month")}
    <div class="row"><button class="btn solid" data-act="st-start" data-fam="${esc(f._id)}">Make a clip with this product</button>${S.write?`<button class="btn" data-act="tofind" data-id="${f._id}">Send to Products</button>`:""}</div>`}
 function acctDetail(fid,h){const f=S.finder.find(x=>x._id===fid);if(!f)return "";const g=groupsFor(f);let a=null,row=null;g.forEach(x=>x.list.forEach(y=>{if(y.handle===h){a=y;row=x}}));if(!a)return "";
   const k=S.takes[a.mkey];const href=a.top_video||a.url;
@@ -1081,6 +1095,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="bwhy"){e.stopImmediatePropagation();BOARD.drawer(famDetail(b.dataset.fam));return}
   if(a==="bout"){e.stopImmediatePropagation();S.boutOpen=!(S.boutOpen!==false);const o=$("#bout"),b2=$(".boutopen");if(o)o.hidden=!S.boutOpen;if(b2)b2.hidden=S.boutOpen;return}
   if(a==="bgo"){e.stopImmediatePropagation();const el=document.getElementById("bf-"+b.dataset.fam);BOARD.fly(el,.62);el?.classList.add("pulse");setTimeout(()=>el?.classList.remove("pulse"),1400);return}
+  if(a==="bnew"){e.stopImmediatePropagation();BOARD.drawer(`<span class="kicker">Instagram · last 45 days</span><h2 class="dh">New product finds</h2><p class="muted">Products we don\u2019t have yet, found in viral reels on dropshipping and gift hashtags. Best for us first.</p>${freshList(newFinds(),"New finds")}`);return}
   if(a==="bclose"){e.stopImmediatePropagation();const d=$("#bdrawer");if(d)d.hidden=true;return}
   if(a==="fmode"){e.stopImmediatePropagation();S.fmode=b.dataset.m;try{localStorage.setItem("lx.fmode",S.fmode)}catch(_){}render();return}
   if(a==="bot"){e.stopImmediatePropagation();BOT.toggle();return}

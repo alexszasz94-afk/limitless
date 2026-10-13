@@ -17,11 +17,19 @@
  "fixed_plates": {
   "controller_pink": "e472c8c8-0b4b-4f2b-a4c8-c91ea3060de4",
   "controller_pink_alt": "3ecace2c-3e78-47c4-a686-daed33e39439",
-  "connector_lilac": "7aa04099-7981-4044-b06c-19d7dc512d88",
-  "_nota": "telecomanda = tiara cu perle, luminițe-inimioare, roz sidefat, 2 fire; manșete extra-pufoase; lângă brad; iPhone 18 Pro Max (13 oct)"
+  "connector_lilac": "69b7ce03-a332-46f8-89b3-f7e0d1c23486",
+  "_nota": "conector cu unghii lungi de Crăciun (13 oct). Video: Seedance 2.5 cere plan Plus — contul nou e Starter."
  },
  "fixed_clips": {
   "controller_pink_video": null,
   "connector_lilac_video": null
+ },
+ "controller_options": {
+  "0_pearl_tiara": "4305b99a-0ae3-4ba1-bce2-27a1cd15951b",
+  "1_crystal_tiara": "4cc7d831-eaa8-46b1-8871-0f40306f00d2",
+  "2_royal_mirror": "21ed8877-4c7a-4824-b6d4-ee2de401a0f2",
+  "3_velvet_gold": "3b48d3b4-fc28-496e-a448-47cf4d8f8e80",
+  "4_crowned_heart": "14340529-60e0-4f2d-9530-e82087ee9629",
+  "_nota": "Szasz alege una; toate cu unghii lungi de Crăciun"
  }
 }

@@ -946,7 +946,7 @@ const BOARD={v:null,L:null,
 };
 
 function freshCard(x){return `<article class="fcard"><a class="fthumb" href="${esc(x.url)}" target="_blank" rel="noopener" style="background-image:url(${esc(x.thumb||"")})"><span class="pl">▶</span></a><div><b>${esc(x.product||"")}</b><small>@${esc(x.handle)} · ${fmt(x.views)} views · ${esc(x.date||"")}${x.score?` · Brain ${x.score}/10`:""}</small>
-  ${x.text?`<p class="hcap" style="font-size:14px">“${esc(x.text)}”</p>`:""}<p class="muted">${esc(x.hook||"")}</p>${x.why?`<p>${esc(x.why)}</p>`:""}${x.remake?`<p class="muted"><b>Remake:</b> ${esc(x.remake)}</p>`:""}${x.risk&&x.risk!=="none"?`<p class="muted">Risk: ${esc(x.risk)}</p>`:""}</div></article>`}
+  ${x.text&&!/^\(?no on-screen/i.test(x.text)?`<p class="hcap" style="font-size:14px">“${esc(x.text)}”</p>`:""}<p class="muted">${esc(x.hook||"")}</p>${x.why?`<p>${esc(x.why)}</p>`:""}${x.remake?`<p class="muted"><b>Remake:</b> ${esc(x.remake)}</p>`:""}${x.risk&&x.risk!=="none"?`<p class="muted">Risk: ${esc(x.risk)}</p>`:""}</div></article>`}
 function freshList(L,title){if(!L.length)return "";return `<section class="xa"><h4>${esc(title)}</h4><div class="flist">${L.slice().sort((a,b)=>b.views-a.views).map(freshCard).join("")}</div></section>`}
 function newFinds(){return (S.fresh||[]).filter(x=>x.new_product&&x.is_product_video!==false).sort((a,b)=>(b.score||0)-(a.score||0)||b.views-a.views)}
 function famDetail(id){const f=S.finder.find(x=>x._id===id);if(!f)return "";const vd=brainVerdict(f);const X=(S.famx||{})[id];const xh=X?`<section class="xa"><h4>Short analysis</h4><p>${esc(X.summary||"")}</p>${(X.groups||[]).length?`<h4>Variations sellers do</h4><ul>${X.groups.map(g=>`<li><b>${esc(g.name)}</b> (${esc(g.accounts)} sellers${g.best_views?", best "+fmt(g.best_views)+" views":""}): ${esc((g.variations||[]).join(", "))}${g.note?` — <span class="muted">${esc(g.note)}</span>`:""}</li>`).join("")}</ul>`:""}${(X.not_done||[]).length?`<h4>Not done yet (our chance)</h4><ul>${X.not_done.map(n=>`<li><b>${esc(n.variation)}</b>${n.ip_safe===false?" "+chip("IP risk","warn"):""} — ${esc(n.why||"")}<br><span class="muted">${esc(n.how||"")}</span></li>`).join("")}</ul>`:""}</section>`:"";
@@ -1007,15 +1007,15 @@ Current page: ${S.route}. Products in the finder: ${S.finder.length}. Rules (new
 
 /* ---- Hooks library + Clip studio ---- */
 const HK={list:[],concepts:[],captions:[],scoring:"",byId:{}};
-function hookPoster(mk){return mk&&S.posters[mk]?`data-poster="${esc(mk)}"`:""}
+function hookPoster(mk,ev){if(ev&&ev.code){const F=(S.fresh||[]).find(x=>x.shortCode===ev.code);if(F&&F.thumb)return `style="background-image:url(${F.thumb})"`}return mk&&S.posters[mk]?`data-poster="${esc(mk)}"`:""}
 function hooksFor(fam){const f=S.finder.find(x=>x._id===fam);const B=S.broll[fam];const effect=B&&B.type==="effect";
   return HK.list.map(h=>{let s=h.now_score||0;if(h.evidence?.family===fam)s+=25;else if(!h.transferable)s-=40;if(effect&&h.genjutsu_ok&&!h.broll_seedance)s-=5;if(h.kind==="proven")s+=5;return {...h,_fit:s}}).filter(h=>h._fit>0).sort((a,b)=>b._fit-a._fit)}
 function clipsFor(fam){const f=S.finder.find(x=>x._id===fam);if(!f)return [];
   return groupsFor(f).flatMap(g=>g.list.map(a=>({...a,_row:g.title}))).map(a=>{const k=S.takes[a.mkey];const sc=k?Number(k.score)||0:0;const bad=/fire|flame|police|illegal|nud|medical|weapon|knife/i.test((k?.risk||"")+" "+(k?.hook||""));return {...a,_k:k,_sc:sc,_bad:bad,_rank:sc*10+Math.log10((a.top_views||a.avg_views||1))*8+(a._ugc?12:0)-(bad?25:0)}}).sort((a,b)=>b._rank-a._rank)}
 function hookCard(h,opts={}){const ev=h.evidence||{};const c=HK.concepts.find(x=>x.id===h.concept);const sel=opts.sel;
   return `<article class="hcard ${sel?"on":""}">
-   <div class="hmedia">${ev.url?`<a class="vid" href="${esc(ev.url)}" target="_blank" rel="noopener" ${hookPoster(ev.mkey)}><span class="pl">▶</span><span class="wo">See the original</span></a>`:`<div class="vid none">${h.kind==="proven"?"Proven hook":"no preview"}</div>`}</div>
-   <div class="hbody"><div class="row">${chip(c?.name||h.concept,"pl")}${h.kind==="proven"?chip("proven","ok"):""}${chip("now "+Math.round(h.now_score||0),"ion")}${h.transferable?chip("any product","ok"):""}${h.genjutsu_ok?chip("Genjutsu","ion"):chip("Seedance","warn")}</div>
+   <div class="hmedia">${ev.url?`<a class="vid" href="${esc(ev.url)}" target="_blank" rel="noopener" ${hookPoster(ev.mkey,ev)}><span class="pl">▶</span><span class="wo">See the original</span></a>`:`<div class="vid none">${h.kind==="proven"?"Proven hook":"no preview"}</div>`}</div>
+   <div class="hbody"><div class="row">${chip(c?.name||h.concept,"pl")}${h.kind==="proven"?chip("proven","ok"):""}${h.new?chip("new · "+esc(h.evidence?.date||""),"warn"):""}${chip("now "+Math.round(h.now_score||0),"ion")}${h.transferable?chip("any product","ok"):""}${h.genjutsu_ok?chip("Genjutsu","ion"):chip("Seedance","warn")}</div>
     <p class="hcap">${esc(h.caption||"")}</p><p class="hvis">${esc(h.visual||h.title||"")}</p>
     <p class="muted">${esc(h.trigger||"")}${ev.views?` · ${fmt(ev.views)} views`:""}${ev.brain_score?` · Brain ${ev.brain_score}/10`:""}${ev.family?` · ${esc((S.finder.find(x=>x._id===ev.family)||{}).title||ev.family)}`:""}</p>
     ${h.why?`<details><summary>Why it works</summary><p>${esc(h.why)}</p>${h.risk?`<p class="muted">Risk: ${esc(h.risk)}</p>`:""}</details>`:""}

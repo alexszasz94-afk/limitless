@@ -1157,6 +1157,12 @@ function vResults(){const P=S.posts||[],A=S.accounts||[],J=S.jobs||[];
   <section class="panel"><h2>Posts</h2>${P.length?`<div class="tbl"><table><thead><tr><th>Post</th><th>Hook action</th><th style="text-align:right">Views</th><th style="text-align:right">Likes</th><th>Posted</th></tr></thead><tbody>${P.slice().sort((a,b)=>(b.views||0)-(a.views||0)).map(p=>`<tr><td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.account||"open")}</a></td><td>${esc(p.action||"")}</td><td style="text-align:right">${fmt(p.views||0)}</td><td style="text-align:right">${fmt(p.likes||0)}</td><td>${esc(p.posted||"")}</td></tr>`).join("")}</tbody></table></div>`:'<p class="muted">No posts yet.</p>'}</section>`}
 /* Robe 2026 brain */
 function robePosts(){return (S.posts||[]).filter(p=>p.product==="heatgrump_robe"||p.product==="heated_robes"||p.robe)}
+function robeCopy(R){const C=R.copy||{};const A=C.accounts||[],V=C.videos||[];if(!A.length)return "";const th=S.rth||"";
+  const themes=[...new Set(A.map(a=>a.theme))];const f=x=>!th||x.theme===th;
+  return `<section class="panel"><div class="row" style="justify-content:space-between"><h2>Who to copy — robe accounts</h2><small class="muted">${esc(C.checked||"")} · ${A.length} accounts · ${V.length} videos 250k+</small></div>
+   <div class="row hcon"><button class="chipb ${!th?"on":""}" data-act="rth" data-t="">All</button>${themes.map(t=>`<button class="chipb ${th===t?"on":""}" data-act="rth" data-t="${esc(t)}">${esc(t)} <small>${A.filter(a=>a.theme===t).length}</small></button>`).join("")}</div>
+   <div class="tbl"><table><thead><tr><th>Account</th><th>Theme</th><th style="text-align:right">Avg views</th><th style="text-align:right">Best</th><th>Note</th></tr></thead><tbody>${A.filter(f).map(a=>`<tr><td><a href="${esc(a.url)}" target="_blank" rel="noopener">@${esc(a.handle)}</a> <small class="muted">${a.platform==="TikTok"?"TT":"IG"}</small></td><td>${esc(a.theme)}</td><td style="text-align:right">${fmt(a.avg)}</td><td style="text-align:right"><a href="${esc(a.best_url)}" target="_blank" rel="noopener">${fmt(a.best)}</a></td><td class="muted">${esc(a.ip||"")}</td></tr>`).join("")}</tbody></table></div>
+   <h3 style="margin-top:14px">Videos to remake (250k+)</h3><ul class="rules">${V.filter(f).slice(0,40).map(v=>`<li><a href="${esc(v.url)}" target="_blank" rel="noopener">${fmt(v.views)} · @${esc(v.handle)}</a> <small class="muted">${v.platform==="TikTok"?"TT":"IG"} · ${esc(v.date)} · ${esc(v.theme)}</small><br><span class="muted">${esc(v.caption)}</span></li>`).join("")}</ul></section>`}
 function vRobe(){const R=S.robe||{};const P=robePosts();const price=+R.aov||90;
   const goal=+R.goal_usd||1e6,dl=R.deadline||"2026-12-15";const days=Math.max(0,Math.ceil((new Date(dl+"T23:59:59")-Date.now())/864e5));
   const orders=P.reduce((s,p)=>s+(+p.orders||0),0)+(+R.orders_manual||0),rev=+R.revenue_usd||orders*price,views=P.reduce((s,p)=>s+(+p.views||0),0);
@@ -1176,6 +1182,7 @@ function vRobe(){const R=S.robe||{};const P=robePosts();const price=+R.aov||90;
    <p class="muted">${esc(v.why)}</p><p><b>References:</b> ${esc(v.refs)}</p>${v.ip?`<p class="lrule">⚠ ${esc(v.ip)}</p>`:""}
    <ul class="rules">${(v.virals||[]).map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">@${esc(x.handle)}</a> · ${fmt(x.views)} views${x.what?` — ${esc(x.what)}`:""}</li>`).join("")}</ul>
    ${v.texts?`<p class="muted">Text lines: ${v.texts.map(t=>`“${esc(t)}”`).join(" · ")}</p>`:""}</section>`).join("")}</div>
+  ${robeCopy(R)}
   <section class="panel"><h2>Today's machine · $${esc(R.budget_day||20)}/day</h2><div class="rday">${(R.daily||[]).map((d,i)=>`<div class="rstep"><span>${i+1}</span><p>${esc(d)}</p></div>`).join("")}</div></section>
   <section class="panel"><h2>Recycle bank — bodies × hooks</h2><p class="muted">Body = the part after the hook (put on → open → controller → cozy) from our good videos. Each cell = how many posts used that combo. Never the same combo on two accounts.</p>
    ${B.length&&H.length?`<div class="tbl"><table class="rmx"><thead><tr><th>Hook \\ body</th>${B.map(b=>`<th title="${esc(b.note||"")}">${esc(b.id)}</th>`).join("")}</tr></thead><tbody>${H.map(h=>`<tr><td>${esc(h.name)} <small class="muted">${h.cost?esc(h.cost):""}</small></td>${B.map(b=>{const n=cnt[h.id+"|"+b.id]||0;return `<td class="${n?"used":""}">${n||"·"}</td>`}).join("")}</tr>`).join("")}</tbody></table></div>`:`<div class="empty"><b>Waiting for Szasz's 10 good videos</b><p class="muted">${B.length} bodies · ${H.length} hooks</p></div>`}
@@ -1208,6 +1215,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="st-send"){e.stopImmediatePropagation();run(stSend,b);return}
   if(a==="st-usehook"){e.stopImmediatePropagation();S.st={fam:"",mode:"hook",hook:b.dataset.id,clip:""};toast("Hook chosen. Now pick the product.");go("studio");return}
   if(a==="hcon"){e.stopImmediatePropagation();S.hc=b.dataset.c;render();return}
+  if(a==="rth"){e.stopImmediatePropagation();S.rth=b.dataset.t;render();return}
   if(a==="rrisk"){e.stopImmediatePropagation();const i=+b.dataset.i;const RK=((S.robe||{}).risks||[]).map((r,j)=>j===i?{...r,status:r.status==="done"?"open":"done"}:{...r});run(()=>S.db.doc("config/robe").update({risks:RK}),b);return}
   if(a==="larea"){e.stopImmediatePropagation();S.la=b.dataset.a;render();return}
   if(a==="hfam"){e.stopImmediatePropagation();S.hfam=b.dataset.f;S.hc="";render();return}

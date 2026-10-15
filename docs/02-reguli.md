@@ -62,3 +62,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - **15 oct 2026** — Kling 3.0 (std, start_image) merge pe planul Starter. La telecomandă: lumina urcă corect 1→5, dar cristalele/cifrele se deformează pe parcurs.
 - **15 oct 2026** — Telecomanda prințesă: cea mai bună = Kling 3.0 std cu start_image (placa pe formă lungă) + prompt „nothing changes shape, crystals never turn into dots”. Kling pro cere Plus.
 - **15 oct 2026** — Telecomanda: niciun model video nu numără corect luminițele (Genjutsu, Kling testate). Soluția fixă: placa + lumini compuse local (engine/controller_lights.py) + clicurile reale. Rezultat exact 1→5.
+- **15 oct 2026** — REȚETA telecomandă: cadru start (lumina 1) + cadru final (lumina 5) făcute local cu engine/controller_lights.py, apoi Kling 3.0 std cu start_image + end_image → lumina urcă corect 1→5 și degetul apasă real. Folosim asta pentru orice telecomandă nouă.

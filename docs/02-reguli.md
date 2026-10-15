@@ -68,3 +68,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 2026-10-15 — Robe board: alegi fata, apoi hook-urile potrivite ei. Poți bifa MAI MULTE hook-uri pe același B-roll (un video per hook). Telecomanda și conectorul sunt mereu clipurile fixe.
 - 2026-10-15 — Fete și camere: DOAR poze reale de pe Pinterest (căutare cu filtrul „Less AI”), fără personaje sau camere care par generate AI; naturale, făcute cu telefonul. 8 seturi noi (w1–w8) în products/robe-sets/.
 - 2026-10-15 — Hook-urile de halat se arată în tablă cu previzualizare video (primele 4 s) + link la original + vizualizări. Banca are 56 de hook-uri virale reale + 2 gratuite; se rotesc. Fără „Grinch” în texte.
+- 2026-10-15 — Sunet hook-uri: NU păstrăm sunetul videoului original (are muzica lor). Hook-urile se fac cu Kling 3.0 std, `sound: on`, prompt cu „AUDIO: only natural sounds… No music”. La Genjutsu se scoate sunetul. Muzica o pune Szasz în CapCut.
+- 2026-10-15 — Când hook-ul conține halatul: mereu halatul NOSTRU — cadru de start ȘI cadru de final (Kling start+end), ambele făcute cu referințele noastre față + spate. Costă ~19 credite/hook (2 imagini + Kling 5 s).

@@ -363,6 +363,9 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 .rphases{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}.rph{padding:12px;border:1px solid var(--edge);border-radius:14px;background:var(--glass);display:flex;flex-direction:column;gap:4px}.rph.now{border-color:#3fcf7a;box-shadow:0 0 0 1px #3fcf7a inset}.rph.hit{opacity:.75}.rph.miss{border-color:#e06060}.rph p{margin:0;font-size:13px}
 .rday{display:grid;gap:8px}.rstep{display:flex;gap:10px;align-items:flex-start}.rstep span{flex:0 0 26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--glass);border:1px solid var(--edge);font-size:12px}.rstep p{margin:2px 0}
 .rmx td,.rmx th{text-align:center}.rmx td:first-child{text-align:left}.rmx td.used{background:rgba(63,207,122,.18);font-weight:600}
+.rgirls{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:8px 0 16px}.rgirl{display:flex;flex-direction:column;gap:3px;text-align:left;border:1px solid var(--edge);border-radius:14px;background:var(--glass);padding:8px;cursor:pointer;color:var(--text);font:inherit;min-width:0}.rgirl.on{border-color:var(--ion);box-shadow:0 0 0 2px var(--ion-soft)}.rgp{display:grid;grid-template-columns:1fr 1fr;gap:4px}.rgp img,.rgp .rgph{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:8px;background:var(--deck);display:block}.rgirl small{line-height:1.3}
+.rhooks{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px;margin:8px 0 16px}.rhk{display:flex;gap:10px;text-align:left;border:1px solid var(--edge);border-radius:14px;background:var(--glass);padding:10px;cursor:pointer;color:var(--text);font:inherit;min-width:0}.rhk.on{border-color:var(--ion);box-shadow:0 0 0 2px var(--ion-soft)}.rck{flex:0 0 22px;height:22px;border-radius:6px;border:1.5px solid var(--edge);display:grid;place-items:center;font-weight:700}.rhk.on .rck{background:var(--ion);border-color:var(--ion);color:#fff}.rhb{display:flex;flex-direction:column;gap:4px;min-width:0}.rhb .lrule{margin:0}
+@media (max-width:720px){.rhooks{grid-template-columns:1fr}.rgirls{grid-template-columns:repeat(2,1fr)}}
 .rsteps{display:grid;gap:12px}.rs{display:flex;gap:12px;align-items:flex-start}.rs>span{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#3fcf7a,#ff7ab8);color:#fff;font-weight:700}.rs>div{flex:1;min-width:0}.rs p{margin:4px 0}
 .rrisk{display:grid;gap:8px}.rr{display:flex;gap:12px;align-items:flex-start}.rr p{margin:2px 0}.rr.ok b{text-decoration:line-through;opacity:.7}
 </style>
@@ -830,13 +833,14 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};setT
   db.collection("broll").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.broll=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
   db.doc("config/pulse").onSnapshot(s=>{S.pulse=s.exists?(s.data().by_handle||{}):{};if(S.route==="finder")soon()},()=>{});
   db.collection("fresh").onSnapshot(s=>{const L=[];s.docs.forEach(d=>L.push(...Object.values(d.data())));S.fresh=L;const by={};L.forEach(x=>{if(x.family)(by[x.family]=by[x.family]||[]).push(x)});S.freshBy=by;if(S.route==="finder")soon()},()=>{});
+  db.collection("robe_thumbs").onSnapshot(s=>{const m={};s.docs.forEach(d=>{m[d.id]=d.data()});S.robeThumbs=m;if(S.route==="robe")soon()},()=>{});
   db.doc("config/robe").onSnapshot(s=>{S.robe=s.exists?s.data():{};if(S.route==="robe")soon()},()=>{});
   db.collection("lessons").onSnapshot(s=>{S.lessons=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="lessons")soon()},()=>{});
   db.collection("posts").onSnapshot(s=>{S.posts=s.docs.map(d=>({_id:d.id,...d.data()}));if(["results","robe"].includes(S.route))soon()},()=>{});
   db.collection("accounts").onSnapshot(s=>{S.accounts=s.docs.map(d=>({_id:d.id,...d.data()}));if(["results","robe"].includes(S.route))soon()},()=>{});
   db.collection("famx").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.famx=m;if(S.route==="finder")soon()},()=>{});
   db.collection("hooks").onSnapshot(s=>{const m={};let meta=null;s.docs.forEach(d=>{if(d.id==="meta")meta=d.data();else Object.assign(m,d.data())});HK.list=Object.values(m);HK.byId=m;if(meta){HK.concepts=meta.concepts||[];HK.captions=meta.captions||[];HK.scoring=meta.scoring||""}if(["hooks","studio"].includes(S.route)&&!["hq","sq"].includes(document.activeElement?.id))soon()},()=>{});
-  db.collection("jobs").onSnapshot(s=>{S.jobs=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")soon()},()=>{});
+  db.collection("jobs").onSnapshot(s=>{S.jobs=s.docs.map(d=>({_id:d.id,...d.data()}));if(["boards","robe"].includes(S.route))soon()},()=>{});
   db.collection("insights").onSnapshot(s=>{const m={};s.docs.forEach(d=>Object.assign(m,d.data()));S.insights=m;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
   db.doc("config/rows").onSnapshot(s=>{S.rows=s.exists?s.data():null;if(S.route==="finder"&&document.activeElement?.id!=="fq")soon()},()=>{});
   db.collection("boards").onSnapshot(s=>{S.boards=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="boards")soon()},()=>{});
@@ -1132,7 +1136,7 @@ async function stSend(){const st=stState();if(!S.db||!S.write){toast("You can't 
   S.st={fam:st.fam,mode:"",hook:"",clip:""};toast("Sent. Approve it in Video boards.");go("boards")}
 function jobsPanel(){const J=(S.jobs||[]).slice().sort((a,b)=>String(b.created).localeCompare(String(a.created)));if(!J.length)return "";
   return `<section class="panel"><h2>Clips in the pipeline</h2><div class="jobs">${J.map(j=>`<article class="job"><div class="row" style="justify-content:space-between"><b>${esc(j.product_title)}</b>${chip(j.status,j.status==="approved"?"ok":j.status==="done"?"ok":j.status==="rejected"?"bad":"warn")}</div>
-     <p>${j.mode==="hook"?`Hook “${esc(j.hook_caption||"")}” + `:""}Genjutsu copy of <a href="${esc(j.viral_url)}" target="_blank" rel="noopener">@${esc(j.viral_handle)}</a></p><small class="muted">${esc(j.credits_low)}–${esc(j.credits_high)} credits · ${esc(String(j.created).slice(0,16).replace("T"," "))}</small>
+     ${j.kind==="robe"?`<p>Hooks: ${esc((j.hook_names||[]).join(" · "))}<br><span class="muted">B-roll: ${esc(j.driver_name||j.driver||"")} · outfit: ${esc(j.outfit||"")}</span></p>`:`<p>${j.mode==="hook"?`Hook “${esc(j.hook_caption||"")}” + `:""}Genjutsu copy of <a href="${esc(j.viral_url)}" target="_blank" rel="noopener">@${esc(j.viral_handle)}</a></p>`}<small class="muted">${esc(j.credits_low)}–${esc(j.credits_high)} credits · ${esc(String(j.created).slice(0,16).replace("T"," "))}</small>
      ${j.status==="waiting approval"&&S.write?`<div class="row"><button class="btn solid" data-act="job" data-id="${esc(j._id)}" data-s="approved">Approve</button><button class="btn" data-act="job" data-id="${esc(j._id)}" data-s="rejected">Reject</button></div>`:""}</article>`).join("")}</div></section>`}
 /* ---- Mistakes log + Results (the data thread) ---- */
 function vLessons(){const L=(S.lessons||[]).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date)));const ar=S.la||"";
@@ -1158,25 +1162,57 @@ function vResults(){const P=S.posts||[],A=S.accounts||[],J=S.jobs||[];
   <section class="panel"><h2>Posts</h2>${P.length?`<div class="tbl"><table><thead><tr><th>Post</th><th>Hook action</th><th style="text-align:right">Views</th><th style="text-align:right">Likes</th><th>Posted</th></tr></thead><tbody>${P.slice().sort((a,b)=>(b.views||0)-(a.views||0)).map(p=>`<tr><td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.account||"open")}</a></td><td>${esc(p.action||"")}</td><td style="text-align:right">${fmt(p.views||0)}</td><td style="text-align:right">${fmt(p.likes||0)}</td><td>${esc(p.posted||"")}</td></tr>`).join("")}</tbody></table></div>`:'<p class="muted">No posts yet.</p>'}</section>`}
 /* Robe 2026 brain */
 function robePosts(){return (S.posts||[]).filter(p=>p.product==="heatgrump_robe"||p.product==="heated_robes"||p.robe)}
-function robeStudio(R){const V=R.variants||[];if(!V.length)return "";const vid=S.rsv||V[0].id;const v=V.find(x=>x.id===vid)||V[0];const H=R.hooks||[];
-  const fx=v.fixed||{};const st=k=>{const f=fx[k]||{};return f.url?`<a href="${esc(f.url)}" target="_blank" rel="noopener">✓ ready</a>`:`<span class="chip c-warn">make once · ~${f.est||85} cr</span>`};
-  const mode=S.rsm||"one",hk=S.rsh||"none";const broll=mode==="one"?143:143,hookc=hk==="none"||hk.startsWith("F")?0:56;
-  const once=(fx.controller?.url?0:(fx.controller?.est||85))+(fx.connector?.url?0:(fx.connector?.est||85))+(v.refs_ready?0:120);
-  const tot=broll+hookc;const usd=c=>"$"+(c*0.05).toFixed(0);
-  return `<section class="panel rstudio"><div class="row" style="justify-content:space-between"><h2>Make a robe video</h2><small class="muted">Robe workflow — different from the general “Make a clip”</small></div>
-  <div class="rsteps">
-   <div class="rs"><span>1</span><div><b>Variant</b><div class="row hcon">${V.map(x=>`<button class="chipb ${x.id===v.id?"on":""}" data-act="rsv" data-v="${esc(x.id)}">${esc(x.name)}</button>`).join("")}</div>
-     <p class="muted">References: ${esc(v.refs)}${v.girls_only?" · <b>girls only</b>":""}</p></div></div>
-   <div class="rs"><span>2</span><div><b>Fixed clips (reused in every video)</b><p>Controller ${esc(fx.controller?.look||"")}: ${st("controller")}</p><p>Connector ${esc(fx.connector?.look||"")}: ${st("connector")}</p></div></div>
-   <div class="rs"><span>3</span><div><b>Girl + room</b><p class="muted">From Pinterest (exact photos). A new pair only when the rotation asks; otherwise reuse.</p>
-     <form id="fRobeJob" class="f"><label for="rjc">Character photo link<input id="rjc" name="character" placeholder="Pinterest link or 'reuse'"></label><label for="rjr">Room photo link<input id="rjr" name="room" placeholder="Pinterest link or 'reuse'"></label><label for="rjo">Outfit under the robe<select id="rjo" name="outfit"><option>Christmas pyjamas</option><option>cozy loungewear</option><option>American-style casual</option><option>Claude picks</option></select></label>
-     <input type="hidden" name="variant" value="${esc(v.id)}"><input type="hidden" name="mode" value="${esc(mode)}"><input type="hidden" name="hook" value="${esc(hk)}"><input type="hidden" name="est" value="${tot}">
-     <button class="btn solid" type="submit" ${S.write?"":"disabled"}>Send to Claude · ~${tot} cr (${usd(tot)})</button></form></div></div>
-   <div class="rs"><span>4</span><div><b>B-roll with Genjutsu</b><div class="row hcon"><button class="chipb ${mode==="one"?"on":""}" data-act="rsm" data-m="one">One pass: put on → open → cozy (same room)</button><button class="chipb ${mode==="three"?"on":""}" data-act="rsm" data-m="three">3 separate clips</button></div>
-     <p class="muted">~143 credits at 1080p (13 s). 480p test first (~40). Motion clips rotate between videos. One pass only with clips filmed in one room (Mistakes log).</p></div></div>
-   <div class="rs"><span>5</span><div><b>Hook (optional)</b><div class="row hcon"><button class="chipb ${hk==="none"?"on":""}" data-act="rsh" data-h="none">No hook</button>${H.map(h=>`<button class="chipb ${hk===h.id?"on":""}" data-act="rsh" data-h="${esc(h.id)}">${esc(h.name)}</button>`).join("")}</div></div></div>
-   <div class="rs"><span>6</span><div><b>Claude assembles</b><p class="muted">Hook → put on → open → connector → controller → cozy. QA check, then the MP4 + text/caption/music idea land in Video boards for your OK.</p></div></div>
-  </div>${once?`<p class="lrule">One-time setup still missing for ${esc(v.name)}: ~${once} credits (${usd(once)}) — product sheet + pink controller + connector.</p>`:""}</section>`}
+function robeStudio(R){const V=R.variants||[];if(!V.length)return "";const st=S.rb||(S.rb={v:"",g:"",h:[],d:""});
+  const v=V.find(x=>x.id===st.v)||V.find(x=>x.id==="princess")||V[0];const G=(R.girls||[]).filter(g=>!g.variants||g.variants.includes(v.id));
+  const RJ=(S.jobs||[]).filter(j=>j.kind==="robe"&&j.status!=="rejected");
+  const gUse=id=>RJ.filter(j=>j.girl===id);const g=G.find(x=>x.id===st.g);
+  const D=(R.drivers||[]).filter(d=>!d.variants||d.variants.includes(v.id));const dr=D.find(x=>x.id===st.d)||D.find(x=>x.best)||D[0]||{};
+  const HB=(R.hookbank||[]).filter(h=>!h.variants||h.variants.includes(v.id));
+  const usedOn=(hid,gid)=>RJ.filter(j=>(j.hooks||[]).includes(hid)&&(!gid||j.girl===gid)).length;
+  const lastAny=hid=>RJ.filter(j=>(j.hooks||[]).includes(hid)).map(j=>String(j.created)).sort().pop()||"";
+  const fx=v.fixed||{};const ready=k=>fx[k]?.url?`<a href="${esc(fx[k].url)}" target="_blank" rel="noopener">✓ ready</a>`:`<span class="chip c-warn">missing</span>`;
+  const thumb=(id,k)=>{const t=(S.robeThumbs||{})[id];return t&&t[k]?`<img src="${t[k]}" alt="" loading="lazy">`:`<i class="rgph"></i>`};
+  const kinds={free:"Free · no new clip",proven:"Proven",viral:"Viral format",new:"New idea · no robe in frame"};
+  const order={free:0,proven:1,viral:2,new:3};
+  const hs=g?HB.slice().sort((a,b)=>(usedOn(a.id,g.id)-usedOn(b.id,g.id))||(order[a.kind]-order[b.kind])||((a.place==="her room"?0:1)-(b.place==="her room"?0:1))):[];
+  const sel=st.h.filter(id=>HB.some(h=>h.id===id));const hookCr=sel.reduce((s,id)=>s+(+(HB.find(h=>h.id===id)||{}).cost||0),0);
+  const brCr=+dr.cost||77,tot=brCr+hookCr,usd=c=>"$"+(c*0.05).toFixed(0),n=Math.max(1,sel.length);
+  const step=!g?2:!sel.length?3:4;
+  const hcard=h=>{const on=sel.includes(h.id),mine=usedOn(h.id,g.id),all=usedOn(h.id),la=lastAny(h.id);const recent=h.kind==="proven"&&la&&(Date.now()-new Date(la))<3*864e5;
+    return `<button class="rhk ${on?"on":""}" data-act="rbh" data-h="${esc(h.id)}" aria-pressed="${on}"><span class="rck">${on?"✓":""}</span><span class="rhb"><b>${esc(h.name)}</b>
+     ${h.line?`<span class="muted">“${esc(h.line)}”</span>`:""}
+     <span class="row hcon">${chip(kinds[h.kind]||h.kind,h.kind==="free"?"ok":h.kind==="new"?"pl":"ion")}<small class="muted">${h.cost?"~"+h.cost+" cr":"0 cr"} · ${esc(h.place||"")}${h.needs?" · needs "+esc(h.needs):""}</small></span>
+     ${mine?`<small class="lrule">Already used with ${esc(g.name)} ${mine}×</small>`:all?`<small class="muted">Used ${all}× with other girls</small>`:`<small class="muted">Never used yet</small>`}${recent?`<small class="lrule">Proven hook used in the last 3 days — wait</small>`:""}</span></button>`};
+  return `<section class="panel rstudio" id="rmake"><div class="row" style="justify-content:space-between"><h2>Make a robe video</h2><small class="muted">Pick the girl → tick one or more hooks → one B-roll serves all of them</small></div>
+  <div class="row hcon">${V.map(x=>`<button class="chipb big ${x.id===v.id?"on":""}" data-act="rbv" data-v="${esc(x.id)}">${esc(x.name)}</button>`).join("")}</div>
+  <nav class="steps" aria-label="Steps">${["Girl + room","Hooks","B-roll + fixed clips","Send"].map((s,i)=>`<span class="stp ${i+2===step?"on":i+2<step?"done":""}"><i>${i+1}</i>${esc(s)}${i===0&&g?": "+esc(g.name):""}${i===1&&sel.length?": "+sel.length:""}</span>`).join("")}</nav>
+  <h3>1 · Girl + her room <small class="muted">American, from Pinterest, exact photos. The robe is never in her photo.</small></h3>
+  <div class="rgirls">${G.map(x=>{const u=gUse(x.id);return `<button class="rgirl ${g&&g.id===x.id?"on":""}" data-act="rbg" data-g="${esc(x.id)}"><span class="rgp">${thumb(x.id,"c")}${thumb(x.id,"r")}</span><b>${esc(x.name)}</b><small class="muted">${u.length?`${u.length} video${u.length>1?"s":""} made`:"new · not used yet"}</small><small class="muted">${esc(x.room_desc||"")}</small></button>`}).join("")||'<p class="muted">No girls yet. Say “seturi noi” to Claude.</p>'}</div>
+  ${g?`<h3>2 · Hooks for ${esc(g.name)} <small class="muted">tick as many as you want — each hook = one video on the same B-roll. Not used with her first.</small></h3>
+   <div class="row hcon"><button class="chipb" data-act="rbh-free">Tick all free</button><button class="chipb" data-act="rbh-none">Clear</button><small class="muted">${sel.length} selected</small></div>
+   <div class="rhooks">${hs.map(hcard).join("")}</div>`:""}
+  ${g&&sel.length?`<h3>3 · B-roll + fixed clips</h3><div class="rsteps">
+   <div class="rs"><span>B</span><div><b>B-roll (one Genjutsu pass, 720p)</b><div class="row hcon">${D.map(d=>`<button class="chipb ${d.id===dr.id?"on":""}" data-act="rbd" data-d="${esc(d.id)}">${esc(d.name)} <small>${d.dur}s · ~${d.cost} cr · used ${RJ.filter(j=>j.driver===d.id).length}×</small></button>`).join("")}</div>
+     <p class="muted">${esc(g.name)} + her room + ${esc(v.name)} front &amp; back. Put on → open → cozy on her own sofa. Made once, reused for all ${n} video${n>1?"s":""}.</p></div></div>
+   <div class="rs"><span>F</span><div><b>Fixed clips — always the same, 0 credits</b><p>Controller ${esc(fx.controller?.look||"")}: ${ready("controller")}</p><p>Connector ${esc(fx.connector?.look||"")}: ${ready("connector")}</p></div></div></div>
+  <h3>4 · The plan</h3><section class="panel"><dl class="dl"><dt>Videos</dt><dd>${n} · ${esc(g.name)} · ${esc(v.name)}</dd>
+   <dt>Each video</dt><dd>Hook → put on → open → connector → controller (3 s, small zoom) → cozy</dd>
+   <dt>Hooks</dt><dd>${sel.map(id=>{const h=HB.find(x=>x.id===id);return esc(h.name)+(h.line?` <span class="muted">“${esc(h.line)}”</span>`:"")}).join("<br>")}</dd>
+   <dt>Outfit under the robe</dt><dd><select id="rbo" aria-label="Outfit"><option>Claude picks</option><option>Christmas pyjamas</option><option>cozy loungewear</option><option>American-style casual</option></select></dd>
+   <dt>Cost</dt><dd>B-roll ~${brCr} + hooks ~${hookCr} = <b>~${tot} credits (${usd(tot)})</b> for ${n} video${n>1?"s":""} · ~${Math.round(tot/n)} per video</dd></dl>
+   <div class="row"><button class="btn solid" data-act="rb-send" ${S.write?"":"disabled"}>Send for my approval</button><button class="btn" data-act="rbh-none">Change hooks</button></div>
+   <p class="muted">Nothing is generated until you approve it in Video boards. Then Claude makes the B-roll, the hooks, QA-checks and assembles each MP4 with text, caption and music idea.</p></section>`:""}
+  </section>`}
+async function rbSend(){const R=S.robe||{};const st=S.rb||{};if(!S.db||!S.write){toast("You can't send from this view.");return}
+  const V=R.variants||[];const v=V.find(x=>x.id===st.v)||V.find(x=>x.id==="princess")||V[0];const g=(R.girls||[]).find(x=>x.id===st.g);
+  const D=(R.drivers||[]).filter(d=>!d.variants||d.variants.includes(v.id));const dr=D.find(x=>x.id===st.d)||D.find(x=>x.best)||D[0]||{};
+  const HB=R.hookbank||[];const sel=st.h.filter(id=>HB.some(h=>h.id===id));if(!g||!sel.length){toast("Pick a girl and at least one hook.");return}
+  const hookCr=sel.reduce((s,id)=>s+(+(HB.find(h=>h.id===id)||{}).cost||0),0),tot=(+dr.cost||77)+hookCr;const outfit=$("#rbo")?.value||"Claude picks";
+  const names=sel.map(id=>(HB.find(h=>h.id===id)||{}).name);
+  const job={ours:true,kind:"robe",status:"waiting approval",product:"heatgrump_robe",product_title:`${v.name} · ${g.name} · ${sel.length} video${sel.length>1?"s":""}`,variant:v.id,girl:g.id,girl_name:g.name,hooks:sel,hook_names:names,driver:dr.id,driver_name:dr.name||"",outfit,credits_low:tot,credits_high:tot+30,created:nowIso()};
+  const r=await S.db.collection("jobs").add(job);
+  await S.db.collection("inbox").add({text:`Robe videos (waiting for approval): ${v.name} · ${g.name} (${g.id}) · B-roll ${dr.id} · hooks: ${names.join(" | ")} · outfit ${outfit} · ~${tot} cr · job ${r.id||""}`,status:"nou",creat:nowIso(),via:"robe"});
+  S.rb={v:v.id,g:"",h:[],d:""};toast("Sent. Approve it in Video boards.");go("boards")}
 function robeCopy(R){const C=R.copy||{};const A=C.accounts||[],V=C.videos||[];if(!A.length)return "";const th=S.rth||"";
   const themes=[...new Set(A.map(a=>a.theme))];const f=x=>!th||x.theme===th;
   return `<section class="panel"><div class="row" style="justify-content:space-between"><h2>Who to copy — robe accounts</h2><small class="muted">${esc(C.checked||"")} · ${A.length} accounts · ${V.length} videos 250k+</small></div>
@@ -1236,6 +1272,13 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="st-send"){e.stopImmediatePropagation();run(stSend,b);return}
   if(a==="st-usehook"){e.stopImmediatePropagation();S.st={fam:"",mode:"hook",hook:b.dataset.id,clip:""};toast("Hook chosen. Now pick the product.");go("studio");return}
   if(a==="hcon"){e.stopImmediatePropagation();S.hc=b.dataset.c;render();return}
+  if(a==="rbv"){e.stopImmediatePropagation();S.rb={v:b.dataset.v,g:"",h:[],d:""};render();return}
+  if(a==="rbg"){e.stopImmediatePropagation();S.rb={...(S.rb||{h:[]}),g:b.dataset.g,h:[]};render();return}
+  if(a==="rbh"){e.stopImmediatePropagation();const r=S.rb||(S.rb={h:[]});const h=b.dataset.h;r.h=r.h.includes(h)?r.h.filter(x=>x!==h):[...r.h,h];render();return}
+  if(a==="rbh-free"){e.stopImmediatePropagation();const R=S.robe||{},r=S.rb||(S.rb={h:[]});const v=r.v||"princess";r.h=[...new Set([...r.h,...(R.hookbank||[]).filter(h=>h.kind==="free"&&(!h.variants||h.variants.includes(v))).map(h=>h.id)])];render();return}
+  if(a==="rbh-none"){e.stopImmediatePropagation();if(S.rb)S.rb.h=[];render();return}
+  if(a==="rbd"){e.stopImmediatePropagation();S.rb.d=b.dataset.d;render();return}
+  if(a==="rb-send"){e.stopImmediatePropagation();run(rbSend,b);return}
   if(a==="rsv"){e.stopImmediatePropagation();S.rsv=b.dataset.v;render();return}
   if(a==="rsm"){e.stopImmediatePropagation();S.rsm=b.dataset.m;render();return}
   if(a==="rsh"){e.stopImmediatePropagation();S.rsh=b.dataset.h;render();return}

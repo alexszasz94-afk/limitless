@@ -1,0 +1,512 @@
+{
+ "girls": [
+  {
+   "id": "us1",
+   "name": "Emma",
+   "char": "char-inspiration/2026-10-02_080",
+   "room": "rooms/2026-10-02_057",
+   "room_desc": "bright living room, white fireplace, tree, cream sofa",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "us2",
+   "name": "Olivia",
+   "char": "char-inspiration/2026-10-02_075",
+   "room": "rooms/2026-10-02_055",
+   "room_desc": "white living room, tree by the window, light sofa",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "us3",
+   "name": "Ava",
+   "char": "char-inspiration/2026-10-02_076",
+   "room": "rooms/2026-10-01_039",
+   "room_desc": "farmhouse living room, tree, white sofa, green throws",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "us4",
+   "name": "Sophia",
+   "char": "char-inspiration/2026-10-02_073",
+   "room": "rooms/2026-10-01_029",
+   "room_desc": "airy living room, beige sectional, tree",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "us5",
+   "name": "Mia",
+   "char": "char-inspiration/2026-10-02_071",
+   "room": "rooms/2026-10-01_038",
+   "room_desc": "living room with fireplace, garland, dark sofa",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "us6",
+   "name": "Chloe",
+   "char": "char-inspiration/2026-10-02_074",
+   "room": "rooms/2026-10-02_048",
+   "room_desc": "tall living room, fireplace, tree, sofa",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "us7",
+   "name": "Lily",
+   "char": "char-inspiration/2026-10-02_077",
+   "room": "rooms/2026-10-01_028",
+   "room_desc": "living room, TV, tree, red-white rug",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "us8",
+   "name": "Grace",
+   "char": "char-inspiration/2026-10-02_079",
+   "room": "rooms/2026-10-02_054",
+   "room_desc": "soft grey living room, tree, sofa",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  }
+ ],
+ "drivers": [
+  {
+   "id": "pc-v2",
+   "name": "@princesscomfortt viral — hook, put on, open, cozy",
+   "dur": 10.7,
+   "cost": 77,
+   "media": "d1375aa8-d236-491c-8309-2297542e929c",
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "best": true
+  },
+  {
+   "id": "pc-12s",
+   "name": "@princesscomfortt full cut (12 s)",
+   "dur": 12,
+   "cost": 86,
+   "media": "cd0802c6",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  }
+ ],
+ "hookbank": [
+  {
+   "id": "F1",
+   "name": "Starts on the drop-open",
+   "kind": "free",
+   "cost": 0,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "line": "",
+   "note": "No new clip: the video opens on the B2 drop-open from the B-roll.",
+   "needs": ""
+  },
+  {
+   "id": "F2",
+   "name": "Starts on the lights 3→5",
+   "kind": "free",
+   "cost": 0,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "line": "",
+   "note": "Opens on the controller clip.",
+   "needs": ""
+  },
+  {
+   "id": "F4",
+   "name": "Starts on the grumpy cozy face",
+   "kind": "free",
+   "cost": 0,
+   "variants": [
+    "grumpy"
+   ],
+   "place": "her room",
+   "line": "",
+   "needs": "",
+   "note": ""
+  },
+  {
+   "id": "P321",
+   "name": "3, 2, 1 reveal",
+   "kind": "proven",
+   "cost": 36,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "line": "3… 2… 1…",
+   "note": "Genjutsu from the proven motion clip. Robe can show. Max once every 3 days.",
+   "needs": ""
+  },
+  {
+   "id": "Pgift",
+   "name": "Gifting: 'I'm freezing' / 'Take this'",
+   "kind": "proven",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "needs": "a second person",
+   "line": "Oh my God, I'm freezing",
+   "note": ""
+  },
+  {
+   "id": "Pstore",
+   "name": "Store: customer with the cart",
+   "kind": "proven",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "a store",
+   "line": "Found it at the store and I'm not leaving without it",
+   "needs": "",
+   "note": ""
+  },
+  {
+   "id": "Plaunch",
+   "name": "Store: ribbon launch",
+   "kind": "proven",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "a store",
+   "line": "Grand opening. 3… 2… 1…",
+   "needs": "",
+   "note": ""
+  },
+  {
+   "id": "Pstaff",
+   "name": "Store: staff reveal the aisle",
+   "kind": "proven",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "a store",
+   "line": "Restock day. Blink and it's gone.",
+   "needs": "",
+   "note": ""
+  },
+  {
+   "id": "G1",
+   "name": "Drop-open overhead (viral format)",
+   "kind": "viral",
+   "cost": 36,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "line": "Do NOT let a Christmas mom see this… 😳🎄",
+   "needs": "",
+   "note": ""
+  },
+  {
+   "id": "G2",
+   "name": "Packaged robe pushed at the lens (146M format)",
+   "kind": "viral",
+   "cost": 36,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "line": "I made this for the cold-aholics.. 😭🎄",
+   "needs": "",
+   "note": ""
+  },
+  {
+   "id": "G5",
+   "name": "3-2-1 blanket whip",
+   "kind": "viral",
+   "cost": 36,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "line": "3… 2… 1…",
+   "needs": "",
+   "note": ""
+  },
+  {
+   "id": "G7",
+   "name": "Wraps up, sinks into the sofa",
+   "kind": "viral",
+   "cost": 36,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "line": "Every Christmas grump NEEDS this 🎄",
+   "needs": "",
+   "note": ""
+  },
+  {
+   "id": "N1101",
+   "name": "Ice on the INSIDE of the window",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "bedroom",
+   "needs": "",
+   "line": "when there's ice on the INSIDE of your window",
+   "scene": "The person stands at the bedroom window scraping a thick layer of white frost off the INSIDE of the glass with a plastic card, frost flakes falling on the sill, snowy morning outside, shoulders hunched with cold, looking back over the shoulder at the camera in disbelief.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N1102",
+   "name": "Hair dryer down the top",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "bedroom",
+   "needs": "",
+   "line": "stop doing this to stay warm (there's a better way)",
+   "scene": "The person sits on the edge of the bed holding a running hair dryer, the collar of their top pulled open with the other hand, pointing the hot air down inside their top, eyes closed in pure relief, a few strands of hair blown up by the air.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N1103",
+   "name": "Cold feet on the partner",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "bedroom",
+   "needs": "a partner",
+   "line": "my partner when I put my feet on him at night",
+   "scene": "Night, bedroom lit by a warm bedside lamp. The person lies in bed under a duvet with a mischievous grin, next to their adult partner who is asleep on their side facing away; the person holds the edge of the duvet, about to slide closer under the covers.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N2101",
+   "name": "Space heater warms one side",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "needs": "",
+   "line": "the space heater only warms the side facing it",
+   "scene": "The person sits cross-legged on the floor directly in front of a small portable space heater glowing orange; the front of their body is bathed in warm glow while they twist around to warm their back, rubbing their arms, frustrated.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N2102",
+   "name": "Thermostat war (64°)",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "needs": "",
+   "line": "he said 64 is \"plenty warm\"",
+   "scene": "The person reaches toward a plain white wall thermostat whose simple display shows 64, fingertip an inch from the button, while another adult's hand enters from the edge of the frame and covers the thermostat; the person turns their head to the camera with a betrayed, deadpan look.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N2103",
+   "name": "Finally warm, remote is over there",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "needs": "",
+   "line": "when you're finally warm but the remote is over there",
+   "scene": "The person lies on the sofa wrapped tightly in a plain grey fleece blanket like a burrito, only the face visible, staring with dread at a TV remote lying on the coffee table just out of reach.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N3101",
+   "name": "Bed-to-coffee walk in January",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "kitchen",
+   "needs": "",
+   "line": "the walk from my bed to the coffee maker in January",
+   "scene": "Early morning in the kitchen with a cold tile floor: the person tiptoes barefoot across the tiles toward the coffee maker, one foot lifted, hugging themselves tightly, face scrunched from the cold, soft blue dawn light from the window.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N3102",
+   "name": "I can see my breath INSIDE",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "needs": "",
+   "line": "I can see my breath. INSIDE.",
+   "scene": "The person stands in the middle of their living room hugging themselves and exhaling, a clearly visible cloud of breath hanging in the air in front of their face indoors, a wall thermostat visible behind them, eyes wide in disbelief.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N3103",
+   "name": "Cat on the heating vent",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "needs": "a cat",
+   "line": "the cat found the only warm spot in the house",
+   "scene": "A cat lies sprawled blissfully on a floor heating vent, eyes closed; the person kneels right next to it, both hands hovering over the tiny free corner of the vent, glaring at the cat with jealousy.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N4101",
+   "name": "December gas bill",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "kitchen",
+   "needs": "",
+   "line": "my December gas bill made me do something drastic",
+   "scene": "The person stands at the kitchen counter holding an opened utility envelope and a printed letter (no readable text), jaw dropped, the other hand pressed to their forehead in shock, the kitchen bright and ordinary around them.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N4102",
+   "name": "Cold sheets should be illegal",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "bedroom",
+   "needs": "",
+   "line": "getting into cold sheets should be illegal",
+   "scene": "The person has just slid into bed under the covers: body rigid as a plank, arms clamped to their sides, eyes wide open, teeth clenched, the duvet pulled up to the chin, a bedside lamp on.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N4103",
+   "name": "WFH like the North Pole",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "desk",
+   "needs": "",
+   "line": "WFH in winter be like",
+   "scene": "The person sits at a desk with an open laptop wearing a puffer jacket zipped over their outfit, a knit beanie and fingerless gloves, typing stiffly with cold fingers, breath slightly visible, a steaming mug beside the laptop.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N5101",
+   "name": "Dog as a heater",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "her room",
+   "needs": "a dog",
+   "line": "using my dog as a heater. he did not consent.",
+   "scene": "The person sits on the sofa hugging a big fluffy dog tightly against their chest with both arms, cheek pressed into its fur, eyes closed for warmth; the dog looks straight at the camera, unimpressed.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N5102",
+   "name": "Duvet as a cape",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "hallway",
+   "needs": "",
+   "line": "leaving my bed like I'm moving house",
+   "scene": "The person walks down the hallway of their home with the entire duvet wrapped around them like a royal cape, dragging behind on the floor, only the face showing, holding a toothbrush in one hand, sleepy and determined.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  },
+  {
+   "id": "N5103",
+   "name": "Hands over the toaster",
+   "kind": "new",
+   "cost": 30,
+   "variants": [
+    "princess",
+    "grumpy"
+   ],
+   "place": "kitchen",
+   "needs": "",
+   "line": "desperate times",
+   "scene": "In the kitchen, the person holds both hands flat above the slots of an ordinary toaster that is switched on, a warm orange glow rising from the slots onto their palms, eyes closed in relief, shoulders hunched.",
+   "note": "New hook: no robe in frame, 2 variants (image + Kling), pick the best."
+  }
+ ],
+ "_nota": "Sursa pozelor: /home/user/heatgrump/library/<char|room>. Copie a datelor din config/robe (aplicatie)."
+}

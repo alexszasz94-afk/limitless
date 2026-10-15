@@ -29,7 +29,9 @@
   "controller_crystal_v3_720p": "55cfac51-7503-4d7e-90b0-aca6c872e8fe",
   "_nota_controller": "Kling v2 (std, start_image = placa pe formă lungă) = cea mai bună: cristale ok, lumina urcă 1→5",
   "controller_crystal_kling": "b7d0b4f4-3176-4c9a-b07e-701bb28695f0",
-  "controller_crystal_kling_v2": "80de88ab-a810-40d1-9bc9-742a6258dc96"
+  "controller_crystal_kling_v2": "80de88ab-a810-40d1-9bc9-742a6258dc96",
+  "controller_final": "output/princess-test/controller-crystal-composite.mp4 (compus local: engine/controller_lights.py)",
+  "connector_final": "2cf733f8-7054-457e-9ca5-8a30df0d0928"
  },
  "controller_options": {
   "0_pearl_tiara": "4305b99a-0ae3-4ba1-bce2-27a1cd15951b",
@@ -63,6 +65,7 @@
   "broll_C_480p": "3584769f-512a-4f4d-bd91-f96a5f54fb3c"
  },
  "broll": {
-  "us1_C_1080p": "ed803056-8d6c-4b39-85f8-9326e5e69f6c"
+  "us1_C_1080p": "ed803056-8d6c-4b39-85f8-9326e5e69f6c",
+  "us1_C_720p_v2": "c79f8944-d27d-49c3-aa10-64d9cf879d44"
  }
 }

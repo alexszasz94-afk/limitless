@@ -61,3 +61,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - **15 oct 2026** — Telecomanda/conectorul se pot face cu Genjutsu (mișcarea din clipurile fixe HeatGrump + placa noastră). Genjutsu păstrează FORMA obiectului din clipul de mișcare → placa trebuie desenată pe aceeași formă (telecomandă ovală lungă), altfel apar cristale în plus.
 - **15 oct 2026** — Kling 3.0 (std, start_image) merge pe planul Starter. La telecomandă: lumina urcă corect 1→5, dar cristalele/cifrele se deformează pe parcurs.
 - **15 oct 2026** — Telecomanda prințesă: cea mai bună = Kling 3.0 std cu start_image (placa pe formă lungă) + prompt „nothing changes shape, crystals never turn into dots”. Kling pro cere Plus.
+- **15 oct 2026** — Telecomanda: niciun model video nu numără corect luminițele (Genjutsu, Kling testate). Soluția fixă: placa + lumini compuse local (engine/controller_lights.py) + clicurile reale. Rezultat exact 1→5.

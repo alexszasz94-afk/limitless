@@ -1,72 +1,82 @@
 {
- "_account": "Higgsfield cont nou (13 oct)",
- "_nota": "Job ID-urile se pot folosi direct ca medias (image_job). Referințe halat pentru Genjutsu: 01,02,04,08 (+03). 06-sleeve iese ciudat (mânecă izolată) — nu se folosește.",
- "supplier_photo": "6eb030cf-33d5-4f6a-a534-e1a5258f6214",
- "controller_real_heatgrump": "99f72e32-8ba1-4734-bf72-07e854adb8c6",
- "connector_plate_heatgrump_femeie": "00d1cdeb-4011-4f0a-b1e3-583a2af89e11",
- "refs": {
-  "01-front": "f9a0dec3-610e-41aa-9950-9621a7c03d1c",
-  "02-back": "7132a85e-753d-4c6c-9231-6fb5fb8f8d1a",
-  "03-side": "491709dd-b088-444e-8b66-58b2289ff36a",
-  "04-open": "1c4a0ee7-f98f-41ef-bf03-8f358cafd6d1",
-  "05-hood": "c3b3280f-eba3-4a58-85bd-b3830f7a3465",
-  "06-sleeve": "ba58a274-9bfb-494a-9139-71ddf3878837",
-  "07-rolled": "dc2af449-aa5f-4ed5-b0c1-fab4caad22fe",
-  "08-worn": "9bcf8824-f503-4f47-86ac-978fbbe84c64"
- },
- "fixed_plates": {
-  "controller_pink": "4cc7d831-eaa8-46b1-8871-0f40306f00d2",
-  "controller_pink_alt": "3ecace2c-3e78-47c4-a686-daed33e39439",
-  "connector_lilac": "69b7ce03-a332-46f8-89b3-f7e0d1c23486",
-  "_nota": "conector cu unghii lungi de Crăciun (13 oct). Video: Seedance 2.5 cere plan Plus — contul nou e Starter.",
-  "_ales": "telecomanda = varianta 1 'Crystal tiara' (Szasz, 13 oct)",
-  "controller_crystal_longshape": "16b4e3e8-e21c-4d9e-a22f-6e34cafde872"
- },
- "fixed_clips": {
-  "connector_lilac_720p": "2cf733f8-7054-457e-9ca5-8a30df0d0928",
-  "controller_crystal": null,
-  "_nota": "conector OK (Genjutsu, mișcare din conector-femeie HeatGrump). Telecomanda: Genjutsu copiază forma lungă a telecomenzii HeatGrump → placa trebuie făcută pe forma aceea.",
-  "controller_crystal_v3_720p": "55cfac51-7503-4d7e-90b0-aca6c872e8fe",
-  "_nota_controller": "FINAL = Kling 3.0 std cu start_image (cristal 1 aprins) + end_image (cristal 5 aprins), cadre făcute cu engine/controller_lights.py",
-  "controller_crystal_kling": "b7d0b4f4-3176-4c9a-b07e-701bb28695f0",
-  "controller_crystal_kling_v2": "80de88ab-a810-40d1-9bc9-742a6258dc96",
-  "controller_final": "7aa0580a-4124-4ac5-886b-63cc2e6d11a2",
-  "connector_final": "2cf733f8-7054-457e-9ca5-8a30df0d0928",
-  "controller_final_file": "output/princess-test/controller-crystal-kling-v4.mp4"
- },
- "controller_options": {
-  "0_pearl_tiara": "4305b99a-0ae3-4ba1-bce2-27a1cd15951b",
-  "1_crystal_tiara": "4cc7d831-eaa8-46b1-8871-0f40306f00d2",
-  "2_royal_mirror": "21ed8877-4c7a-4824-b6d4-ee2de401a0f2",
-  "3_velvet_gold": "3b48d3b4-fc28-496e-a448-47cf4d8f8e80",
-  "4_crowned_heart": "14340529-60e0-4f2d-9530-e82087ee9629",
-  "_nota": "Szasz alege una; toate cu unghii lungi de Crăciun"
- },
- "robe_variant_C": {
-  "front": "336c91c2-4f93-4a44-9175-107de6e67df6",
-  "_nota": "aceleași culori, merele → coronițe+inimioare, tiară pe glugă; TRECE de Genjutsu (15 oct). Aleasă de Szasz.",
-  "back": "92166a02-8a62-4f68-abae-ae2fb70c6532"
- },
- "sets": [
-  {
-   "id": "us1",
-   "character": "6a98e81e-02cb-4a91-a391-96bddf23a085",
-   "character_src": "heatgrump/library/char-inspiration/2026-10-02_080.jpg",
-   "room": "065065ac-8b95-49e7-a1b1-a068e283ffa6",
-   "room_src": "heatgrump/library/rooms/2026-10-02_057.jpg"
+  "_account": "Higgsfield cont nou (13 oct)",
+  "_nota": "Job ID-urile se pot folosi direct ca medias (image_job). Referințe halat pentru Genjutsu: 01,02,04,08 (+03). 06-sleeve iese ciudat (mânecă izolată) — nu se folosește.",
+  "supplier_photo": "6eb030cf-33d5-4f6a-a534-e1a5258f6214",
+  "controller_real_heatgrump": "99f72e32-8ba1-4734-bf72-07e854adb8c6",
+  "connector_plate_heatgrump_femeie": "00d1cdeb-4011-4f0a-b1e3-583a2af89e11",
+  "refs": {
+    "01-front": "f9a0dec3-610e-41aa-9950-9621a7c03d1c",
+    "02-back": "7132a85e-753d-4c6c-9231-6fb5fb8f8d1a",
+    "03-side": "491709dd-b088-444e-8b66-58b2289ff36a",
+    "04-open": "1c4a0ee7-f98f-41ef-bf03-8f358cafd6d1",
+    "05-hood": "c3b3280f-eba3-4a58-85bd-b3830f7a3465",
+    "06-sleeve": "ba58a274-9bfb-494a-9139-71ddf3878837",
+    "07-rolled": "dc2af449-aa5f-4ed5-b0c1-fab4caad22fe",
+    "08-worn": "9bcf8824-f503-4f47-86ac-978fbbe84c64"
+  },
+  "fixed_plates": {
+    "controller_pink": "4cc7d831-eaa8-46b1-8871-0f40306f00d2",
+    "controller_pink_alt": "3ecace2c-3e78-47c4-a686-daed33e39439",
+    "connector_lilac": "69b7ce03-a332-46f8-89b3-f7e0d1c23486",
+    "_nota": "conector cu unghii lungi de Crăciun (13 oct). Video: Seedance 2.5 cere plan Plus — contul nou e Starter.",
+    "_ales": "telecomanda = varianta 1 'Crystal tiara' (Szasz, 13 oct)",
+    "controller_crystal_longshape": "16b4e3e8-e21c-4d9e-a22f-6e34cafde872"
+  },
+  "fixed_clips": {
+    "connector_lilac_720p": "2cf733f8-7054-457e-9ca5-8a30df0d0928",
+    "controller_crystal": null,
+    "_nota": "conector OK (Genjutsu, mișcare din conector-femeie HeatGrump). Telecomanda: Genjutsu copiază forma lungă a telecomenzii HeatGrump → placa trebuie făcută pe forma aceea.",
+    "controller_crystal_v3_720p": "55cfac51-7503-4d7e-90b0-aca6c872e8fe",
+    "_nota_controller": "FINAL (15 oct) = Genjutsu peste clipul Kling v4 (52b3f88f), 3 s + zoom. Rezerve: Kling v4 simplu, clipul HeatGrump recolorat roz.",
+    "controller_crystal_kling": "b7d0b4f4-3176-4c9a-b07e-701bb28695f0",
+    "controller_crystal_kling_v2": "80de88ab-a810-40d1-9bc9-742a6258dc96",
+    "controller_final": {
+      "job": "52b3f88f-6966-4f92-9d54-22a6e98d77c4",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3KJ0gFP5mrykKxzacTlTzUA6Ien/hf_20261015_080755_52b3f88f-6966-4f92-9d54-22a6e98d77c4.mp4",
+      "file": "output/princess-test/controller-princess-final.mp4",
+      "note": "Genjutsu 720p: imagine = placa tiara 16b4e3e8, miscare = Kling v4 7aa0580a. Montaj: primele 4.6 s accelerate la 3.0 s + zoom lent 1.0->1.4, se opreste pe 5. Aprobat de Szasz 15 oct"
+    },
+    "connector_final": "2cf733f8-7054-457e-9ca5-8a30df0d0928",
+    "controller_final_file": "output/princess-test/controller-crystal-kling-v4.mp4",
+    "controller_backup_hg_pink": {
+      "job": "9b813074-4ba4-4d22-86b0-b0808ec6deba",
+      "file": "output/princess-test/controller-hg-pink-4s.mp4"
+    },
+    "controller_kling_v4": "7aa0580a-4124-4ac5-886b-63cc2e6d11a2"
+  },
+  "controller_options": {
+    "0_pearl_tiara": "4305b99a-0ae3-4ba1-bce2-27a1cd15951b",
+    "1_crystal_tiara": "4cc7d831-eaa8-46b1-8871-0f40306f00d2",
+    "2_royal_mirror": "21ed8877-4c7a-4824-b6d4-ee2de401a0f2",
+    "3_velvet_gold": "3b48d3b4-fc28-496e-a448-47cf4d8f8e80",
+    "4_crowned_heart": "14340529-60e0-4f2d-9530-e82087ee9629",
+    "_nota": "Szasz alege una; toate cu unghii lungi de Crăciun"
+  },
+  "robe_variant_C": {
+    "front": "336c91c2-4f93-4a44-9175-107de6e67df6",
+    "_nota": "aceleași culori, merele → coronițe+inimioare, tiară pe glugă; TRECE de Genjutsu (15 oct). Aleasă de Szasz.",
+    "back": "92166a02-8a62-4f68-abae-ae2fb70c6532"
+  },
+  "sets": [
+    {
+      "id": "us1",
+      "character": "6a98e81e-02cb-4a91-a391-96bddf23a085",
+      "character_src": "heatgrump/library/char-inspiration/2026-10-02_080.jpg",
+      "room": "065065ac-8b95-49e7-a1b1-a068e283ffa6",
+      "room_src": "heatgrump/library/rooms/2026-10-02_057.jpg"
+    }
+  ],
+  "driving": {
+    "hook_b1_b2_cozy_12s": "cd0802c6-efe7-4df1-b846-ce9987069825",
+    "hook_b1_b2_cozy_v2_10.7s": "d1375aa8-d236-491c-8309-2297542e929c",
+    "controller_heatgrump_femeie": "0fb0e1db-9576-4c06-8259-ec17b925a0db",
+    "connector_heatgrump_femeie": "de1c549b-8e7c-4c9d-843c-b51aa5253f82"
+  },
+  "tests": {
+    "broll_C_480p": "3584769f-512a-4f4d-bd91-f96a5f54fb3c"
+  },
+  "broll": {
+    "us1_C_1080p": "ed803056-8d6c-4b39-85f8-9326e5e69f6c",
+    "us1_C_720p_v2": "c79f8944-d27d-49c3-aa10-64d9cf879d44"
   }
- ],
- "driving": {
-  "hook_b1_b2_cozy_12s": "cd0802c6-efe7-4df1-b846-ce9987069825",
-  "hook_b1_b2_cozy_v2_10.7s": "d1375aa8-d236-491c-8309-2297542e929c",
-  "controller_heatgrump_femeie": "0fb0e1db-9576-4c06-8259-ec17b925a0db",
-  "connector_heatgrump_femeie": "de1c549b-8e7c-4c9d-843c-b51aa5253f82"
- },
- "tests": {
-  "broll_C_480p": "3584769f-512a-4f4d-bd91-f96a5f54fb3c"
- },
- "broll": {
-  "us1_C_1080p": "ed803056-8d6c-4b39-85f8-9326e5e69f6c",
-  "us1_C_720p_v2": "c79f8944-d27d-49c3-aa10-64d9cf879d44"
- }
 }

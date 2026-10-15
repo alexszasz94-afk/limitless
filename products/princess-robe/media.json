@@ -22,8 +22,9 @@
   "_ales": "telecomanda = varianta 1 'Crystal tiara' (Szasz, 13 oct)"
  },
  "fixed_clips": {
-  "controller_pink_video": null,
-  "connector_lilac_video": null
+  "connector_lilac_720p": "2cf733f8-7054-457e-9ca5-8a30df0d0928",
+  "controller_crystal": null,
+  "_nota": "conector OK (Genjutsu, mișcare din conector-femeie HeatGrump). Telecomanda: Genjutsu copiază forma lungă a telecomenzii HeatGrump → placa trebuie făcută pe forma aceea."
  },
  "controller_options": {
   "0_pearl_tiara": "4305b99a-0ae3-4ba1-bce2-27a1cd15951b",
@@ -47,9 +48,15 @@
   }
  ],
  "driving": {
-  "hook_b1_b2_cozy_12s": "cd0802c6-efe7-4df1-b846-ce9987069825"
+  "hook_b1_b2_cozy_12s": "cd0802c6-efe7-4df1-b846-ce9987069825",
+  "hook_b1_b2_cozy_v2_10.7s": "d1375aa8-d236-491c-8309-2297542e929c",
+  "controller_heatgrump_femeie": "0fb0e1db-9576-4c06-8259-ec17b925a0db",
+  "connector_heatgrump_femeie": "de1c549b-8e7c-4c9d-843c-b51aa5253f82"
  },
  "tests": {
   "broll_C_480p": "3584769f-512a-4f4d-bd91-f96a5f54fb3c"
+ },
+ "broll": {
+  "us1_C_1080p": "ed803056-8d6c-4b39-85f8-9326e5e69f6c"
  }
 }

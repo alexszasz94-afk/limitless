@@ -64,5 +64,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - **15 oct 2026** — Telecomanda: niciun model video nu numără corect luminițele (Genjutsu, Kling testate). Soluția fixă: placa + lumini compuse local (engine/controller_lights.py) + clicurile reale. Rezultat exact 1→5.
 - **15 oct 2026** — REȚETA telecomandă: cadru start (lumina 1) + cadru final (lumina 5) făcute local cu engine/controller_lights.py, apoi Kling 3.0 std cu start_image + end_image → lumina urcă corect 1→5 și degetul apasă real. Folosim asta pentru orice telecomandă nouă.
 - 2026-10-15 — Telecomanda prințesă FINALĂ = Genjutsu cu mișcarea din clipul Kling v4 + placa cu tiara (job 52b3f88f), accelerată la 3 s, se oprește pe 5 aprins. Rețeta: Kling cu cadru de start+final → folosit ca mișcare în Genjutsu.
-- 2026-10-15 — Montaj: telecomanda stă MAXIM 3 s și are zoom lent pe ea (1.0 → 1.4). E ok și dacă se vede doar 1→3.
+- 2026-10-15 — Montaj: telecomanda stă MAXIM 3 s, viteză normală, doar partea 3→5, cu zoom MIC și centrat (1.0 → 1.15), telecomanda rămâne în aceeași poziție.
 - 2026-10-15 — Robe board: alegi fata, apoi hook-urile potrivite ei. Poți bifa MAI MULTE hook-uri pe același B-roll (un video per hook). Telecomanda și conectorul sunt mereu clipurile fixe.

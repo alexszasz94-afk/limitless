@@ -70,7 +70,8 @@
     "hook_b1_b2_cozy_12s": "cd0802c6-efe7-4df1-b846-ce9987069825",
     "hook_b1_b2_cozy_v2_10.7s": "d1375aa8-d236-491c-8309-2297542e929c",
     "controller_heatgrump_femeie": "0fb0e1db-9576-4c06-8259-ec17b925a0db",
-    "connector_heatgrump_femeie": "de1c549b-8e7c-4c9d-843c-b51aa5253f82"
+    "connector_heatgrump_femeie": "de1c549b-8e7c-4c9d-843c-b51aa5253f82",
+    "hook_DSEInFVD-iq_6s_textblur": "372fa6f2-7f42-43ac-9f06-726fd6bd0563"
   },
   "tests": {
     "broll_C_480p": "3584769f-512a-4f4d-bd91-f96a5f54fb3c"
@@ -78,5 +79,18 @@
   "broll": {
     "us1_C_1080p": "ed803056-8d6c-4b39-85f8-9326e5e69f6c",
     "us1_C_720p_v2": "c79f8944-d27d-49c3-aa10-64d9cf879d44"
+  },
+  "sets_robe_2026": {
+    "w2_sofia": {
+      "character": "27868cc8-4904-42c8-bf1d-a376fcf51fa3",
+      "room": "20ad43bf-a48b-4386-a89d-ee5ca538119a",
+      "broll_720p": "77d7d40c-c6d9-42e6-91d9-4a411f78f9f2",
+      "hook_DSEInFVD-iq_genjutsu": "38a0d799-f9e3-417c-9e33-6cf8bebed78d",
+      "hook_DSEInFVD-iq_kling": "cabda16f-3ced-4377-8879-17c913c94209"
+    },
+    "w1_maya": {
+      "character": "65d3ee65-e01a-4c63-9e85-df8621d47069",
+      "room": "a18532ab-e1ac-4d5a-82e0-9b11e40f4c55"
+    }
   }
 }

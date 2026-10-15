@@ -66,3 +66,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 2026-10-15 — Telecomanda prințesă FINALĂ = Genjutsu cu mișcarea din clipul Kling v4 + placa cu tiara (job 52b3f88f), accelerată la 3 s, se oprește pe 5 aprins. Rețeta: Kling cu cadru de start+final → folosit ca mișcare în Genjutsu.
 - 2026-10-15 — Montaj: telecomanda stă MAXIM 3 s, viteză normală, doar partea 3→5, cu zoom MIC și centrat (1.0 → 1.15), telecomanda rămâne în aceeași poziție.
 - 2026-10-15 — Robe board: alegi fata, apoi hook-urile potrivite ei. Poți bifa MAI MULTE hook-uri pe același B-roll (un video per hook). Telecomanda și conectorul sunt mereu clipurile fixe.
+- 2026-10-15 — Fete și camere: DOAR poze reale de pe Pinterest (căutare cu filtrul „Less AI”), fără personaje sau camere care par generate AI; naturale, făcute cu telefonul. 8 seturi noi (w1–w8) în products/robe-sets/.
+- 2026-10-15 — Hook-urile de halat se arată în tablă cu previzualizare video (primele 4 s) + link la original + vizualizări. Banca are 56 de hook-uri virale reale + 2 gratuite; se rotesc. Fără „Grinch” în texte.

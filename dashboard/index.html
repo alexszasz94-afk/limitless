@@ -364,7 +364,7 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 .rday{display:grid;gap:8px}.rstep{display:flex;gap:10px;align-items:flex-start}.rstep span{flex:0 0 26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--glass);border:1px solid var(--edge);font-size:12px}.rstep p{margin:2px 0}
 .rmx td,.rmx th{text-align:center}.rmx td:first-child{text-align:left}.rmx td.used{background:rgba(63,207,122,.18);font-weight:600}
 .rgirls{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:8px 0 16px}.rgirl{display:flex;flex-direction:column;gap:3px;text-align:left;border:1px solid var(--edge);border-radius:14px;background:var(--glass);padding:8px;cursor:pointer;color:var(--text);font:inherit;min-width:0}.rgirl.on{border-color:var(--ion);box-shadow:0 0 0 2px var(--ion-soft)}.rgp{display:grid;grid-template-columns:1fr 1fr;gap:4px}.rgp img,.rgp .rgph{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:8px;background:var(--deck);display:block}.rgirl small{line-height:1.3}
-.rhooks{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px;margin:8px 0 16px}.rhk{display:flex;gap:10px;text-align:left;border:1px solid var(--edge);border-radius:14px;background:var(--glass);padding:10px;cursor:pointer;color:var(--text);font:inherit;min-width:0}.rhk.on{border-color:var(--ion);box-shadow:0 0 0 2px var(--ion-soft)}.rck{flex:0 0 22px;height:22px;border-radius:6px;border:1.5px solid var(--edge);display:grid;place-items:center;font-weight:700}.rhk.on .rck{background:var(--ion);border-color:var(--ion);color:#fff}.rhb{display:flex;flex-direction:column;gap:4px;min-width:0}.rhb .lrule{margin:0}
+.rhooks{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:10px;margin:8px 0 16px}.rhk{display:grid;grid-template-columns:120px minmax(0,1fr);gap:10px;text-align:left;border:1px solid var(--edge);border-radius:14px;background:var(--glass);padding:10px;color:var(--text);min-width:0}.rhk.on{border-color:var(--ion);box-shadow:0 0 0 2px var(--ion-soft)}.rhm video{width:120px;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:#000;display:block}.rhb{display:flex;flex-direction:column;gap:5px;min-width:0}.rhb .lrule{margin:0}.rhb .btn{align-self:flex-start;margin-top:auto}
 @media (max-width:720px){.rhooks{grid-template-columns:1fr}.rgirls{grid-template-columns:repeat(2,1fr)}}
 .rsteps{display:grid;gap:12px}.rs{display:flex;gap:12px;align-items:flex-start}.rs>span{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#3fcf7a,#ff7ab8);color:#fff;font-weight:700}.rs>div{flex:1;min-width:0}.rs p{margin:4px 0}
 .rrisk{display:grid;gap:8px}.rr{display:flex;gap:12px;align-items:flex-start}.rr p{margin:2px 0}.rr.ok b{text-decoration:line-through;opacity:.7}
@@ -1174,22 +1174,28 @@ function robeStudio(R){const V=R.variants||[];if(!V.length)return "";const st=S.
   const thumb=(id,k)=>{const t=(S.robeThumbs||{})[id];return t&&t[k]?`<img src="${t[k]}" alt="" loading="lazy">`:`<i class="rgph"></i>`};
   const kinds={free:"Free · no new clip",proven:"Proven",viral:"Viral format",new:"New idea · no robe in frame"};
   const order={free:0,proven:1,viral:2,new:3};
-  const hs=g?HB.slice().sort((a,b)=>(usedOn(a.id,g.id)-usedOn(b.id,g.id))||(order[a.kind]-order[b.kind])||((a.place==="her room"?0:1)-(b.place==="her room"?0:1))):[];
+  const hs=g?HB.filter(h=>!S.rbt||(S.rbt==="free"?h.kind==="free":h.type===S.rbt)).sort((a,b)=>(usedOn(a.id,g.id)-usedOn(b.id,g.id))||(order[a.kind]-order[b.kind])||((b.quality||0)-(a.quality||0))||((b.views||0)-(a.views||0))):[];
   const sel=st.h.filter(id=>HB.some(h=>h.id===id));const hookCr=sel.reduce((s,id)=>s+(+(HB.find(h=>h.id===id)||{}).cost||0),0);
   const brCr=+dr.cost||77,tot=brCr+hookCr,usd=c=>"$"+(c*0.05).toFixed(0),n=Math.max(1,sel.length);
   const step=!g?2:!sel.length?3:4;
-  const hcard=h=>{const on=sel.includes(h.id),mine=usedOn(h.id,g.id),all=usedOn(h.id),la=lastAny(h.id);const recent=h.kind==="proven"&&la&&(Date.now()-new Date(la))<3*864e5;
-    return `<button class="rhk ${on?"on":""}" data-act="rbh" data-h="${esc(h.id)}" aria-pressed="${on}"><span class="rck">${on?"✓":""}</span><span class="rhb"><b>${esc(h.name)}</b>
-     ${h.line?`<span class="muted">“${esc(h.line)}”</span>`:""}
-     <span class="row hcon">${chip(kinds[h.kind]||h.kind,h.kind==="free"?"ok":h.kind==="new"?"pl":"ion")}<small class="muted">${h.cost?"~"+h.cost+" cr":"0 cr"} · ${esc(h.place||"")}${h.needs?" · needs "+esc(h.needs):""}</small></span>
-     ${mine?`<small class="lrule">Already used with ${esc(g.name)} ${mine}×</small>`:all?`<small class="muted">Used ${all}× with other girls</small>`:`<small class="muted">Never used yet</small>`}${recent?`<small class="lrule">Proven hook used in the last 3 days — wait</small>`:""}</span></button>`};
+  const TY={"drop-open":"Drop-open","lens-push":"Pushed at the lens","store-find":"Store find","reveal-321":"Reveal / 3-2-1","put-on":"Put on","unboxing":"Unboxing","pattern-interrupt":"Pattern interrupt","cold-problem":"Cold problem","transformation":"Before / after","pov-relatable":"POV","pet":"Pet","lifestyle":"Lifestyle","demo":"Demo"};
+  const tf=S.rbt||"";
+  const hcard=h=>{const on=sel.includes(h.id),mine=usedOn(h.id,g.id),all=usedOn(h.id);
+    return `<article class="rhk ${on?"on":""}"><div class="rhm">${h.prev?`<video src="${esc(h.prev)}" poster="${esc(h.poster||"")}" preload="none" muted loop playsinline controls></video>`:`<div class="vid none">no preview</div>`}</div>
+     <div class="rhb"><b>${esc(h.name)}</b>
+     ${h.line?`<span>“${esc(h.line)}”</span>`:""}${h.action?`<small class="muted">${esc(h.action)}</small>`:""}
+     <span class="row hcon">${chip(h.kind==="free"?"Free · no new clip":(TY[h.type]||h.type||""),h.kind==="free"?"ok":"ion")}<small class="muted">${h.cost?"~"+h.cost+" cr":"0 cr"}${h.needs?" · needs "+esc(h.needs):""}</small></span>
+     ${h.url?`<small><a href="${esc(h.url)}" target="_blank" rel="noopener">Original ↗</a> <span class="muted">@${esc(h.handle||"")} · ${fmt(h.views||0)} views</span></small>`:""}
+     ${mine?`<small class="lrule">Already used with ${esc(g.name)} ${mine}×</small>`:all?`<small class="muted">Used ${all}× with other girls</small>`:`<small class="muted">Never used yet</small>`}
+     <button class="btn ${on?"solid":""}" data-act="rbh" data-h="${esc(h.id)}" aria-pressed="${on}">${on?"✓ Selected":"Select"}</button></div></article>`};
+  const types=[...new Set(HB.map(h=>h.kind==="free"?"free":h.type))];
   return `<section class="panel rstudio" id="rmake"><div class="row" style="justify-content:space-between"><h2>Make a robe video</h2><small class="muted">Pick the girl → tick one or more hooks → one B-roll serves all of them</small></div>
   <div class="row hcon">${V.map(x=>`<button class="chipb big ${x.id===v.id?"on":""}" data-act="rbv" data-v="${esc(x.id)}">${esc(x.name)}</button>`).join("")}</div>
-  <nav class="steps" aria-label="Steps">${["Girl + room","Hooks","B-roll + fixed clips","Send"].map((s,i)=>`<span class="stp ${i+2===step?"on":i+2<step?"done":""}"><i>${i+1}</i>${esc(s)}${i===0&&g?": "+esc(g.name):""}${i===1&&sel.length?": "+sel.length:""}</span>`).join("")}</nav>
+  <nav class="steps" style="flex-direction:row;flex-wrap:wrap;gap:8px" aria-label="Steps">${["Girl + room","Hooks","B-roll + fixed clips","Send"].map((s,i)=>`<span class="stp ${i+2===step?"on":i+2<step?"done":""}"><i>${i+1}</i>${esc(s)}${i===0&&g?": "+esc(g.name):""}${i===1&&sel.length?": "+sel.length:""}</span>`).join("")}</nav>
   <h3>1 · Girl + her room <small class="muted">American, from Pinterest, exact photos. The robe is never in her photo.</small></h3>
   <div class="rgirls">${G.map(x=>{const u=gUse(x.id);return `<button class="rgirl ${g&&g.id===x.id?"on":""}" data-act="rbg" data-g="${esc(x.id)}"><span class="rgp">${thumb(x.id,"c")}${thumb(x.id,"r")}</span><b>${esc(x.name)}</b><small class="muted">${u.length?`${u.length} video${u.length>1?"s":""} made`:"new · not used yet"}</small><small class="muted">${esc(x.room_desc||"")}</small></button>`}).join("")||'<p class="muted">No girls yet. Say “seturi noi” to Claude.</p>'}</div>
   ${g?`<h3>2 · Hooks for ${esc(g.name)} <small class="muted">tick as many as you want — each hook = one video on the same B-roll. Not used with her first.</small></h3>
-   <div class="row hcon"><button class="chipb" data-act="rbh-free">Tick all free</button><button class="chipb" data-act="rbh-none">Clear</button><small class="muted">${sel.length} selected</small></div>
+   <div class="row hcon"><button class="chipb ${!tf?"on":""}" data-act="rbt" data-t="">All ${HB.length}</button>${types.map(t=>`<button class="chipb ${tf===t?"on":""}" data-act="rbt" data-t="${esc(t)}">${esc(t==="free"?"Free":(TY[t]||t))} <small>${HB.filter(h=>(t==="free"?h.kind==="free":h.type===t)).length}</small></button>`).join("")}</div><div class="row hcon"><button class="chipb" data-act="rbh-none">Clear selection</button><small class="muted">${sel.length} selected · tap a preview to play</small></div>
    <div class="rhooks">${hs.map(hcard).join("")}</div>`:""}
   ${g&&sel.length?`<h3>3 · B-roll + fixed clips</h3><div class="rsteps">
    <div class="rs"><span>B</span><div><b>B-roll (one Genjutsu pass, 720p)</b><div class="row hcon">${D.map(d=>`<button class="chipb ${d.id===dr.id?"on":""}" data-act="rbd" data-d="${esc(d.id)}">${esc(d.name)} <small>${d.dur}s · ~${d.cost} cr · used ${RJ.filter(j=>j.driver===d.id).length}×</small></button>`).join("")}</div>
@@ -1277,6 +1283,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="rbh"){e.stopImmediatePropagation();const r=S.rb||(S.rb={h:[]});const h=b.dataset.h;r.h=r.h.includes(h)?r.h.filter(x=>x!==h):[...r.h,h];render();return}
   if(a==="rbh-free"){e.stopImmediatePropagation();const R=S.robe||{},r=S.rb||(S.rb={h:[]});const v=r.v||"princess";r.h=[...new Set([...r.h,...(R.hookbank||[]).filter(h=>h.kind==="free"&&(!h.variants||h.variants.includes(v))).map(h=>h.id)])];render();return}
   if(a==="rbh-none"){e.stopImmediatePropagation();if(S.rb)S.rb.h=[];render();return}
+  if(a==="rbt"){e.stopImmediatePropagation();S.rbt=b.dataset.t;render();return}
   if(a==="rbd"){e.stopImmediatePropagation();S.rb.d=b.dataset.d;render();return}
   if(a==="rb-send"){e.stopImmediatePropagation();run(rbSend,b);return}
   if(a==="rsv"){e.stopImmediatePropagation();S.rsv=b.dataset.v;render();return}

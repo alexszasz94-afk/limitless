@@ -1,0 +1,109 @@
+{
+ "_nota": "Seturi 15 oct: poze reale de pe Pinterest (cautare cu 'Less AI'), fara poze care par AI. Halatul nu apare in poze.",
+ "sets": [
+  {
+   "id": "w1",
+   "name": "Maya",
+   "char": "products/robe-sets/w1-char.jpg",
+   "room": "products/robe-sets/w1-room.jpg",
+   "char_src": "https://i.pinimg.com/originals/73/7c/22/737c224426ec4dc8a08df14e23e9ec8c.jpg",
+   "room_src": "https://i.pinimg.com/originals/80/77/57/8077578d884b01c950ee2366d8300625.jpg",
+   "room_desc": "bright apartment, cream sectional under the windows, tree in the corner",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "w2",
+   "name": "Sofia",
+   "char": "products/robe-sets/w2-char.jpg",
+   "room": "products/robe-sets/w2-room.jpg",
+   "char_src": "https://i.pinimg.com/originals/e7/5e/65/e75e65d28ee0ec3321f89d69dde10c10.jpg",
+   "room_src": "https://i.pinimg.com/originals/c5/87/2b/c5872b9a6cd5674e0c721241f994c486.jpg",
+   "room_desc": "high-rise apartment, white sofa, tree by the window",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "w3",
+   "name": "Jenna",
+   "char": "products/robe-sets/w3-char.jpg",
+   "room": "products/robe-sets/w3-room.jpg",
+   "char_src": "https://i.pinimg.com/originals/50/a9/f8/50a9f8bdb6186523f5c35e3c65f33839.jpg",
+   "room_src": "https://i.pinimg.com/originals/34/7e/55/347e5595183be1886d73aae28d8fdf74.jpg",
+   "room_desc": "vaulted living room, grey sofa, white tree by French doors",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "w4",
+   "name": "Ashley",
+   "char": "products/robe-sets/w4-char.jpg",
+   "room": "products/robe-sets/w4-room.jpg",
+   "char_src": "https://i.pinimg.com/originals/21/b9/af/21b9af808fe01594d0bc4c6a9aa12d7e.jpg",
+   "room_src": "https://i.pinimg.com/originals/73/68/29/736829ba95612801b7a69bdf134089b6.jpg",
+   "room_desc": "white sofa, colourful tree, fireplace wall",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "w5",
+   "name": "Hannah",
+   "char": "products/robe-sets/w5-char.jpg",
+   "room": "products/robe-sets/w5-room.jpg",
+   "char_src": "https://i.pinimg.com/originals/49/5f/ee/495fee24794c22598df78ed90f673a41.jpg",
+   "room_src": "https://i.pinimg.com/originals/04/93/d0/0493d0b15d9dfa085af3a6c0d198d4d8.jpg",
+   "room_desc": "beige sectional, tree with red skirt",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "w6",
+   "name": "Kayla",
+   "char": "products/robe-sets/w6-char.jpg",
+   "room": "products/robe-sets/w6-room.jpg",
+   "char_src": "https://i.pinimg.com/originals/f8/5c/e7/f85ce78acb94ffc2cf4c836d600c4124.jpg",
+   "room_src": "https://i.pinimg.com/originals/09/18/3e/09183e286994deb8452af9ccbc3687a2.jpg",
+   "room_desc": "white sofa facing the TV wall, tree in the corner",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "w7",
+   "name": "Emily",
+   "char": "products/robe-sets/w7-char.jpg",
+   "room": "products/robe-sets/w7-room.jpg",
+   "char_src": "https://i.pinimg.com/originals/36/49/95/3649953df047ee48775d54b7938ee042.jpg",
+   "room_src": "https://i.pinimg.com/originals/58/80/45/58804565cacaa2459e85bf07d6346943.jpg",
+   "room_desc": "cream sofa, round coffee table, tree, evening lights",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  },
+  {
+   "id": "w8",
+   "name": "Madison",
+   "char": "products/robe-sets/w8-char.jpg",
+   "room": "products/robe-sets/w8-room.jpg",
+   "char_src": "https://i.pinimg.com/originals/46/7b/0d/467b0dfd55832ddeaf5925616d838122.jpg",
+   "room_src": "https://i.pinimg.com/originals/a5/76/9e/a5769e0633bc1f1eb93a29bb958aacef.jpg",
+   "room_desc": "light sectional with red throw, tree by the window",
+   "variants": [
+    "princess",
+    "grumpy"
+   ]
+  }
+ ]
+}

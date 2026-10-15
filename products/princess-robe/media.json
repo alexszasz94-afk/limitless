@@ -27,7 +27,8 @@
   "controller_crystal": null,
   "_nota": "conector OK (Genjutsu, mișcare din conector-femeie HeatGrump). Telecomanda: Genjutsu copiază forma lungă a telecomenzii HeatGrump → placa trebuie făcută pe forma aceea.",
   "controller_crystal_v3_720p": "55cfac51-7503-4d7e-90b0-aca6c872e8fe",
-  "_nota_controller": "v3: formă ok, luminițele nu urcă 1→5 (Genjutsu nu copiază corect lumina)"
+  "_nota_controller": "v3: formă ok, luminițele nu urcă 1→5 (Genjutsu nu copiază corect lumina)",
+  "controller_crystal_kling": "b7d0b4f4-3176-4c9a-b07e-701bb28695f0"
  },
  "controller_options": {
   "0_pearl_tiara": "4305b99a-0ae3-4ba1-bce2-27a1cd15951b",

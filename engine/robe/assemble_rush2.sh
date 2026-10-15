@@ -1,8 +1,8 @@
 #!/bin/bash
 # assemble_rush2.sh OUT.mp4 — hook magazin (Kling) + B-roll aprobat reel26 (halatul real HeatGrump) + conector gri + telecomandă albă + cozy
 S=/tmp/claude-0/-home-user/d10e41e8-67eb-5ee5-9e56-7eba5b90f258/scratchpad
-R=/home/user/heatgrump/output/reel26
-ffmpeg -v error -y -i $S/g5/hook_kling.mp4 -i $R/b1.mp4 -i $R/b2fast.mp4 -i $S/g5/conn_seg.mp4 -i $S/g5/ctl_seg.mp4 -i $R/cozy.mp4 -i $S/rh/src/Ddzo8i9ymGW.mp4 -filter_complex "\
+R=${R:-/home/user/heatgrump/output/reel26}
+ffmpeg -v error -y -i $S/g5/hook_kling.mp4 -i $R/b1.mp4 -i $R/${B2:-b2fast}.mp4 -i $S/g5/conn_seg.mp4 -i $S/g5/ctl_seg.mp4 -i $R/cozy.mp4 -i $S/rh/src/Ddzo8i9ymGW.mp4 -filter_complex "\
 [0:v]fps=30,scale=720:1280,setsar=1,trim=0.4:3.4,setpts=PTS-STARTPTS[h];\
 [1:v]fps=30,scale=720:1280,setsar=1,trim=0:1.2,setpts=PTS-STARTPTS[p1];\
 [2:v]fps=30,scale=720:1280,setsar=1,trim=0:3.0,setpts=PTS-STARTPTS[p2];\

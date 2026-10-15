@@ -19,12 +19,15 @@
   "controller_pink_alt": "3ecace2c-3e78-47c4-a686-daed33e39439",
   "connector_lilac": "69b7ce03-a332-46f8-89b3-f7e0d1c23486",
   "_nota": "conector cu unghii lungi de Crăciun (13 oct). Video: Seedance 2.5 cere plan Plus — contul nou e Starter.",
-  "_ales": "telecomanda = varianta 1 'Crystal tiara' (Szasz, 13 oct)"
+  "_ales": "telecomanda = varianta 1 'Crystal tiara' (Szasz, 13 oct)",
+  "controller_crystal_longshape": "16b4e3e8-e21c-4d9e-a22f-6e34cafde872"
  },
  "fixed_clips": {
   "connector_lilac_720p": "2cf733f8-7054-457e-9ca5-8a30df0d0928",
   "controller_crystal": null,
-  "_nota": "conector OK (Genjutsu, mișcare din conector-femeie HeatGrump). Telecomanda: Genjutsu copiază forma lungă a telecomenzii HeatGrump → placa trebuie făcută pe forma aceea."
+  "_nota": "conector OK (Genjutsu, mișcare din conector-femeie HeatGrump). Telecomanda: Genjutsu copiază forma lungă a telecomenzii HeatGrump → placa trebuie făcută pe forma aceea.",
+  "controller_crystal_v3_720p": "55cfac51-7503-4d7e-90b0-aca6c872e8fe",
+  "_nota_controller": "v3: formă ok, luminițele nu urcă 1→5 (Genjutsu nu copiază corect lumina)"
  },
  "controller_options": {
   "0_pearl_tiara": "4305b99a-0ae3-4ba1-bce2-27a1cd15951b",

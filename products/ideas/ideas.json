@@ -1,260 +1,325 @@
 [
  {
-  "name": "Heated Mermaid Tail Blanket",
-  "category": "Heated character robes",
-  "price": 69,
+  "name": "Snow Globe Night Light with Your Photo Inside",
+  "category": "Home & cozy",
+  "price": 59,
   "emotions": [
    "nostalgia",
-   "identity",
-   "mom & daughter"
+   "personalized",
+   "gift"
   ],
-  "hook": "POV: you finally became the mermaid you always wanted to be 🧜‍♀️",
-  "demo": "Slides legs in, scales shimmer, presses the button, sighs warm",
-  "why": "Mermaid-tail blankets already went viral; a HEATED one barely exists. Same identity + warmth formula as our princess robe, one size, perfect Christmas gift for women 25-45 and their daughters.",
-  "risk": "Sequins drift in AI video - use printed velvet scales",
+  "hook": "Our family photo, inside a snow globe that snows 🥹",
+  "demo": "Shake it - snow falls around the family photo, light glows",
+  "why": "Personalized Christmas keepsake, tears on unboxing.",
+  "risk": "Personalisation logistics",
+  "scores": {
+   "E": 10,
+   "D": 10,
+   "G": 10,
+   "M": 8,
+   "P": 8,
+   "N": 8,
+   "R": 8
+  },
+  "score": 92,
+  "christmas": true,
+  "rank": 1,
+  "status": "idea",
+  "id": "snow-globe-night-light-with-your-photo-inside"
+ },
+ {
+  "name": "Personalised Video Message Ornament (plays a video)",
+  "category": "Christmas magic",
+  "price": 79,
+  "emotions": [
+   "Christmas",
+   "family",
+   "memory"
+  ],
+  "hook": "Grandma's message plays every time we open it 🥹🎄",
+  "demo": "Opens ornament: tiny screen plays a family video",
+  "why": "Christmas + memory + tech wow; very emotional.",
+  "risk": "Electronics quality",
   "scores": {
    "E": 10,
    "D": 9,
-   "G": 9,
+   "G": 10,
    "M": 8,
-   "P": 8,
+   "P": 7,
    "N": 9,
-   "R": 9
-  },
-  "score": 90,
-  "rank": 1,
-  "status": "idea",
-  "id": "heated-mermaid-tail-blanket"
- },
- {
-  "name": "Heated Reindeer Robe with Light-up Nose",
-  "category": "Heated character robes",
-  "price": 79,
-  "emotions": [
-   "humor",
-   "Christmas",
-   "family"
-  ],
-  "hook": "Dad said he's not wearing it. Dad is wearing it. 🦌",
-  "demo": "Presses nose, it glows red, antler hood goes up",
-  "why": "A 2-second gag (nose lights up) that stops the scroll, plus the robe we already know how to sell. Great for 'dad' humor angle.",
-  "risk": "Light-up nose battery adds a part",
-  "scores": {
-   "E": 9,
-   "D": 10,
-   "G": 10,
-   "M": 8,
-   "P": 8,
-   "N": 8,
-   "R": 8
-  },
-  "score": 90,
-  "rank": 2,
-  "status": "idea",
-  "id": "heated-reindeer-robe-with-light-up-nose"
- },
- {
-  "name": "HeatGrump Kids Size",
-  "category": "Variations of our winners",
-  "price": 69,
-  "emotions": [
-   "kids",
-   "family",
-   "humor"
-  ],
-  "hook": "Little grump, big attitude 💚",
-  "demo": "Kid in mini grumpy robe frowning",
-  "why": "Direct variation of a product that already sells; family bundles.",
-  "risk": "Kids heated specs",
-  "scores": {
-   "E": 9,
-   "D": 9,
-   "G": 10,
-   "M": 8,
-   "P": 10,
-   "N": 8,
    "R": 7
   },
-  "score": 89,
-  "rank": 3,
+  "score": 90,
+  "christmas": true,
+  "rank": 2,
   "status": "idea",
-  "id": "heatgrump-kids-size"
+  "id": "personalised-video-message-ornament-plays-a-video"
  },
  {
-  "name": "Heated Gingerbread Robe",
-  "category": "Heated character robes",
-  "price": 79,
+  "name": "Snowing Christmas Tree Topper (blows real-looking snow)",
+  "category": "Christmas magic",
+  "price": 69,
   "emotions": [
-   "cute",
    "Christmas",
-   "humor"
+   "wonder",
+   "family"
   ],
-  "hook": "Me after eating the whole gingerbread house 🍪",
-  "demo": "Turns around: icing trim, gumdrop buttons, cookie-brown plush",
-  "why": "Same proven robe body as HeatGrump with a no-IP Christmas character. Instantly readable, kids + adults, very shareable.",
-  "risk": "Must not look like a costume - keep it cozy",
-  "scores": {
-   "E": 9,
-   "D": 9,
-   "G": 10,
-   "M": 8,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 88,
-  "rank": 4,
-  "status": "idea",
-  "id": "heated-gingerbread-robe"
- },
- {
-  "name": "Heated Couple Hoodie Blanket (two hoods)",
-  "category": "Couples & family",
-  "price": 89,
-  "emotions": [
-   "couples",
-   "humor",
-   "togetherness"
-  ],
-  "hook": "Stop stealing the blanket. Now we share ONE 🫶",
-  "demo": "Two heads pop out of one giant heated hoodie",
-  "why": "Couples gift, funny in 1 second, high price, one size fits two.",
-  "risk": "Large item, higher shipping",
+  "hook": "Our tree is SNOWING ❄️🎄",
+  "demo": "Topper starts, soft snow falls around the tree",
+  "why": "Wow moment for families; nobody owns it yet.",
+  "risk": "Mess / snow material safety",
   "scores": {
    "E": 9,
    "D": 10,
-   "G": 9,
-   "M": 9,
-   "P": 7,
-   "N": 8,
-   "R": 8
+   "G": 10,
+   "M": 8,
+   "P": 8,
+   "N": 9,
+   "R": 7
   },
-  "score": 88,
-  "rank": 5,
+  "score": 90,
+  "christmas": true,
+  "rank": 3,
   "status": "idea",
-  "id": "heated-couple-hoodie-blanket-two-hoods"
+  "id": "snowing-christmas-tree-topper-blows-real-looking-snow"
  },
  {
-  "name": "His & Hers Heated Robes (grumpy + royal)",
-  "category": "Couples & family",
-  "price": 159,
+  "name": "Audio Photo Frame (press to hear their voice)",
+  "category": "Gifts that make people cry",
+  "price": 59,
   "emotions": [
-   "couples",
-   "humor",
+   "love",
+   "memory",
    "gift"
   ],
-  "hook": "He's the grump. I'm the princess. We're both warm.",
-  "demo": "Couple side by side in HeatGrump + Heat Majesty",
-  "why": "Cross-sell our two robes as a couples bundle - no new product needed.",
-  "risk": "Shipping two units",
+  "hook": "I can still hear my grandpa say goodnight 🥹",
+  "demo": "Presses frame, a recorded voice plays",
+  "why": "Grief/memory gifts are the most emotional category; huge shares.",
+  "risk": "Sensitive topic - handle respectfully",
   "scores": {
-   "E": 8,
-   "D": 8,
+   "E": 10,
+   "D": 9,
    "G": 10,
-   "M": 9,
-   "P": 10,
-   "N": 9,
+   "M": 8,
+   "P": 8,
+   "N": 8,
    "R": 8
   },
-  "score": 88,
-  "rank": 6,
+  "score": 90,
+  "christmas": false,
+  "rank": 4,
   "status": "idea",
-  "id": "his-hers-heated-robes-grumpy-royal"
+  "id": "audio-photo-frame-press-to-hear-their-voice"
  },
  {
-  "name": "Heat Majesty Second Design (ice / rose / mermaid)",
-  "category": "Variations of our winners",
-  "price": 99,
+  "name": "Musical Rotating Christmas Village with Snow",
+  "category": "Christmas magic",
+  "price": 89,
   "emotions": [
-   "royalty",
-   "identity",
-   "choice"
+   "Christmas",
+   "nostalgia",
+   "decor"
   ],
-  "hook": "Which princess are you? Pick your robe 👑",
-  "demo": "Grid of designs, she picks one",
-  "why": "Choice of designs increases conversion and repeat orders.",
-  "risk": "More SKUs",
+  "hook": "Grandma's Christmas village, but it snows now ❄️",
+  "demo": "Train circles the village, snow falls, music plays",
+  "why": "Nostalgia for 35-65; high price.",
+  "risk": "Fragile",
   "scores": {
    "E": 9,
-   "D": 8,
+   "D": 10,
    "G": 10,
-   "M": 9,
-   "P": 9,
+   "M": 8,
+   "P": 8,
+   "N": 7,
+   "R": 7
+  },
+  "score": 88,
+  "christmas": true,
+  "rank": 5,
+  "status": "idea",
+  "id": "musical-rotating-christmas-village-with-snow"
+ },
+ {
+  "name": "Talking Santa Phone Call Ornament (kid presses, Santa answers)",
+  "category": "Christmas magic",
+  "price": 49,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "magic"
+  ],
+  "hook": "She called Santa and he ANSWERED 😭",
+  "demo": "Kid presses ornament, Santa's voice says her name",
+  "why": "Personalised voice + Christmas = tears.",
+  "risk": "Voice recording workflow",
+  "scores": {
+   "E": 10,
+   "D": 9,
+   "G": 10,
+   "M": 7,
+   "P": 8,
    "N": 8,
    "R": 8
   },
   "score": 88,
-  "rank": 7,
+  "christmas": true,
+  "rank": 6,
   "status": "idea",
-  "id": "heat-majesty-second-design-ice-rose-mermaid"
+  "id": "talking-santa-phone-call-ornament-kid-presses-santa-answers"
  },
  {
-  "name": "Heated Wearable Christmas Tree Cape (with lights)",
-  "category": "Big bold concepts",
-  "price": 99,
+  "name": "Personalised Cutting Board with Grandma's Recipe",
+  "category": "Kitchen & food fun",
+  "price": 69,
+  "emotions": [
+   "family",
+   "memory",
+   "personalized"
+  ],
+  "hook": "Grandma's handwriting, engraved forever 🥹",
+  "demo": "Engraved handwritten recipe close-up",
+  "why": "Memory + kitchen; tears.",
+  "risk": "Personalisation",
+  "scores": {
+   "E": 10,
+   "D": 8,
+   "G": 10,
+   "M": 8,
+   "P": 8,
+   "N": 8,
+   "R": 9
+  },
+  "score": 88,
+  "christmas": false,
+  "rank": 7,
+  "status": "idea",
+  "id": "personalised-cutting-board-with-grandma-s-recipe"
+ },
+ {
+  "name": "Light-Up Ugly Christmas Sweater (custom face)",
+  "category": "Fashion & accessories",
+  "price": 59,
   "emotions": [
    "Christmas",
    "humor",
    "party"
   ],
-  "hook": "I AM the Christmas tree this year 🎄",
-  "demo": "Cape with LED lights turns on",
-  "why": "Ugly-sweater-party winner; light-up demo.",
-  "risk": "LEDs + heat = more parts",
+  "hook": "My face on a light-up ugly sweater 😂",
+  "demo": "Sweater lights up showing your face",
+  "why": "Ugly-sweater parties are huge.",
+  "risk": "Sizing",
   "scores": {
    "E": 9,
    "D": 10,
    "G": 10,
-   "M": 8,
-   "P": 7,
-   "N": 9,
+   "M": 7,
+   "P": 8,
+   "N": 8,
    "R": 6
   },
-  "score": 88,
+  "score": 87,
+  "christmas": true,
   "rank": 8,
   "status": "idea",
-  "id": "heated-wearable-christmas-tree-cape-with-lights"
+  "id": "light-up-ugly-christmas-sweater-custom-face"
  },
  {
-  "name": "Heated Grandma Shawl with Embroidered Names",
-  "category": "Couples & family",
-  "price": 69,
+  "name": "Christmas Window Projector (Santa flying past)",
+  "category": "Christmas magic",
+  "price": 59,
   "emotions": [
-   "grandma",
-   "personalized",
-   "gift"
+   "Christmas",
+   "kids",
+   "wonder"
   ],
-  "hook": "Grandma cried when she saw all our names on it 🥹",
-  "demo": "Grandma opens box, names of grandkids embroidered, she wraps it on",
-  "why": "Personalisation + grandma tears = viral emotion; high perceived value.",
-  "risk": "Personalisation slows production",
+  "hook": "Santa just flew past our window 😱",
+  "demo": "Projector shows Santa silhouette crossing the window",
+  "why": "Neighbourhood wow.",
+  "risk": "Projector quality",
   "scores": {
-   "E": 10,
-   "D": 8,
+   "E": 9,
+   "D": 10,
    "G": 10,
-   "M": 8,
-   "P": 7,
-   "N": 8,
+   "M": 7,
+   "P": 8,
+   "N": 7,
    "R": 8
   },
   "score": 87,
+  "christmas": true,
   "rank": 9,
   "status": "idea",
-  "id": "heated-grandma-shawl-with-embroidered-names"
+  "id": "christmas-window-projector-santa-flying-past"
  },
  {
-  "name": "Heated Monster Feet Slipper Boots",
-  "category": "Feet & hands",
+  "name": "Christmas Ornament Photo Projector Ball",
+  "category": "Christmas magic",
   "price": 49,
   "emotions": [
-   "humor",
-   "cold feet",
-   "gift"
+   "Christmas",
+   "memory",
+   "family"
   ],
-  "hook": "My wife's feet were ice cold. Were. 👹",
-  "demo": "Huge fluffy monster paws stomp, she plugs in and wiggles toes",
-  "why": "Cold-feet complaint is universal; funny visual; cheap gift.",
-  "risk": "Sizing returns - one-size boot",
+  "hook": "Our family photos glow on the wall from the tree 🎄",
+  "demo": "Ornament projects photos on the wall",
+  "why": "Memory + decor.",
+  "risk": "Tech",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 10,
+   "M": 7,
+   "P": 8,
+   "N": 9,
+   "R": 8
+  },
+  "score": 87,
+  "christmas": true,
+  "rank": 10,
+  "status": "idea",
+  "id": "christmas-ornament-photo-projector-ball"
+ },
+ {
+  "name": "Fireplace Projector Lantern",
+  "category": "Home & cozy",
+  "price": 49,
+  "emotions": [
+   "cozy",
+   "Christmas",
+   "home"
+  ],
+  "hook": "My apartment has no fireplace. Now it does 🔥",
+  "demo": "Turns it on, a crackling fire appears on the wall",
+  "why": "Renters can't have fireplaces; instant cozy transformation, Christmas gift.",
+  "risk": "Projector quality must look real",
+  "scores": {
+   "E": 9,
+   "D": 10,
+   "G": 9,
+   "M": 7,
+   "P": 8,
+   "N": 7,
+   "R": 8
+  },
+  "score": 86,
+  "christmas": true,
+  "rank": 11,
+  "status": "idea",
+  "id": "fireplace-projector-lantern"
+ },
+ {
+  "name": "Fake Snow Machine for the Window",
+  "category": "Funny & viral gifts",
+  "price": 79,
+  "emotions": [
+   "Christmas",
+   "wonder",
+   "kids"
+  ],
+  "hook": "It's snowing... inside 😳❄️",
+  "demo": "Machine blows snow outside window",
+  "why": "Christmas wonder.",
+  "risk": "Mess",
   "scores": {
    "E": 9,
    "D": 10,
@@ -265,214 +330,1061 @@
    "R": 7
   },
   "score": 86,
-  "rank": 10,
+  "christmas": true,
+  "rank": 12,
   "status": "idea",
-  "id": "heated-monster-feet-slipper-boots"
+  "id": "fake-snow-machine-for-the-window"
  },
  {
-  "name": "Heated Mitten for Two (couples hand-holding mitten)",
-  "category": "Feet & hands",
-  "price": 39,
+  "name": "Mini Indoor Snow Machine Globe (walk-in photo booth)",
+  "category": "Big swings (higher risk, higher reward)",
+  "price": 299,
   "emotions": [
-   "couples",
-   "romance",
-   "winter"
+   "wonder",
+   "events",
+   "Christmas"
   ],
-  "hook": "Holding hands in -10°C. One mitten. Heated. 🫶",
-  "demo": "Couple walks, hands joined inside one heated mitten",
-  "why": "Romantic winter walk gift, funny + sweet in 1 second.",
-  "risk": "Low price - needs bundle",
+  "hook": "We built a snow globe in our living room 😳",
+  "demo": "Family inside a giant inflatable globe with falling snow",
+  "why": "Ultra-shareable; parties.",
+  "risk": "Bulky, high price",
   "scores": {
    "E": 9,
    "D": 10,
-   "G": 9,
+   "G": 8,
+   "M": 9,
+   "P": 6,
+   "N": 9,
+   "R": 5
+  },
+  "score": 86,
+  "christmas": true,
+  "rank": 13,
+  "status": "idea",
+  "id": "mini-indoor-snow-machine-globe-walk-in-photo-booth"
+ },
+ {
+  "name": "Santa's Magic Key + Light-Up Front Door Lock",
+  "category": "Christmas magic",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "magic"
+  ],
+  "hook": "No chimney? Santa uses the magic key 🗝️🎅",
+  "demo": "Key glows when hung on the door on Christmas Eve",
+  "why": "Answers the #1 kid question (no chimney); morning reveal content.",
+  "risk": "Low price - bundle with letter",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 10,
    "M": 6,
-   "P": 8,
+   "P": 9,
    "N": 8,
    "R": 9
   },
   "score": 86,
-  "rank": 11,
+  "christmas": true,
+  "rank": 14,
   "status": "idea",
-  "id": "heated-mitten-for-two-couples-hand-holding-mitten"
+  "id": "santa-s-magic-key-light-up-front-door-lock"
  },
  {
-  "name": "Heated Royal Cape for Little & Big Princess (set)",
-  "category": "Elegant & luxe",
+  "name": "Santa Cam Doorbell Overlay (catch Santa on camera)",
+  "category": "Christmas magic",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "magic"
+  ],
+  "hook": "We caught Santa on our camera 🎅📹",
+  "demo": "Kid watches video of Santa in their living room",
+  "why": "Proven 'catch Santa' videos go viral every year.",
+  "risk": "Digital product - deliver well",
+  "scores": {
+   "E": 10,
+   "D": 9,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 6,
+   "R": 9
+  },
+  "score": 86,
+  "christmas": true,
+  "rank": 15,
+  "status": "idea",
+  "id": "santa-cam-doorbell-overlay-catch-santa-on-camera"
+ },
+ {
+  "name": "Nativity-Free Winter Wonderland Light Tunnel (garden)",
+  "category": "Christmas magic",
   "price": 129,
   "emotions": [
-   "royalty",
-   "mom & daughter",
-   "gift"
+   "Christmas",
+   "wonder",
+   "family"
   ],
-  "hook": "Queen and princess of the house 👑👑",
-  "demo": "Mom and daughter capes, crowns",
-  "why": "Extends Heat Majesty; bundle.",
-  "risk": "Kids specs",
+  "hook": "We walked through a tunnel of light 😍",
+  "demo": "Family walks through a glowing arch tunnel",
+  "why": "Big-ticket outdoor wow.",
+  "risk": "Outdoor install",
   "scores": {
-   "E": 9,
-   "D": 8,
+   "E": 8,
+   "D": 10,
    "G": 10,
    "M": 9,
-   "P": 8,
+   "P": 7,
    "N": 8,
+   "R": 6
+  },
+  "score": 86,
+  "christmas": true,
+  "rank": 16,
+  "status": "idea",
+  "id": "nativity-free-winter-wonderland-light-tunnel-garden"
+ },
+ {
+  "name": "Christmas Train that Runs Around the Tree with Smoke",
+  "category": "Christmas magic",
+  "price": 89,
+  "emotions": [
+   "Christmas",
+   "nostalgia",
+   "family"
+  ],
+  "hook": "Dad's childhood train, back under our tree 🚂",
+  "demo": "Train circles the tree, puffs smoke",
+  "why": "Nostalgia for dads; high price.",
+  "risk": "Existing category",
+  "scores": {
+   "E": 9,
+   "D": 10,
+   "G": 10,
+   "M": 8,
+   "P": 8,
+   "N": 5,
    "R": 7
   },
   "score": 86,
-  "rank": 12,
+  "christmas": true,
+  "rank": 17,
   "status": "idea",
-  "id": "heated-royal-cape-for-little-big-princess-set"
+  "id": "christmas-train-that-runs-around-the-tree-with-smoke"
  },
  {
-  "name": "HeatGrump Couples Set (Mr. & Mrs. Grump)",
-  "category": "Variations of our winners",
-  "price": 149,
+  "name": "Heartbeat Recording Teddy Bear",
+  "category": "Gifts that make people cry",
+  "price": 49,
   "emotions": [
-   "couples",
-   "humor",
-   "gift"
+   "love",
+   "pregnancy",
+   "memory"
   ],
-  "hook": "Mr. & Mrs. Grump do Christmas together 💚❤️",
-  "demo": "Couple in two grumpy robes on sofa",
-  "why": "Bundle on a proven product.",
-  "risk": "Shipping",
+  "hook": "My baby's heartbeat inside a teddy 🤍",
+  "demo": "Squeezes bear, a heartbeat plays",
+  "why": "Pregnancy & memorial gifts, extreme emotion.",
+  "risk": "Kids toy safety",
   "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 10,
-   "M": 9,
-   "P": 10,
-   "N": 8,
-   "R": 8
-  },
-  "score": 86,
-  "rank": 13,
-  "status": "idea",
-  "id": "heatgrump-couples-set-mr-mrs-grump"
- },
- {
-  "name": "Heated Snow Queen Robe (ice blue)",
-  "category": "Heated character robes",
-  "price": 89,
-  "emotions": [
-   "identity",
-   "royalty",
-   "nostalgia"
-  ],
-  "hook": "Every girl who wanted to be the ice queen is now 30 and cold 👑❄️",
-  "demo": "Ice-blue sherpa cape robe sparkles, she twirls, then cuddles in",
-  "why": "Princess robe formula, new palette that pairs with Heat Majesty as a 2nd variant; strong nostalgia without naming any movie.",
-  "risk": "Stay far from any movie design (no snowflake cape copy)",
-  "scores": {
-   "E": 9,
-   "D": 8,
+   "E": 10,
+   "D": 9,
    "G": 9,
-   "M": 9,
+   "M": 7,
    "P": 8,
    "N": 7,
    "R": 8
   },
-  "score": 84,
-  "rank": 14,
+  "score": 86,
+  "christmas": false,
+  "rank": 18,
   "status": "idea",
-  "id": "heated-snow-queen-robe-ice-blue"
+  "id": "heartbeat-recording-teddy-bear"
  },
  {
-  "name": "Heated Nutcracker Soldier Robe",
-  "category": "Heated character robes",
-  "price": 85,
+  "name": "Book Nook Shelf Insert (tiny lit alley)",
+  "category": "Home & cozy",
+  "price": 59,
+  "emotions": [
+   "book lovers",
+   "wonder",
+   "decor"
+  ],
+  "hook": "There's a tiny magical street hidden in my bookshelf ✨",
+  "demo": "Slides between books, lights reveal a miniature alley",
+  "why": "BookTok community, cozy aesthetic, DIY kit or finished.",
+  "risk": "Must be pre-assembled for easy gifting",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 9,
+   "M": 8,
+   "P": 8,
+   "N": 7,
+   "R": 8
+  },
+  "score": 85,
+  "christmas": false,
+  "rank": 19,
+  "status": "idea",
+  "id": "book-nook-shelf-insert-tiny-lit-alley"
+ },
+ {
+  "name": "Smart Plant Pot with Emotions (shows face)",
+  "category": "Tech & gadgets",
+  "price": 69,
+  "emotions": [
+   "cute",
+   "plants",
+   "tech"
+  ],
+  "hook": "My plant tells me when it's thirsty 🥺",
+  "demo": "Screen face goes sad, waters, face smiles",
+  "why": "Cute + useful; plant lovers.",
+  "risk": "Electronics quality",
+  "scores": {
+   "E": 9,
+   "D": 10,
+   "G": 8,
+   "M": 8,
+   "P": 7,
+   "N": 8,
+   "R": 7
+  },
+  "score": 85,
+  "christmas": false,
+  "rank": 20,
+  "status": "idea",
+  "id": "smart-plant-pot-with-emotions-shows-face"
+ },
+ {
+  "name": "Santa Key + Magic Snow Footprint Stencil Kit",
+  "category": "Kids (parents buy)",
+  "price": 39,
   "emotions": [
    "Christmas",
-   "nostalgia",
-   "humor"
+   "kids",
+   "magic"
   ],
-  "hook": "Guarding the couch all winter 🎖️",
-  "demo": "Red jacket robe with gold buttons, tall black hat hood",
-  "why": "Classic Christmas icon with no IP, very photogenic, stands out from fluffy robes.",
-  "risk": "Hat shape must be soft, not stiff",
+  "hook": "Santa's boots left snow in our living room 🎅",
+  "demo": "Morning reveal of snowy boot prints by the tree",
+  "why": "Christmas morning magic content.",
+  "risk": "Seasonal",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 8,
+   "R": 9
+  },
+  "score": 84,
+  "christmas": true,
+  "rank": 21,
+  "status": "idea",
+  "id": "santa-key-magic-snow-footprint-stencil-kit"
+ },
+ {
+  "name": "Giant Inflatable Snowman with Projector Face",
+  "category": "Outdoor & garden",
+  "price": 99,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "fun"
+  ],
+  "hook": "Our snowman talks to the neighbours 😂",
+  "demo": "Projector face sings on inflatable",
+  "why": "Christmas yard competition.",
+  "risk": "Bulky",
   "scores": {
    "E": 8,
-   "D": 8,
+   "D": 10,
+   "G": 9,
+   "M": 8,
+   "P": 7,
+   "N": 8,
+   "R": 7
+  },
+  "score": 84,
+  "christmas": true,
+  "rank": 22,
+  "status": "idea",
+  "id": "giant-inflatable-snowman-with-projector-face"
+ },
+ {
+  "name": "Santa Footprint & Sleigh-Track Christmas Morning Kit",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "magic"
+  ],
+  "hook": "Santa's sleigh landed in our yard 😱",
+  "demo": "Morning: sleigh tracks in snow + glitter",
+  "why": "Christmas morning proof videos are huge.",
+  "risk": "Low price",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 8,
+   "R": 9
+  },
+  "score": 84,
+  "christmas": true,
+  "rank": 23,
+  "status": "idea",
+  "id": "santa-footprint-sleigh-track-christmas-morning-kit"
+ },
+ {
+  "name": "Family Matching Christmas Pyjamas with Names",
+  "category": "Christmas magic",
+  "price": 99,
+  "emotions": [
+   "Christmas",
+   "family",
+   "personalized"
+  ],
+  "hook": "The whole family, matching, names on the back 🎄",
+  "demo": "Family walks down the stairs in matching PJs",
+  "why": "Christmas photo tradition; group purchase = high AOV.",
+  "risk": "Sizing returns",
+  "scores": {
+   "E": 9,
+   "D": 9,
    "G": 10,
    "M": 8,
+   "P": 9,
+   "N": 5,
+   "R": 6
+  },
+  "score": 84,
+  "christmas": true,
+  "rank": 24,
+  "status": "idea",
+  "id": "family-matching-christmas-pyjamas-with-names"
+ },
+ {
+  "name": "Ugly Christmas Sweater for Dog & Owner Matching Set",
+  "category": "Christmas magic",
+  "price": 59,
+  "emotions": [
+   "Christmas",
+   "pets",
+   "humor"
+  ],
+  "hook": "Matching ugly sweaters with my dog 🐶🎄",
+  "demo": "Owner and dog strike a pose",
+  "why": "Pets + Christmas humour.",
+  "risk": "Sizing",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 10,
+   "M": 7,
+   "P": 9,
+   "N": 6,
+   "R": 7
+  },
+  "score": 84,
+  "christmas": true,
+  "rank": 25,
+  "status": "idea",
+  "id": "ugly-christmas-sweater-for-dog-owner-matching-set"
+ },
+ {
+  "name": "Elf Door with Light-Up Window & Tiny Mailbox",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "magic"
+  ],
+  "hook": "An elf moved into our wall 😱",
+  "demo": "Tiny door glows, mailbox has a note",
+  "why": "Magic for kids.",
+  "risk": "Low price",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 7,
+   "R": 9
+  },
+  "score": 84,
+  "christmas": true,
+  "rank": 26,
+  "status": "idea",
+  "id": "elf-door-with-light-up-window-tiny-mailbox"
+ },
+ {
+  "name": "Christmas Tree Angel that Moves Its Wings",
+  "category": "Christmas magic",
+  "price": 59,
+  "emotions": [
+   "Christmas",
+   "decor",
+   "wonder"
+  ],
+  "hook": "Our angel waves her wings at midnight 👼",
+  "demo": "Topper wings slowly flap, lights glow",
+  "why": "Decor with motion.",
+  "risk": "Mechanics",
+  "scores": {
+   "E": 7,
+   "D": 10,
+   "G": 10,
+   "M": 7,
    "P": 8,
    "N": 9,
    "R": 7
   },
   "score": 84,
-  "rank": 15,
+  "christmas": true,
+  "rank": 27,
   "status": "idea",
-  "id": "heated-nutcracker-soldier-robe"
+  "id": "christmas-tree-angel-that-moves-its-wings"
  },
  {
-  "name": "Heated Mrs. Claus Robe",
-  "category": "Heated character robes",
-  "price": 85,
+  "name": "Star Map of the Night You Met (lit frame)",
+  "category": "Gifts that make people cry",
+  "price": 69,
+  "emotions": [
+   "love",
+   "couples",
+   "personalized"
+  ],
+  "hook": "The exact sky on the night we met ✨",
+  "demo": "Frame lights up showing the stars on that date",
+  "why": "Couples gift with story.",
+  "risk": "Personalisation",
+  "scores": {
+   "E": 9,
+   "D": 8,
+   "G": 10,
+   "M": 8,
+   "P": 8,
+   "N": 6,
+   "R": 9
+  },
+  "score": 84,
+  "christmas": false,
+  "rank": 28,
+  "status": "idea",
+  "id": "star-map-of-the-night-you-met-lit-frame"
+ },
+ {
+  "name": "Hand-Holding Sculpture from Your Couple Photo",
+  "category": "Gifts that make people cry",
+  "price": 89,
+  "emotions": [
+   "love",
+   "couples",
+   "luxury"
+  ],
+  "hook": "They turned our hands into a sculpture 😭",
+  "demo": "Reveals a resin/clay sculpture of two hands",
+  "why": "High price emotional keepsake.",
+  "risk": "Production complexity",
+  "scores": {
+   "E": 9,
+   "D": 8,
+   "G": 9,
+   "M": 9,
+   "P": 6,
+   "N": 9,
+   "R": 8
+  },
+  "score": 84,
+  "christmas": false,
+  "rank": 29,
+  "status": "idea",
+  "id": "hand-holding-sculpture-from-your-couple-photo"
+ },
+ {
+  "name": "Talking Plush that Reads the Kid's Name",
+  "category": "Kids (parents buy)",
+  "price": 49,
+  "emotions": [
+   "kids",
+   "personalized",
+   "wonder"
+  ],
+  "hook": "His face when the bear said his name 😭",
+  "demo": "Kid hugs plush, it says the kid's name",
+  "why": "Personalised toy reactions go viral.",
+  "risk": "Electronics + kids safety",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 9,
+   "M": 7,
+   "P": 8,
+   "N": 8,
+   "R": 7
+  },
+  "score": 84,
+  "christmas": false,
+  "rank": 30,
+  "status": "idea",
+  "id": "talking-plush-that-reads-the-kid-s-name"
+ },
+ {
+  "name": "Necklace with Hidden Photo Projection",
+  "category": "Fashion & accessories",
+  "price": 49,
+  "emotions": [
+   "love",
+   "memory",
+   "jewellery"
+  ],
+  "hook": "Look inside the stone 🥹",
+  "demo": "Light through stone shows a photo",
+  "why": "Hidden-photo jewellery is emotional.",
+  "risk": "Common on ads",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 10,
+   "M": 7,
+   "P": 9,
+   "N": 5,
+   "R": 9
+  },
+  "score": 84,
+  "christmas": false,
+  "rank": 31,
+  "status": "idea",
+  "id": "necklace-with-hidden-photo-projection"
+ },
+ {
+  "name": "Couples Bracelets that Vibrate When the Other Taps",
+  "category": "Big swings (higher risk, higher reward)",
+  "price": 79,
+  "emotions": [
+   "love",
+   "distance",
+   "tech"
+  ],
+  "hook": "He tapped his bracelet in Texas. I felt it in Ohio 🥹",
+  "demo": "Tap -> partner's bracelet glows & buzzes",
+  "why": "Long-distance emotion.",
+  "risk": "Tech + app",
+  "scores": {
+   "E": 10,
+   "D": 9,
+   "G": 9,
+   "M": 8,
+   "P": 6,
+   "N": 7,
+   "R": 6
+  },
+  "score": 84,
+  "christmas": false,
+  "rank": 32,
+  "status": "idea",
+  "id": "couples-bracelets-that-vibrate-when-the-other-taps"
+ },
+ {
+  "name": "Gingerbread House Kit that Lights Up from Inside",
+  "category": "Christmas magic",
+  "price": 49,
   "emotions": [
    "Christmas",
-   "mom",
-   "nostalgia"
+   "family",
+   "cozy"
   ],
-  "hook": "Mrs. Claus does NOT do cold mornings ❤️",
-  "demo": "Red velvet robe, white fur trim, little apron bow",
-  "why": "Christmas identity for moms and grandmas; elegant, gift-able, no IP.",
-  "risk": "Seasonal; could look like costume",
+  "hook": "Our gingerbread house glows at night 🏠✨",
+  "demo": "Lights switch on inside the finished house",
+  "why": "Family activity + cozy decor.",
+  "risk": "Food + electronics",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 8,
+   "R": 8
+  },
+  "score": 83,
+  "christmas": true,
+  "rank": 33,
+  "status": "idea",
+  "id": "gingerbread-house-kit-that-lights-up-from-inside"
+ },
+ {
+  "name": "Countdown-to-Christmas Wooden Advent House (refillable)",
+  "category": "Christmas magic",
+  "price": 69,
+  "emotions": [
+   "Christmas",
+   "family",
+   "tradition"
+  ],
+  "hook": "24 tiny doors, filled with love 🎁",
+  "demo": "Kid opens a lit door each morning",
+  "why": "Reusable heirloom; daily content.",
+  "risk": "Bulky",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 10,
+   "M": 8,
+   "P": 8,
+   "N": 6,
+   "R": 8
+  },
+  "score": 83,
+  "christmas": true,
+  "rank": 34,
+  "status": "idea",
+  "id": "countdown-to-christmas-wooden-advent-house-refillable"
+ },
+ {
+  "name": "Personalised Christmas Cookie Cutter of Your Pet",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "pets",
+   "personalized"
+  ],
+  "hook": "Cookies shaped like our dog 🐶🍪",
+  "demo": "Cuts dough, dog-shaped cookie",
+  "why": "Pets + baking + Christmas.",
+  "risk": "Low price",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 9,
+   "R": 9
+  },
+  "score": 83,
+  "christmas": true,
+  "rank": 35,
+  "status": "idea",
+  "id": "personalised-christmas-cookie-cutter-of-your-pet"
+ },
+ {
+  "name": "Desk Pet Robot that Reacts to Your Mood",
+  "category": "Tech & gadgets",
+  "price": 99,
+  "emotions": [
+   "cute",
+   "companion",
+   "tech"
+  ],
+  "hook": "My desk buddy gets sad when I leave 🥺",
+  "demo": "Robot reacts with eyes and sounds",
+  "why": "Companion tech trend.",
+  "risk": "Tech sourcing",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 8,
+   "M": 9,
+   "P": 6,
+   "N": 8,
+   "R": 6
+  },
+  "score": 83,
+  "christmas": false,
+  "rank": 36,
+  "status": "idea",
+  "id": "desk-pet-robot-that-reacts-to-your-mood"
+ },
+ {
+  "name": "Matching Mom & Daughter Bracelets that Glow",
+  "category": "Fashion & accessories",
+  "price": 45,
+  "emotions": [
+   "mom & daughter",
+   "love"
+  ],
+  "hook": "When one glows, the other glows 💗",
+  "demo": "Taps bracelet, both light",
+  "why": "Emotional pair.",
+  "risk": "Tech",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 9,
+   "M": 6,
+   "P": 8,
+   "N": 8,
+   "R": 8
+  },
+  "score": 83,
+  "christmas": false,
+  "rank": 37,
+  "status": "idea",
+  "id": "matching-mom-daughter-bracelets-that-glow"
+ },
+ {
+  "name": "Bird Feeder with Camera (AI identifies birds)",
+  "category": "Outdoor & garden",
+  "price": 149,
+  "emotions": [
+   "wonder",
+   "nature",
+   "gift"
+  ],
+  "hook": "It tells me which bird is visiting 🐦",
+  "demo": "App notification + bird close-up",
+  "why": "Huge trend with retirees & parents.",
+  "risk": "Tech sourcing",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 9,
+   "M": 9,
+   "P": 6,
+   "N": 6,
+   "R": 7
+  },
+  "score": 83,
+  "christmas": false,
+  "rank": 38,
+  "status": "idea",
+  "id": "bird-feeder-with-camera-ai-identifies-birds"
+ },
+ {
+  "name": "Elf-on-a-Shelf Style Mischief Kit (our own character)",
+  "category": "Seasonal & celebrations",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "magic"
+  ],
+  "hook": "Our elf made snow angels in flour 😂",
+  "demo": "Morning reveal scenes",
+  "why": "Daily content for parents; our own character, no IP.",
+  "risk": "Must be our character",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 10,
+   "M": 5,
+   "P": 8,
+   "N": 6,
+   "R": 9
+  },
+  "score": 82,
+  "christmas": true,
+  "rank": 39,
+  "status": "idea",
+  "id": "elf-on-a-shelf-style-mischief-kit-our-own-character"
+ },
+ {
+  "name": "Christmas Tree Collar that Plays Music & Lights Up",
+  "category": "Christmas magic",
+  "price": 79,
+  "emotions": [
+   "Christmas",
+   "decor",
+   "wow"
+  ],
+  "hook": "Our tree has a light show now 🎶",
+  "demo": "Lights pulse to music at the tree base",
+  "why": "Decor upgrade.",
+  "risk": "Electronics",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 10,
+   "M": 8,
+   "P": 8,
+   "N": 8,
+   "R": 7
+  },
+  "score": 82,
+  "christmas": true,
+  "rank": 40,
+  "status": "idea",
+  "id": "christmas-tree-collar-that-plays-music-lights-up"
+ },
+ {
+  "name": "Hot-Cocoa Station Kit (bar sign, toppings jars, mugs)",
+  "category": "Christmas magic",
+  "price": 69,
+  "emotions": [
+   "Christmas",
+   "cozy",
+   "family"
+  ],
+  "hook": "We set up a cocoa bar for Christmas Eve ☕",
+  "demo": "Reveal of a styled cocoa station",
+  "why": "Hosting trend.",
+  "risk": "Many parts",
   "scores": {
    "E": 8,
    "D": 8,
    "G": 10,
    "M": 8,
-   "P": 9,
-   "N": 8,
+   "P": 8,
+   "N": 7,
    "R": 8
   },
-  "score": 84,
-  "rank": 16,
+  "score": 82,
+  "christmas": true,
+  "rank": 41,
   "status": "idea",
-  "id": "heated-mrs-claus-robe"
+  "id": "hot-cocoa-station-kit-bar-sign-toppings-jars-mugs"
  },
  {
-  "name": "Matching Mom & Me Heated Robe Set",
-  "category": "Couples & family",
-  "price": 119,
+  "name": "Personalised Christmas Stocking with Light-Up Name",
+  "category": "Christmas magic",
+  "price": 45,
   "emotions": [
-   "mom & daughter",
+   "Christmas",
    "family",
-   "gift"
+   "personalized"
   ],
-  "hook": "Twinning with my mini, both toasty 💕",
-  "demo": "Mom and kid in identical robes, both press the button",
-  "why": "Bundle raises AOV; mom/kid content gets huge emotional reach.",
-  "risk": "Kids' heated items need extra safety specs",
+  "hook": "Our names glow on the fireplace 🎄",
+  "demo": "Lights off: names glow on stockings",
+  "why": "Family personalised decor.",
+  "risk": "Personalisation",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 7,
+   "R": 8
+  },
+  "score": 82,
+  "christmas": true,
+  "rank": 42,
+  "status": "idea",
+  "id": "personalised-christmas-stocking-with-light-up-name"
+ },
+ {
+  "name": "Santa's Nice List Certificate + Gold Medal Box",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "pride"
+  ],
+  "hook": "He made the NICE list 🏅",
+  "demo": "Kid opens box with medal & certificate",
+  "why": "Pride moment for kids.",
+  "risk": "Low price",
   "scores": {
    "E": 9,
    "D": 8,
    "G": 10,
-   "M": 9,
-   "P": 7,
-   "N": 7,
-   "R": 7
+   "M": 5,
+   "P": 9,
+   "N": 8,
+   "R": 9
   },
-  "score": 84,
-  "rank": 17,
+  "score": 82,
+  "christmas": true,
+  "rank": 43,
   "status": "idea",
-  "id": "matching-mom-me-heated-robe-set"
+  "id": "santa-s-nice-list-certificate-gold-medal-box"
  },
  {
-  "name": "Heated Long-Distance Hug Pillow (two pillows, touch to warm)",
-  "category": "Couples & family",
+  "name": "Christmas Tree Skirt with Kids' Handprints (DIY kit)",
+  "category": "Christmas magic",
+  "price": 49,
+  "emotions": [
+   "Christmas",
+   "family",
+   "memory"
+  ],
+  "hook": "Every year, a new handprint 🎄🖐️",
+  "demo": "Kids press painted hands on tree skirt",
+  "why": "Heirloom tradition.",
+  "risk": "Mess",
+  "scores": {
+   "E": 8,
+   "D": 8,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 8,
+   "R": 9
+  },
+  "score": 82,
+  "christmas": true,
+  "rank": 44,
+  "status": "idea",
+  "id": "christmas-tree-skirt-with-kids-handprints-diy-kit"
+ },
+ {
+  "name": "Santa's Workshop Desk Kit for Kids (stamp, letters, list)",
+  "category": "Christmas magic",
+  "price": 49,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "creativity"
+  ],
+  "hook": "My son runs Santa's workshop now 🎅",
+  "demo": "Kid stamps 'APPROVED' on nice list",
+  "why": "Role-play gift.",
+  "risk": "Medium novelty",
+  "scores": {
+   "E": 8,
+   "D": 8,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 8,
+   "R": 9
+  },
+  "score": 82,
+  "christmas": true,
+  "rank": 45,
+  "status": "idea",
+  "id": "santa-s-workshop-desk-kit-for-kids-stamp-letters-list"
+ },
+ {
+  "name": "Giant Christmas Present Box Seat (sit-in photo prop)",
+  "category": "Christmas magic",
+  "price": 59,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "funny"
+  ],
+  "hook": "We wrapped our toddler 🎁",
+  "demo": "Toddler pops out of a giant present",
+  "why": "Funny photo content.",
+  "risk": "Bulky",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 10,
+   "M": 6,
+   "P": 8,
+   "N": 8,
+   "R": 8
+  },
+  "score": 82,
+  "christmas": true,
+  "rank": 46,
+  "status": "idea",
+  "id": "giant-christmas-present-box-seat-sit-in-photo-prop"
+ },
+ {
+  "name": "Smart Cozy Corner Kit (lights + throw + candles)",
+  "category": "Home & cozy",
+  "price": 79,
+  "emotions": [
+   "cozy",
+   "self-care",
+   "gift"
+  ],
+  "hook": "From sad corner to cozy corner in 60 seconds",
+  "demo": "Before/after time-lapse of a corner",
+  "why": "Bundle with high perceived value, transformation demo.",
+  "risk": "Many parts",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 8,
+   "M": 8,
+   "P": 8,
+   "N": 8,
+   "R": 8
+  },
+  "score": 82,
+  "christmas": false,
+  "rank": 47,
+  "status": "idea",
+  "id": "smart-cozy-corner-kit-lights-throw-candles"
+ },
+ {
+  "name": "At-Home Gel Nail Printer Kit",
+  "category": "Beauty & self-care",
+  "price": 129,
+  "emotions": [
+   "beauty",
+   "tech",
+   "wow"
+  ],
+  "hook": "It PRINTED a design on my nail 😱",
+  "demo": "Finger in, design appears",
+  "why": "Wow demo, high price.",
+  "risk": "Tech sourcing quality",
+  "scores": {
+   "E": 8,
+   "D": 10,
+   "G": 8,
+   "M": 9,
+   "P": 6,
+   "N": 7,
+   "R": 6
+  },
+  "score": 82,
+  "christmas": false,
+  "rank": 48,
+  "status": "idea",
+  "id": "at-home-gel-nail-printer-kit"
+ },
+ {
+  "name": "Personalised Storybook Starring Your Kid & Pet",
+  "category": "Big swings (higher risk, higher reward)",
+  "price": 49,
+  "emotions": [
+   "kids",
+   "personalized",
+   "pets"
+  ],
+  "hook": "My son and our dog are the heroes 📚",
+  "demo": "Flips book: kid & dog illustrated",
+  "why": "Personalised book market proven; add pet.",
+  "risk": "Illustration pipeline",
+  "scores": {
+   "E": 9,
+   "D": 8,
+   "G": 10,
+   "M": 7,
+   "P": 8,
+   "N": 6,
+   "R": 9
+  },
+  "score": 82,
+  "christmas": false,
+  "rank": 49,
+  "status": "idea",
+  "id": "personalised-storybook-starring-your-kid-pet"
+ },
+ {
+  "name": "AI Bedtime Plush that Tells New Stories",
+  "category": "Big swings (higher risk, higher reward)",
   "price": 99,
   "emotions": [
-   "love",
-   "distance",
-   "emotion"
+   "kids",
+   "tech",
+   "bedtime"
   ],
-  "hook": "He touches his pillow in Texas. Mine warms up in Ohio 🥹",
-  "demo": "She hugs pillow, it glows and warms; cut to him across the country",
-  "why": "Very strong emotion; tech gift for couples. Needs an app - harder to source.",
-  "risk": "Electronics + app = supplier risk",
+  "hook": "A new story every night, in mom's voice",
+  "demo": "Plush talks in mom's cloned voice",
+  "why": "Strong emotion + tech.",
+  "risk": "Privacy & tech complexity",
   "scores": {
-   "E": 10,
+   "E": 9,
    "D": 8,
    "G": 9,
    "M": 9,
@@ -480,2219 +1392,1407 @@
    "N": 9,
    "R": 5
   },
-  "score": 84,
-  "rank": 18,
+  "score": 82,
+  "christmas": false,
+  "rank": 50,
   "status": "idea",
-  "id": "heated-long-distance-hug-pillow-two-pillows-touch-to-warm"
+  "id": "ai-bedtime-plush-that-tells-new-stories"
  },
  {
-  "name": "Heated Sofa Throw That Looks Like a Giant Cookie",
-  "category": "Home cozy & self-care",
-  "price": 69,
+  "name": "Christmas Eve 'Reindeer Food' Glitter Kit (eco)",
+  "category": "Christmas magic",
+  "price": 39,
   "emotions": [
-   "humor",
    "Christmas",
-   "cozy"
+   "kids",
+   "tradition"
   ],
-  "hook": "I'm wrapped in a giant cookie. Life is good 🍪",
-  "demo": "Round cookie blanket, she rolls up in it",
-  "why": "Funny visual, gift; round blankets went viral before.",
-  "risk": "Heating in round shape",
+  "hook": "Sprinkle it on the lawn so the reindeer find us 🦌",
+  "demo": "Kid sprinkles glittery oats on snow",
+  "why": "Tradition content; eco glitter.",
+  "risk": "Low price",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 7,
+   "R": 9
+  },
+  "score": 81,
+  "christmas": true,
+  "rank": 51,
+  "status": "idea",
+  "id": "christmas-eve-reindeer-food-glitter-kit-eco"
+ },
+ {
+  "name": "Snowball Fight Indoor Kit (soft snowballs + fort)",
+  "category": "Christmas magic",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "family",
+   "fun"
+  ],
+  "hook": "Snowball fight in the living room ⛄",
+  "demo": "Family throws soft snowballs, laughing",
+  "why": "Fun family content.",
+  "risk": "Low novelty",
   "scores": {
    "E": 8,
    "D": 9,
    "G": 9,
-   "M": 8,
+   "M": 6,
    "P": 9,
    "N": 7,
-   "R": 8
+   "R": 9
   },
-  "score": 84,
-  "rank": 19,
+  "score": 81,
+  "christmas": true,
+  "rank": 52,
   "status": "idea",
-  "id": "heated-sofa-throw-that-looks-like-a-giant-cookie"
+  "id": "snowball-fight-indoor-kit-soft-snowballs-fort"
  },
  {
-  "name": "Heated Velvet Lounge Robe with Gold Initial",
-  "category": "Elegant & luxe",
-  "price": 99,
+  "name": "Christmas Countdown Clock (days until Christmas, snow display)",
+  "category": "Christmas magic",
+  "price": 49,
   "emotions": [
-   "luxury",
-   "personalized",
+   "Christmas",
+   "anticipation",
+   "decor"
+  ],
+  "hook": "Only 12 more sleeps ❄️",
+  "demo": "Clock flips to the new number, snow animation",
+  "why": "Daily anticipation, decor gift.",
+  "risk": "Seasonal",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 8,
+   "R": 9
+  },
+  "score": 81,
+  "christmas": true,
+  "rank": 53,
+  "status": "idea",
+  "id": "christmas-countdown-clock-days-until-christmas-snow-display"
+ },
+ {
+  "name": "Cozy Christmas Movie Night Box (pjs, cocoa, popcorn, socks)",
+  "category": "Christmas magic",
+  "price": 79,
+  "emotions": [
+   "Christmas",
+   "cozy",
    "gift"
   ],
-  "hook": "Personalized + heated = best gift I ever gave 💛",
-  "demo": "Gold initial embroidery close-up, she wraps on",
-  "why": "Personalization raises value and gift appeal.",
-  "risk": "Personalization logistics",
+  "hook": "The best Christmas Eve box ever 🍿🎄",
+  "demo": "Opens box layer by layer",
+  "why": "Unboxing + cozy; high AOV.",
+  "risk": "Assembly",
   "scores": {
    "E": 8,
    "D": 8,
    "G": 10,
-   "M": 9,
+   "M": 8,
    "P": 8,
-   "N": 7,
+   "N": 6,
    "R": 8
   },
-  "score": 84,
-  "rank": 20,
+  "score": 81,
+  "christmas": true,
+  "rank": 54,
   "status": "idea",
-  "id": "heated-velvet-lounge-robe-with-gold-initial"
+  "id": "cozy-christmas-movie-night-box-pjs-cocoa-popcorn-socks"
  },
  {
-  "name": "Heated 'Hug Me' Robe with Arms That Wrap (long sleeves hug)",
-  "category": "Big bold concepts",
-  "price": 89,
+  "name": "Personalised North Pole Passport for Kids",
+  "category": "Christmas magic",
+  "price": 39,
   "emotions": [
-   "comfort",
-   "lonely",
-   "emotion"
+   "Christmas",
+   "kids",
+   "magic"
   ],
-  "hook": "Self-hug, but heated 🤍",
-  "demo": "Extra-long sleeves wrap around her",
-  "why": "Strong comfort emotion for singles/ lonely winter.",
-  "risk": "Design must be cute not sad",
+  "hook": "She's officially allowed into the North Pole 🛂",
+  "demo": "Kid gets passport stamped by 'elf'",
+  "why": "Magic role-play.",
+  "risk": "Low price",
   "scores": {
-   "E": 9,
+   "E": 8,
    "D": 8,
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 9,
+   "R": 9
+  },
+  "score": 81,
+  "christmas": true,
+  "rank": 55,
+  "status": "idea",
+  "id": "personalised-north-pole-passport-for-kids"
+ },
+ {
+  "name": "Floating Moon Lamp (magnetic levitation)",
+  "category": "Home & cozy",
+  "price": 69,
+  "emotions": [
+   "wonder",
+   "decor",
+   "gift"
+  ],
+  "hook": "It floats. It glows. It spins. 🌕",
+  "demo": "Moon levitates and slowly rotates above the base",
+  "why": "Magic effect stops the scroll; teens and couples.",
+  "risk": "Exists already - win with design",
+  "scores": {
+   "E": 8,
+   "D": 10,
    "G": 8,
    "M": 8,
    "P": 8,
-   "N": 9,
+   "N": 5,
    "R": 8
   },
-  "score": 84,
-  "rank": 21,
+  "score": 81,
+  "christmas": false,
+  "rank": 56,
   "status": "idea",
-  "id": "heated-hug-me-robe-with-arms-that-wrap-long-sleeves-hug"
+  "id": "floating-moon-lamp-magnetic-levitation"
  },
  {
-  "name": "Heated Elf Robe with Pointy Ears Hood",
-  "category": "Heated character robes",
-  "price": 75,
+  "name": "Rain-Cloud Humidifier that Drips on a Plant",
+  "category": "Home & cozy",
+  "price": 49,
   "emotions": [
-   "Christmas",
-   "humor",
-   "family"
+   "calm",
+   "wonder",
+   "decor"
   ],
-  "hook": "Santa's least productive elf reporting for nap duty 🧝",
-  "demo": "Green robe, striped cuffs, ears flop on the hood",
-  "why": "Family matching Christmas pyjama culture + heat; funny for office parties.",
-  "risk": "Seasonal only",
+  "hook": "A tiny rain cloud waters my plant 🌧️",
+  "demo": "Cloud drips water drops slowly onto a plant pot",
+  "why": "Mesmerising loop video, calming sound.",
+  "risk": "Water mess if badly made",
+  "scores": {
+   "E": 8,
+   "D": 10,
+   "G": 8,
+   "M": 7,
+   "P": 8,
+   "N": 7,
+   "R": 7
+  },
+  "score": 81,
+  "christmas": false,
+  "rank": 57,
+  "status": "idea",
+  "id": "rain-cloud-humidifier-that-drips-on-a-plant"
+ },
+ {
+  "name": "Tooth-Fairy Door with Tiny Glowing Footprints",
+  "category": "Kids (parents buy)",
+  "price": 39,
+  "emotions": [
+   "kids",
+   "magic",
+   "parents"
+  ],
+  "hook": "The tooth fairy left footprints 😱✨",
+  "demo": "Morning: tiny glowing footprints lead to the door",
+  "why": "Magic moments parents film.",
+  "risk": "Low price",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 7,
+   "M": 5,
+   "P": 9,
+   "N": 9,
+   "R": 9
+  },
+  "score": 81,
+  "christmas": false,
+  "rank": 58,
+  "status": "idea",
+  "id": "tooth-fairy-door-with-tiny-glowing-footprints"
+ },
+ {
+  "name": "Retro Game Console Shaped like a TV (400 games)",
+  "category": "Tech & gadgets",
+  "price": 79,
+  "emotions": [
+   "nostalgia",
+   "family",
+   "gift"
+  ],
+  "hook": "My dad played for 3 hours straight 😂",
+  "demo": "Plugs into TV, retro games light up",
+  "why": "Nostalgia for 30-50 y/o + family.",
+  "risk": "IP on games - only original/licensed",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 9,
+   "M": 8,
+   "P": 7,
+   "N": 5,
+   "R": 6
+  },
+  "score": 81,
+  "christmas": false,
+  "rank": 59,
+  "status": "idea",
+  "id": "retro-game-console-shaped-like-a-tv-400-games"
+ },
+ {
+  "name": "Instant Print Camera for Kids",
+  "category": "Tech & gadgets",
+  "price": 59,
+  "emotions": [
+   "kids",
+   "creativity",
+   "memory"
+  ],
+  "hook": "She prints her own memories now 📸",
+  "demo": "Takes photo, thermal print slides out",
+  "why": "Creative kids gift.",
+  "risk": "Common",
+  "scores": {
+   "E": 8,
+   "D": 10,
+   "G": 9,
+   "M": 7,
+   "P": 8,
+   "N": 5,
+   "R": 8
+  },
+  "score": 81,
+  "christmas": false,
+  "rank": 60,
+  "status": "idea",
+  "id": "instant-print-camera-for-kids"
+ },
+ {
+  "name": "Birth-Flower Personalized Jewellery Box",
+  "category": "Fashion & accessories",
+  "price": 59,
+  "emotions": [
+   "personalized",
+   "mom",
+   "gift"
+  ],
+  "hook": "Every kid's birth flower on mom's box 💐",
+  "demo": "Opens box: engraved flowers + names",
+  "why": "Mom gift.",
+  "risk": "Personalisation",
   "scores": {
    "E": 8,
    "D": 8,
    "G": 10,
-   "M": 8,
+   "M": 7,
+   "P": 8,
+   "N": 7,
+   "R": 9
+  },
+  "score": 81,
+  "christmas": false,
+  "rank": 61,
+  "status": "idea",
+  "id": "birth-flower-personalized-jewellery-box"
+ },
+ {
+  "name": "Smart Fire Pit with Color Flames",
+  "category": "Outdoor & garden",
+  "price": 129,
+  "emotions": [
+   "cozy",
+   "friends",
+   "wow"
+  ],
+  "hook": "Rainbow flames for movie night 🔥",
+  "demo": "Flames change colour",
+  "why": "Wow demo; high price.",
+  "risk": "Safety",
+  "scores": {
+   "E": 8,
+   "D": 10,
+   "G": 7,
+   "M": 9,
+   "P": 7,
+   "N": 7,
+   "R": 6
+  },
+  "score": 81,
+  "christmas": false,
+  "rank": 62,
+  "status": "idea",
+  "id": "smart-fire-pit-with-color-flames"
+ },
+ {
+  "name": "Personalised Family Christmas Doormat that Lights Up",
+  "category": "Home & cozy",
+  "price": 59,
+  "emotions": [
+   "family",
+   "Christmas",
+   "personalized"
+  ],
+  "hook": "Our family name lights up when guests arrive 🎄",
+  "demo": "Step on mat, LED border glows",
+  "why": "Personalised + light-up demo.",
+  "risk": "Outdoor electronics",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 9,
+   "M": 7,
+   "P": 8,
+   "N": 9,
+   "R": 7
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 63,
+  "status": "idea",
+  "id": "personalised-family-christmas-doormat-that-lights-up"
+ },
+ {
+  "name": "Santa Hidden Camera Ornament (fake) + Certificate",
+  "category": "Funny & viral gifts",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "humor"
+  ],
+  "hook": "Santa is watching... literally 🎅📷",
+  "demo": "Ornament with red light; kid behaves",
+  "why": "Parent hack content.",
+  "risk": "Ethics: decor only",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 9,
+   "M": 5,
    "P": 9,
+   "N": 8,
+   "R": 9
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 64,
+  "status": "idea",
+  "id": "santa-hidden-camera-ornament-fake-certificate"
+ },
+ {
+  "name": "Advent Calendar of Mini Self-Care Gifts",
+  "category": "Seasonal & celebrations",
+  "price": 59,
+  "emotions": [
+   "Christmas",
+   "self-care",
+   "anticipation"
+  ],
+  "hook": "24 days of tiny treats for me 🎁",
+  "demo": "Opens a door each day",
+  "why": "Daily-reveal content series.",
+  "risk": "Must ship before December",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 10,
+   "M": 7,
+   "P": 8,
+   "N": 5,
+   "R": 8
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 65,
+  "status": "idea",
+  "id": "advent-calendar-of-mini-self-care-gifts"
+ },
+ {
+  "name": "Advent Calendar for Dogs",
+  "category": "Seasonal & celebrations",
+  "price": 45,
+  "emotions": [
+   "pets",
+   "Christmas",
+   "cute"
+  ],
+  "hook": "His face opening door #1 🐶",
+  "demo": "Dog noses a door open",
+  "why": "Pet + advent.",
+  "risk": "Pet food regs",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 10,
+   "M": 6,
+   "P": 8,
+   "N": 6,
+   "R": 8
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 66,
+  "status": "idea",
+  "id": "advent-calendar-for-dogs"
+ },
+ {
+  "name": "Personalised Christmas Eve Box",
+  "category": "Seasonal & celebrations",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "family",
+   "tradition"
+  ],
+  "hook": "Christmas Eve box with her name 🎄",
+  "demo": "Opens box: pyjamas, cocoa, book",
+  "why": "Tradition gift.",
+  "risk": "Assembly",
+  "scores": {
+   "E": 8,
+   "D": 8,
+   "G": 10,
+   "M": 7,
+   "P": 8,
+   "N": 6,
+   "R": 8
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 67,
+  "status": "idea",
+  "id": "personalised-christmas-eve-box"
+ },
+ {
+  "name": "Personalised 'Letter from Santa' Kit with Wax Seal & North Pole Stamp",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "personalized"
+  ],
+  "hook": "She got a real letter from the North Pole ✉️",
+  "demo": "Kid opens wax-sealed letter with her name",
+  "why": "Classic tradition, premium version.",
+  "risk": "Low price",
+  "scores": {
+   "E": 9,
+   "D": 8,
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 6,
+   "R": 9
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 68,
+  "status": "idea",
+  "id": "personalised-letter-from-santa-kit-with-wax-seal-north-pole-"
+ },
+ {
+  "name": "Santa Sack Personalised with Velvet & Name",
+  "category": "Christmas magic",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "personalized"
+  ],
+  "hook": "Santa left a sack with her name on it 🎅",
+  "demo": "Christmas morning: huge velvet sack by the tree",
+  "why": "Gift-wrapping alternative, tradition.",
+  "risk": "Low price",
+  "scores": {
+   "E": 8,
+   "D": 8,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 6,
+   "R": 9
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 69,
+  "status": "idea",
+  "id": "santa-sack-personalised-with-velvet-name"
+ },
+ {
+  "name": "Christmas Tree Ornament Advent (24 ornaments, one per day)",
+  "category": "Christmas magic",
+  "price": 59,
+  "emotions": [
+   "Christmas",
+   "family",
+   "tradition"
+  ],
+  "hook": "A new ornament every day until Christmas 🎄",
+  "demo": "Kid hangs one ornament per day",
+  "why": "Daily ritual + keepsakes.",
+  "risk": "Fragile",
+  "scores": {
+   "E": 8,
+   "D": 8,
+   "G": 10,
+   "M": 7,
+   "P": 8,
    "N": 7,
    "R": 8
   },
-  "score": 83,
-  "rank": 22,
+  "score": 80,
+  "christmas": true,
+  "rank": 70,
   "status": "idea",
-  "id": "heated-elf-robe-with-pointy-ears-hood"
+  "id": "christmas-tree-ornament-advent-24-ornaments-one-per-day"
  },
  {
-  "name": "Heated Pet Robe Matching Our Robes",
+  "name": "Christmas Morning Photo Backdrop Kit (balloon arch + sign)",
+  "category": "Christmas magic",
+  "price": 69,
+  "emotions": [
+   "Christmas",
+   "family",
+   "memories"
+  ],
+  "hook": "Our Christmas photos look professional now 📸",
+  "demo": "Time-lapse building backdrop, family photo",
+  "why": "Photo culture.",
+  "risk": "Many parts",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 10,
+   "M": 7,
+   "P": 8,
+   "N": 7,
+   "R": 8
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 71,
+  "status": "idea",
+  "id": "christmas-morning-photo-backdrop-kit-balloon-arch-sign"
+ },
+ {
+  "name": "Personalised Baby's First Christmas Ornament with Footprint",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "baby",
+   "memory"
+  ],
+  "hook": "Her first Christmas, her tiny footprint 🥹",
+  "demo": "Ornament with clay footprint and name",
+  "why": "New parents are a huge gift market.",
+  "risk": "Low price",
+  "scores": {
+   "E": 9,
+   "D": 8,
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 6,
+   "R": 9
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 72,
+  "status": "idea",
+  "id": "personalised-baby-s-first-christmas-ornament-with-footprint"
+ },
+ {
+  "name": "Christmas Wreath with Hidden Speaker that Says Welcome",
+  "category": "Christmas magic",
+  "price": 69,
+  "emotions": [
+   "Christmas",
+   "humor",
+   "home"
+  ],
+  "hook": "Our wreath greets every guest 😂",
+  "demo": "Guest arrives, wreath says hello",
+  "why": "Funny + decor.",
+  "risk": "Electronics outdoor",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 9,
+   "M": 7,
+   "P": 8,
+   "N": 9,
+   "R": 7
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 73,
+  "status": "idea",
+  "id": "christmas-wreath-with-hidden-speaker-that-says-welcome"
+ },
+ {
+  "name": "Light-Up Christmas Pyjama Onesie for Adults",
+  "category": "Christmas magic",
+  "price": 59,
+  "emotions": [
+   "Christmas",
+   "humor",
+   "cozy"
+  ],
+  "hook": "Mom's new Christmas morning uniform 😂",
+  "demo": "Onesie trim lights up",
+  "why": "Funny + cozy.",
+  "risk": "Sizing",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 10,
+   "M": 7,
+   "P": 9,
+   "N": 7,
+   "R": 7
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 74,
+  "status": "idea",
+  "id": "light-up-christmas-pyjama-onesie-for-adults"
+ },
+ {
+  "name": "Gingerbread Man Plush with Heated Belly",
+  "category": "Christmas magic",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "cozy"
+  ],
+  "hook": "The cutest bedtime buddy this Christmas 🍪",
+  "demo": "Kid hugs warm gingerbread plush",
+  "why": "Cute + cozy.",
+  "risk": "Kids heating safety",
+  "scores": {
+   "E": 8,
+   "D": 8,
+   "G": 10,
+   "M": 6,
+   "P": 8,
+   "N": 8,
+   "R": 7
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 75,
+  "status": "idea",
+  "id": "gingerbread-man-plush-with-heated-belly"
+ },
+ {
+  "name": "Santa's Magic Snow Dust (instant snow powder kit)",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "wonder"
+  ],
+  "hook": "Add water and it turns into snow 😱",
+  "demo": "Powder + water = fluffy snow",
+  "why": "Wow science demo.",
+  "risk": "Low price",
+  "scores": {
+   "E": 8,
+   "D": 10,
+   "G": 9,
+   "M": 5,
+   "P": 9,
+   "N": 6,
+   "R": 9
+  },
+  "score": 80,
+  "christmas": true,
+  "rank": 76,
+  "status": "idea",
+  "id": "santa-s-magic-snow-dust-instant-snow-powder-kit"
+ },
+ {
+  "name": "Letters-to-Open-When Box",
+  "category": "Gifts that make people cry",
+  "price": 45,
+  "emotions": [
+   "love",
+   "distance",
+   "gift"
+  ],
+  "hook": "Open when you miss me 💌",
+  "demo": "Opens wooden box full of labelled envelopes",
+  "why": "Long-distance couples, graduation gifts.",
+  "risk": "Low tech, easy to copy",
+  "scores": {
+   "E": 8,
+   "D": 8,
+   "G": 9,
+   "M": 7,
+   "P": 9,
+   "N": 7,
+   "R": 9
+  },
+  "score": 80,
+  "christmas": false,
+  "rank": 77,
+  "status": "idea",
+  "id": "letters-to-open-when-box"
+ },
+ {
+  "name": "Grandparent Story Journal with QR Voice Notes",
+  "category": "Gifts that make people cry",
+  "price": 49,
+  "emotions": [
+   "family",
+   "memory",
+   "grandparents"
+  ],
+  "hook": "Grandma's stories, saved forever 📖",
+  "demo": "Scans QR in journal, hears grandma's voice",
+  "why": "Memory keeping for families.",
+  "risk": "Needs app/host",
+  "scores": {
+   "E": 9,
+   "D": 7,
+   "G": 9,
+   "M": 7,
+   "P": 7,
+   "N": 8,
+   "R": 8
+  },
+  "score": 80,
+  "christmas": false,
+  "rank": 78,
+  "status": "idea",
+  "id": "grandparent-story-journal-with-qr-voice-notes"
+ },
+ {
+  "name": "Custom 'Our Song' Vinyl Plaque (spinning)",
+  "category": "Gifts that make people cry",
+  "price": 59,
+  "emotions": [
+   "love",
+   "music",
+   "couples"
+  ],
+  "hook": "Our wedding song, framed and spinning 💿",
+  "demo": "Vinyl spins, QR plays the song",
+  "why": "Couples & anniversaries.",
+  "risk": "Music licensing - QR to Spotify only",
+  "scores": {
+   "E": 8,
+   "D": 8,
+   "G": 9,
+   "M": 7,
+   "P": 8,
+   "N": 7,
+   "R": 9
+  },
+  "score": 80,
+  "christmas": false,
+  "rank": 79,
+  "status": "idea",
+  "id": "custom-our-song-vinyl-plaque-spinning"
+ },
+ {
+  "name": "Pet Memorial Paw-Print Glow Stone",
   "category": "Pets",
   "price": 49,
   "emotions": [
    "pets",
-   "cute",
-   "family"
+   "grief",
+   "memory"
   ],
-  "hook": "My dog in a tiny heated robe. I can't. 🐶",
-  "demo": "Small dog trots in a mini green/royal robe",
-  "why": "Extends HeatGrump/Heat Majesty; pet content gets massive reach.",
-  "risk": "Pet heating must be low-temp",
+  "hook": "Her paw print glows every night 🐾",
+  "demo": "Stone glows with paw print",
+  "why": "Very emotional niche.",
+  "risk": "Sensitive",
   "scores": {
    "E": 9,
-   "D": 9,
-   "G": 9,
+   "D": 8,
+   "G": 7,
    "M": 7,
    "P": 8,
-   "N": 7,
-   "R": 7
+   "N": 8,
+   "R": 9
   },
-  "score": 83,
-  "rank": 23,
+  "score": 80,
+  "christmas": false,
+  "rank": 80,
   "status": "idea",
-  "id": "heated-pet-robe-matching-our-robes"
+  "id": "pet-memorial-paw-print-glow-stone"
  },
  {
-  "name": "Heated Yeti Robe (extra fluffy white)",
-  "category": "Heated character robes",
-  "price": 85,
+  "name": "Personalised Luggage Cover with Pet Face",
+  "category": "Car & travel",
+  "price": 49,
   "emotions": [
-   "humor",
-   "winter",
-   "identity"
+   "travel",
+   "pets",
+   "funny"
   ],
-  "hook": "Dressed as the abominable snowman because I am abominably cold ❄️",
-  "demo": "Huge fluffy white robe, face peeks out of the hood",
-  "why": "Funny winter character, visually loud, a natural pair with 'monster feet' slippers.",
-  "risk": "Long fur sheds - specify short faux fur",
+  "hook": "Spotted my suitcase in 0.2 seconds 🐶",
+  "demo": "Baggage claim: suitcase with giant dog face",
+  "why": "Funny + practical + personalised.",
+  "risk": "Sizing",
   "scores": {
    "E": 8,
    "D": 9,
    "G": 8,
-   "M": 8,
-   "P": 8,
+   "M": 6,
+   "P": 9,
    "N": 8,
-   "R": 7
+   "R": 8
   },
-  "score": 82,
-  "rank": 24,
+  "score": 80,
+  "christmas": false,
+  "rank": 81,
   "status": "idea",
-  "id": "heated-yeti-robe-extra-fluffy-white"
+  "id": "personalised-luggage-cover-with-pet-face"
  },
  {
-  "name": "Heated Santa Robe for Dads",
-  "category": "Heated character robes",
-  "price": 85,
+  "name": "Smart Mirror that Shows Weather & Compliments You",
+  "category": "Big swings (higher risk, higher reward)",
+  "price": 149,
+  "emotions": [
+   "confidence",
+   "tech",
+   "fun"
+  ],
+  "hook": "My mirror hypes me up every morning 🥹",
+  "demo": "Mirror text: 'You look great today'",
+  "why": "Feel-good tech.",
+  "risk": "Tech",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 7,
+   "M": 9,
+   "P": 6,
+   "N": 9,
+   "R": 6
+  },
+  "score": 80,
+  "christmas": false,
+  "rank": 82,
+  "status": "idea",
+  "id": "smart-mirror-that-shows-weather-compliments-you"
+ },
+ {
+  "name": "Life-Size Cardboard Cutout from Your Photo",
+  "category": "Big swings (higher risk, higher reward)",
+  "price": 69,
   "emotions": [
    "humor",
-   "dad",
-   "Christmas"
+   "personalized"
   ],
-  "hook": "Dad finally found a Santa suit he'll actually wear 🎅",
-  "demo": "Big red robe, white trim, black belt, hat hood",
-  "why": "Dad gift angle (hard to shop for), pairs with Mrs. Claus as couples set.",
-  "risk": "Sizing for men - offer XL",
+  "hook": "Sent my husband to his own party 😂",
+  "demo": "Reveal of life-size cutout",
+  "why": "Gag gift, parties.",
+  "risk": "Shipping size",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 8,
+   "M": 7,
+   "P": 9,
+   "N": 6,
+   "R": 8
+  },
+  "score": 80,
+  "christmas": false,
+  "rank": 83,
+  "status": "idea",
+  "id": "life-size-cardboard-cutout-from-your-photo"
+ },
+ {
+  "name": "Personalised Christmas Plate Set for Santa's Cookies",
+  "category": "Christmas magic",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "tradition"
+  ],
+  "hook": "Cookies for Santa, on his own plate 🍪🥛",
+  "demo": "Kid leaves cookies; morning crumbs + note",
+  "why": "Tradition + keepsake.",
+  "risk": "Ceramic shipping",
   "scores": {
    "E": 8,
    "D": 8,
    "G": 10,
-   "M": 8,
+   "M": 6,
    "P": 9,
-   "N": 7,
-   "R": 7
-  },
-  "score": 82,
-  "rank": 25,
-  "status": "idea",
-  "id": "heated-santa-robe-for-dads"
- },
- {
-  "name": "Heated Matching Christmas Pajama Robe for Dogs & Owners",
-  "category": "Couples & family",
-  "price": 99,
-  "emotions": [
-   "pets",
-   "family",
-   "cute"
-  ],
-  "hook": "Me and my dog, matching and toasty 🐶",
-  "demo": "Owner and dog in matching plaid robes",
-  "why": "Pet-owner matching is a huge Christmas trend; adds a pet SKU.",
-  "risk": "Pet sizes add complexity",
-  "scores": {
-   "E": 9,
-   "D": 8,
-   "G": 9,
-   "M": 8,
-   "P": 7,
-   "N": 7,
-   "R": 7
-  },
-  "score": 82,
-  "rank": 26,
-  "status": "idea",
-  "id": "heated-matching-christmas-pajama-robe-for-dogs-owners"
- },
- {
-  "name": "Heated Weighted Hug Plush (giant)",
-  "category": "Home cozy & self-care",
-  "price": 69,
-  "emotions": [
-   "comfort",
-   "anxiety relief",
-   "self-care"
-  ],
-  "hook": "When you need a hug but everyone's busy 🤍",
-  "demo": "She hugs a giant plush, it warms her",
-  "why": "Comfort + anxiety niche, strong emotion, women & teens.",
-  "risk": "Weighted + heat = heavier shipping",
-  "scores": {
-   "E": 9,
-   "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 7,
+   "N": 6,
    "R": 8
   },
-  "score": 82,
-  "rank": 27,
+  "score": 79,
+  "christmas": true,
+  "rank": 84,
   "status": "idea",
-  "id": "heated-weighted-hug-plush-giant"
+  "id": "personalised-christmas-plate-set-for-santa-s-cookies"
  },
  {
-  "name": "Heated Pizza Blanket (round, slices pattern)",
-  "category": "Home cozy & self-care",
-  "price": 69,
-  "emotions": [
-   "humor",
-   "food",
-   "teens"
-  ],
-  "hook": "Me as a pizza burrito at 2 am 🍕",
-  "demo": "Rolls into a pizza burrito",
-  "why": "Food-humor is a proven viral blanket theme; heated is new.",
-  "risk": "Food designs feel kid-ish",
-  "scores": {
-   "E": 8,
-   "D": 9,
-   "G": 8,
-   "M": 8,
-   "P": 9,
-   "N": 7,
-   "R": 8
-  },
-  "score": 82,
-  "rank": 28,
-  "status": "idea",
-  "id": "heated-pizza-blanket-round-slices-pattern"
- },
- {
-  "name": "Heated 'Do Not Disturb' Hood (closes over face)",
-  "category": "Novelty & funny gifts",
-  "price": 59,
-  "emotions": [
-   "humor",
-   "introvert",
-   "self-care"
-  ],
-  "hook": "Introvert mode: ON 🙈",
-  "demo": "Hood zips down into a mask with 'Do not disturb'",
-  "why": "Introvert humor has massive reach.",
-  "risk": "Text on product - ok if ours",
-  "scores": {
-   "E": 8,
-   "D": 9,
-   "G": 8,
-   "M": 7,
-   "P": 9,
-   "N": 9,
-   "R": 8
-  },
-  "score": 82,
-  "rank": 29,
-  "status": "idea",
-  "id": "heated-do-not-disturb-hood-closes-over-face"
- },
- {
-  "name": "Heated Faux-Fur Winter Cape (old money)",
-  "category": "Elegant & luxe",
-  "price": 129,
-  "emotions": [
-   "elegance",
-   "identity",
-   "luxury"
-  ],
-  "hook": "Old money winter, but heated 🤍",
-  "demo": "She walks in a creamy faux-fur cape, cut to warm glow",
-  "why": "Aspirational, high price, women 30-55.",
-  "risk": "Higher quality expectations",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 8,
-   "M": 10,
-   "P": 8,
-   "N": 8,
-   "R": 7
-  },
-  "score": 82,
-  "rank": 30,
-  "status": "idea",
-  "id": "heated-faux-fur-winter-cape-old-money"
- },
- {
-  "name": "Heated Bigfoot Robe (hairy, huge)",
-  "category": "Heated character robes",
-  "price": 85,
-  "emotions": [
-   "humor",
-   "identity",
-   "men"
-  ],
-  "hook": "Bigfoot sightings at my house went up this winter 👣",
-  "demo": "Huge hairy brown robe walking in the snow at dusk",
-  "why": "Absurd humour + men audience, links to 'monster feet'.",
-  "risk": "Long fur shedding",
-  "scores": {
-   "E": 8,
-   "D": 9,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 9,
-   "R": 7
-  },
-  "score": 82,
-  "rank": 31,
-  "status": "idea",
-  "id": "heated-bigfoot-robe-hairy-huge"
- },
- {
-  "name": "Heated Swan Princess Robe (white & feather trim)",
-  "category": "Heated character robes",
+  "name": "Automatic Ball Launcher for Dogs",
+  "category": "Pets",
   "price": 89,
   "emotions": [
-   "royalty",
-   "elegance",
-   "identity"
-  ],
-  "hook": "Ballet girl at heart, cold girl in reality 🦢",
-  "demo": "White robe with feather-like trim, ballet twirl",
-  "why": "Ballet/swan identity for women; elegant royal line variant.",
-  "risk": "Feathers must be faux fur",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 8,
-   "M": 9,
-   "P": 8,
-   "N": 9,
-   "R": 8
-  },
-  "score": 82,
-  "rank": 32,
-  "status": "idea",
-  "id": "heated-swan-princess-robe-white-feather-trim"
- },
- {
-  "name": "Heated Dragon Robe (spiky hood, wings)",
-  "category": "Heated character robes",
-  "price": 85,
-  "emotions": [
-   "identity",
-   "fantasy",
-   "humor"
-  ],
-  "hook": "Unlocked: dragon mode. Heat level 3 🐉",
-  "demo": "Hood with spikes, wing sleeves open like wings",
-  "why": "Fantasy fans and gamers; wings opening is a natural hook. Men 20-35 are an untapped robe audience.",
-  "risk": "Wings need clean pattern",
-  "scores": {
-   "E": 8,
-   "D": 9,
-   "G": 8,
-   "M": 8,
-   "P": 7,
-   "N": 8,
-   "R": 8
-  },
-  "score": 81,
-  "rank": 33,
-  "status": "idea",
-  "id": "heated-dragon-robe-spiky-hood-wings"
- },
- {
-  "name": "Heated Family Movie Night Mega Blanket",
-  "category": "Couples & family",
-  "price": 129,
-  "emotions": [
-   "family",
-   "togetherness",
-   "Christmas"
-  ],
-  "hook": "Family of 5. One blanket. Zero complaints 🍿",
-  "demo": "Whole family under one huge heated blanket on the sofa",
-  "why": "Christmas-morning family moment, big ticket.",
-  "risk": "Bulky, lower novelty",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 9,
-   "M": 9,
-   "P": 8,
-   "N": 6,
-   "R": 8
-  },
-  "score": 81,
-  "rank": 34,
-  "status": "idea",
-  "id": "heated-family-movie-night-mega-blanket"
- },
- {
-  "name": "Heated Reading Nook Cape with Book Pocket",
-  "category": "Home cozy & self-care",
-  "price": 79,
-  "emotions": [
-   "self-care",
-   "book lovers",
-   "identity"
-  ],
-  "hook": "BookTok, but make it warm 📚",
-  "demo": "Cape wraps, book slides into a front pocket",
-  "why": "BookTok community is huge and gifts a lot.",
-  "risk": "Pocket design detail",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 9,
-   "R": 8
-  },
-  "score": 81,
-  "rank": 35,
-  "status": "idea",
-  "id": "heated-reading-nook-cape-with-book-pocket"
- },
- {
-  "name": "Heated Hooded Throne Blanket (crown-shaped back)",
-  "category": "Big bold concepts",
-  "price": 99,
-  "emotions": [
-   "royalty",
-   "humor",
-   "identity"
-  ],
-  "hook": "Sitting on my throne like the queen I am 👑",
-  "demo": "Blanket stands up like a throne back on the sofa",
-  "why": "Royal identity on the sofa; unique silhouette.",
-  "risk": "Structure inside blanket",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 8,
-   "M": 9,
-   "P": 7,
-   "N": 9,
-   "R": 7
-  },
-  "score": 81,
-  "rank": 36,
-  "status": "idea",
-  "id": "heated-hooded-throne-blanket-crown-shaped-back"
- },
- {
-  "name": "Heated Unicorn Robe",
-  "category": "Heated character robes",
-  "price": 75,
-  "emotions": [
-   "cute",
-   "kids",
-   "mom & daughter"
-  ],
-  "hook": "My daughter wanted a unicorn. I wanted a heated robe. We both won 🦄",
-  "demo": "Pastel rainbow mane hood, horn, glitter cuffs",
-  "why": "Evergreen girl theme, matching mom/kid sizes, easy demo.",
-  "risk": "Crowded in kids' onesies - win on 'heated'",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 9,
-   "M": 8,
-   "P": 9,
-   "N": 6,
-   "R": 8
-  },
-  "score": 80,
-  "rank": 37,
-  "status": "idea",
-  "id": "heated-unicorn-robe"
- },
- {
-  "name": "Heated Cat Robe with Ears & Tail",
-  "category": "Heated character robes",
-  "price": 75,
-  "emotions": [
-   "cute",
    "pets",
-   "identity"
-  ],
-  "hook": "When your cat judges you, so you become the cat 🐱",
-  "demo": "Ears hood, little tail swings when she walks",
-  "why": "Cat lovers are a huge emotional audience; tail swing = demo.",
-  "risk": "Tail must be short (tripping)",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 9,
-   "N": 7,
-   "R": 8
-  },
-  "score": 80,
-  "rank": 38,
-  "status": "idea",
-  "id": "heated-cat-robe-with-ears-tail"
- },
- {
-  "name": "Heated Penguin Robe",
-  "category": "Heated character robes",
-  "price": 75,
-  "emotions": [
-   "cute",
-   "winter",
-   "humor"
-  ],
-  "hook": "Waddling to the kitchen at 2 am like 🐧",
-  "demo": "Black and white robe, orange beak hood, waddle walk",
-  "why": "Cute winter animal + funny waddle demo, unisex.",
-  "risk": "Similar to onesies",
-  "scores": {
-   "E": 7,
-   "D": 9,
-   "G": 9,
-   "M": 8,
-   "P": 9,
-   "N": 6,
-   "R": 8
-  },
-  "score": 80,
-  "rank": 39,
-  "status": "idea",
-  "id": "heated-penguin-robe"
- },
- {
-  "name": "Kids Princess Cape with Light-up Crown Hood",
-  "category": "Kids (parents buy)",
-  "price": 49,
-  "emotions": [
-   "kids",
-   "identity",
-   "princess"
-  ],
-  "hook": "She hasn't taken it off in 3 days 👑",
-  "demo": "Girl twirls, crown lights up",
-  "why": "Little-princess identity; pairs with Heat Majesty.",
-  "risk": "Kids sizing",
-  "scores": {
-   "E": 8,
-   "D": 9,
-   "G": 9,
-   "M": 7,
-   "P": 8,
-   "N": 7,
-   "R": 7
-  },
-  "score": 80,
-  "rank": 40,
-  "status": "idea",
-  "id": "kids-princess-cape-with-light-up-crown-hood"
- },
- {
-  "name": "Heated Shark Sleeping Bag Blanket",
-  "category": "Novelty & funny gifts",
-  "price": 69,
-  "emotions": [
-   "humor",
-   "identity",
-   "teens"
-  ],
-  "hook": "Being eaten by a shark never felt this warm 🦈",
-  "demo": "Sits inside shark mouth blanket",
-  "why": "Shark blankets are proven virals; heated version new.",
-  "risk": "Copycats",
-  "scores": {
-   "E": 8,
-   "D": 9,
-   "G": 8,
-   "M": 7,
-   "P": 9,
-   "N": 6,
-   "R": 8
-  },
-  "score": 80,
-  "rank": 41,
-  "status": "idea",
-  "id": "heated-shark-sleeping-bag-blanket"
- },
- {
-  "name": "Heated Bridal 'Getting Ready' Robe",
-  "category": "Elegant & luxe",
-  "price": 89,
-  "emotions": [
-   "wedding",
-   "identity",
-   "gift"
-  ],
-  "hook": "Winter bride, zero goosebumps 👰",
-  "demo": "Bride in white heated robe, bridesmaids too",
-  "why": "Wedding market buys in groups (bridesmaids).",
-  "risk": "Seasonal winter weddings",
-  "scores": {
-   "E": 8,
-   "D": 7,
-   "G": 8,
-   "M": 9,
-   "P": 8,
-   "N": 9,
-   "R": 8
-  },
-  "score": 80,
-  "rank": 42,
-  "status": "idea",
-  "id": "heated-bridal-getting-ready-robe"
- },
- {
-  "name": "Heated Stadium Poncho (game day)",
-  "category": "Outdoor & practical",
-  "price": 79,
-  "emotions": [
-   "sports",
-   "dad",
-   "winter"
-  ],
-  "hook": "Football in December, warm in December 🏈",
-  "demo": "Fan in stands, poncho glows on thermal",
-  "why": "Huge US sports culture; dads/moms at kids' games.",
-  "risk": "Team logos = IP, keep colors only",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 9,
-   "M": 8,
-   "P": 8,
-   "N": 7,
-   "R": 8
-  },
-  "score": 80,
-  "rank": 43,
-  "status": "idea",
-  "id": "heated-stadium-poncho-game-day"
- },
- {
-  "name": "Heated Robe + Power Bank Cordless Bundle",
-  "category": "Variations of our winners",
-  "price": 129,
-  "emotions": [
-   "freedom",
+   "fun",
    "practical"
   ],
-  "hook": "No cable. Warm anywhere.",
-  "demo": "Walks around house, no cord",
-  "why": "Cordless use is a top request in heated wearables.",
-  "risk": "Battery shipping",
+  "hook": "He plays fetch with himself now 🎾",
+  "demo": "Dog drops ball, machine launches it",
+  "why": "Busy owners; viral demo.",
+  "risk": "Existing brands",
   "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 9,
-   "M": 9,
-   "P": 9,
-   "N": 6,
+   "E": 8,
+   "D": 10,
+   "G": 7,
+   "M": 8,
+   "P": 8,
+   "N": 5,
    "R": 7
   },
   "score": 79,
-  "rank": 44,
+  "christmas": false,
+  "rank": 85,
   "status": "idea",
-  "id": "heated-robe-power-bank-cordless-bundle"
+  "id": "automatic-ball-launcher-for-dogs"
  },
  {
-  "name": "Heated Bear Hug Robe",
-  "category": "Heated character robes",
-  "price": 79,
-  "emotions": [
-   "comfort",
-   "couples",
-   "cozy"
-  ],
-  "hook": "When he's at work but you still want a bear hug 🐻",
-  "demo": "Teddy-bear ears hood, arms of the robe 'hug' back",
-  "why": "Warm 'hug' feeling = strongest comfort emotion; works for women gifting themselves.",
-  "risk": "Generic look - needs a signature detail",
-  "scores": {
-   "E": 8,
-   "D": 7,
-   "G": 9,
-   "M": 8,
-   "P": 9,
-   "N": 6,
-   "R": 8
-  },
-  "score": 78,
-  "rank": 45,
-  "status": "idea",
-  "id": "heated-bear-hug-robe"
- },
- {
-  "name": "Heated Fairy Robe with Wing Cape",
-  "category": "Heated character robes",
-  "price": 85,
-  "emotions": [
-   "identity",
-   "cute",
-   "girls"
-  ],
-  "hook": "Fairy godmother era begins tonight 🧚",
-  "demo": "Pastel robe, sheer wing-shaped cape opens",
-  "why": "Princess-adjacent identity for women, 'cottage core' trend.",
-  "risk": "Sheer fabric must stay cozy",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 7,
-   "N": 7,
-   "R": 8
-  },
-  "score": 78,
-  "rank": 46,
-  "status": "idea",
-  "id": "heated-fairy-robe-with-wing-cape"
- },
- {
-  "name": "Heated Monster Robe (furry, big eyes)",
-  "category": "Heated character robes",
-  "price": 79,
-  "emotions": [
-   "humor",
-   "kids",
-   "family"
-  ],
-  "hook": "Feed me cookies or nobody gets warm 👹",
-  "demo": "Bright furry robe, big googly eyes on the hood",
-  "why": "Funny 'monster' character that kids love, no IP.",
-  "risk": "Avoid looking like known puppets",
-  "scores": {
-   "E": 7,
-   "D": 9,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 7,
-   "R": 8
-  },
-  "score": 78,
-  "rank": 47,
-  "status": "idea",
-  "id": "heated-monster-robe-furry-big-eyes"
- },
- {
-  "name": "Heated Sloth Robe (slow, lazy, warm)",
-  "category": "Heated character robes",
-  "price": 75,
-  "emotions": [
-   "humor",
-   "self-care",
-   "identity"
-  ],
-  "hook": "Productivity level: sloth. Warmth level: maximum 🦥",
-  "demo": "Brown fluffy robe, sloth face hood, slow-motion walk",
-  "why": "Lazy-day humor resonates with tired moms and students.",
-  "risk": "Niche look",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 78,
-  "rank": 48,
-  "status": "idea",
-  "id": "heated-sloth-robe-slow-lazy-warm"
- },
- {
-  "name": "Heated Foot Pocket Blanket (sofa footwarmer bag)",
-  "category": "Feet & hands",
-  "price": 59,
-  "emotions": [
-   "cold feet",
-   "self-care",
-   "cozy"
-  ],
-  "hook": "Put your feet in the warm pocket. Thank me later.",
-  "demo": "Feet slide into a fluffy heated pocket at the end of the sofa",
-  "why": "Clear problem-solution demo, women 30+.",
-  "risk": "Lower emotion",
-  "scores": {
-   "E": 7,
-   "D": 9,
-   "G": 8,
-   "M": 7,
-   "P": 9,
-   "N": 7,
-   "R": 8
-  },
-  "score": 78,
-  "rank": 49,
-  "status": "idea",
-  "id": "heated-foot-pocket-blanket-sofa-footwarmer-bag"
- },
- {
-  "name": "Heated Hand-Warmer Muff (Victorian style)",
-  "category": "Feet & hands",
-  "price": 49,
-  "emotions": [
-   "elegance",
-   "winter",
-   "nostalgia"
-  ],
-  "hook": "Main character energy, warm hands edition ❄️",
-  "demo": "She slides hands into a fluffy round muff, steam breath",
-  "why": "Elegant 'old money' winter look, royal line add-on.",
-  "risk": "Small niche",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 7,
-   "P": 8,
-   "N": 9,
-   "R": 9
-  },
-  "score": 78,
-  "rank": 50,
-  "status": "idea",
-  "id": "heated-hand-warmer-muff-victorian-style"
- },
- {
-  "name": "Heated Wearable Sleeping Bag Onesie for Adults",
-  "category": "Home cozy & self-care",
-  "price": 99,
-  "emotions": [
-   "comfort",
-   "winter",
-   "camping"
-  ],
-  "hook": "My heating bill vs me in this 😎",
-  "demo": "Zips into a full sleeping-bag suit, walks around",
-  "why": "Heating-bill savings angle is very strong in US winter.",
-  "risk": "Bulky, sizing",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 9,
-   "P": 8,
-   "N": 7,
-   "R": 7
-  },
-  "score": 78,
-  "rank": 51,
-  "status": "idea",
-  "id": "heated-wearable-sleeping-bag-onesie-for-adults"
- },
- {
-  "name": "Heated Bedtime Story Dragon Plush (glows + warms)",
-  "category": "Kids (parents buy)",
-  "price": 49,
-  "emotions": [
-   "kids",
-   "bedtime",
-   "comfort"
-  ],
-  "hook": "The only plush that keeps my toddler in bed 🐉",
-  "demo": "Plush glows soft, kid hugs and falls asleep",
-  "why": "Parents pay for better sleep; gift.",
-  "risk": "Kids' heated items - USB low heat + certification",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 9,
-   "M": 7,
-   "P": 8,
-   "N": 7,
-   "R": 6
-  },
-  "score": 78,
-  "rank": 52,
-  "status": "idea",
-  "id": "heated-bedtime-story-dragon-plush-glows-warms"
- },
- {
-  "name": "Heated Hot-Dog Sleeping Bag",
-  "category": "Novelty & funny gifts",
-  "price": 79,
-  "emotions": [
-   "humor",
-   "food",
-   "family"
-  ],
-  "hook": "I'm the hot dog now 🌭",
-  "demo": "Lies in a bun-shaped bag, mustard pillow",
-  "why": "Absurd humor = shares.",
-  "risk": "Big & silly",
-  "scores": {
-   "E": 8,
-   "D": 9,
-   "G": 7,
-   "M": 7,
-   "P": 8,
-   "N": 8,
-   "R": 7
-  },
-  "score": 78,
-  "rank": 53,
-  "status": "idea",
-  "id": "heated-hot-dog-sleeping-bag"
- },
- {
-  "name": "Heated Grumpy Old Man Cardigan Robe",
-  "category": "Novelty & funny gifts",
-  "price": 79,
-  "emotions": [
-   "humor",
-   "dad",
-   "grandpa"
-  ],
-  "hook": "Grandpa approved: 'finally something useful' 👴",
-  "demo": "Grandpa in plaid cardigan robe, pipe-shaped controller",
-  "why": "Hard-to-shop-for men; funny.",
-  "risk": "Older audience buys less online",
-  "scores": {
-   "E": 7,
-   "D": 7,
-   "G": 9,
-   "M": 8,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 78,
-  "rank": 54,
-  "status": "idea",
-  "id": "heated-grumpy-old-man-cardigan-robe"
- },
- {
-  "name": "Heated Cashmere-Feel Travel Wrap",
-  "category": "Elegant & luxe",
-  "price": 89,
-  "emotions": [
-   "travel",
-   "elegance",
-   "comfort"
-  ],
-  "hook": "Freezing planes are no longer my problem ✈️",
-  "demo": "Wrap on plane with power bank",
-  "why": "Travel pain point + elegance.",
-  "risk": "Battery rules on planes",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 9,
-   "P": 8,
-   "N": 7,
-   "R": 7
-  },
-  "score": 78,
-  "rank": 55,
-  "status": "idea",
-  "id": "heated-cashmere-feel-travel-wrap"
- },
- {
-  "name": "Heated Dog-Walk Hooded Cape for Owners",
-  "category": "Outdoor & practical",
-  "price": 79,
-  "emotions": [
-   "pets",
-   "winter",
-   "practical"
-  ],
-  "hook": "6 am dog walks in January, solved 🐕",
-  "demo": "Owner and dog walking at dawn in snow",
-  "why": "Daily pain point for dog owners.",
-  "risk": "Mid emotion",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 8,
-   "R": 8
-  },
-  "score": 78,
-  "rank": 56,
-  "status": "idea",
-  "id": "heated-dog-walk-hooded-cape-for-owners"
- },
- {
-  "name": "Royal Gift Box Upgrade with Name Card",
-  "category": "Variations of our winners",
-  "price": 15,
-  "emotions": [
-   "gift",
-   "personalized"
-  ],
-  "hook": "Her name on a royal gift card 💌",
-  "demo": "Box opens, name card",
-  "why": "Cheap upsell with big perceived value.",
-  "risk": "Manual work",
-  "scores": {
-   "E": 7,
-   "D": 7,
-   "G": 10,
-   "M": 7,
-   "P": 8,
-   "N": 8,
-   "R": 9
-  },
-  "score": 78,
-  "rank": 57,
-  "status": "idea",
-  "id": "royal-gift-box-upgrade-with-name-card"
- },
- {
-  "name": "Heated Valentine Heart Robe (red, heart pockets)",
-  "category": "Seasonal beyond Christmas",
-  "price": 79,
-  "emotions": [
-   "love",
-   "couples",
-   "gift"
-  ],
-  "hook": "My Valentine is a heated robe ❤️",
-  "demo": "Red robe with heart pockets, couple",
-  "why": "Continues robe sales in February.",
-  "risk": "Short window",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 78,
-  "rank": 58,
-  "status": "idea",
-  "id": "heated-valentine-heart-robe-red-heart-pockets"
- },
- {
-  "name": "Heated Pumpkin-Spice Robe (fall)",
-  "category": "Seasonal beyond Christmas",
-  "price": 79,
-  "emotions": [
-   "fall",
-   "identity",
-   "cozy"
-  ],
-  "hook": "Pumpkin-spice girlie, now heated 🎃",
-  "demo": "Orange knit robe, latte",
-  "why": "Fall basic-girl identity for Sept-Nov.",
-  "risk": "Seasonal",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 78,
-  "rank": 59,
-  "status": "idea",
-  "id": "heated-pumpkin-spice-robe-fall"
- },
- {
-  "name": "Heated Nurse Night-Shift Wrap",
-  "category": "Big bold concepts",
-  "price": 69,
-  "emotions": [
-   "nurses",
-   "gratitude",
-   "gift"
-  ],
-  "hook": "For the nurse who works Christmas night 🩺",
-  "demo": "Nurse after shift wraps in robe",
-  "why": "Huge, loyal audience; gratitude gifts.",
-  "risk": "Careful with claims",
-  "scores": {
-   "E": 8,
-   "D": 7,
-   "G": 8,
-   "M": 7,
-   "P": 9,
-   "N": 9,
-   "R": 8
-  },
-  "score": 78,
-  "rank": 60,
-  "status": "idea",
-  "id": "heated-nurse-night-shift-wrap"
- },
- {
-  "name": "Heated Wizard Robe with Star Hood",
-  "category": "Heated character robes",
-  "price": 85,
-  "emotions": [
-   "fantasy",
-   "nostalgia",
-   "identity"
-  ],
-  "hook": "Studying for my exams like a real wizard ✨",
-  "demo": "Long midnight-blue robe with stars, tall pointed hood",
-  "why": "Wizard-school nostalgia without names; students + adults; dark, elegant colours.",
-  "risk": "Avoid house crests and school colours",
-  "scores": {
-   "E": 8,
-   "D": 7,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 7,
-   "R": 8
-  },
-  "score": 77,
-  "rank": 61,
-  "status": "idea",
-  "id": "heated-wizard-robe-with-star-hood"
- },
- {
-  "name": "Heated Burrito Blanket (tortilla print) for Adults",
-  "category": "Novelty & funny gifts",
-  "price": 69,
-  "emotions": [
-   "humor",
-   "food",
-   "gift"
-  ],
-  "hook": "Wrapped like a burrito and heated like one 🌯",
-  "demo": "She rolls into a tortilla burrito",
-  "why": "Proven viral print, heated twist.",
-  "risk": "Already sold non-heated",
-  "scores": {
-   "E": 7,
-   "D": 9,
-   "G": 8,
-   "M": 7,
-   "P": 9,
-   "N": 6,
-   "R": 8
-  },
-  "score": 77,
-  "rank": 62,
-  "status": "idea",
-  "id": "heated-burrito-blanket-tortilla-print-for-adults"
- },
- {
-  "name": "HeatGrump Slippers Add-on",
-  "category": "Variations of our winners",
+  "name": "Pet Portrait Ornament from Photo",
+  "category": "Gifts that make people cry",
   "price": 39,
   "emotions": [
-   "humor",
-   "matching",
-   "gift"
+   "pets",
+   "Christmas",
+   "personalized"
   ],
-  "hook": "The full grumpy set 💚",
-  "demo": "Green furry slippers match the robe",
-  "why": "AOV booster on checkout.",
+  "hook": "My dog is on the Christmas tree now 🐶🎄",
+  "demo": "Hangs ornament with dog's face",
+  "why": "Pet owners + Christmas; cheap to make.",
+  "risk": "Crowded on Etsy",
+  "scores": {
+   "E": 8,
+   "D": 8,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 5,
+   "R": 9
+  },
+  "score": 78,
+  "christmas": true,
+  "rank": 86,
+  "status": "idea",
+  "id": "pet-portrait-ornament-from-photo"
+ },
+ {
+  "name": "Memory Snow Globe with Ashes/ Fur (pet)",
+  "category": "Big swings (higher risk, higher reward)",
+  "price": 79,
+  "emotions": [
+   "grief",
+   "pets",
+   "memory"
+  ],
+  "hook": "She's always with us now 🤍",
+  "demo": "Globe with tiny fur keepsake",
+  "why": "Deep emotion; careful tone.",
+  "risk": "Very sensitive",
+  "scores": {
+   "E": 9,
+   "D": 7,
+   "G": 6,
+   "M": 8,
+   "P": 7,
+   "N": 9,
+   "R": 8
+  },
+  "score": 78,
+  "christmas": true,
+  "rank": 87,
+  "status": "idea",
+  "id": "memory-snow-globe-with-ashes-fur-pet"
+ },
+ {
+  "name": "Christmas Memory Jar (write one memory each day)",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "family",
+   "memory"
+  ],
+  "hook": "We read all our memories on Christmas morning 🥹",
+  "demo": "Family reads notes from a glowing jar",
+  "why": "Emotional tradition.",
+  "risk": "Low price",
+  "scores": {
+   "E": 8,
+   "D": 7,
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 8,
+   "R": 9
+  },
+  "score": 78,
+  "christmas": true,
+  "rank": 88,
+  "status": "idea",
+  "id": "christmas-memory-jar-write-one-memory-each-day"
+ },
+ {
+  "name": "Light-Up Reindeer Antler Headband Family Pack",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "family",
+   "humor"
+  ],
+  "hook": "The whole family turned into reindeer 🦌",
+  "demo": "Family turns on glowing antlers in the dark",
+  "why": "Party fun, cheap.",
+  "risk": "Low price",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 6,
+   "R": 9
+  },
+  "score": 78,
+  "christmas": true,
+  "rank": 89,
+  "status": "idea",
+  "id": "light-up-reindeer-antler-headband-family-pack"
+ },
+ {
+  "name": "Ugly Christmas Sweater Kit (DIY with patches & lights)",
+  "category": "Christmas magic",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "creativity",
+   "party"
+  ],
+  "hook": "Made the ugliest sweater at the party 🏆",
+  "demo": "Time-lapse decorating a sweater",
+  "why": "Party content + DIY.",
+  "risk": "Sizing",
+  "scores": {
+   "E": 7,
+   "D": 8,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 7,
+   "R": 8
+  },
+  "score": 78,
+  "christmas": true,
+  "rank": 90,
+  "status": "idea",
+  "id": "ugly-christmas-sweater-kit-diy-with-patches-lights"
+ },
+ {
+  "name": "Snow Globe Water Bottle for Kids",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "cute"
+  ],
+  "hook": "Her water bottle has a snow globe inside ❄️",
+  "demo": "Shake: glitter snow swirls",
+  "why": "Cute daily use.",
+  "risk": "Leaks",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 9,
+   "M": 5,
+   "P": 9,
+   "N": 8,
+   "R": 8
+  },
+  "score": 78,
+  "christmas": true,
+  "rank": 91,
+  "status": "idea",
+  "id": "snow-globe-water-bottle-for-kids"
+ },
+ {
+  "name": "Christmas Lights Hat / Beanie that Glows",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "humor",
+   "party"
+  ],
+  "hook": "Lit up like a Christmas tree (literally) 🎄",
+  "demo": "Beanie lights in colours",
+  "why": "Party gag.",
+  "risk": "Low price",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 9,
+   "M": 5,
+   "P": 9,
+   "N": 7,
+   "R": 9
+  },
+  "score": 77,
+  "christmas": true,
+  "rank": 92,
+  "status": "idea",
+  "id": "christmas-lights-hat-beanie-that-glows"
+ },
+ {
+  "name": "Mini Waffle Maker Shaped Like a Snowflake",
+  "category": "Kitchen & food fun",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "family",
+   "fun"
+  ],
+  "hook": "Christmas morning snowflake waffles ❄️🧇",
+  "demo": "Opens maker, snowflake waffle",
+  "why": "Seasonal family breakfast content.",
+  "risk": "Low price",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 9,
+   "M": 5,
+   "P": 9,
+   "N": 7,
+   "R": 8
+  },
+  "score": 76,
+  "christmas": true,
+  "rank": 93,
+  "status": "idea",
+  "id": "mini-waffle-maker-shaped-like-a-snowflake"
+ },
+ {
+  "name": "Hot Chocolate Bomb Mould + Kit",
+  "category": "Kitchen & food fun",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "family",
+   "satisfying"
+  ],
+  "hook": "Watch it explode in the milk 🍫",
+  "demo": "Bomb drops in milk, marshmallows burst",
+  "why": "Satisfying reveal.",
+  "risk": "Food safety",
+  "scores": {
+   "E": 7,
+   "D": 10,
+   "G": 9,
+   "M": 5,
+   "P": 9,
+   "N": 4,
+   "R": 8
+  },
+  "score": 76,
+  "christmas": true,
+  "rank": 94,
+  "status": "idea",
+  "id": "hot-chocolate-bomb-mould-kit"
+ },
+ {
+  "name": "Gift-Wrap Station Wall Organizer",
+  "category": "Organization & satisfying",
+  "price": 59,
+  "emotions": [
+   "Christmas",
+   "satisfying"
+  ],
+  "hook": "Wrapping 40 presents was fun this year 🎁",
+  "demo": "Rolls on wall, cuts paper",
+  "why": "Seasonal satisfying.",
+  "risk": "Niche",
+  "scores": {
+   "E": 6,
+   "D": 9,
+   "G": 8,
+   "M": 7,
+   "P": 8,
+   "N": 8,
+   "R": 8
+  },
+  "score": 76,
+  "christmas": true,
+  "rank": 95,
+  "status": "idea",
+  "id": "gift-wrap-station-wall-organizer"
+ },
+ {
+  "name": "Christmas Bucket-List Scratch Poster for Families",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "family",
+   "anticipation"
+  ],
+  "hook": "24 Christmas things to do together",
+  "demo": "Kid scratches gold foil to reveal activity",
+  "why": "Family activity content.",
   "risk": "Low price",
   "scores": {
    "E": 7,
    "D": 8,
-   "G": 9,
-   "M": 6,
+   "G": 10,
+   "M": 5,
    "P": 9,
-   "N": 8,
-   "R": 8
+   "N": 7,
+   "R": 9
   },
-  "score": 77,
-  "rank": 63,
+  "score": 76,
+  "christmas": true,
+  "rank": 96,
   "status": "idea",
-  "id": "heatgrump-slippers-add-on"
+  "id": "christmas-bucket-list-scratch-poster-for-families"
  },
  {
-  "name": "Heated Fireplace-Print Blanket with Crackling Sound",
-  "category": "Big bold concepts",
-  "price": 79,
+  "name": "Personalised Christmas Tree Ornament with Couple's Names & Year",
+  "category": "Christmas magic",
+  "price": 39,
   "emotions": [
-   "cozy",
-   "home",
-   "sound"
+   "Christmas",
+   "couples",
+   "personalized"
   ],
-  "hook": "Fake fire, real warmth, real crackle 🔥",
-  "demo": "Blanket with fire print crackles",
-  "why": "Multi-sense demo.",
-  "risk": "Speaker part",
+  "hook": "Our first Christmas in our first home 🏡",
+  "demo": "Hangs ornament with names and year",
+  "why": "Couples milestone.",
+  "risk": "Crowded on Etsy",
   "scores": {
-   "E": 7,
+   "E": 8,
    "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 7,
-   "N": 9,
-   "R": 7
+   "G": 10,
+   "M": 5,
+   "P": 9,
+   "N": 4,
+   "R": 9
   },
-  "score": 77,
-  "rank": 64,
+  "score": 76,
+  "christmas": true,
+  "rank": 97,
   "status": "idea",
-  "id": "heated-fireplace-print-blanket-with-crackling-sound"
+  "id": "personalised-christmas-tree-ornament-with-couple-s-names-yea"
  },
  {
-  "name": "Heated Polar Bear Robe",
-  "category": "Heated character robes",
-  "price": 79,
+  "name": "Christmas Card Holder Tree (wall, lights)",
+  "category": "Christmas magic",
+  "price": 45,
   "emotions": [
-   "cute",
-   "winter",
+   "Christmas",
+   "decor",
    "family"
   ],
-  "hook": "Polar bear mode: activated 🐻‍❄️",
-  "demo": "White bear ears hood, black nose, sits by the fire",
-  "why": "Cute Christmas animal, unisex, family matching packs.",
-  "risk": "Close to generic onesies",
-  "scores": {
-   "E": 7,
-   "D": 7,
-   "G": 9,
-   "M": 8,
-   "P": 9,
-   "N": 6,
-   "R": 8
-  },
-  "score": 76,
-  "rank": 65,
-  "status": "idea",
-  "id": "heated-polar-bear-robe"
- },
- {
-  "name": "Matching Sibling Heated Ponchos",
-  "category": "Couples & family",
-  "price": 99,
-  "emotions": [
-   "kids",
-   "family",
-   "cute"
-  ],
-  "hook": "The only time my kids agreed on something 😂",
-  "demo": "Two kids in matching hooded ponchos high-five",
-  "why": "Funny parent angle, bundle.",
-  "risk": "Kids' safety specs",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 7,
-   "R": 7
-  },
-  "score": 76,
-  "rank": 66,
-  "status": "idea",
-  "id": "matching-sibling-heated-ponchos"
- },
- {
-  "name": "Heated Bear Paw Slippers",
-  "category": "Feet & hands",
-  "price": 45,
-  "emotions": [
-   "cute",
-   "cold feet",
-   "cozy"
-  ],
-  "hook": "Bear paws > cold floors 🐾",
-  "demo": "Fluffy paw slippers with claws, warm glow",
-  "why": "Cute, cheap, impulse gift.",
-  "risk": "Many similar slippers",
-  "scores": {
-   "E": 7,
-   "D": 9,
-   "G": 9,
-   "M": 6,
-   "P": 9,
-   "N": 5,
-   "R": 7
-  },
-  "score": 76,
-  "rank": 67,
-  "status": "idea",
-  "id": "heated-bear-paw-slippers"
- },
- {
-  "name": "Heated Cat Tent Igloo",
-  "category": "Pets",
-  "price": 59,
-  "emotions": [
-   "pets",
-   "cute",
-   "comfort"
-  ],
-  "hook": "My cat moved out of my bed and into her igloo 🐱",
-  "demo": "Cat walks in, curls up, thermal glow",
-  "why": "Cat videos = top engagement; owners love gifting pets.",
-  "risk": "Pet products have competitors",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 8,
-   "M": 7,
-   "P": 8,
-   "N": 6,
-   "R": 8
-  },
-  "score": 76,
-  "rank": 68,
-  "status": "idea",
-  "id": "heated-cat-tent-igloo"
- },
- {
-  "name": "Kids Astronaut Heated Sleeping Suit",
-  "category": "Kids (parents buy)",
-  "price": 59,
-  "emotions": [
-   "kids",
-   "dreams",
-   "identity"
-  ],
-  "hook": "Ready for launch... to bed 🚀",
-  "demo": "White suit, helmet hood, kid 'floats' onto bed",
-  "why": "Identity play for boys and girls.",
-  "risk": "Kids heated specs",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 7,
-   "P": 8,
-   "N": 8,
-   "R": 7
-  },
-  "score": 76,
-  "rank": 69,
-  "status": "idea",
-  "id": "kids-astronaut-heated-sleeping-suit"
- },
- {
-  "name": "Kids Snowman Heated Robe",
-  "category": "Kids (parents buy)",
-  "price": 55,
-  "emotions": [
-   "kids",
-   "Christmas",
-   "cute"
-  ],
-  "hook": "Do you want to build a... never mind, I'm the snowman ☃️",
-  "demo": "Little snowman robe, carrot nose hood",
-  "why": "Christmas cute; avoid movie references in copy.",
-  "risk": "Seasonal",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 9,
-   "M": 6,
-   "P": 9,
-   "N": 7,
-   "R": 7
-  },
-  "score": 76,
-  "rank": 70,
-  "status": "idea",
-  "id": "kids-snowman-heated-robe"
- },
- {
-  "name": "Heated Chicken-Nugget Pillow Blanket",
-  "category": "Novelty & funny gifts",
-  "price": 59,
-  "emotions": [
-   "humor",
-   "food",
-   "teens"
-  ],
-  "hook": "Nuggets keep me warm 🍗",
-  "demo": "Pulls out a heated nugget blanket from a nugget pillow",
-  "why": "Food humor for teens/college gifts.",
-  "risk": "Low price ceiling",
-  "scores": {
-   "E": 7,
-   "D": 9,
-   "G": 7,
-   "M": 6,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 76,
-  "rank": 71,
-  "status": "idea",
-  "id": "heated-chicken-nugget-pillow-blanket"
- },
- {
-  "name": "Heated Spooky Ghost Robe (Halloween)",
-  "category": "Seasonal beyond Christmas",
-  "price": 69,
-  "emotions": [
-   "Halloween",
-   "humor",
-   "cute"
-  ],
-  "hook": "Ghosting everyone but staying warm 👻",
-  "demo": "White ghost robe with eyes",
-  "why": "Halloween + warmth; cute ghost trend.",
-  "risk": "Short window",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 7,
-   "M": 7,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 76,
-  "rank": 72,
-  "status": "idea",
-  "id": "heated-spooky-ghost-robe-halloween"
- },
- {
-  "name": "Heated Igloo Pod Chair Cover",
-  "category": "Big bold concepts",
-  "price": 149,
-  "emotions": [
-   "cozy",
-   "winter",
-   "home"
-  ],
-  "hook": "My own igloo in the living room ❄️",
-  "demo": "Dome cover over chair, she peeks out",
-  "why": "Big ticket, cozy home.",
-  "risk": "Bulky",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 7,
-   "M": 9,
-   "P": 7,
-   "N": 9,
-   "R": 6
-  },
-  "score": 76,
-  "rank": 73,
-  "status": "idea",
-  "id": "heated-igloo-pod-chair-cover"
- },
- {
-  "name": "Heated Sherpa Hood Cocoon for Gamers",
-  "category": "Big bold concepts",
-  "price": 79,
-  "emotions": [
-   "gaming",
-   "identity",
-   "comfort"
-  ],
-  "hook": "8 hours of gaming. Warm the whole time 🎮",
-  "demo": "Gamer in cocoon hood, RGB light",
-  "why": "Gamer audience spends; few heated products.",
-  "risk": "Mostly male teens",
-  "scores": {
-   "E": 7,
-   "D": 7,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 8,
-   "R": 8
-  },
-  "score": 76,
-  "rank": 74,
-  "status": "idea",
-  "id": "heated-sherpa-hood-cocoon-for-gamers"
- },
- {
-  "name": "Heated Pregnancy Belly Wrap Robe",
-  "category": "Big bold concepts",
-  "price": 89,
-  "emotions": [
-   "moms-to-be",
-   "comfort",
-   "gift"
-  ],
-  "hook": "Baby shower gift that actually gets used 🤰",
-  "demo": "Pregnant woman in robe, gentle warmth",
-  "why": "Baby shower gifting; strong emotion.",
-  "risk": "Medical/safety sensitivity - keep low heat, careful claims",
-  "scores": {
-   "E": 8,
-   "D": 7,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 8,
-   "R": 5
-  },
-  "score": 76,
-  "rank": 75,
-  "status": "idea",
-  "id": "heated-pregnancy-belly-wrap-robe"
- },
- {
-  "name": "Heated Firefighter-Style Turnout Robe",
-  "category": "Big bold concepts",
-  "price": 89,
-  "emotions": [
-   "hero",
-   "identity",
-   "gift"
-  ],
-  "hook": "For the hero who comes home cold 🚒",
-  "demo": "Tan robe with reflective stripes",
-  "why": "Gift for first responders' families.",
-  "risk": "Respect uniforms",
-  "scores": {
-   "E": 7,
-   "D": 7,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 9,
-   "R": 8
-  },
-  "score": 76,
-  "rank": 76,
-  "status": "idea",
-  "id": "heated-firefighter-style-turnout-robe"
- },
- {
-  "name": "Heated Teacher Cardigan Robe (classroom cold)",
-  "category": "Big bold concepts",
-  "price": 69,
-  "emotions": [
-   "teachers",
-   "gratitude",
-   "gift"
-  ],
-  "hook": "Every teacher's classroom is freezing. Fixed 🍎",
-  "demo": "Teacher grading papers in a cozy cardigan robe",
-  "why": "Teacher-gift season (Christmas, end of year) - parents buy in groups.",
-  "risk": "Plain design needs a hook",
-  "scores": {
-   "E": 7,
-   "D": 7,
-   "G": 9,
-   "M": 7,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 76,
-  "rank": 77,
-  "status": "idea",
-  "id": "heated-teacher-cardigan-robe-classroom-cold"
- },
- {
-  "name": "Heated Bunny Robe (floppy ears)",
-  "category": "Heated character robes",
-  "price": 75,
-  "emotions": [
-   "cute",
-   "Easter",
-   "kids"
-  ],
-  "hook": "Bunny ears up = heat level up 🐰",
-  "demo": "Floppy ears hood that perk up with a pull-string",
-  "why": "Works past Christmas (Easter), cute for mom & daughter sets.",
-  "risk": "Pull-string ears add cost",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 7,
-   "M": 8,
-   "P": 8,
-   "N": 7,
-   "R": 8
-  },
-  "score": 75,
-  "rank": 78,
-  "status": "idea",
-  "id": "heated-bunny-robe-floppy-ears"
- },
- {
-  "name": "Heated Bunny Slipper with Ears that Flop",
-  "category": "Feet & hands",
-  "price": 45,
-  "emotions": [
-   "cute",
-   "kids",
-   "gift"
-  ],
-  "hook": "Every step = ears flop 😂",
-  "demo": "Ears flop on every step",
-  "why": "Motion demo + cute.",
-  "risk": "Cheap category",
-  "scores": {
-   "E": 7,
-   "D": 9,
-   "G": 8,
-   "M": 6,
-   "P": 9,
-   "N": 6,
-   "R": 7
-  },
-  "score": 75,
-  "rank": 79,
-  "status": "idea",
-  "id": "heated-bunny-slipper-with-ears-that-flop"
- },
- {
-  "name": "Heated Dog Bed Shaped Like a Sofa",
-  "category": "Pets",
-  "price": 89,
-  "emotions": [
-   "pets",
-   "home",
-   "cozy"
-  ],
-  "hook": "He has a better sofa than me now 😂",
-  "demo": "Dog climbs on a mini heated sofa",
-  "why": "Funny, high price.",
-  "risk": "Bulky shipping",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 8,
-   "P": 8,
-   "N": 6,
-   "R": 7
-  },
-  "score": 75,
-  "rank": 80,
-  "status": "idea",
-  "id": "heated-dog-bed-shaped-like-a-sofa"
- },
- {
-  "name": "Heated Lavender Neck Wrap with Steam Eye Mask",
-  "category": "Home cozy & self-care",
-  "price": 49,
-  "emotions": [
-   "self-care",
-   "relief",
-   "gift"
-  ],
-  "hook": "My neck after 9 hours at the desk vs after this 😮‍💨",
-  "demo": "Wrap on neck, she melts",
-  "why": "Self-care gift; pain relief angle.",
-  "risk": "Health claims - keep to 'comfort'",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 7,
-   "P": 9,
-   "N": 5,
-   "R": 8
-  },
-  "score": 74,
-  "rank": 81,
-  "status": "idea",
-  "id": "heated-lavender-neck-wrap-with-steam-eye-mask"
- },
- {
-  "name": "Heated Desk Footrest Cave",
-  "category": "Home cozy & self-care",
-  "price": 59,
-  "emotions": [
-   "work from home",
-   "cold feet",
-   "comfort"
-  ],
-  "hook": "WFH hack nobody told you about 🦶",
-  "demo": "Feet slide into a warm cave under the desk",
-  "why": "WFH audience, simple demo.",
+  "hook": "All our Christmas cards in one glowing tree",
+  "demo": "Cards clipped on lit wall tree",
+  "why": "Decor + family.",
   "risk": "Low emotion",
   "scores": {
    "E": 6,
-   "D": 9,
-   "G": 7,
-   "M": 7,
-   "P": 9,
-   "N": 7,
-   "R": 8
-  },
-  "score": 74,
-  "rank": 82,
-  "status": "idea",
-  "id": "heated-desk-footrest-cave"
- },
- {
-  "name": "Kids Dinosaur Heated Hoodie Blanket",
-  "category": "Kids (parents buy)",
-  "price": 49,
-  "emotions": [
-   "kids",
-   "dinosaurs",
-   "cozy"
-  ],
-  "hook": "Rawr means 'I'm warm' in dinosaur 🦖",
-  "demo": "Dino spikes hood, kid stomps",
-  "why": "Dino-loving boys = huge market.",
-  "risk": "Crowded kids market",
-  "scores": {
-   "E": 7,
-   "D": 9,
-   "G": 8,
-   "M": 6,
-   "P": 9,
-   "N": 5,
-   "R": 7
-  },
-  "score": 74,
-  "rank": 83,
-  "status": "idea",
-  "id": "kids-dinosaur-heated-hoodie-blanket"
- },
- {
-  "name": "Kids Superhero Cape Blanket (plain, no logos)",
-  "category": "Kids (parents buy)",
-  "price": 45,
-  "emotions": [
-   "kids",
-   "identity",
-   "fun"
-  ],
-  "hook": "Captain Cozy has entered the room 🦸",
-  "demo": "Kid jumps off sofa with cape",
-  "why": "Identity + play.",
-  "risk": "Must stay far from known heroes",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 6,
-   "P": 9,
-   "N": 6,
-   "R": 8
-  },
-  "score": 74,
-  "rank": 84,
-  "status": "idea",
-  "id": "kids-superhero-cape-blanket-plain-no-logos"
- },
- {
-  "name": "Heated Toast Blanket with Butter Pillow",
-  "category": "Novelty & funny gifts",
-  "price": 59,
-  "emotions": [
-   "humor",
-   "cute",
-   "food"
-  ],
-  "hook": "Me: toast. Heat level: golden 🍞",
-  "demo": "She lies under a toast blanket, butter pillow on top",
-  "why": "Cute food humour.",
-  "risk": "Novelty fades fast",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 7,
-   "M": 6,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 74,
-  "rank": 85,
-  "status": "idea",
-  "id": "heated-toast-blanket-with-butter-pillow"
- },
- {
-  "name": "Heated 'Crying in the Car' Seat Blanket",
-  "category": "Novelty & funny gifts",
-  "price": 49,
-  "emotions": [
-   "humor",
-   "relatable",
-   "car"
-  ],
-  "hook": "For the 5-minute car cry before work 🚗",
-  "demo": "Plugs into car, wraps legs",
-  "why": "Relatable humour + car heat.",
-  "risk": "Car 12V version needed",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 7,
-   "M": 6,
-   "P": 8,
-   "N": 9,
-   "R": 8
-  },
-  "score": 74,
-  "rank": 86,
-  "status": "idea",
-  "id": "heated-crying-in-the-car-seat-blanket"
- },
- {
-  "name": "Cat Ear Heated Hoodie for Cat Moms",
-  "category": "Pets",
-  "price": 69,
-  "emotions": [
-   "pets",
-   "identity",
-   "cute"
-  ],
-  "hook": "Cat mom uniform: activated 🐾",
-  "demo": "Woman with cat, both 'wearing' ears",
-  "why": "Identity for cat moms.",
-  "risk": "Simple product, easy to copy",
-  "scores": {
-   "E": 7,
-   "D": 7,
-   "G": 8,
-   "M": 7,
-   "P": 9,
-   "N": 6,
-   "R": 8
-  },
-  "score": 73,
-  "rank": 87,
-  "status": "idea",
-  "id": "cat-ear-heated-hoodie-for-cat-moms"
- },
- {
-  "name": "Heated Bath Robe Warmer Hook",
-  "category": "Home cozy & self-care",
-  "price": 59,
-  "emotions": [
-   "self-care",
-   "luxury",
-   "gift"
-  ],
-  "hook": "Hotel-level warm robe after every shower 🛁",
-  "demo": "Robe hangs on a heated hook, she wraps in warm robe",
-  "why": "Luxury self-care for women 30+.",
-  "risk": "Electric near water - safety specs",
-  "scores": {
-   "E": 7,
-   "D": 8,
-   "G": 8,
-   "M": 7,
-   "P": 7,
-   "N": 7,
-   "R": 6
-  },
-  "score": 73,
-  "rank": 88,
-  "status": "idea",
-  "id": "heated-bath-robe-warmer-hook"
- },
- {
-  "name": "Heated Pom-Pom Socks with Remote",
-  "category": "Feet & hands",
-  "price": 39,
-  "emotions": [
-   "cozy",
-   "cold feet",
-   "gift"
-  ],
-  "hook": "Cold feet club is officially closed 🧦",
-  "demo": "Socks glow warm on thermal camera",
-  "why": "Thermal camera shot = instant proof.",
-  "risk": "Heated socks are crowded",
-  "scores": {
-   "E": 6,
-   "D": 9,
-   "G": 9,
-   "M": 6,
-   "P": 9,
-   "N": 4,
-   "R": 7
-  },
-  "score": 72,
-  "rank": 89,
-  "status": "idea",
-  "id": "heated-pom-pom-socks-with-remote"
- },
- {
-  "name": "Heated Hot-Cocoa Mug Warmer Plush",
-  "category": "Home cozy & self-care",
-  "price": 39,
-  "emotions": [
-   "cozy",
-   "gift",
-   "cute"
-  ],
-  "hook": "My cocoa stays hot AND my hands stay warm ☕",
-  "demo": "Plush with a mug-shaped warmer pocket",
-  "why": "Cute stocking stuffer, upsell.",
-  "risk": "Low price",
-  "scores": {
-   "E": 6,
    "D": 8,
    "G": 9,
-   "M": 5,
-   "P": 9,
-   "N": 7,
-   "R": 9
-  },
-  "score": 72,
-  "rank": 90,
-  "status": "idea",
-  "id": "heated-hot-cocoa-mug-warmer-plush"
- },
- {
-  "name": "Heated Throw with Built-in Speaker Hood",
-  "category": "Home cozy & self-care",
-  "price": 89,
-  "emotions": [
-   "tech",
-   "teens",
-   "cozy"
-  ],
-  "hook": "Music + heat in one hood 🎧",
-  "demo": "Hood with speakers, she nods to music",
-  "why": "Teens/gamers.",
-  "risk": "Electronics complexity",
-  "scores": {
-   "E": 7,
-   "D": 7,
-   "G": 8,
-   "M": 8,
-   "P": 6,
-   "N": 8,
-   "R": 6
-  },
-  "score": 72,
-  "rank": 91,
-  "status": "idea",
-  "id": "heated-throw-with-built-in-speaker-hood"
- },
- {
-  "name": "Heated Lunar New Year Dragon Robe (red & gold)",
-  "category": "Seasonal beyond Christmas",
-  "price": 89,
-  "emotions": [
-   "culture",
-   "celebration",
-   "family"
-  ],
-  "hook": "Year of comfort 🧧",
-  "demo": "Red & gold dragon robe",
-  "why": "Asian-American audience; Jan-Feb window.",
-  "risk": "Cultural sensitivity",
-  "scores": {
-   "E": 6,
-   "D": 7,
-   "G": 7,
-   "M": 8,
-   "P": 8,
-   "N": 9,
-   "R": 8
-  },
-  "score": 72,
-  "rank": 92,
-  "status": "idea",
-  "id": "heated-lunar-new-year-dragon-robe-red-gold"
- },
- {
-  "name": "Heated Car-Seat Blanket for Kids' Pickup",
-  "category": "Outdoor & practical",
-  "price": 59,
-  "emotions": [
-   "mom",
-   "practical",
-   "winter"
-  ],
-  "hook": "School pickup at 7 am in January? Not cold anymore.",
-  "demo": "Mom in car, blanket plugs into 12V",
-  "why": "Mom winter pain point.",
-  "risk": "Car plug",
-  "scores": {
-   "E": 6,
-   "D": 8,
-   "G": 7,
-   "M": 7,
-   "P": 8,
-   "N": 7,
-   "R": 8
-  },
-  "score": 71,
-  "rank": 93,
-  "status": "idea",
-  "id": "heated-car-seat-blanket-for-kids-pickup"
- },
- {
-  "name": "Heated Graduation Cap Hoodie (college)",
-  "category": "Big bold concepts",
-  "price": 69,
-  "emotions": [
-   "students",
-   "identity",
-   "gift"
-  ],
-  "hook": "Finals week survival kit 🎓",
-  "demo": "Student studying in hoodie",
-  "why": "Students + parents gifting.",
-  "risk": "Seasonal May/Dec",
-  "scores": {
-   "E": 6,
-   "D": 7,
-   "G": 7,
-   "M": 7,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 71,
-  "rank": 94,
-  "status": "idea",
-  "id": "heated-graduation-cap-hoodie-college"
- },
- {
-  "name": "Heated Window-Seat Cushion with Fireplace Print",
-  "category": "Home cozy & self-care",
-  "price": 79,
-  "emotions": [
-   "cozy",
-   "home",
-   "self-care"
-  ],
-  "hook": "Fake fireplace, real warmth 🔥",
-  "demo": "Cushion glows, cat jumps on",
-  "why": "Cozy home aesthetic.",
-  "risk": "Home niche, medium emotion",
-  "scores": {
-   "E": 6,
-   "D": 7,
-   "G": 7,
-   "M": 7,
-   "P": 8,
-   "N": 8,
-   "R": 8
-  },
-  "score": 70,
-  "rank": 95,
-  "status": "idea",
-  "id": "heated-window-seat-cushion-with-fireplace-print"
- },
- {
-  "name": "Heat Majesty Tiara Hair Clip (free gift)",
-  "category": "Variations of our winners",
-  "price": 0,
-  "emotions": [
-   "royalty",
-   "gift"
-  ],
-  "hook": "Free tiara with every royal robe 👑",
-  "demo": "Tiara clip in box",
-  "why": "Free gift raises conversion and video content.",
-  "risk": "Cost only",
-  "scores": {
-   "E": 6,
-   "D": 7,
-   "G": 8,
-   "M": 5,
-   "P": 9,
-   "N": 7,
-   "R": 9
-  },
-  "score": 69,
-  "rank": 96,
-  "status": "idea",
-  "id": "heat-majesty-tiara-hair-clip-free-gift"
- },
- {
-  "name": "Heated Snow-Day Hooded Scarf",
-  "category": "Seasonal beyond Christmas",
-  "price": 45,
-  "emotions": [
-   "winter",
-   "cozy",
-   "gift"
-  ],
-  "hook": "Snow day essential ❄️",
-  "demo": "Hooded scarf in snowfall",
-  "why": "Cheap gift.",
-  "risk": "Crowded",
-  "scores": {
-   "E": 6,
-   "D": 7,
-   "G": 8,
    "M": 6,
    "P": 9,
-   "N": 5,
+   "N": 8,
    "R": 9
   },
-  "score": 68,
-  "rank": 97,
-  "status": "idea",
-  "id": "heated-snow-day-hooded-scarf"
- },
- {
-  "name": "Heated Pet Hoodie for Walks",
-  "category": "Pets",
-  "price": 39,
-  "emotions": [
-   "pets",
-   "winter",
-   "cute"
-  ],
-  "hook": "Winter walks without the shivers 🐕",
-  "demo": "Dog in hoodie in snow, owner zooms in",
-  "why": "Cheap add-on; winter need.",
-  "risk": "Low price",
-  "scores": {
-   "E": 6,
-   "D": 8,
-   "G": 8,
-   "M": 5,
-   "P": 8,
-   "N": 5,
-   "R": 7
-  },
-  "score": 67,
+  "score": 75,
+  "christmas": true,
   "rank": 98,
   "status": "idea",
-  "id": "heated-pet-hoodie-for-walks"
+  "id": "christmas-card-holder-tree-wall-lights"
  },
  {
-  "name": "Heated Hunting / Fishing Seat Cushion",
-  "category": "Outdoor & practical",
+  "name": "Christmas Tree Fresh-Scent Diffuser for Fake Trees",
+  "category": "Christmas magic",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "cozy",
+   "sensory"
+  ],
+  "hook": "Fake tree, real pine smell 🌲",
+  "demo": "Clips diffuser on branch, mist",
+  "why": "Fake-tree owners problem.",
+  "risk": "Low emotion",
+  "scores": {
+   "E": 6,
+   "D": 7,
+   "G": 9,
+   "M": 5,
+   "P": 9,
+   "N": 8,
+   "R": 9
+  },
+  "score": 72,
+  "christmas": true,
+  "rank": 99,
+  "status": "idea",
+  "id": "christmas-tree-fresh-scent-diffuser-for-fake-trees"
+ },
+ {
+  "name": "Christmas Ornament Storage Box with Lights",
+  "category": "Organization & satisfying",
   "price": 49,
   "emotions": [
-   "outdoors",
-   "men",
-   "practical"
+   "Christmas",
+   "organisation"
   ],
-  "hook": "Ice fishing just got comfortable 🎣",
-  "demo": "Sits on icy bucket, warm",
-  "why": "Men's gift.",
-  "risk": "Niche",
+  "hook": "Ornaments stored, zero broken",
+  "demo": "Box with compartments glows",
+  "why": "Seasonal practical.",
+  "risk": "Low emotion",
   "scores": {
    "E": 5,
    "D": 8,
-   "G": 7,
+   "G": 8,
    "M": 6,
-   "P": 8,
+   "P": 9,
    "N": 7,
-   "R": 8
+   "R": 9
   },
-  "score": 67,
-  "rank": 99,
-  "status": "idea",
-  "id": "heated-hunting-fishing-seat-cushion"
- },
- {
-  "name": "Heated Kneeling Pad for Christmas Lights Decorating",
-  "category": "Outdoor & practical",
-  "price": 39,
-  "emotions": [
-   "humor",
-   "practical"
-  ],
-  "hook": "Dad decorating the roof, heated 🎄",
-  "demo": "Dad on roof with lights",
-  "why": "Funny seasonal.",
-  "risk": "Low value",
-  "scores": {
-   "E": 5,
-   "D": 7,
-   "G": 7,
-   "M": 5,
-   "P": 8,
-   "N": 9,
-   "R": 8
-  },
-  "score": 66,
+  "score": 70,
+  "christmas": true,
   "rank": 100,
   "status": "idea",
-  "id": "heated-kneeling-pad-for-christmas-lights-decorating"
+  "id": "christmas-ornament-storage-box-with-lights"
  }
 ]

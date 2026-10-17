@@ -1,242 +1,198 @@
-"""100 invented product ideas for LIMITLESS (17 oct 2026). Scored 0-100 on our criteria (docs/09-reguli-produs.md + what sells for us:
-identity/character + warmth + gift + instant demo + one size). Output: ideas.json (for the board collection `ideas`)."""
+"""100 invented products of ANY kind (v2, 17 oct 2026) - not only heated items. Same scoring as v1:
+emotion 25% · demo in 1-3 s 20% · gift/season 15% · price & margin 15% · easy to film with AI 10% · few competitors 10% · low return risk 5%.
+Hypotheses until tested (docs/09-reguli-produs.md). Output: ideas.json -> board doc ideas/all."""
 import json, re
-W = dict(E=2.5, D=2.0, G=1.5, M=1.5, P=1.0, N=1.0, R=0.5)  # emotion, demo in 1-3 s, gift/season, price & margin, easy to film with AI, few competitors, low return risk
+W = dict(E=2.5, D=2.0, G=1.5, M=1.5, P=1.0, N=1.0, R=0.5)
 I = []
-def add(name, cat, price, emo, hook, demo, why, risk, E, D, G, M, P, N, R):
+def add(name, cat, price, emo, hook, demo, why, risk, *s):
     I.append(dict(name=name, category=cat, price=price, emotions=emo, hook=hook, demo=demo, why=why, risk=risk,
-                  scores=dict(E=E, D=D, G=G, M=M, P=P, N=N, R=R)))
+                  scores=dict(zip("EDGMPNR", s))))
 
-C1 = "Heated character robes"
-add("Heated Mermaid Tail Blanket", C1, 69, ["nostalgia", "identity", "mom & daughter"], "POV: you finally became the mermaid you always wanted to be 🧜‍♀️",
-    "Slides legs in, scales shimmer, presses the button, sighs warm", "Mermaid-tail blankets already went viral; a HEATED one barely exists. Same identity + warmth formula as our princess robe, one size, perfect Christmas gift for women 25-45 and their daughters.", "Sequins drift in AI video - use printed velvet scales", 10, 9, 9, 8, 8, 9, 9)
-add("Heated Gingerbread Robe", C1, 79, ["cute", "Christmas", "humor"], "Me after eating the whole gingerbread house 🍪",
-    "Turns around: icing trim, gumdrop buttons, cookie-brown plush", "Same proven robe body as HeatGrump with a no-IP Christmas character. Instantly readable, kids + adults, very shareable.", "Must not look like a costume - keep it cozy", 9, 9, 10, 8, 9, 8, 8)
-add("Heated Reindeer Robe with Light-up Nose", C1, 79, ["humor", "Christmas", "family"], "Dad said he's not wearing it. Dad is wearing it. 🦌",
-    "Presses nose, it glows red, antler hood goes up", "A 2-second gag (nose lights up) that stops the scroll, plus the robe we already know how to sell. Great for 'dad' humor angle.", "Light-up nose battery adds a part", 9, 10, 10, 8, 8, 8, 8)
-add("Heated Snow Queen Robe (ice blue)", C1, 89, ["identity", "royalty", "nostalgia"], "Every girl who wanted to be the ice queen is now 30 and cold 👑❄️",
-    "Ice-blue sherpa cape robe sparkles, she twirls, then cuddles in", "Princess robe formula, new palette that pairs with Heat Majesty as a 2nd variant; strong nostalgia without naming any movie.", "Stay far from any movie design (no snowflake cape copy)", 9, 8, 9, 9, 8, 7, 8)
-add("Heated Dragon Robe (spiky hood, wings)", C1, 85, ["identity", "fantasy", "humor"], "Unlocked: dragon mode. Heat level 3 🐉",
-    "Hood with spikes, wing sleeves open like wings", "Fantasy fans and gamers; wings opening is a natural hook. Men 20-35 are an untapped robe audience.", "Wings need clean pattern", 8, 9, 8, 8, 7, 8, 8)
-add("Heated Unicorn Robe", C1, 75, ["cute", "kids", "mom & daughter"], "My daughter wanted a unicorn. I wanted a heated robe. We both won 🦄",
-    "Pastel rainbow mane hood, horn, glitter cuffs", "Evergreen girl theme, matching mom/kid sizes, easy demo.", "Crowded in kids' onesies - win on 'heated'", 8, 8, 9, 8, 9, 6, 8)
-add("Heated Bear Hug Robe", C1, 79, ["comfort", "couples", "cozy"], "When he's at work but you still want a bear hug 🐻",
-    "Teddy-bear ears hood, arms of the robe 'hug' back", "Warm 'hug' feeling = strongest comfort emotion; works for women gifting themselves.", "Generic look - needs a signature detail", 8, 7, 9, 8, 9, 6, 8)
-add("Heated Yeti Robe (extra fluffy white)", C1, 85, ["humor", "winter", "identity"], "Dressed as the abominable snowman because I am abominably cold ❄️",
-    "Huge fluffy white robe, face peeks out of the hood", "Funny winter character, visually loud, a natural pair with 'monster feet' slippers.", "Long fur sheds - specify short faux fur", 8, 9, 8, 8, 8, 8, 7)
-add("Heated Polar Bear Robe", C1, 79, ["cute", "winter", "family"], "Polar bear mode: activated 🐻‍❄️",
-    "White bear ears hood, black nose, sits by the fire", "Cute Christmas animal, unisex, family matching packs.", "Close to generic onesies", 7, 7, 9, 8, 9, 6, 8)
-add("Heated Nutcracker Soldier Robe", C1, 85, ["Christmas", "nostalgia", "humor"], "Guarding the couch all winter 🎖️",
-    "Red jacket robe with gold buttons, tall black hat hood", "Classic Christmas icon with no IP, very photogenic, stands out from fluffy robes.", "Hat shape must be soft, not stiff", 8, 8, 10, 8, 8, 9, 7)
-add("Heated Elf Robe with Pointy Ears Hood", C1, 75, ["Christmas", "humor", "family"], "Santa's least productive elf reporting for nap duty 🧝",
-    "Green robe, striped cuffs, ears flop on the hood", "Family matching Christmas pyjama culture + heat; funny for office parties.", "Seasonal only", 8, 8, 10, 8, 9, 7, 8)
-add("Heated Wizard Robe with Star Hood", C1, 85, ["fantasy", "nostalgia", "identity"], "Studying for my exams like a real wizard ✨",
-    "Long midnight-blue robe with stars, tall pointed hood", "Wizard-school nostalgia without names; students + adults; dark, elegant colours.", "Avoid house crests and school colours", 8, 7, 8, 8, 8, 7, 8)
-add("Heated Fairy Robe with Wing Cape", C1, 85, ["identity", "cute", "girls"], "Fairy godmother era begins tonight 🧚",
-    "Pastel robe, sheer wing-shaped cape opens", "Princess-adjacent identity for women, 'cottage core' trend.", "Sheer fabric must stay cozy", 8, 8, 8, 8, 7, 7, 8)
-add("Heated Mrs. Claus Robe", C1, 85, ["Christmas", "mom", "nostalgia"], "Mrs. Claus does NOT do cold mornings ❤️",
-    "Red velvet robe, white fur trim, little apron bow", "Christmas identity for moms and grandmas; elegant, gift-able, no IP.", "Seasonal; could look like costume", 8, 8, 10, 8, 9, 8, 8)
-add("Heated Santa Robe for Dads", C1, 85, ["humor", "dad", "Christmas"], "Dad finally found a Santa suit he'll actually wear 🎅",
-    "Big red robe, white trim, black belt, hat hood", "Dad gift angle (hard to shop for), pairs with Mrs. Claus as couples set.", "Sizing for men - offer XL", 8, 8, 10, 8, 9, 7, 7)
-add("Heated Cat Robe with Ears & Tail", C1, 75, ["cute", "pets", "identity"], "When your cat judges you, so you become the cat 🐱",
-    "Ears hood, little tail swings when she walks", "Cat lovers are a huge emotional audience; tail swing = demo.", "Tail must be short (tripping)", 8, 8, 8, 8, 9, 7, 8)
-add("Heated Bunny Robe (floppy ears)", C1, 75, ["cute", "Easter", "kids"], "Bunny ears up = heat level up 🐰",
-    "Floppy ears hood that perk up with a pull-string", "Works past Christmas (Easter), cute for mom & daughter sets.", "Pull-string ears add cost", 7, 8, 7, 8, 8, 7, 8)
-add("Heated Penguin Robe", C1, 75, ["cute", "winter", "humor"], "Waddling to the kitchen at 2 am like 🐧",
-    "Black and white robe, orange beak hood, waddle walk", "Cute winter animal + funny waddle demo, unisex.", "Similar to onesies", 7, 9, 9, 8, 9, 6, 8)
-add("Heated Monster Robe (furry, big eyes)", C1, 79, ["humor", "kids", "family"], "Feed me cookies or nobody gets warm 👹",
-    "Bright furry robe, big googly eyes on the hood", "Funny 'monster' character that kids love, no IP.", "Avoid looking like known puppets", 7, 9, 8, 8, 8, 7, 8)
-add("Heated Sloth Robe (slow, lazy, warm)", C1, 75, ["humor", "self-care", "identity"], "Productivity level: sloth. Warmth level: maximum 🦥",
-    "Brown fluffy robe, sloth face hood, slow-motion walk", "Lazy-day humor resonates with tired moms and students.", "Niche look", 7, 8, 8, 8, 9, 8, 8)
+K = "Home & cozy"
+add("Fireplace Projector Lantern", K, 49, ["cozy", "Christmas", "home"], "My apartment has no fireplace. Now it does 🔥", "Turns it on, a crackling fire appears on the wall", "Renters can't have fireplaces; instant cozy transformation, Christmas gift.", "Projector quality must look real", 9, 10, 9, 7, 8, 7, 8)
+add("Snow Globe Night Light with Your Photo Inside", K, 59, ["nostalgia", "personalized", "gift"], "Our family photo, inside a snow globe that snows 🥹", "Shake it - snow falls around the family photo, light glows", "Personalized Christmas keepsake, tears on unboxing.", "Personalisation logistics", 10, 10, 10, 8, 8, 8, 8)
+add("Floating Moon Lamp (magnetic levitation)", K, 69, ["wonder", "decor", "gift"], "It floats. It glows. It spins. 🌕", "Moon levitates and slowly rotates above the base", "Magic effect stops the scroll; teens and couples.", "Exists already - win with design", 8, 10, 8, 8, 8, 5, 8)
+add("Book Nook Shelf Insert (tiny lit alley)", K, 59, ["book lovers", "wonder", "decor"], "There's a tiny magical street hidden in my bookshelf ✨", "Slides between books, lights reveal a miniature alley", "BookTok community, cozy aesthetic, DIY kit or finished.", "Must be pre-assembled for easy gifting", 9, 9, 9, 8, 8, 7, 8)
+add("Sunset Lamp with Rotating Golden Hour", K, 39, ["mood", "selfies", "cozy"], "Golden hour every night at 9 pm 🌅", "Room turns sunset orange, she takes a selfie", "Proven TikTok category; add timer + colours.", "Crowded", 7, 10, 7, 6, 9, 4, 9)
+add("Rain-Cloud Humidifier that Drips on a Plant", K, 49, ["calm", "wonder", "decor"], "A tiny rain cloud waters my plant 🌧️", "Cloud drips water drops slowly onto a plant pot", "Mesmerising loop video, calming sound.", "Water mess if badly made", 8, 10, 8, 7, 8, 7, 7)
+add("Smart Cozy Corner Kit (lights + throw + candles)", K, 79, ["cozy", "self-care", "gift"], "From sad corner to cozy corner in 60 seconds", "Before/after time-lapse of a corner", "Bundle with high perceived value, transformation demo.", "Many parts", 8, 9, 8, 8, 8, 8, 8)
+add("Glow-in-the-Dark Star Ceiling Projector for Adults", K, 45, ["calm", "sleep", "wonder"], "Falling asleep under the galaxy every night 🌌", "Lights off, ceiling becomes the Milky Way", "Sleep/relax angle.", "Common category", 7, 10, 7, 6, 9, 4, 8)
+add("Self-Stirring Cocoa Mug with Marshmallow Lid", K, 39, ["cozy", "fun", "gift"], "My cocoa stirs itself now ☕", "Press button, whirlpool in mug", "Fun stocking gift.", "Low price", 6, 10, 8, 5, 9, 6, 8)
+add("Personalised Family Christmas Doormat that Lights Up", K, 59, ["family", "Christmas", "personalized"], "Our family name lights up when guests arrive 🎄", "Step on mat, LED border glows", "Personalised + light-up demo.", "Outdoor electronics", 7, 9, 9, 7, 8, 9, 7)
 
-C2 = "Couples & family"
-add("Heated Couple Hoodie Blanket (two hoods)", C2, 89, ["couples", "humor", "togetherness"], "Stop stealing the blanket. Now we share ONE 🫶",
-    "Two heads pop out of one giant heated hoodie", "Couples gift, funny in 1 second, high price, one size fits two.", "Large item, higher shipping", 9, 10, 9, 9, 7, 8, 8)
-add("Matching Mom & Me Heated Robe Set", C2, 119, ["mom & daughter", "family", "gift"], "Twinning with my mini, both toasty 💕",
-    "Mom and kid in identical robes, both press the button", "Bundle raises AOV; mom/kid content gets huge emotional reach.", "Kids' heated items need extra safety specs", 9, 8, 10, 9, 7, 7, 7)
-add("Heated Family Movie Night Mega Blanket", C2, 129, ["family", "togetherness", "Christmas"], "Family of 5. One blanket. Zero complaints 🍿",
-    "Whole family under one huge heated blanket on the sofa", "Christmas-morning family moment, big ticket.", "Bulky, lower novelty", 8, 8, 9, 9, 8, 6, 8)
-add("His & Hers Heated Robes (grumpy + royal)", C2, 159, ["couples", "humor", "gift"], "He's the grump. I'm the princess. We're both warm.",
-    "Couple side by side in HeatGrump + Heat Majesty", "Cross-sell our two robes as a couples bundle - no new product needed.", "Shipping two units", 8, 8, 10, 9, 10, 9, 8)
-add("Heated Matching Christmas Pajama Robe for Dogs & Owners", C2, 99, ["pets", "family", "cute"], "Me and my dog, matching and toasty 🐶",
-    "Owner and dog in matching plaid robes", "Pet-owner matching is a huge Christmas trend; adds a pet SKU.", "Pet sizes add complexity", 9, 8, 9, 8, 7, 7, 7)
-add("Heated Long-Distance Hug Pillow (two pillows, touch to warm)", C2, 99, ["love", "distance", "emotion"], "He touches his pillow in Texas. Mine warms up in Ohio 🥹",
-    "She hugs pillow, it glows and warms; cut to him across the country", "Very strong emotion; tech gift for couples. Needs an app - harder to source.", "Electronics + app = supplier risk", 10, 8, 9, 9, 5, 9, 5)
-add("Heated Grandma Shawl with Embroidered Names", C2, 69, ["grandma", "personalized", "gift"], "Grandma cried when she saw all our names on it 🥹",
-    "Grandma opens box, names of grandkids embroidered, she wraps it on", "Personalisation + grandma tears = viral emotion; high perceived value.", "Personalisation slows production", 10, 8, 10, 8, 7, 8, 8)
-add("Matching Sibling Heated Ponchos", C2, 99, ["kids", "family", "cute"], "The only time my kids agreed on something 😂",
-    "Two kids in matching hooded ponchos high-five", "Funny parent angle, bundle.", "Kids' safety specs", 7, 8, 8, 8, 8, 7, 7)
+K = "Gifts that make people cry"
+add("Audio Photo Frame (press to hear their voice)", K, 59, ["love", "memory", "gift"], "I can still hear my grandpa say goodnight 🥹", "Presses frame, a recorded voice plays", "Grief/memory gifts are the most emotional category; huge shares.", "Sensitive topic - handle respectfully", 10, 9, 10, 8, 8, 8, 8)
+add("Heartbeat Recording Teddy Bear", K, 49, ["love", "pregnancy", "memory"], "My baby's heartbeat inside a teddy 🤍", "Squeezes bear, a heartbeat plays", "Pregnancy & memorial gifts, extreme emotion.", "Kids toy safety", 10, 9, 9, 7, 8, 7, 8)
+add("Star Map of the Night You Met (lit frame)", K, 69, ["love", "couples", "personalized"], "The exact sky on the night we met ✨", "Frame lights up showing the stars on that date", "Couples gift with story.", "Personalisation", 9, 8, 10, 8, 8, 6, 9)
+add("Letters-to-Open-When Box", K, 45, ["love", "distance", "gift"], "Open when you miss me 💌", "Opens wooden box full of labelled envelopes", "Long-distance couples, graduation gifts.", "Low tech, easy to copy", 8, 8, 9, 7, 9, 7, 9)
+add("Hand-Holding Sculpture from Your Couple Photo", K, 89, ["love", "couples", "luxury"], "They turned our hands into a sculpture 😭", "Reveals a resin/clay sculpture of two hands", "High price emotional keepsake.", "Production complexity", 9, 8, 9, 9, 6, 9, 8)
+add("Grandparent Story Journal with QR Voice Notes", K, 49, ["family", "memory", "grandparents"], "Grandma's stories, saved forever 📖", "Scans QR in journal, hears grandma's voice", "Memory keeping for families.", "Needs app/host", 9, 7, 9, 7, 7, 8, 8)
+add("Pet Portrait Ornament from Photo", K, 39, ["pets", "Christmas", "personalized"], "My dog is on the Christmas tree now 🐶🎄", "Hangs ornament with dog's face", "Pet owners + Christmas; cheap to make.", "Crowded on Etsy", 8, 8, 10, 6, 9, 5, 9)
+add("Custom 'Our Song' Vinyl Plaque (spinning)", K, 59, ["love", "music", "couples"], "Our wedding song, framed and spinning 💿", "Vinyl spins, QR plays the song", "Couples & anniversaries.", "Music licensing - QR to Spotify only", 8, 8, 9, 7, 8, 7, 9)
 
-C3 = "Feet & hands"
-add("Heated Monster Feet Slipper Boots", C3, 49, ["humor", "cold feet", "gift"], "My wife's feet were ice cold. Were. 👹",
-    "Huge fluffy monster paws stomp, she plugs in and wiggles toes", "Cold-feet complaint is universal; funny visual; cheap gift.", "Sizing returns - one-size boot", 9, 10, 9, 7, 8, 8, 7)
-add("Heated Bear Paw Slippers", C3, 45, ["cute", "cold feet", "cozy"], "Bear paws > cold floors 🐾",
-    "Fluffy paw slippers with claws, warm glow", "Cute, cheap, impulse gift.", "Many similar slippers", 7, 9, 9, 6, 9, 5, 7)
-add("Heated Foot Pocket Blanket (sofa footwarmer bag)", C3, 59, ["cold feet", "self-care", "cozy"], "Put your feet in the warm pocket. Thank me later.",
-    "Feet slide into a fluffy heated pocket at the end of the sofa", "Clear problem-solution demo, women 30+.", "Lower emotion", 7, 9, 8, 7, 9, 7, 8)
-add("Heated Mitten for Two (couples hand-holding mitten)", C3, 39, ["couples", "romance", "winter"], "Holding hands in -10°C. One mitten. Heated. 🫶",
-    "Couple walks, hands joined inside one heated mitten", "Romantic winter walk gift, funny + sweet in 1 second.", "Low price - needs bundle", 9, 10, 9, 6, 8, 8, 9)
-add("Heated Hand-Warmer Muff (Victorian style)", C3, 49, ["elegance", "winter", "nostalgia"], "Main character energy, warm hands edition ❄️",
-    "She slides hands into a fluffy round muff, steam breath", "Elegant 'old money' winter look, royal line add-on.", "Small niche", 7, 8, 8, 7, 8, 9, 9)
-add("Heated Pom-Pom Socks with Remote", C3, 39, ["cozy", "cold feet", "gift"], "Cold feet club is officially closed 🧦",
-    "Socks glow warm on thermal camera", "Thermal camera shot = instant proof.", "Heated socks are crowded", 6, 9, 9, 6, 9, 4, 7)
-add("Heated Bunny Slipper with Ears that Flop", C3, 45, ["cute", "kids", "gift"], "Every step = ears flop 😂",
-    "Ears flop on every step", "Motion demo + cute.", "Cheap category", 7, 9, 8, 6, 9, 6, 7)
+K = "Kids (parents buy)"
+add("Talking Plush that Reads the Kid's Name", K, 49, ["kids", "personalized", "wonder"], "His face when the bear said his name 😭", "Kid hugs plush, it says the kid's name", "Personalised toy reactions go viral.", "Electronics + kids safety", 9, 9, 9, 7, 8, 8, 7)
+add("Kids' Magic Drawing Board with Projector", K, 45, ["kids", "creativity", "screen-free"], "Screen-free and he's been drawing for an hour", "Projects animal, kid traces it", "Screen-free parent angle.", "Common", 7, 9, 8, 6, 9, 5, 8)
+add("Tooth-Fairy Door with Tiny Glowing Footprints", K, 39, ["kids", "magic", "parents"], "The tooth fairy left footprints 😱✨", "Morning: tiny glowing footprints lead to the door", "Magic moments parents film.", "Low price", 9, 9, 7, 5, 9, 9, 9)
+add("Santa Key + Magic Snow Footprint Stencil Kit", K, 39, ["Christmas", "kids", "magic"], "Santa's boots left snow in our living room 🎅", "Morning reveal of snowy boot prints by the tree", "Christmas morning magic content.", "Seasonal", 9, 9, 10, 5, 9, 8, 9)
+add("Bedtime Story Projector Torch", K, 39, ["kids", "bedtime", "cozy"], "Bedtime stories on the ceiling", "Torch projects story slides on wall", "Parents bedtime pain point.", "Cheap category", 7, 9, 8, 5, 9, 5, 8)
+add("Kids' Ride-On Suitcase Shaped like an Animal", K, 79, ["kids", "travel", "fun"], "Airport meltdowns: solved 🧳", "Kid rides suitcase through airport", "Travel parents; strong demo.", "Bulky shipping", 7, 9, 7, 8, 8, 6, 7)
+add("Growth-Chart Wall Sticker that Lights at Night", K, 45, ["kids", "memory", "decor"], "Watching her grow, one glowing line at a time", "Night: glowing growth chart", "Memory + decor.", "Niche", 7, 7, 7, 6, 9, 9, 9)
 
-C4 = "Pets"
-add("Heated Pet Robe Matching Our Robes", C4, 49, ["pets", "cute", "family"], "My dog in a tiny heated robe. I can't. 🐶",
-    "Small dog trots in a mini green/royal robe", "Extends HeatGrump/Heat Majesty; pet content gets massive reach.", "Pet heating must be low-temp", 9, 9, 9, 7, 8, 7, 7)
-add("Heated Cat Tent Igloo", C4, 59, ["pets", "cute", "comfort"], "My cat moved out of my bed and into her igloo 🐱",
-    "Cat walks in, curls up, thermal glow", "Cat videos = top engagement; owners love gifting pets.", "Pet products have competitors", 8, 8, 8, 7, 8, 6, 8)
-add("Heated Dog Bed Shaped Like a Sofa", C4, 89, ["pets", "home", "cozy"], "He has a better sofa than me now 😂",
-    "Dog climbs on a mini heated sofa", "Funny, high price.", "Bulky shipping", 7, 8, 8, 8, 8, 6, 7)
-add("Heated Pet Hoodie for Walks", C4, 39, ["pets", "winter", "cute"], "Winter walks without the shivers 🐕",
-    "Dog in hoodie in snow, owner zooms in", "Cheap add-on; winter need.", "Low price", 6, 8, 8, 5, 8, 5, 7)
-add("Cat Ear Heated Hoodie for Cat Moms", C4, 69, ["pets", "identity", "cute"], "Cat mom uniform: activated 🐾",
-    "Woman with cat, both 'wearing' ears", "Identity for cat moms.", "Simple product, easy to copy", 7, 7, 8, 7, 9, 6, 8)
+K = "Pets"
+add("Cat Window Hammock with Bird Feeder View", K, 49, ["pets", "cute", "entertainment"], "Cat TV is now on 24/7 📺🐱", "Cat lies in window hammock watching birds", "Cat videos = huge engagement.", "Suction quality", 8, 9, 7, 7, 8, 6, 7)
+add("Dog Birthday Cake Mix + Party Kit", K, 39, ["pets", "celebration", "cute"], "His 5th birthday was better than mine 🎂🐶", "Dog wearing party hat eats cake", "Pet parents celebrate; content goldmine.", "Food regs", 8, 8, 8, 5, 8, 7, 8)
+add("Interactive Laser Feather Toy that Hides", K, 39, ["pets", "fun"], "My cat hasn't been this active in years 😂", "Feather pops out of holes randomly, cat pounces", "Proven pet toy demand.", "Crowded", 7, 10, 7, 5, 9, 4, 8)
+add("Pet Memorial Paw-Print Glow Stone", K, 49, ["pets", "grief", "memory"], "Her paw print glows every night 🐾", "Stone glows with paw print", "Very emotional niche.", "Sensitive", 9, 8, 7, 7, 8, 8, 9)
+add("Dog Car Seat Booster with Window View", K, 69, ["pets", "travel", "safety"], "He finally sees out the window 🐕", "Dog sits in booster, head out", "Small dog owners.", "Safety claims", 7, 9, 7, 7, 8, 6, 8)
+add("Automatic Ball Launcher for Dogs", K, 89, ["pets", "fun", "practical"], "He plays fetch with himself now 🎾", "Dog drops ball, machine launches it", "Busy owners; viral demo.", "Existing brands", 8, 10, 7, 8, 8, 5, 7)
 
-C5 = "Home cozy & self-care"
-add("Heated Weighted Hug Plush (giant)", C5, 69, ["comfort", "anxiety relief", "self-care"], "When you need a hug but everyone's busy 🤍",
-    "She hugs a giant plush, it warms her", "Comfort + anxiety niche, strong emotion, women & teens.", "Weighted + heat = heavier shipping", 9, 8, 8, 8, 8, 7, 8)
-add("Heated Reading Nook Cape with Book Pocket", C5, 79, ["self-care", "book lovers", "identity"], "BookTok, but make it warm 📚",
-    "Cape wraps, book slides into a front pocket", "BookTok community is huge and gifts a lot.", "Pocket design detail", 8, 8, 8, 8, 8, 9, 8)
-add("Heated Lavender Neck Wrap with Steam Eye Mask", C5, 49, ["self-care", "relief", "gift"], "My neck after 9 hours at the desk vs after this 😮‍💨",
-    "Wrap on neck, she melts", "Self-care gift; pain relief angle.", "Health claims - keep to 'comfort'", 7, 8, 8, 7, 9, 5, 8)
-add("Heated Desk Footrest Cave", C5, 59, ["work from home", "cold feet", "comfort"], "WFH hack nobody told you about 🦶",
-    "Feet slide into a warm cave under the desk", "WFH audience, simple demo.", "Low emotion", 6, 9, 7, 7, 9, 7, 8)
-add("Heated Sofa Throw That Looks Like a Giant Cookie", C5, 69, ["humor", "Christmas", "cozy"], "I'm wrapped in a giant cookie. Life is good 🍪",
-    "Round cookie blanket, she rolls up in it", "Funny visual, gift; round blankets went viral before.", "Heating in round shape", 8, 9, 9, 8, 9, 7, 8)
-add("Heated Pizza Blanket (round, slices pattern)", C5, 69, ["humor", "food", "teens"], "Me as a pizza burrito at 2 am 🍕",
-    "Rolls into a pizza burrito", "Food-humor is a proven viral blanket theme; heated is new.", "Food designs feel kid-ish", 8, 9, 8, 8, 9, 7, 8)
-add("Heated Wearable Sleeping Bag Onesie for Adults", C5, 99, ["comfort", "winter", "camping"], "My heating bill vs me in this 😎",
-    "Zips into a full sleeping-bag suit, walks around", "Heating-bill savings angle is very strong in US winter.", "Bulky, sizing", 7, 8, 8, 9, 8, 7, 7)
-add("Heated Hot-Cocoa Mug Warmer Plush", C5, 39, ["cozy", "gift", "cute"], "My cocoa stays hot AND my hands stay warm ☕",
-    "Plush with a mug-shaped warmer pocket", "Cute stocking stuffer, upsell.", "Low price", 6, 8, 9, 5, 9, 7, 9)
-add("Heated Window-Seat Cushion with Fireplace Print", C5, 79, ["cozy", "home", "self-care"], "Fake fireplace, real warmth 🔥",
-    "Cushion glows, cat jumps on", "Cozy home aesthetic.", "Home niche, medium emotion", 6, 7, 7, 7, 8, 8, 8)
-add("Heated Bath Robe Warmer Hook", C5, 59, ["self-care", "luxury", "gift"], "Hotel-level warm robe after every shower 🛁",
-    "Robe hangs on a heated hook, she wraps in warm robe", "Luxury self-care for women 30+.", "Electric near water - safety specs", 7, 8, 8, 7, 7, 7, 6)
-add("Heated Throw with Built-in Speaker Hood", C5, 89, ["tech", "teens", "cozy"], "Music + heat in one hood 🎧",
-    "Hood with speakers, she nods to music", "Teens/gamers.", "Electronics complexity", 7, 7, 8, 8, 6, 8, 6)
+K = "Beauty & self-care"
+add("LED Mirror with Hollywood Bulbs (foldable)", K, 69, ["glam", "identity", "self-care"], "Main character makeup lighting ✨", "Unfolds, bulbs light up", "Women 18-35; aesthetic transformation.", "Fragile shipping", 7, 9, 8, 8, 8, 5, 7)
+add("Ice Roller Face Mask Set in Gift Box", K, 39, ["self-care", "glow", "gift"], "Puffy face to fresh in 2 minutes", "Rolls ice roller, before/after", "Self-care gift.", "Claims must be cosmetic only", 6, 9, 8, 5, 9, 4, 9)
+add("Scalp Massager Head Spa Kit", K, 49, ["relax", "ASMR", "self-care"], "Head spa at home - the ASMR is unreal 😮‍💨", "Massager on scalp with ASMR sound", "Head-spa trend is huge.", "Many sellers", 7, 9, 7, 7, 8, 5, 9)
+add("Personalised Silk Pillowcase with Initials", K, 49, ["luxury", "self-care", "personalized"], "Silk pillowcase, my initials, my hair thanks me", "Embroidery close-up, hair flip", "Gift with personal touch.", "Silk quality", 7, 7, 9, 7, 9, 6, 9)
+add("Nail-Polish Organizer Wheel (rotating, lit)", K, 49, ["organisation", "beauty", "satisfying"], "My 120 polishes finally have a home 💅", "Spins rotating wheel with lights", "Satisfying organisation content.", "Niche", 6, 9, 7, 7, 8, 8, 8)
+add("At-Home Gel Nail Printer Kit", K, 129, ["beauty", "tech", "wow"], "It PRINTED a design on my nail 😱", "Finger in, design appears", "Wow demo, high price.", "Tech sourcing quality", 8, 10, 8, 9, 6, 7, 6)
 
-C6 = "Kids (parents buy)"
-add("Heated Bedtime Story Dragon Plush (glows + warms)", C6, 49, ["kids", "bedtime", "comfort"], "The only plush that keeps my toddler in bed 🐉",
-    "Plush glows soft, kid hugs and falls asleep", "Parents pay for better sleep; gift.", "Kids' heated items - USB low heat + certification", 8, 8, 9, 7, 8, 7, 6)
-add("Kids Princess Cape with Light-up Crown Hood", C6, 49, ["kids", "identity", "princess"], "She hasn't taken it off in 3 days 👑",
-    "Girl twirls, crown lights up", "Little-princess identity; pairs with Heat Majesty.", "Kids sizing", 8, 9, 9, 7, 8, 7, 7)
-add("Kids Dinosaur Heated Hoodie Blanket", C6, 49, ["kids", "dinosaurs", "cozy"], "Rawr means 'I'm warm' in dinosaur 🦖",
-    "Dino spikes hood, kid stomps", "Dino-loving boys = huge market.", "Crowded kids market", 7, 9, 8, 6, 9, 5, 7)
-add("Kids Astronaut Heated Sleeping Suit", C6, 59, ["kids", "dreams", "identity"], "Ready for launch... to bed 🚀",
-    "White suit, helmet hood, kid 'floats' onto bed", "Identity play for boys and girls.", "Kids heated specs", 7, 8, 8, 7, 8, 8, 7)
-add("Kids Superhero Cape Blanket (plain, no logos)", C6, 45, ["kids", "identity", "fun"], "Captain Cozy has entered the room 🦸",
-    "Kid jumps off sofa with cape", "Identity + play.", "Must stay far from known heroes", 7, 8, 8, 6, 9, 6, 8)
-add("Kids Snowman Heated Robe", C6, 55, ["kids", "Christmas", "cute"], "Do you want to build a... never mind, I'm the snowman ☃️",
-    "Little snowman robe, carrot nose hood", "Christmas cute; avoid movie references in copy.", "Seasonal", 7, 8, 9, 6, 9, 7, 7)
+K = "Kitchen & food fun"
+add("Mini Waffle Maker Shaped Like a Snowflake", K, 39, ["Christmas", "family", "fun"], "Christmas morning snowflake waffles ❄️🧇", "Opens maker, snowflake waffle", "Seasonal family breakfast content.", "Low price", 7, 9, 9, 5, 9, 7, 8)
+add("Hot Chocolate Bomb Mould + Kit", K, 39, ["Christmas", "family", "satisfying"], "Watch it explode in the milk 🍫", "Bomb drops in milk, marshmallows burst", "Satisfying reveal.", "Food safety", 7, 10, 9, 5, 9, 4, 8)
+add("Personalised Cutting Board with Grandma's Recipe", K, 69, ["family", "memory", "personalized"], "Grandma's handwriting, engraved forever 🥹", "Engraved handwritten recipe close-up", "Memory + kitchen; tears.", "Personalisation", 10, 8, 10, 8, 8, 8, 9)
+add("Pancake Art Bottle Kit with Stencils", K, 39, ["family", "fun", "kids"], "Dad made a dinosaur pancake 🦕", "Squeezes batter into dino shape", "Dad + kids content.", "Cheap", 7, 9, 7, 5, 9, 7, 9)
+add("Cotton-Candy Machine (retro cart)", K, 59, ["nostalgia", "kids", "party"], "Carnival vibes at home 🎪", "Pink cloud spins onto stick", "Party nostalgia.", "Exists", 8, 10, 8, 7, 8, 5, 7)
+add("Smart Spice Rack that Lights the Spice You Need", K, 89, ["organisation", "tech", "satisfying"], "It tells me which spice to grab 🌶️", "Recipe on app, jar lights up", "Satisfying tech.", "App needed", 6, 9, 6, 8, 6, 9, 7)
 
-C7 = "Novelty & funny gifts"
-add("Heated 'Do Not Disturb' Hood (closes over face)", C7, 59, ["humor", "introvert", "self-care"], "Introvert mode: ON 🙈",
-    "Hood zips down into a mask with 'Do not disturb'", "Introvert humor has massive reach.", "Text on product - ok if ours", 8, 9, 8, 7, 9, 9, 8)
-add("Heated Burrito Blanket (tortilla print) for Adults", C7, 69, ["humor", "food", "gift"], "Wrapped like a burrito and heated like one 🌯",
-    "She rolls into a tortilla burrito", "Proven viral print, heated twist.", "Already sold non-heated", 7, 9, 8, 7, 9, 6, 8)
-add("Heated Shark Sleeping Bag Blanket", C7, 69, ["humor", "identity", "teens"], "Being eaten by a shark never felt this warm 🦈",
-    "Sits inside shark mouth blanket", "Shark blankets are proven virals; heated version new.", "Copycats", 8, 9, 8, 7, 9, 6, 8)
-add("Heated Hot-Dog Sleeping Bag", C7, 79, ["humor", "food", "family"], "I'm the hot dog now 🌭",
-    "Lies in a bun-shaped bag, mustard pillow", "Absurd humor = shares.", "Big & silly", 8, 9, 7, 7, 8, 8, 7)
-add("Heated Chicken-Nugget Pillow Blanket", C7, 59, ["humor", "food", "teens"], "Nuggets keep me warm 🍗",
-    "Pulls out a heated nugget blanket from a nugget pillow", "Food humor for teens/college gifts.", "Low price ceiling", 7, 9, 7, 6, 9, 8, 8)
-add("Heated Toast Blanket with Butter Pillow", C7, 59, ["humor", "cute", "food"], "Me: toast. Heat level: golden 🍞",
-    "She lies under a toast blanket, butter pillow on top", "Cute food humour.", "Novelty fades fast", 7, 8, 7, 6, 9, 8, 8)
-add("Heated Grumpy Old Man Cardigan Robe", C7, 79, ["humor", "dad", "grandpa"], "Grandpa approved: 'finally something useful' 👴",
-    "Grandpa in plaid cardigan robe, pipe-shaped controller", "Hard-to-shop-for men; funny.", "Older audience buys less online", 7, 7, 9, 8, 9, 8, 8)
-add("Heated 'Crying in the Car' Seat Blanket", C7, 49, ["humor", "relatable", "car"], "For the 5-minute car cry before work 🚗",
-    "Plugs into car, wraps legs", "Relatable humour + car heat.", "Car 12V version needed", 7, 8, 7, 6, 8, 9, 8)
+K = "Fitness & wellness"
+add("Under-Desk Walking Pad (foldable)", K, 199, ["productivity", "health", "identity"], "10,000 steps while answering emails", "Walking at desk, folds away", "WFH health; high ticket.", "Shipping heavy", 7, 9, 6, 9, 8, 4, 6)
+add("Smart Jump Rope with Step Counter Handle", K, 39, ["fitness", "fun"], "Counted 500 jumps for me", "Handle display counting", "Cheap fitness gift.", "Crowded", 5, 9, 6, 5, 9, 4, 9)
+add("Posture Corrector that Vibrates", K, 49, ["health", "confidence"], "My posture after 2 weeks", "Vibrates when slouching", "Problem-solution.", "Health claims risk", 6, 9, 5, 7, 8, 4, 7)
+add("Weighted Hula Hoop with Counter", K, 45, ["fitness", "fun", "women"], "Lost my excuses, not my hula hoop", "Smart hoop spinning around waist", "Women fitness trend.", "Crowded", 6, 10, 6, 6, 9, 4, 8)
+add("Mini Sauna Blanket", K, 149, ["self-care", "luxury", "wellness"], "Spa day in my living room", "Lies in blanket, sweats, glows", "Wellness trend; high price.", "Health claims", 7, 8, 7, 9, 8, 5, 6)
+add("Massage Gun Shaped like a Cute Animal", K, 59, ["self-care", "cute", "gift"], "The cutest massage gun ever 🐻", "Bear-shaped gun massaging shoulders", "Cute twist on proven product.", "Design needed", 7, 9, 8, 7, 8, 8, 8)
 
-C8 = "Elegant & luxe"
-add("Heated Faux-Fur Winter Cape (old money)", C8, 129, ["elegance", "identity", "luxury"], "Old money winter, but heated 🤍",
-    "She walks in a creamy faux-fur cape, cut to warm glow", "Aspirational, high price, women 30-55.", "Higher quality expectations", 8, 8, 8, 10, 8, 8, 7)
-add("Heated Velvet Lounge Robe with Gold Initial", C8, 99, ["luxury", "personalized", "gift"], "Personalized + heated = best gift I ever gave 💛",
-    "Gold initial embroidery close-up, she wraps on", "Personalization raises value and gift appeal.", "Personalization logistics", 8, 8, 10, 9, 8, 7, 8)
-add("Heated Bridal 'Getting Ready' Robe", C8, 89, ["wedding", "identity", "gift"], "Winter bride, zero goosebumps 👰",
-    "Bride in white heated robe, bridesmaids too", "Wedding market buys in groups (bridesmaids).", "Seasonal winter weddings", 8, 7, 8, 9, 8, 9, 8)
-add("Heated Cashmere-Feel Travel Wrap", C8, 89, ["travel", "elegance", "comfort"], "Freezing planes are no longer my problem ✈️",
-    "Wrap on plane with power bank", "Travel pain point + elegance.", "Battery rules on planes", 7, 8, 8, 9, 8, 7, 7)
-add("Heated Royal Cape for Little & Big Princess (set)", C8, 129, ["royalty", "mom & daughter", "gift"], "Queen and princess of the house 👑👑",
-    "Mom and daughter capes, crowns", "Extends Heat Majesty; bundle.", "Kids specs", 9, 8, 10, 9, 8, 8, 7)
+K = "Car & travel"
+add("Car Seat Gap Organizer with Light", K, 39, ["practical", "satisfying"], "No more phone in the abyss 🚗", "Phone drops - caught by organizer", "Universal pain point.", "Low price", 6, 10, 6, 5, 9, 5, 9)
+add("Galaxy Car Roof Star Projector", K, 49, ["vibes", "couples", "car"], "My car at night now 🌌", "Car ceiling becomes starry sky", "Car aesthetic trend.", "Common", 7, 10, 7, 6, 9, 5, 8)
+add("Travel Neck Pillow that Turns into a Hood Cocoon", K, 59, ["travel", "comfort", "funny"], "Sleeping on a plane in my own cocoon ✈️", "Pillow unfolds into hood", "Travel discomfort.", "Bulky", 6, 9, 7, 7, 8, 7, 8)
+add("Kids' Car Tray with Tablet Holder", K, 39, ["parents", "travel", "practical"], "Road trip without 'are we there yet' 🚙", "Snaps tray onto seat, kid plays", "Parents road trip.", "Common", 6, 9, 6, 5, 9, 5, 9)
+add("Personalised Luggage Cover with Pet Face", K, 49, ["travel", "pets", "funny"], "Spotted my suitcase in 0.2 seconds 🐶", "Baggage claim: suitcase with giant dog face", "Funny + practical + personalised.", "Sizing", 8, 9, 8, 6, 9, 8, 8)
 
-C9 = "Outdoor & practical"
-add("Heated Stadium Poncho (game day)", C9, 79, ["sports", "dad", "winter"], "Football in December, warm in December 🏈",
-    "Fan in stands, poncho glows on thermal", "Huge US sports culture; dads/moms at kids' games.", "Team logos = IP, keep colors only", 8, 8, 9, 8, 8, 7, 8)
-add("Heated Car-Seat Blanket for Kids' Pickup", C9, 59, ["mom", "practical", "winter"], "School pickup at 7 am in January? Not cold anymore.",
-    "Mom in car, blanket plugs into 12V", "Mom winter pain point.", "Car plug", 6, 8, 7, 7, 8, 7, 8)
-add("Heated Hunting / Fishing Seat Cushion", C9, 49, ["outdoors", "men", "practical"], "Ice fishing just got comfortable 🎣",
-    "Sits on icy bucket, warm", "Men's gift.", "Niche", 5, 8, 7, 6, 8, 7, 8)
-add("Heated Dog-Walk Hooded Cape for Owners", C9, 79, ["pets", "winter", "practical"], "6 am dog walks in January, solved 🐕",
-    "Owner and dog walking at dawn in snow", "Daily pain point for dog owners.", "Mid emotion", 7, 8, 8, 8, 8, 8, 8)
-add("Heated Kneeling Pad for Christmas Lights Decorating", C9, 39, ["humor", "practical"], "Dad decorating the roof, heated 🎄",
-    "Dad on roof with lights", "Funny seasonal.", "Low value", 5, 7, 7, 5, 8, 9, 8)
+K = "Tech & gadgets"
+add("Phone Case with Built-in Mirror & Ring Light", K, 39, ["selfie", "beauty"], "Perfect selfie lighting anywhere", "Case flips open, ring lights up", "Selfie culture.", "Fit per phone model", 6, 9, 6, 5, 8, 6, 6)
+add("Retro Game Console Shaped like a TV (400 games)", K, 79, ["nostalgia", "family", "gift"], "My dad played for 3 hours straight 😂", "Plugs into TV, retro games light up", "Nostalgia for 30-50 y/o + family.", "IP on games - only original/licensed", 9, 9, 9, 8, 7, 5, 6)
+add("Instant Print Camera for Kids", K, 59, ["kids", "creativity", "memory"], "She prints her own memories now 📸", "Takes photo, thermal print slides out", "Creative kids gift.", "Common", 8, 10, 9, 7, 8, 5, 8)
+add("Smart Plant Pot with Emotions (shows face)", K, 69, ["cute", "plants", "tech"], "My plant tells me when it's thirsty 🥺", "Screen face goes sad, waters, face smiles", "Cute + useful; plant lovers.", "Electronics quality", 9, 10, 8, 8, 7, 8, 7)
+add("Bluetooth Beanie with Built-in Headphones", K, 39, ["winter", "music", "practical"], "Music without freezing ears 🎧", "Pulls beanie on, music plays", "Winter gift.", "Crowded", 5, 8, 8, 5, 9, 4, 9)
+add("Desk Pet Robot that Reacts to Your Mood", K, 99, ["cute", "companion", "tech"], "My desk buddy gets sad when I leave 🥺", "Robot reacts with eyes and sounds", "Companion tech trend.", "Tech sourcing", 9, 9, 8, 9, 6, 8, 6)
 
-C10 = "Variations of our winners"
-add("HeatGrump Kids Size", C10, 69, ["kids", "family", "humor"], "Little grump, big attitude 💚",
-    "Kid in mini grumpy robe frowning", "Direct variation of a product that already sells; family bundles.", "Kids heated specs", 9, 9, 10, 8, 10, 8, 7)
-add("Heat Majesty Second Design (ice / rose / mermaid)", C10, 99, ["royalty", "identity", "choice"], "Which princess are you? Pick your robe 👑",
-    "Grid of designs, she picks one", "Choice of designs increases conversion and repeat orders.", "More SKUs", 9, 8, 10, 9, 9, 8, 8)
-add("HeatGrump Couples Set (Mr. & Mrs. Grump)", C10, 149, ["couples", "humor", "gift"], "Mr. & Mrs. Grump do Christmas together 💚❤️",
-    "Couple in two grumpy robes on sofa", "Bundle on a proven product.", "Shipping", 8, 8, 10, 9, 10, 8, 8)
-add("HeatGrump Slippers Add-on", C10, 39, ["humor", "matching", "gift"], "The full grumpy set 💚",
-    "Green furry slippers match the robe", "AOV booster on checkout.", "Low price", 7, 8, 9, 6, 9, 8, 8)
-add("Heat Majesty Tiara Hair Clip (free gift)", C10, 0, ["royalty", "gift"], "Free tiara with every royal robe 👑",
-    "Tiara clip in box", "Free gift raises conversion and video content.", "Cost only", 6, 7, 8, 5, 9, 7, 9)
-add("Royal Gift Box Upgrade with Name Card", C10, 15, ["gift", "personalized"], "Her name on a royal gift card 💌",
-    "Box opens, name card", "Cheap upsell with big perceived value.", "Manual work", 7, 7, 10, 7, 8, 8, 9)
-add("Heated Robe + Power Bank Cordless Bundle", C10, 129, ["freedom", "practical"], "No cable. Warm anywhere.",
-    "Walks around house, no cord", "Cordless use is a top request in heated wearables.", "Battery shipping", 7, 8, 9, 9, 9, 6, 7)
+K = "Fashion & accessories"
+add("Necklace with Hidden Photo Projection", K, 49, ["love", "memory", "jewellery"], "Look inside the stone 🥹", "Light through stone shows a photo", "Hidden-photo jewellery is emotional.", "Common on ads", 9, 9, 10, 7, 9, 5, 9)
+add("Birth-Flower Personalized Jewellery Box", K, 59, ["personalized", "mom", "gift"], "Every kid's birth flower on mom's box 💐", "Opens box: engraved flowers + names", "Mom gift.", "Personalisation", 8, 8, 10, 7, 8, 7, 9)
+add("Matching Mom & Daughter Bracelets that Glow", K, 45, ["mom & daughter", "love"], "When one glows, the other glows 💗", "Taps bracelet, both light", "Emotional pair.", "Tech", 9, 9, 9, 6, 8, 8, 8)
+add("Convertible Backpack-Purse with Charging", K, 69, ["practical", "style"], "One bag, three looks", "Bag converts in 3 moves", "Transformation demo.", "Crowded", 6, 9, 7, 7, 8, 5, 8)
+add("Light-Up Ugly Christmas Sweater (custom face)", K, 59, ["Christmas", "humor", "party"], "My face on a light-up ugly sweater 😂", "Sweater lights up showing your face", "Ugly-sweater parties are huge.", "Sizing", 9, 10, 10, 7, 8, 8, 6)
 
-C11 = "Seasonal beyond Christmas"
-add("Heated Valentine Heart Robe (red, heart pockets)", C11, 79, ["love", "couples", "gift"], "My Valentine is a heated robe ❤️",
-    "Red robe with heart pockets, couple", "Continues robe sales in February.", "Short window", 7, 8, 8, 8, 9, 8, 8)
-add("Heated Pumpkin-Spice Robe (fall)", C11, 79, ["fall", "identity", "cozy"], "Pumpkin-spice girlie, now heated 🎃",
-    "Orange knit robe, latte", "Fall basic-girl identity for Sept-Nov.", "Seasonal", 7, 8, 8, 8, 9, 8, 8)
-add("Heated Spooky Ghost Robe (Halloween)", C11, 69, ["Halloween", "humor", "cute"], "Ghosting everyone but staying warm 👻",
-    "White ghost robe with eyes", "Halloween + warmth; cute ghost trend.", "Short window", 7, 8, 7, 7, 9, 8, 8)
-add("Heated Snow-Day Hooded Scarf", C11, 45, ["winter", "cozy", "gift"], "Snow day essential ❄️",
-    "Hooded scarf in snowfall", "Cheap gift.", "Crowded", 6, 7, 8, 6, 9, 5, 9)
-add("Heated Lunar New Year Dragon Robe (red & gold)", C11, 89, ["culture", "celebration", "family"], "Year of comfort 🧧",
-    "Red & gold dragon robe", "Asian-American audience; Jan-Feb window.", "Cultural sensitivity", 6, 7, 7, 8, 8, 9, 8)
+K = "Organization & satisfying"
+add("Rotating Makeup Tower with Lights", K, 69, ["organisation", "satisfying"], "From chaos to this ✨", "Before/after vanity", "Satisfying transformation.", "Common", 6, 9, 7, 7, 8, 5, 8)
+add("Fridge Organizer Set that Looks Like a Store", K, 59, ["satisfying", "home"], "My fridge looks like a store now", "Restock video ASMR", "Restock trend.", "Crowded", 7, 9, 6, 7, 8, 5, 9)
+add("Christmas Ornament Storage Box with Lights", K, 49, ["Christmas", "organisation"], "Ornaments stored, zero broken", "Box with compartments glows", "Seasonal practical.", "Low emotion", 5, 8, 8, 6, 9, 7, 9)
+add("Gift-Wrap Station Wall Organizer", K, 59, ["Christmas", "satisfying"], "Wrapping 40 presents was fun this year 🎁", "Rolls on wall, cuts paper", "Seasonal satisfying.", "Niche", 6, 9, 8, 7, 8, 8, 8)
+add("Sock & Underwear Drawer Cube Organizers", K, 39, ["satisfying"], "Folded like a store", "Satisfying folding", "Cheap.", "Low price", 4, 8, 5, 5, 9, 4, 9)
 
-C12 = "Big bold concepts"
-add("Heated Hooded Throne Blanket (crown-shaped back)", C12, 99, ["royalty", "humor", "identity"], "Sitting on my throne like the queen I am 👑",
-    "Blanket stands up like a throne back on the sofa", "Royal identity on the sofa; unique silhouette.", "Structure inside blanket", 8, 8, 8, 9, 7, 9, 7)
-add("Heated Igloo Pod Chair Cover", C12, 149, ["cozy", "winter", "home"], "My own igloo in the living room ❄️",
-    "Dome cover over chair, she peeks out", "Big ticket, cozy home.", "Bulky", 7, 8, 7, 9, 7, 9, 6)
-add("Heated Wearable Christmas Tree Cape (with lights)", C12, 99, ["Christmas", "humor", "party"], "I AM the Christmas tree this year 🎄",
-    "Cape with LED lights turns on", "Ugly-sweater-party winner; light-up demo.", "LEDs + heat = more parts", 9, 10, 10, 8, 7, 9, 6)
-add("Heated Fireplace-Print Blanket with Crackling Sound", C12, 79, ["cozy", "home", "sound"], "Fake fire, real warmth, real crackle 🔥",
-    "Blanket with fire print crackles", "Multi-sense demo.", "Speaker part", 7, 8, 8, 8, 7, 9, 7)
-add("Heated 'Hug Me' Robe with Arms That Wrap (long sleeves hug)", C12, 89, ["comfort", "lonely", "emotion"], "Self-hug, but heated 🤍",
-    "Extra-long sleeves wrap around her", "Strong comfort emotion for singles/ lonely winter.", "Design must be cute not sad", 9, 8, 8, 8, 8, 9, 8)
-add("Heated Sherpa Hood Cocoon for Gamers", C12, 79, ["gaming", "identity", "comfort"], "8 hours of gaming. Warm the whole time 🎮",
-    "Gamer in cocoon hood, RGB light", "Gamer audience spends; few heated products.", "Mostly male teens", 7, 7, 8, 8, 8, 8, 8)
-add("Heated Pregnancy Belly Wrap Robe", C12, 89, ["moms-to-be", "comfort", "gift"], "Baby shower gift that actually gets used 🤰",
-    "Pregnant woman in robe, gentle warmth", "Baby shower gifting; strong emotion.", "Medical/safety sensitivity - keep low heat, careful claims", 8, 7, 8, 8, 8, 8, 5)
-add("Heated Graduation Cap Hoodie (college)", C12, 69, ["students", "identity", "gift"], "Finals week survival kit 🎓",
-    "Student studying in hoodie", "Students + parents gifting.", "Seasonal May/Dec", 6, 7, 7, 7, 9, 8, 8)
-add("Heated Firefighter-Style Turnout Robe", C12, 89, ["hero", "identity", "gift"], "For the hero who comes home cold 🚒",
-    "Tan robe with reflective stripes", "Gift for first responders' families.", "Respect uniforms", 7, 7, 8, 8, 8, 9, 8)
-add("Heated Nurse Night-Shift Wrap", C12, 69, ["nurses", "gratitude", "gift"], "For the nurse who works Christmas night 🩺",
-    "Nurse after shift wraps in robe", "Huge, loyal audience; gratitude gifts.", "Careful with claims", 8, 7, 8, 7, 9, 9, 8)
+K = "Funny & viral gifts"
+add("Screaming Goat Desk Toy (stress button)", K, 39, ["humor", "office"], "Press when your boss emails 🐐", "Presses goat, it screams", "Office humour shares.", "Low price", 8, 10, 8, 5, 9, 6, 9)
+add("Toilet Golf / Bathroom Mini Games Set", K, 39, ["humor", "dad"], "Dad's new favourite game 😂", "Dad putting on toilet mini green", "Gag gift for dads.", "Low price", 7, 9, 8, 5, 9, 6, 9)
+add("Personalised Face Socks (your face on them)", K, 39, ["humor", "personalized"], "I gave everyone socks with my face 😂", "Opens gift: socks with giver's face", "Gag gift viral loop.", "Low price", 8, 9, 9, 5, 9, 4, 9)
+add("Fake Snow Machine for the Window", K, 79, ["Christmas", "wonder", "kids"], "It's snowing... inside 😳❄️", "Machine blows snow outside window", "Christmas wonder.", "Mess", 9, 10, 9, 7, 8, 8, 7)
+add("Santa Hidden Camera Ornament (fake) + Certificate", K, 39, ["Christmas", "kids", "humor"], "Santa is watching... literally 🎅📷", "Ornament with red light; kid behaves", "Parent hack content.", "Ethics: decor only", 8, 9, 9, 5, 9, 8, 9)
+add("Wine Glass that Holds a Whole Bottle", K, 39, ["humor", "women", "gift"], "Me after the kids go to bed 🍷", "Pours whole bottle into glass", "Mom humour.", "Alcohol content limits on ads", 7, 10, 8, 5, 9, 5, 9)
 
-add("Heated Teacher Cardigan Robe (classroom cold)", C12, 69, ["teachers", "gratitude", "gift"], "Every teacher's classroom is freezing. Fixed 🍎",
-    "Teacher grading papers in a cozy cardigan robe", "Teacher-gift season (Christmas, end of year) - parents buy in groups.", "Plain design needs a hook", 7, 7, 9, 7, 9, 8, 8)
-add("Heated Bigfoot Robe (hairy, huge)", C1, 85, ["humor", "identity", "men"], "Bigfoot sightings at my house went up this winter 👣",
-    "Huge hairy brown robe walking in the snow at dusk", "Absurd humour + men audience, links to 'monster feet'.", "Long fur shedding", 8, 9, 8, 8, 8, 9, 7)
-add("Heated Swan Princess Robe (white & feather trim)", C1, 89, ["royalty", "elegance", "identity"], "Ballet girl at heart, cold girl in reality 🦢",
-    "White robe with feather-like trim, ballet twirl", "Ballet/swan identity for women; elegant royal line variant.", "Feathers must be faux fur", 8, 8, 8, 9, 8, 9, 8)
+K = "Outdoor & garden"
+add("Solar Fairy-Light Garden Mushrooms", K, 39, ["magic", "garden", "cozy"], "My garden turned into a fairytale 🍄✨", "Dusk: mushrooms glow", "Cottage-core aesthetic.", "Common", 7, 9, 6, 5, 9, 5, 9)
+add("Bird Feeder with Camera (AI identifies birds)", K, 149, ["wonder", "nature", "gift"], "It tells me which bird is visiting 🐦", "App notification + bird close-up", "Huge trend with retirees & parents.", "Tech sourcing", 9, 9, 9, 9, 6, 6, 7)
+add("Giant Inflatable Snowman with Projector Face", K, 99, ["Christmas", "kids", "fun"], "Our snowman talks to the neighbours 😂", "Projector face sings on inflatable", "Christmas yard competition.", "Bulky", 8, 10, 9, 8, 7, 8, 7)
+add("Smart Fire Pit with Color Flames", K, 129, ["cozy", "friends", "wow"], "Rainbow flames for movie night 🔥", "Flames change colour", "Wow demo; high price.", "Safety", 8, 10, 7, 9, 7, 7, 6)
+add("Hammock Chair Pod for the Bedroom", K, 79, ["cozy", "teens", "aesthetic"], "My reading spot is a cloud ☁️", "Swings in pod with fairy lights", "Teen room aesthetic.", "Installation", 7, 9, 7, 8, 8, 6, 7)
 
-assert len(I) == 100, len(I)
+K = "Seasonal & celebrations"
+add("Advent Calendar of Mini Self-Care Gifts", K, 59, ["Christmas", "self-care", "anticipation"], "24 days of tiny treats for me 🎁", "Opens a door each day", "Daily-reveal content series.", "Must ship before December", 8, 9, 10, 7, 8, 5, 8)
+add("Advent Calendar for Dogs", K, 45, ["pets", "Christmas", "cute"], "His face opening door #1 🐶", "Dog noses a door open", "Pet + advent.", "Pet food regs", 8, 9, 10, 6, 8, 6, 8)
+add("Elf-on-a-Shelf Style Mischief Kit (our own character)", K, 39, ["Christmas", "kids", "magic"], "Our elf made snow angels in flour 😂", "Morning reveal scenes", "Daily content for parents; our own character, no IP.", "Must be our character", 9, 9, 10, 5, 8, 6, 9)
+add("Personalised Christmas Eve Box", K, 45, ["Christmas", "family", "tradition"], "Christmas Eve box with her name 🎄", "Opens box: pyjamas, cocoa, book", "Tradition gift.", "Assembly", 8, 8, 10, 7, 8, 6, 8)
+add("Light-Up Birthday Sash & Crown Set (40+)", K, 39, ["celebration", "humor"], "Turning 40 like royalty 👑", "Crown lights up at party", "Milestone birthdays.", "Low price", 6, 9, 7, 5, 9, 7, 9)
+
+K = "Big swings (higher risk, higher reward)"
+add("Mini Indoor Snow Machine Globe (walk-in photo booth)", K, 299, ["wonder", "events", "Christmas"], "We built a snow globe in our living room 😳", "Family inside a giant inflatable globe with falling snow", "Ultra-shareable; parties.", "Bulky, high price", 9, 10, 8, 9, 6, 9, 5)
+add("Smart Mirror that Shows Weather & Compliments You", K, 149, ["confidence", "tech", "fun"], "My mirror hypes me up every morning 🥹", "Mirror text: 'You look great today'", "Feel-good tech.", "Tech", 8, 9, 7, 9, 6, 9, 6)
+add("Personalised Storybook Starring Your Kid & Pet", K, 49, ["kids", "personalized", "pets"], "My son and our dog are the heroes 📚", "Flips book: kid & dog illustrated", "Personalised book market proven; add pet.", "Illustration pipeline", 9, 8, 10, 7, 8, 6, 9)
+add("Memory Snow Globe with Ashes/ Fur (pet)", K, 79, ["grief", "pets", "memory"], "She's always with us now 🤍", "Globe with tiny fur keepsake", "Deep emotion; careful tone.", "Very sensitive", 9, 7, 6, 8, 7, 9, 8)
+add("AI Bedtime Plush that Tells New Stories", K, 99, ["kids", "tech", "bedtime"], "A new story every night, in mom's voice", "Plush talks in mom's cloned voice", "Strong emotion + tech.", "Privacy & tech complexity", 9, 8, 9, 9, 5, 9, 5)
+add("Couples Bracelets that Vibrate When the Other Taps", K, 79, ["love", "distance", "tech"], "He tapped his bracelet in Texas. I felt it in Ohio 🥹", "Tap -> partner's bracelet glows & buzzes", "Long-distance emotion.", "Tech + app", 10, 9, 9, 8, 6, 7, 6)
+add("Life-Size Cardboard Cutout from Your Photo", K, 69, ["humor", "personalized"], "Sent my husband to his own party 😂", "Reveal of life-size cutout", "Gag gift, parties.", "Shipping size", 8, 9, 8, 7, 9, 6, 8)
+
+K = "Christmas magic"
+add("Santa's Magic Key + Light-Up Front Door Lock", K, 45, ["Christmas", "kids", "magic"], "No chimney? Santa uses the magic key 🗝️🎅", "Key glows when hung on the door on Christmas Eve", "Answers the #1 kid question (no chimney); morning reveal content.", "Low price - bundle with letter", 9, 9, 10, 6, 9, 8, 9)
+add("Personalised Video Message Ornament (plays a video)", K, 79, ["Christmas", "family", "memory"], "Grandma's message plays every time we open it 🥹🎄", "Opens ornament: tiny screen plays a family video", "Christmas + memory + tech wow; very emotional.", "Electronics quality", 10, 9, 10, 8, 7, 9, 7)
+add("Snowing Christmas Tree Topper (blows real-looking snow)", K, 69, ["Christmas", "wonder", "family"], "Our tree is SNOWING ❄️🎄", "Topper starts, soft snow falls around the tree", "Wow moment for families; nobody owns it yet.", "Mess / snow material safety", 9, 10, 10, 8, 8, 9, 7)
+add("Santa Footprint & Sleigh-Track Christmas Morning Kit", K, 39, ["Christmas", "kids", "magic"], "Santa's sleigh landed in our yard 😱", "Morning: sleigh tracks in snow + glitter", "Christmas morning proof videos are huge.", "Low price", 9, 9, 10, 5, 9, 8, 9)
+add("Personalised 'Letter from Santa' Kit with Wax Seal & North Pole Stamp", K, 39, ["Christmas", "kids", "personalized"], "She got a real letter from the North Pole ✉️", "Kid opens wax-sealed letter with her name", "Classic tradition, premium version.", "Low price", 9, 8, 10, 5, 9, 6, 9)
+add("Gingerbread House Kit that Lights Up from Inside", K, 49, ["Christmas", "family", "cozy"], "Our gingerbread house glows at night 🏠✨", "Lights switch on inside the finished house", "Family activity + cozy decor.", "Food + electronics", 8, 9, 10, 6, 9, 8, 8)
+add("Musical Rotating Christmas Village with Snow", K, 89, ["Christmas", "nostalgia", "decor"], "Grandma's Christmas village, but it snows now ❄️", "Train circles the village, snow falls, music plays", "Nostalgia for 35-65; high price.", "Fragile", 9, 10, 10, 8, 8, 7, 7)
+add("Family Matching Christmas Pyjamas with Names", K, 99, ["Christmas", "family", "personalized"], "The whole family, matching, names on the back 🎄", "Family walks down the stairs in matching PJs", "Christmas photo tradition; group purchase = high AOV.", "Sizing returns", 9, 9, 10, 8, 9, 5, 6)
+add("Christmas Eve 'Reindeer Food' Glitter Kit (eco)", K, 39, ["Christmas", "kids", "tradition"], "Sprinkle it on the lawn so the reindeer find us 🦌", "Kid sprinkles glittery oats on snow", "Tradition content; eco glitter.", "Low price", 8, 9, 10, 5, 9, 7, 9)
+add("Santa Cam Doorbell Overlay (catch Santa on camera)", K, 45, ["Christmas", "kids", "magic"], "We caught Santa on our camera 🎅📹", "Kid watches video of Santa in their living room", "Proven 'catch Santa' videos go viral every year.", "Digital product - deliver well", 10, 9, 10, 6, 9, 6, 9)
+add("Christmas Tree Collar that Plays Music & Lights Up", K, 79, ["Christmas", "decor", "wow"], "Our tree has a light show now 🎶", "Lights pulse to music at the tree base", "Decor upgrade.", "Electronics", 7, 9, 10, 8, 8, 8, 7)
+add("Countdown-to-Christmas Wooden Advent House (refillable)", K, 69, ["Christmas", "family", "tradition"], "24 tiny doors, filled with love 🎁", "Kid opens a lit door each morning", "Reusable heirloom; daily content.", "Bulky", 8, 9, 10, 8, 8, 6, 8)
+add("Ugly Christmas Sweater for Dog & Owner Matching Set", K, 59, ["Christmas", "pets", "humor"], "Matching ugly sweaters with my dog 🐶🎄", "Owner and dog strike a pose", "Pets + Christmas humour.", "Sizing", 9, 9, 10, 7, 9, 6, 7)
+add("Christmas Window Projector (Santa flying past)", K, 59, ["Christmas", "kids", "wonder"], "Santa just flew past our window 😱", "Projector shows Santa silhouette crossing the window", "Neighbourhood wow.", "Projector quality", 9, 10, 10, 7, 8, 7, 8)
+add("Hot-Cocoa Station Kit (bar sign, toppings jars, mugs)", K, 69, ["Christmas", "cozy", "family"], "We set up a cocoa bar for Christmas Eve ☕", "Reveal of a styled cocoa station", "Hosting trend.", "Many parts", 8, 8, 10, 8, 8, 7, 8)
+add("Personalised Christmas Stocking with Light-Up Name", K, 45, ["Christmas", "family", "personalized"], "Our names glow on the fireplace 🎄", "Lights off: names glow on stockings", "Family personalised decor.", "Personalisation", 8, 9, 10, 6, 9, 7, 8)
+add("Christmas Memory Jar (write one memory each day)", K, 39, ["Christmas", "family", "memory"], "We read all our memories on Christmas morning 🥹", "Family reads notes from a glowing jar", "Emotional tradition.", "Low price", 8, 7, 10, 5, 9, 8, 9)
+add("Snowball Fight Indoor Kit (soft snowballs + fort)", K, 45, ["Christmas", "family", "fun"], "Snowball fight in the living room ⛄", "Family throws soft snowballs, laughing", "Fun family content.", "Low novelty", 8, 9, 9, 6, 9, 7, 9)
+add("Santa's Nice List Certificate + Gold Medal Box", K, 39, ["Christmas", "kids", "pride"], "He made the NICE list 🏅", "Kid opens box with medal & certificate", "Pride moment for kids.", "Low price", 9, 8, 10, 5, 9, 8, 9)
+add("Christmas Tree Skirt with Kids' Handprints (DIY kit)", K, 49, ["Christmas", "family", "memory"], "Every year, a new handprint 🎄🖐️", "Kids press painted hands on tree skirt", "Heirloom tradition.", "Mess", 8, 8, 10, 6, 9, 8, 9)
+add("Nativity-Free Winter Wonderland Light Tunnel (garden)", K, 129, ["Christmas", "wonder", "family"], "We walked through a tunnel of light 😍", "Family walks through a glowing arch tunnel", "Big-ticket outdoor wow.", "Outdoor install", 8, 10, 10, 9, 7, 8, 6)
+
+K = "Christmas magic"
+add("Talking Santa Phone Call Ornament (kid presses, Santa answers)", K, 49, ["Christmas", "kids", "magic"], "She called Santa and he ANSWERED 😭", "Kid presses ornament, Santa's voice says her name", "Personalised voice + Christmas = tears.", "Voice recording workflow", 10, 9, 10, 7, 8, 8, 8)
+add("Christmas Countdown Clock (days until Christmas, snow display)", K, 49, ["Christmas", "anticipation", "decor"], "Only 12 more sleeps ❄️", "Clock flips to the new number, snow animation", "Daily anticipation, decor gift.", "Seasonal", 7, 9, 10, 6, 9, 8, 9)
+add("Santa Sack Personalised with Velvet & Name", K, 45, ["Christmas", "kids", "personalized"], "Santa left a sack with her name on it 🎅", "Christmas morning: huge velvet sack by the tree", "Gift-wrapping alternative, tradition.", "Low price", 8, 8, 10, 6, 9, 6, 9)
+add("Christmas Tree Ornament Advent (24 ornaments, one per day)", K, 59, ["Christmas", "family", "tradition"], "A new ornament every day until Christmas 🎄", "Kid hangs one ornament per day", "Daily ritual + keepsakes.", "Fragile", 8, 8, 10, 7, 8, 7, 8)
+add("Light-Up Reindeer Antler Headband Family Pack", K, 39, ["Christmas", "family", "humor"], "The whole family turned into reindeer 🦌", "Family turns on glowing antlers in the dark", "Party fun, cheap.", "Low price", 7, 9, 10, 5, 9, 6, 9)
+add("Christmas Morning Photo Backdrop Kit (balloon arch + sign)", K, 69, ["Christmas", "family", "memories"], "Our Christmas photos look professional now 📸", "Time-lapse building backdrop, family photo", "Photo culture.", "Many parts", 7, 9, 10, 7, 8, 7, 8)
+add("Cozy Christmas Movie Night Box (pjs, cocoa, popcorn, socks)", K, 79, ["Christmas", "cozy", "gift"], "The best Christmas Eve box ever 🍿🎄", "Opens box layer by layer", "Unboxing + cozy; high AOV.", "Assembly", 8, 8, 10, 8, 8, 6, 8)
+add("Elf Door with Light-Up Window & Tiny Mailbox", K, 39, ["Christmas", "kids", "magic"], "An elf moved into our wall 😱", "Tiny door glows, mailbox has a note", "Magic for kids.", "Low price", 9, 9, 10, 5, 9, 7, 9)
+add("Christmas Tree Angel that Moves Its Wings", K, 59, ["Christmas", "decor", "wonder"], "Our angel waves her wings at midnight 👼", "Topper wings slowly flap, lights glow", "Decor with motion.", "Mechanics", 7, 10, 10, 7, 8, 9, 7)
+add("Personalised Baby's First Christmas Ornament with Footprint", K, 39, ["Christmas", "baby", "memory"], "Her first Christmas, her tiny footprint 🥹", "Ornament with clay footprint and name", "New parents are a huge gift market.", "Low price", 9, 8, 10, 5, 9, 6, 9)
+add("Christmas Lights Hat / Beanie that Glows", K, 39, ["Christmas", "humor", "party"], "Lit up like a Christmas tree (literally) 🎄", "Beanie lights in colours", "Party gag.", "Low price", 7, 9, 9, 5, 9, 7, 9)
+add("Santa's Workshop Desk Kit for Kids (stamp, letters, list)", K, 49, ["Christmas", "kids", "creativity"], "My son runs Santa's workshop now 🎅", "Kid stamps 'APPROVED' on nice list", "Role-play gift.", "Medium novelty", 8, 8, 10, 6, 9, 8, 9)
+add("Christmas Train that Runs Around the Tree with Smoke", K, 89, ["Christmas", "nostalgia", "family"], "Dad's childhood train, back under our tree 🚂", "Train circles the tree, puffs smoke", "Nostalgia for dads; high price.", "Existing category", 9, 10, 10, 8, 8, 5, 7)
+add("Personalised Christmas Cookie Cutter of Your Pet", K, 39, ["Christmas", "pets", "personalized"], "Cookies shaped like our dog 🐶🍪", "Cuts dough, dog-shaped cookie", "Pets + baking + Christmas.", "Low price", 8, 9, 10, 5, 9, 9, 9)
+add("Christmas Wreath with Hidden Speaker that Says Welcome", K, 69, ["Christmas", "humor", "home"], "Our wreath greets every guest 😂", "Guest arrives, wreath says hello", "Funny + decor.", "Electronics outdoor", 7, 9, 9, 7, 8, 9, 7)
+add("Ugly Christmas Sweater Kit (DIY with patches & lights)", K, 45, ["Christmas", "creativity", "party"], "Made the ugliest sweater at the party 🏆", "Time-lapse decorating a sweater", "Party content + DIY.", "Sizing", 7, 8, 10, 6, 9, 7, 8)
+add("Christmas Tree Fresh-Scent Diffuser for Fake Trees", K, 39, ["Christmas", "cozy", "sensory"], "Fake tree, real pine smell 🌲", "Clips diffuser on branch, mist", "Fake-tree owners problem.", "Low emotion", 6, 7, 9, 5, 9, 8, 9)
+add("Personalised North Pole Passport for Kids", K, 39, ["Christmas", "kids", "magic"], "She's officially allowed into the North Pole 🛂", "Kid gets passport stamped by 'elf'", "Magic role-play.", "Low price", 8, 8, 10, 5, 9, 9, 9)
+add("Giant Christmas Present Box Seat (sit-in photo prop)", K, 59, ["Christmas", "kids", "funny"], "We wrapped our toddler 🎁", "Toddler pops out of a giant present", "Funny photo content.", "Bulky", 8, 9, 10, 6, 8, 8, 8)
+add("Christmas Card Holder Tree (wall, lights)", K, 45, ["Christmas", "decor", "family"], "All our Christmas cards in one glowing tree", "Cards clipped on lit wall tree", "Decor + family.", "Low emotion", 6, 8, 9, 6, 9, 8, 9)
+add("Snow Globe Water Bottle for Kids", K, 39, ["Christmas", "kids", "cute"], "Her water bottle has a snow globe inside ❄️", "Shake: glitter snow swirls", "Cute daily use.", "Leaks", 7, 9, 9, 5, 9, 8, 8)
+add("Personalised Christmas Plate Set for Santa's Cookies", K, 45, ["Christmas", "kids", "tradition"], "Cookies for Santa, on his own plate 🍪🥛", "Kid leaves cookies; morning crumbs + note", "Tradition + keepsake.", "Ceramic shipping", 8, 8, 10, 6, 9, 6, 8)
+add("Light-Up Christmas Pyjama Onesie for Adults", K, 59, ["Christmas", "humor", "cozy"], "Mom's new Christmas morning uniform 😂", "Onesie trim lights up", "Funny + cozy.", "Sizing", 7, 9, 10, 7, 9, 7, 7)
+add("Christmas Bucket-List Scratch Poster for Families", K, 39, ["Christmas", "family", "anticipation"], "24 Christmas things to do together", "Kid scratches gold foil to reveal activity", "Family activity content.", "Low price", 7, 8, 10, 5, 9, 7, 9)
+add("Personalised Christmas Tree Ornament with Couple's Names & Year", K, 39, ["Christmas", "couples", "personalized"], "Our first Christmas in our first home 🏡", "Hangs ornament with names and year", "Couples milestone.", "Crowded on Etsy", 8, 8, 10, 5, 9, 4, 9)
+add("Gingerbread Man Plush with Heated Belly", K, 45, ["Christmas", "kids", "cozy"], "The cutest bedtime buddy this Christmas 🍪", "Kid hugs warm gingerbread plush", "Cute + cozy.", "Kids heating safety", 8, 8, 10, 6, 8, 8, 7)
+add("Christmas Ornament Photo Projector Ball", K, 49, ["Christmas", "memory", "family"], "Our family photos glow on the wall from the tree 🎄", "Ornament projects photos on the wall", "Memory + decor.", "Tech", 9, 9, 10, 7, 8, 9, 8)
+add("Santa's Magic Snow Dust (instant snow powder kit)", K, 39, ["Christmas", "kids", "wonder"], "Add water and it turns into snow 😱", "Powder + water = fluffy snow", "Wow science demo.", "Low price", 8, 10, 9, 5, 9, 6, 9)
+
+xmas = lambda x: any(w in " ".join(x["emotions"]) + x["name"] for w in ("Christmas", "Santa", "Advent", "ornament", "Ornament", "Snow", "snow"))
 for x in I:
-    s = x["scores"]; x["score"] = round(sum(s[k] * w for k, w in W.items()))
+    x["score"] = round(sum(x["scores"][k] * w for k, w in W.items())); x["christmas"] = bool(xmas(x))
+keep = sorted(I, key=lambda x: (-x["christmas"], -x["score"]))
+nonx = sorted([x for x in I if not x["christmas"]], key=lambda x: -x["score"])
+I = [x for x in I if x["christmas"]] + nonx[:max(0, 100 - sum(x["christmas"] for x in I))]
+I = I[:100]
+assert len(I) == 100, len(I)
 I.sort(key=lambda x: -x["score"])
 for r, x in enumerate(I, 1):
-    x["rank"] = r; x["status"] = "idea"; x["id"] = re.sub(r"[^a-z0-9]+", "-", x["name"].lower()).strip("-")[:60]
+    x.update(rank=r, status="idea", id=re.sub(r"[^a-z0-9]+", "-", x["name"].lower()).strip("-")[:60])
 json.dump(I, open(__file__.replace("build_ideas.py", "ideas.json"), "w"), indent=1, ensure_ascii=False)
-print(len(I), [(x["rank"], x["name"], x["score"]) for x in I[:12]])

@@ -82,3 +82,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 2026-10-16 — Când Szasz cere un video (ex. „fă video să vedem cum iese”), fac O SINGURĂ variantă, la 720p (nu 2 variante la 1080p). 1080p doar după ce aprobă (regula lui Szasz).
 - 2026-10-17 — Modele: MEREU Seedance 2.5 (video) și GPT Image 2 (imagini). Kling NU se folosește deloc (regula lui Szasz; înlocuiește rețetele vechi cu Kling).
 - **2026-10-17** — Prințesa: B-roll-ul (B1, B2, cozy) se copiază EXACT ca la HeatGrump — aceleași clipuri de mișcare, aceleași prompturi, aceleași setări. Se schimbă DOAR halatul (blocul halatului + referințele de produs ale prințesei).
+- **2026-10-17** — Hook-urile copiate se fac cu Seedance 2.5 (video_references = hook-ul original, image_references = personajul din B-roll + halatul). Audio generat de Seedance: DOAR vocea / reacțiile personajului nostru din B-roll + sunetele reale ale scenei. FĂRĂ MUZICĂ (muzica se pune la montaj). Test 480p întâi.

@@ -1,22 +1,16 @@
-# TELECOMANDA — rețeta care a ieșit bine (aprobată de Szasz, 15 oct 2026)
-# Motiv: niciun model nu numără singur corect luminițele. Le fixăm noi la început și la sfârșit, modelul face doar degetul și saltul luminii.
+# TELECOMANDA + CONECTOR prințesă — rețeta finală (17 oct 2026). DOAR Seedance 2.5 (Kling NU se mai folosește).
+# Motiv: modelul nu numără singur luminițele. Fixăm noi cadrul de început și cel de final; Seedance face doar degetul și saltul luminii.
 
-## Pasul 1 — Placa (gpt_image_2_5 · 9:16 · high · 4k)
-Telecomanda desenată pe forma LUNGĂ (ca telecomanda HeatGrump), toate luminile STINSE.
-Placa aprobată: 16b4e3e8 (crystal tiara).
+## Telecomanda
+1. Placa: refs/controller-crystal-longshape.jpg (crystal tiara, toate luminile stinse).
+2. Local, fără credite: aceeași placă cu DOAR cristalul 1 aprins (start) și cu DOAR cristalul 5 aprins (final).
+   Funcția glow() din engine/controller_lights.py; poziții x=542, y 1104/975/858/743/635.
+3. seedance_2_5 · omni_reference · start_image = cadrul cu 1 · end_image = cadrul cu 5 · 5 s · 720p (1080p doar după aprobare) · 9:16 · bitrate high · audio on.
+   Prompt: prompts/controller-video.txt + „In the start frame only crystal 1 glows; in the end frame only crystal 5 glows ... JUMPS instantly one step UP”.
+4. Montaj: 1,4–4,4 s (lumina 2→5), MAXIM 3 s, zoom mic centrat 1.0→1.15.
+Rezultat aprobat: job d9c60a63 → output/princess-test/controller-seedance25-720p.mp4 / -3s.mp4
 
-## Pasul 2 — Cadru de start + cadru final (local, fără credite)
-engine/controller_lights.py aprinde exact lumina 1 (start) și exact lumina 5 (final) pe placă.
-Pozițiile luminilor sunt pentru placa 16b4e3e8: x=542, y 1104/975/858/743/635 (la o placă nouă se măsoară din nou).
-
-## Pasul 3 — Kling 3.0 std · 5 s · 9:16 · sound on · start_image = cadrul cu 1 · end_image = cadrul cu 5
-Locked tripod camera, one continuous shot, no zoom, no cut. The controller, the tiara, the five clear crystals and the small numbers 1 to 5 stay exactly as in the start and end frames, never changing shape. In the start frame crystal 1 (bottom) glows; in the end frame crystal 5 (top) glows. In between, the thumb presses the pearl button four times, evenly spaced, and on each press the small glow JUMPS instantly one crystal up — 1, 2, 3, 4, 5 — never sliding, never two lit at once, the glow staying small inside the crystal and never covering the numbers. One soft click at each press, quiet room tone. Real iPhone 18 Pro Max footage.
-
-## Pasul 4 — Genjutsu hf_mult_motion_control · 720p · 9:16
-## image_references = placa (16b4e3e8) · video_references = clipul Kling de la pasul 3 (7aa0580a)
-Transfer the thumb pressing motion, the handheld framing AND the light sequence from the driving video onto Image 1. Everything we see comes from Image 1 and stays exactly as in Image 1: the crystal-tiara pink controller with the rose-gold frame, exactly five crystals with the numbers 1 to 5, the pearl button, both pink cables, the hand with the long lilac Christmas nails, the fluffy white cuff, the Christmas tree with pink baubles. The glow follows the driving video exactly: one small lilac-pink glow inside one crystal at a time, jumping up 1, 2, 3, 4, 5 at the same moments as in the driving video, never two lit, never covering the numbers. Locked camera, no zoom, no cut. Shot on iPhone 18 Pro Max, real footage. No text.
-# Rezultat final: job 52b3f88f.
-
-## Pasul 5 — Montaj
-Se ia doar 1,5–4,5 s din clip (lumina 3 → 4 → 5), MAXIM 3 s, viteză normală, zoom mic centrat 1.0 → 1.15, se oprește pe 5 aprins.
-Pentru alt produs se schimbă doar descrierea telecomenzii, a mâinii, a manșetei și a fundalului din prompturi; restul rămâne cuvânt cu cuvânt.
+## Conectorul
+seedance_2_5 · omni_reference · start_image = primul cadru din conectorul aprobat (separat) · end_image = ultimul cadru (intrat complet, fără gol) · 4 s · 720p · 9:16 · audio on.
+Prompt: prompts/connector-video.txt. Se verifică ULTIMUL cadru mărit.
+Rezultat: job 2676f1a6 → output/princess-test/connector-seedance25-720p.mp4

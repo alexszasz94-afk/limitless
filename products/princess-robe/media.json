@@ -42,7 +42,18 @@
       "job": "9b813074-4ba4-4d22-86b0-b0808ec6deba",
       "file": "output/princess-test/controller-hg-pink-4s.mp4"
     },
-    "controller_kling_v4": "7aa0580a-4124-4ac5-886b-63cc2e6d11a2"
+    "controller_kling_v4": "7aa0580a-4124-4ac5-886b-63cc2e6d11a2",
+    "controller_seedance25": {
+      "job": "d9c60a63-d46a-4a9c-8b8c-df788a8a1742",
+      "file": "output/princess-test/controller-seedance25-720p.mp4",
+      "montaj_3s": "output/princess-test/controller-seedance25-3s.mp4",
+      "note": "Seedance 2.5 720p, start_image = placa cu cristalul 1 aprins, end_image = cristalul 5 aprins (engine/controller_lights.py). Verificat: 1->2->3->4->5, unul singur aprins (17 oct)."
+    },
+    "connector_seedance25": {
+      "job": "2676f1a6-8314-4c5e-9421-a94256bf0e68",
+      "file": "output/princess-test/connector-seedance25-720p.mp4",
+      "note": "Seedance 2.5 720p, start/end = primul/ultimul cadru din conectorul aprobat; ultimul cadru: intrat complet, fără gol (17 oct)."
+    }
   },
   "controller_options": {
     "0_pearl_tiara": "4305b99a-0ae3-4ba1-bce2-27a1cd15951b",

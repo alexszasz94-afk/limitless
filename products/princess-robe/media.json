@@ -53,6 +53,12 @@
       "job": "2676f1a6-8314-4c5e-9421-a94256bf0e68",
       "file": "output/princess-test/connector-seedance25-720p.mp4",
       "note": "Seedance 2.5 720p, start/end = primul/ultimul cadru din conectorul aprobat; ultimul cadru: intrat complet, fără gol (17 oct)."
+    },
+    "controller_APROBAT_17oct": {
+      "job_480p": "7e16bedf-971b-4987-a70a-49e804e3447b",
+      "upscale_job": "4f14ca40-08b4-4cb9-8507-8146b5cb788e",
+      "file": "output/princess-test/controller-arata-final.mp4",
+      "note": "Aprobat de Szasz 17 oct: apasă (1→2), ușoară înclinare, apasă (2→3). Seedance 2.5 480p start=cristal 1, end=cristal 3, upscale ByteDance 1080p, tăiat de la 1,9 s (3,2 s)."
     }
   },
   "controller_options": {

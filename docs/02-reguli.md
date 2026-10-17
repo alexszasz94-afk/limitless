@@ -81,3 +81,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 2026-10-15 — Conectorul în montaj trebuie să ARATE cum intră una în alta: bucata începe când cele două părți sunt clar separate și se termină cu fișa intrată complet (gri HeatGrump: 0,4–2,2 s; lila prințesă: se termină la 2,95 s, începe înainte de 1,75 s). Nu doar cadrele în care sunt deja lipite (corecția lui Szasz).
 - 2026-10-16 — Când Szasz cere un video (ex. „fă video să vedem cum iese”), fac O SINGURĂ variantă, la 720p (nu 2 variante la 1080p). 1080p doar după ce aprobă (regula lui Szasz).
 - 2026-10-17 — Modele: MEREU Seedance 2.5 (video) și GPT Image 2 (imagini). Kling NU se folosește deloc (regula lui Szasz; înlocuiește rețetele vechi cu Kling).
+- **2026-10-17** — Prințesa: B-roll-ul (B1, B2, cozy) se copiază EXACT ca la HeatGrump — aceleași clipuri de mișcare, aceleași prompturi, aceleași setări. Se schimbă DOAR halatul (blocul halatului + referințele de produs ale prințesei).

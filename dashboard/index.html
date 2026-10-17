@@ -338,6 +338,7 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
 .stab{display:flex;flex-direction:column;gap:6px}.srow{display:grid;grid-template-columns:minmax(160px,1.1fr) 2fr 1.3fr;gap:10px;font-size:13px;border:1px solid var(--edge);border-radius:10px;padding:8px 10px;background:var(--deck-2)}
 @media (max-width:760px){.srow{grid-template-columns:1fr}}
 
+.ideas{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:12px}.idea{border:1px solid var(--edge);border-radius:14px;padding:14px;background:var(--glass);display:flex;flex-direction:column;gap:6px}.idea p{margin:0;font-size:13.5px}.idea h3{margin:0;font-size:16px}.idea .rk{font-weight:800;opacity:.6;margin-right:6px}.idea .sc{font-weight:800;font-size:20px}.idea .bar{height:6px;border-radius:9px;background:var(--edge);overflow:hidden}.idea .bar i{display:block;height:100%;background:var(--ok)}.idea .hk{font-style:italic}.idea .mini{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;font-size:11px;text-align:center}.idea .mini span{border:1px solid var(--edge);border-radius:8px;padding:3px 0}.idea .mini b{display:block;font-size:13px}
 .lessons{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}.lesson{border:1px solid var(--edge);border-radius:14px;padding:12px;background:var(--glass);display:flex;flex-direction:column;gap:4px}.lesson p{margin:0;font-size:13.5px}.lrule{color:var(--ok);font-weight:600}
 .thread{display:flex;flex-direction:column;gap:6px}.trow{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:10px;padding:8px 10px;border:1px solid var(--edge);border-radius:10px;background:var(--deck-2);font-size:13.5px}
 @media (max-width:720px){.trow{grid-template-columns:1fr 1fr}}
@@ -379,6 +380,7 @@ body.wide main{max-width:none;padding-inline:16px;padding-block:14px 16px;gap:12
   <a href="#launch" data-r="launch"><i>▶</i>Start here</a>
   <a href="#top" data-r="top"><i>★</i>Top 10 picks</a>
   <a href="#finder" data-r="finder"><i>01</i>Product finder</a>
+  <a href="#ideas" data-r="ideas"><i>✦</i>Invented products</a>
   <a href="#studio" data-r="studio"><i>✚</i>Make a clip</a>
   <a href="#hooks" data-r="hooks"><i>❝</i>Hooks</a>
   <a href="#boards" data-r="boards"><i>02</i>Video boards</a>
@@ -688,7 +690,7 @@ function vBoards(){
   ${lanes.length?lanes.map(laneRow).join(""):`<div class="empty"><b>Loading videos…</b></div>`}`;
 }
 async function loadLanes(b){for(const l of b.lanes||[]){if(S.lanes[l.doc])continue;try{const s=await S.db.doc("lanes/"+l.doc).get();if(s.exists)S.lanes[l.doc]=s.data();}catch(e){}}if(S.route==="boards")render()}
-const VIEWS={robe:vRobe,lessons:vLessons,results:vResults,hooks:vHooks,studio:vStudio,top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
+const VIEWS={ideas:vIdeas,robe:vRobe,lessons:vLessons,results:vResults,hooks:vHooks,studio:vStudio,top:vTop,boards:vBoards,launch:vLaunch,brain:vBrain,finder:vFinder,strategy:vStrategy,products:vProducts,virals:vVirals,production:vProduction,business:vBusiness,rules:vRules,requests:vRequests};
 
 function render(){try{_render();document.body.classList.toggle("wide",S.route==="finder"&&S.fmode!=="list");if(S.route==="finder"&&S.fmode!=="list"){BOARD.mount();if(S.fq)BOARD.search(S.fq)}}catch(err){report(err,"render "+S.route);const v=$("#view");if(v)v.innerHTML=`<section class="panel"><h2>Something broke on this page</h2><p class="muted">${esc(String(err&&err.message||err))}</p><p class="muted">It was sent to Claude automatically.</p></section>`;return}const v=$("#view");if(v&&S._lastR!==S.route){S._lastR=S.route;v.classList.remove("enter");void v.offsetWidth;v.classList.add("enter");setTimeout(()=>v.classList.remove("enter"),900)}}
 let _rq=0;function soon(){if(_rq)return;_rq=requestAnimationFrame(()=>{_rq=0;render()})}
@@ -769,7 +771,7 @@ document.addEventListener("submit",e=>{e.preventDefault();const f=e.target,d=Obj
   if(f.id==="fCerere")run(async()=>{await S.db.collection("inbox").add({text:d.text,status:"nou",creat:nowIso()});f.reset();toast("Sent. Write “requests” in chat.");},f.querySelector("button"));
 });
 document.addEventListener("input",e=>{if(e.target.closest("#fCalc")){calc();return}if(e.target.id==="fq"){S.fq=e.target.value;const l=$("#flist");if(l)l.innerHTML=finderList()}});
-document.addEventListener("change",e=>{const el=e.target;if(el.id==="ugcOnly"){S.ugcOnly=el.checked;const l=$("#flist");if(l)l.innerHTML=finderList();else render();return}if(el.id==="fg"){S.fg=el.value;const l=$("#flist");if(l)l.innerHTML=finderList();return}if(el.dataset.act==="stadiu")run(()=>S.db.doc("virals/"+el.dataset.id).update({stadiu:el.value}))});
+document.addEventListener("change",e=>{const el=e.target;if(el.id==="iq"){S.iq=el.value;render();return}if(el.id==="ugcOnly"){S.ugcOnly=el.checked;const l=$("#flist");if(l)l.innerHTML=finderList();else render();return}if(el.id==="fg"){S.fg=el.value;const l=$("#flist");if(l)l.innerHTML=finderList();return}if(el.dataset.act==="stadiu")run(()=>S.db.doc("virals/"+el.dataset.id).update({stadiu:el.value}))});
 document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(!b||b.tagName==="SELECT")return;const a=b.dataset.act;
   if(a==="crit")run(async()=>{const p=S.products.find(x=>x._id===b.dataset.id);const c={...(p.criterii||{})},i=b.dataset.i;c[i]=c[i]===true?false:c[i]===false?null:true;if(c[i]===null)delete c[i];
     const [s,ver]=scor({...p,criterii:c});await S.db.doc("products/"+p._id).set({...stripId(p),criterii:c,scor:s,verdict:ver})});
@@ -835,6 +837,7 @@ fetch("fv/posters.json").then(r=>r.ok?r.json():{}).then(j=>{S.posters=j||{};setT
   db.collection("fresh").onSnapshot(s=>{const L=[];s.docs.forEach(d=>L.push(...Object.values(d.data())));S.fresh=L;const by={};L.forEach(x=>{if(x.family)(by[x.family]=by[x.family]||[]).push(x)});S.freshBy=by;if(S.route==="finder")soon()},()=>{});
   db.collection("robe_thumbs").onSnapshot(s=>{const m={};s.docs.forEach(d=>{m[d.id]=d.data()});S.robeThumbs=m;if(S.route==="robe")soon()},()=>{});
   db.doc("config/robe").onSnapshot(s=>{S.robe=s.exists?s.data():{};if(S.route==="robe")soon()},()=>{});
+  db.doc("ideas/all").onSnapshot(s=>{S.ideas=s.exists?s.data():null;if(S.route==="ideas")soon()},()=>{});
   db.collection("lessons").onSnapshot(s=>{S.lessons=s.docs.map(d=>({_id:d.id,...d.data()}));if(S.route==="lessons")soon()},()=>{});
   db.collection("posts").onSnapshot(s=>{S.posts=s.docs.map(d=>({_id:d.id,...d.data()}));if(["results","robe"].includes(S.route))soon()},()=>{});
   db.collection("accounts").onSnapshot(s=>{S.accounts=s.docs.map(d=>({_id:d.id,...d.data()}));if(["results","robe"].includes(S.route))soon()},()=>{});
@@ -1139,6 +1142,18 @@ function jobsPanel(){const J=(S.jobs||[]).slice().sort((a,b)=>String(b.created).
      ${j.kind==="robe"?`<p>Hooks: ${esc((j.hook_names||[]).join(" · "))}<br><span class="muted">B-roll: ${esc(j.driver_name||j.driver||"")} · outfit: ${esc(j.outfit||"")}</span></p>`:`<p>${j.mode==="hook"?`Hook “${esc(j.hook_caption||"")}” + `:""}Genjutsu copy of <a href="${esc(j.viral_url)}" target="_blank" rel="noopener">@${esc(j.viral_handle)}</a></p>`}<small class="muted">${esc(j.credits_low)}–${esc(j.credits_high)} credits · ${esc(String(j.created).slice(0,16).replace("T"," "))}</small>
      ${j.status==="waiting approval"&&S.write?`<div class="row"><button class="btn solid" data-act="job" data-id="${esc(j._id)}" data-s="approved">Approve</button><button class="btn" data-act="job" data-id="${esc(j._id)}" data-s="rejected">Reject</button></div>`:""}</article>`).join("")}</div></section>`}
 /* ---- Mistakes log + Results (the data thread) ---- */
+function vIdeas(){const D=S.ideas;if(!D)return `<div class="top"><div><div class="kicker">new products</div><h1>Invented products</h1></div></div><div class="empty"><b>Loading ideas…</b></div>`;
+  const all=D.items||[];const c=S.ic||"",q=(S.iq||"").toLowerCase();const cats=[...new Set(all.map(x=>x.category))];
+  const L=all.filter(x=>(!c||x.category===c)&&(!q||(x.name+" "+x.why+" "+(x.emotions||[]).join(" ")).toLowerCase().includes(q)));
+  const K=[["E","Emotion"],["D","Demo"],["G","Gift"],["M","Margin"],["P","AI-film"],["N","Few rivals"],["R","Low risk"]];
+  return `<div class="top"><div><div class="kicker">new products</div><h1>Invented products</h1></div><div class="sub">${all.length} ideas your supplier can make · ranked by score · ${esc(D.method||"")}</div></div>
+  <div class="row hcon"><input id="iq" placeholder="Search ideas" value="${esc(S.iq||"")}" style="max-width:240px"><button class="chipb ${!c?"on":""}" data-act="icat" data-c="">All ${all.length}</button>${cats.map(k=>`<button class="chipb ${c===k?"on":""}" data-act="icat" data-c="${esc(k)}">${esc(k)} <small>${all.filter(x=>x.category===k).length}</small></button>`).join("")}</div>
+  <div class="ideas">${L.map(x=>`<article class="idea"><div class="row" style="justify-content:space-between;align-items:baseline"><h3><span class="rk">#${x.rank}</span>${esc(x.name)}</h3><span class="sc">${x.score}</span></div>
+    <div class="bar"><i style="width:${x.score}%"></i></div>
+    <div class="row">${chip(x.category,"pl")} ${x.price?chip("$"+x.price,""):chip("free gift","")} ${(x.emotions||[]).map(e=>chip(e,"")).join(" ")}</div>
+    <p class="hk">“${esc(x.hook)}”</p><p><b>Demo in 1–3 s:</b> ${esc(x.demo)}</p><p><b>Why it can work:</b> ${esc(x.why)}</p><p class="muted"><b>Risk:</b> ${esc(x.risk)}</p>
+    <div class="mini">${K.map(([k,n])=>`<span title="${n}"><b>${x.scores[k]}</b>${n}</span>`).join("")}</div>
+    ${S.write?`<div class="row"><button class="btn solid" data-act="ideaprod" data-id="${esc(x.id)}">Send to My products</button><button class="btn" data-act="ideaimg" data-id="${esc(x.id)}">Ask for concept images</button></div>`:""}</article>`).join("")||`<div class="empty"><b>No ideas match</b></div>`}</div>`}
 function vLessons(){const L=(S.lessons||[]).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date)));const ar=S.la||"";
   const areas=[...new Set(L.map(x=>x.area))];
   return `<div class="top"><div><div class="kicker">learning</div><h1>Mistakes log</h1></div><div class="sub">Every mistake once, then a rule so it never happens again. Read before production.</div></div>
@@ -1292,6 +1307,10 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
   if(a==="rth"){e.stopImmediatePropagation();S.rth=b.dataset.t;render();return}
   if(a==="rrisk"){e.stopImmediatePropagation();const i=+b.dataset.i;const RK=((S.robe||{}).risks||[]).map((r,j)=>j===i?{...r,status:r.status==="done"?"open":"done"}:{...r});run(()=>S.db.doc("config/robe").update({risks:RK}),b);return}
   if(a==="larea"){e.stopImmediatePropagation();S.la=b.dataset.a;render();return}
+  if(a==="icat"){e.stopImmediatePropagation();S.ic=b.dataset.c;render();return}
+  if(a==="ideaprod"||a==="ideaimg"){e.stopImmediatePropagation();const x=((S.ideas||{}).items||[]).find(i=>i.id===b.dataset.id);if(!x)return;
+    if(a==="ideaprod")run(async()=>{await S.db.collection("products").add({nume:x.name,nume_en:x.name,categorie:x.category,categorie_en:x.category,link:null,status:"candidat",metrici:{},criterii:{},viteza_max:0,sursa:"idea:"+x.id,pret:x.price,adaugat:nowIso()});toast("Added to My products")},b);
+    else run(async()=>{await S.db.collection("inbox").add({text:"Concept images for invented product: "+x.name+" (GPT Image 2, 2-3 photos for the supplier)",status:"nou",creat:nowIso(),via:"ideas"});toast("Request sent to Claude")},b);return}
   if(a==="hfam"){e.stopImmediatePropagation();S.hfam=b.dataset.f;S.hc="";render();return}
   if(a==="copytxt"){e.stopImmediatePropagation();navigator.clipboard?.writeText(b.dataset.t).then(()=>toast("Caption copied"),()=>toast(b.dataset.t));return}
   if(a==="job"){e.stopImmediatePropagation();run(async()=>{await S.db.doc("jobs/"+b.dataset.id).update({status:b.dataset.s,decided:nowIso()});if(b.dataset.s==="approved")await S.db.collection("inbox").add({text:"APPROVED clip job "+b.dataset.id+" — make it (Genjutsu/Seedance as planned, within the estimated credits).",status:"nou",creat:nowIso(),via:"boards"});toast(b.dataset.s==="approved"?"Approved. Claude Code will make it.":"Rejected.")},b);return}

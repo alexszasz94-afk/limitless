@@ -83,3 +83,8 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 2026-10-17 — Modele: MEREU Seedance 2.5 (video) și GPT Image 2 (imagini). Kling NU se folosește deloc (regula lui Szasz; înlocuiește rețetele vechi cu Kling).
 - **2026-10-17** — Prințesa: B-roll-ul (B1, B2, cozy) se copiază EXACT ca la HeatGrump — aceleași clipuri de mișcare, aceleași prompturi, aceleași setări. Se schimbă DOAR halatul (blocul halatului + referințele de produs ale prințesei).
 - **2026-10-17** — Hook-urile copiate se fac cu Seedance 2.5 (video_references = hook-ul original, image_references = personajul din B-roll + halatul). Audio generat de Seedance: DOAR vocea / reacțiile personajului nostru din B-roll + sunetele reale ale scenei. FĂRĂ MUZICĂ (muzica se pune la montaj). Test 480p întâi.
+- **2026-10-17 — MODUL DE LUCRU LA HALATE (robe), confirmat de Szasz:**
+  1. Mereu 3 B-roll-uri noi: șablonul de mișcare = un B-roll HeatGrump bun (ex. reel24, tăiat exact ca în montajul final: B1 0–1,2 s + B2 rapid + cozy), refăcut cu Genjutsu cu 3 personaje + 3 camere diferite; se schimbă halatul.
+  2. 15 hook-uri = 5 pe fiecare B-roll. Seedance 2.5 omni_reference: video_references = hook-ul viral original FĂRĂ SUNET (audio scos cu ffmpeg), image_references = personajul din B-roll + halatul. Sunetul se generează DE LA ZERO din ce se vede: replicile scrise de Claude cu secunda exactă, vocea personajului, sunetele scenei, FĂRĂ MUZICĂ.
+  3. Totul se face întâi la 480p (sigur + credite puține) și se pune în LIMITLESS (board), grupat câte 5 hook-uri sub fiecare B-roll.
+  4. Szasz dă Approve / Reject. Doar ce primește Approve primește upscale la 1080p.

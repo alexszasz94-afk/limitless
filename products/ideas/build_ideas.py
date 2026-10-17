@@ -184,6 +184,20 @@ add("Gingerbread Man Plush with Heated Belly", K, 45, ["Christmas", "kids", "coz
 add("Christmas Ornament Photo Projector Ball", K, 49, ["Christmas", "memory", "family"], "Our family photos glow on the wall from the tree 🎄", "Ornament projects photos on the wall", "Memory + decor.", "Tech", 9, 9, 10, 7, 8, 9, 8)
 add("Santa's Magic Snow Dust (instant snow powder kit)", K, 39, ["Christmas", "kids", "wonder"], "Add water and it turns into snow 😱", "Powder + water = fluffy snow", "Wow science demo.", "Low price", 8, 10, 9, 5, 9, 6, 9)
 
+K = "Viral remix (proven product, our twist)"
+add("Snow-Globe Lid Tumbler 40 oz (Christmas edition)", K, 49, ["Christmas", "trend", "gift"], "My tumbler snows when I shake it ❄️", "Shakes tumbler, glitter snow swirls in the clear lid", "Tumbler craze proved the format; snow-globe lid is our Christmas twist.", "Leak test the lid", 8, 10, 10, 7, 9, 7, 8)
+add("Northern Lights Aurora Projector (Christmas sky)", K, 45, ["Christmas", "calm", "wonder"], "Northern lights in my bedroom on Christmas Eve 🌌", "Ceiling fills with moving green aurora and stars", "Sunset/galaxy lamps were mega-viral; aurora + snowflakes = winter version.", "Crowded - win on visuals", 8, 10, 10, 6, 9, 5, 8)
+add("Gingerbread & Snowflake Cloud Slides", K, 39, ["Christmas", "cozy", "trend"], "Walking on gingerbread clouds 🍪", "Squishes the thick slide sole, cute gingerbread print", "Cloud slides went viral; seasonal prints sell as gifts.", "Sizing returns", 7, 9, 9, 5, 9, 6, 6)
+add("Our Own Squishy Christmas Plush Collection (collectible)", K, 39, ["Christmas", "collectible", "cute"], "Collect all 6 Christmas squishies 🎄", "Squeezes plush, it slowly bounces back; lineup of 6", "Collectible squishy plush is proven; our own characters = no IP + repeat buys.", "Must design 6 strong characters", 9, 9, 10, 6, 9, 6, 9)
+add("Candy-Cane Heatless Curl Ribbon", K, 39, ["Christmas", "beauty", "trend"], "Christmas curls, no heat 🎀", "Unwraps candy-cane ribbon, bouncy curls", "Heatless curls were huge; candy-cane design for Christmas gifting.", "Low price - bundle", 7, 10, 9, 5, 9, 6, 9)
+add("Glass Mushroom Lamp - Winter Snow Edition", K, 49, ["Christmas", "cozy", "decor"], "The coziest lamp on my nightstand ❄️🍄", "Lamp glows, frosted snow cap", "Mushroom lamps went viral; snow edition = seasonal refresh.", "Glass shipping", 7, 9, 9, 6, 9, 6, 7)
+add("Wearable Blanket Hoodie in Christmas Prints (oversized)", K, 59, ["Christmas", "cozy", "family"], "The oversized hoodie the whole family steals 🎄", "Family in matching Christmas-print giant hoodies", "Wearable-blanket hoodies are proven best-sellers; Christmas prints + family packs.", "Crowded", 8, 9, 10, 7, 9, 5, 8)
+add("Light-Up Christmas Shoe Charms (our own designs)", K, 39, ["Christmas", "kids", "trend"], "My clogs light up for Christmas 🎄", "Charms blink on clogs in the dark", "Shoe charms are a proven craze; light-up Christmas set is new.", "Small battery parts", 7, 9, 9, 5, 9, 7, 8)
+add("Snowman Bubble Machine (bubbles like snow)", K, 45, ["Christmas", "kids", "wonder"], "It's snowing bubbles ⛄", "Snowman blows hundreds of bubbles", "Bubble machines went viral with kids; snowman version for Christmas.", "Liquid refill", 8, 10, 9, 6, 9, 7, 8)
+add("Personalised Family Photo Puzzle Ornament Box", K, 45, ["Christmas", "family", "personalized"], "We solved our own family photo on Christmas Eve 🧩", "Last puzzle piece completes the family photo", "Photo puzzles sell every Christmas; ornament box twist.", "Print quality", 8, 9, 10, 6, 9, 6, 9)
+add("Christmas Pickleball Paddle Set (ugly-sweater print)", K, 79, ["Christmas", "sport", "dad"], "Dad's Christmas present this year 🏓", "Unwraps paddles with ugly-sweater print, first rally", "Pickleball boom; festive design = gift for parents 40+.", "Sports gear quality", 7, 8, 9, 8, 9, 7, 8)
+add("Mini Christmas Tree Terrarium in a Jar (lights)", K, 45, ["Christmas", "cozy", "decor"], "A tiny Christmas forest in a jar 🌲", "Lights turn on inside the jar", "Terrarium kits are proven; Christmas version.", "Glass", 7, 9, 9, 6, 9, 7, 8)
+
 xmas = lambda x: any(w in " ".join(x["emotions"]) + x["name"] for w in ("Christmas", "Santa", "Advent", "ornament", "Ornament", "Snow", "snow"))
 for x in I:
     x["score"] = round(sum(x["scores"][k] * w for k, w in W.items())); x["christmas"] = bool(xmas(x))
@@ -195,4 +209,119 @@ assert len(I) == 100, len(I)
 I.sort(key=lambda x: -x["score"])
 for r, x in enumerate(I, 1):
     x.update(rank=r, status="idea", id=re.sub(r"[^a-z0-9]+", "-", x["name"].lower()).strip("-")[:60])
+SRC = [  # keyword -> (level, ready for Christmas 2026, what the supplier needs, viral base)
+ ("pickleball", "Easy", "yes", "Existing paddle OEM + print.", "Pickleball boom"),
+ ("tooth-fairy", "Easy", "yes", "Wood/resin door + glow stickers.", "Fairy doors"),
+ ("puzzle", "Easy", "yes", "Print-on-demand puzzles.", "Photo puzzles"),
+ ("present box seat", "Easy", "yes", "Printed foam/cardboard box.", "Kids in gift boxes"),
+ ("inflatable", "Medium", "yes", "Existing inflatable OEMs; projector face is add-on.", "Christmas inflatables"),
+ ("card holder", "Easy", "yes", "Existing wall card holders + LED.", "Card trees"),
+ ("advent", "Easy", "tight", "Assembly of existing items in printed box; must ship by late November.", "Advent calendars"),
+ ("storage", "Easy", "yes", "Existing storage boxes + LED.", "Ornament storage"),
+ ("walk-in", "Medium", "tight", "Existing inflatable globe OEMs; high shipping cost.", "Giant snow globes"),
+ ("video message ornament", "Hard", "tight", "Small video module from video greeting cards + custom ornament shell; needs electronics QC and certification.", "Video greeting cards"),
+ ("robot", "Hard", "no", "New electronics + firmware; prototype and certification take months.", "Desk pet robots"),
+ ("ai bedtime", "Hard", "no", "Needs an app, voice cloning and data privacy - software project, not just a factory.", "AI toys"),
+ ("vibrate", "Hard", "no", "Paired Bluetooth bracelets + app; prototype and certification take months.", "Long-distance touch lamps"),
+ ("smart mirror", "Hard", "no", "Display + software; complex.", "Smart mirrors"),
+ ("nail printer", "Medium", "tight", "Existing OEM nail printers; we rebrand. Quality varies a lot.", "Nail printer TikTok demos"),
+ ("bird feeder", "Medium", "tight", "Existing OEM camera feeders with app; we rebrand.", "Smart bird feeders"),
+ ("plant pot", "Medium", "tight", "Existing OEM 'smart planter' with screen; we rebrand and choose faces.", "Emotional smart planters"),
+ ("printer", "Medium", "yes", "Existing OEM thermal print camera; rebrand.", "Kids print cameras"),
+ ("projector", "Medium", "yes", "Existing OEM projector; custom slides/animation and shell. Needs FCC/UL papers.", "Galaxy & sunset projector lamps"),
+ ("aurora", "Easy", "yes", "Existing OEM projector, new slide/colour set.", "Galaxy & sunset projector lamps"),
+ ("snow machine", "Medium", "yes", "Existing party snow machines; custom shell/size.", "Snow machines for parties"),
+ ("snowing christmas tree topper", "Medium", "tight", "Snow-blowing topper exists in small numbers; custom design.", "Snowing Christmas trees"),
+ ("village", "Medium", "yes", "Existing musical village OEMs; we pick design and packaging.", "Christmas villages (classic)"),
+ ("train", "Easy", "yes", "Existing OEM Christmas trains; rebrand + packaging.", "Christmas tree trains (classic)"),
+ ("audio photo frame", "Easy", "yes", "Recordable sound module (standard, cheap) + photo frame.", "Recordable memory gifts"),
+ ("heartbeat", "Easy", "yes", "Recordable module inside plush (standard).", "Heartbeat bears"),
+ ("talking", "Easy", "yes", "Recordable sound module inside ornament/plush (standard).", "Recordable plush & ornaments"),
+ ("phone call", "Easy", "yes", "Recordable sound module inside ornament (standard).", "Santa call apps"),
+ ("speaker", "Medium", "yes", "Motion-sensor sound module + wreath.", "Motion-sensor talking decor"),
+ ("snow globe night light", "Easy", "yes", "Photo-insert snow globe lamps exist; we add custom photo printing.", "Personalised snow globes"),
+ ("snow-globe lid", "Easy", "yes", "Existing tumbler OEM; custom double-wall snow lid.", "Tumbler craze"),
+ ("water bottle", "Easy", "yes", "Existing snow-globe bottles; rebrand.", "Snow-globe bottles"),
+ ("memory snow globe", "Medium", "yes", "Custom keepsake globe; sensitive handling.", "Memorial keepsakes"),
+ ("cam doorbell", "Easy", "yes", "Digital product: we edit a Santa video onto the customer's photo/video - no factory.", "Catch-Santa videos"),
+ ("hidden camera", "Easy", "yes", "Plastic ornament with LED; very standard.", "Santa camera ornaments"),
+ ("light-up ugly", "Easy", "yes", "Existing LED ugly-sweater OEMs + custom print.", "Ugly Christmas sweaters"),
+ ("ugly", "Easy", "yes", "Print-on-demand/embroidery on existing sweaters.", "Ugly Christmas sweaters"),
+ ("pyjama", "Easy", "yes", "Print-on-demand family pyjamas with names.", "Matching family pyjamas"),
+ ("onesie", "Easy", "yes", "Existing onesie OEM + LED trim.", "Christmas onesies"),
+ ("stocking", "Easy", "yes", "Embroidery on existing stockings (+ LED string).", "Personalised stockings"),
+ ("ornament", "Easy", "yes", "Print/engraving on existing ornament blanks.", "Personalised ornaments"),
+ ("cutting board", "Easy", "yes", "Laser engraving on wooden boards - any engraving shop.", "Recipe cutting boards"),
+ ("star map", "Easy", "yes", "Print + LED frame, standard.", "Star map prints"),
+ ("sculpture", "Medium", "tight", "3D modelling from photo + resin print; slower production.", "3D keepsakes"),
+ ("necklace", "Easy", "yes", "Existing photo-projection pendants; custom photo.", "Projection necklaces"),
+ ("bracelets that glow", "Medium", "tight", "LED bracelets exist; paired glow needs simple radio module.", "Friendship bracelets"),
+ ("cookie cutter", "Easy", "yes", "3D-printed cutter from pet photo outline.", "Custom cookie cutters"),
+ ("elf door", "Easy", "yes", "Wood/resin mini door + LED window + mailbox, standard.", "Fairy & elf doors"),
+ ("elf-on", "Easy", "yes", "Plush/wood props from existing toy factories; our own character.", "Elf-on-the-shelf traditions"),
+ ("santa's magic key", "Easy", "yes", "Metal key + LED + card, standard.", "Santa keys"),
+ ("magic key", "Easy", "yes", "Metal key + LED + card, standard.", "Santa keys"),
+ ("footprint", "Easy", "yes", "Stencils + snow spray, standard.", "Santa footprint kits"),
+ ("sleigh", "Easy", "yes", "Stencils + snow spray, standard.", "Santa footprint kits"),
+ ("letter from santa", "Easy", "yes", "Printing + wax seal; can be POD.", "Letters from Santa"),
+ ("passport", "Easy", "yes", "Printing.", "North Pole passports"),
+ ("certificate", "Easy", "yes", "Printing + medal, standard.", "Nice-list certificates"),
+ ("reindeer food", "Easy", "yes", "Pack eco glitter/oats - needs food-safe/eco wording.", "Reindeer food tradition"),
+ ("snow dust", "Easy", "yes", "Instant-snow polymer, standard (label for kids).", "Instant snow"),
+ ("gingerbread house", "Medium", "yes", "Food kit + LED; food rules.", "Gingerbread house kits"),
+ ("chocolate bomb", "Medium", "yes", "Silicone moulds easy; selling food needs permits - sell mould kit only.", "Hot cocoa bombs"),
+ ("waffle", "Easy", "yes", "Existing mini waffle maker OEM, snowflake plate.", "Mini waffle makers"),
+ ("box", "Easy", "yes", "Assembly of existing items in printed box.", "Christmas Eve boxes"),
+ ("tunnel", "Medium", "tight", "Existing LED arch OEMs; bulky shipping.", "Light tunnels"),
+ ("collar", "Medium", "yes", "LED + music module on tree collar.", "Tree collars"),
+ ("angel", "Medium", "yes", "Animated toppers exist; custom design.", "Animated tree toppers"),
+ ("countdown clock", "Medium", "yes", "Existing countdown clock OEMs.", "Christmas countdown clocks"),
+ ("doormat", "Easy", "yes", "Custom print mat + LED border.", "Personalised doormats"),
+ ("antler", "Easy", "yes", "Existing light-up headbands.", "Party headbands"),
+ ("beanie", "Easy", "yes", "Existing LED beanies.", "LED beanies"),
+ ("diffuser", "Easy", "yes", "Existing clip diffusers + pine scent.", "Tree scent sticks"),
+ ("bucket-list", "Easy", "yes", "Printing.", "Scratch posters"),
+ ("memory jar", "Easy", "yes", "Jar + printed cards + fairy lights.", "Memory jars"),
+ ("pet portrait", "Easy", "yes", "Print/engraving.", "Pet ornaments"),
+ ("cardboard", "Easy", "yes", "Print shop.", "Life-size cutouts"),
+ ("luggage", "Easy", "yes", "Print-on-demand luggage covers.", "Pet face prints"),
+ ("plate", "Easy", "yes", "Print/decal on ceramic.", "Santa cookie plates"),
+ ("vinyl", "Easy", "yes", "Print + mini turntable plaque OEM.", "Spotify plaques"),
+ ("paw-print", "Easy", "yes", "Glow resin stone with engraving.", "Pet memorials"),
+ ("journal", "Easy", "yes", "Printing + QR hosting.", "Grandparent journals"),
+ ("letters-to-open", "Easy", "yes", "Printing + box.", "Open-when letters"),
+ ("ball launcher", "Medium", "yes", "Existing OEM launchers; rebrand.", "Automatic ball launchers"),
+ ("console", "Medium", "tight", "Existing retro consoles but game licensing is risky - only licensed/original games.", "Retro consoles"),
+ ("fire pit", "Medium", "tight", "Existing colour-flame pits; safety certificates.", "Colour flame packets"),
+ ("moon lamp", "Easy", "yes", "Existing levitation lamp OEM.", "Levitating moon lamps"),
+ ("rain-cloud", "Medium", "yes", "Existing cloud humidifier OEM.", "Rain cloud humidifiers"),
+ ("jewellery box", "Easy", "yes", "Engraving on wooden boxes.", "Birth-flower gifts"),
+ ("storybook", "Medium", "tight", "Illustration pipeline + print-on-demand book.", "Personalised kids books"),
+ ("book nook", "Medium", "yes", "Existing book-nook OEMs; sell pre-assembled.", "Book nooks (BookTok)"),
+ ("cozy corner", "Easy", "yes", "Bundle of existing items.", "Cozy-corner makeovers"),
+ ("backdrop", "Easy", "yes", "Existing party backdrop kits.", "Balloon arches"),
+ ("snowball", "Easy", "yes", "Existing indoor snowball sets.", "Indoor snowballs"),
+ ("sack", "Easy", "yes", "Embroidery/print on velvet sacks.", "Santa sacks"),
+ ("workshop", "Easy", "yes", "Stamps + printed stationery.", "Role-play kits"),
+ ("skirt", "Easy", "yes", "Existing tree skirt + paint kit.", "Handprint keepsakes"),
+ ("gingerbread man plush", "Medium", "yes", "Plush + USB low-heat pad; kids safety tests.", "Heated plush"),
+ ("plush", "Easy", "yes", "Plush factories can make our own characters (MOQ ~300-500).", "Squishy plush craze"),
+ ("slides", "Easy", "yes", "Existing slide OEM + print; sizes.", "Cloud slides"),
+ ("curl", "Easy", "yes", "Existing heatless curler + candy-cane fabric.", "Heatless curls"),
+ ("mushroom", "Easy", "yes", "Existing glass lamp OEM + frost finish.", "Mushroom lamps"),
+ ("hoodie", "Easy", "yes", "Existing wearable-blanket OEM + print.", "Wearable blankets"),
+ ("charms", "Medium", "yes", "Tiny LED charms; battery safety.", "Shoe charms"),
+ ("bubble", "Easy", "yes", "Existing bubble machine OEM, snowman shell.", "Bubble machines"),
+ ("terrarium", "Easy", "yes", "Jar + mini trees + LED.", "Terrarium kits"),
+ ("cocoa station", "Easy", "yes", "Bundle of mugs, jars, sign.", "Cocoa bars"),
+ ("gift-wrap", "Easy", "yes", "Existing wall organizer.", "Wrap stations"),
+]
+def src(x):
+    n = x["name"].lower()
+    for k, lvl, ready, note, base in SRC:
+        if k in n:
+            return dict(level=lvl, ready_for_christmas=ready, how=note), base
+    return dict(level="Medium", ready_for_christmas="tight", how="Needs a custom design from the supplier; ask for a quote and sample time."), "Original concept"
+for x in I:
+    x["sourcing"], x["viral_base"] = src(x)
 json.dump(I, open(__file__.replace("build_ideas.py", "ideas.json"), "w"), indent=1, ensure_ascii=False)

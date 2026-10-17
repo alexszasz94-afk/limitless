@@ -25,7 +25,13 @@
   "christmas": true,
   "rank": 1,
   "status": "idea",
-  "id": "snow-globe-night-light-with-your-photo-inside"
+  "id": "snow-globe-night-light-with-your-photo-inside",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Photo-insert snow globe lamps exist; we add custom photo printing."
+  },
+  "viral_base": "Personalised snow globes"
  },
  {
   "name": "Personalised Video Message Ornament (plays a video)",
@@ -53,7 +59,13 @@
   "christmas": true,
   "rank": 2,
   "status": "idea",
-  "id": "personalised-video-message-ornament-plays-a-video"
+  "id": "personalised-video-message-ornament-plays-a-video",
+  "sourcing": {
+   "level": "Hard",
+   "ready_for_christmas": "tight",
+   "how": "Small video module from video greeting cards + custom ornament shell; needs electronics QC and certification."
+  },
+  "viral_base": "Video greeting cards"
  },
  {
   "name": "Snowing Christmas Tree Topper (blows real-looking snow)",
@@ -81,7 +93,13 @@
   "christmas": true,
   "rank": 3,
   "status": "idea",
-  "id": "snowing-christmas-tree-topper-blows-real-looking-snow"
+  "id": "snowing-christmas-tree-topper-blows-real-looking-snow",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "tight",
+   "how": "Snow-blowing topper exists in small numbers; custom design."
+  },
+  "viral_base": "Snowing Christmas trees"
  },
  {
   "name": "Audio Photo Frame (press to hear their voice)",
@@ -109,7 +127,13 @@
   "christmas": false,
   "rank": 4,
   "status": "idea",
-  "id": "audio-photo-frame-press-to-hear-their-voice"
+  "id": "audio-photo-frame-press-to-hear-their-voice",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Recordable sound module (standard, cheap) + photo frame."
+  },
+  "viral_base": "Recordable memory gifts"
  },
  {
   "name": "Musical Rotating Christmas Village with Snow",
@@ -137,7 +161,13 @@
   "christmas": true,
   "rank": 5,
   "status": "idea",
-  "id": "musical-rotating-christmas-village-with-snow"
+  "id": "musical-rotating-christmas-village-with-snow",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Existing musical village OEMs; we pick design and packaging."
+  },
+  "viral_base": "Christmas villages (classic)"
  },
  {
   "name": "Talking Santa Phone Call Ornament (kid presses, Santa answers)",
@@ -165,7 +195,13 @@
   "christmas": true,
   "rank": 6,
   "status": "idea",
-  "id": "talking-santa-phone-call-ornament-kid-presses-santa-answers"
+  "id": "talking-santa-phone-call-ornament-kid-presses-santa-answers",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Recordable sound module inside ornament/plush (standard)."
+  },
+  "viral_base": "Recordable plush & ornaments"
  },
  {
   "name": "Personalised Cutting Board with Grandma's Recipe",
@@ -193,7 +229,13 @@
   "christmas": false,
   "rank": 7,
   "status": "idea",
-  "id": "personalised-cutting-board-with-grandma-s-recipe"
+  "id": "personalised-cutting-board-with-grandma-s-recipe",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Laser engraving on wooden boards - any engraving shop."
+  },
+  "viral_base": "Recipe cutting boards"
  },
  {
   "name": "Light-Up Ugly Christmas Sweater (custom face)",
@@ -221,7 +263,13 @@
   "christmas": true,
   "rank": 8,
   "status": "idea",
-  "id": "light-up-ugly-christmas-sweater-custom-face"
+  "id": "light-up-ugly-christmas-sweater-custom-face",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing LED ugly-sweater OEMs + custom print."
+  },
+  "viral_base": "Ugly Christmas sweaters"
  },
  {
   "name": "Christmas Window Projector (Santa flying past)",
@@ -249,7 +297,13 @@
   "christmas": true,
   "rank": 9,
   "status": "idea",
-  "id": "christmas-window-projector-santa-flying-past"
+  "id": "christmas-window-projector-santa-flying-past",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Existing OEM projector; custom slides/animation and shell. Needs FCC/UL papers."
+  },
+  "viral_base": "Galaxy & sunset projector lamps"
  },
  {
   "name": "Christmas Ornament Photo Projector Ball",
@@ -277,7 +331,13 @@
   "christmas": true,
   "rank": 10,
   "status": "idea",
-  "id": "christmas-ornament-photo-projector-ball"
+  "id": "christmas-ornament-photo-projector-ball",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Existing OEM projector; custom slides/animation and shell. Needs FCC/UL papers."
+  },
+  "viral_base": "Galaxy & sunset projector lamps"
  },
  {
   "name": "Fireplace Projector Lantern",
@@ -305,7 +365,13 @@
   "christmas": true,
   "rank": 11,
   "status": "idea",
-  "id": "fireplace-projector-lantern"
+  "id": "fireplace-projector-lantern",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Existing OEM projector; custom slides/animation and shell. Needs FCC/UL papers."
+  },
+  "viral_base": "Galaxy & sunset projector lamps"
  },
  {
   "name": "Fake Snow Machine for the Window",
@@ -333,7 +399,13 @@
   "christmas": true,
   "rank": 12,
   "status": "idea",
-  "id": "fake-snow-machine-for-the-window"
+  "id": "fake-snow-machine-for-the-window",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Existing party snow machines; custom shell/size."
+  },
+  "viral_base": "Snow machines for parties"
  },
  {
   "name": "Mini Indoor Snow Machine Globe (walk-in photo booth)",
@@ -361,7 +433,13 @@
   "christmas": true,
   "rank": 13,
   "status": "idea",
-  "id": "mini-indoor-snow-machine-globe-walk-in-photo-booth"
+  "id": "mini-indoor-snow-machine-globe-walk-in-photo-booth",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "tight",
+   "how": "Existing inflatable globe OEMs; high shipping cost."
+  },
+  "viral_base": "Giant snow globes"
  },
  {
   "name": "Santa's Magic Key + Light-Up Front Door Lock",
@@ -389,7 +467,13 @@
   "christmas": true,
   "rank": 14,
   "status": "idea",
-  "id": "santa-s-magic-key-light-up-front-door-lock"
+  "id": "santa-s-magic-key-light-up-front-door-lock",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Metal key + LED + card, standard."
+  },
+  "viral_base": "Santa keys"
  },
  {
   "name": "Santa Cam Doorbell Overlay (catch Santa on camera)",
@@ -417,7 +501,13 @@
   "christmas": true,
   "rank": 15,
   "status": "idea",
-  "id": "santa-cam-doorbell-overlay-catch-santa-on-camera"
+  "id": "santa-cam-doorbell-overlay-catch-santa-on-camera",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Digital product: we edit a Santa video onto the customer's photo/video - no factory."
+  },
+  "viral_base": "Catch-Santa videos"
  },
  {
   "name": "Nativity-Free Winter Wonderland Light Tunnel (garden)",
@@ -445,7 +535,13 @@
   "christmas": true,
   "rank": 16,
   "status": "idea",
-  "id": "nativity-free-winter-wonderland-light-tunnel-garden"
+  "id": "nativity-free-winter-wonderland-light-tunnel-garden",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "tight",
+   "how": "Existing LED arch OEMs; bulky shipping."
+  },
+  "viral_base": "Light tunnels"
  },
  {
   "name": "Christmas Train that Runs Around the Tree with Smoke",
@@ -473,7 +569,47 @@
   "christmas": true,
   "rank": 17,
   "status": "idea",
-  "id": "christmas-train-that-runs-around-the-tree-with-smoke"
+  "id": "christmas-train-that-runs-around-the-tree-with-smoke",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing OEM Christmas trains; rebrand + packaging."
+  },
+  "viral_base": "Christmas tree trains (classic)"
+ },
+ {
+  "name": "Snow-Globe Lid Tumbler 40 oz (Christmas edition)",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 49,
+  "emotions": [
+   "Christmas",
+   "trend",
+   "gift"
+  ],
+  "hook": "My tumbler snows when I shake it ❄️",
+  "demo": "Shakes tumbler, glitter snow swirls in the clear lid",
+  "why": "Tumbler craze proved the format; snow-globe lid is our Christmas twist.",
+  "risk": "Leak test the lid",
+  "scores": {
+   "E": 8,
+   "D": 10,
+   "G": 10,
+   "M": 7,
+   "P": 9,
+   "N": 7,
+   "R": 8
+  },
+  "score": 86,
+  "christmas": true,
+  "rank": 18,
+  "status": "idea",
+  "id": "snow-globe-lid-tumbler-40-oz-christmas-edition",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing tumbler OEM; custom double-wall snow lid."
+  },
+  "viral_base": "Tumbler craze"
  },
  {
   "name": "Heartbeat Recording Teddy Bear",
@@ -499,9 +635,15 @@
   },
   "score": 86,
   "christmas": false,
-  "rank": 18,
+  "rank": 19,
   "status": "idea",
-  "id": "heartbeat-recording-teddy-bear"
+  "id": "heartbeat-recording-teddy-bear",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Recordable module inside plush (standard)."
+  },
+  "viral_base": "Heartbeat bears"
  },
  {
   "name": "Book Nook Shelf Insert (tiny lit alley)",
@@ -527,9 +669,15 @@
   },
   "score": 85,
   "christmas": false,
-  "rank": 19,
+  "rank": 20,
   "status": "idea",
-  "id": "book-nook-shelf-insert-tiny-lit-alley"
+  "id": "book-nook-shelf-insert-tiny-lit-alley",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Existing book-nook OEMs; sell pre-assembled."
+  },
+  "viral_base": "Book nooks (BookTok)"
  },
  {
   "name": "Smart Plant Pot with Emotions (shows face)",
@@ -555,9 +703,15 @@
   },
   "score": 85,
   "christmas": false,
-  "rank": 20,
+  "rank": 21,
   "status": "idea",
-  "id": "smart-plant-pot-with-emotions-shows-face"
+  "id": "smart-plant-pot-with-emotions-shows-face",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "tight",
+   "how": "Existing OEM 'smart planter' with screen; we rebrand and choose faces."
+  },
+  "viral_base": "Emotional smart planters"
  },
  {
   "name": "Santa Key + Magic Snow Footprint Stencil Kit",
@@ -583,9 +737,15 @@
   },
   "score": 84,
   "christmas": true,
-  "rank": 21,
+  "rank": 22,
   "status": "idea",
-  "id": "santa-key-magic-snow-footprint-stencil-kit"
+  "id": "santa-key-magic-snow-footprint-stencil-kit",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Stencils + snow spray, standard."
+  },
+  "viral_base": "Santa footprint kits"
  },
  {
   "name": "Giant Inflatable Snowman with Projector Face",
@@ -611,9 +771,15 @@
   },
   "score": 84,
   "christmas": true,
-  "rank": 22,
+  "rank": 23,
   "status": "idea",
-  "id": "giant-inflatable-snowman-with-projector-face"
+  "id": "giant-inflatable-snowman-with-projector-face",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Existing inflatable OEMs; projector face is add-on."
+  },
+  "viral_base": "Christmas inflatables"
  },
  {
   "name": "Santa Footprint & Sleigh-Track Christmas Morning Kit",
@@ -639,9 +805,15 @@
   },
   "score": 84,
   "christmas": true,
-  "rank": 23,
+  "rank": 24,
   "status": "idea",
-  "id": "santa-footprint-sleigh-track-christmas-morning-kit"
+  "id": "santa-footprint-sleigh-track-christmas-morning-kit",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Stencils + snow spray, standard."
+  },
+  "viral_base": "Santa footprint kits"
  },
  {
   "name": "Family Matching Christmas Pyjamas with Names",
@@ -667,9 +839,15 @@
   },
   "score": 84,
   "christmas": true,
-  "rank": 24,
+  "rank": 25,
   "status": "idea",
-  "id": "family-matching-christmas-pyjamas-with-names"
+  "id": "family-matching-christmas-pyjamas-with-names",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Print-on-demand family pyjamas with names."
+  },
+  "viral_base": "Matching family pyjamas"
  },
  {
   "name": "Ugly Christmas Sweater for Dog & Owner Matching Set",
@@ -695,9 +873,15 @@
   },
   "score": 84,
   "christmas": true,
-  "rank": 25,
+  "rank": 26,
   "status": "idea",
-  "id": "ugly-christmas-sweater-for-dog-owner-matching-set"
+  "id": "ugly-christmas-sweater-for-dog-owner-matching-set",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Print-on-demand/embroidery on existing sweaters."
+  },
+  "viral_base": "Ugly Christmas sweaters"
  },
  {
   "name": "Elf Door with Light-Up Window & Tiny Mailbox",
@@ -723,9 +907,15 @@
   },
   "score": 84,
   "christmas": true,
-  "rank": 26,
+  "rank": 27,
   "status": "idea",
-  "id": "elf-door-with-light-up-window-tiny-mailbox"
+  "id": "elf-door-with-light-up-window-tiny-mailbox",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Wood/resin mini door + LED window + mailbox, standard."
+  },
+  "viral_base": "Fairy & elf doors"
  },
  {
   "name": "Christmas Tree Angel that Moves Its Wings",
@@ -751,9 +941,49 @@
   },
   "score": 84,
   "christmas": true,
-  "rank": 27,
+  "rank": 28,
   "status": "idea",
-  "id": "christmas-tree-angel-that-moves-its-wings"
+  "id": "christmas-tree-angel-that-moves-its-wings",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Animated toppers exist; custom design."
+  },
+  "viral_base": "Animated tree toppers"
+ },
+ {
+  "name": "Our Own Squishy Christmas Plush Collection (collectible)",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "collectible",
+   "cute"
+  ],
+  "hook": "Collect all 6 Christmas squishies 🎄",
+  "demo": "Squeezes plush, it slowly bounces back; lineup of 6",
+  "why": "Collectible squishy plush is proven; our own characters = no IP + repeat buys.",
+  "risk": "Must design 6 strong characters",
+  "scores": {
+   "E": 9,
+   "D": 9,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 6,
+   "R": 9
+  },
+  "score": 84,
+  "christmas": true,
+  "rank": 29,
+  "status": "idea",
+  "id": "our-own-squishy-christmas-plush-collection-collectible",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Plush factories can make our own characters (MOQ ~300-500)."
+  },
+  "viral_base": "Squishy plush craze"
  },
  {
   "name": "Star Map of the Night You Met (lit frame)",
@@ -779,9 +1009,15 @@
   },
   "score": 84,
   "christmas": false,
-  "rank": 28,
+  "rank": 30,
   "status": "idea",
-  "id": "star-map-of-the-night-you-met-lit-frame"
+  "id": "star-map-of-the-night-you-met-lit-frame",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Print + LED frame, standard."
+  },
+  "viral_base": "Star map prints"
  },
  {
   "name": "Hand-Holding Sculpture from Your Couple Photo",
@@ -807,9 +1043,15 @@
   },
   "score": 84,
   "christmas": false,
-  "rank": 29,
+  "rank": 31,
   "status": "idea",
-  "id": "hand-holding-sculpture-from-your-couple-photo"
+  "id": "hand-holding-sculpture-from-your-couple-photo",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "tight",
+   "how": "3D modelling from photo + resin print; slower production."
+  },
+  "viral_base": "3D keepsakes"
  },
  {
   "name": "Talking Plush that Reads the Kid's Name",
@@ -835,9 +1077,15 @@
   },
   "score": 84,
   "christmas": false,
-  "rank": 30,
+  "rank": 32,
   "status": "idea",
-  "id": "talking-plush-that-reads-the-kid-s-name"
+  "id": "talking-plush-that-reads-the-kid-s-name",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Recordable sound module inside ornament/plush (standard)."
+  },
+  "viral_base": "Recordable plush & ornaments"
  },
  {
   "name": "Necklace with Hidden Photo Projection",
@@ -863,9 +1111,15 @@
   },
   "score": 84,
   "christmas": false,
-  "rank": 31,
+  "rank": 33,
   "status": "idea",
-  "id": "necklace-with-hidden-photo-projection"
+  "id": "necklace-with-hidden-photo-projection",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing photo-projection pendants; custom photo."
+  },
+  "viral_base": "Projection necklaces"
  },
  {
   "name": "Couples Bracelets that Vibrate When the Other Taps",
@@ -891,9 +1145,15 @@
   },
   "score": 84,
   "christmas": false,
-  "rank": 32,
+  "rank": 34,
   "status": "idea",
-  "id": "couples-bracelets-that-vibrate-when-the-other-taps"
+  "id": "couples-bracelets-that-vibrate-when-the-other-taps",
+  "sourcing": {
+   "level": "Hard",
+   "ready_for_christmas": "no",
+   "how": "Paired Bluetooth bracelets + app; prototype and certification take months."
+  },
+  "viral_base": "Long-distance touch lamps"
  },
  {
   "name": "Gingerbread House Kit that Lights Up from Inside",
@@ -919,9 +1179,15 @@
   },
   "score": 83,
   "christmas": true,
-  "rank": 33,
+  "rank": 35,
   "status": "idea",
-  "id": "gingerbread-house-kit-that-lights-up-from-inside"
+  "id": "gingerbread-house-kit-that-lights-up-from-inside",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Food kit + LED; food rules."
+  },
+  "viral_base": "Gingerbread house kits"
  },
  {
   "name": "Countdown-to-Christmas Wooden Advent House (refillable)",
@@ -947,9 +1213,15 @@
   },
   "score": 83,
   "christmas": true,
-  "rank": 34,
+  "rank": 36,
   "status": "idea",
-  "id": "countdown-to-christmas-wooden-advent-house-refillable"
+  "id": "countdown-to-christmas-wooden-advent-house-refillable",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "tight",
+   "how": "Assembly of existing items in printed box; must ship by late November."
+  },
+  "viral_base": "Advent calendars"
  },
  {
   "name": "Personalised Christmas Cookie Cutter of Your Pet",
@@ -975,9 +1247,15 @@
   },
   "score": 83,
   "christmas": true,
-  "rank": 35,
+  "rank": 37,
   "status": "idea",
-  "id": "personalised-christmas-cookie-cutter-of-your-pet"
+  "id": "personalised-christmas-cookie-cutter-of-your-pet",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "3D-printed cutter from pet photo outline."
+  },
+  "viral_base": "Custom cookie cutters"
  },
  {
   "name": "Desk Pet Robot that Reacts to Your Mood",
@@ -1003,9 +1281,15 @@
   },
   "score": 83,
   "christmas": false,
-  "rank": 36,
+  "rank": 38,
   "status": "idea",
-  "id": "desk-pet-robot-that-reacts-to-your-mood"
+  "id": "desk-pet-robot-that-reacts-to-your-mood",
+  "sourcing": {
+   "level": "Hard",
+   "ready_for_christmas": "no",
+   "how": "New electronics + firmware; prototype and certification take months."
+  },
+  "viral_base": "Desk pet robots"
  },
  {
   "name": "Matching Mom & Daughter Bracelets that Glow",
@@ -1030,9 +1314,15 @@
   },
   "score": 83,
   "christmas": false,
-  "rank": 37,
+  "rank": 39,
   "status": "idea",
-  "id": "matching-mom-daughter-bracelets-that-glow"
+  "id": "matching-mom-daughter-bracelets-that-glow",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "tight",
+   "how": "LED bracelets exist; paired glow needs simple radio module."
+  },
+  "viral_base": "Friendship bracelets"
  },
  {
   "name": "Bird Feeder with Camera (AI identifies birds)",
@@ -1058,9 +1348,15 @@
   },
   "score": 83,
   "christmas": false,
-  "rank": 38,
+  "rank": 40,
   "status": "idea",
-  "id": "bird-feeder-with-camera-ai-identifies-birds"
+  "id": "bird-feeder-with-camera-ai-identifies-birds",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "tight",
+   "how": "Existing OEM camera feeders with app; we rebrand."
+  },
+  "viral_base": "Smart bird feeders"
  },
  {
   "name": "Elf-on-a-Shelf Style Mischief Kit (our own character)",
@@ -1086,9 +1382,15 @@
   },
   "score": 82,
   "christmas": true,
-  "rank": 39,
+  "rank": 41,
   "status": "idea",
-  "id": "elf-on-a-shelf-style-mischief-kit-our-own-character"
+  "id": "elf-on-a-shelf-style-mischief-kit-our-own-character",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Plush/wood props from existing toy factories; our own character."
+  },
+  "viral_base": "Elf-on-the-shelf traditions"
  },
  {
   "name": "Christmas Tree Collar that Plays Music & Lights Up",
@@ -1114,9 +1416,15 @@
   },
   "score": 82,
   "christmas": true,
-  "rank": 40,
+  "rank": 42,
   "status": "idea",
-  "id": "christmas-tree-collar-that-plays-music-lights-up"
+  "id": "christmas-tree-collar-that-plays-music-lights-up",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "LED + music module on tree collar."
+  },
+  "viral_base": "Tree collars"
  },
  {
   "name": "Hot-Cocoa Station Kit (bar sign, toppings jars, mugs)",
@@ -1142,9 +1450,15 @@
   },
   "score": 82,
   "christmas": true,
-  "rank": 41,
+  "rank": 43,
   "status": "idea",
-  "id": "hot-cocoa-station-kit-bar-sign-toppings-jars-mugs"
+  "id": "hot-cocoa-station-kit-bar-sign-toppings-jars-mugs",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Bundle of mugs, jars, sign."
+  },
+  "viral_base": "Cocoa bars"
  },
  {
   "name": "Personalised Christmas Stocking with Light-Up Name",
@@ -1170,9 +1484,15 @@
   },
   "score": 82,
   "christmas": true,
-  "rank": 42,
+  "rank": 44,
   "status": "idea",
-  "id": "personalised-christmas-stocking-with-light-up-name"
+  "id": "personalised-christmas-stocking-with-light-up-name",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Embroidery on existing stockings (+ LED string)."
+  },
+  "viral_base": "Personalised stockings"
  },
  {
   "name": "Santa's Nice List Certificate + Gold Medal Box",
@@ -1198,9 +1518,15 @@
   },
   "score": 82,
   "christmas": true,
-  "rank": 43,
+  "rank": 45,
   "status": "idea",
-  "id": "santa-s-nice-list-certificate-gold-medal-box"
+  "id": "santa-s-nice-list-certificate-gold-medal-box",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Printing + medal, standard."
+  },
+  "viral_base": "Nice-list certificates"
  },
  {
   "name": "Christmas Tree Skirt with Kids' Handprints (DIY kit)",
@@ -1226,9 +1552,15 @@
   },
   "score": 82,
   "christmas": true,
-  "rank": 44,
+  "rank": 46,
   "status": "idea",
-  "id": "christmas-tree-skirt-with-kids-handprints-diy-kit"
+  "id": "christmas-tree-skirt-with-kids-handprints-diy-kit",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing tree skirt + paint kit."
+  },
+  "viral_base": "Handprint keepsakes"
  },
  {
   "name": "Santa's Workshop Desk Kit for Kids (stamp, letters, list)",
@@ -1254,9 +1586,15 @@
   },
   "score": 82,
   "christmas": true,
-  "rank": 45,
+  "rank": 47,
   "status": "idea",
-  "id": "santa-s-workshop-desk-kit-for-kids-stamp-letters-list"
+  "id": "santa-s-workshop-desk-kit-for-kids-stamp-letters-list",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Stamps + printed stationery."
+  },
+  "viral_base": "Role-play kits"
  },
  {
   "name": "Giant Christmas Present Box Seat (sit-in photo prop)",
@@ -1282,9 +1620,151 @@
   },
   "score": 82,
   "christmas": true,
-  "rank": 46,
+  "rank": 48,
   "status": "idea",
-  "id": "giant-christmas-present-box-seat-sit-in-photo-prop"
+  "id": "giant-christmas-present-box-seat-sit-in-photo-prop",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Printed foam/cardboard box."
+  },
+  "viral_base": "Kids in gift boxes"
+ },
+ {
+  "name": "Northern Lights Aurora Projector (Christmas sky)",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "calm",
+   "wonder"
+  ],
+  "hook": "Northern lights in my bedroom on Christmas Eve 🌌",
+  "demo": "Ceiling fills with moving green aurora and stars",
+  "why": "Sunset/galaxy lamps were mega-viral; aurora + snowflakes = winter version.",
+  "risk": "Crowded - win on visuals",
+  "scores": {
+   "E": 8,
+   "D": 10,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 5,
+   "R": 8
+  },
+  "score": 82,
+  "christmas": true,
+  "rank": 49,
+  "status": "idea",
+  "id": "northern-lights-aurora-projector-christmas-sky",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Existing OEM projector; custom slides/animation and shell. Needs FCC/UL papers."
+  },
+  "viral_base": "Galaxy & sunset projector lamps"
+ },
+ {
+  "name": "Wearable Blanket Hoodie in Christmas Prints (oversized)",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 59,
+  "emotions": [
+   "Christmas",
+   "cozy",
+   "family"
+  ],
+  "hook": "The oversized hoodie the whole family steals 🎄",
+  "demo": "Family in matching Christmas-print giant hoodies",
+  "why": "Wearable-blanket hoodies are proven best-sellers; Christmas prints + family packs.",
+  "risk": "Crowded",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 10,
+   "M": 7,
+   "P": 9,
+   "N": 5,
+   "R": 8
+  },
+  "score": 82,
+  "christmas": true,
+  "rank": 50,
+  "status": "idea",
+  "id": "wearable-blanket-hoodie-in-christmas-prints-oversized",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing wearable-blanket OEM + print."
+  },
+  "viral_base": "Wearable blankets"
+ },
+ {
+  "name": "Snowman Bubble Machine (bubbles like snow)",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "wonder"
+  ],
+  "hook": "It's snowing bubbles ⛄",
+  "demo": "Snowman blows hundreds of bubbles",
+  "why": "Bubble machines went viral with kids; snowman version for Christmas.",
+  "risk": "Liquid refill",
+  "scores": {
+   "E": 8,
+   "D": 10,
+   "G": 9,
+   "M": 6,
+   "P": 9,
+   "N": 7,
+   "R": 8
+  },
+  "score": 82,
+  "christmas": true,
+  "rank": 51,
+  "status": "idea",
+  "id": "snowman-bubble-machine-bubbles-like-snow",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing bubble machine OEM, snowman shell."
+  },
+  "viral_base": "Bubble machines"
+ },
+ {
+  "name": "Personalised Family Photo Puzzle Ornament Box",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "family",
+   "personalized"
+  ],
+  "hook": "We solved our own family photo on Christmas Eve 🧩",
+  "demo": "Last puzzle piece completes the family photo",
+  "why": "Photo puzzles sell every Christmas; ornament box twist.",
+  "risk": "Print quality",
+  "scores": {
+   "E": 8,
+   "D": 9,
+   "G": 10,
+   "M": 6,
+   "P": 9,
+   "N": 6,
+   "R": 9
+  },
+  "score": 82,
+  "christmas": true,
+  "rank": 52,
+  "status": "idea",
+  "id": "personalised-family-photo-puzzle-ornament-box",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Print-on-demand puzzles."
+  },
+  "viral_base": "Photo puzzles"
  },
  {
   "name": "Smart Cozy Corner Kit (lights + throw + candles)",
@@ -1310,9 +1790,15 @@
   },
   "score": 82,
   "christmas": false,
-  "rank": 47,
+  "rank": 53,
   "status": "idea",
-  "id": "smart-cozy-corner-kit-lights-throw-candles"
+  "id": "smart-cozy-corner-kit-lights-throw-candles",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Bundle of existing items."
+  },
+  "viral_base": "Cozy-corner makeovers"
  },
  {
   "name": "At-Home Gel Nail Printer Kit",
@@ -1338,9 +1824,15 @@
   },
   "score": 82,
   "christmas": false,
-  "rank": 48,
+  "rank": 54,
   "status": "idea",
-  "id": "at-home-gel-nail-printer-kit"
+  "id": "at-home-gel-nail-printer-kit",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "tight",
+   "how": "Existing OEM nail printers; we rebrand. Quality varies a lot."
+  },
+  "viral_base": "Nail printer TikTok demos"
  },
  {
   "name": "Personalised Storybook Starring Your Kid & Pet",
@@ -1366,9 +1858,15 @@
   },
   "score": 82,
   "christmas": false,
-  "rank": 49,
+  "rank": 55,
   "status": "idea",
-  "id": "personalised-storybook-starring-your-kid-pet"
+  "id": "personalised-storybook-starring-your-kid-pet",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "tight",
+   "how": "Illustration pipeline + print-on-demand book."
+  },
+  "viral_base": "Personalised kids books"
  },
  {
   "name": "AI Bedtime Plush that Tells New Stories",
@@ -1394,9 +1892,15 @@
   },
   "score": 82,
   "christmas": false,
-  "rank": 50,
+  "rank": 56,
   "status": "idea",
-  "id": "ai-bedtime-plush-that-tells-new-stories"
+  "id": "ai-bedtime-plush-that-tells-new-stories",
+  "sourcing": {
+   "level": "Hard",
+   "ready_for_christmas": "no",
+   "how": "Needs an app, voice cloning and data privacy - software project, not just a factory."
+  },
+  "viral_base": "AI toys"
  },
  {
   "name": "Christmas Eve 'Reindeer Food' Glitter Kit (eco)",
@@ -1422,9 +1926,15 @@
   },
   "score": 81,
   "christmas": true,
-  "rank": 51,
+  "rank": 57,
   "status": "idea",
-  "id": "christmas-eve-reindeer-food-glitter-kit-eco"
+  "id": "christmas-eve-reindeer-food-glitter-kit-eco",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Pack eco glitter/oats - needs food-safe/eco wording."
+  },
+  "viral_base": "Reindeer food tradition"
  },
  {
   "name": "Snowball Fight Indoor Kit (soft snowballs + fort)",
@@ -1450,9 +1960,15 @@
   },
   "score": 81,
   "christmas": true,
-  "rank": 52,
+  "rank": 58,
   "status": "idea",
-  "id": "snowball-fight-indoor-kit-soft-snowballs-fort"
+  "id": "snowball-fight-indoor-kit-soft-snowballs-fort",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing indoor snowball sets."
+  },
+  "viral_base": "Indoor snowballs"
  },
  {
   "name": "Christmas Countdown Clock (days until Christmas, snow display)",
@@ -1478,9 +1994,15 @@
   },
   "score": 81,
   "christmas": true,
-  "rank": 53,
+  "rank": 59,
   "status": "idea",
-  "id": "christmas-countdown-clock-days-until-christmas-snow-display"
+  "id": "christmas-countdown-clock-days-until-christmas-snow-display",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Existing countdown clock OEMs."
+  },
+  "viral_base": "Christmas countdown clocks"
  },
  {
   "name": "Cozy Christmas Movie Night Box (pjs, cocoa, popcorn, socks)",
@@ -1506,9 +2028,15 @@
   },
   "score": 81,
   "christmas": true,
-  "rank": 54,
+  "rank": 60,
   "status": "idea",
-  "id": "cozy-christmas-movie-night-box-pjs-cocoa-popcorn-socks"
+  "id": "cozy-christmas-movie-night-box-pjs-cocoa-popcorn-socks",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Assembly of existing items in printed box."
+  },
+  "viral_base": "Christmas Eve boxes"
  },
  {
   "name": "Personalised North Pole Passport for Kids",
@@ -1534,9 +2062,15 @@
   },
   "score": 81,
   "christmas": true,
-  "rank": 55,
+  "rank": 61,
   "status": "idea",
-  "id": "personalised-north-pole-passport-for-kids"
+  "id": "personalised-north-pole-passport-for-kids",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Printing."
+  },
+  "viral_base": "North Pole passports"
  },
  {
   "name": "Floating Moon Lamp (magnetic levitation)",
@@ -1562,9 +2096,15 @@
   },
   "score": 81,
   "christmas": false,
-  "rank": 56,
+  "rank": 62,
   "status": "idea",
-  "id": "floating-moon-lamp-magnetic-levitation"
+  "id": "floating-moon-lamp-magnetic-levitation",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing levitation lamp OEM."
+  },
+  "viral_base": "Levitating moon lamps"
  },
  {
   "name": "Rain-Cloud Humidifier that Drips on a Plant",
@@ -1590,9 +2130,15 @@
   },
   "score": 81,
   "christmas": false,
-  "rank": 57,
+  "rank": 63,
   "status": "idea",
-  "id": "rain-cloud-humidifier-that-drips-on-a-plant"
+  "id": "rain-cloud-humidifier-that-drips-on-a-plant",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Existing cloud humidifier OEM."
+  },
+  "viral_base": "Rain cloud humidifiers"
  },
  {
   "name": "Tooth-Fairy Door with Tiny Glowing Footprints",
@@ -1618,121 +2164,15 @@
   },
   "score": 81,
   "christmas": false,
-  "rank": 58,
+  "rank": 64,
   "status": "idea",
-  "id": "tooth-fairy-door-with-tiny-glowing-footprints"
- },
- {
-  "name": "Retro Game Console Shaped like a TV (400 games)",
-  "category": "Tech & gadgets",
-  "price": 79,
-  "emotions": [
-   "nostalgia",
-   "family",
-   "gift"
-  ],
-  "hook": "My dad played for 3 hours straight 😂",
-  "demo": "Plugs into TV, retro games light up",
-  "why": "Nostalgia for 30-50 y/o + family.",
-  "risk": "IP on games - only original/licensed",
-  "scores": {
-   "E": 9,
-   "D": 9,
-   "G": 9,
-   "M": 8,
-   "P": 7,
-   "N": 5,
-   "R": 6
+  "id": "tooth-fairy-door-with-tiny-glowing-footprints",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Wood/resin door + glow stickers."
   },
-  "score": 81,
-  "christmas": false,
-  "rank": 59,
-  "status": "idea",
-  "id": "retro-game-console-shaped-like-a-tv-400-games"
- },
- {
-  "name": "Instant Print Camera for Kids",
-  "category": "Tech & gadgets",
-  "price": 59,
-  "emotions": [
-   "kids",
-   "creativity",
-   "memory"
-  ],
-  "hook": "She prints her own memories now 📸",
-  "demo": "Takes photo, thermal print slides out",
-  "why": "Creative kids gift.",
-  "risk": "Common",
-  "scores": {
-   "E": 8,
-   "D": 10,
-   "G": 9,
-   "M": 7,
-   "P": 8,
-   "N": 5,
-   "R": 8
-  },
-  "score": 81,
-  "christmas": false,
-  "rank": 60,
-  "status": "idea",
-  "id": "instant-print-camera-for-kids"
- },
- {
-  "name": "Birth-Flower Personalized Jewellery Box",
-  "category": "Fashion & accessories",
-  "price": 59,
-  "emotions": [
-   "personalized",
-   "mom",
-   "gift"
-  ],
-  "hook": "Every kid's birth flower on mom's box 💐",
-  "demo": "Opens box: engraved flowers + names",
-  "why": "Mom gift.",
-  "risk": "Personalisation",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 10,
-   "M": 7,
-   "P": 8,
-   "N": 7,
-   "R": 9
-  },
-  "score": 81,
-  "christmas": false,
-  "rank": 61,
-  "status": "idea",
-  "id": "birth-flower-personalized-jewellery-box"
- },
- {
-  "name": "Smart Fire Pit with Color Flames",
-  "category": "Outdoor & garden",
-  "price": 129,
-  "emotions": [
-   "cozy",
-   "friends",
-   "wow"
-  ],
-  "hook": "Rainbow flames for movie night 🔥",
-  "demo": "Flames change colour",
-  "why": "Wow demo; high price.",
-  "risk": "Safety",
-  "scores": {
-   "E": 8,
-   "D": 10,
-   "G": 7,
-   "M": 9,
-   "P": 7,
-   "N": 7,
-   "R": 6
-  },
-  "score": 81,
-  "christmas": false,
-  "rank": 62,
-  "status": "idea",
-  "id": "smart-fire-pit-with-color-flames"
+  "viral_base": "Fairy doors"
  },
  {
   "name": "Personalised Family Christmas Doormat that Lights Up",
@@ -1758,9 +2198,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 63,
+  "rank": 65,
   "status": "idea",
-  "id": "personalised-family-christmas-doormat-that-lights-up"
+  "id": "personalised-family-christmas-doormat-that-lights-up",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Custom print mat + LED border."
+  },
+  "viral_base": "Personalised doormats"
  },
  {
   "name": "Santa Hidden Camera Ornament (fake) + Certificate",
@@ -1786,9 +2232,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 64,
+  "rank": 66,
   "status": "idea",
-  "id": "santa-hidden-camera-ornament-fake-certificate"
+  "id": "santa-hidden-camera-ornament-fake-certificate",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Plastic ornament with LED; very standard."
+  },
+  "viral_base": "Santa camera ornaments"
  },
  {
   "name": "Advent Calendar of Mini Self-Care Gifts",
@@ -1814,9 +2266,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 65,
+  "rank": 67,
   "status": "idea",
-  "id": "advent-calendar-of-mini-self-care-gifts"
+  "id": "advent-calendar-of-mini-self-care-gifts",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "tight",
+   "how": "Assembly of existing items in printed box; must ship by late November."
+  },
+  "viral_base": "Advent calendars"
  },
  {
   "name": "Advent Calendar for Dogs",
@@ -1842,9 +2300,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 66,
+  "rank": 68,
   "status": "idea",
-  "id": "advent-calendar-for-dogs"
+  "id": "advent-calendar-for-dogs",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "tight",
+   "how": "Assembly of existing items in printed box; must ship by late November."
+  },
+  "viral_base": "Advent calendars"
  },
  {
   "name": "Personalised Christmas Eve Box",
@@ -1870,9 +2334,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 67,
+  "rank": 69,
   "status": "idea",
-  "id": "personalised-christmas-eve-box"
+  "id": "personalised-christmas-eve-box",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Assembly of existing items in printed box."
+  },
+  "viral_base": "Christmas Eve boxes"
  },
  {
   "name": "Personalised 'Letter from Santa' Kit with Wax Seal & North Pole Stamp",
@@ -1898,9 +2368,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 68,
+  "rank": 70,
   "status": "idea",
-  "id": "personalised-letter-from-santa-kit-with-wax-seal-north-pole-"
+  "id": "personalised-letter-from-santa-kit-with-wax-seal-north-pole-",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Printing + wax seal; can be POD."
+  },
+  "viral_base": "Letters from Santa"
  },
  {
   "name": "Santa Sack Personalised with Velvet & Name",
@@ -1926,9 +2402,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 69,
+  "rank": 71,
   "status": "idea",
-  "id": "santa-sack-personalised-with-velvet-name"
+  "id": "santa-sack-personalised-with-velvet-name",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Embroidery/print on velvet sacks."
+  },
+  "viral_base": "Santa sacks"
  },
  {
   "name": "Christmas Tree Ornament Advent (24 ornaments, one per day)",
@@ -1954,9 +2436,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 70,
+  "rank": 72,
   "status": "idea",
-  "id": "christmas-tree-ornament-advent-24-ornaments-one-per-day"
+  "id": "christmas-tree-ornament-advent-24-ornaments-one-per-day",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "tight",
+   "how": "Assembly of existing items in printed box; must ship by late November."
+  },
+  "viral_base": "Advent calendars"
  },
  {
   "name": "Christmas Morning Photo Backdrop Kit (balloon arch + sign)",
@@ -1982,9 +2470,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 71,
+  "rank": 73,
   "status": "idea",
-  "id": "christmas-morning-photo-backdrop-kit-balloon-arch-sign"
+  "id": "christmas-morning-photo-backdrop-kit-balloon-arch-sign",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing party backdrop kits."
+  },
+  "viral_base": "Balloon arches"
  },
  {
   "name": "Personalised Baby's First Christmas Ornament with Footprint",
@@ -2010,9 +2504,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 72,
+  "rank": 74,
   "status": "idea",
-  "id": "personalised-baby-s-first-christmas-ornament-with-footprint"
+  "id": "personalised-baby-s-first-christmas-ornament-with-footprint",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Print/engraving on existing ornament blanks."
+  },
+  "viral_base": "Personalised ornaments"
  },
  {
   "name": "Christmas Wreath with Hidden Speaker that Says Welcome",
@@ -2038,9 +2538,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 73,
+  "rank": 75,
   "status": "idea",
-  "id": "christmas-wreath-with-hidden-speaker-that-says-welcome"
+  "id": "christmas-wreath-with-hidden-speaker-that-says-welcome",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Motion-sensor sound module + wreath."
+  },
+  "viral_base": "Motion-sensor talking decor"
  },
  {
   "name": "Light-Up Christmas Pyjama Onesie for Adults",
@@ -2066,9 +2572,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 74,
+  "rank": 76,
   "status": "idea",
-  "id": "light-up-christmas-pyjama-onesie-for-adults"
+  "id": "light-up-christmas-pyjama-onesie-for-adults",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Print-on-demand family pyjamas with names."
+  },
+  "viral_base": "Matching family pyjamas"
  },
  {
   "name": "Gingerbread Man Plush with Heated Belly",
@@ -2094,9 +2606,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 75,
+  "rank": 77,
   "status": "idea",
-  "id": "gingerbread-man-plush-with-heated-belly"
+  "id": "gingerbread-man-plush-with-heated-belly",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Plush + USB low-heat pad; kids safety tests."
+  },
+  "viral_base": "Heated plush"
  },
  {
   "name": "Santa's Magic Snow Dust (instant snow powder kit)",
@@ -2122,204 +2640,15 @@
   },
   "score": 80,
   "christmas": true,
-  "rank": 76,
-  "status": "idea",
-  "id": "santa-s-magic-snow-dust-instant-snow-powder-kit"
- },
- {
-  "name": "Letters-to-Open-When Box",
-  "category": "Gifts that make people cry",
-  "price": 45,
-  "emotions": [
-   "love",
-   "distance",
-   "gift"
-  ],
-  "hook": "Open when you miss me 💌",
-  "demo": "Opens wooden box full of labelled envelopes",
-  "why": "Long-distance couples, graduation gifts.",
-  "risk": "Low tech, easy to copy",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 9,
-   "M": 7,
-   "P": 9,
-   "N": 7,
-   "R": 9
-  },
-  "score": 80,
-  "christmas": false,
-  "rank": 77,
-  "status": "idea",
-  "id": "letters-to-open-when-box"
- },
- {
-  "name": "Grandparent Story Journal with QR Voice Notes",
-  "category": "Gifts that make people cry",
-  "price": 49,
-  "emotions": [
-   "family",
-   "memory",
-   "grandparents"
-  ],
-  "hook": "Grandma's stories, saved forever 📖",
-  "demo": "Scans QR in journal, hears grandma's voice",
-  "why": "Memory keeping for families.",
-  "risk": "Needs app/host",
-  "scores": {
-   "E": 9,
-   "D": 7,
-   "G": 9,
-   "M": 7,
-   "P": 7,
-   "N": 8,
-   "R": 8
-  },
-  "score": 80,
-  "christmas": false,
   "rank": 78,
   "status": "idea",
-  "id": "grandparent-story-journal-with-qr-voice-notes"
- },
- {
-  "name": "Custom 'Our Song' Vinyl Plaque (spinning)",
-  "category": "Gifts that make people cry",
-  "price": 59,
-  "emotions": [
-   "love",
-   "music",
-   "couples"
-  ],
-  "hook": "Our wedding song, framed and spinning 💿",
-  "demo": "Vinyl spins, QR plays the song",
-  "why": "Couples & anniversaries.",
-  "risk": "Music licensing - QR to Spotify only",
-  "scores": {
-   "E": 8,
-   "D": 8,
-   "G": 9,
-   "M": 7,
-   "P": 8,
-   "N": 7,
-   "R": 9
+  "id": "santa-s-magic-snow-dust-instant-snow-powder-kit",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Instant-snow polymer, standard (label for kids)."
   },
-  "score": 80,
-  "christmas": false,
-  "rank": 79,
-  "status": "idea",
-  "id": "custom-our-song-vinyl-plaque-spinning"
- },
- {
-  "name": "Pet Memorial Paw-Print Glow Stone",
-  "category": "Pets",
-  "price": 49,
-  "emotions": [
-   "pets",
-   "grief",
-   "memory"
-  ],
-  "hook": "Her paw print glows every night 🐾",
-  "demo": "Stone glows with paw print",
-  "why": "Very emotional niche.",
-  "risk": "Sensitive",
-  "scores": {
-   "E": 9,
-   "D": 8,
-   "G": 7,
-   "M": 7,
-   "P": 8,
-   "N": 8,
-   "R": 9
-  },
-  "score": 80,
-  "christmas": false,
-  "rank": 80,
-  "status": "idea",
-  "id": "pet-memorial-paw-print-glow-stone"
- },
- {
-  "name": "Personalised Luggage Cover with Pet Face",
-  "category": "Car & travel",
-  "price": 49,
-  "emotions": [
-   "travel",
-   "pets",
-   "funny"
-  ],
-  "hook": "Spotted my suitcase in 0.2 seconds 🐶",
-  "demo": "Baggage claim: suitcase with giant dog face",
-  "why": "Funny + practical + personalised.",
-  "risk": "Sizing",
-  "scores": {
-   "E": 8,
-   "D": 9,
-   "G": 8,
-   "M": 6,
-   "P": 9,
-   "N": 8,
-   "R": 8
-  },
-  "score": 80,
-  "christmas": false,
-  "rank": 81,
-  "status": "idea",
-  "id": "personalised-luggage-cover-with-pet-face"
- },
- {
-  "name": "Smart Mirror that Shows Weather & Compliments You",
-  "category": "Big swings (higher risk, higher reward)",
-  "price": 149,
-  "emotions": [
-   "confidence",
-   "tech",
-   "fun"
-  ],
-  "hook": "My mirror hypes me up every morning 🥹",
-  "demo": "Mirror text: 'You look great today'",
-  "why": "Feel-good tech.",
-  "risk": "Tech",
-  "scores": {
-   "E": 8,
-   "D": 9,
-   "G": 7,
-   "M": 9,
-   "P": 6,
-   "N": 9,
-   "R": 6
-  },
-  "score": 80,
-  "christmas": false,
-  "rank": 82,
-  "status": "idea",
-  "id": "smart-mirror-that-shows-weather-compliments-you"
- },
- {
-  "name": "Life-Size Cardboard Cutout from Your Photo",
-  "category": "Big swings (higher risk, higher reward)",
-  "price": 69,
-  "emotions": [
-   "humor",
-   "personalized"
-  ],
-  "hook": "Sent my husband to his own party 😂",
-  "demo": "Reveal of life-size cutout",
-  "why": "Gag gift, parties.",
-  "risk": "Shipping size",
-  "scores": {
-   "E": 8,
-   "D": 9,
-   "G": 8,
-   "M": 7,
-   "P": 9,
-   "N": 6,
-   "R": 8
-  },
-  "score": 80,
-  "christmas": false,
-  "rank": 83,
-  "status": "idea",
-  "id": "life-size-cardboard-cutout-from-your-photo"
+  "viral_base": "Instant snow"
  },
  {
   "name": "Personalised Christmas Plate Set for Santa's Cookies",
@@ -2345,37 +2674,49 @@
   },
   "score": 79,
   "christmas": true,
-  "rank": 84,
+  "rank": 79,
   "status": "idea",
-  "id": "personalised-christmas-plate-set-for-santa-s-cookies"
+  "id": "personalised-christmas-plate-set-for-santa-s-cookies",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Print/decal on ceramic."
+  },
+  "viral_base": "Santa cookie plates"
  },
  {
-  "name": "Automatic Ball Launcher for Dogs",
-  "category": "Pets",
-  "price": 89,
+  "name": "Christmas Pickleball Paddle Set (ugly-sweater print)",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 79,
   "emotions": [
-   "pets",
-   "fun",
-   "practical"
+   "Christmas",
+   "sport",
+   "dad"
   ],
-  "hook": "He plays fetch with himself now 🎾",
-  "demo": "Dog drops ball, machine launches it",
-  "why": "Busy owners; viral demo.",
-  "risk": "Existing brands",
+  "hook": "Dad's Christmas present this year 🏓",
+  "demo": "Unwraps paddles with ugly-sweater print, first rally",
+  "why": "Pickleball boom; festive design = gift for parents 40+.",
+  "risk": "Sports gear quality",
   "scores": {
-   "E": 8,
-   "D": 10,
-   "G": 7,
+   "E": 7,
+   "D": 8,
+   "G": 9,
    "M": 8,
-   "P": 8,
-   "N": 5,
-   "R": 7
+   "P": 9,
+   "N": 7,
+   "R": 8
   },
   "score": 79,
-  "christmas": false,
-  "rank": 85,
+  "christmas": true,
+  "rank": 80,
   "status": "idea",
-  "id": "automatic-ball-launcher-for-dogs"
+  "id": "christmas-pickleball-paddle-set-ugly-sweater-print",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing paddle OEM + print."
+  },
+  "viral_base": "Pickleball boom"
  },
  {
   "name": "Pet Portrait Ornament from Photo",
@@ -2401,9 +2742,15 @@
   },
   "score": 78,
   "christmas": true,
-  "rank": 86,
+  "rank": 81,
   "status": "idea",
-  "id": "pet-portrait-ornament-from-photo"
+  "id": "pet-portrait-ornament-from-photo",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Print/engraving on existing ornament blanks."
+  },
+  "viral_base": "Personalised ornaments"
  },
  {
   "name": "Memory Snow Globe with Ashes/ Fur (pet)",
@@ -2429,9 +2776,15 @@
   },
   "score": 78,
   "christmas": true,
-  "rank": 87,
+  "rank": 82,
   "status": "idea",
-  "id": "memory-snow-globe-with-ashes-fur-pet"
+  "id": "memory-snow-globe-with-ashes-fur-pet",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Custom keepsake globe; sensitive handling."
+  },
+  "viral_base": "Memorial keepsakes"
  },
  {
   "name": "Christmas Memory Jar (write one memory each day)",
@@ -2457,9 +2810,15 @@
   },
   "score": 78,
   "christmas": true,
-  "rank": 88,
+  "rank": 83,
   "status": "idea",
-  "id": "christmas-memory-jar-write-one-memory-each-day"
+  "id": "christmas-memory-jar-write-one-memory-each-day",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Jar + printed cards + fairy lights."
+  },
+  "viral_base": "Memory jars"
  },
  {
   "name": "Light-Up Reindeer Antler Headband Family Pack",
@@ -2485,9 +2844,15 @@
   },
   "score": 78,
   "christmas": true,
-  "rank": 89,
+  "rank": 84,
   "status": "idea",
-  "id": "light-up-reindeer-antler-headband-family-pack"
+  "id": "light-up-reindeer-antler-headband-family-pack",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing light-up headbands."
+  },
+  "viral_base": "Party headbands"
  },
  {
   "name": "Ugly Christmas Sweater Kit (DIY with patches & lights)",
@@ -2513,9 +2878,15 @@
   },
   "score": 78,
   "christmas": true,
-  "rank": 90,
+  "rank": 85,
   "status": "idea",
-  "id": "ugly-christmas-sweater-kit-diy-with-patches-lights"
+  "id": "ugly-christmas-sweater-kit-diy-with-patches-lights",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Print-on-demand/embroidery on existing sweaters."
+  },
+  "viral_base": "Ugly Christmas sweaters"
  },
  {
   "name": "Snow Globe Water Bottle for Kids",
@@ -2541,9 +2912,83 @@
   },
   "score": 78,
   "christmas": true,
-  "rank": 91,
+  "rank": 86,
   "status": "idea",
-  "id": "snow-globe-water-bottle-for-kids"
+  "id": "snow-globe-water-bottle-for-kids",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing snow-globe bottles; rebrand."
+  },
+  "viral_base": "Snow-globe bottles"
+ },
+ {
+  "name": "Candy-Cane Heatless Curl Ribbon",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "beauty",
+   "trend"
+  ],
+  "hook": "Christmas curls, no heat 🎀",
+  "demo": "Unwraps candy-cane ribbon, bouncy curls",
+  "why": "Heatless curls were huge; candy-cane design for Christmas gifting.",
+  "risk": "Low price - bundle",
+  "scores": {
+   "E": 7,
+   "D": 10,
+   "G": 9,
+   "M": 5,
+   "P": 9,
+   "N": 6,
+   "R": 9
+  },
+  "score": 78,
+  "christmas": true,
+  "rank": 87,
+  "status": "idea",
+  "id": "candy-cane-heatless-curl-ribbon",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing heatless curler + candy-cane fabric."
+  },
+  "viral_base": "Heatless curls"
+ },
+ {
+  "name": "Mini Christmas Tree Terrarium in a Jar (lights)",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 45,
+  "emotions": [
+   "Christmas",
+   "cozy",
+   "decor"
+  ],
+  "hook": "A tiny Christmas forest in a jar 🌲",
+  "demo": "Lights turn on inside the jar",
+  "why": "Terrarium kits are proven; Christmas version.",
+  "risk": "Glass",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 9,
+   "M": 6,
+   "P": 9,
+   "N": 7,
+   "R": 8
+  },
+  "score": 78,
+  "christmas": true,
+  "rank": 88,
+  "status": "idea",
+  "id": "mini-christmas-tree-terrarium-in-a-jar-lights",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Jar + mini trees + LED."
+  },
+  "viral_base": "Terrarium kits"
  },
  {
   "name": "Christmas Lights Hat / Beanie that Glows",
@@ -2569,9 +3014,15 @@
   },
   "score": 77,
   "christmas": true,
-  "rank": 92,
+  "rank": 89,
   "status": "idea",
-  "id": "christmas-lights-hat-beanie-that-glows"
+  "id": "christmas-lights-hat-beanie-that-glows",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing LED beanies."
+  },
+  "viral_base": "LED beanies"
  },
  {
   "name": "Mini Waffle Maker Shaped Like a Snowflake",
@@ -2597,9 +3048,15 @@
   },
   "score": 76,
   "christmas": true,
-  "rank": 93,
+  "rank": 90,
   "status": "idea",
-  "id": "mini-waffle-maker-shaped-like-a-snowflake"
+  "id": "mini-waffle-maker-shaped-like-a-snowflake",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing mini waffle maker OEM, snowflake plate."
+  },
+  "viral_base": "Mini waffle makers"
  },
  {
   "name": "Hot Chocolate Bomb Mould + Kit",
@@ -2625,9 +3082,15 @@
   },
   "score": 76,
   "christmas": true,
-  "rank": 94,
+  "rank": 91,
   "status": "idea",
-  "id": "hot-chocolate-bomb-mould-kit"
+  "id": "hot-chocolate-bomb-mould-kit",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Silicone moulds easy; selling food needs permits - sell mould kit only."
+  },
+  "viral_base": "Hot cocoa bombs"
  },
  {
   "name": "Gift-Wrap Station Wall Organizer",
@@ -2652,9 +3115,15 @@
   },
   "score": 76,
   "christmas": true,
-  "rank": 95,
+  "rank": 92,
   "status": "idea",
-  "id": "gift-wrap-station-wall-organizer"
+  "id": "gift-wrap-station-wall-organizer",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing wall organizer."
+  },
+  "viral_base": "Wrap stations"
  },
  {
   "name": "Christmas Bucket-List Scratch Poster for Families",
@@ -2680,9 +3149,15 @@
   },
   "score": 76,
   "christmas": true,
-  "rank": 96,
+  "rank": 93,
   "status": "idea",
-  "id": "christmas-bucket-list-scratch-poster-for-families"
+  "id": "christmas-bucket-list-scratch-poster-for-families",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Printing."
+  },
+  "viral_base": "Scratch posters"
  },
  {
   "name": "Personalised Christmas Tree Ornament with Couple's Names & Year",
@@ -2708,9 +3183,83 @@
   },
   "score": 76,
   "christmas": true,
-  "rank": 97,
+  "rank": 94,
   "status": "idea",
-  "id": "personalised-christmas-tree-ornament-with-couple-s-names-yea"
+  "id": "personalised-christmas-tree-ornament-with-couple-s-names-yea",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Print/engraving on existing ornament blanks."
+  },
+  "viral_base": "Personalised ornaments"
+ },
+ {
+  "name": "Glass Mushroom Lamp - Winter Snow Edition",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 49,
+  "emotions": [
+   "Christmas",
+   "cozy",
+   "decor"
+  ],
+  "hook": "The coziest lamp on my nightstand ❄️🍄",
+  "demo": "Lamp glows, frosted snow cap",
+  "why": "Mushroom lamps went viral; snow edition = seasonal refresh.",
+  "risk": "Glass shipping",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 9,
+   "M": 6,
+   "P": 9,
+   "N": 6,
+   "R": 7
+  },
+  "score": 76,
+  "christmas": true,
+  "rank": 95,
+  "status": "idea",
+  "id": "glass-mushroom-lamp-winter-snow-edition",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing glass lamp OEM + frost finish."
+  },
+  "viral_base": "Mushroom lamps"
+ },
+ {
+  "name": "Light-Up Christmas Shoe Charms (our own designs)",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "kids",
+   "trend"
+  ],
+  "hook": "My clogs light up for Christmas 🎄",
+  "demo": "Charms blink on clogs in the dark",
+  "why": "Shoe charms are a proven craze; light-up Christmas set is new.",
+  "risk": "Small battery parts",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 9,
+   "M": 5,
+   "P": 9,
+   "N": 7,
+   "R": 8
+  },
+  "score": 76,
+  "christmas": true,
+  "rank": 96,
+  "status": "idea",
+  "id": "light-up-christmas-shoe-charms-our-own-designs",
+  "sourcing": {
+   "level": "Medium",
+   "ready_for_christmas": "yes",
+   "how": "Tiny LED charms; battery safety."
+  },
+  "viral_base": "Shoe charms"
  },
  {
   "name": "Christmas Card Holder Tree (wall, lights)",
@@ -2736,9 +3285,49 @@
   },
   "score": 75,
   "christmas": true,
+  "rank": 97,
+  "status": "idea",
+  "id": "christmas-card-holder-tree-wall-lights",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing wall card holders + LED."
+  },
+  "viral_base": "Card trees"
+ },
+ {
+  "name": "Gingerbread & Snowflake Cloud Slides",
+  "category": "Viral remix (proven product, our twist)",
+  "price": 39,
+  "emotions": [
+   "Christmas",
+   "cozy",
+   "trend"
+  ],
+  "hook": "Walking on gingerbread clouds 🍪",
+  "demo": "Squishes the thick slide sole, cute gingerbread print",
+  "why": "Cloud slides went viral; seasonal prints sell as gifts.",
+  "risk": "Sizing returns",
+  "scores": {
+   "E": 7,
+   "D": 9,
+   "G": 9,
+   "M": 5,
+   "P": 9,
+   "N": 6,
+   "R": 6
+  },
+  "score": 74,
+  "christmas": true,
   "rank": 98,
   "status": "idea",
-  "id": "christmas-card-holder-tree-wall-lights"
+  "id": "gingerbread-snowflake-cloud-slides",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing slide OEM + print; sizes."
+  },
+  "viral_base": "Cloud slides"
  },
  {
   "name": "Christmas Tree Fresh-Scent Diffuser for Fake Trees",
@@ -2766,7 +3355,13 @@
   "christmas": true,
   "rank": 99,
   "status": "idea",
-  "id": "christmas-tree-fresh-scent-diffuser-for-fake-trees"
+  "id": "christmas-tree-fresh-scent-diffuser-for-fake-trees",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing clip diffusers + pine scent."
+  },
+  "viral_base": "Tree scent sticks"
  },
  {
   "name": "Christmas Ornament Storage Box with Lights",
@@ -2793,6 +3388,12 @@
   "christmas": true,
   "rank": 100,
   "status": "idea",
-  "id": "christmas-ornament-storage-box-with-lights"
+  "id": "christmas-ornament-storage-box-with-lights",
+  "sourcing": {
+   "level": "Easy",
+   "ready_for_christmas": "yes",
+   "how": "Existing storage boxes + LED."
+  },
+  "viral_base": "Ornament storage"
  }
 ]

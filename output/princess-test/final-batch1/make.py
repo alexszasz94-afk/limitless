@@ -11,8 +11,8 @@ DRESSED = 0.05  # the song starts on its drop the moment the hook ends (Szasz 18
 HOOKS = [
  ("b1", "h1", f"{P}/hook-store/hook-store-1080p.mp4", 4.0, "Do NOT let a Christmas mom see this... 🎄🌊"),        # aquawish.us DdU_WB_zSb5
  ("b1", "h3", f"{P}/hooks-batch1/b1-h3-1080p.mp4", 4.0, "H&M X DISNEY 🤩🔔"),          # princesscomfortt DeDFKhASW-w
- ("b1", "h4", f"{P}/hooks-batch1/b1-h4-1080p.mp4", 1.8, ("The problem 😒❄️", "Vs...", "The solution")),   # "The solution" from the connector on (Szasz 18 oct)                       # merry.jammies Ddii6mOKO2G
- ("b2", "h3", f"{P}/hooks-batch1/b2-h3-1080p.mp4", 4.0, "DON'T let baby MOM see this... 🙂🍼"),            # pookie.hoodie Dd7Iv6ZMhLa
+ ("b1", "h4", f"{P}/hooks-batch1/b1-h4-1080p.mp4", 1.8, ("The problem 😒❄️", "Vs...", "The solution 🥰🔥")),   # "The solution" from the connector on (Szasz 18 oct)                       # merry.jammies Ddii6mOKO2G
+ ("b2", "h3", f"{P}/hooks-batch1/b2-h3-1080p.mp4", 4.0, "DON'T show your mom this... 🙂🍼"),            # pookie.hoodie Dd7Iv6ZMhLa ("DON'T let baby MOM see this..." -> Szasz 18 oct)
  ("b2", "h4", f"{P}/hooks-batch1/b2-h4-1080p.mp4", 2.95, "Every Cold Sport Moms RUN to COSTCO!! 😂👀"),         # co.zybabe Ddzo8i9ymGW
  ("b3", "h3", f"{P}/hooks-batch1/b3-h3-1080p.mp4", 2.25, ("The concept 🤢", "Vs...")),                         # merry.jammies DdQw1jyKI63
  ("b3", "h4", f"{P}/hooks-batch1/b3-h4-1080p.mp4", 3.55, "\"The perfect gift doesn't exi-\" 😮❄️"),             # merry.jammies DdGdL41KJo4

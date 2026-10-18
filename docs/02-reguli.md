@@ -88,3 +88,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
   2. 15 hook-uri = 5 pe fiecare B-roll. Seedance 2.5 omni_reference: video_references = hook-ul viral original FĂRĂ SUNET (audio scos cu ffmpeg), image_references = personajul din B-roll + halatul. Sunetul se generează DE LA ZERO din ce se vede: replicile scrise de Claude cu secunda exactă, vocea personajului, sunetele scenei, FĂRĂ MUZICĂ.
   3. Totul se face întâi la 480p (sigur + credite puține) și se pune în LIMITLESS (board), grupat câte 5 hook-uri sub fiecare B-roll.
   4. Szasz dă Approve / Reject. Doar ce primește Approve primește upscale la 1080p.
+- **2026-10-18 — UPSCALE MEREU LA 720p (Szasz):** upscale-ul clipurilor aprobate (hook-uri, B-roll-uri) se face mereu la 720p, nu la 1080p. Înlocuiește pct. 4 de mai sus.
+- **2026-10-18 — VIDEOURILE PE TABLĂ:** tabla nu poate reda linkuri cloudfront; fiecare clip pus la review se comprimă în `dashboard/rv/` și se publică împreună cu tabla.

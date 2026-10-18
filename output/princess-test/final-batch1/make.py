@@ -3,7 +3,8 @@ import json, os, subprocess, sys
 P = "/home/user/limitless/output/princess-test"
 HG = "/home/user/heatgrump"
 BR = {"b1": f"{P}/broll-17oct/b1-1080p.mp4", "b2": f"{P}/broll-17oct/b2-1080p.mp4", "b3": f"{P}/broll-17oct/b3v2-1080p.mp4"}
-CUT = 5.6   # B2 ends / cozy starts in the reel24 template
+CUT = 5.6    # B2 ends here (scene change at ~5.67-5.71 s)
+COZY = 5.75  # cozy starts after the scene change, no flash of the standing shot
 HOOKS = [
  ("b1", "h1", f"{P}/hook-store/hook-store-1080p.mp4", "When the princess robe is finally in stores… 😱👑"),
  ("b1", "h3", f"{P}/hooks-batch1/b1-h3-1080p.mp4", "They finally restocked it… 😱👑"),
@@ -23,8 +24,8 @@ for b, h, hook, text in HOOKS:
             {"file": BR[b], "start": 0, "end": CUT},
             {"file": f"{P}/connector-seedance25-720p.mp4", "start": 1.0, "end": 2.6},
             {"file": f"{P}/controller-arata-final.mp4", "start": 0, "end": 3.1},
-            {"file": BR[b], "start": CUT, "end": 8.0}]
-    total = hd + CUT + 1.6 + 3.1 + (8.0 - CUT)
+            {"file": BR[b], "start": COZY, "end": 8.0}]
+    total = hd + CUT + 1.6 + 3.1 + (8.0 - COZY)
     spec = {"out": f"{os.getcwd()}/{name}-nomusic.mp4", "segments": segs, "texts": [{"t0": 0, "t1": round(total, 2), "text": text}]}
     json.dump(spec, open(f"{os.getcwd()}/{name}.json", "w"), ensure_ascii=False, indent=1)
     subprocess.run(["python3", f"{HG}/engine/final.py", f"{os.getcwd()}/{name}.json"], check=True, cwd=HG)

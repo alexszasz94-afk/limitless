@@ -1246,7 +1246,7 @@ function robeCopy(R){const C=R.copy||{};const A=C.accounts||[],V=C.videos||[];if
 function robeReview(){const L=S.review||[];if(!L.length)return "";
   const stl={pending:["Waiting for you",""],approved:["Approved · upscaling to 1080p","ok"],hd:["Approved · 1080p ready","hd"],rejected:["Rejected","no"]};
   const card=(b,h,i)=>{const s=stl[h.status||"pending"]||stl.pending;return `<div class="rv-hk ${h.status==="approved"||h.status==="hd"?"ok":h.status==="rejected"?"no":""}">${h.url?`<video src="${esc(h.hd_url||h.url)}" controls playsinline preload="metadata"></video>`:`<div class="rv-todo">Hook ${i+1}<br>in production</div>`}
-    <small><b>${esc(h.name||"Hook "+(i+1))}</b>${h.line?`<br>“${esc(h.line)}”`:""}</small><span class="rv-st ${s[1]}">${s[0]}</span>
+    <small><b>${esc(h.name||"Hook "+(i+1))}</b>${h.line?`<br>“${esc(h.line)}”`:""}${h.note?`<br><span style="color:#ffb347">⚠ ${esc(h.note)}</span>`:""}</small><span class="rv-st ${s[1]}">${s[0]}</span>
     ${h.url&&S.write?`<div class="rv-btns">${h.status==="approved"||h.status==="hd"?"":`<button class="btn solid" data-act="rvw" data-b="${esc(b._id)}" data-h="${esc(h.id)}" data-s="approved">Approve</button>`}${h.status==="rejected"?"":`<button class="btn" data-act="rvw" data-b="${esc(b._id)}" data-h="${esc(h.id)}" data-s="rejected">Reject</button>`}${h.status&&h.status!=="pending"&&h.status!=="hd"?`<button class="btn" data-act="rvw" data-b="${esc(b._id)}" data-h="${esc(h.id)}" data-s="pending">Undo</button>`:""}</div>`:""}
     ${h.hd_url?`<a href="${esc(h.hd_url)}" target="_blank" rel="noopener">Open 1080p</a>`:""}</div>`};
   return L.map(b=>{const H=b.hooks||[];const ok=H.filter(h=>h.status==="approved"||h.status==="hd").length;

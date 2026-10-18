@@ -90,3 +90,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
   4. Szasz dă Approve / Reject. Doar ce primește Approve primește upscale la 1080p.
 - **2026-10-18 — UPSCALE MEREU LA 720p (Szasz):** upscale-ul clipurilor aprobate (hook-uri, B-roll-uri) se face mereu la 720p, nu la 1080p. Înlocuiește pct. 4 de mai sus.
 - **2026-10-18 — VIDEOURILE PE TABLĂ:** tabla nu poate reda linkuri cloudfront; fiecare clip pus la review se comprimă în `dashboard/rv/` și se publică împreună cu tabla.
+- **2026-10-18 — CORECȚIE UPSCALE:** Higgsfield upscale_video nu are 720p (minim 1080p). Szasz: „lăsăm 1080p atunci”. Upscale-ul aprobatelor rămâne la 1080p (bytedance, aigc, fps 24).

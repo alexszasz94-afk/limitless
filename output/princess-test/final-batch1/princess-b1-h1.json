@@ -1,0 +1,38 @@
+{
+ "out": "/home/user/limitless/output/princess-test/final-batch1/princess-b1-h1-nomusic.mp4",
+ "segments": [
+  {
+   "file": "/home/user/limitless/output/princess-test/hook-store/hook-store-1080p.mp4",
+   "start": 0,
+   "end": 4.0,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/output/princess-test/broll-17oct/b1-1080p.mp4",
+   "start": 0,
+   "end": 5.6
+  },
+  {
+   "file": "/home/user/limitless/output/princess-test/connector-seedance25-720p.mp4",
+   "start": 1.0,
+   "end": 2.6
+  },
+  {
+   "file": "/home/user/limitless/output/princess-test/controller-arata-final.mp4",
+   "start": 0,
+   "end": 3.1
+  },
+  {
+   "file": "/home/user/limitless/output/princess-test/broll-17oct/b1-1080p.mp4",
+   "start": 5.6,
+   "end": 8.0
+  }
+ ],
+ "texts": [
+  {
+   "t0": 0,
+   "t1": 16.7,
+   "text": "When the princess robe is finally in stores… 😱👑"
+  }
+ ]
+}

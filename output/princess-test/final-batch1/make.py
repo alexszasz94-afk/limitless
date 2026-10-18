@@ -5,12 +5,14 @@ HG = "/home/user/heatgrump"
 BR = {"b1": f"{P}/broll-17oct/b1-1080p.mp4", "b2": f"{P}/broll-17oct/b2-1080p.mp4", "b3": f"{P}/broll-17oct/b3v2-1080p.mp4"}
 CUT = 5.6    # B2 ends here (scene change at ~5.67-5.71 s)
 COZY = 5.75  # cozy starts after the scene change, no flash of the standing shot
-# (broll, hook, file, hook end = first scene only, on-screen text copied from the competitor's viral; a pair = hook text, then text from the product on)
+# (broll, hook, file, hook end = first scene only, on-screen text copied EXACTLY from the competitor's viral (Szasz 18 oct: no changes); a pair = hook text, then text from the product on)
+MUSIC, DROP = f"{HG}/library/music/xmas/buble-beginning.mp3", 35.38   # the song's drop (energy jump), measured
+DRESSED = 1.2   # into the B-roll she already has the robe on -> the drop lands here (Szasz 18 oct)
 HOOKS = [
- ("b1", "h1", f"{P}/hook-store/hook-store-1080p.mp4", 4.0, "Do NOT let a Christmas mom see this... 🎄👑"),        # aquawish.us DdU_WB_zSb5
- ("b1", "h3", f"{P}/hooks-batch1/b1-h3-1080p.mp4", 4.0, "Do NOT let a Christmas mom see this… 🤩🔔"),          # princesscomfortt DeDFKhASW-w (orig "H&M X DISNEY 🤩🔔")
+ ("b1", "h1", f"{P}/hook-store/hook-store-1080p.mp4", 4.0, "Do NOT let a Christmas mom see this... 🎄🌊"),        # aquawish.us DdU_WB_zSb5
+ ("b1", "h3", f"{P}/hooks-batch1/b1-h3-1080p.mp4", 4.0, "H&M X DISNEY 🤩🔔"),          # princesscomfortt DeDFKhASW-w
  ("b1", "h4", f"{P}/hooks-batch1/b1-h4-1080p.mp4", 1.8, ("The problem 😒❄️", "Vs...")),                       # merry.jammies Ddii6mOKO2G
- ("b2", "h3", f"{P}/hooks-batch1/b2-h3-1080p.mp4", 4.0, "DON'T let princess MOM see this... 🙂👑"),            # pookie.hoodie Dd7Iv6ZMhLa
+ ("b2", "h3", f"{P}/hooks-batch1/b2-h3-1080p.mp4", 4.0, "DON'T let baby MOM see this... 🙂🍼"),            # pookie.hoodie Dd7Iv6ZMhLa
  ("b2", "h4", f"{P}/hooks-batch1/b2-h4-1080p.mp4", 2.95, "Every Cold Sport Moms RUN to COSTCO!! 😂👀"),         # co.zybabe Ddzo8i9ymGW
  ("b3", "h3", f"{P}/hooks-batch1/b3-h3-1080p.mp4", 2.25, ("The concept 🤢", "Vs...")),                         # merry.jammies DdQw1jyKI63
  ("b3", "h4", f"{P}/hooks-batch1/b3-h4-1080p.mp4", 3.55, "\"The perfect gift doesn't exi-\" 😮❄️"),             # merry.jammies DdGdL41KJo4
@@ -32,7 +34,7 @@ for b, h, hook, hend, text in HOOKS:
     subprocess.run(["python3", f"{HG}/engine/final.py", f"{os.getcwd()}/{name}.json"], check=True, cwd=HG)
     nm = spec["out"]; D = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",nm],capture_output=True,text=True).stdout)
     ms = int(hd * 1000)
-    subprocess.run(["ffmpeg","-loglevel","error","-y","-i",nm,"-ss","32.43","-i",f"{HG}/library/music/xmas/buble-beginning.mp3","-filter_complex",
-        f"[1:a]atrim=0:{D},asetpts=PTS-STARTPTS,volume=0.85,afade=t=in:st=0:d=0.4,adelay={ms}|{ms},afade=t=out:st={D-0.6}:d=0.6[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
+    subprocess.run(["ffmpeg","-loglevel","error","-y","-i",nm,"-ss",str(DROP - DRESSED),"-i",MUSIC,"-filter_complex",
+        f"[1:a]atrim=0:{D},asetpts=PTS-STARTPTS,volume=0.85,afade=t=in:st=0:d=0.3,adelay={ms}|{ms},afade=t=out:st={D-0.6}:d=0.6[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
         "-map","0:v","-map","[a]","-c:v","copy","-c:a","aac","-b:a","192k",f"{name}-FINAL.mp4"], check=True)
     os.remove(nm); print(name, round(D, 2))

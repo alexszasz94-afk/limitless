@@ -4,7 +4,7 @@
   {
    "file": "/home/user/limitless/output/princess-test/hooks-batch1/b1-h4-1080p.mp4",
    "start": 0,
-   "end": 4.0,
+   "end": 1.8,
    "audio": true
   },
   {
@@ -31,8 +31,13 @@
  "texts": [
   {
    "t0": 0,
-   "t1": 16.55,
-   "text": "Me vs. the thermostat every winter 🥶👑"
+   "t1": 1.8,
+   "text": "The problem 😒❄️"
+  },
+  {
+   "t0": 1.8,
+   "t1": 14.35,
+   "text": "Vs..."
   }
  ]
 }

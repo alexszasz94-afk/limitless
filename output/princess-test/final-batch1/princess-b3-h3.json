@@ -4,7 +4,7 @@
   {
    "file": "/home/user/limitless/output/princess-test/hooks-batch1/b3-h3-1080p.mp4",
    "start": 0,
-   "end": 4.0,
+   "end": 2.25,
    "audio": true
   },
   {
@@ -31,8 +31,13 @@
  "texts": [
   {
    "t0": 0,
-   "t1": 16.55,
-   "text": "Plain blanket vs. princess robe 👑✨"
+   "t1": 2.25,
+   "text": "The concept 🤢"
+  },
+  {
+   "t0": 2.25,
+   "t1": 14.8,
+   "text": "Vs..."
   }
  ]
 }

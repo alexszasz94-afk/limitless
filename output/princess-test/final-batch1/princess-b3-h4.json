@@ -4,7 +4,7 @@
   {
    "file": "/home/user/limitless/output/princess-test/hooks-batch1/b3-h4-1080p.mp4",
    "start": 0,
-   "end": 4.0,
+   "end": 3.55,
    "audio": true
   },
   {
@@ -31,8 +31,8 @@
  "texts": [
   {
    "t0": 0,
-   "t1": 16.55,
-   "text": "The perfect gift doesn't exist… 🎁👑"
+   "t1": 16.1,
+   "text": "\"The perfect gift doesn't exi-\" 😮❄️"
   }
  ]
 }

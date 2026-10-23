@@ -83,3 +83,12 @@ Făcut din randarea exactă `render_cerc.py` (cerc-intreg bfda5818 / cerc-aproap
 Variantele cu 2 cercuri / spirală (set/, schema_traseu.py) = abandonate.
 
 **REGULĂ (23 oct, Szasz): mașina stă mereu FIX pe mijlocul șinei** (centrată pe șanț, spațiu egal stânga-dreapta). Se pune în prompt (vezi `prompts/product-block.txt`) și se verifică mărit la QA.
+| 7 close-up (lumină extra moale) | 94587f16-cea0-4f79-b76c-94e617767dad (prima variantă 9f85ad5e = mașina descentrată) |
+| 8 POV pilot | 6029104c-6c0e-4d1b-83a4-259b7c01ca88 |
+
+### Idei ca produsul să fie mai spectaculos (propuse 23 oct, de confirmat cu Szasz)
+1. LED-uri în marginea transparentă a pistei, care se aprind în urma mașinii (efect „circuit de noapte”).
+2. Semafor de start F1 (5 lumini roșii care se sting → mașina pleacă).
+3. Sunet de motor F1 care crește cu viteza.
+4. Faruri + lumină roșie de ploaie pe mașină.
+5. Linie start/sosire în carouri + garaj de boxe în formă de cadou.

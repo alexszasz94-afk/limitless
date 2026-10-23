@@ -16,3 +16,13 @@ Stare: concept. Pe web nu există încă produsul (căutat 23 oct) → fără fu
 
 ## Urmează (după ce alege culoarea)
 Restul setului (~7 × 15 credite): față, spate, lateral, detaliu, pista întreagă în brad, mașina pe pistă cu lumini, cutia, telecomanda/pornirea.
+
+## Produsul întreg (23 oct) — pentru furnizor
+Fișa tehnică: `products/f1-tree-racer/supplier-spec.md` (EN).
+| Ce | Job ID | Fișier |
+|---|---|---|
+| bradul cu toată pista | a45207b6-d6b7-4d0c-8cda-54d21dfbbe5e | refs/1-brad-intreg.jpg |
+| setul complet | 9371bef6-1b20-4842-abf3-995b12931f73 | refs/2-setul-complet.jpg |
+| mașina de dedesubt | 5ac8da95-02c3-4adf-8b0d-ea3f8c1f9435 | refs/3-dedesubt.jpg |
+| pista detaliu | f6435f55-7c44-4ea5-b064-0ab9ad8f0c0c | refs/4-pista-detaliu.jpg |
+| cutia | ecb44d9d-8502-4a1e-9608-d020e4d5c8f2 | refs/5-cutia.jpg |

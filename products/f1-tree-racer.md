@@ -74,11 +74,11 @@ Metoda care merge: randez eu geometria exactă (ghid-0.png / ghid-35.png, încă
 ## 23 oct — DECIZIE FINALĂ Szasz: UN SINGUR CERC (folder `cerc/` = sursa de adevăr)
 Cerc Ø110 cm la ~70 cm de la podea, 12 bucăți de 30°, bandă 10 cm, 1 colier + 6 brațe, 1 mașină, 1 mâner. Fișa furnizor actualizată.
 Făcut din randarea exactă `render_cerc.py` (cerc-intreg bfda5818 / cerc-aproape 731fe882).
-| 1 brad cu cercul | 180d6df0-097d-4c43-8ef6-749e33e784e5 |
-| 2 cerc aproape | 468225f3-6f2c-47db-859a-833769d82280 |
+| 1 brad cu cercul | 9a60026b-843b-4ebd-81c4-578fa0c32a8b (mașina centrată; vechi 180d6df0) |
+| 2 cerc aproape | bee6a0a9-d6d5-4380-960b-8345444e1a4b (mașina centrată; vechi 468225f3) |
 | 3 ce e în cutie | 17630469-9f09-4202-bf3a-17b4c65cf1a5 |
 | 4 dedesubt | 786d3045-8ab5-4450-9950-74ffb04fb86c |
-| 5 curent + mâner | 7f2cd52a-3ca7-4be1-b8a3-10394b379319 |
+| 5 curent + mâner | d5a295ab-c68d-4f89-87a7-3693a3ec6c3d (mașina centrată; vechi 7f2cd52a) |
 | 6 cutia | c4605339-6346-43bd-8cc2-ccd10f7cc489 |
 Variantele cu 2 cercuri / spirală (set/, schema_traseu.py) = abandonate.
 

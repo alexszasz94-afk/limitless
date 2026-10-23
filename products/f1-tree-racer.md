@@ -81,3 +81,5 @@ Făcut din randarea exactă `render_cerc.py` (cerc-intreg bfda5818 / cerc-aproap
 | 5 curent + mâner | 7f2cd52a-3ca7-4be1-b8a3-10394b379319 |
 | 6 cutia | c4605339-6346-43bd-8cc2-ccd10f7cc489 |
 Variantele cu 2 cercuri / spirală (set/, schema_traseu.py) = abandonate.
+
+**REGULĂ (23 oct, Szasz): mașina stă mereu FIX pe mijlocul șinei** (centrată pe șanț, spațiu egal stânga-dreapta). Se pune în prompt (vezi `prompts/product-block.txt`) și se verifică mărit la QA.

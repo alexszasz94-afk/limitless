@@ -32,3 +32,9 @@ Inel orizontal de ~100 cm la 1/3 din înălțimea bradului, 12 curbe, colier pe 
 | bradul cu cercul | be51153e-7aea-45eb-a365-fd73d8da7681 | refs/1-brad-cerc.jpg |
 | setul (cerc) | 47dc7524-a8db-4a2f-9503-8e45095c7666 | refs/2-setul-cerc.jpg |
 (1-brad-intreg și 2-setul-complet = varianta veche cu spirală, renunțat.)
+
+## 23 oct — Szasz: DOUĂ CERCURI (pe două rânduri)
+Jos ~120 cm, sus ~85 cm, la ~40–50 cm unul de altul, câte o mașină pe fiecare (roșu jos, papaya sus). Fișa pentru furnizor actualizată.
+| bradul cu 2 cercuri | a13cc587-230d-42c8-99d3-5f148875ea18 | refs/1-brad-2cercuri.jpg |
+| 2 cercuri aproape | b74a1103-740d-45d1-8ed6-d742afd50e76 | refs/2-2cercuri-aproape.jpg |
+Look: Szasz zice că pozele vechi par „foarte procesate”. Cauza: promptul cerea „ultra-realistic product photography, crisp, vivid”. De acum la produs: „casual unedited phone snapshot… no HDR, no over-sharpening, no glossy CGI look, a little phone noise”.

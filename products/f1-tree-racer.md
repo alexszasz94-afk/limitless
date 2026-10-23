@@ -49,3 +49,9 @@ Toate făcute din aceleași referințe (brad a13cc587 + mașina roșie 75dd9289 
 | 6 curent | 62794a16-262a-492d-ad2c-5ed8a86a8363 |
 | 7 cutia | b890fdbf-ad94-42d7-9ef4-98f77b07afb6 |
 Diferențe rămase: brațele de susținere (în 3 = suporți triunghiulari scurți, în 5 = tijă neagră); în 3 nu se pot număra exact 12+12 bucăți. refs/ = variante vechi.
+
+## 23 oct — poza de bază refăcută (deformări + mașina nu stătea pe șanț — Szasz)
+- master-v3b (aproape): 7e3b7ef8-0285-4b54-aa26-44d105af20b7 — NOUA REFERINȚĂ pentru pista (șanț + șine pe mijloc, mașina centrată)
+- master-v3a (tot bradul): 8bb8c981-0163-4455-85ec-f1e146e26196
+- (v2a/v2b 0fd05282 / ade0039a: cercuri bune dar fără șanț — nu se folosesc)
+Szasz a cerut mașina lui Verstappen: NU replica (Red Bull/F1 = mărci, risc juridic + plăți + ip_detected). Propus: mașina navy/roșu/galben fără logo (45cbcbe5).

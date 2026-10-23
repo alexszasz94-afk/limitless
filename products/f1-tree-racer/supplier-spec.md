@@ -41,7 +41,7 @@ It is a **slot-car system** (the same principle as Scalextric / Carrera), plus a
 
 ## 5b. Lights (key selling feature)
 1. **LED track edge:** a thin warm-white LED strip inside the clear guard lip of every track piece, powered from the rails. Mode A: always on. Mode B (preferred): "chase" mode, where the LEDs right behind the car glow brighter in a short trail that follows the car around the ring (track sensors or a timed sequence).
-2. **Start gantry:** a small black arch over the lane (about 12 cm tall) with **5 round red lights**. Press START: the lights come on 1 → 5, one per second, then all go out and the car is released (the F1 start). It sits on a checkered start/finish piece.
+2. **Start gantry:** a small black arch over the lane (about 12 cm tall) with **5 round red lights**. Press START: the lights come on 1 → 5, one per second, then all go out and the car is released (the F1 start). After that the car keeps running round and round the tree until STOP is pressed (auto mode at a steady display speed), or the user drives it with the trigger controller. It sits on a checkered start/finish piece.
 3. **Car lights:** small white LEDs in the front wing (headlights) and a red rear light.
 4. Optional: engine sound module in the power box (pitch follows the speed) and a start beep.
 All lights run on the same 12 V from the rails. No batteries.

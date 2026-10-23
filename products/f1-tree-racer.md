@@ -103,3 +103,13 @@ Concept: un singur cerc Ø110 + LED-uri calde în marginea transparentă (urmăr
 | 5 ce e în cutie (cu semafor) | 8e6a6d1d-8387-45cf-9ec0-b3b7bfb83ba6 |
 | 6 seara, pista luminată | 93d1f4a5-0165-47d1-b2b2-eeb085710946 (v1 98226ce1 mașina descentrată, v2 3e2f231f semafor sub pistă) |
 Potențial: Szasz crede „50k garantat” — IPOTEZĂ, fără cifre încă (fără furnizor/cost/test). Se confirmă doar cu cifre din pilot.
+
+## 23 oct — TREE PRIX PE ZI = SETUL DE REFERINȚĂ FINAL (folder `tree-prix-zi/`; `tree-prix/` = seara, vechi)
+Verificat cu `qa-tree-prix.md`. Pozițiile (direcția curbei, mașina, semaforul) făcute din randări exacte `render_scena.py` (hero/aproape/pov) + `ghid-cutie.png` (12 bucăți).
+| 1 brad la start | b79fc895-5bb0-4044-b90b-7e4852b5a509 |
+| 2 semafor aproape (3/5) | 6d5063af-c0d4-4d00-9be9-fec0b40a5d1b |
+| 3 POV pilot (5/5) | d6251640-fc92-45b4-a5a9-5e72318d2364 (bradul în dreapta, pista se curbează spre el) |
+| 4 ce e în cutie (12 bucăți) | a150db62-5efc-4ace-801e-b4cc7f1186f5 |
+| 5 cutia TREE PRIX (zi) | 181d1d08-a952-4c8e-8d1e-3b7e15cd7d14 |
+| 6 în cursă | c2377f38-556b-4203-94eb-1a49cb18d6c8 |
+Lecție: gpt_image_2 curbează pista spre dreapta din instinct → la POV bradul se pune în dreapta; la celelalte se pornește din randare.

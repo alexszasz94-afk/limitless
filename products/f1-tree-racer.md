@@ -61,3 +61,7 @@ Soluția (fără să se ciocnească pista cu ea însăși): exterior Ø120 urcă
 - Schema exactă: `schema-traseu.png` (generată de `schema_traseu.py`) — asta se trimite la furnizor.
 - Poze AI aproximative (nu respectă exact geometria): set/spirala-fata.jpg d32c24a1-e27e-47e6-885b-26932433d341, set/spirala-spate.jpg 5ffa2356-b942-4460-84eb-45a0eb63ab85
 - Fișa furnizor actualizată (secțiunile 3, 4, 5, 7, 8).
+
+## 23 oct — schema verificată (v2) după „verifică și vezi că nu e ok”
+Greșeli găsite în v1: pista nu urma conul bradului (21 cm în aer sus, 9 cm în crengi jos); pante subestimate (13,4% / 17,9%, nu 12/16); S-uri prea strânse (rază 26 cm); pozele AI arătau pistele unindu-se.
+v2: pista urmează conul, urcă 50→85 cm (35 cm), urcare 12%, coborâre 16,4%, S-uri 60° (rază ~36 cm), verificare automată de coliziuni = OK. Poze AI spirala-* = NU se folosesc (geometrie greșită).

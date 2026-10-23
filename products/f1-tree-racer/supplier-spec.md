@@ -21,19 +21,19 @@ It is a **slot-car system** (the same principle as Scalextric / Carrera), plus a
 - Low voltage only. Child-safe: 8+ with adult setup.
 
 ## 3. Track layout on the tree (one endless loop: up around the tree, then down around the tree)
-The car climbs one full turn around the tree, crosses over at the back, comes down one full turn around the tree, crosses back and starts again. Single lane, one continuous closed circuit, no switches, and the track never crosses itself at the same height.
+The car climbs one full turn around the tree, crosses over at the back, comes down one full turn around the tree, crosses back and starts again. Single lane, one continuous closed circuit, no switches, and the track never touches itself. All dimensions below are checked in `schema_traseu.py`, which draws `schema-traseu.png`.
 
-- **Up spiral (outer lane):** radius 60 cm (Ø 120 cm). One full turn (about 3.77 m) rising 45 cm, from about 50 cm to about 95 cm above the floor. Grade about 12%.
-- **Down spiral (inner lane):** radius 45 cm (Ø 90 cm). One full turn (about 2.83 m) descending 45 cm. Grade about 16% downhill. It runs 15 cm inside the up spiral, so the two lanes are always side by side (5 cm gap between the lane edges) and never touch.
-- **Top crossover:** at the back of the tree, at the top (about 95 cm), a short S-bend (about 40° of the circle) moves the car from the outer lane to the inner lane.
-- **Bottom crossover:** at the same spot, 45 cm lower (about 50 cm), an S-bend moves the car from the inner lane back to the outer lane. The top crossover passes 45 cm above the bottom one.
-- Both lanes are 100 mm wide (the car is 60 mm wide). All curves are banked 5° inward and the outer edges have the clear guard lip.
-- Pieces: about 12 outer-radius climbing curves, about 12 inner-radius descending curves and 2 S-crossover pieces, each with factory-set slope. Pieces snap together with tabs. Rails connect through metal joiners.
-- One car runs the loop. A second car can follow it on the same lane.
-- Power is fed at the bottom crossover. Speed is limited for the downhill.
+- The track follows the cone of the tree. The radius gets smaller as the track goes up, so it always sits just outside the branch tips.
+- **Up spiral (outer lane):** about 320° around the tree. Radius 62 cm at the bottom down to 50 cm at the top, about 8 cm outside the branch tips. Climbs 35 cm, from 50 cm to 85 cm above the floor. Length about 2.95 m, grade 12%.
+- **Down spiral (inner lane):** about 320° around the tree. Always 15 cm inside the outer lane: radius 47 cm at the bottom down to 35 cm at the top, about 7 cm into the branch tips. Descends 35 cm. Length about 2.17 m, grade 16.4% downhill.
+- At the front of the tree both lanes pass side by side at the same height, 15 cm apart centre to centre (5 cm between the lane edges), like a two-lane road. They never touch.
+- **Top crossover (85 cm) and bottom crossover (50 cm):** two S-bends at the back of the tree, each over 60° of the circle, about 48 cm long, shifting the lane by 15 cm (bend radius about 36 cm). The top S passes 35 cm above the bottom S.
+- Lane 100 mm wide (the car is 60 mm wide). Curves are banked 5° inward. Clear guard lip on the outer edges.
+- Pieces: outer climbing curves, inner descending curves and 2 S-crossovers, each with a factory-set slope and radius (numbered for assembly). Pieces snap together with tabs. Rails connect through metal joiners.
+- One car runs the loop. A second car can follow it on the same lane. Speed is limited for the downhill.
 
 ## 4. Mounting
-- **2 trunk collar clamps** (black, adjustable, fit trunks / centre poles of 2–5 cm), one at about 50 cm and one at about 95 cm, clamped to the trunk.
+- **2 trunk collar clamps** (black, adjustable, fit trunks / centre poles of 2–5 cm), one at about 50 cm and one at about 85 cm, clamped to the trunk.
 - **6 support arms per collar** (black, adjustable length and height) go out radially. Each arm has two track holders, outer and inner lane, that clip under the track and set its height on the spiral.
 - **Clear branch clips** only stabilise the track against the branches.
 - Total weight of track + cars well under 2.5 kg. Fits artificial and real trees from 6 to 7.5 ft. Assembly is tool-free, about 15 minutes.
@@ -48,21 +48,20 @@ The car climbs one full turn around the tree, crosses over at the back, comes do
 
 ## 7. Questions for the supplier
 - Unit cost of the car and of the full set at MOQ.
-- Can they make the up/down spiral (outer Ø 120 cm climbing 45 cm, inner Ø 90 cm descending 45 cm, 2 S-crossovers) with fixed-slope curve pieces?
+- Can they make the up/down spiral (dimensions in section 3 and in schema-traseu.png) with numbered, fixed-slope curve pieces?
 - How much does the full set weigh?
 - Certifications for the US (CPSC / ASTM F963, FCC if wireless).
 - Shipping to the USA: time and cost.
 
-## 8. Key dimensions (all product photos follow these)
+## 8. Key dimensions (from schema_traseu.py)
 | Part | Size |
 |---|---|
-| Up spiral (outer lane) | Ø 120 cm, 1 turn, climbs 45 cm (50 → 95 cm above the floor), about 12% |
-| Down spiral (inner lane) | Ø 90 cm, 1 turn, descends 45 cm, about 16% |
-| Gap between lanes | 15 cm centre to centre (5 cm between lane edges) |
-| Crossovers | 2 S-bends at the back of the tree, at 95 cm and at 50 cm |
+| Up spiral (outer lane) | radius 62 → 50 cm, climbs 50 → 85 cm above the floor, 2.95 m long, 12% |
+| Down spiral (inner lane) | radius 47 → 35 cm (15 cm inside the outer lane), 2.17 m long, 16.4% |
+| S-crossovers | 2, at the back of the tree, 60° each, about 48 cm long, 35 cm apart vertically |
 | Lane width | 100 mm, slot in the centre, 2 steel rails |
 | Outer guard lip | 15 mm high, clear |
 | Car | 160 × 60 mm, 1:32 |
 | Trunk collar | fits Ø 20–50 mm |
-| Support arms | 6 per collar, adjustable 30–60 cm |
+| Support arms | 6 per collar, adjustable 30–60 cm, 2 holders each (outer + inner lane) |
 | Box | about 60 × 40 × 15 cm |

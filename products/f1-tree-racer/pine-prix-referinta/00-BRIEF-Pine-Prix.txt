@@ -1,0 +1,54 @@
+PINE PRIX™ – brief pentru imagini și videoclipuri
+Slogan: „Lights out, Ho-Ho-Go!”
+
+CE ESTE PRODUSUL
+Un circuit de Formula 1 în miniatură care se prinde în bradul de Crăciun. Pe el, 4 mașinuțe F1 se învârt continuu în jurul bradului, una după alta, ca un trenuleț de brad. Se controlează dintr-o telecomandă simplă.
+
+CUM ARATĂ (respectați exact designul din pozele aprobate)
+Pista
+- Un inel (cerc) de circa 70 cm, care înconjoară bradul la jumătatea înălțimii și trece printre crengi.
+- E prins de trunchi cu spițe/brațe negre; nu stă pe picioare și nu atinge podeaua.
+- Asfalt gri închis, borduri roșu-alb, perete interior cu panouri de sponsori (Aramco, Pirelli, Heineken, DHL), bandă albastru-deschis pe margine, parapet argintiu.
+- Mașinile stau pe două șine argintii, cu roțile pe ele, ca un tren pe șine.
+Mașinile (scara 1:43)
+- Red Bull nr. 3 (bleumarin), Ferrari nr. 44 (roșu), McLaren nr. 1 (portocaliu papaya), Mercedes nr. 63 (argintiu).
+- Exact 4, toate în aceeași direcție, una după alta. Niciodată în diagonală sau față în față.
+Cutia
+- Bleumarin mat, cu dungă roșu-alb pe margini, logo PINE PRIX auriu (un brăduț cu steag în carouri între cuvinte) și „Lights out, Ho-Ho-Go!” cu auriu.
+- Înăuntru: sus cele 4 mașinuțe; jos piesele de pistă, parapetele cu sponsori, clema, bara cu luminile de start, 4 brațe, telecomanda și cablul.
+
+STILUL VIDEOCLIPURILOR
+- Format 9:16 (vertical), stil UGC (filmat ca cu telefonul), realist.
+- Fără muzică. Sunet real de mașini F1 care trec în viteză.
+- Când sunt voci, să sună natural, nu a voce de AI.
+- Ambientul: sufragerie caldă de Crăciun (șemineu alb cu ciorapi, raft cu lampă, fotoliu verde), lumini calde și discrete.
+
+CE E ÎN PACHET
+imagini/
+  01-cutia            – cutia produsului (studio)
+  02-continut-cutie   – cutia deschisă, cu tot ce conține
+  03-pista-pe-brad    – produsul montat în brad
+  04-pista-prim-plan  – mașinile pe cele două șine
+  05-referinta-pista  – cadru din videoul aprobat (cel mai fidel pentru pistă)
+  06–09               – fiecare mașinuță (văzută de sus, din cutie)
+video/
+  01-hook       – mașina F1 oprește pe stradă, pilotul îi dă cutia celui care filmează
+  02-pista      – mașinile se învârt în jurul bradului
+  03-unboxing   – din cutie se scoate o mașinuță și e arătată camerei
+
+CE MAI E DE FĂCUT
+- Un cadru/video din alt unghi (de exemplu lateral, la nivelul pistei), cu mașinile trecând pe lângă cameră și camera întorcându-se după ele.
+
+SFATURI PENTRU AI (ce a mers și ce nu)
+- Imagini: GPT Image 2 (4K) a ieșit cel mai bine. Video: Seedance 2.5, apoi upscale la 1080p (Topaz).
+- Ca referință folosiți DOAR pozele aprobate din pachet. O imagine cu greșeli folosită ca referință copiază greșeala.
+- Pentru pistă și cum stau mașinile pe ea, folosiți ca referință „05-referinta-pista” (cadru din videoul aprobat).
+- Prompturile scurte și clare merg mai bine decât cele lungi.
+- La video cu imagine de start, verificați că videoul chiar pornește din ea (uneori AI-ul o pune la final).
+- Dacă dați un video ca referință, AI-ul copiază și mișcarea camerei, deci nu schimbă unghiul.
+
+DESCRIERE SCURTĂ ÎN ENGLEZĂ (de pus în prompt)
+A miniature Formula 1 race track shaped as a ring, attached around a Christmas tree at mid-height with thin black spokes from the trunk, passing through the branches. Dark grey asphalt, red-and-white kerbs, an inner wall with Aramco, Pirelli and Heineken sponsor boards, a light-blue band and a low silver armco fence. Four 1:43 F1 cars (navy Red Bull #3, red Ferrari #44, papaya McLaren #1, silver Mercedes #63) ride one behind the other on two silver rails, all in the same direction, like a toy train around the tree. Cozy living room, warm Christmas lights, vertical 9:16, realistic UGC phone footage.
+
+NOTĂ
+Siglele F1, ale echipelor și ale sponsorilor sunt mărci înregistrate. Pentru un proiect de facultate e în regulă; pentru vânzare reală ar fi nevoie de licență.

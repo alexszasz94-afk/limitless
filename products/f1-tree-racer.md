@@ -113,3 +113,9 @@ Verificat cu `qa-tree-prix.md`. Pozițiile (direcția curbei, mașina, semaforul
 | 5 cutia TREE PRIX (zi) | 181d1d08-a952-4c8e-8d1e-3b7e15cd7d14 |
 | 6 în cursă | c2377f38-556b-4203-94eb-1a49cb18d6c8 |
 Lecție: gpt_image_2 curbează pista spre dreapta din instinct → la POV bradul se pune în dreapta; la celelalte se pornește din randare.
+
+## 23 oct — actualizări set pe zi
+- Telecomanda de pornire NOUĂ: volan F1 mic (negru-roșu, buton START roșu, 5 LED-uri, clapetă viteză) — 7-telecomanda-volan.jpg 77882b76-0e91-4b62-8725-d886f8dc66ee; în cutie: 4-ce-e-in-cutie.jpg 04f91c21-d8a0-41f3-9d22-9df7351b9b4a
+- 6 în cursă refăcut (mașina mică, centrată, pe direcția pistei): de6cc992-88c9-41fc-8974-4ec44893d0d9 (randare scena-cursa 86dbb7a5)
+- 3 POV simetric: semaforul mutat la pixel peste șanț (OpenCV) + curățat: 3d6e85ea-9ec9-4f16-9869-409c294d07b8. Verificat cu linie de control: șanț = mijlocul botului = lumina 3 = mijlocul picioarelor.
+- Lecție: generatorul pune mașina/semaforul „aproape” centrat, nu exact → măsor pe imagine (linie de control) și corectez la pixel când e nevoie.

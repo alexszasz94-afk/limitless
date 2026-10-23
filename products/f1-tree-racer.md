@@ -92,3 +92,14 @@ Variantele cu 2 cercuri / spirală (set/, schema_traseu.py) = abandonate.
 3. Sunet de motor F1 care crește cu viteza.
 4. Faruri + lumină roșie de ploaie pe mașină.
 5. Linie start/sosire în carouri + garaj de boxe în formă de cadou.
+
+## 23 oct — TREE PRIX (nume ales de Szasz) — SET DE REFERINȚĂ FINAL (folder `tree-prix/`)
+Nume: **TREE PRIX** · slogan cutie: „LIGHTS OUT. AROUND THE TREE.” · cutie premium negru mat cu roșu + bandă în carouri.
+Concept: un singur cerc Ø110 + LED-uri calde în marginea transparentă (urmăresc mașina) + semafor de start F1 cu 5 lumini roșii + linie start/sosire în carouri + faruri/stop pe mașină. Fișa furnizor: secțiunea 5b.
+| 1 brad cu luminițe + semafor | 0a94be28-7a36-4c78-88d5-387f66e1c3bc |
+| 2 semafor de aproape (3/5 aprinse) | 7f4d4a41-b2b2-4231-8c39-e3455be95024 |
+| 3 POV pilot la start (5/5 aprinse) | 47e7e3a8-43fe-4b58-8379-0103acca3861 |
+| 4 cutia TREE PRIX | 832bdd2e-9710-4094-9bd5-3f734c171786 |
+| 5 ce e în cutie (cu semafor) | 8e6a6d1d-8387-45cf-9ec0-b3b7bfb83ba6 |
+| 6 seara, pista luminată | 93d1f4a5-0165-47d1-b2b2-eeb085710946 (v1 98226ce1 mașina descentrată, v2 3e2f231f semafor sub pistă) |
+Potențial: Szasz crede „50k garantat” — IPOTEZĂ, fără cifre încă (fără furnizor/cost/test). Se confirmă doar cu cifre din pilot.

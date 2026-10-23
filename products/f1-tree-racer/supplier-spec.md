@@ -1,4 +1,6 @@
-# F1-style Christmas Tree Racer — product spec for the supplier
+# TREE PRIX — F1-style Christmas Tree Racer — product spec for the supplier
+
+Product name: **TREE PRIX**. Tagline on the box: "LIGHTS OUT. AROUND THE TREE."
 
 Concept: like the classic train that runs under the Christmas tree, but a modern open-wheel (F1-style) race car that runs on one flat ring of track **mounted on the tree itself**, going round and round the tree.
 
@@ -35,7 +37,14 @@ It is a **slot-car system** (the same principle as Scalextric / Carrera), plus a
 - Total weight under 1.5 kg. Tool-free assembly, about 10 minutes.
 
 ## 5. In the box
-1 car (more cars and colours sold separately) · 12 curved track pieces · 1 trunk collar + 6 support arms · branch clips · power box with speed limiter and auto mode · 1 handheld trigger controller · wall adapter · spare guide blade + spare brushes · instructions.
+1 car (more cars and colours sold separately) · 12 curved track pieces · 1 trunk collar + 6 support arms · branch clips · 1 start gantry with 5 red lights + checkered start/finish piece · power box with speed limiter, auto mode and START button · 1 handheld trigger controller · wall adapter · spare guide blade + spare brushes · instructions.
+
+## 5b. Lights (key selling feature)
+1. **LED track edge:** a thin warm-white LED strip inside the clear guard lip of every track piece, powered from the rails. Mode A: always on. Mode B (preferred): "chase" mode, where the LEDs right behind the car glow brighter in a short trail that follows the car around the ring (track sensors or a timed sequence).
+2. **Start gantry:** a small black arch over the lane (about 12 cm tall) with **5 round red lights**. Press START: the lights come on 1 → 5, one per second, then all go out and the car is released (the F1 start). It sits on a checkered start/finish piece.
+3. **Car lights:** small white LEDs in the front wing (headlights) and a red rear light.
+4. Optional: engine sound module in the power box (pitch follows the speed) and a start beep.
+All lights run on the same 12 V from the rails. No batteries.
 
 ## 6. Car
 - Scale 1:32: 160 mm long, 60 mm wide. Modern F1 shape: halo, multi-element front wing, big rear wing, slick tyres.

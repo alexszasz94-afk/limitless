@@ -55,3 +55,9 @@ Diferențe rămase: brațele de susținere (în 3 = suporți triunghiulari scur�
 - master-v3a (tot bradul): 8bb8c981-0163-4455-85ec-f1e146e26196
 - (v2a/v2b 0fd05282 / ade0039a: cercuri bune dar fără șanț — nu se folosesc)
 Szasz a cerut mașina lui Verstappen: NU replica (Red Bull/F1 = mărci, risc juridic + plăți + ip_detected). Propus: mașina navy/roșu/galben fără logo (45cbcbe5).
+
+## 23 oct — Szasz: cele două cercuri trebuie LEGATE (urcă până sus, coboară, la nesfârșit)
+Soluția (fără să se ciocnească pista cu ea însăși): exterior Ø120 urcă 1 tură (+45 cm, 12%), S sus în spate → interior Ø90 coboară 1 tură (−45 cm, 16%), S jos în spate (la 45 cm sub cel de sus) → înapoi pe exterior.
+- Schema exactă: `schema-traseu.png` (generată de `schema_traseu.py`) — asta se trimite la furnizor.
+- Poze AI aproximative (nu respectă exact geometria): set/spirala-fata.jpg d32c24a1-e27e-47e6-885b-26932433d341, set/spirala-spate.jpg 5ffa2356-b942-4460-84eb-45a0eb63ab85
+- Fișa furnizor actualizată (secțiunile 3, 4, 5, 7, 8).

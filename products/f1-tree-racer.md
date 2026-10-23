@@ -119,3 +119,14 @@ Lecție: gpt_image_2 curbează pista spre dreapta din instinct → la POV bradul
 - 6 în cursă refăcut (mașina mică, centrată, pe direcția pistei): de6cc992-88c9-41fc-8974-4ec44893d0d9 (randare scena-cursa 86dbb7a5)
 - 3 POV simetric: semaforul mutat la pixel peste șanț (OpenCV) + curățat: 3d6e85ea-9ec9-4f16-9869-409c294d07b8. Verificat cu linie de control: șanț = mijlocul botului = lumina 3 = mijlocul picioarelor.
 - Lecție: generatorul pune mașina/semaforul „aproape” centrat, nu exact → măsor pe imagine (linie de control) și corectez la pixel când e nevoie.
+
+## 23 oct — SET FINAL cu NANO BANANA PRO (folder `tree-prix-nbp/`) — sursa de adevăr
+Szasz: pozele GPT par procesate → refăcute cu nano_banana_pro (3072×5504) pe aceleași compoziții.
+| 1 brad la start | d893c4ca-3b39-4808-adc6-3a5f3c84e279 |
+| 2 semafor aproape | 72191a9f-2583-4d5e-b79b-fc0b30611dad (prima variantă c92bb28b inversase curba) |
+| 3 POV pilot | 3d6e85ea-9ec9-4f16-9869-409c294d07b8 (GPT + centrare la pixel, rămâne) |
+| 4 ce e în cutie | a67a0531-e202-44db-b92e-cec7955076ae |
+| 5 cutia | e99cc844-ee4b-421f-8305-693d14894e4c |
+| 6 în cursă | c17ec300-cbce-4c6f-b9f1-2d2216b766cf |
+| 7 telecomanda volan | ea74604f-4f00-41d6-bd73-bee67e1d8062 |
+Video: `video/pov-cursa-480.mp4` (seedance_2_5 480p, 5 s) ab12cf79-e992-4535-8634-a64d879f94dd — luminile se sting la 1 s, mașina pleacă și se învârte spre dreapta în jurul bradului.

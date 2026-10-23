@@ -70,3 +70,14 @@ v2: pista urmează conul, urcă 50→85 cm (35 cm), urcare 12%, coborâre 16,4%,
 Metoda care merge: randez eu geometria exactă (ghid-0.png / ghid-35.png, încărcate fa3b62c7 / 06462855) și o dau la gpt_image_2 ca singura referință de traseu. Dacă pun și poze vechi cu cercuri plate, le copiază pe alea (713e0119 / 1c3f0b9f = greșite, cercuri plate).
 - set/traseu-lateral.jpg d90fa312-3527-4185-9bc4-fb759653c10d (cea mai clară)
 - set/traseu-fata.jpg cd2464ec-c0ea-46ba-9a7b-261c2b2a6e09
+
+## 23 oct — DECIZIE FINALĂ Szasz: UN SINGUR CERC (folder `cerc/` = sursa de adevăr)
+Cerc Ø110 cm la ~70 cm de la podea, 12 bucăți de 30°, bandă 10 cm, 1 colier + 6 brațe, 1 mașină, 1 mâner. Fișa furnizor actualizată.
+Făcut din randarea exactă `render_cerc.py` (cerc-intreg bfda5818 / cerc-aproape 731fe882).
+| 1 brad cu cercul | 180d6df0-097d-4c43-8ef6-749e33e784e5 |
+| 2 cerc aproape | 468225f3-6f2c-47db-859a-833769d82280 |
+| 3 ce e în cutie | 17630469-9f09-4202-bf3a-17b4c65cf1a5 |
+| 4 dedesubt | 786d3045-8ab5-4450-9950-74ffb04fb86c |
+| 5 curent + mâner | 7f2cd52a-3ca7-4be1-b8a3-10394b379319 |
+| 6 cutia | c4605339-6346-43bd-8cc2-ccd10f7cc489 |
+Variantele cu 2 cercuri / spirală (set/, schema_traseu.py) = abandonate.

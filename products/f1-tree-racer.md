@@ -38,3 +38,14 @@ Jos ~120 cm, sus ~85 cm, la ~40–50 cm unul de altul, câte o mașină pe fieca
 | bradul cu 2 cercuri | a13cc587-230d-42c8-99d3-5f148875ea18 | refs/1-brad-2cercuri.jpg |
 | 2 cercuri aproape | b74a1103-740d-45d1-8ed6-d742afd50e76 | refs/2-2cercuri-aproape.jpg |
 Look: Szasz zice că pozele vechi par „foarte procesate”. Cauza: promptul cerea „ultra-realistic product photography, crisp, vivid”. De acum la produs: „casual unedited phone snapshot… no HDR, no over-sharpening, no glossy CGI look, a little phone noise”.
+
+## 23 oct — SETUL CORELAT (folder `set/`) — sursa de adevăr
+Toate făcute din aceleași referințe (brad a13cc587 + mașina roșie 75dd9289 + papaya 8f8a1716) și același bloc de produs `prompts/product-block.txt` (dimensiuni fixe: cercuri Ø120/Ø90 cm, 45 cm între ele, bandă 10 cm, mașină 16×6 cm).
+| 1 brad | a13cc587-230d-42c8-99d3-5f148875ea18 |
+| 2 două cercuri | e4b13ee3-f4e2-48a8-9970-34758ea3aa0a |
+| 3 ce e în cutie | ec1db43e-01fe-4299-9e73-e4ce926ffe64 |
+| 4 dedesubt | 786d3045-8ab5-4450-9950-74ffb04fb86c |
+| 5 pista aproape | 4ea81109-ca50-4e75-b5e0-6bd3264bdc04 |
+| 6 curent | 62794a16-262a-492d-ad2c-5ed8a86a8363 |
+| 7 cutia | b890fdbf-ad94-42d7-9ef4-98f77b07afb6 |
+Diferențe rămase: brațele de susținere (în 3 = suporți triunghiulari scurți, în 5 = tijă neagră); în 3 nu se pot număra exact 12+12 bucăți. refs/ = variante vechi.

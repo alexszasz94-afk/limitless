@@ -26,3 +26,9 @@ Fișa tehnică: `products/f1-tree-racer/supplier-spec.md` (EN).
 | mașina de dedesubt | 5ac8da95-02c3-4adf-8b0d-ea3f8c1f9435 | refs/3-dedesubt.jpg |
 | pista detaliu | f6435f55-7c44-4ea5-b064-0ab9ad8f0c0c | refs/4-pista-detaliu.jpg |
 | cutia | ecb44d9d-8502-4a1e-9608-d020e4d5c8f2 | refs/5-cutia.jpg |
+
+## 23 oct — Szasz: pista pe UN SINGUR CERC (nu în spirală de sus până jos)
+Inel orizontal de ~100 cm la 1/3 din înălțimea bradului, 12 curbe, colier pe trunchi + 6 brațe. Fișa pentru furnizor actualizată.
+| bradul cu cercul | be51153e-7aea-45eb-a365-fd73d8da7681 | refs/1-brad-cerc.jpg |
+| setul (cerc) | 47dc7524-a8db-4a2f-9503-8e45095c7666 | refs/2-setul-cerc.jpg |
+(1-brad-intreg și 2-setul-complet = varianta veche cu spirală, renunțat.)

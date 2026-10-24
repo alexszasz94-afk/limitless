@@ -1,0 +1,10 @@
+{"fps":30,"segments":[
+ {"file":"/home/user/limitless/products/snoopy-robe/video/masina/cadou.mp4","start":0,"end":2.4,"audio":true},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/masina/desface.mp4","start":0,"end":2.8,"audio":true},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/masina/broll.mp4","start":0.15,"end":3.46},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/conector-telecomanda-kling.mp4","start":0,"end":3.04},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/masina/broll.mp4","start":3.54,"end":4.79},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/masina/cozy-zoom.mp4","start":0,"end":2.14}],
+ "texts":[{"text":"Do NOT let a Snoopy\nlover see this... 🐶💕","t0":0,"t1":99,"size":76}],
+ "music":"/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3","music_start":0.8,"music_vol":0.75,"orig_vol":1.0,
+ "out":"/home/user/limitless/products/snoopy-robe/video/montaj/heatpup-masina-final.mp4"}

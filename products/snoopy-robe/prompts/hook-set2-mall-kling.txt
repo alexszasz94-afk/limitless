@@ -1,0 +1,16 @@
+# HeatPup set 2 — hook „vitrina” (Szasz 24 oct). Kling 4.0 image-to-video, 1080p, 9:16, 6 s, CU sunet (vocea „Oh my God!”).
+# medias: start_image = 19960a30 (hook-start-mall-v7-gpt.png, ales de Szasz)
+#   image_references: Image 1 personaj d0b10135 (regula 24 oct) · Image 2 halat față 4e62e553 · Image 3 halat deschis d48a5ee8
+#   Image 4 halat spate 9307c5a6 · Image 5 glugă close-up 0faa4e52
+
+Animate the start image as one continuous real handheld iPhone 16 Pro Max video, UGC style, no cuts. The woman is exactly the woman of the start image and of Image 1, same face in every frame.
+
+0.0-1.2 s: she stands in the mall holding the red coffee cup, looking off to the RIGHT of the picture toward the store. Suddenly her eyes go wide, her mouth opens and she says clearly and excitedly "Oh my God!". Her fingers open and the coffee cup slips out of her hand and drops to the floor with a soft plastic-lid pop, a small splash of coffee on the tiles.
+
+1.2-3.0 s: she turns to the RIGHT and runs toward what she was looking at. The camera pans smoothly to the RIGHT following her, in the same direction she was looking, and reveals a big bright shop display window next to the H&M entrance. Inside the window, on three mannequins, are our robes, reproduced ONE TO ONE from Images 2-5: the light camel-brown ribbed plush hooded robe with the embroidered motifs, white fluffy sherpa lining and trim, long to the ankles, the hood with the white fluffy face, black nose, two long black floppy ears and the red Santa hat with white pom-pom. The robes are the only thing in the window, softly lit, with small Christmas lights.
+
+3.0-6.0 s: she is so excited that she does not stop: she runs straight into the window, the big glass pane cracks and shatters into many small pieces that fall to the floor in a light comedic way, like a movie stunt with safety glass, and she ends up inside the window display hugging one of the robes, laughing, unhurt. Glass pieces settle on the floor around her.
+
+Sound: her voice "Oh my God!", the cup hitting the floor, quick footsteps, the glass shattering, mall ambience. No music.
+
+Keep the mall, the H&M sign, the garland, the American flag and the light exactly as in the start image. LIGHT: very soft, very natural, warm-neutral mall light, low contrast, soft shadows, true colours; no harsh light, no HDR, no glow, no CGI look. MOTION: natural movements with real weight, the coffee falls with real gravity, the camera follows smoothly, no morphing, no flicker, no objects changing shape; what appears when the camera turns is exactly where she was looking. Correct hands with five fingers. No text, no captions.

@@ -111,3 +111,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
   5. Probă 720p (~4 credite / 8 s), apoi upscale `bytedance` 1080p `aigc`. Fără sunet la B-roll.
   6. Cadrul care iese greșit din clip se TAIE din clipul de referință înainte (regula 19 oct), nu se repară doar din prompt.
   Hook-ul animat din start frame: Kling 4.0 `image-to-video` (Seedance dă nsfw/ip pe Snoopy); dacă la final apare o tăietură spre o poză de referință, se taie.
+- **2026-10-24** — (Szasz) B-roll-urile făcute cu Kling rămân la **720p**: nu se mai face upscale la 1080p („720 mi-e suficient”). Înlocuiește pasul 5 din metoda Kling (upscale).
+- **2026-10-24 — REGULĂ (Szasz): video DOAR cu Kling 4.0 la 720p** („e foarte ieftin”). Seedance și Genjutsu nu se mai folosesc; fără upscale.

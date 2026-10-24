@@ -1,0 +1,10 @@
+{"fps":30,"segments":[
+ {"file":"/home/user/limitless/products/snoopy-robe/video/set3/hook-vitrina.mp4","start":1.3,"end":5.2,"audio":true},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/set3/unboxing.mp4","start":0,"end":2.0},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/set3/broll.mp4","start":0.3,"end":3.46},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/conector-telecomanda-kling.mp4","start":0,"end":3.04},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/set3/broll.mp4","start":3.54,"end":7.04}],
+ "texts":[{"text":"Snoopy x H&M 🥹🐶","t0":0,"t1":99}],
+ "music":"/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3",
+ "music_start":2.1,"music_vol":0.75,"orig_vol":1.4,
+ "out":"/home/user/limitless/products/snoopy-robe/video/montaj/heatpup-set3-final.mp4"}

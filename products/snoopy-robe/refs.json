@@ -116,14 +116,15 @@
     "personaj": "char_l 009a0ac1-8242-4e72-b82b-5efd3a05367d (păr castaniu deschis, ochi albaștri-gri)",
     "camera": "room_m 5ff74d8e-243f-431f-81e5-5f7f64543a6e (living clasic seara, brad mare în fața ferestrelor, canapea crem)",
     "sub_halat": "pijama Fair Isle bleumarin-roșu",
-    "broll": "1bc342c0 (în lucru)",
+    "broll": "1bc342c0 (video/set3/broll.mp4) — la montaj se taie primele 0,3 s (gluga văzută din față la start)",
     "conector_telecomanda": "clipul din setul 1 (conector-telecomanda-kling.mp4)",
     "unboxing_start": "cb807e4f (video/set3/unboxing-start.png)",
-    "unboxing": "6202bca6 (în lucru)",
+    "unboxing": "6202bca6 (video/set3/unboxing.mp4, 1080p) — primele 2 s bune",
     "hook": {
       "concept": "vitrina (ca setul 2)",
       "start_frame": "8f159812 (video/set3/hook-start.png)",
-      "video": "64757077 (în lucru)"
-    }
+      "video": "64757077 (video/set3/hook-vitrina.mp4) — cana cade vizibil; montaj 1,3–5,2 s"
+    },
+    "montaj": "video/montaj/heatpup-set3-final.mp4 (spec-heatpup-set3.json)"
   }
 }

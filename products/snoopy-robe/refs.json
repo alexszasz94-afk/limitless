@@ -111,5 +111,19 @@
       }
     },
     "unboxing_1080": "41fa8941 (video/set2/unboxing-1080.mp4) — bun doar 0–1,8 s; după, halatul rămâne singur (referințele de produs împing spre poză de produs)"
+  },
+  "set3": {
+    "personaj": "char_l 009a0ac1-8242-4e72-b82b-5efd3a05367d (păr castaniu deschis, ochi albaștri-gri)",
+    "camera": "room_m 5ff74d8e-243f-431f-81e5-5f7f64543a6e (living clasic seara, brad mare în fața ferestrelor, canapea crem)",
+    "sub_halat": "pijama Fair Isle bleumarin-roșu",
+    "broll": "1bc342c0 (în lucru)",
+    "conector_telecomanda": "clipul din setul 1 (conector-telecomanda-kling.mp4)",
+    "unboxing_start": "cb807e4f (video/set3/unboxing-start.png)",
+    "unboxing": "6202bca6 (în lucru)",
+    "hook": {
+      "concept": "vitrina (ca setul 2)",
+      "start_frame": "8f159812 (video/set3/hook-start.png)",
+      "video": "64757077 (în lucru)"
+    }
   }
 }

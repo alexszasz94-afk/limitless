@@ -59,7 +59,8 @@
     "hook": "fcadf2a9-f0b6-4f45-90f2-59c1b2c5b48d (gpt_image_2; mantie Snoopy, mâna de jos acoperită, cutia ascunsă)",
     "unboxing_v1_nbp": "52b2b024-e646-419b-adbf-dd4e19511f1e",
     "unboxing_v2_gpt": "b09219d3-734c-4908-9422-5d5e821091ee",
-    "personaj": "char_m a8d6447e — FIX personajul, nu lookalike (Szasz 24 oct); gpt_image_2 păstrează mai bine fața"
+    "personaj": "char_m a8d6447e — FIX personajul, nu lookalike (Szasz 24 oct); gpt_image_2 păstrează mai bine fața",
+    "unboxing_aproape": "02a48157-ac48-4444-96ea-1bc4d898cb78 (gpt_image_2, aproape, cald, focus pe cutie)"
   },
   "broll_kling4": {
     "job": "5c1d3a3c-68a2-42c5-b7ba-d6fadee122af",
@@ -74,5 +75,11 @@
     "fisier": "video/broll-kling4-720-v2.mp4",
     "saculeti_ref": "e2a0770d (cadru la 3,0 s din broll-standard-3-sofa — NU se generează, se ia din clip, Szasz 24 oct)",
     "cost": "4 credite / 8 s 720p"
+  },
+  "broll_final": {
+    "kling_job": "a3eb67f7-f7aa-495a-87d8-b2dc1b53fdd0 (v4, prompt prompts/broll-kling4.txt, clip tăiat 83f379a7)",
+    "upscale_1080": "cd1e61de-d18c-4ad6-ad9f-a759e5a11220",
+    "fisier": "video/broll-kling4-1080.mp4",
+    "status": "APROBAT Szasz 24 oct („e perfect asta cu kling”)"
   }
 }

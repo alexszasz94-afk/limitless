@@ -1,0 +1,26 @@
+# HeatPup — B-roll Kling 4.0 (24 oct, după feedback Szasz). Se folosește CUVÂNT CU CUVÂNT.
+# model kling4_0 · mode video-edit · 9:16 · 720p probă / 1080p final · duration 8
+# medias (în ordinea asta):
+#   video_references: clipul de mișcare TĂIAT (heatgrump/library/motion/broll-standard-3-sofa-heatpup.mp4 = 83f379a7;
+#   primele 0,45 s scoase: gluga căzută pe spate ieșea întoarsă pe dos) · duration 7
+#   Image 1 personaj · Image 2 cameră · Image 3 halat față închis 4e62e553 · Image 4 halat deschis d48a5ee8
+#   Image 5 halat spate 9307c5a6 · Image 6 glugă close-up 0faa4e52 · Image 7 cadru săculeți din clip e2a0770d
+# Se schimbă doar <...>.
+
+Edit the input video. Keep EXACTLY the same four shots, the same cuts, the same camera position and framing, the same body movements and the same timing as the input video. Change only the person, the room and the robe.
+
+REPLACEMENTS IN EVERY FRAME:
+- PERSON: exactly the woman of Image 1 — same face, same long straight <blonde> hair, same build. Under the robe she wears <a red and white plaid flannel pajama set (long-sleeve button shirt and long pants)>, the same in every shot. Never the woman or the clothes of the input video.
+- ROOM: exactly the room of Image 2 — <the bright living room with the bay window and white curtains, the decorated Christmas tree, the grey sofas, the rug and the antler chandelier>, soft daylight. Only what is in Image 2: do not add a fireplace, wreaths or any furniture that is not in Image 2.
+- ROBE: exactly the robe of Images 3-6, reproduced one to one in every frame. Outside: light camel-brown ribbed (corduroy-like) plush with the same embroidered motifs in the same places. Inside: white fluffy sherpa lining. White fluffy trim on the front edges, cuffs, pockets and hem. Long, down to the ankles. Never the dark red robe of the input video.
+- HOOD: exactly Image 6 (front) and Image 5 (back). FRONT of the hood = white fluffy face with a black nose, a closed-eye line and one smile line, two long black floppy ears on the sides, and a red Santa hat with a white fur brim and a white pom-pom sewn on top. BACK of the hood = light camel ribbed fabric like the robe, the two black ears hanging on its sides, the red Santa hat on top. The hood is a real 3D sewn hood, never a flat print, never inside-out, never upside down.
+
+SHOT 1 (0.0-0.9 s, seen from behind): the robe is already on her shoulders and she raises both arms and pulls the hood up over her head. From behind we only ever see the OUTSIDE of the hood: the camel ribbed back of the hood with the black ears on both sides — the white lining of the hood is never visible from behind and there is never a red triangle on white fabric. When she pulls it up, the hood sits upright on her head: from behind we see the camel back of the hood, the black ears on both sides and the red Santa hat on top.
+
+SHOT 2 (0.9-3.6 s, facing the camera, full body): the hood is up on her head (front face of the hood, hat, ears visible exactly as Image 6). She holds the front edges of the robe and opens it wide with both arms at shoulder height, showing the white sherpa lining. THE FOOT POCKET, exactly as in Image 7: at the bottom of the robe, on the inside, one wide deep pouch across the whole width, about 30 cm high, sewn to the hem, OPEN ONLY AT THE TOP and CLOSED AT THE BOTTOM and on both sides; outside of the pouch = light camel ribbed fabric, top edge = white fluffy trim. She lifts her right foot over the top edge and puts it down INTO the pouch, then her left foot, exactly like the input video. Once inside, BOTH FEET ARE COMPLETELY HIDDEN INSIDE THE POUCH: no toes, no feet, no ankles and no pajama legs are ever visible below or through the pouch; the pouch puffs out softly around her feet. The robe is floor-length: the closed bottom seam of the pouch lies FLAT ON THE FLOOR with no gap between the pouch and the floor, so her bare feet stand on the floor INSIDE the pouch and are never seen under it. Then she closes the robe around her.
+
+SHOT 3 (3.6-4.95 s): she lies on the grey sofa wrapped in the closed robe, hood up, exactly the pose of the input video.
+
+SHOT 4 (4.95-7.3 s): she sits on the grey sofa wrapped in the robe, hood up, exactly the pose of the input video.
+
+QUALITY: UGC style, natural, real iPhone 17 Pro Max video. LIGHT: very soft, very natural daylight from the window plus warm fairy lights, low contrast, soft shadows, true colours; no harsh light, no HDR, no glow, no CGI look. MOTION: smooth natural movements with real weight and gravity of thick plush fabric, no morphing, no flicker, no objects changing shape between frames. Correct hands with five fingers. No text, no logos.

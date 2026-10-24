@@ -1,0 +1,43 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/hook-kling-720-v2.mp4",
+   "start": 0,
+   "end": 3.45,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/unboxing-kling-720-v2.mp4",
+   "start": 0,
+   "end": 2.0
+  },
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/broll-kling4-720-v5.mp4",
+   "start": 0.08,
+   "end": 3.47
+  },
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/conector-telecomanda-kling.mp4",
+   "start": 0,
+   "end": 3.04
+  },
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/broll-kling4-720-v5.mp4",
+   "start": 3.53,
+   "end": 7.04
+  }
+ ],
+ "texts": [
+  {
+   "text": "DONT show this to a Snoopy fan 🐶🤎",
+   "t0": 0,
+   "t1": 99
+  }
+ ],
+ "music": "/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3",
+ "music_start": 2.55,
+ "music_vol": 0.75,
+ "orig_vol": 1.4,
+ "out": "/home/user/limitless/products/snoopy-robe/video/montaj/heatpup-final.mp4"
+}

@@ -38,5 +38,17 @@
     "sursa": "snuglore DdpIYs0trT0 (ref3 HeatGrump)",
     "structura": "B1 din spate -> B2 deschide larg -> cozy canapea întinsă -> cozy șezând",
     "status": "propus 24 oct, așteaptă OK Szasz"
+  },
+  "muzica": "MEREU o melodie din Snoopy/Peanuts (Linus and Lucy, Christmas Time Is Here, Skating) — regula Szasz 24 oct",
+  "hook": {
+    "concept": "https://www.instagram.com/p/Deuu2AXyPPx/",
+    "status": "nedescărcat: Instagram 429 + Apify limită lunară depășită (24 oct)"
+  },
+  "broll_proba_480": {
+    "job": "80555aac-1603-4877-b284-de628c479c0d",
+    "personaj": "char_m a8d6447e",
+    "camera": "room_k a86907a1",
+    "clip_miscare": "broll-standard-3-sofa c3c618f3",
+    "sub_halat": "pijama flanel carouri roșu-alb"
   }
 }

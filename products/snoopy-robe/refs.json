@@ -90,6 +90,11 @@
     "conector_telecomanda": "f5276644 (cifrele de pe telecomandă ies 5,1,3,2,1 → la montaj se folosește clipul din setul 1, conector-telecomanda-kling.mp4)",
     "unboxing_start": "0052b531 (gpt_image_2)",
     "unboxing": "04a74c65 (video/set2/unboxing.mp4)",
-    "hook": "îl alege Szasz"
+    "hook": {
+      "concept": "https://www.instagram.com/reels/De3EuomNQZF/ (H&M x Disney, fata în mall se uită spre un magazin)",
+      "start_frame": "1f8dd8a2 (nano_banana_pro 4k, din 026c34a3 gpt_image_2)",
+      "fisier": "video/set2/hook-start-mall-4k.png"
+    },
+    "unboxing_1080": "41fa8941 (video/set2/unboxing-1080.mp4) — bun doar 0–1,8 s; după, halatul rămâne singur (referințele de produs împing spre poză de produs)"
   }
 }

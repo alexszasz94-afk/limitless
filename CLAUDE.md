@@ -16,7 +16,7 @@ Citește în ordinea asta:
 
 Distribuție și cifre: `distribution/` (portalul de postare) și `social_tracker/` (tracker-ul). Instalare și rețete zilnice: `SETUP-DISTRIBUTIE.md`; fiecare are propriul `CLAUDE.md`. Orice push pe `main` ajunge pe server în ~2 minute (după instalare).
 
-Unelte de producție (regula 24 oct, înlocuiește 10 oct): video DOAR **Kling 4.0 (`kling4_0`) la 720p** — `video-edit` pe clipurile noastre de mișcare, `image-to-video` din start frame; imagini Nano Banana Pro / GPT Image 2. Seedance și Genjutsu nu se mai folosesc.
+Unelte de producție (regula 24 oct, înlocuiește 10 oct): video DOAR **Kling 4.0 (`kling4_0`) la 1080p** — `video-edit` pe clipurile noastre de mișcare, `image-to-video` din start frame; imagini Nano Banana Pro / GPT Image 2. Seedance și Genjutsu nu se mai folosesc.
 
 Platforma (sursa de adevăr) e Artifactul publicat din `dashboard/index.html` (linkul e în istoricul sesiunii / lista de artifacte). UI MEREU în engleză (regula din 10 oct), creier 3D. Datele stau în baza de date a artifactului (ArtifactData):
 - `products`, `virals`, `finder` (103 produse din product finder-ul arhivei), `inbox` (cererile lui Szasz; la „cereri” le rezolvi și scrii `raspuns` + `status`).

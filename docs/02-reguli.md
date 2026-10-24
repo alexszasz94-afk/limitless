@@ -114,3 +114,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - **2026-10-24** — (Szasz) B-roll-urile făcute cu Kling rămân la **720p**: nu se mai face upscale la 1080p („720 mi-e suficient”). Înlocuiește pasul 5 din metoda Kling (upscale).
 - **2026-10-24 — REGULĂ (Szasz): video DOAR cu Kling 4.0 la 720p** („e foarte ieftin”). Seedance și Genjutsu nu se mai folosesc; fără upscale.
 - **2026-10-24** — HeatPup montaj (Szasz): din unboxing se iau MEREU primele 2 s. Ordinea: hook (cu vocea) → unboxing 2 s → îmbracă + deschide/săculeți → conector + telecomandă → cozy. Muzica Snoopy cu drop-ul fix la tăietura spre unboxing (`products/snoopy-robe/video/montaj/pune-muzica.sh <piesa> <secunda drop>`).
+- **2026-10-24 — (Szasz) Kling 4.0 direct la 1080p de acum** (înlocuiește „720p”). La unboxing animat se pun și referințele halatului, ca să fie corect când îl ridică și se desface.

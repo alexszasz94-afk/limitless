@@ -92,8 +92,10 @@
     "unboxing": "04a74c65 (video/set2/unboxing.mp4)",
     "hook": {
       "concept": "https://www.instagram.com/reels/De3EuomNQZF/ (H&M x Disney, fata în mall se uită spre un magazin)",
-      "start_frame": "18ef823d (nano_banana_pro 4k, mall cald, se uită spre stânga imaginii) — fisier video/set2/hook-start-mall-cald-v2.png",
-      "fisier": "video/set2/hook-start-mall-4k.png"
+      "start_frame": "989bd5d1-72a1-4a38-b483-7d26c827ff73",
+      "fisier": "video/set2/hook-start-mall-4k.png",
+      "start_frame_file": "video/set2/hook-start-mall-v4.png",
+      "start_frame_note": "copie aproape identica a 1f8dd8a2, mai cald, funde rosii, priveste in partea opusa (spre H&M)"
     },
     "unboxing_1080": "41fa8941 (video/set2/unboxing-1080.mp4) — bun doar 0–1,8 s; după, halatul rămâne singur (referințele de produs împing spre poză de produs)"
   }

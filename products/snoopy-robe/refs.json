@@ -102,7 +102,13 @@
         "53ce51a4 v5 (pozitie diferita de referinta)",
         "edcbe77a v6 (privea spre stanga)"
       ],
-      "alternativa": "225b218a (nbp, fara steag)"
+      "alternativa": "225b218a (nbp, fara steag)",
+      "video": {
+        "id": "d071bb7f-7887-49df-984a-284c298ac0ca",
+        "file": "video/set2/hook-vitrina.mp4",
+        "prompt": "prompts/hook-set2-mall-kling.txt",
+        "note": "v1: cana dispare in loc sa cada; restul ok"
+      }
     },
     "unboxing_1080": "41fa8941 (video/set2/unboxing-1080.mp4) — bun doar 0–1,8 s; după, halatul rămâne singur (referințele de produs împing spre poză de produs)"
   }

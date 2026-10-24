@@ -42,13 +42,23 @@
   "muzica": "MEREU o melodie din Snoopy/Peanuts (Linus and Lucy, Christmas Time Is Here, Skating) — regula Szasz 24 oct",
   "hook": {
     "concept": "https://www.instagram.com/p/Deuu2AXyPPx/",
-    "status": "nedescărcat: Instagram 429 + Apify limită lunară depășită (24 oct)"
+    "fisier": "/home/user/heatgrump/inbox/heatpup-hook-Deuu2AXyPPx/clip.mp4",
+    "hook_taiat": "/home/user/heatgrump/library/motion/hook-heatpup-reveal.mp4 (0-4,5 s)",
+    "descriere": "Fata afară, în fața unei case albe cu zăpadă, ține o cutie acoperită cu o pătură cu personaj; se uită pe sub pătură, zâmbește, apoi trage pătura deodată și arată cutia produsului. Text: DO NOT send this to a frozen girlie 😭❄️. Taieturi: 4,53 s (unboxing pe pat), 6,6 s (pune în priză), 8,07 s (efectul în cameră).",
+    "adaptare_heatpup": "Genjutsu pe 0-4,5 s: fata noastră, aceeași casă cu zăpadă, cutia HeatPup acoperită cu halatul HeatPup (gluga cu urechi la vedere), trage halatul și arată cutia. Text propus: DO NOT send this to a Snoopy girlie 😭🐶"
   },
   "broll_proba_480": {
     "job": "80555aac-1603-4877-b284-de628c479c0d",
     "personaj": "char_m a8d6447e",
     "camera": "room_k a86907a1",
     "clip_miscare": "broll-standard-3-sofa c3c618f3",
-    "sub_halat": "pijama flanel carouri roșu-alb"
+    "sub_halat": "pijama flanel carouri roșu-alb",
+    "rezultat": "ip_detected de 4 ori (3 cu toate ref., 1 fără 5-detaliu-maneca) — Genjutsu blochează gluga Snoopy"
+  },
+  "start_frames": {
+    "hook": "fcadf2a9-f0b6-4f45-90f2-59c1b2c5b48d (gpt_image_2; mantie Snoopy, mâna de jos acoperită, cutia ascunsă)",
+    "unboxing_v1_nbp": "52b2b024-e646-419b-adbf-dd4e19511f1e",
+    "unboxing_v2_gpt": "b09219d3-734c-4908-9422-5d5e821091ee",
+    "personaj": "char_m a8d6447e — FIX personajul, nu lookalike (Szasz 24 oct); gpt_image_2 păstrează mai bine fața"
   }
 }

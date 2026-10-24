@@ -1,0 +1,22 @@
+{
+  "produs": "Halat termic cu glugă Snoopy (Peanuts), cu telecomandă de încălzire",
+  "regula": "Ca la HeatGrump: la orice clip cu halat se pun TOATE cele 5 referințe de halat (product_refs), halatul nu se descrie în cuvinte, doar 'REPRODUCE IT ONE TO ONE from Images N-M'.",
+  "product_refs": {
+    "1-fata-inchis": "4e62e553-511b-487e-84e2-a2f605006428",
+    "2-fata-deschis": "d48a5ee8-e1ba-4adb-93ce-77355b4226be",
+    "3-profil": "3b0a1e0e-df38-497a-b65c-bbdf5508841f",
+    "4-spate": "9307c5a6-05c6-43f4-810d-eae9fc39d6b6",
+    "5-detaliu-maneca": "58c67ef6-fa08-4070-8639-5c18cc6bacdf"
+  },
+  "controller": "4878e276-ae55-46b6-9e06-fc9193ae10a4",
+  "sursa_originala": {
+    "plansa": "289842c4-269a-4bb5-8292-98b18e5ed493",
+    "1-fata-inchis": "eb4c0596-a301-4ff6-a858-a41e6622057e",
+    "2-fata-deschis": "3de14a98-b2e6-4728-9cf3-6f7975faf3e3",
+    "3-profil": "53eca2b5-2ab1-47a7-8cdb-be891e89dedc",
+    "4-spate": "bbeb53c2-642c-4639-ae4e-49d4f8e544dd",
+    "5-detaliu-maneca": "7bd151ad-2aff-47c0-8d7b-2afd0bb067f1",
+    "6-telecomanda": "346fafb0-3bce-47fe-a6f9-d2d381c7bc2a"
+  },
+  "note": "24 oct: generate cu nano_banana_pro 4k, fundal alb. Profilul a reușit la a 3-a încercare doar cu prompt de tip 'această poză exactă, restaurată' și o singură referință (cu planșa întreagă ca ref. extra a ieșit scurt / alt unghi). Risc: Snoopy/Peanuts e personaj licențiat — Higgsfield poate da ip_detected."
+}

@@ -31,5 +31,12 @@
   "heatgrump_controller_ref": {
     "poza_reala": "172828ef-6e29-4727-9df8-093087bad42d",
     "placa": "ab690c17-45e1-4d6f-832d-787d6b576f27"
+  },
+  "box": "3b37b3be-dfa9-4f5a-aeab-8a03b68880c3",
+  "broll_ref_propus": {
+    "fisier": "/home/user/heatgrump/library/motion/broll-standard-3-sofa.mp4",
+    "sursa": "snuglore DdpIYs0trT0 (ref3 HeatGrump)",
+    "structura": "B1 din spate -> B2 deschide larg -> cozy canapea întinsă -> cozy șezând",
+    "status": "propus 24 oct, așteaptă OK Szasz"
   }
 }

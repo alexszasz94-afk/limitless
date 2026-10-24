@@ -68,5 +68,11 @@
     "rezolutie": "720p probă, 8 s, ~4 credite",
     "medias": "video_references c3c618f3 + image_references: char_m, room_k, robe 1-4, glugă 7",
     "rezultat": "TRECE (Genjutsu dădea ip_detected de 4 ori). Halat, glugă, cameră, pijama corecte."
+  },
+  "broll_kling4_v2": {
+    "job": "6d041260-30ad-4ffe-8943-fc99c024a30b",
+    "fisier": "video/broll-kling4-720-v2.mp4",
+    "saculeti_ref": "e2a0770d (cadru la 3,0 s din broll-standard-3-sofa — NU se generează, se ia din clip, Szasz 24 oct)",
+    "cost": "4 credite / 8 s 720p"
   }
 }

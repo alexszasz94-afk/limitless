@@ -1,0 +1,44 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/gheata/hook-gheata.mp4",
+   "start": 0,
+   "end": 6.2,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/gheata/broll.mp4",
+   "start": 0.15,
+   "end": 3.47
+  },
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/conector-telecomanda-kling.mp4",
+   "start": 0,
+   "end": 3.04
+  },
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/gheata/broll.mp4",
+   "start": 3.53,
+   "end": 4.75
+  },
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/gheata/cozy-zoom.mp4",
+   "start": 0,
+   "end": 2.21
+  }
+ ],
+ "texts": [
+  {
+   "text": "\"The perfect Snoopy robe\ndoesn't exi-\" 🤫🐶",
+   "t0": 0,
+   "t1": 99,
+   "size": 72
+  }
+ ],
+ "music": "/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3",
+ "music_start": 0.2,
+ "music_vol": 0.75,
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/snoopy-robe/video/montaj/heatpup-gheata-final.mp4"
+}

@@ -6,9 +6,10 @@
     "2-fata-deschis": "d48a5ee8-e1ba-4adb-93ce-77355b4226be",
     "3-profil": "3b0a1e0e-df38-497a-b65c-bbdf5508841f",
     "4-spate": "9307c5a6-05c6-43f4-810d-eae9fc39d6b6",
-    "5-detaliu-maneca": "58c67ef6-fa08-4070-8639-5c18cc6bacdf"
+    "5-detaliu-maneca": "58c67ef6-fa08-4070-8639-5c18cc6bacdf",
+    "7-gluga-close-up": "0faa4e52-ad80-4e31-b1ca-48e26fab7ad7"
   },
-  "controller": "4878e276-ae55-46b6-9e06-fc9193ae10a4",
+  "controller": "b25d1e80-f9b3-47de-84ad-41c443b93404",
   "sursa_originala": {
     "plansa": "289842c4-269a-4bb5-8292-98b18e5ed493",
     "1-fata-inchis": "eb4c0596-a301-4ff6-a858-a41e6622057e",
@@ -18,5 +19,17 @@
     "5-detaliu-maneca": "7bd151ad-2aff-47c0-8d7b-2afd0bb067f1",
     "6-telecomanda": "346fafb0-3bce-47fe-a6f9-d2d381c7bc2a"
   },
-  "note": "24 oct: generate cu nano_banana_pro 4k, fundal alb. Profilul a reușit la a 3-a încercare doar cu prompt de tip 'această poză exactă, restaurată' și o singură referință (cu planșa întreagă ca ref. extra a ieșit scurt / alt unghi). Risc: Snoopy/Peanuts e personaj licențiat — Higgsfield poate da ip_detected."
+  "note": "24 oct: generate cu nano_banana_pro 4k, fundal alb. Profilul a reușit la a 3-a încercare doar cu prompt de tip 'această poză exactă, restaurată' și o singură referință (cu planșa întreagă ca ref. extra a ieșit scurt / alt unghi). Risc: Snoopy/Peanuts e personaj licențiat — Higgsfield poate da ip_detected.",
+  "nume": "HeatPup",
+  "logo": {
+    "ales": "C (insignă rotundă maro cu ramă aurie, cățel cuibărit în glugă)",
+    "C": "c4e2c746-1f00-42bb-836b-8a839423766f",
+    "A": "9698b2da-255f-450a-b901-aa3dad92ef53",
+    "B": "e1c415f4-4220-4370-92d9-a392cc9d9c62"
+  },
+  "controller_nota": "Făcută după telecomanda HeatGrump (172828ef poza reală, ab690c17 placa aprobată), recolorată maro-cămilă/crem. Regula ca la HeatGrump: exact 5 luminițe 1→5, toate stinse pe placă. Telecomanda albă originală (4878e276) NU se mai folosește. 24 oct: varianta finală cu logo HeatPup = b25d1e80 (coloana de luminițe lipită din 8a20e576 cu OpenCV, pentru că AI-ul scotea 3-4 luminițe). Fără logo: 8a20e576.",
+  "heatgrump_controller_ref": {
+    "poza_reala": "172828ef-6e29-4727-9df8-093087bad42d",
+    "placa": "ab690c17-45e1-4d6f-832d-787d6b576f27"
+  }
 }

@@ -1,0 +1,9 @@
+# De generat (24 oct) — nano_banana_pro, 9:16, 4k
+
+## 7-gluga-close-up
+Refs: 1-fata-inchis 4e62e553, 4-spate 9307c5a6, sursa plansa 289842c4.
+Prompt: High-resolution macro product reference photo. A close-up of ONLY THE HOOD of the robe in Images 1–3, REPRODUCED ONE TO ONE from Images 1–3: the hood seen from the front at a slight three-quarter angle, filling the frame, with the same face, ears, hat, fluffy lining and fabric exactly as in the references. Nothing added, nothing removed, nothing redesigned. Sharp, crisp real fabric texture and stitching, plain pure white seamless studio background. Very soft, very natural diffuse studio light, low contrast, soft shadows, true colours, no glow, no CGI look. No text.
+
+## 8-cutia (premium + cozy)
+Refs: 1-fata-inchis 4e62e553, 5-detaliu-maneca 58c67ef6, controller 4878e276.
+Prompt: A real, extremely premium and cozy gift box for the heated hooded robe in Images 1–2 (robe REPRODUCED ONE TO ONE from Images 1–2, never redesigned). Rigid two-piece magnetic box, warm cream / oatmeal soft-touch linen texture, a wide camel-brown velvet ribbon tied in a bow, a small warm-red wax seal with a tiny gold snowflake. The lid lies leaning beside it; inside, on cream tissue paper, the robe is folded neatly with the hood on top facing up, and in a small separate compartment the white controller from Image 3 with its cable coiled. A sprig of pine and a small card without writing. The box sits on a chunky knit cream blanket on a wooden floor beside a lit Christmas tree, soft bokeh fairy lights behind. Shot from slightly above, vertical. UGC style, natural, shot on an iPhone 17 Pro Max. LIGHT: very soft, very natural light, diffuse window daylight plus warm string lights, low contrast, soft shadows, true slightly warm colours; no harsh light, no HDR, no glow, no CGI look. No text, no logos, no brand names on the box.

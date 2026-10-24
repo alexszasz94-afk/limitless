@@ -92,15 +92,17 @@
     "unboxing": "04a74c65 (video/set2/unboxing.mp4)",
     "hook": {
       "concept": "https://www.instagram.com/reels/De3EuomNQZF/ (H&M x Disney, fata în mall se uită spre un magazin)",
-      "start_frame": "edcbe77a-cd96-4842-b59b-2b121f5d9c4f",
+      "start_frame": "19960a30-f906-4720-a472-6c59f08c2db8",
       "fisier": "video/set2/hook-start-mall-4k.png",
-      "start_frame_file": "video/set2/hook-start-mall-v6-gpt.png",
-      "start_frame_note": "gpt_image_2: pozitia/incadrarea din frame-ul IG e1598ce2 + char_n d0b10135 direct + pulover/cana/caldura din 989bd5d1",
+      "start_frame_file": "video/set2/hook-start-mall-v7-gpt.png",
+      "start_frame_note": "gpt_image_2 generat direct: poza din v6 oglindit ee7ffb21 (priveste spre dreapta) + char_n d0b10135 + frame IG e1598ce2; iPhone 16 Pro Max, moale, neprocesat",
       "respinse": [
         "989bd5d1 (privire gresita, fara poza personajului)",
         "4f8b6877 NBP (firma H&M stricata)",
-        "53ce51a4 v5 (pozitie diferita de referinta)"
-      ]
+        "53ce51a4 v5 (pozitie diferita de referinta)",
+        "edcbe77a v6 (privea spre stanga)"
+      ],
+      "alternativa": "225b218a (nbp, fara steag)"
     },
     "unboxing_1080": "41fa8941 (video/set2/unboxing-1080.mp4) — bun doar 0–1,8 s; după, halatul rămâne singur (referințele de produs împing spre poză de produs)"
   }

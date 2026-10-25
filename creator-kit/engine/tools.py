@@ -125,7 +125,7 @@ def next_set():
     for kind in ("characters", "rooms"):
         free = [p for p in sorted(glob.glob(os.path.join(ROOT, "library", kind, "*.jpg"))) if os.path.basename(p) not in used[kind]]
         if not free:
-            print(f"No unused {kind} left in library/{kind}/ - ask the user for new photos (Pinterest, real people/rooms, clear face, bright).")
+            print(f"NO_{kind.upper()}_LEFT: run the skill find-sets now (Pinterest search, you pick the good ones), then run next-set again. Ask the creator for photos ONLY if Pinterest fails.")
             return
         pick[kind] = free[0]; used[kind].append(os.path.basename(free[0]))
     json.dump(used, open(used_f, "w"), indent=1)

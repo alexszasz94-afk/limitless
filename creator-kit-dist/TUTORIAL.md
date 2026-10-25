@@ -114,7 +114,7 @@ Want a change? Just say it in normal words, e.g. `fix: make the text smaller`, `
 
 ### Tips for great results
 - The best links are short reels (10–20 s) with a clear hook in the first 3 seconds.
-- Each video automatically uses a new girl and a new room from the `library` folder. When they run out, Claude asks you for new photos: 1 photo of a woman (real photo, clear face, bright) and 1 photo of a cozy Christmas room (bright, tree, sofa or bed, floor visible). Pinterest is perfect for this.
+- Each video automatically uses a new girl and a new room. The kit comes with 13 of each; when they run out, Claude finds new ones on Pinterest by itself, looks at them and keeps only the good ones. Only if Pinterest doesn't work will it ask you for photos (about 20 women + 20 cozy Christmas rooms, real, bright, high quality). You can also type `new people` or `new rooms` anytime.
 - Don't close Claude while it's working. If your computer sleeps, just type `continue`.
 
 ### If something goes wrong

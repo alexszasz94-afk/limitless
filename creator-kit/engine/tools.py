@@ -11,6 +11,8 @@
   python3 engine/tools.py fanwipe <in.mp4> <out.mp4> <t1> [<t2> ...]       -> ceiling-fan blade wipe centred on each cut time
   python3 engine/tools.py next-set                                        -> next unused character + room from library/ (and marks them used)
   python3 engine/tools.py reject <library/characters/x.jpg>               -> photo breaks the rules: moves it to library/rejected/ (then run next-set again)
+  python3 engine/tools.py transcribe <video>                            -> what people SAY in the video, with seconds (first run downloads a small speech model, ~150 MB)
+  python3 engine/tools.py voice-mix <clip.mp4> <voice.wav> <out.mp4> <delay_s> [orig_vol]   -> puts a voice line over a clip (clip sound lowered)
   python3 engine/tools.py crop <in.jpg> <out.jpg> <left> <top> <right> <bottom>   -> crop (fractions 0-1), e.g. character head+shoulders for the B-roll
 """
 import json, math, os, subprocess, sys, tempfile, glob
@@ -132,6 +134,30 @@ def next_set():
     print("character:", os.path.relpath(pick["characters"], ROOT)); print("room:", os.path.relpath(pick["rooms"], ROOT))
 
 
+def transcribe(f):
+    try:
+        from faster_whisper import WhisperModel
+    except ImportError:
+        print("Missing: run  pip install faster-whisper  (Mac/Linux: python3 -m pip install --user faster-whisper; Windows: py -m pip install faster-whisper)"); return
+    try:
+        m = WhisperModel("base.en", device="cpu", compute_type="int8")
+    except Exception as e:
+        print("TRANSCRIBE_BLOCKED: cannot download the speech model (needs huggingface.co). In the cloud add *.huggingface.co, huggingface.co, *.hf.co to Allowed domains. Error:", e); return
+    segs, _ = m.transcribe(f, word_timestamps=False)
+    out = [f"{s.start:5.1f}-{s.end:5.1f}  {s.text.strip()}" for s in segs]
+    print("\n".join(out) if out else "(no speech - music/sounds only)")
+
+
+def voice_mix(clip, voice, out, delay, orig_vol="0.3"):
+    ms = int(float(delay) * 1000)
+    has_a = run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", clip]).stdout.strip()
+    if has_a:
+        fc = f"[0:a]volume={orig_vol}[o];[1:a]adelay={ms}|{ms},volume=1.6[v];[o][v]amix=inputs=2:duration=first:normalize=0[a]"
+    else:
+        fc = f"[1:a]adelay={ms}|{ms},volume=1.6,apad[a]"
+    run(["ffmpeg", "-v", "error", "-y", "-i", clip, "-i", voice, "-filter_complex", fc, "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-ar", "48000", "-shortest", out]); print(out)
+
+
 def reject(f):
     d = os.path.join(ROOT, "library/rejected"); os.makedirs(d, exist_ok=True)
     os.replace(f, os.path.join(d, os.path.basename(os.path.dirname(f)) + "-" + os.path.basename(f))); print("moved to library/rejected/")
@@ -159,5 +185,7 @@ if __name__ == "__main__":
     elif c == "fanwipe": fanwipe(a[1], a[2], a[3:])
     elif c == "next-set": next_set()
     elif c == "reject": reject(a[1])
+    elif c == "transcribe": transcribe(a[1])
+    elif c == "voice-mix": voice_mix(*a[1:6])
     elif c == "crop": crop(*a[1:7])
     else: print(__doc__)

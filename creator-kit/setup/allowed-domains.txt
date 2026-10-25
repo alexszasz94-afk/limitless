@@ -12,3 +12,6 @@
 *.youtube.com
 *.googlevideo.com
 *.ytimg.com
+huggingface.co
+*.huggingface.co
+*.hf.co

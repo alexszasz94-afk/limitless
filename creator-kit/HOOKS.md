@@ -4,7 +4,8 @@ The hook is copied from a reference reel (Instagram/TikTok link) or built from t
 
 ## Step by step
 1. `python3 engine/tools.py download <url> output/<name>/ref` → reference.mp4, its length and its cuts.
-2. `python3 engine/tools.py sheet output/<name>/ref/reference.mp4 output/<name>/ref/sheet.jpg 1.5` and LOOK at the sheet (Read the jpg). Write down: each shot of the hook (what happens, where, camera angle), where the hook ends and the robe part starts, the on-screen text (copy its wording and emojis, swap the product name), how long the hook is.
+2. `python3 engine/tools.py transcribe output/<name>/ref/reference.mp4` — ALWAYS. Write down every line people say (and when). The hook must say the same thing (swap the product name), e.g. "3, 2, 1… let's see how it comes out!" — see "Speech in the hook" below.
+   `python3 engine/tools.py sheet output/<name>/ref/reference.mp4 output/<name>/ref/sheet.jpg 1.5` and LOOK at the sheet (Read the jpg). Write down: each shot of the hook (what happens, where, camera angle), where the hook ends and the robe part starts, the on-screen text (copy its wording and emojis, swap the product name), how long the hook is.
 3. For every hook shot pull one frame: `python3 engine/tools.py frame output/<name>/ref/reference.mp4 <second> output/<name>/ref/shot1.jpg` and upload it (it is the composition reference).
 4. Make one START FRAME per hook shot (image), check it, then ANIMATE it (video), check it, trim it.
 5. Make it make sense for OUR robe: replace their product with ours (folded robe, robe on a hanger, our gift box, people wearing our robe). Brands from the reference (H&M, Burger King, McDonald's, Walmart…) may stay if the reference had them.
@@ -26,6 +27,13 @@ Prompt pattern:
 One continuous real handheld phone video, starting exactly on the start image, no cuts, no zoom. <exact action, step by step, natural>. <what must stay the same: the robe/box/place exactly as in the start image>. Natural real movements with real weight, no morphing, no flicker, correct hands with five fingers. Very soft natural light, true colours, low contrast; no HDR, no glow, no CGI look. Sound: <real sound>. No text.
 ```
 Never ask for snow/dust blowing in the wind (it makes a fake steam cloud).
+
+## Speech in the hook (copy what they say)
+If the reference has people talking (countdown, "you guys…", a question), our hook says the same line:
+1. Make the voice in Higgsfield: `generate_audio` with `model: "seed_audio"`, `voice_type: "preset"`, a young American female voice (`list_voices`; e.g. Emily `6b3e3642-f7b7-4cb8-9688-51e233c4b92f`), `speech_rate: 15`, prompt = the exact line with natural punctuation (`Three, two, one... let's see how it comes out!`). Costs almost nothing. Fetch it to `output/<name>/voice.wav`.
+2. Find where the words are (loudness every 0.1 s, or `transcribe` the wav); if the pauses are too long, cut them shorter with ffmpeg `atrim` + `concat`.
+3. Put it on the clip: `python3 engine/tools.py voice-mix output/<name>/hook-1.mp4 output/<name>/voice.wav output/<name>/hook-1-voice.mp4 <delay>` and use the `-voice` clip in edit.json with `"audio": true`. Time it like the reference (a countdown ends right as the action starts).
+4. Make sure the person in the clip is facing the camera/talking while the line plays (pick the segment start for that).
 
 ## Trim (always)
 Kling often ends the clip by jumping to one of the reference photos or fading to black. Run `python3 engine/tools.py safe-end <clip>` AND look at `sheet <clip> ... 4`; cut the clip before the jump. Also cut slow starts and anything unnatural. safe-end only finds hard cuts: always check the end on a 10 fps sheet yourself (zoom jumps, melting, a face that changes).

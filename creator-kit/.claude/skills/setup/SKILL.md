@@ -3,9 +3,9 @@ name: setup
 description: First run / "start" — checks the computer tools, the Higgsfield connection and credits, and uploads all reference files to Higgsfield once (IDs saved in state/media.json). Run when the creator types start, setup, or before the first video.
 ---
 1. Run `bash setup/check.sh`. If something is missing, install it yourself:
-   - macOS: `brew install ffmpeg yt-dlp` (if `brew` is missing, install Homebrew with the official one-line command from brew.sh, then retry), `python3 -m pip install --user pillow numpy`.
-   - Windows: `winget install Gyan.FFmpeg` and `winget install yt-dlp.yt-dlp`, `py -m pip install pillow numpy`. On Windows use `py` where the docs say `python3`.
-   - Linux: `sudo apt-get install -y ffmpeg python3-pip && pip install --user yt-dlp pillow numpy`.
+   - macOS: `brew install ffmpeg yt-dlp` (if `brew` is missing, install Homebrew with the official one-line command from brew.sh, then retry), `python3 -m pip install --user pillow numpy faster-whisper`.
+   - Windows: `winget install Gyan.FFmpeg` and `winget install yt-dlp.yt-dlp`, `py -m pip install pillow numpy faster-whisper`. On Windows use `py` where the docs say `python3`.
+   - Linux: `sudo apt-get install -y ffmpeg python3-pip && pip install --user yt-dlp pillow numpy faster-whisper`.
    Run the check again until everything says OK.
 2. Higgsfield: call `balance`. If the Higgsfield tools are missing or fail, tell the creator: "Type /mcp, choose higgsfield, press Enter and log in to your Higgsfield account in the browser that opens, then type start again." Stop until it works.
 3. Read `state/media.json` (create `{}` if missing). For every file below that has no id yet, upload it (see "Uploading a local file" in CLAUDE.md) and save the id under the key shown:

@@ -9,6 +9,7 @@ command -v curl    >/dev/null && ok curl    || miss "curl"
 command -v $PY     >/dev/null && ok "$PY"   || miss "python3"
 $PY -c "import PIL" 2>/dev/null && ok "python pillow" || miss "python pillow (pip install pillow)"
 $PY -c "import numpy" 2>/dev/null && ok "python numpy" || miss "python numpy (pip install numpy)"
+$PY -c "import faster_whisper" 2>/dev/null && ok "python faster-whisper (transcribe)" || miss "python faster-whisper (pip install faster-whisper)"
 cd "$(dirname "$0")/.."
 for f in motion/broll-motion.mp4 products/snoopy/refs/front-closed.jpg products/princess/refs/front.jpg engine/fonts/TikTokSans-w700-semicond.ttf; do [ -f "$f" ] && ok "$f" || miss "$f (the zip was not fully extracted)"; done
 [ -z "$M" ] && echo "ALL GOOD" || echo "SOMETHING IS MISSING"

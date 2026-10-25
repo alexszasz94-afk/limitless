@@ -73,13 +73,16 @@ Use this if you can't install anything on your computer. Everything runs on a cl
      *.youtube.com
      *.googlevideo.com
      *.ytimg.com
+     huggingface.co
+     *.huggingface.co
+     *.hf.co
      ```
    - **Setup script**: paste the whole content of `setup/cloud-setup.sh`:
      ```
      #!/usr/bin/env bash
      set -e
      apt-get update -qq && apt-get install -y -qq ffmpeg >/dev/null
-     pip install -q --break-system-packages yt-dlp pillow numpy || pip install -q yt-dlp pillow numpy
+     pip install -q --break-system-packages yt-dlp pillow numpy faster-whisper || pip install -q yt-dlp pillow numpy faster-whisper
      ```
    - Save.
 5. Start a new session in that environment (with the Higgsfield connector on) and send as the first message:

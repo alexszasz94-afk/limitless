@@ -1,12 +1,1 @@
-{"fps":30,"segments":[
- {"file":"/home/user/limitless/products/snoopy-robe/video/v4/panglica.mp4","start":0,"end":2.6,"audio":true},
- {"file":"/home/user/limitless/products/snoopy-robe/video/v4/coada.mp4","start":0.2,"end":1.6,"audio":true},
- {"file":"/home/user/limitless/products/snoopy-robe/video/v4/raft.mp4","start":0.3,"end":1.9,"audio":true},
- {"file":"/home/user/limitless/products/snoopy-robe/video/v4/broll.mp4","start":0.15,"end":3.46},
- {"file":"/home/user/limitless/products/snoopy-robe/video/conector-telecomanda-kling.mp4","start":0,"end":1.375},
- {"file":"/home/user/limitless/products/snoopy-robe/video/telecomanda-var/var1.mp4","start":0.2,"end":2.9},
- {"file":"/home/user/limitless/products/snoopy-robe/video/v4/broll.mp4","start":3.54,"end":4.79},
- {"file":"/home/user/limitless/products/snoopy-robe/video/v4/cozy-zoom.mp4","start":0,"end":2.1}],
- "texts":[{"text":"H&M X SNOOPY\n🤩🐶","t0":0,"t1":99,"size":80,"y":0.08}],
- "music":"/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3","music_start":0.8,"music_vol":0.75,"orig_vol":1.0,
- "out":"/home/user/limitless/products/snoopy-robe/video/montaj/heatpup-hm-deschidere-final.mp4"}
+{"fps": 30, "segments": [{"file": "/home/user/limitless/products/snoopy-robe/video/v4/panglica.mp4", "start": 1.0, "end": 2.6, "audio": true}, {"file": "/home/user/limitless/products/snoopy-robe/video/v4/coada.mp4", "start": 0.2, "end": 1.6, "audio": true}, {"file": "/home/user/limitless/products/snoopy-robe/video/v4/raft.mp4", "start": 0.3, "end": 1.9, "audio": true}, {"file": "/home/user/limitless/products/snoopy-robe/video/v4/broll.mp4", "start": 0.15, "end": 3.46}, {"file": "/home/user/limitless/products/snoopy-robe/video/conector-telecomanda-kling.mp4", "start": 0, "end": 1.375}, {"file": "/home/user/limitless/products/snoopy-robe/video/telecomanda-var/var1.mp4", "start": 0.2, "end": 2.9}, {"file": "/home/user/limitless/products/snoopy-robe/video/v4/broll.mp4", "start": 3.54, "end": 4.72}, {"file": "/home/user/limitless/products/snoopy-robe/video/v4/cozy-zoom.mp4", "start": 0, "end": 2.1}], "texts": [{"text": "H&M X SNOOPY\n\ud83e\udd29\ud83d\udc36", "t0": 0, "t1": 99, "size": 80, "y": 0.08}], "music": "/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3", "music_start": 0.8, "music_vol": 0.75, "orig_vol": 1.0, "out": "/home/user/limitless/products/snoopy-robe/video/montaj/heatpup-hm-deschidere-final.mp4"}

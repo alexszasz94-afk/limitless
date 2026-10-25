@@ -1,0 +1,7 @@
+{"fps":30,"segments":[
+ {"file":"/home/user/limitless/products/snoopy-robe/video/v7/pijama.mp4","start":0,"end":2.05,"audio":true},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/v7/halat1.mp4","start":0,"end":3.9,"audio":true},
+ {"file":"/home/user/limitless/products/snoopy-robe/video/v7/halat2.mp4","start":0,"end":3.9,"audio":true}],
+ "texts":[{"text":"“It's just a robe..🙄”","t0":0,"t1":2.05,"size":72,"y":0.42},{"text":"The robe: ...🥺🐶","t0":2.05,"t1":99,"size":72,"y":0.42}],
+ "music":"/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3","music_start":0.8,"music_vol":0.75,"orig_vol":0.6,
+ "out":"/home/user/limitless/products/snoopy-robe/video/v7/fara-palete.mp4"}

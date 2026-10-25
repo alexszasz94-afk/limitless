@@ -1,0 +1,14 @@
+*.higgsfield.ai
+*.cloudfront.net
+*.instagram.com
+*.cdninstagram.com
+*.fbcdn.net
+*.facebook.com
+*.tiktok.com
+*.tiktokcdn.com
+*.tiktokv.com
+*.pinterest.com
+*.pinimg.com
+*.youtube.com
+*.googlevideo.com
+*.ytimg.com

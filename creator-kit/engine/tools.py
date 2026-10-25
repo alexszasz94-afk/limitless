@@ -1,0 +1,148 @@
+"""Helper commands Claude uses while making a video. Run from the kit folder:
+
+  python3 engine/tools.py download <instagram-or-tiktok-url> <folder>   -> <folder>/reference.mp4 (+ prints length and cuts)
+  python3 engine/tools.py sheet <video> <out.jpg> [fps]                 -> contact sheet of frames (default 2 fps) to look at
+  python3 engine/tools.py frame <video> <seconds> <out.jpg>             -> one full-size frame
+  python3 engine/tools.py cuts <video>                                   -> times where the shot changes
+  python3 engine/tools.py safe-end <video>                               -> last safe second before Kling appends a reference image / fades out
+  python3 engine/tools.py fetch <url> <out-file>                          -> download a Higgsfield result (png results are saved as jpg)
+  python3 engine/tools.py cozy <broll.mp4> <out.mp4> [start]             -> zoomed last cozy shot (default start 4.95 s, 2.1 s long)
+  python3 engine/tools.py drop <song.mp3>                                 -> loud jumps in a song (where the beat/chorus drops)
+  python3 engine/tools.py fanwipe <in.mp4> <out.mp4> <t1> [<t2> ...]       -> ceiling-fan blade wipe centred on each cut time
+  python3 engine/tools.py next-set                                        -> next unused character + room from library/ (and marks them used)
+"""
+import json, math, os, subprocess, sys, tempfile, glob
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def run(cmd, **kw):
+    return subprocess.run(cmd, capture_output=True, text=True, **kw)
+
+
+def duration(f):
+    return float(run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).stdout.strip() or 0)
+
+
+def cuts(f, thr=0.2):
+    out = run(["ffmpeg", "-i", f, "-vf", f"select='gt(scene,{thr})',showinfo", "-f", "null", "-"]).stderr
+    return [round(float(x.split(":")[1]), 2) for x in out.split() if x.startswith("pts_time:") and float(x.split(":")[1]) > 0.1]
+
+
+def download(url, folder):
+    os.makedirs(folder, exist_ok=True)
+    out = os.path.join(folder, "reference.mp4")
+    for _ in range(3):
+        run(["yt-dlp", "-q", "-f", "mp4/best", "-o", out, url])
+        if os.path.exists(out):
+            break
+    if not os.path.exists(out):
+        sys.exit("Download failed. Ask the user to save the video and put it in inbox/.")
+    print(out, "length", round(duration(out), 2), "cuts", cuts(out, 0.25))
+
+
+def sheet(f, out, fps="2"):
+    d = duration(f); n = max(1, int(d * float(fps)))
+    cols = min(n, 8); rows = math.ceil(n / cols)
+    run(["ffmpeg", "-v", "error", "-y", "-i", f, "-vf", f"fps={fps},scale=200:-1,tile={cols}x{rows}", "-frames:v", "1", out])
+    print(out, f"({n} frames, {fps} per second, left to right, top to bottom)")
+
+
+def frame(f, t, out):
+    run(["ffmpeg", "-v", "error", "-y", "-ss", str(t), "-i", f, "-frames:v", "1", "-q:v", "2", out]); print(out)
+
+
+def safe_end(f):
+    """Kling image-to-video often ends with a jump to one of the reference images or a fade.
+    Returns the last second before the first cut in the second half or before brightness collapses."""
+    d = duration(f)
+    late = [c for c in cuts(f) if c > d * 0.4]
+    out = run(["ffmpeg", "-i", f, "-vf", "signalstats,metadata=print:key=lavfi.signalstats.YAVG", "-f", "null", "-"]).stderr
+    ys = [float(x.split("=")[1]) for x in out.split() if x.startswith("lavfi.signalstats.YAVG=")]
+    fps = len(ys) / d if d else 24
+    fade = None
+    for i in range(int(len(ys) * 0.4), len(ys)):
+        if ys[i] < ys[0] * 0.8:
+            fade = i / fps; break
+    ends = [x for x in late + ([fade] if fade else [])]
+    end = round(min(ends) - 0.1, 2) if ends else round(d, 2)
+    print("length", round(d, 2), "late cuts", late, "fade", round(fade, 2) if fade else None, "-> use end", end)
+    return end
+
+
+def fetch(url, out):
+    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
+    if url.lower().split("?")[0].endswith(".png") and out.lower().endswith(".jpg"):
+        tmp = out + ".png"
+        run(["curl", "-s", "-o", tmp, url]); run(["ffmpeg", "-v", "error", "-y", "-i", tmp, "-q:v", "2", out]); os.remove(tmp)
+    else:
+        run(["curl", "-s", "-o", out, url])
+    print(out, os.path.getsize(out) if os.path.exists(out) else "FAILED")
+
+
+def cozy(f, out, start="4.95"):
+    run(["ffmpeg", "-v", "error", "-y", "-ss", str(start), "-i", f, "-t", "2.1", "-vf",
+         "crop=iw/1.3:ih/1.3:iw*0.5-iw/2.6:max(0\\,ih*0.42-ih/2.6),scale=1080:1920", "-an",
+         "-c:v", "libx264", "-crf", "17", "-pix_fmt", "yuv420p", out]); print(out)
+
+
+def drop(f):
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", f, "-ac", "1", "-ar", "8000", "-f", "s16le", "-"], capture_output=True).stdout
+    a = np.frombuffer(raw, dtype=np.int16).astype(float); w = 4000
+    r = np.array([np.sqrt(np.mean(a[i:i + w] ** 2)) for i in range(0, len(a) - w, w)])
+    hits = [(round(i * 0.5, 1), int(r[i])) for i in range(3, len(r)) if r[i] > 1.6 * np.mean(r[max(0, i - 6):i]) and r[i] > np.percentile(r, 60)]
+    print("loud jumps (second, loudness):", hits[:15])
+
+
+def fanwipe(f, out, times):
+    from PIL import Image, ImageDraw, ImageFilter
+    W, H = 1080, 1920; tmp = tempfile.mkdtemp(); hub = (-120, -160); L, w, n = 2600, 520, 12
+    for i in range(n):
+        a = math.radians(100 - i * (105 / (n - 1)))
+        im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        dx, dy = math.cos(a), math.sin(a); px, py = -dy, dx
+        p0 = (hub[0] + px * w * .25, hub[1] + py * w * .25); p1 = (hub[0] - px * w * .25, hub[1] - py * w * .25)
+        q1 = (hub[0] + dx * L - px * w / 2, hub[1] + dy * L - py * w / 2); q0 = (hub[0] + dx * L + px * w / 2, hub[1] + dy * L + py * w / 2)
+        d.polygon([p0, q0, q1, p1], fill=(92, 88, 84, 255))
+        im.filter(ImageFilter.GaussianBlur(28)).save(f"{tmp}/b{i:02d}.png")
+    inputs, chain, filt = ["-i", f], "[0:v]", []
+    for k, t in enumerate(times):
+        inputs += ["-framerate", "30", "-i", f"{tmp}/b%02d.png"]
+        filt.append(f"[{k+1}]setpts=PTS+{float(t)-0.2}/TB[b{k}]")
+        filt.append(f"{chain}[b{k}]overlay=eof_action=pass[x{k}]"); chain = f"[x{k}]"
+    filt[-1] = filt[-1].replace(f"[x{len(times)-1}]", ",format=yuv420p[v]")
+    run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(filt), "-map", "[v]", "-map", "0:a?", "-c:v", "libx264", "-crf", "18", "-c:a", "copy", out])
+    print(out)
+
+
+def next_set():
+    used_f = os.path.join(ROOT, "state/used.json")
+    used = json.load(open(used_f)) if os.path.exists(used_f) else {"characters": [], "rooms": []}
+    pick = {}
+    for kind in ("characters", "rooms"):
+        free = [p for p in sorted(glob.glob(os.path.join(ROOT, "library", kind, "*.jpg"))) if os.path.basename(p) not in used[kind]]
+        if not free:
+            print(f"No unused {kind} left in library/{kind}/ - ask the user for new photos (Pinterest, real people/rooms, clear face, bright).")
+            return
+        pick[kind] = free[0]; used[kind].append(os.path.basename(free[0]))
+    json.dump(used, open(used_f, "w"), indent=1)
+    print("character:", os.path.relpath(pick["characters"], ROOT)); print("room:", os.path.relpath(pick["rooms"], ROOT))
+
+
+if __name__ == "__main__":
+    a = sys.argv[1:]
+    if not a:
+        print(__doc__); sys.exit()
+    c = a[0]
+    if c == "download": download(a[1], a[2])
+    elif c == "sheet": sheet(a[1], a[2], a[3] if len(a) > 3 else "2")
+    elif c == "frame": frame(a[1], a[2], a[3])
+    elif c == "cuts": print(cuts(a[1]))
+    elif c == "safe-end": safe_end(a[1])
+    elif c == "fetch": fetch(a[1], a[2])
+    elif c == "cozy": cozy(a[1], a[2], a[3] if len(a) > 3 else "4.95")
+    elif c == "drop": drop(a[1])
+    elif c == "fanwipe": fanwipe(a[1], a[2], a[3:])
+    elif c == "next-set": next_set()
+    else: print(__doc__)

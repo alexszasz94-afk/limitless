@@ -5,10 +5,11 @@ edit.json:
   "out": "output/<name>/<name>-FINAL.mp4",
   "fps": 30,
   "segments": [{"file": "output/<name>/hook.mp4", "start": 0, "end": 2.5, "audio": true}, ...],   # in edit order; "audio": true keeps the clip sound (hooks)
-  "texts":    [{"t0": 0, "t1": 9.5, "text": "Line one\nLine two 🐶", "size": 76, "y": 0.08}, ...],   # times on the FINAL timeline; y = top of text as share of height
+  "texts":    [{"segs": [0, 2], "text": "Line one\nLine two 🐶", "size": 76, "y": 0.08}, ...],   # "segs": [first, last] = from the start of segment `first` to the end of segment `last` (0 = first segment; -1 = last) — ALWAYS use this, it lands exactly on the cuts. ("t0"/"t1" in seconds also works.) y = top of text as share of height
   "music": "products/snoopy/music/linus-and-lucy.mp3", "music_start": 0.8, "music_vol": 0.75, "orig_vol": 1.0
 }
 The video ends when the music ends; the music fades out in the last 0.5 s.
+It prints the real start of every segment in the final video ("cuts at ...") — use those numbers when you check the final sheet.
 """
 import sys, json, os, subprocess, tempfile, unicodedata
 from PIL import Image, ImageDraw, ImageFont
@@ -96,6 +97,7 @@ def main(spec_path):
         keep = s.get("audio", False)   # keep clip sound only where "audio": true
         cmd = ["ffmpeg","-y","-loglevel","error","-ss",str(s["start"]),"-to",str(s["end"]),"-i",f]
         if not has_a or not keep: cmd += ["-f","lavfi","-i","anullsrc=r=48000:cl=stereo","-shortest"]
+        else: cmd += ["-af","apad","-shortest"]   # sound exactly as long as the picture, so cuts don't drift
         cmd += ["-vf",f"scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps={fps},format=yuv420p","-c:v","libx264","-crf","16","-c:a","aac","-ar","48000","-ac","2"]
         cmd += (["-map","0:v","-map","1:a"] if not has_a or not keep else []) + [o]
         subprocess.run(cmd, check=True); segs.append(o)
@@ -103,6 +105,13 @@ def main(spec_path):
     base = os.path.join(tmp, "base.mp4")
     subprocess.run(["ffmpeg","-y","-loglevel","error","-f","concat","-safe","0","-i",lst,"-c","copy",base], check=True)
     dur = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",base],capture_output=True,text=True).stdout)
+    lens = [float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",x],capture_output=True,text=True).stdout) for x in segs]
+    bounds = [round(sum(lens[:i]), 3) for i in range(len(lens) + 1)]   # real start of each segment + end
+    print("cuts at", bounds[1:-1], "| segment starts:", {i: bounds[i] for i in range(len(lens))})
+    for t in sp.get("texts", []):
+        if "segs" in t:
+            a, b = t["segs"]; b = b % len(lens)
+            t["t0"], t["t1"] = bounds[a], (bounds[b + 1] if b + 1 < len(lens) else 999)
     inputs = ["-i", base]; chain = "[0:v]"; filt = []
     for k, t in enumerate(sp.get("texts", [])):
         png = os.path.join(tmp, f"t{k}.png"); text_png(t["text"], png, t.get("size", 88), t.get("y")); inputs += ["-i", png]

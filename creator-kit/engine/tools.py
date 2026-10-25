@@ -10,6 +10,8 @@
   python3 engine/tools.py drop <song.mp3>                                 -> loud jumps in a song (where the beat/chorus drops)
   python3 engine/tools.py fanwipe <in.mp4> <out.mp4> <t1> [<t2> ...]       -> ceiling-fan blade wipe centred on each cut time
   python3 engine/tools.py next-set                                        -> next unused character + room from library/ (and marks them used)
+  python3 engine/tools.py reject <library/characters/x.jpg>               -> photo breaks the rules: moves it to library/rejected/ (then run next-set again)
+  python3 engine/tools.py crop <in.jpg> <out.jpg> <left> <top> <right> <bottom>   -> crop (fractions 0-1), e.g. character head+shoulders for the B-roll
 """
 import json, math, os, subprocess, sys, tempfile, glob
 
@@ -56,7 +58,7 @@ def safe_end(f):
     """Kling image-to-video often ends with a jump to one of the reference images or a fade.
     Returns the last second before the first cut in the second half or before brightness collapses."""
     d = duration(f)
-    late = [c for c in cuts(f) if c > d * 0.4]
+    late = [c for c in cuts(f, 0.12) if c > d * 0.4]   # sensitive: also catches zoom jumps
     out = run(["ffmpeg", "-i", f, "-vf", "signalstats,metadata=print:key=lavfi.signalstats.YAVG", "-f", "null", "-"]).stderr
     ys = [float(x.split("=")[1]) for x in out.split() if x.startswith("lavfi.signalstats.YAVG=")]
     fps = len(ys) / d if d else 24
@@ -130,6 +132,17 @@ def next_set():
     print("character:", os.path.relpath(pick["characters"], ROOT)); print("room:", os.path.relpath(pick["rooms"], ROOT))
 
 
+def reject(f):
+    d = os.path.join(ROOT, "library/rejected"); os.makedirs(d, exist_ok=True)
+    os.replace(f, os.path.join(d, os.path.basename(os.path.dirname(f)) + "-" + os.path.basename(f))); print("moved to library/rejected/")
+
+
+def crop(f, out, l, t, r, b):
+    from PIL import Image
+    im = Image.open(f).convert("RGB"); w, h = im.size
+    im.crop((int(float(l) * w), int(float(t) * h), int(float(r) * w), int(float(b) * h))).save(out, quality=95); print(out)
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]
     if not a:
@@ -145,4 +158,6 @@ if __name__ == "__main__":
     elif c == "drop": drop(a[1])
     elif c == "fanwipe": fanwipe(a[1], a[2], a[3:])
     elif c == "next-set": next_set()
+    elif c == "reject": reject(a[1])
+    elif c == "crop": crop(*a[1:7])
     else: print(__doc__)

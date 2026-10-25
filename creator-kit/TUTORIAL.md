@@ -24,7 +24,7 @@ You do NOT need to know how to code. You only type normal sentences.
 Close the window and open it again when it finishes.
 
 ### 3. Unzip the kit
-Unzip `robe-studio.zip` somewhere easy, for example your Desktop. You get a folder called `robe-studio`.
+Unzip `robe-studio.zip` (the single big file — the `cloud-upload` pieces are only for Option B) somewhere easy, for example your Desktop. You get a folder called `robe-studio`.
 
 ### 4. Open Claude Code inside the folder
 - **Mac**: in Terminal type `cd ` (with a space), drag the `robe-studio` folder into the window, press Enter, then type `claude` and press Enter.
@@ -52,7 +52,7 @@ Claude checks your computer, installs what is missing (ffmpeg, yt-dlp…), check
 
 Use this if you can't install anything on your computer. Everything runs on a cloud computer.
 
-1. **GitHub** (free account at github.com): click **New repository**, name it `robe-studio`, choose **Private**, click **Create**. On the new page click **uploading an existing file**, drag in ONLY the file `robe-studio.zip` and click **Commit changes**.
+1. **GitHub** (free account at github.com): click **New repository**, name it `robe-studio`, choose **Private**, click **Create**. On the new page click **uploading an existing file**, drag in ALL the files from the `cloud-upload` folder you received (`robe-studio.zip.part-aa`, `robe-studio.zip.part-ab`, … — GitHub accepts max 25 MB per file, that's why the kit is in pieces) and click **Commit changes**. Wait until all pieces are uploaded.
 2. Go to **claude.ai/code**, connect your GitHub account and pick the `robe-studio` repository.
 3. **Higgsfield connector** (once): open https://claude.ai/customize/connectors, find **Higgsfield**, click **Connect** and log in to Higgsfield.
 4. **Cloud environment** (once): in claude.ai/code click the cloud icon / environment menu → **Add environment** (or **Edit**):
@@ -83,8 +83,9 @@ Use this if you can't install anything on your computer. Everything runs on a cl
      ```
    - Save.
 5. Start a new session in that environment (with the Higgsfield connector on) and send as the first message:
-   > unzip robe-studio.zip into the root of the repo (including the hidden .claude folder and .mcp.json), delete the zip, commit and push, then read CLAUDE.md and run start
-6. From then on just type `start` and `new video ...` like everywhere else. Your finished videos are saved in the repo (`output/…`) — Claude commits and pushes them, and you download them from GitHub or from the session.
+   > join the pieces with `cat robe-studio.zip.part-* > robe-studio.zip`, unzip it and move everything from the robe-studio folder into the root of the repo (including the hidden .claude folder and .mcp.json), delete the zip, the pieces and the empty folder, commit and push, then read CLAUDE.md and run start
+   After that first time, start every new session with just `start`.
+6. From then on just type `start` and `new video ...` like everywhere else. Each finished video (`output/<name>/<name>-FINAL.mp4` + `caption.txt`) is committed and pushed by Claude — open your repo on github.com → `output` → the video → **Download** (the ⬇ button).
 
 If a download fails with a "network"/"domain" error, Claude tells you which domain to add to **Allowed domains** — add it, then start a new session.
 

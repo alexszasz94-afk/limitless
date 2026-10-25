@@ -26,13 +26,13 @@ Call `generate_video_batch` (or `generate_video`) with:
 - `model: "kling4_0"`, `mode: "video-edit"`, `resolution: "1080p"`, `aspect_ratio: "9:16"`, `duration: 7`, `declined_preset_id: "24bae836-2c4a-48e0-89b6-49fcc0b21612"` (if the tool answers that a preset was recommended, retry with the id it gives you).
 - `medias` in THIS order:
   1. `motion` (role `video_references`)
-  2. character photo (role `image_references`) = Image 1
-  3. room photo = Image 2
-  4. snoopy_front_closed = Image 3
-  5. snoopy_front_open = Image 4
-  6. snoopy_back = Image 5
-  7. snoopy_hood = Image 6
-  8. snoopy_pouch = Image 7
+  2. character photo (role `image_references`) = Image 1 — if she wears a skirt/shorts/dress in the photo, crop it to head + shoulders first (`tools.py crop`, see princess PRODUCT.md) so the filter does not refuse it
+  3. room photo (role `image_references`) = Image 2
+  4. snoopy_front_closed (role `image_references`) = Image 3
+  5. snoopy_front_open (role `image_references`) = Image 4
+  6. snoopy_back (role `image_references`) = Image 5
+  7. snoopy_hood (role `image_references`) = Image 6
+  8. snoopy_pouch (role `image_references`) = Image 7
 
 Prompt (fill the three `<...>`; for a living room without a bed replace "bed" with "sofa" in SHOT 3 and 4):
 ```

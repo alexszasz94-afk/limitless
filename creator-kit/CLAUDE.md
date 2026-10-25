@@ -15,29 +15,30 @@ Read before working: `products/<robe>/PRODUCT.md` (robe, refs, B-roll prompt, ed
 
 ## Tools you use
 - Higgsfield MCP (`mcp__higgsfield__*`): `media_upload` + `media_confirm`, `generate_image_batch`, `generate_video_batch`, `jobs_wait` (max 15 s per call — call it again until done), `balance`.
-- `python3 engine/tools.py ...` (download, sheet, frame, cuts, safe-end, fetch, cozy, drop, fanwipe, next-set) — see the top of `engine/tools.py`.
+- `python3 engine/tools.py ...` (download, sheet, frame, cuts, safe-end, fetch, cozy, drop, fanwipe, next-set, reject, crop) — see the top of `engine/tools.py`.
 - `python3 engine/montage.py output/<name>/edit.json` — final edit with text + music.
 
 ### Uploading a local file to Higgsfield (always this way)
-1. `media_upload` with `filename` = the file's name (one file per call).
+1. `media_upload` with `filename` = the file's name — ONE file per call (several files in one call come back without names and the answer is too long to read).
 2. Run exactly: `curl -s -o /dev/null -w '%{http_code}' -X PUT -H "Content-Type: <image/jpeg | video/mp4>" --data-binary @<path> '<upload_url>'` → must print 200.
-3. `media_confirm` with `type` (`image` / `video`) and the `media_id`.
+3. `media_confirm` with `type` (`image` / `video`) and the `media_id`. One type per call: confirm videos and images in separate calls (several ids of the same type in one call is fine).
 4. Save the id in `state/media.json` (keys listed in PRODUCT.md; `motion` for `motion/broll-motion.mp4`; characters/rooms under `"characters"` / `"rooms"` by file name) so you never upload the same file twice.
 Generated images/videos can be used directly by their job id (no upload needed).
 
 ## Rules (all learned the hard way — follow every time)
-1. **New person + new room for every video.** Get them with `python3 engine/tools.py next-set`. If the pool is empty, run the skill `find-sets` (Pinterest search, then you pick the good ones). If that fails, ask the creator for ~20 high-quality photos of women and ~20 of cozy Christmas rooms in `library/characters/` and `library/rooms/`.
+1. **New person + new room for every video.** Get them with `python3 engine/tools.py next-set`, then LOOK at both photos. If one breaks the rules in the skill `find-sets` (face covered by a cup/phone, eyes closed, looking away, no Christmas tree, dark room…) → `python3 engine/tools.py reject <that file>` and run `next-set` again. If the pool is empty, run the skill `find-sets` (Pinterest search, then you pick the good ones). If that fails, ask the creator for ~20 high-quality photos of women and ~20 of cozy Christmas rooms in `library/characters/` and `library/rooms/`.
 2. **The character photo is ALWAYS a direct reference** in every image and video where she appears (`image` role for images, `image_references` for videos).
 3. **The robe is never designed from words.** Always attach the robe reference images listed in PRODUCT.md; the prompt says "reproduced one to one". The foot pocket/pouch images are ALWAYS attached in the B-roll.
 4. **Video model: only Kling 4.0** (`kling4_0`), `resolution: "1080p"`, `aspect_ratio: "9:16"`. Images: `gpt_image_2`, `4k`, `quality: "high"`.
 5. If a generate call answers "Preset X was recommended instead", call it again with `declined_preset_id` = the id it gives you.
 6. Look at EVERY result before using it: `sheet` for videos, Read for images. Check face = character photo, robe = refs (hood, colours, pouch), hands, nothing strange, no text. Bad → generate again with the fix in the prompt (max 3 tries, then tell the creator).
-7. **Always trim Kling clips**: `safe-end` + look at the sheet; cut before any jump to a white product photo / another picture / fade.
+7. **Always trim Kling clips**: `safe-end` + look at a 10 fps sheet of the last second (`sheet <clip> <out> 10` on a cut piece, or 4 fps on the whole clip); cut before any jump to a white product photo / the character photo / another picture / a sudden zoom / a fade, and before anything starts to melt or morph. safe-end only finds hard cuts — your eyes decide.
 8. Lighting always very soft and natural, UGC iPhone look, no HDR/glow/CGI. Never ask for snow/dust blowing in the wind.
 9. On-screen text: English, 2–3 short lines (`\n`), `"size": 76`, `"y": 0.08` (top, never over the face), emojis like the reference.
-10. Status `nsfw` on the princess B-roll = prompt too long or mentions legs/feet/shorts → use the short prompt from `products/princess/PRODUCT.md` exactly (costs nothing). `ip_detected` → try once more with the same refs; if it repeats, tell the creator.
+10. Status `nsfw` (refunded, costs nothing) on a B-roll = character photo showing legs + motion clip, or prompt mentioning legs/feet/shorts → crop the character photo to head + shoulders (`tools.py crop`), long pajama pants, the short prompt and the fallback steps in `products/princess/PRODUCT.md`. `ip_detected` → try once more with the same refs; if it repeats, tell the creator.
 11. `jobs_wait` returns errors like 502 sometimes → just call it again. If Higgsfield tools disappear, tell the creator to type `/mcp`, pick higgsfield and log in again.
 12. Credits: check `balance` before starting. Real prices: Kling 4.0 video = 1 credit per second (B-roll 7 s = 7, hook clip 3 s = 3), GPT Image 2 4k = 11 per image. One full video ≈ 40–60 credits. Refused jobs (nsfw) are refunded. Under 80 credits → warn the creator first.
 
 ## Delivery
-Final file: `output/<name>/<name>-FINAL.mp4`. Also write `output/<name>/caption.txt` (one English sentence + 5 hashtags). Tell the creator in 3–5 lines: what the hook is, who/where, what the text says, anything you could not make perfect. Then open the folder for them if possible. If you run in the cloud (claude.ai/code), commit and push `output/<name>/` so the creator can download it from GitHub.
+Final file: `output/<name>/<name>-FINAL.mp4`. Also write `output/<name>/caption.txt` (one English sentence + 5 hashtags). Tell the creator in 3–5 lines: what the hook is, who/where, what the text says, anything you could not make perfect. Then open the folder for them if possible (Mac: `open output/<name>`, Windows: `explorer output\<name>`).
+**Cloud (claude.ai/code) only**: the creator downloads from GitHub, so after every video run `git add -f output/<name>/<name>-FINAL.mp4 output/<name>/caption.txt && git commit -m "video <name>" && git push` (only the final file + caption, not the work files). If the folder is not a git repo (`git status` fails), you are on a computer, not the cloud — skip this.

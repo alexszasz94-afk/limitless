@@ -20,24 +20,28 @@ Long hooded heated robe in classic fairy-tale princess colours. Royal-blue plush
 - `music/princess-trend.mp3` — 15 s trending sound, `"music_start": 0`. Video can be max ~14.5 s with it.
 
 ## ⚠️ Content filter (important)
-Kling sometimes refuses the princess B-roll with status `nsfw` when the prompt is long and mentions bare legs, feet, toes, satin shorts. It does NOT cost credits. Use EXACTLY the short prompt below (it passes), long pajama PANTS (never shorts) under the robe, and never write "bare", "legs", "toes", "satin".
+Kling sometimes refuses the princess B-roll with status `nsfw`. It does NOT cost credits (refunded). Causes: long prompts that mention bare legs, feet, toes, satin shorts, AND a character photo that shows legs (skirt, shorts, dress) — the motion clip already shows legs, the two together trigger the filter. So, EVERY time:
+- **Crop the character photo to head + shoulders** before uploading it for the B-roll: look at the photo, then `python3 engine/tools.py crop library/characters/<x>.jpg output/<name>/char-face.jpg <left> <top> <right> <bottom>` (e.g. `0.15 0 0.85 0.45` — face and shoulders only, nothing below the chest). Upload that crop and use it as Image 1 in the B-roll (the full photo is still fine for hook start frames).
+- Long pajama PANTS set under the robe (never shorts/skirt), and never write "bare", "legs", "toes", "satin", "skin".
+- Use EXACTLY the short prompt below.
+If it still says `nsfw`: (1) send the same call again once (it is random sometimes); (2) replace `wearing a <colour> long pajama set under the robe` with `wearing a <colour> long-sleeve pajama top and long pajama pants`; (3) remove Image 6 (pouch-feet) from the medias and from the prompt (keep Image 5). Never more than 5 tries — then tell the creator.
 
 ## B-roll (always new person + new room) — Kling 4.0 video-edit
-`model: "kling4_0"`, `mode: "video-edit"`, `resolution: "1080p"`, `aspect_ratio: "9:16"`, `duration: 7`, `declined_preset_id: "3c00b5c4-23fb-481c-b284-1dda6b2bc814"` (if the tool says another preset was recommended, retry with the id it gives you).
+`model: "kling4_0"`, `mode: "video-edit"`, `resolution: "1080p"`, `aspect_ratio: "9:16"`, `duration: 7`, `declined_preset_id: "24bae836-2c4a-48e0-89b6-49fcc0b21612"` (if the tool says another preset was recommended, retry with the id it gives you).
 `medias` in THIS order:
 1. `motion` (role `video_references`)
-2. character photo (role `image_references`) = Image 1
-3. room photo = Image 2
-4. princess_front = Image 3
-5. princess_back = Image 4
-6. princess_pouch_open = Image 5
-7. princess_pouch_feet = Image 6
+2. character photo CROPPED to head + shoulders (role `image_references`) = Image 1
+3. room photo (role `image_references`) = Image 2
+4. princess_front (role `image_references`) = Image 3
+5. princess_back (role `image_references`) = Image 4
+6. princess_pouch_open (role `image_references`) = Image 5
+7. princess_pouch_feet (role `image_references`) = Image 6
 
 Prompt (fill the `<...>`):
 ```
 Edit the input video. Keep exactly the same shots, cuts, framing, movements and timing. Change only the person to the woman of Image 1 (same face, wearing a <colour> long pajama set under the robe), the room to the <living room / bedroom> of Image 2, and the robe to the hooded robe of Image 3 (front) and Image 4 (back) reproduced one to one: royal-blue top with puffed red and light-blue striped shoulders, red belt with bow, long yellow lower part with gold crown border, white sherpa trim, white sherpa lining inside, blue hood with gold tiara. The foot pockets of the robe are exactly like Image 5 and Image 6: two yellow pockets with a white fluffy band on top, sewn inside at the hem, joined in the middle, open only at the top; when she opens the robe she steps into them one after the other exactly like in the input video, and then they look exactly like Image 6. UGC style, real iPhone video, soft natural light, true colours. No text. Silent.
 ```
-After it finishes: `cuts` → ≈ 0.96, 3.58, 4.92. `cozy` from last cut + 0.06.
+After it finishes: `cuts` → ≈ 0.96, 3.58, 4.92. `cozy` from last cut + 0.15.
 
 ## Standard edit order
 1. hook clip(s) `"audio": true`

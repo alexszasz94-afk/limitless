@@ -12,5 +12,5 @@ description: First run / "start" — checks the computer tools, the Higgsfield c
    - `motion` ← `motion/broll-motion.mp4` (video)
    - Snoopy: `snoopy_front_closed`, `snoopy_front_open`, `snoopy_back`, `snoopy_hood`, `snoopy_pouch`, `snoopy_detail`, `snoopy_box` ← `products/snoopy/refs/*.jpg` (names in PRODUCT.md)
    - Princess: `princess_front`, `princess_back`, `princess_pouch_open`, `princess_pouch_feet` ← `products/princess/refs/*.jpg`
-   Upload several at once when you can (media_upload accepts `files: [...]`), then PUT each with curl, then one `media_confirm` with all ids.
+   Upload ONE file per `media_upload` call (exactly as in CLAUDE.md), PUT it with curl (must print 200), then confirm: one `media_confirm` with `type: "video"` for the motion clip and one with `type: "image"` for all the image ids. Save state/media.json after every file so nothing is uploaded twice if something stops.
 4. Tell the creator in 3 lines: everything is ready, how many credits they have (≈ how many videos), and that they can now type `new video <Instagram link or idea>` and say `snoopy` or `princess`.

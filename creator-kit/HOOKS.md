@@ -15,10 +15,12 @@ Prompt pattern:
 ```
 A new real candid photo with the SAME composition, framing and camera angle as the FIRST image: <where, what is around, people in the background, Christmas details>. THE WOMAN: exactly the woman of the SECOND image, same face one to one, <hair>, wearing <clothes>. <what she does / holds, with sizes>. THE ROBE: reproduced one to one from the <THIRD/FOURTH> image(s): <short robe description from PRODUCT.md>; copy it, do not design it. <expression: natural, spontaneous, not posing>. Real iPhone 17 Pro Max photo, UGC style, very soft natural light, true colours, low contrast, natural skin; no HDR, no glow, no CGI look. Correct hands with five fingers. No text.
 ```
+Shot WITHOUT the robe visible (wrapped gift, bundle, closed box, line outside a store, selfie before the reveal): same pattern, but drop the "THE ROBE" sentence and attach NO robe refs; describe the object instead with its size and material, e.g. `She holds in both arms a big soft bundle (about 50 cm wide) wrapped in cream satin and tied with a red ribbon; it is clearly a separate object from her dress, held in front of her chest.` If the next shot reveals the robe, say what colour the wrap is so it can never be mistaken for the robe.
+
 CHECK every start frame before animating (Read the image): same face as the character photo, robe matches the refs (hood, colours, trim, embroidery), hands have five fingers, no text, box/props big and realistic, nothing weird. If something is wrong → generate again with the fix written in the prompt.
 
 ## Animate = video
-`generate_video_batch` with `model: "kling4_0"`, `mode: "image-to-video"`, `resolution: "1080p"`, `aspect_ratio: "9:16"`, `duration: 3` (5 for longer actions), `declined_preset_id: "24bae836-2c4a-48e0-89b6-49fcc0b21612"`, medias: start frame job id with role `"start_image"` + the character photo with role `"image_references"` when a face is visible. Do NOT add white-background product photos here (Kling jumps to them at the end).
+`generate_video_batch` with `model: "kling4_0"`, `mode: "image-to-video"`, `resolution: "1080p"`, `aspect_ratio: "9:16"`, `duration: 3` (5 for longer actions), `declined_preset_id: "24bae836-2c4a-48e0-89b6-49fcc0b21612"`, medias: start frame job id with role `"start_image"` + the character photo with role `"image_references"` when a face is visible. Do NOT add white-background product photos here (Kling jumps to them at the end). The character photo can ALSO make Kling jump to it in the last 0.3–1 s — that is normal, you just trim it (see Trim). Objects held against clothes (a wrapped bundle against a dress) tend to melt into the clothes: write `the bundle stays a separate object with its own shape and colour the whole time; it never merges with her dress` and keep the action short (duration 3).
 Prompt pattern:
 ```
 One continuous real handheld phone video, starting exactly on the start image, no cuts, no zoom. <exact action, step by step, natural>. <what must stay the same: the robe/box/place exactly as in the start image>. Natural real movements with real weight, no morphing, no flicker, correct hands with five fingers. Very soft natural light, true colours, low contrast; no HDR, no glow, no CGI look. Sound: <real sound>. No text.
@@ -26,7 +28,13 @@ One continuous real handheld phone video, starting exactly on the start image, n
 Never ask for snow/dust blowing in the wind (it makes a fake steam cloud).
 
 ## Trim (always)
-Kling often ends the clip by jumping to one of the reference photos or fading to black. Run `python3 engine/tools.py safe-end <clip>` AND look at `sheet <clip> ... 4`; cut the clip before the jump. Also cut slow starts and anything unnatural.
+Kling often ends the clip by jumping to one of the reference photos or fading to black. Run `python3 engine/tools.py safe-end <clip>` AND look at `sheet <clip> ... 4`; cut the clip before the jump. Also cut slow starts and anything unnatural. safe-end only finds hard cuts: always check the end on a 10 fps sheet yourself (zoom jumps, melting, a face that changes).
+
+## Short hook (only a little of a clip is usable)
+The hook should be 3–7 s, each shot 1.2–3.5 s. If a clip is only usable for ~1.2 s:
+1. Try once more with the fix in the prompt (shorter action, "stays a separate object").
+2. Still short → keep the good 1.2 s and make the NEXT shot longer (up to 3.5 s), or add one extra simple shot from the same start frame (e.g. a closer framing of the same moment, `generate_image` with the first start frame as composition ref + "closer, waist up"), animated 3 s.
+3. A 2.5–3 s hook that looks real is better than a 4 s hook with a glitch — never keep a melting/morphing frame to reach the length.
 
 ## Proven hook concepts (all made and approved)
 | concept | shots (start frames) | text |

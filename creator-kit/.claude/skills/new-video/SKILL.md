@@ -2,7 +2,7 @@
 name: new-video
 description: Makes one finished, ready-to-post robe video (Snoopy or Princess) from an Instagram/TikTok link or a hook idea — hook start frames, hook clips, new B-roll with a new person and room, fixed connector/remote clips, trimming, edit with text and music. Run when the creator types "new video ...".
 ---
-Work alone from start to finish. Keep the creator updated with one short line at each stage ("making the start frames…", "animating…", "editing…").
+Work alone from start to finish. After EVERY image and EVERY clip run the skill `check` and repair alone before moving on; run it again on the final video before delivering. Keep the creator updated with one short line at each stage ("making the start frames…", "animating…", "editing…").
 
 0. If `state/media.json` lacks the robe keys → run the `setup` skill first. Robe not given → ask "Snoopy or Princess?". Check `balance` (≥ 80 credits).
 1. **Reference**: link → `python3 engine/tools.py download <url> output/_new/ref` and `sheet` it (1.5 fps); Read the sheet. Idea only → pick the closest proven concept in `HOOKS.md` and adapt it. Decide: hook shots (1–4), each 1.5–3.5 s in the final video, total hook 3–7 s; the on-screen text (copy the reference wording, swap the product); whether it's a "whole clip" format (no B-roll, like "It's just a robe") or the standard hook + robe part.

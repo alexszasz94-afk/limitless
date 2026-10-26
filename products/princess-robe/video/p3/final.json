@@ -2,7 +2,7 @@
  "fps": 30,
  "segments": [
   {
-   "file": "/home/user/limitless/products/princess-robe/video/p3/hook-v2.mp4",
+   "file": "/home/user/limitless/products/princess-robe/video/p3/hook-v4.mp4",
    "start": 0,
    "end": 6.33,
    "audio": true
@@ -72,7 +72,7 @@
  ],
  "music": "/home/user/heatgrump/library/music/princess/let-it-go.mp3",
  "music_start": 53.1,
- "music_vol": 0.6,
- "orig_vol": 1.0,
+ "music_vol": 0.45,
+ "orig_vol": 1.3,
  "out": "/home/user/limitless/products/princess-robe/video/p3/printesa-magazin-final.mp4"
 }

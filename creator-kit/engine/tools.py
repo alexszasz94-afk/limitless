@@ -17,6 +17,7 @@
   python3 engine/tools.py compare <original.mp4> <ours.mp4> <from_s> <to_s> <out.jpg>   -> original (top) vs ours (bottom), 10 frames/s, to check the motion is identical
   python3 engine/tools.py log <video-name> key=value ...                 -> remembers what this video used (hook, outfit, music, text, motion, robe)
   python3 engine/tools.py speech-times <video> [seconds]                  -> when the voice bursts are (start-end), to put each spoken word on its exact second
+  python3 engine/tools.py cleantext <video> <clean.jpg> <out.mp4> <l> <t> <r> <b> [...more boxes]  -> covers their on-screen text with the same spot from a clean photo (static camera only) - no blur for Kling to copy
   python3 engine/tools.py history [n]                                     -> what the last n videos used (default 5), so the next one is different
 """
 import json, math, os, subprocess, sys, tempfile, glob
@@ -147,8 +148,14 @@ def transcribe(f):
         m = WhisperModel("base.en", device="cpu", compute_type="int8")
     except Exception as e:
         print("TRANSCRIBE_BLOCKED: cannot download the speech model (needs huggingface.co). In the cloud add *.huggingface.co, huggingface.co, *.hf.co to Allowed domains. Error:", e); return
-    segs, _ = m.transcribe(f, word_timestamps=False)
-    out = [f"{s.start:5.1f}-{s.end:5.1f}  {s.text.strip()}" for s in segs]
+    import numpy as np
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", f, "-f", "s16le", "-ac", "1", "-ar", "16000", "-"], capture_output=True).stdout
+    audio = np.frombuffer(pcm, np.int16).astype(np.float32) / 32768.0   # decode with ffmpeg: works with every PyAV version
+    segs, _ = m.transcribe(audio, word_timestamps=True)
+    out = []
+    for s in segs:
+        out.append(f"{s.start:5.2f}-{s.end:5.2f}  {s.text.strip()}")
+        out += [f"      {w.start:5.2f}  {w.word.strip()}" for w in (s.words or [])]
     print("\n".join(out) if out else "(no speech - music/sounds only)")
 
 
@@ -208,6 +215,17 @@ def speech_times(f, until="6"):
     print("voice bursts:", "  ".join(f"{a:.2f}-{b:.2f}" for a, b in bursts if b - a >= 0.05))
 
 
+def cleantext(f, clean, out, boxes):
+    w, h = map(int, run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).stdout.strip().split(","))
+    fc, last = [f"[1:v]scale={w}:{h},split={len(boxes) // 4}" + "".join(f"[c{i}]" for i in range(len(boxes) // 4))], "0:v"
+    for i in range(len(boxes) // 4):
+        l, t_, r, b = (float(x) for x in boxes[i * 4:i * 4 + 4])
+        cw, ch, cx, cy = int((r - l) * w) // 2 * 2, int((b - t_) * h) // 2 * 2, int(l * w), int(t_ * h)
+        fc.append(f"[c{i}]crop={cw}:{ch}:{cx}:{cy}[p{i}]"); fc.append(f"[{last}][p{i}]overlay={cx}:{cy}[o{i}]"); last = f"o{i}"
+    run(["ffmpeg", "-v", "error", "-y", "-i", f, "-loop", "1", "-i", clean, "-filter_complex", ";".join(fc), "-map", f"[{last}]", "-map", "0:a?", "-c:a", "copy", "-shortest", out])
+    print(out, "- look at a frame: the text must be gone and nothing else covered (faces move into the box? make the box smaller)")
+
+
 def history(n="5"):
     f = os.path.join(ROOT, "state/used.json")
     vids = (json.load(open(f)) if os.path.exists(f) else {}).get("videos", [])
@@ -240,5 +258,6 @@ if __name__ == "__main__":
     elif c == "compare": compare(*a[1:6])
     elif c == "log": log(a[1], a[2:])
     elif c == "speech-times": speech_times(a[1], a[2] if len(a) > 2 else "6")
+    elif c == "cleantext": cleantext(a[1], a[2], a[3], a[4:])
     elif c == "history": history(a[1] if len(a) > 1 else "5")
     else: print(__doc__)

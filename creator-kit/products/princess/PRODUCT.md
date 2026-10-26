@@ -54,7 +54,7 @@ Edit the input video. Keep exactly the same shots, cuts, framing, movements and 
 ```
 After it finishes: `cuts` → ≈ 0.96, 3.58, 4.92. `cozy` from last cut + 0.15.
 
-## Standard edit order
+## Standard edit order (ALWAYS this order: hook → puts it on → foot pockets → connector → remote → cozy)
 1. hook clip(s) `"audio": true`
 2. broll.mp4 `0.15 → ~3.5`
 3. fixed/connector.mp4 `1.0 → 2.6`

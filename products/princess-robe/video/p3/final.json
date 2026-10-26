@@ -15,7 +15,7 @@
   {
    "file": "/home/user/limitless/products/princess-robe/video/p3/broll-v2.mp4",
    "start": 0.95,
-   "end": 3.0
+   "end": 5.0
   },
   {
    "file": "/home/user/limitless/products/princess-robe/video/p3/conector.mp4",
@@ -26,11 +26,6 @@
    "file": "/home/user/limitless/products/princess-robe/video/p3/telecomanda.mp4",
    "start": 0.25,
    "end": 2.4
-  },
-  {
-   "file": "/home/user/limitless/products/princess-robe/video/p3/broll-v2.mp4",
-   "start": 3.0,
-   "end": 5.0
   },
   {
    "file": "/home/user/limitless/products/princess-robe/video/p3/cozy-carte.mp4",
@@ -49,27 +44,13 @@
   {
    "text": "H&M X DISNEY\n💜👑",
    "t0": 6.33,
-   "t1": 9.1,
+   "t1": 11.1,
    "size": 76,
    "y": 0.42
   },
   {
    "text": "H&M X DISNEY\n💜👑",
-   "t0": 9.1,
-   "t1": 12.9,
-   "size": 76,
-   "y": 0.08
-  },
-  {
-   "text": "H&M X DISNEY\n💜👑",
-   "t0": 12.9,
-   "t1": 14.9,
-   "size": 76,
-   "y": 0.42
-  },
-  {
-   "text": "H&M X DISNEY\n💜👑",
-   "t0": 14.9,
+   "t0": 11.1,
    "t1": 99,
    "size": 76,
    "y": 0.08

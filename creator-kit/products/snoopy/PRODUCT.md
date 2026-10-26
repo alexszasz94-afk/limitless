@@ -56,7 +56,7 @@ QUALITY: UGC style, natural, real iPhone 17 Pro Max video. LIGHT: very soft, ver
 ```
 After it finishes: `python3 engine/tools.py cuts output/<name>/broll.mp4` → you get 3 cuts (≈0.9, 3.5, 4.8). Then `python3 engine/tools.py cozy output/<name>/broll.mp4 output/<name>/cozy-zoom.mp4 <last cut + 0.15>`.
 
-## Standard edit order (edit.json segments)
+## Standard edit order (ALWAYS this order: hook → puts it on → foot pockets → connector → remote → cozy) (edit.json segments)
 1. hook clip(s) with `"audio": true`
 2. broll.mp4 `0.15 → first cut of shot 3` (≈ 0.15–3.46) — robe on + pouch
 3. fixed/connector-and-remote.mp4 `0 → 1.375`

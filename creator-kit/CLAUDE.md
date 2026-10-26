@@ -44,6 +44,9 @@ Generated images/videos can be used directly by their job id (no upload needed).
 13. **Budget: max 50–60 credits per finished video** (retries included). Plan before generating: hook by video-edit ≈ 3–5, start frame 11 each (avoid when video-edit can copy the shot), B-roll 7–8, connector 4 + remote 3, hook voice = write the line in the Kling hook prompt (`Sound: … says "…"`, free) — Seedance only if that voice is bad. Before every generation add up what this video already spent (`balance` before/after); at 45 stop adding extras (no extra variants, reuse fixed clips) and only finish what's missing. Never pass 60 without asking the creator.
 12. Credits: check `balance` before starting. Real prices: Kling 4.0 video = 1 credit per second (B-roll 7 s = 7, hook clip 3 s = 3), Nano Banana Pro 4k = 4 per image. One full video ≈ 30–40 credits (princess p3: 30), max 50–60 with redos. Refused jobs (nsfw) are refunded. Under 80 credits → warn the creator first.
 
+## Edit order — ALWAYS the same, keep it simple (rule 26 Oct)
+hook → B-roll: she puts the robe on → B-roll: she steps into the foot pockets → connector → remote → cozy (B-roll lying/cozy shot or the custom cozy). Never move the foot-pocket part after the connector/remote, never mix the order. The detailed segment times are in each PRODUCT.md.
+
 ## Room check — sofa or bed (do it for EVERY room, before the B-roll)
 LOOK at the room photo and write down: is there a **sofa**? a **bed**? both? floor space to stand?
 - **Sofa in the room** → any motion clip works; in the prompt say the cozy/lying shot is "on its sofa".

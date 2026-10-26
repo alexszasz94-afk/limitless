@@ -138,6 +138,10 @@ def next_set():
         pick[kind] = free[0]; used[kind].append(os.path.basename(free[0]))
     json.dump(used, open(used_f, "w"), indent=1)
     print("character:", os.path.relpath(pick["characters"], ROOT)); print("room:", os.path.relpath(pick["rooms"], ROOT))
+    for kind in ("characters", "rooms"):
+        left = len([p for p in glob.glob(os.path.join(ROOT, "library", kind, "*.jpg")) if os.path.basename(p) not in used[kind]])
+        if left < 5:
+            print(f"ONLY {left} {kind.upper()} LEFT: after this video run the skill find-sets to add new ones (automatic Pinterest search).")
 
 
 def transcribe(f):

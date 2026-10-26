@@ -48,6 +48,14 @@ LOOK at the room photo and write down: is there a **sofa**? a **bed**? both? flo
 - **Neither** (no sofa, no bed) → reject the room (`tools.py reject`) and take the next one.
 Use the same room for the hook (if it's at home), the connector, the remote and the cozy shot, so the whole video happens in one place.
 
+## Custom cozy — the creator chooses the last shot (variety)
+The creator can ask for a different last cozy shot, e.g. `cozy: reading a book on the bed`, `cozy: drinking hot cocoa on the sofa`, `cozy: watching TV under the hood`. Then:
+1. Cut the B-roll BEFORE its cozy shot (the cozy-zoom is not used).
+2. Start frame: `nano_banana_pro`, 9:16, 4k, medias = character photo, room photo, robe front + back (+ hood/detail refs from PRODUCT.md): `A real candid iPhone photo in the room of Image 2, same light and furniture: the woman of Image 1 (same face) wears the robe of Images 3–4, reproduced one to one, hood <up / down as the robe is worn in PRODUCT.md> and <the action, e.g. lies on the bed propped on pillows reading an open paperback book, relaxed and cozy>. Her whole face is visible, she is in the foreground, nothing in front of her. Correct hands with five fingers, real objects with real size. Very soft natural light, true colours, UGC style. No text, no logos, no titles on the book.` Run `check` on it.
+3. Kling `image-to-video`, `kling4_0`, 1080p, 9:16, `duration: 5`, start frame as `start_image`: `One continuous real handheld phone video starting exactly on the start image, no cuts, no zoom. <the action, slow and calm, e.g. she turns a page slowly and smiles, snuggles deeper into the robe>. The robe stays exactly as in the start image. Natural real movements with real weight, no morphing. Very soft natural light. Silent.` Use 2–2.5 s of it as the last shot (check the end, trim before anything strange).
+4. Cost ≈ one image + one 5 s Kling clip — still inside the 50–60 credit budget. Log it: `cozy="<action>"` in `tools.py log`, and don't repeat the same cozy action in 3 videos in a row.
+If the creator asks nothing, keep the free cozy from the B-roll.
+
 ## Delivery
 Final file: `output/<name>/<name>-FINAL.mp4`. Also write `output/<name>/caption.txt` (one English sentence + 5 hashtags). Only after the skill `check` passed on the final video. Tell the creator in 3–5 lines: what the hook is, who/where, what the text says, a "Checked:" line (what you verified + what you fixed alone), anything you could not make perfect. Then open the folder for them if possible (Mac: `open output/<name>`, Windows: `explorer output\<name>`).
 **Cloud (claude.ai/code) only**: the creator downloads from GitHub, so after every video run `git add -f output/<name>/<name>-FINAL.mp4 output/<name>/caption.txt && git commit -m "video <name>" && git push` (only the final file + caption, not the work files). If the folder is not a git repo (`git status` fails), you are on a computer, not the cloud — skip this.

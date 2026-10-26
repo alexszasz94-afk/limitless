@@ -26,15 +26,8 @@ Kling sometimes refuses the princess B-roll with status `nsfw`. It does NOT cost
 - Use EXACTLY the short prompt below.
 If it still says `nsfw`: (1) send the same call again once (it is random sometimes); (2) replace `wearing a <colour> long pajama set under the robe` with `wearing a <colour> long-sleeve pajama top and long pajama pants`; (3) remove Image 6 (pouch-feet) from the medias and from the prompt (keep Image 5). Never more than 5 tries — then tell the creator.
 
-## B-roll motion clips — ROTATE them (a different one each video)
-| key in state/media.json | file | shots (seconds in the motion clip) | last shot |
-|---|---|---|---|
-| `motion` | `motion/broll-motion.mp4` (shared) | back view → opens + pouches → lying → cozy | sofa / bed |
-| `princess_motion_a` | `products/princess/motion/broll-a.mp4` (6.5 s) | back view, hood down 0–0.8 → front: opens + steps into pouches 0.8–4.8 → sitting cozy on the sofa, hood up 4.8–6.5 | sofa |
-Alternate `motion` / `princess_motion_a` every video (write the last used in `state/used.json` under `"princess_motion"`). Same prompt below; `duration: 7` for both. After it finishes run `cuts` and look at the sheet to find the shot borders (they move a little). The on-screen text is already blurred in broll-a; the prompt says to remove the blurred patches.
-Extra lines to ADD to the prompt for `princess_motion_a` (they fix what went wrong in the tests):
-- `FIRST SHOT (back view): SHE is inside the robe, seen from behind: her head with her long hair is clearly visible above the white collar, the hood lies down on her back. Never an empty robe, she never disappears.`
-- `The back of the robe and hood is plain royal blue with NO embroidery, exactly like Image 4. No apples, no fruit, no props anywhere. The last shot is in the SAME room of Image 2, on its sofa, and her face stays fully visible (the hood never covers her face).`
+## B-roll motion clip — ONLY the classic one (rule 26 Oct)
+Use only `motion` (`motion/broll-motion.mp4`, shared with Snoopy): it is tested and comes out well. Variety comes from the new person, room, outfit, hook and the custom cozy — not from other motion clips.
 **Room check (sofa or bed)** — see "Room check" in CLAUDE.md: the last cozy shot must match the room.
 
 ## B-roll (always new person + new room) — Kling 4.0 video-edit

@@ -135,3 +135,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 26 oct (Szasz): 13 camere bune date de Szasz (CAMERE-NOI-26oct) puse în kit ca room-14…room-26 — stilul aprobat pentru camere (casă americană reală, poză de telefon). Personajele și camerele noi se caută automat pe Pinterest (find-sets), iar next-set anunță când rămân sub 5.
 - 26 oct (Szasz): ordinea la montaj MEREU aceeași, fără complicații: hook → se îmbracă → săculeții (buzunarele de la picioare) → conector → telecomandă → cozy.
 - 26 oct (Szasz): la săculeți picioarele intră MEREU din afară înăuntru — la începutul cadrului ambele picioare sunt afară, pe podea; niciun picior deja băgat. Fraza fixă e în promptul de B-roll la ambele halate și în verificare.
+- 26 oct (Szasz): B-roll-ul se face DOAR cu clipul nostru clasic (motion/broll-motion.mp4) — „iese bine și e probat”. Clipul A de prințesă scos din kit.

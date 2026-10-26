@@ -11,7 +11,6 @@ description: First run / "start" — checks the computer tools, the Higgsfield c
 3. Read `state/media.json` (create `{}` if missing). For every file below that has no id yet, upload it (see "Uploading a local file" in CLAUDE.md) and save the id under the key shown:
    - `motion` ← `motion/broll-motion.mp4` (video)
    - Snoopy: `snoopy_front_closed`, `snoopy_front_open`, `snoopy_back`, `snoopy_hood`, `snoopy_pouch`, `snoopy_detail`, `snoopy_box` ← `products/snoopy/refs/*.jpg` (names in PRODUCT.md)
-   - Princess motion clips: `princess_motion_a` ← `products/princess/motion/broll-a.mp4` (video)
    - Princess: `princess_front`, `princess_back`, `princess_pouch_open`, `princess_pouch_feet` ← `products/princess/refs/*.jpg`
-   Upload ONE file per `media_upload` call (exactly as in CLAUDE.md), PUT it with curl (must print 200), then confirm: one `media_confirm` with `type: "video"` for the motion clips and one with `type: "image"` for all the image ids. Save state/media.json after every file so nothing is uploaded twice if something stops.
+   Upload ONE file per `media_upload` call (exactly as in CLAUDE.md), PUT it with curl (must print 200), then confirm: one `media_confirm` with `type: "video"` for the motion clip and one with `type: "image"` for all the image ids. Save state/media.json after every file so nothing is uploaded twice if something stops.
 4. Tell the creator in 3 lines: everything is ready, how many credits they have (≈ how many videos), and that they can now type `new video <Instagram link or idea>` and say `snoopy` or `princess`.

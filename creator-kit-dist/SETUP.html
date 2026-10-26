@@ -59,6 +59,15 @@ section.daily h2{font-size:1.6rem;margin:.3rem 0 .6rem}
 .roles h2{font-size:1.1rem;color:var(--royal);margin-bottom:.3rem}
 .roles ul{margin:0;padding-left:1.1rem}
 .roles li{margin:.3rem 0}
+.only{background:var(--chip);border-radius:8px;padding:8px 12px;display:inline-block;color:var(--ink)!important;font-size:1rem!important}
+.opts{display:grid;gap:10px;margin:.6rem 0}
+.opt{border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+.opt h3{font-size:1rem}
+.tag{font:500 .7rem var(--mono);background:var(--gold);color:#1b1f3b;padding:2px 7px;border-radius:99px;margin-left:6px;vertical-align:middle}
+.domains{font:500 .8rem/1.5 var(--mono);background:var(--chip);border-radius:8px;padding:10px 12px;margin:.4rem 0;max-height:220px;overflow:auto;white-space:pre}
+@media print{.domains{max-height:none;overflow:visible}.copy{display:none}}
+.copy{font:600 .85rem var(--body);background:var(--royal);color:#fff;border:0;border-radius:6px;padding:6px 12px;cursor:pointer}
+.copy:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .trouble{margin-top:28px}
 .trouble h3{font-size:1.05rem;margin-bottom:.4rem}
 .trouble ul{padding-left:1.1rem;margin:0}
@@ -71,6 +80,7 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
 <header>
   <div class="eyebrow">Robe Studio · setup</div>
   <h1>Ready in 5 minutes, all in your browser.</h1>
+  <p class="only"><b>This setup is only for Claude Code on the web</b> (claude.ai/code). Nothing gets installed on your computer.</p>
   <p>Never done anything like this before? Perfect, this is written for you. You click through five steps once. After that you only chat with Claude, like texting a friend.</p>
   <div class="need"><span>Claude Pro or Max</span><span>Higgsfield account</span><span>free GitHub account</span></div>
 </header>
@@ -144,8 +154,39 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
     <span class="n">4</span><h2>Let it reach Instagram and TikTok</h2>
     <div class="c">
       <p>Next to the chat box there's a small cloud icon with a name (usually "Default"). Click it, then the little pencil / <b>Edit</b>.</p>
-      <div class="clicks"><span>Find</span><span class="btn">Network access</span><span class="arrow">→</span><span>choose</span><span class="btn">Full</span><span class="arrow">→</span><span class="btn">Save</span></div>
-      <p class="why">This lets Claude download the Instagram and TikTok reels you send it. You do it once and never again.</p>
+      <p>Find <b>Network access</b>. This decides which websites Claude may open. Pick <b>one</b> of the two options, whichever you prefer:</p>
+      <div class="opts">
+        <div class="opt">
+          <h3>Option A · Full <span class="tag">easiest</span></h3>
+          <div class="clicks"><span class="btn">Network access</span><span class="arrow">→</span><span class="btn">Full</span><span class="arrow">→</span><span class="btn">Save</span></div>
+          <p class="why">Claude can open any website. One click, nothing else to do.</p>
+        </div>
+        <div class="opt">
+          <h3>Option B · Only the sites it needs <span class="tag">stricter</span></h3>
+          <div class="clicks"><span class="btn">Network access</span><span class="arrow">→</span><span class="btn">Custom</span> <span>(or <b>Limited</b>)</span></div>
+          <p>Leave <b>Allow package managers</b> ticked. In the box <b>Allowed domains</b> paste this whole list, then <span class="btn">Save</span>:</p>
+          <pre class="domains" id="domains">*.higgsfield.ai
+*.cloudfront.net
+*.instagram.com
+*.cdninstagram.com
+*.fbcdn.net
+*.facebook.com
+*.tiktok.com
+*.tiktokcdn.com
+*.tiktokv.com
+*.pinterest.com
+*.pinimg.com
+*.youtube.com
+*.googlevideo.com
+*.ytimg.com
+huggingface.co
+*.huggingface.co
+*.hf.co</pre>
+          <button type="button" class="copy" id="copy-domains">Copy the list</button>
+          <p class="why">Claude can then open only Higgsfield, Instagram, TikTok, Facebook, Pinterest, YouTube and the speech-to-text site. If one day Claude says a site was blocked, it tells you which line to add.</p>
+        </div>
+      </div>
+      <p class="why">Either way, you do this once and never again.</p>
       <label class="check"><input type="checkbox" id="s4"> Done</label>
     </div>
   </li>
@@ -185,7 +226,7 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
     <h3>If something goes wrong</h3>
     <ul>
       <li><b>Claude says Higgsfield isn't connected:</b> redo step 2, then start a new chat.</li>
-      <li><b>Claude says a download was blocked:</b> check step 4, then start a new chat.</li>
+      <li><b>Claude says a download was blocked:</b> check step 4 (with Option B, add the site Claude names to the list), then start a new chat.</li>
       <li><b>Still stuck:</b> write to Alex.</li>
       <li><b>Anything else:</b> ask <i>"what went wrong?"</i> and Claude explains and fixes it.</li>
     </ul>
@@ -206,6 +247,12 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
     document.getElementById('pbar').style.width=(n*20)+'%';
   }
   try{var s=JSON.parse(localStorage.getItem('rs-setup')||'[]'); boxes.forEach(function(b,i){b.checked=!!s[i];});}catch(e){}
+  var cb=document.getElementById('copy-domains');
+  if(cb)cb.addEventListener('click',function(){
+    var txt=document.getElementById('domains').textContent;
+    function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('domains'));var s=getSelection();s.removeAllRanges();s.addRange(r);cb.textContent='Selected: press Ctrl+C / Cmd+C';}
+    try{navigator.clipboard.writeText(txt).then(function(){cb.textContent='Copied';},sel);}catch(e){sel();}
+  });
   boxes.forEach(function(b){b.addEventListener('change',function(){save();upd();});});
   upd();
 })();

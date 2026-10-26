@@ -1,6 +1,6 @@
 # Robe Studio — start here
 
-Everything runs in your browser at **claude.ai/code**. Nothing to install, no experience needed. The step-by-step page with every click explained is **SETUP.html**.
+**This setup is only for Claude Code on the web (claude.ai/code).** Everything runs in your browser. Nothing to install, no experience needed. The step-by-step page with every click explained is **SETUP.html**.
 
 **You never edit anything** — no video editing, no files, no code. You send a reel or an idea; Claude makes, checks and edits the whole video and gives you the finished MP4.
 
@@ -12,7 +12,7 @@ Everything runs in your browser at **claude.ai/code**. Nothing to install, no ex
 1. On **github.com** (free account): **+** → **New repository** → name `robe-studio` → **Private** → **Create repository** → click **uploading an existing file** → drag the 5 files from Alex's folder → **Commit changes**.
 2. Go to **claude.ai/customize/connectors** → **Higgsfield** → **Connect** → log in to Higgsfield.
 3. Go to **claude.ai/code** → connect GitHub if asked → pick your `robe-studio` repository.
-4. Click the environment name at the top → **Edit** → **Network access: Full** → **Save**.
+4. Click the environment name at the top → **Edit** → **Network access** → either **Full** (easiest) or **Custom/Limited** with the list from `setup/allowed-domains.txt` pasted in **Allowed domains** (stricter) → **Save**.
 5. Write **"Hi, set me up"**. Claude does the rest and tells you when it's ready.
 
 **Every day**

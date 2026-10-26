@@ -1,5 +1,7 @@
 # Robe Studio — full guide
 
+**This guide is only for Claude Code on the web (claude.ai/code).** Nothing is installed on your computer.
+
 > Short version: **START-HERE.md**. Step-by-step with every click: **SETUP.html**. How the system works: **HOW-IT-WORKS.pdf**.
 
 You send Claude a reel link or tell it an idea, in normal words. Claude makes the whole video: the hook, a new girl in a new room trying on the robe, the connector and the heating remote, the cozy ending, the text on screen and the music. You get one MP4, ready to post, in about 20 minutes. You don't need to know how to code and there are no commands to learn.
@@ -17,7 +19,7 @@ You send Claude a reel link or tell it an idea, in normal words. Claude makes th
 1. **Your copy of the kit.** Download Alex's **robe-studio-upload** folder to your computer (5 files: `CLAUDE.md` and `robe-studio.zip.part-aa` … `-ad`; don't open them). On **github.com** (make a free account if needed) click **+** → **New repository**. Name: `robe-studio`. Choose **Private**. Click **Create repository**. On the next page click **uploading an existing file**, drag in all 5 files, wait until they are all listed, click **Commit changes**. Claude unpacks the kit by itself the first time you say hi.
 2. **Connect Higgsfield.** Open **claude.ai/customize/connectors**, find **Higgsfield**, click **Connect** and log in to your Higgsfield account.
 3. **Open Claude Code.** Go to **claude.ai/code**. The first time it asks to connect GitHub: allow it (give it access to `robe-studio`). Pick the `robe-studio` repository.
-4. **Let it reach Instagram/TikTok.** At the top of the chat click the environment name (the cloud icon) → **Edit** → **Network access** → **Full** → **Save**. (This lets Claude download the reels you send. You do it only once.)
+4. **Let it reach Instagram/TikTok.** At the top of the chat click the environment name (the cloud icon) → **Edit** → **Network access**, then pick one: **Full** (easiest: Claude may open any site) or **Custom/Limited** (stricter: leave *Allow package managers* ticked and paste the list from `setup/allowed-domains.txt` into **Allowed domains**). **Save**. You do it only once.
 5. **Say hi.** Write: *Hi, set me up.* Claude checks everything, uploads the robe pictures to your Higgsfield once and tells you when it's ready. The tools it needs install themselves every time a session starts.
 
 ## Making videos — just talk
@@ -43,6 +45,6 @@ About once a week Alex sends a file like `robe-studio-update-2026-11-02.zip`. Op
 
 ## If something goes wrong
 - Claude says Higgsfield is not connected → open **claude.ai/customize/connectors**, connect Higgsfield again, then start a new chat.
-- Claude says a download was blocked → check step 4 (Network access: Full), then start a new chat.
+- Claude says a download was blocked → check step 4 (Network access; with the stricter option add the site Claude names), then start a new chat.
 - Credits ran out → top up on higgsfield.ai.
 - Anything else → ask *"what went wrong?"* — Claude explains and fixes it.

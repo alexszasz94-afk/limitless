@@ -2,10 +2,15 @@
  "fps": 30,
  "segments": [
   {
-   "file": "/home/user/limitless/products/snoopy-robe/video/castel/concept/concept.mp4",
-   "start": 0.05,
-   "end": 1.75,
+   "file": "/home/user/limitless/products/snoopy-robe/video/castel/concept/concept-cade2.mp4",
+   "start": 0,
+   "end": 5.0,
    "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/unboxing-kling-720-taiat.mp4",
+   "start": 0,
+   "end": 2.0
   },
   {
    "file": "/home/user/limitless/products/snoopy-robe/video/castel/broll.mp4",
@@ -13,39 +18,42 @@
    "end": 3.46
   },
   {
-   "file": "/home/user/limitless/products/snoopy-robe/video/conector-telecomanda-kling.mp4",
+   "file": "/home/user/limitless/products/snoopy-robe/video/castel/concept/telecomanda-cabana.mp4",
    "start": 0,
    "end": 3.04
   },
   {
-   "file": "/home/user/limitless/products/snoopy-robe/video/castel/broll.mp4",
-   "start": 3.54,
-   "end": 4.72
-  },
-  {
-   "file": "/home/user/limitless/products/snoopy-robe/video/castel/cozy-zoom.mp4",
-   "start": 0,
-   "end": 2.1
+   "file": "/home/user/limitless/products/snoopy-robe/video/castel/concept/cozy-pat.mp4",
+   "start": 0.1,
+   "end": 5.04,
+   "audio": true
   }
  ],
  "texts": [
   {
    "text": "The concept: \ud83e\udd14",
    "t0": 0,
-   "t1": 1.77,
+   "t1": 5.0,
+   "size": 76,
+   "y": 0.08
+  },
+  {
+   "text": "vs..",
+   "t0": 5.0,
+   "t1": 7.0,
    "size": 76,
    "y": 0.08
   },
   {
    "text": "The product: \ud83e\udd29\ud83d\udc36",
-   "t0": 1.77,
-   "t1": 9.37,
+   "t0": 7.0,
+   "t1": 16.0,
    "size": 76,
    "y": 0.08
   },
   {
    "text": "Comment \"SNOOPY\" if\nyou want one! \ud83d\udc36",
-   "t0": 9.37,
+   "t0": 16.0,
    "t1": 99,
    "size": 76,
    "y": 0.08

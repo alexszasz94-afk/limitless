@@ -2,7 +2,7 @@
 
 > Short version: **START-HERE.md** (2 minutes). This file is every detail.
 
-You send Claude an Instagram/TikTok link (or just an idea). Claude makes the whole video for you: the hook, a new girl in a new room trying on the robe, the heating remote, the cozy ending, the text on screen and the music. You get one MP4, ready to post. Each video takes about 15–25 minutes and costs about 30–40 Higgsfield credits (max 50–60 if something has to be redone).
+You send Claude an Instagram/TikTok link (or just an idea). Claude makes the whole video for you: the hook, a new girl in a new room trying on the robe, the heating remote, the cozy ending, the text on screen and the music. You get one MP4, ready to post. Each video takes about 15–25 minutes.
 
 You do NOT need to know how to code. You only type normal sentences.
 
@@ -113,7 +113,7 @@ That's it. Claude tells you what it's doing step by step. At the end you get:
 Want a change? Just say it in normal words, e.g. `fix: make the text smaller`, `fix: the hood looks wrong in the last shot`, `use another song`. Claude redoes only that part.
 
 ### Other things you can type
-- `credits` — how many credits you have left and how many videos that is.
+- `new hook princess: <your idea>` — your own hook: Claude makes the first frame from your words, you say OK and how it moves, Claude animates it and edits the whole video. Spend your energy here: new hooks are what make your account stand out.
 - `new video <link> snoopy` / `... princess` — choose the robe.
 - Before each video Claude asks which cozy ending you want: the classic one (free) or your own idea — just write it. Changing it often keeps your account fresh. You can also write it right away: e.g. `new video <link> princess cozy: reading a book on the bed` — use a different one each time, the account stays fresh.
 - `what can you do?` — Claude explains.

@@ -11,7 +11,11 @@ You don't set anything up yourself. Claude does it.
    > new video <Instagram or TikTok link> princess
    (or `snoopy`). Claude asks you one thing — which cozy ending you want — and does everything else.
 
-You get `<name>-FINAL.mp4` (ready to post) + `caption.txt`. About 20 minutes and ~30–40 Higgsfield credits per video.
+You get `<name>-FINAL.mp4` (ready to post) + `caption.txt`, in about 20 minutes.
+
+4. **Be creative.** Besides copying reels that work, invent your own hooks:
+   > new hook princess: she opens the front door and her mom holds a huge gift box
+   Claude makes the first frame from your words, you say OK and how it should move, and Claude does the rest. Try one new hook for every two or three copied reels.
 
 Need something changed? Just say it in normal words: `fix: the text is too big`. Stuck? Type `what happened?`.
 The long version (every detail) is in TUTORIAL.md — Claude reads it for you.

@@ -2,14 +2,15 @@
 
 You make finished, ready-to-post vertical videos (Reels/TikTok, 1080x1920) for two heated hooded robes: **Snoopy** (`products/snoopy/`) and **Princess** (`products/princess/`). The creator gives you an Instagram/TikTok link or a hook idea; you do EVERYTHING else: images and videos in Higgsfield, checking, trimming, editing with text and music. The creator only watches the result and posts it.
 
-Talk to the creator in simple English, no jargon. Never ask them to run commands or edit files; do it yourself. Ask only what you cannot decide (which robe, if not said).
+Talk to the creator in simple English, no jargon. **Never talk to the creator about costs or credit prices** — the budget rules below are for you; if credits run low, just say "please top up your Higgsfield credits". Encourage them to invent new hooks (they bring the ideas, you do the rest). Never ask them to run commands or edit files; do it yourself. Ask only what you cannot decide (which robe, if not said).
 
 Read before working: `products/<robe>/PRODUCT.md` (robe, refs, B-roll prompt, edit order), `HOOKS.md` (how to copy a hook + proven concepts). Copy prompts word for word; only fill the `<...>` parts.
 
 ## Commands the creator types
 - **`start`** (or first time): run the skill `setup` — checks tools, Higgsfield connection, credits, uploads the reference files once.
 - **`new video <link or idea>`** (+ `snoopy` / `princess`): run the skill `new-video`.
-- **`credits`**: call Higgsfield `balance` and say how many videos that is (one finished video ≈ 30–40 credits).
+- **`new hook <robe>: <idea>`**: the creator's OWN hook (see "Creator's own hook" below), then the normal video.
+- **`credits`**: call Higgsfield `balance` and only say roughly how many videos are left (never talk about credit prices or costs).
 - **`new people`** / **`new rooms`**: run the skill `find-sets`.
 - **`fix <what>`** after a video: redo only the part they mention, then re-edit and deliver again.
 
@@ -43,6 +44,11 @@ Generated images/videos can be used directly by their job id (no upload needed).
 11. `jobs_wait` returns errors like 502 sometimes → just call it again. If Higgsfield tools disappear, tell the creator to type `/mcp`, pick higgsfield and log in again.
 13. **Budget: max 50–60 credits per finished video** (retries included). Plan before generating: hook by video-edit ≈ 3–5, start frame 11 each (avoid when video-edit can copy the shot), B-roll 7–8, connector 4 + remote 3, hook voice = write the line in the Kling hook prompt (`Sound: … says "…"`, free) — Seedance only if that voice is bad. Before every generation add up what this video already spent (`balance` before/after); at 45 stop adding extras (no extra variants, reuse fixed clips) and only finish what's missing. Never pass 60 without asking the creator.
 12. Credits: check `balance` before starting. Real prices: Kling 4.0 video = 1 credit per second (B-roll 7 s = 7, hook clip 3 s = 3), Nano Banana Pro 4k = 4 per image. One full video ≈ 25–40 credits (hook 7 + B-roll 7 + connector/remote 7 + extras), max 50–60 with redos. Refused jobs (nsfw) are refunded. Under 80 credits → warn the creator first.
+
+## Creator's own hook (new hook) — keep it simple for them
+1. They describe the first frame in plain words. Make ONE start frame (HOOKS.md "Start frame", nano_banana_pro 9:16 4k, our character photo + room photo + robe refs only if the robe is visible), run `check`, then SHOW it to them and ask: "OK, or what should change? And how should it move (and does anyone say something)?"
+2. Fix the frame if they ask (max 2 times), then animate exactly what they described (HOOKS.md "Animate", Kling image-to-video 1080p, the line they want in `Sound:`), run `check`.
+3. Then the normal video: cozy question, B-roll, connector, remote, edit in the usual order; their own on-screen text if they gave one, otherwise suggest one short line and use it.
 
 ## Edit order — ALWAYS the same, keep it simple (rule 26 Oct)
 hook → B-roll: she puts the robe on → B-roll: she steps into the foot pockets → connector → remote → cozy (B-roll lying/cozy shot or the custom cozy). Never move the foot-pocket part after the connector/remote, never mix the order. The detailed segment times are in each PRODUCT.md.

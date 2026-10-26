@@ -138,3 +138,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 26 oct (Szasz): B-roll-ul se face DOAR cu clipul nostru clasic (motion/broll-motion.mp4) — „iese bine și e probat”. Clipul A de prințesă scos din kit.
 - 26 oct (Szasz): la fiecare video nou Claude îl ÎNTREABĂ pe creator ce cozy vrea (clasic din B-roll sau altă variantă scrisă de el) și îi recomandă una diferită de ultimele 3. Videoul cu prințesa p3 refăcut pe B-roll-ul clasic — „merge bine”.
 - 26 oct: kit final pentru creatori — START-HERE.md (tutorial de 2 minute: un singur mesaj de dat lui Claude), HOW-IT-WORKS (pagină interactivă + PDF despre cum funcționează sistemul), zip refăcut cu toate regulile zilei.
+- 26 oct (Szasz): creatorilor nu li se vorbește despre costuri. Accent pe hook-uri noi: „new hook <robe>: <idee>” — Claude face start frame-ul din ce descriu, ei zic OK și cum se mișcă, Claude animează și montează.

@@ -67,7 +67,7 @@ details.step summary:focus-visible{outline:2px solid var(--royal);outline-offset
 .rules ul{margin:0;padding-left:1.1rem}
 .rules li{margin:.35rem 0}
 .rules em{font-style:normal;color:var(--muted);font-size:.92em}
-/* calculator */
+/* (no calculator) */
 .calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:14px;align-items:start}
 .calc fieldset{border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:0;background:var(--surface);min-width:0}
 .calc label{display:flex;gap:10px;align-items:center;margin:.35rem 0}
@@ -91,7 +91,7 @@ footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
   <div class="eyebrow">Robe Studio · how the system works</div>
   <h1>One link in, a finished <span>robe video</span> out.</h1>
   <p class="lede">You bring a reel that's working for someone else. Claude rebuilds it with our robe, a new person and a new room, checks every frame, edits it and hands you an MP4 ready to post.</p>
-  <div class="facts"><span><b>~20 min</b> per video</span><span><b>30–40</b> Higgsfield credits</span><span><b>1080×1920</b> · 9:16</span><span><b>2 robes</b> · Snoopy, Princess</span></div>
+  <div class="facts"><span><b>~20 min</b> per video</span><span><b>1080×1920</b> · 9:16</span><span><b>2 robes</b> · Snoopy, Princess</span></div>
 </header>
 
 <section>
@@ -161,7 +161,7 @@ footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
     </details>
     <details class="step">
       <summary><span class="num">8</span><h3>You post and stay creative</h3><span class="who you">you</span></summary>
-      <div class="body"><p>Your job is the ideas: which reels to copy, which cozy ending, which hook to test next. Want something changed? Write it in plain words, e.g. <code>fix: the text is too big</code>.</p></div>
+      <div class="body"><p>Your job is the ideas: which reels to copy, which new hooks to invent, which cozy ending. Want something changed? Write it in plain words, e.g. <code>fix: the text is too big</code>.</p></div>
     </details>
   </div>
 </section>
@@ -173,13 +173,13 @@ footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
     <div><h3>You</h3><ul>
       <li>Find reels that are working (short, strong first 3 seconds).</li>
       <li>Pick the robe and the cozy ending.</li>
+      <li>Invent new hooks: you describe the start frame and how it moves.</li>
       <li>Post, and try new ideas.</li>
     </ul></div>
     <div><h3>Claude</h3><ul>
       <li>Everything technical: analysis, images, videos, voice, checks, edit, music.</li>
       <li>Keeps each video different from your last 3.</li>
-      <li>Stays inside the credit budget.</li>
-    </ul></div>
+          </ul></div>
   </div>
 </section>
 
@@ -215,30 +215,28 @@ footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
 </section>
 
 <section>
-  <div class="eyebrow">Credits</div>
-  <h2>What a video costs</h2>
-  <p>Tick what your next video needs.</p>
-  <div class="calc">
-    <fieldset>
-      <legend class="eyebrow">This video</legend>
-      <label><input type="checkbox" id="c-text" checked> Their caption needs removing (+4)</label>
-      <label><input type="checkbox" id="c-cozy"> My own cozy idea (+9)</label>
-      <label><input type="checkbox" id="c-ab"> A second hook to A/B test (+7)</label>
-      <label><input type="checkbox" id="c-redo"> One redo (+7)</label>
-    </fieldset>
-    <div>
-      <table aria-live="polite">
-        <tbody>
-          <tr><td>Hook (Kling, ~7 s)</td><td>7</td></tr>
-          <tr><td>B-roll (Kling, 7 s)</td><td>7</td></tr>
-          <tr><td>Connector + remote in your room</td><td>7</td></tr>
-          <tr id="r-extra"><td>Extras</td><td id="v-extra">4</td></tr>
-          <tr class="total"><td>Total</td><td id="v-total">25</td></tr>
-        </tbody>
-      </table>
-      <div class="budget ok" id="v-budget">Inside the 50–60 credit budget</div>
-    </div>
+  <div class="eyebrow">Where you make the difference</div>
+  <h2>Your own hooks</h2>
+  <p>Copying reels that already work keeps the account growing. New hooks are what make it yours. The technical part is the same either way, so put your energy into ideas.</p>
+  <div class="steps">
+    <details class="step" open>
+      <summary><span class="num">1</span><h3>Describe the first frame</h3><span class="who you">you</span></summary>
+      <div class="body"><p>Say what we see, in plain words: <code>new hook princess: she opens the front door and her mom is holding a huge gift box with a bow</code>.</p></div>
+    </details>
+    <details class="step" open>
+      <summary><span class="num">2</span><h3>Claude makes the start frame</h3><span class="who">Claude</span></summary>
+      <div class="body"><p>A real-looking photo with our person, in her room, exactly as you described. You look at it and say OK, or say what to change.</p></div>
+    </details>
+    <details class="step" open>
+      <summary><span class="num">3</span><h3>Say how it moves</h3><span class="who you">you</span></summary>
+      <div class="body"><p>For example <code>she gasps, grabs the box and runs inside</code>. Add what she says, if anything, and Claude puts the voice in the clip.</p></div>
+    </details>
+    <details class="step" open>
+      <summary><span class="num">4</span><h3>Claude animates and edits</h3><span class="who">Claude</span></summary>
+      <div class="body"><p>Animation, checks, then the usual edit: robe on, pockets, connector, remote, cozy. Same quality as a copied reel.</p></div>
+    </details>
   </div>
+  <p style="margin-top:14px">Ideas that work: a surprise or a reaction, a before/after, a funny line, something only a mom, a girlfriend or a Disney fan would get. Mix them with copied reels: try one new hook for every two or three copies.</p>
 </section>
 
 <section>
@@ -246,33 +244,13 @@ footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
   <h2>Commands</h2>
   <div class="cmds">
     <div class="cmd"><code>start</code><span>First time: Claude sets everything up and tells you what to click.</span></div>
-    <div class="cmd"><code>new video &lt;link&gt; princess</code><span>Makes a finished video. Use <code>snoopy</code> for the other robe.</span></div>
+    <div class="cmd"><code>new video &lt;link&gt; princess</code><span>Remakes a reel that works. Use <code>snoopy</code> for the other robe.</span></div>
+    <div class="cmd"><code>new hook princess: &lt;idea&gt;</code><span>Your own hook: describe the first frame, then how it moves.</span></div>
     <div class="cmd"><code>fix: &lt;what&gt;</code><span>Redoes only that part, e.g. <code>fix: use another song</code>.</span></div>
-    <div class="cmd"><code>credits</code><span>Credits left, and how many videos that is.</span></div>
-    <div class="cmd"><span><code>new people</code> · <code>new rooms</code></span><span>Fresh faces or rooms from Pinterest.</span></div>
+        <div class="cmd"><span><code>new people</code> · <code>new rooms</code></span><span>Fresh faces or rooms from Pinterest.</span></div>
     <div class="cmd"><code>what happened?</code><span>Claude explains a problem and fixes it.</span></div>
   </div>
 </section>
 
 <footer>Robe Studio · system as of 26 October 2026</footer>
 </div>
-
-<script>
-(function(){
-  var ids={text:4,cozy:9,ab:7,redo:7};
-  function upd(){
-    var extra=0;
-    Object.keys(ids).forEach(function(k){var el=document.getElementById('c-'+k); if(el&&el.checked) extra+=ids[k];});
-    var total=21+extra;
-    document.getElementById('v-extra').textContent=extra;
-    document.getElementById('v-total').textContent=total;
-    var b=document.getElementById('v-budget');
-    if(total<=50){b.textContent='Inside the 50–60 credit budget';b.className='budget ok';}
-    else if(total<=60){b.textContent='At the top of the 50–60 budget';b.className='budget warn';}
-    else{b.textContent='Over budget: Claude asks you first';b.className='budget warn';}
-  }
-  document.querySelectorAll('.calc input').forEach(function(i){i.addEventListener('change',upd);});
-  if(location.hash==='#print'){document.querySelectorAll('details').forEach(function(d){d.open=true;});}
-  upd();
-})();
-</script>

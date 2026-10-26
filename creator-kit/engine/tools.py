@@ -18,6 +18,7 @@
   python3 engine/tools.py log <video-name> key=value ...                 -> remembers what this video used (hook, outfit, music, text, motion, robe)
   python3 engine/tools.py speech-times <video> [seconds]                  -> when the voice bursts are (start-end), to put each spoken word on its exact second
   python3 engine/tools.py cleantext <video> <clean.jpg> <out.mp4> <l> <t> <r> <b> [...more boxes]  -> covers their on-screen text with the same spot from a clean photo (static camera only) - no blur for Kling to copy
+  python3 engine/tools.py broll-check <broll.mp4> <motion.mp4> <out-folder>   -> B-roll safety check: shot count vs the motion clip, glitch spikes inside shots, safe segments, one sheet per shot to look at
   python3 engine/tools.py history [n]                                     -> what the last n videos used (default 5), so the next one is different
 """
 import json, math, os, subprocess, sys, tempfile, glob
@@ -226,6 +227,49 @@ def cleantext(f, clean, out, boxes):
     print(out, "- look at a frame: the text must be gone and nothing else covered (faces move into the box? make the box smaller)")
 
 
+def frame_diffs(f):
+    """mean absolute difference between consecutive frames (0-255), with times"""
+    import numpy as np
+    w, h = 96, 170
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", f, "-vf", f"scale={w}:{h},format=gray", "-f", "rawvideo", "-"], capture_output=True).stdout
+    fr = np.frombuffer(raw, np.uint8).reshape(-1, h, w).astype(np.int16)
+    fps = len(fr) / duration(f)
+    return [(round((i + 1) / fps, 2), float(np.abs(fr[i + 1] - fr[i]).mean())) for i in range(len(fr) - 1)], fps
+
+
+def broll_check(f, motion, folder):
+    os.makedirs(folder, exist_ok=True)
+    ours, ref = cuts(f), cuts(motion)
+    d = duration(f)
+    diffs, fps = frame_diffs(f)
+    rdiffs, _ = frame_diffs(motion)
+    rv = sorted(v for _, v in rdiffs); rmed = rv[len(rv) // 2]
+    ref_jumps = [t_ for t_, v in rdiffs if v > max(rmed * 3.5, rmed + 8)]
+    scale = d / duration(motion)
+    bounds = [0.0] + ours + [d]
+    problems, safe = [], []
+    if len(ours) != len(ref):
+        problems.append(f"SHOT COUNT: ours has {len(ours) + 1} shots, the motion clip {len(ref) + 1} -> Kling merged/added a shot; look at the sheets, redo if a shot is missing or invented")
+    for i in range(len(bounds) - 1):
+        a, b = bounds[i], bounds[i + 1]
+        inside = [v for t_, v in diffs if a + 0.12 < t_ < b - 0.12]
+        if inside:
+            med = sorted(inside)[len(inside) // 2]
+            spikes = [t_ for t_, v in diffs if a + 0.12 < t_ < b - 0.12 and v > max(med * 3.5, med + 12)
+                      and not any(abs(t_ - rt * scale) < 0.2 for rt in ref_jumps)]   # jumps the motion clip also has = their own jump cuts, fine
+            if spikes:
+                problems.append(f"shot {i + 1} ({a:.2f}-{b:.2f}s): sudden jump at {', '.join(str(s) for s in spikes[:5])}s -> possible glitch/morph, look at the sheet")
+        sa, sb = round(a + 0.12, 2), round(b - 0.12, 2)
+        safe.append((sa, sb))
+        sheet_f = os.path.join(folder, f"shot{i + 1}.jpg")
+        run(["ffmpeg", "-v", "error", "-y", "-ss", str(a), "-t", str(b - a), "-i", f, "-vf", "fps=6,scale=150:-1,tile=8x3", "-frames:v", "1", sheet_f])
+    print("cuts ours:", ours, " motion clip:", ref)
+    print("SAFE SEGMENTS (use only these in edit.json, 0.12 s away from every cut):", "  ".join(f"{a}-{b}" for a, b in safe))
+    print("sheets:", ", ".join(f"{folder}/shot{i + 1}.jpg" for i in range(len(safe))))
+    print("PROBLEMS:" if problems else "no automatic problems found - still LOOK at every sheet (person in every frame, face, hands, robe, pouches)")
+    for p_ in problems: print(" -", p_)
+
+
 def history(n="5"):
     f = os.path.join(ROOT, "state/used.json")
     vids = (json.load(open(f)) if os.path.exists(f) else {}).get("videos", [])
@@ -259,5 +303,6 @@ if __name__ == "__main__":
     elif c == "log": log(a[1], a[2:])
     elif c == "speech-times": speech_times(a[1], a[2] if len(a) > 2 else "6")
     elif c == "cleantext": cleantext(a[1], a[2], a[3], a[4:])
+    elif c == "broll-check": broll_check(a[1], a[2], a[3])
     elif c == "history": history(a[1] if len(a) > 1 else "5")
     else: print(__doc__)

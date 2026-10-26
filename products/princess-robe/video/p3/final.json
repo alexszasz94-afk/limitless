@@ -8,14 +8,9 @@
    "audio": true
   },
   {
-   "file": "/home/user/limitless/products/princess-robe/video/p3/broll-v3.mp4",
+   "file": "/home/user/limitless/products/princess-robe/video/p3/broll-clasic.mp4",
    "start": 0.12,
-   "end": 0.71
-  },
-  {
-   "file": "/home/user/limitless/products/princess-robe/video/p3/broll-v3.mp4",
-   "start": 0.95,
-   "end": 5.0
+   "end": 3.42
   },
   {
    "file": "/home/user/limitless/products/princess-robe/video/p3/conector.mp4",
@@ -44,13 +39,13 @@
   {
    "text": "H&M X DISNEY\n💜👑",
    "t0": 6.33,
-   "t1": 11.1,
+   "t1": 9.63,
    "size": 76,
    "y": 0.42
   },
   {
    "text": "H&M X DISNEY\n💜👑",
-   "t0": 11.1,
+   "t0": 9.63,
    "t1": 99,
    "size": 76,
    "y": 0.08

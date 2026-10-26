@@ -136,3 +136,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 26 oct (Szasz): ordinea la montaj MEREU aceeași, fără complicații: hook → se îmbracă → săculeții (buzunarele de la picioare) → conector → telecomandă → cozy.
 - 26 oct (Szasz): la săculeți picioarele intră MEREU din afară înăuntru — la începutul cadrului ambele picioare sunt afară, pe podea; niciun picior deja băgat. Fraza fixă e în promptul de B-roll la ambele halate și în verificare.
 - 26 oct (Szasz): B-roll-ul se face DOAR cu clipul nostru clasic (motion/broll-motion.mp4) — „iese bine și e probat”. Clipul A de prințesă scos din kit.
+- 26 oct (Szasz): la fiecare video nou Claude îl ÎNTREABĂ pe creator ce cozy vrea (clasic din B-roll sau altă variantă scrisă de el) și îi recomandă una diferită de ultimele 3. Videoul cu prințesa p3 refăcut pe B-roll-ul clasic — „merge bine”.

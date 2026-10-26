@@ -113,7 +113,7 @@ Want a change? Just say it in normal words, e.g. `fix: make the text smaller`, `
 ### Other things you can type
 - `credits` — how many credits you have left and how many videos that is.
 - `new video <link> snoopy` / `... princess` — choose the robe.
-- Add `cozy: <what she does>` to change the last cozy shot, e.g. `new video <link> princess cozy: reading a book on the bed` — use a different one each time, the account stays fresh.
+- Before each video Claude asks which cozy ending you want: the classic one (free) or your own idea — just write it. Changing it often keeps your account fresh. You can also write it right away: e.g. `new video <link> princess cozy: reading a book on the bed` — use a different one each time, the account stays fresh.
 - `what can you do?` — Claude explains.
 
 ### Tips for great results

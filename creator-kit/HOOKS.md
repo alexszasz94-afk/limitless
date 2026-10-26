@@ -4,11 +4,19 @@ The hook is copied from a reference reel (Instagram/TikTok link) or built from t
 
 ## Step by step
 1. `python3 engine/tools.py download <url> output/<name>/ref` → reference.mp4, its length and its cuts.
-2. `python3 engine/tools.py transcribe output/<name>/ref/reference.mp4` — ALWAYS. Write down every line people say (and when). The hook must say the same thing (swap the product name), e.g. "3, 2, 1… let's see how it comes out!" — see "Speech in the hook" below.
+2. `python3 engine/tools.py transcribe output/<name>/ref/reference.mp4` — ALWAYS. Write down every line people say (and when). The hook must say the same thing (swap the product name), e.g. "3, 2, 1… let's see how it comes out!" — see "Hook sound" below.
    `python3 engine/tools.py sheet output/<name>/ref/reference.mp4 output/<name>/ref/sheet.jpg 1.5` and LOOK at the sheet (Read the jpg). Write down: each shot of the hook (what happens, where, camera angle), where the hook ends and the robe part starts, the on-screen text (copy its wording and emojis, swap the product name), how long the hook is.
 3. For every hook shot pull one frame: `python3 engine/tools.py frame output/<name>/ref/reference.mp4 <second> output/<name>/ref/shot1.jpg` and upload it (it is the composition reference).
 4. Make one START FRAME per hook shot (image), check it, then ANIMATE it (video), check it, trim it.
 5. Make it make sense for OUR robe: replace their product with ours (folded robe, robe on a hanger, our gift box, people wearing our robe). Brands from the reference (H&M, Burger King, McDonald's, Walmart…) may stay if the reference had them.
+
+## Best way: copy the reference shot itself (motion stays exactly like theirs)
+When a hook shot is a simple person+object action (holding/dropping the robe, unrolling, throwing it on), copy it 1:1 with Kling video-edit:
+1. Cut that shot from the reference (min 3 s; if shorter, slow it with `setpts=1.45*PTS` and speed the result back up with `setpts=PTS/1.45`).
+2. Blur their on-screen text so Kling doesn't copy it: `ffmpeg -i ref.mp4 -filter_complex "[0:v]split[a][b];[b]crop=iw*0.8:ih*0.12:iw*0.1:ih*0.15,boxblur=20:5[t];[a][t]overlay=W*0.1:H*0.15" hook-ref.mp4` (move the box to where their text is; check a frame).
+3. Upload it, `generate_video` `kling4_0`, `mode: "video-edit"`, `video_references` = that clip, `image_references` = character photo (head+shoulders crop), room photo, robe front + back. Prompt: `Edit the input video. Keep EXACTLY the same shot, framing, camera position, body movements and timing: <one line of what happens>. Change only: the person to the woman of Image 1 (...), the room to Image 2, and the robe to Image 3 (front) and Image 4 (back) reproduced one to one: <robe words from PRODUCT.md>. Remove the blurred patch at the top, no text anywhere. UGC style, real iPhone video, soft natural light, true colours. No text. Silent.`
+4. Check the end on a 10 fps sheet and trim before anything strange (e.g. a hood suddenly filled like a mannequin).
+Use start frame + animate (below) only when the shot needs a new place or object that the reference doesn't have.
 
 ## Start frame = image
 `generate_image_batch` with `model: "gpt_image_2"`, `aspect_ratio: "9:16"`, `resolution: "4k"`, `quality: "high"`, every media with role `"image"`, in this order: reference frame (composition), character photo (if a person is visible), then the robe refs needed (front + hood for Snoopy; front + back for the princess), box/pouch refs if they appear.
@@ -28,12 +36,13 @@ One continuous real handheld phone video, starting exactly on the start image, n
 ```
 Never ask for snow/dust blowing in the wind (it makes a fake steam cloud).
 
-## Speech in the hook (copy what they say)
-If the reference has people talking (countdown, "you guys…", a question), our hook says the same line:
-1. Make the voice in Higgsfield: `generate_audio` with `model: "seed_audio"`, `voice_type: "preset"`, a young American female voice (`list_voices`; e.g. Emily `6b3e3642-f7b7-4cb8-9688-51e233c4b92f`), `speech_rate: 15`, prompt = the exact line with natural punctuation (`Three, two, one... let's see how it comes out!`). Costs almost nothing. Fetch it to `output/<name>/voice.wav`.
-2. Find where the words are (loudness every 0.1 s, or `transcribe` the wav); if the pauses are too long, cut them shorter with ffmpeg `atrim` + `concat`.
-3. Put it on the clip: `python3 engine/tools.py voice-mix output/<name>/hook-1.mp4 output/<name>/voice.wav output/<name>/hook-1-voice.mp4 <delay>` and use the `-voice` clip in edit.json with `"audio": true`. Time it like the reference (a countdown ends right as the action starts).
-4. Make sure the person in the clip is facing the camera/talking while the line plays (pick the segment start for that).
+## Hook sound (ALWAYS made in Seedance, like the original)
+Every hook gets its sound from Seedance, matching the reference: the same line people say, the same tone, the same sounds.
+1. `transcribe` the reference (step 2 above) and write the exact line, e.g. `Three... two... one... let's see how it comes out!`.
+2. Make it in Higgsfield with `generate_video`: `model: "seedance_2_5"`, `mode: "t2v"`, `duration: 4`, `resolution: "480p"`, `aspect_ratio: "9:16"`, `generate_audio: true`, NO images (a start image with arms/skin gets refused as `nsfw`). Prompt: a simple scene with no people that fits the hook + `Sound: a cheerful young American woman off camera, <tone like the reference>, clearly says "<exact line>". Quiet room, no music. No text.` It can take 5–30 minutes; keep waiting with `jobs_wait`.
+3. Fetch the mp4, keep only the sound: `ffmpeg -i seedance.mp4 -vn -ac 2 -ar 48000 output/<name>/voice.wav`. Find where each word is (loudness every 0.05 s) and, if needed, cut the words apart and place each one on the matching movement of our clip (ffmpeg `atrim` + `adelay` + `amix`), e.g. each count on a bounce.
+4. Put it on the clip with `python3 engine/tools.py voice-mix <hook.mp4> output/<name>/voice.wav <hook-voice.mp4> <delay>` (or mix it onto the final video if the line runs past the hook), `"audio": true` in edit.json. Listen-check by loudness: the words must sit on the right moments.
+No speech in the reference (music only) → no voice; the song from PRODUCT.md is enough.
 
 ## Trim (always)
 Kling often ends the clip by jumping to one of the reference photos or fading to black. Run `python3 engine/tools.py safe-end <clip>` AND look at `sheet <clip> ... 4`; cut the clip before the jump. Also cut slow starts and anything unnatural. safe-end only finds hard cuts: always check the end on a 10 fps sheet yourself (zoom jumps, melting, a face that changes).

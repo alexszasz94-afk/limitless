@@ -24,6 +24,7 @@ You are the creator's quality control. Nothing goes to the creator until it pass
 - End: no jump to a product/character photo, no sudden zoom, no fade → trim before it.
 - Person in the FOREGROUND in every shot: nothing (table, plant, chair) between her and the camera → redo with the room photo without that object.
 - Copied hook: `tools.py compare` original vs ours on each key action — same column = same second; faster/slower or different → redo (HOOKS.md step 5). Spoken words land on the same seconds as the original (loudness check).
+- B-roll: the person is in EVERY shot (never an empty robe, never a missing head in the back view) → else cut that shot or redo.
 - B-roll: same 4 shots as the motion clip, she steps into the pouches, last shot lying cozy; face = character.
 
 **Final video**

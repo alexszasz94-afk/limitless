@@ -33,6 +33,7 @@ If it still says `nsfw`: (1) send the same call again once (it is random sometim
 | `princess_motion_a` | `products/princess/motion/broll-a.mp4` (6.5 s) | back of hood 0–0.8 → front: opens + steps into pouches 0.8–4.8 → sitting cozy on the sofa, hood up 4.8–6.5 | sofa |
 Alternate `motion` / `princess_motion_a` every video (write the last used in `state/used.json` under `"princess_motion"`). Same prompt below; `duration: 7` for both. After it finishes run `cuts` and look at the sheet to find the shot borders (they move a little). The on-screen text is already blurred in broll-a; the prompt says to remove the blurred patches.
 Extra lines to ADD to the prompt for `princess_motion_a` (they fix what went wrong in the tests):
+- `In the first shot (back view) SHE is inside the robe: her head with her long hair is clearly visible above the white collar, the hood lies down on her back — never an empty robe, she never disappears.` If the first shot still comes out without her head, start the B-roll at the first cut (≈0.9 s) instead of 0.15.
 - `The back of the robe and hood is plain royal blue with NO embroidery, exactly like Image 4. No apples, no fruit, no props anywhere. The last shot is in the SAME room of Image 2, on its sofa, and her face stays fully visible (the hood never covers her face).`
 **Room check (sofa or bed)** — see "Room check" in CLAUDE.md: the last cozy shot must match the room.
 

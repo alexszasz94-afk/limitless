@@ -14,6 +14,9 @@
   python3 engine/tools.py transcribe <video>                            -> what people SAY in the video, with seconds (first run downloads a small speech model, ~150 MB)
   python3 engine/tools.py voice-mix <clip.mp4> <voice.wav> <out.mp4> <delay_s> [orig_vol]   -> puts a voice line over a clip (clip sound lowered)
   python3 engine/tools.py crop <in.jpg> <out.jpg> <left> <top> <right> <bottom>   -> crop (fractions 0-1), e.g. character head+shoulders for the B-roll
+  python3 engine/tools.py compare <original.mp4> <ours.mp4> <from_s> <to_s> <out.jpg>   -> original (top) vs ours (bottom), 10 frames/s, to check the motion is identical
+  python3 engine/tools.py log <video-name> key=value ...                 -> remembers what this video used (hook, outfit, music, text, motion, robe)
+  python3 engine/tools.py history [n]                                     -> what the last n videos used (default 5), so the next one is different
 """
 import json, math, os, subprocess, sys, tempfile, glob
 
@@ -169,6 +172,34 @@ def crop(f, out, l, t, r, b):
     im.crop((int(float(l) * w), int(float(t) * h), int(float(r) * w), int(float(b) * h))).save(out, quality=95); print(out)
 
 
+def compare(ref, ours, t0, t1, out):
+    tmp = tempfile.mkdtemp(); n = max(1, round((float(t1) - float(t0)) * 10)); strips = []
+    for i, f in enumerate((ref, ours)):
+        s = os.path.join(tmp, f"{i}.jpg"); strips.append(s)
+        run(["ffmpeg", "-v", "error", "-y", "-ss", str(t0), "-t", str(float(t1) - float(t0)), "-i", f, "-vf", f"fps=10,scale=110:-1,tile={n}x1", "-frames:v", "1", s])
+    run(["ffmpeg", "-v", "error", "-y", "-i", strips[0], "-i", strips[1], "-filter_complex", "[0][1]scale2ref=iw:ih[a][b];[a][b]vstack", out])
+    print(out, "- top = original, bottom = ours, one frame every 0.1 s from", t0, "s. Same action must be in the same column.")
+
+
+def log(name, pairs):
+    f = os.path.join(ROOT, "state/used.json")
+    used = json.load(open(f)) if os.path.exists(f) else {"characters": [], "rooms": []}
+    rec = {"video": name}
+    for p in pairs:
+        k, _, v = p.partition("="); rec[k] = v
+    used.setdefault("videos", []).append(rec); json.dump(used, open(f, "w"), indent=1); print("logged", rec)
+
+
+def history(n="5"):
+    f = os.path.join(ROOT, "state/used.json")
+    vids = (json.load(open(f)) if os.path.exists(f) else {}).get("videos", [])
+    if not vids:
+        print("no videos yet - anything goes"); return
+    for r in vids[-int(n):]:
+        print(" | ".join(f"{k}: {v}" for k, v in r.items()))
+    print("The next video must NOT repeat the hook concept, outfit, music cue or on-screen text of the last 3 above.")
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]
     if not a:
@@ -188,4 +219,7 @@ if __name__ == "__main__":
     elif c == "transcribe": transcribe(a[1])
     elif c == "voice-mix": voice_mix(*a[1:6])
     elif c == "crop": crop(*a[1:7])
+    elif c == "compare": compare(*a[1:6])
+    elif c == "log": log(a[1], a[2:])
+    elif c == "history": history(a[1] if len(a) > 1 else "5")
     else: print(__doc__)

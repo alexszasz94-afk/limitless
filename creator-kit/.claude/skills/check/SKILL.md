@@ -22,6 +22,8 @@ You are the creator's quality control. Nothing goes to the creator until it pass
 - Movement natural, real weight, nothing melts, no objects merging with clothes, no flicker, no extra limbs, face stays the same the whole time.
 - Robe stays correct in EVERY frame (hood always the right one, pouches correct in the B-roll, robe full length).
 - End: no jump to a product/character photo, no sudden zoom, no fade → trim before it.
+- Person in the FOREGROUND in every shot: nothing (table, plant, chair) between her and the camera → redo with the room photo without that object.
+- Copied hook: `tools.py compare` original vs ours on each key action — same column = same second; faster/slower or different → redo (HOOKS.md step 5). Spoken words land on the same seconds as the original (loudness check).
 - B-roll: same 4 shots as the motion clip, she steps into the pouches, last shot lying cozy; face = character.
 
 **Final video**
@@ -29,6 +31,7 @@ You are the creator's quality control. Nothing goes to the creator until it pass
 - Text switches exactly on the cut, never over a face, readable, spelled right, emojis render.
 - Music: present, chorus/drop on the reveal if planned, fades out at the end, no loud click at cuts.
 - Order = PRODUCT.md edit order; nothing repeated by mistake; length 10–20 s.
+- Variety: hook concept, outfit, music cue and text differ from the last 3 videos (`tools.py history`).
 
 ## Fixing (alone)
 - Bad image → write the exact problem into the prompt as a fix ("her face is exactly the woman of the SECOND image", "the bundle is cream satin, separate from her dress", "both hands have five fingers") and regenerate. 

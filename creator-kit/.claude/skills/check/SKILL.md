@@ -14,7 +14,7 @@ You are the creator's quality control. Nothing goes to the creator until it pass
 - Face = the character photo (same face shape, eyes, nose, hair colour/length). Different person → redo.
 - Robe = refs one to one: colours, hood (shape, face/tiara/ears), trim, embroidery, pouches. Any invented detail → redo.
 - Hands: 5 fingers each, natural grip, nothing fused. Objects have real size and weight.
-- Composition matches the reference frame; place makes sense; no text, no logos except ones the reference had.
+- Composition matches the reference frame; place makes sense; no text; logos/signs that the reference had are still there (never removed), no invented ones.
 - Light: soft and natural, true colours, no HDR/glow/orange cast, not CGI.
 
 **Clip (video)**

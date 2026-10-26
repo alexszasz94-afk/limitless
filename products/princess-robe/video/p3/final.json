@@ -1,0 +1,78 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p3/hook-v2.mp4",
+   "start": 0,
+   "end": 6.33,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p3/broll.mp4",
+   "start": 0.15,
+   "end": 2.79
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p3/conector.mp4",
+   "start": 1.0,
+   "end": 2.6
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p3/telecomanda.mp4",
+   "start": 0.25,
+   "end": 2.4
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p3/broll.mp4",
+   "start": 2.79,
+   "end": 5.2
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p3/cozy-carte.mp4",
+   "start": 0.3,
+   "end": 2.9
+  }
+ ],
+ "texts": [
+  {
+   "text": "The PRINCESS robe\njust dropped... 👑💛",
+   "t0": 0,
+   "t1": 6.33,
+   "size": 76,
+   "y": 0.08
+  },
+  {
+   "text": "The PRINCESS robe\njust dropped... 👑💛",
+   "t0": 6.33,
+   "t1": 8.97,
+   "size": 76,
+   "y": 0.42
+  },
+  {
+   "text": "The PRINCESS robe\njust dropped... 👑💛",
+   "t0": 8.97,
+   "t1": 12.72,
+   "size": 76,
+   "y": 0.08
+  },
+  {
+   "text": "The PRINCESS robe\njust dropped... 👑💛",
+   "t0": 12.72,
+   "t1": 15.13,
+   "size": 76,
+   "y": 0.42
+  },
+  {
+   "text": "Would you wear it? 📖👑\nComment \"PRINCESS\"",
+   "t0": 15.13,
+   "t1": 99,
+   "size": 76,
+   "y": 0.08
+  }
+ ],
+ "music": "/home/user/heatgrump/library/music/princess/let-it-go.mp3",
+ "music_start": 53.1,
+ "music_vol": 0.6,
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/princess-robe/video/p3/printesa-magazin-final.mp4"
+}

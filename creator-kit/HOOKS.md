@@ -8,7 +8,7 @@ The hook is copied from a reference reel (Instagram/TikTok link) or built from t
    `python3 engine/tools.py sheet output/<name>/ref/reference.mp4 output/<name>/ref/sheet.jpg 1.5` and LOOK at the sheet (Read the jpg). Write down: each shot of the hook (what happens, where, camera angle), where the hook ends and the robe part starts, the on-screen text (copy its wording and emojis, swap the product name), how long the hook is.
 3. For every hook shot pull one frame: `python3 engine/tools.py frame output/<name>/ref/reference.mp4 <second> output/<name>/ref/shot1.jpg` and upload it (it is the composition reference).
 4. Make one START FRAME per hook shot (image), check it, then ANIMATE it (video), check it, trim it.
-5. Make it make sense for OUR robe: replace their product with ours (folded robe, robe on a hanger, our gift box, people wearing our robe). Brands from the reference (H&M, Burger King, McDonald's, Walmart…) may stay if the reference had them.
+5. Make it make sense for OUR robe: replace their product with ours (folded robe, robe on a hanger, our gift box, people wearing our robe). Logos and brands from the reference (store signs, H&M, Burger King, McDonald's, Walmart…) ALWAYS stay exactly as in the reference — never remove, blur or replace them (rule, 26 Oct). Blur ONLY the on-screen text the creator added on top of the video, never a logo or sign in the scene; and write in the prompt `KEEP the store/place exactly as in the input video, including its sign, logos and posters`.
 
 ## Best way: copy the reference shot itself (motion stays exactly like theirs)
 When a hook shot is a simple person+object action (holding/dropping the robe, unrolling, throwing it on), copy it 1:1 with Kling video-edit:

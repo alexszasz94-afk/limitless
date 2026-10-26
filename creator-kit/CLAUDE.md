@@ -9,7 +9,7 @@ Read before working: `products/<robe>/PRODUCT.md` (robe, refs, B-roll prompt, ed
 ## Commands the creator types
 - **`start`** (or first time): run the skill `setup` — checks tools, Higgsfield connection, credits, uploads the reference files once.
 - **`new video <link or idea>`** (+ `snoopy` / `princess`): run the skill `new-video`.
-- **`credits`**: call Higgsfield `balance` and say how many videos that is (one finished video ≈ 40–60 credits).
+- **`credits`**: call Higgsfield `balance` and say how many videos that is (one finished video ≈ 30–40 credits).
 - **`new people`** / **`new rooms`**: run the skill `find-sets`.
 - **`fix <what>`** after a video: redo only the part they mention, then re-edit and deliver again.
 
@@ -42,7 +42,7 @@ Generated images/videos can be used directly by their job id (no upload needed).
 10. Status `nsfw` (refunded, costs nothing) on a B-roll = character photo showing legs + motion clip, or prompt mentioning legs/feet/shorts → crop the character photo to head + shoulders (`tools.py crop`), long pajama pants, the short prompt and the fallback steps in `products/princess/PRODUCT.md`. `ip_detected` → try once more with the same refs; if it repeats, tell the creator.
 11. `jobs_wait` returns errors like 502 sometimes → just call it again. If Higgsfield tools disappear, tell the creator to type `/mcp`, pick higgsfield and log in again.
 13. **Budget: max 50–60 credits per finished video** (retries included). Plan before generating: hook by video-edit ≈ 3–5, start frame 11 each (avoid when video-edit can copy the shot), B-roll 7–8, connector 4 + remote 3, hook voice = write the line in the Kling hook prompt (`Sound: … says "…"`, free) — Seedance only if that voice is bad. Before every generation add up what this video already spent (`balance` before/after); at 45 stop adding extras (no extra variants, reuse fixed clips) and only finish what's missing. Never pass 60 without asking the creator.
-12. Credits: check `balance` before starting. Real prices: Kling 4.0 video = 1 credit per second (B-roll 7 s = 7, hook clip 3 s = 3), Nano Banana Pro 4k = 4 per image. One full video ≈ 30–40 credits (princess p3: 30), max 50–60 with redos. Refused jobs (nsfw) are refunded. Under 80 credits → warn the creator first.
+12. Credits: check `balance` before starting. Real prices: Kling 4.0 video = 1 credit per second (B-roll 7 s = 7, hook clip 3 s = 3), Nano Banana Pro 4k = 4 per image. One full video ≈ 25–40 credits (hook 7 + B-roll 7 + connector/remote 7 + extras), max 50–60 with redos. Refused jobs (nsfw) are refunded. Under 80 credits → warn the creator first.
 
 ## Edit order — ALWAYS the same, keep it simple (rule 26 Oct)
 hook → B-roll: she puts the robe on → B-roll: she steps into the foot pockets → connector → remote → cozy (B-roll lying/cozy shot or the custom cozy). Never move the foot-pocket part after the connector/remote, never mix the order. The detailed segment times are in each PRODUCT.md.

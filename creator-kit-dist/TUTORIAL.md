@@ -1,6 +1,8 @@
 # Robe Studio — make finished robe videos with Claude Code
 
-You send Claude an Instagram/TikTok link (or just an idea). Claude makes the whole video for you: the hook, a new girl in a new room trying on the robe, the heating remote, the cozy ending, the text on screen and the music. You get one MP4, ready to post. Each video takes about 15–25 minutes and costs about 40–60 Higgsfield credits.
+> Short version: **START-HERE.md** (2 minutes). This file is every detail.
+
+You send Claude an Instagram/TikTok link (or just an idea). Claude makes the whole video for you: the hook, a new girl in a new room trying on the robe, the heating remote, the cozy ending, the text on screen and the music. You get one MP4, ready to post. Each video takes about 15–25 minutes and costs about 30–40 Higgsfield credits (max 50–60 if something has to be redone).
 
 You do NOT need to know how to code. You only type normal sentences.
 
@@ -118,7 +120,7 @@ Want a change? Just say it in normal words, e.g. `fix: make the text smaller`, `
 
 ### Tips for great results
 - The best links are short reels (10–20 s) with a clear hook in the first 3 seconds.
-- Each video automatically uses a new girl and a new room. The kit comes with 13 of each; when they run out, Claude finds new ones on Pinterest by itself, looks at them and keeps only the good ones. Only if Pinterest doesn't work will it ask you for photos (about 20 women + 20 cozy Christmas rooms, real, bright, high quality). You can also type `new people` or `new rooms` anytime.
+- Each video automatically uses a new girl and a new room. The kit comes with 13 women and 26 rooms; when they run out, Claude finds new ones on Pinterest by itself, looks at them and keeps only the good ones. Only if Pinterest doesn't work will it ask you for photos (about 20 women + 20 cozy Christmas rooms, real, bright, high quality). You can also type `new people` or `new rooms` anytime.
 - Don't close Claude while it's working. If your computer sleeps, just type `continue`.
 
 ### If something goes wrong

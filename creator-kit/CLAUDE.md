@@ -14,7 +14,7 @@ Read before working: `products/<robe>/PRODUCT.md` (robe, refs, B-roll prompt, ed
 - **`fix <what>`** after a video: redo only the part they mention, then re-edit and deliver again.
 
 ## Tools you use
-- Higgsfield MCP (`mcp__higgsfield__*`): `media_upload` + `media_confirm`, `generate_image_batch`, `generate_video_batch`, `jobs_wait` (max 15 s per call — call it again until done), `balance`.
+- Higgsfield MCP (`mcp__higgsfield__*`) — also `video_analysis_create` + `video_analysis_status` to read WHAT PEOPLE SAY in a reference when `tools.py transcribe` cannot run (upload only the hook part, 3–5 s): `media_upload` + `media_confirm`, `generate_image_batch`, `generate_video_batch`, `jobs_wait` (max 15 s per call — call it again until done), `balance`.
 - `python3 engine/tools.py ...` (download, sheet, frame, cuts, safe-end, fetch, cozy, drop, fanwipe, next-set, reject, crop) — see the top of `engine/tools.py`.
 - `python3 engine/montage.py output/<name>/edit.json` — final edit with text + music.
 
@@ -33,10 +33,12 @@ Generated images/videos can be used directly by their job id (no upload needed).
 5. If a generate call answers "Preset X was recommended instead", call it again with `declined_preset_id` = the id it gives you.
 6. **Check and repair everything yourself — skill `check`.** Run it after every image, every clip and on the final video, before telling the creator anything. The creator must never be the one who finds a mistake. Look at EVERY result before using it: `sheet` for videos, Read for images. Check face = character photo, robe = refs (hood, colours, pouch), hands, nothing strange, no text. Bad → generate again with the fix in the prompt (max 3 tries, then tell the creator).
 7. **Always trim Kling clips**: `safe-end` + look at a 10 fps sheet of the last second (`sheet <clip> <out> 10` on a cut piece, or 4 fps on the whole clip); cut before any jump to a white product photo / the character photo / another picture / a sudden zoom / a fade, and before anything starts to melt or morph. safe-end only finds hard cuts — your eyes decide.
+7b. **The person is ALWAYS in the foreground** — never behind a table, plant, sofa or any object. Write it in every image/video prompt: `she stands in the FOREGROUND, closest to the camera, with NOTHING between her and the camera; furniture is behind her or to the side`. If a result shows her behind something → redo.
 8. Lighting always very soft and natural, UGC iPhone look, no HDR/glow/CGI. Never ask for snow/dust blowing in the wind.
 9. On-screen text: English, 2–3 short lines (`\n`), `"size": 76`, `"y": 0.08` (top, never over the face), emojis like the reference.
 10. Status `nsfw` (refunded, costs nothing) on a B-roll = character photo showing legs + motion clip, or prompt mentioning legs/feet/shorts → crop the character photo to head + shoulders (`tools.py crop`), long pajama pants, the short prompt and the fallback steps in `products/princess/PRODUCT.md`. `ip_detected` → try once more with the same refs; if it repeats, tell the creator.
 11. `jobs_wait` returns errors like 502 sometimes → just call it again. If Higgsfield tools disappear, tell the creator to type `/mcp`, pick higgsfield and log in again.
+13. **Budget: max 50–60 credits per finished video** (retries included). Plan before generating: hook by video-edit ≈ 3–5, start frame 11 each (avoid when video-edit can copy the shot), B-roll 7–8, connector 4 + remote 3, hook voice = write the line in the Kling hook prompt (`Sound: … says "…"`, free) — Seedance only if that voice is bad. Before every generation add up what this video already spent (`balance` before/after); at 45 stop adding extras (no extra variants, reuse fixed clips) and only finish what's missing. Never pass 60 without asking the creator.
 12. Credits: check `balance` before starting. Real prices: Kling 4.0 video = 1 credit per second (B-roll 7 s = 7, hook clip 3 s = 3), GPT Image 2 4k = 11 per image. One full video ≈ 40–60 credits. Refused jobs (nsfw) are refunded. Under 80 credits → warn the creator first.
 
 ## Room check — sofa or bed (do it for EVERY room, before the B-roll)

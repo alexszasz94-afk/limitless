@@ -36,9 +36,13 @@ One continuous real handheld phone video, starting exactly on the start image, n
 ```
 Never ask for snow/dust blowing in the wind (it makes a fake steam cloud).
 
-## Hook sound (ALWAYS made in Seedance, like the original)
+## Hook sound — cheapest first
+1. **Write the line into the hook's own Kling prompt** (instead of `Silent`): `Sound: <who> says "<exact line>" <with the reference timing>, <other real sounds>.` One generation, no extra cost. Keep `"audio": true` for that segment.
+2. Only if that voice sounds wrong/robotic → make it in Seedance as below and mix it on.
+
+## Hook sound in Seedance (fallback, like the original)
 Every hook gets its sound from Seedance, matching the reference: the same line people say, the same tone, the same sounds.
-1. `transcribe` the reference (step 2 above) and write the exact line, e.g. `Three... two... one... let's see how it comes out!`.
+1. `transcribe` the reference (step 2 above) — if it fails, upload only the hook (first 3–5 s) and use Higgsfield `video_analysis_create` / `video_analysis_status` (takes 3–5 min) — and write the exact line WITH its seconds, e.g. `Three... two... one... let's see how it comes out!`.
 2. Make it in Higgsfield with `generate_video`: `model: "seedance_2_5"`, `mode: "t2v"`, `duration: 4`, `resolution: "480p"`, `aspect_ratio: "9:16"`, `generate_audio: true`, NO images (a start image with arms/skin gets refused as `nsfw`). Prompt: a simple scene with no people that fits the hook + `Sound: a cheerful young American woman off camera, <tone like the reference>, clearly says "<exact line>". Quiet room, no music. No text.` It can take 5–30 minutes; keep waiting with `jobs_wait`.
 3. Fetch the mp4, keep only the sound: `ffmpeg -i seedance.mp4 -vn -ac 2 -ar 48000 output/<name>/voice.wav`. Find where each word is (loudness every 0.05 s) and, if needed, cut the words apart and place each one on the matching movement of our clip (ffmpeg `atrim` + `adelay` + `amix`), e.g. each count on a bounce.
 4. Put it on the clip with `python3 engine/tools.py voice-mix <hook.mp4> output/<name>/voice.wav <hook-voice.mp4> <delay>` (or mix it onto the final video if the line runs past the hook), `"audio": true` in edit.json. Listen-check by loudness: the words must sit on the right moments.

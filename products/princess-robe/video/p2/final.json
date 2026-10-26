@@ -2,9 +2,10 @@
  "fps": 30,
  "segments": [
   {
-   "file": "/home/user/limitless/products/princess-robe/video/p2/hook-copie.mp4",
+   "file": "/home/user/limitless/products/princess-robe/video/p2/hook-exact2.mp4",
    "start": 0,
-   "end": 2.6
+   "end": 3.25,
+   "audio": true
   },
   {
    "file": "/home/user/limitless/products/princess-robe/video/p2/broll.mp4",
@@ -34,15 +35,15 @@
  ],
  "texts": [
   {
-   "text": "Do NOT let a Princess\nmom see this...\ud83e\udd29\ud83d\udc51",
+   "text": "Do NOT let a Princess\nmom see this...🤩👑",
    "t0": 0,
-   "t1": 9.4,
+   "t1": 10.07,
    "size": 76,
    "y": 0.08
   },
   {
-   "text": "Comment \"PRINCESS\" if\nyou want one! \ud83d\udc51",
-   "t0": 9.4,
+   "text": "Comment \"PRINCESS\" if\nyou want one! 👑",
+   "t0": 10.07,
    "t1": 99,
    "size": 76,
    "y": 0.08

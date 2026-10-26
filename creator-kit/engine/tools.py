@@ -16,6 +16,7 @@
   python3 engine/tools.py crop <in.jpg> <out.jpg> <left> <top> <right> <bottom>   -> crop (fractions 0-1), e.g. character head+shoulders for the B-roll
   python3 engine/tools.py compare <original.mp4> <ours.mp4> <from_s> <to_s> <out.jpg>   -> original (top) vs ours (bottom), 10 frames/s, to check the motion is identical
   python3 engine/tools.py log <video-name> key=value ...                 -> remembers what this video used (hook, outfit, music, text, motion, robe)
+  python3 engine/tools.py speech-times <video> [seconds]                  -> when the voice bursts are (start-end), to put each spoken word on its exact second
   python3 engine/tools.py history [n]                                     -> what the last n videos used (default 5), so the next one is different
 """
 import json, math, os, subprocess, sys, tempfile, glob
@@ -190,6 +191,23 @@ def log(name, pairs):
     used.setdefault("videos", []).append(rec); json.dump(used, open(f, "w"), indent=1); print("logged", rec)
 
 
+def speech_times(f, until="6"):
+    r = run(["ffmpeg", "-v", "error", "-t", str(until), "-i", f, "-af", "highpass=f=300,lowpass=f=3000,astats=metadata=1:reset=2,ametadata=print:key=lavfi.astats.Overall.RMS_level:file=-", "-f", "null", "-"]).stdout
+    import re
+    pts = [(float(a), float(b)) for a, b in zip(re.findall(r"pts_time:([0-9.]+)", r), re.findall(r"RMS_level=(-?[0-9.]+|-inf)", r)) if b != "-inf"]
+    if not pts:
+        print("no sound"); return
+    lv = sorted(v for _, v in pts); thr = lv[len(lv) // 2] + 3
+    bursts, cur = [], None
+    for t_, v in pts:
+        if v >= thr:
+            cur = [t_, t_] if cur is None else [cur[0], t_]
+        elif cur:
+            bursts.append(cur); cur = None
+    if cur: bursts.append(cur)
+    print("voice bursts:", "  ".join(f"{a:.2f}-{b:.2f}" for a, b in bursts if b - a >= 0.05))
+
+
 def history(n="5"):
     f = os.path.join(ROOT, "state/used.json")
     vids = (json.load(open(f)) if os.path.exists(f) else {}).get("videos", [])
@@ -221,5 +239,6 @@ if __name__ == "__main__":
     elif c == "crop": crop(*a[1:7])
     elif c == "compare": compare(*a[1:6])
     elif c == "log": log(a[1], a[2:])
+    elif c == "speech-times": speech_times(a[1], a[2] if len(a) > 2 else "6")
     elif c == "history": history(a[1] if len(a) > 1 else "5")
     else: print(__doc__)

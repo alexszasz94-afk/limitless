@@ -1,12 +1,1 @@
-{"fps":30,"segments":[
- {"file":"/home/user/limitless/products/snoopy-robe/video/bk/afara.mp4","start":0,"end":2.0,"audio":true},
- {"file":"/home/user/limitless/products/snoopy-robe/video/bk/casa.mp4","start":0.8,"end":2.7,"audio":true},
- {"file":"/home/user/limitless/products/snoopy-robe/video/bk/masa.mp4","start":1.4,"end":3.0,"audio":true},
- {"file":"/home/user/limitless/products/snoopy-robe/video/bk/broll.mp4","start":0.15,"end":3.46},
- {"file":"/home/user/limitless/products/snoopy-robe/video/conector-telecomanda-kling.mp4","start":0,"end":3.04},
- {"file":"/home/user/limitless/products/snoopy-robe/video/bk/broll.mp4","start":3.54,"end":4.79},
- {"file":"/home/user/limitless/products/snoopy-robe/video/bk/cozy-zoom.mp4","start":0,"end":2.1}],
- "texts":[{"text":"Burger King\nX\nSNOOPY 🐶🎄","t0":0,"t1":12.03,"size":80,"y":0.08},
-          {"text":"Jk, we make them 🤭\n(Link in bio)","t0":12.03,"t1":99,"size":76,"y":0.08}],
- "music":"/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3","music_start":0.8,"music_vol":0.75,"orig_vol":1.0,
- "out":"/home/user/limitless/products/snoopy-robe/video/montaj/heatpup-burgerking-final.mp4"}
+{"fps": 30, "segments": [{"file": "/home/user/limitless/products/snoopy-robe/video/bk/afara.mp4", "start": 0, "end": 2.0, "audio": true}, {"file": "/home/user/limitless/products/snoopy-robe/video/bk/casa.mp4", "start": 0.8, "end": 2.7, "audio": true}, {"file": "/home/user/limitless/products/snoopy-robe/video/bk/masa.mp4", "start": 1.4, "end": 3.0, "audio": true}, {"file": "/home/user/limitless/products/snoopy-robe/video/bk/broll.mp4", "start": 0.15, "end": 3.46}, {"file": "/home/user/limitless/products/snoopy-robe/video/conector-telecomanda-kling.mp4", "start": 0, "end": 3.04}, {"file": "/home/user/limitless/products/snoopy-robe/video/bk/broll.mp4", "start": 3.54, "end": 4.72}, {"file": "/home/user/limitless/products/snoopy-robe/video/bk/cozy-zoom.mp4", "start": 0, "end": 2.1}], "texts": [{"text": "Burger King\nX\nSNOOPY \ud83d\udc36\ud83c\udf84", "t0": 0, "t1": 12.03, "size": 80, "y": 0.08}, {"text": "Jk, we make them \ud83e\udd2d\n(Link in bio)", "t0": 12.03, "t1": 99, "size": 76, "y": 0.08}], "music": "/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3", "music_start": 0.8, "music_vol": 0.75, "orig_vol": 1.0, "out": "/home/user/limitless/products/snoopy-robe/video/montaj/heatpup-burgerking-final.mp4"}

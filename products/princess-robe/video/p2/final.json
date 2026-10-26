@@ -12,14 +12,14 @@
    "end": 3.5
   },
   {
-   "file": "/home/user/limitless/products/princess-robe/video/p2/conector.mp4",
-   "start": 1.0,
-   "end": 2.6
+   "file": "/home/user/limitless/products/princess-robe/video/p2/conector-telecomanda.mp4",
+   "start": 0,
+   "end": 1.38
   },
   {
-   "file": "/home/user/limitless/creator-kit/products/princess/fixed/remote.mp4",
-   "start": 0,
-   "end": 3.1
+   "file": "/home/user/limitless/products/princess-robe/video/p2/telecomanda.mp4",
+   "start": 0.25,
+   "end": 2.17
   },
   {
    "file": "/home/user/limitless/products/princess-robe/video/p2/broll.mp4",
@@ -36,13 +36,13 @@
   {
    "text": "Do NOT let a Princess\nmom see this...\ud83e\udd29\ud83d\udc51",
    "t0": 0,
-   "t1": 10.8,
+   "t1": 9.4,
    "size": 76,
    "y": 0.08
   },
   {
    "text": "Comment \"PRINCESS\" if\nyou want one! \ud83d\udc51",
-   "t0": 10.8,
+   "t0": 9.4,
    "t1": 99,
    "size": 76,
    "y": 0.08

@@ -39,6 +39,13 @@ Generated images/videos can be used directly by their job id (no upload needed).
 11. `jobs_wait` returns errors like 502 sometimes → just call it again. If Higgsfield tools disappear, tell the creator to type `/mcp`, pick higgsfield and log in again.
 12. Credits: check `balance` before starting. Real prices: Kling 4.0 video = 1 credit per second (B-roll 7 s = 7, hook clip 3 s = 3), GPT Image 2 4k = 11 per image. One full video ≈ 40–60 credits. Refused jobs (nsfw) are refunded. Under 80 credits → warn the creator first.
 
+## Room check — sofa or bed (do it for EVERY room, before the B-roll)
+LOOK at the room photo and write down: is there a **sofa**? a **bed**? both? floor space to stand?
+- **Sofa in the room** → any motion clip works; in the prompt say the cozy/lying shot is "on its sofa".
+- **Only a bed (bedroom)** → in the prompt say the cozy/lying shot is "on its bed". If the B-roll's last shot still looks wrong (sitting on nothing, floating, wrong furniture), cut the B-roll before it and make a separate **cozy bed shot**: start frame (gpt_image_2 4k: the woman of the character photo in the robe, refs front+back, in this room next to the bed) → Kling image-to-video 5 s: she lets herself fall back onto the bed and wraps the robe around herself, cozy, face visible, real gravity, no floating. Check the fall on a 10 fps sheet; if it floats, use the version where she sits down on the edge and lies back.
+- **Neither** (no sofa, no bed) → reject the room (`tools.py reject`) and take the next one.
+Use the same room for the hook (if it's at home), the connector, the remote and the cozy shot, so the whole video happens in one place.
+
 ## Delivery
 Final file: `output/<name>/<name>-FINAL.mp4`. Also write `output/<name>/caption.txt` (one English sentence + 5 hashtags). Only after the skill `check` passed on the final video. Tell the creator in 3–5 lines: what the hook is, who/where, what the text says, a "Checked:" line (what you verified + what you fixed alone), anything you could not make perfect. Then open the folder for them if possible (Mac: `open output/<name>`, Windows: `explorer output\<name>`).
 **Cloud (claude.ai/code) only**: the creator downloads from GitHub, so after every video run `git add -f output/<name>/<name>-FINAL.mp4 output/<name>/caption.txt && git commit -m "video <name>" && git push` (only the final file + caption, not the work files). If the folder is not a git repo (`git status` fails), you are on a computer, not the cloud — skip this.

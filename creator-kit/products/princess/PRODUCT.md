@@ -26,6 +26,15 @@ Kling sometimes refuses the princess B-roll with status `nsfw`. It does NOT cost
 - Use EXACTLY the short prompt below.
 If it still says `nsfw`: (1) send the same call again once (it is random sometimes); (2) replace `wearing a <colour> long pajama set under the robe` with `wearing a <colour> long-sleeve pajama top and long pajama pants`; (3) remove Image 6 (pouch-feet) from the medias and from the prompt (keep Image 5). Never more than 5 tries — then tell the creator.
 
+## B-roll motion clips — ROTATE them (a different one each video)
+| key in state/media.json | file | shots (seconds in the motion clip) | last shot |
+|---|---|---|---|
+| `motion` | `motion/broll-motion.mp4` (shared) | back view → opens + pouches → lying → cozy | sofa / bed |
+| `princess_motion_a` | `products/princess/motion/broll-a.mp4` | back of hood 0–0.8 → opens robe + steps into pouches 0.8–4.75 → sitting cozy 4.75–6.5 | sofa |
+| `princess_motion_b` | `products/princess/motion/broll-b.mp4` | holds robe rolled overhead + drops it 0–1.0 → back of hood 1.0–2.1 → opens + pouches 2.1–5.7 → sitting cozy 5.7–7.5 | bed / sofa |
+Pick the next one in this order every video (write the last used in `state/used.json` under `"princess_motion"`). Same prompt below; use `duration` = length of the motion clip (7 or 8). After it finishes run `cuts` and look at the sheet to find the shot borders (they move a little). Their on-screen text is already blurred out in broll-a/b; the prompt says to remove the blurred patches.
+**Room check (sofa or bed)** — see "Room check" in CLAUDE.md: the last cozy shot must match the room.
+
 ## B-roll (always new person + new room) — Kling 4.0 video-edit
 `model: "kling4_0"`, `mode: "video-edit"`, `resolution: "1080p"`, `aspect_ratio: "9:16"`, `duration: 7`, `declined_preset_id: "24bae836-2c4a-48e0-89b6-49fcc0b21612"` (if the tool says another preset was recommended, retry with the id it gives you).
 `medias` in THIS order:

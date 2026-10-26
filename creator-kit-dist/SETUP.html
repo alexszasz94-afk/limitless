@@ -1,0 +1,176 @@
+<title>Robe Studio Setup</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one narrow column, a checklist of five steps, each with the exact buttons to click */
+:root{
+  --bg:#f6f5fb; --surface:#ffffff; --ink:#1b1f3b; --muted:#5d6181; --line:#dcdcec;
+  --royal:#2a3a9e; --belt:#c8283c; --gold:#e9b50f; --chip:#eceaf6; --ok:#1f7a4d;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Figtree","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11132a; --surface:#1a1d3a; --ink:#ecebf7; --muted:#a4a7c6; --line:#2e3260;
+  --royal:#8fa0ff; --belt:#ff6b7c; --gold:#f5c93a; --chip:#262a52; --ok:#5fd39a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11132a; --surface:#1a1d3a; --ink:#ecebf7; --muted:#a4a7c6; --line:#2e3260;
+  --royal:#8fa0ff; --belt:#ff6b7c; --gold:#f5c93a; --chip:#262a52; --ok:#5fd39a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:720px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+.eyebrow{font:500 .75rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--belt)}
+header{padding-block:44px 24px}
+header h1{font-size:clamp(2rem,6.5vw,3.2rem);font-weight:800;letter-spacing:-.02em}
+header p{color:var(--muted);font-size:1.1rem;max-width:60ch;margin:.7rem 0 0}
+.need{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.need span{font:500 .82rem var(--mono);background:var(--chip);padding:5px 10px;border-radius:99px}
+.progress{margin:22px 0 6px;font:500 .85rem var(--mono);color:var(--muted)}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .3s}
+ol.steps{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;grid-template-columns:36px 1fr;gap:4px 14px}
+.step.done{border-color:var(--ok)}
+.n{font:800 1.5rem var(--display);color:var(--royal);line-height:1.2}
+.step.done .n{color:var(--ok)}
+.step h2{font-size:1.15rem;font-weight:700;align-self:center}
+.step .c{grid-column:2;min-width:0}
+.step p{margin:.35rem 0}
+.clicks{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:.5rem 0}
+.btn{font:600 .85rem var(--body);background:var(--royal);color:#fff;padding:4px 10px;border-radius:6px;white-space:nowrap}
+.arrow{color:var(--muted)}
+.url{font:500 .9rem var(--mono);background:var(--chip);padding:3px 8px;border-radius:5px;overflow-wrap:anywhere}
+.why{color:var(--muted);font-size:.92rem}
+.check{display:flex;align-items:center;gap:8px;margin-top:.6rem;font-weight:600;cursor:pointer;width:fit-content}
+.check input{width:20px;height:20px;accent-color:var(--ok)}
+.say{background:var(--chip);border-left:4px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;font-style:italic;margin:.5rem 0}
+section.daily{margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+section.daily h2{font-size:1.6rem;margin:.3rem 0 .6rem}
+.examples{display:grid;gap:8px}
+.promise{background:var(--surface);border:2px solid var(--ok);border-radius:12px;padding:16px 18px;margin-top:6px}
+.promise h2{font-size:1.3rem;color:var(--ok);margin-bottom:.3rem}
+.promise p{margin:0}
+.words{margin:16px 0 4px;color:var(--ink)}
+.words p{margin:.3rem 0}
+.trouble{margin-top:28px}
+.trouble h3{font-size:1.05rem;margin-bottom:.4rem}
+.trouble ul{padding-left:1.1rem;margin:0}
+.trouble li{margin:.35rem 0}
+footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
+@media (max-width:480px){.step{grid-template-columns:1fr}.step .c{grid-column:1}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Robe Studio · setup</div>
+  <h1>Ready in 5 minutes, all in your browser.</h1>
+  <p>Never done anything like this before? Perfect, this is written for you. You click through five steps once. After that you only chat with Claude, like texting a friend.</p>
+  <div class="need"><span>Claude Pro or Max</span><span>Higgsfield account</span><span>free GitHub account</span></div>
+</header>
+
+<div class="promise">
+  <h2>You don't edit anything. Ever.</h2>
+  <p>No video editing, no files, no code, no settings to change later. You send a reel or an idea, Claude makes the whole video, checks it, and hands you the finished MP4. If you want something different, you just tell Claude in a normal sentence.</p>
+</div>
+<div class="words">
+  <p><b>Two words you'll see:</b></p>
+  <p><b>GitHub</b> is a free website that keeps your own online folder. In it lives the Robe Studio kit and your finished videos. You never open the files yourself.</p>
+  <p><b>Claude Code</b> is a chat with Claude at claude.ai/code that can work inside that folder. That's where you talk to Claude.</p>
+</div>
+
+<div class="progress" id="ptext">0 of 5 done</div>
+<div class="bar"><i id="pbar"></i></div>
+
+<ol class="steps">
+  <li class="step" data-step>
+    <span class="n">1</span><h2>Get your own copy of the kit</h2>
+    <div class="c">
+      <p>No GitHub account yet? Go to <span class="url">github.com</span>, click <span class="btn">Sign up</span> and make a free account (email + password).</p>
+      <p>Then open the Robe Studio link you received. You'll see a green button at the top right:</p>
+      <div class="clicks"><span class="btn">Use this template</span><span class="arrow">→</span><span class="btn">Create a new repository</span></div>
+      <p>In the box <b>Repository name</b> write <span class="url">robe-studio</span>. Choose <b>Private</b> (only you can see it). Click the green <span class="btn">Create repository</span> at the bottom.</p>
+      <p class="why">That's it: you now have your own copy of the kit. You don't need to look inside it.</p>
+      <label class="check"><input type="checkbox" id="s1"> Done</label>
+    </div>
+  </li>
+  <li class="step" data-step>
+    <span class="n">2</span><h2>Connect Higgsfield</h2>
+    <div class="c">
+      <p>Higgsfield is the website that makes the images and videos. Claude uses your account there.</p>
+      <p>Open <span class="url">claude.ai/customize/connectors</span> (log in to Claude if asked). Find <b>Higgsfield</b> in the list:</p>
+      <div class="clicks"><span class="btn">Higgsfield</span><span class="arrow">→</span><span class="btn">Connect</span><span class="arrow">→</span><span>log in with your Higgsfield account</span><span class="arrow">→</span><span class="btn">Allow</span></div>
+      <p class="why">When it says "Connected", this step is done.</p>
+      <label class="check"><input type="checkbox" id="s2"> Done</label>
+    </div>
+  </li>
+  <li class="step" data-step>
+    <span class="n">3</span><h2>Open Claude Code</h2>
+    <div class="c">
+      <p>Go to <span class="url">claude.ai/code</span>.</p>
+      <p>The first time it asks to connect GitHub. Click <span class="btn">Connect GitHub</span>, log in, and when GitHub asks which folders Claude may use, choose <b>robe-studio</b> and click <span class="btn">Install</span> / <span class="btn">Save</span>.</p>
+      <p>Back on claude.ai/code, choose <b>robe-studio</b> from the list. A chat box opens.</p>
+      <label class="check"><input type="checkbox" id="s3"> Done</label>
+    </div>
+  </li>
+  <li class="step" data-step>
+    <span class="n">4</span><h2>Let it reach Instagram and TikTok</h2>
+    <div class="c">
+      <p>Next to the chat box there's a small cloud icon with a name (usually "Default"). Click it, then the little pencil / <b>Edit</b>.</p>
+      <div class="clicks"><span>Find</span><span class="btn">Network access</span><span class="arrow">→</span><span>choose</span><span class="btn">Full</span><span class="arrow">→</span><span class="btn">Save</span></div>
+      <p class="why">This lets Claude download the Instagram and TikTok reels you send it. You do it once and never again.</p>
+      <label class="check"><input type="checkbox" id="s4"> Done</label>
+    </div>
+  </li>
+  <li class="step" data-step>
+    <span class="n">5</span><h2>Say hi</h2>
+    <div class="c">
+      <p>Write in the chat:</p>
+      <div class="say">Hi, set me up</div>
+      <p class="why">Press Enter and wait a few minutes. Claude prepares everything by itself and writes back when it's ready. If it asks you something, just answer in normal words. If a window pops up asking to allow something, click <b>Allow</b> / <b>Yes</b>.</p>
+      <label class="check"><input type="checkbox" id="s5"> Done</label>
+    </div>
+  </li>
+</ol>
+
+<section class="daily">
+  <div class="eyebrow">Every day after that</div>
+  <h2>Just talk to Claude</h2>
+  <p>No commands to learn. Write like you'd text a friend who edits videos for you:</p>
+  <div class="examples">
+    <div class="say">Make this one with the princess robe: https://www.instagram.com/reel/…</div>
+    <div class="say">I have my own idea: she opens the front door and her mom holds a giant gift box.</div>
+    <div class="say">The text is too big.</div>
+  </div>
+  <p>Claude asks you one question (which cozy ending you want), then makes the video, checks every frame and gives you the finished MP4 and a caption to copy. You don't cut, edit or fix anything. To save the video: click it in the chat and download it. (It's also kept in your GitHub folder, under <span class="url">output</span>.)</p>
+  <p><b>Your part is the ideas.</b> Copy reels that work, and every two or three videos try a hook of your own.</p>
+
+  <div class="trouble">
+    <h3>If something goes wrong</h3>
+    <ul>
+      <li><b>Claude says Higgsfield isn't connected:</b> redo step 2, then start a new chat.</li>
+      <li><b>Claude says a download was blocked:</b> check step 4, then start a new chat.</li>
+      <li><b>Anything else:</b> ask <i>"what went wrong?"</i> and Claude explains and fixes it.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>Robe Studio · 26 October 2026</footer>
+</div>
+
+<script>
+(function(){
+  var boxes=[].slice.call(document.querySelectorAll('.check input'));
+  function save(){try{localStorage.setItem('rs-setup',JSON.stringify(boxes.map(function(b){return b.checked;})));}catch(e){}}
+  function upd(){
+    var n=0;
+    boxes.forEach(function(b){var li=b.closest('[data-step]'); li.classList.toggle('done',b.checked); if(b.checked)n++;});
+    document.getElementById('ptext').textContent=n===5?'All done. Start talking to Claude.':n+' of 5 done';
+    document.getElementById('pbar').style.width=(n*20)+'%';
+  }
+  try{var s=JSON.parse(localStorage.getItem('rs-setup')||'[]'); boxes.forEach(function(b,i){b.checked=!!s[i];});}catch(e){}
+  boxes.forEach(function(b){b.addEventListener('change',function(){save();upd();});});
+  upd();
+})();
+</script>

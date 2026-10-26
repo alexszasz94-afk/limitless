@@ -1,21 +1,20 @@
-# Robe Studio — start here (2 minutes)
+# Robe Studio — start here
 
-You don't set anything up yourself. Claude does it.
+Everything runs in your browser at **claude.ai/code**. Nothing to install, no experience needed. The step-by-step page with every click explained is **SETUP.html**.
 
-1. **Open Claude Code**
-   - On your computer: install it once (Mac: open Terminal and paste `curl -fsSL https://claude.ai/install.sh | bash` · Windows: open PowerShell and paste `irm https://claude.ai/install.ps1 | iex`), unzip `robe-studio.zip`, open the `robe-studio` folder in Terminal/PowerShell and type `claude`.
-   - Or in the browser: go to **claude.ai/code** (no installing; Claude will tell you the few clicks it needs).
-2. **Paste this one message to Claude:**
-   > Read CLAUDE.md and START-HERE.md, then run `start` and set everything up for me step by step. I'm not technical: tell me exactly what to click, one thing at a time.
-3. **Make videos.** When Claude says it's ready, type:
-   > new video <Instagram or TikTok link> princess
-   (or `snoopy`). Claude asks you one thing — which cozy ending you want — and does everything else.
+**You never edit anything** — no video editing, no files, no code. You send a reel or an idea; Claude makes, checks and edits the whole video and gives you the finished MP4.
 
-You get `<name>-FINAL.mp4` (ready to post) + `caption.txt`, in about 20 minutes.
+**Once (about 5 minutes)**
+1. Open the Robe Studio link you got → **Use this template** → **Create a new repository** → name it `robe-studio` → **Private** → **Create repository**.
+2. Go to **claude.ai/customize/connectors** → **Higgsfield** → **Connect** → log in to Higgsfield.
+3. Go to **claude.ai/code** → connect GitHub if asked → pick your `robe-studio` repository.
+4. Click the environment name at the top → **Edit** → **Network access: Full** → **Save**.
+5. Write **"Hi, set me up"**. Claude does the rest and tells you when it's ready.
 
-4. **Be creative.** Besides copying reels that work, invent your own hooks:
-   > new hook princess: she opens the front door and her mom holds a huge gift box
-   Claude makes the first frame from your words, you say OK and how it should move, and Claude does the rest. Try one new hook for every two or three copied reels.
+**Every day**
+Just talk to Claude like to a person:
+- "Make this one with the princess robe: <reel link>"
+- "I have an idea: she opens the door and her mom is holding a giant gift box…"
+- "The text is too big" · "Use another song" · "How many videos can I still make?"
 
-Need something changed? Just say it in normal words: `fix: the text is too big`. Stuck? Type `what happened?`.
-The long version (every detail) is in TUTORIAL.md — Claude reads it for you.
+Claude asks you which cozy ending you want, makes the video, checks it and gives you the MP4 + a caption. Your part is the ideas: copy reels that work, and invent your own hooks.

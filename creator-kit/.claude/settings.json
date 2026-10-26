@@ -27,5 +27,18 @@
       "Bash(explorer output*)",
       "mcp__Higgsfield__*"
     ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR\"/setup/session-start.sh",
+            "timeout": 600
+          }
+        ]
+      }
+    ]
   }
 }

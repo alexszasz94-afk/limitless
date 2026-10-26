@@ -81,6 +81,7 @@ tr.total td{border-bottom:0;font-weight:600;font-size:1.1rem;padding-top:10px}
 /* commands */
 .cmds{display:grid;gap:8px;margin-top:14px}
 .cmd{display:grid;grid-template-columns:minmax(0,240px) 1fr;gap:14px;align-items:baseline}
+.cmd q{font-style:italic;quotes:"“" "”"}
 .cmd code{font:500 .9rem var(--mono);background:var(--sherpa);padding:3px 8px;border-radius:5px;overflow-wrap:anywhere}
 @media (max-width:520px){.cmd{grid-template-columns:1fr;gap:2px}}
 footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
@@ -90,7 +91,7 @@ footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
 <header>
   <div class="eyebrow">Robe Studio · how the system works</div>
   <h1>One link in, a finished <span>robe video</span> out.</h1>
-  <p class="lede">You bring a reel that's working for someone else. Claude rebuilds it with our robe, a new person and a new room, checks every frame, edits it and hands you an MP4 ready to post.</p>
+  <p class="lede"><b>You never edit anything.</b> You bring a reel that's working for someone else, or an idea of your own. Claude rebuilds it with our robe, a new person and a new room, checks every frame, edits it and hands you an MP4 ready to post.</p>
   <div class="facts"><span><b>~20 min</b> per video</span><span><b>1080×1920</b> · 9:16</span><span><b>2 robes</b> · Snoopy, Princess</span></div>
 </header>
 
@@ -115,8 +116,8 @@ footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
   <p>Tap a step to see what's done there.</p>
   <div class="steps">
     <details class="step" open>
-      <summary><span class="num">1</span><h3>You send a link and pick the robe</h3><span class="who you">you</span></summary>
-      <div class="body"><p><code>new video &lt;Instagram or TikTok link&gt; princess</code> (or <code>snoopy</code>). No link? Write an idea and Claude suggests proven hooks.</p></div>
+      <summary><span class="num">1</span><h3>You send a reel and say which robe</h3><span class="who you">you</span></summary>
+      <div class="body"><p>Paste the link and say which robe, in your own words: <q>Make this one with the princess robe</q>. No link? Tell Claude your idea, or ask it for one.</p></div>
     </details>
     <details class="step">
       <summary><span class="num">2</span><h3>You choose the cozy ending</h3><span class="who you">you</span></summary>
@@ -161,7 +162,7 @@ footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
     </details>
     <details class="step">
       <summary><span class="num">8</span><h3>You post and stay creative</h3><span class="who you">you</span></summary>
-      <div class="body"><p>Your job is the ideas: which reels to copy, which new hooks to invent, which cozy ending. Want something changed? Write it in plain words, e.g. <code>fix: the text is too big</code>.</p></div>
+      <div class="body"><p>Your job is the ideas: which reels to copy, which new hooks to invent, which cozy ending. Want something changed? Just say it: <q>the text is too big</q>.</p></div>
     </details>
   </div>
 </section>
@@ -221,7 +222,7 @@ footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
   <div class="steps">
     <details class="step" open>
       <summary><span class="num">1</span><h3>Describe the first frame</h3><span class="who you">you</span></summary>
-      <div class="body"><p>Say what we see, in plain words: <code>new hook princess: she opens the front door and her mom is holding a huge gift box with a bow</code>.</p></div>
+      <div class="body"><p>Say what we see, in plain words: <q>Princess robe. She opens the front door and her mom is holding a huge gift box with a bow.</q></p></div>
     </details>
     <details class="step" open>
       <summary><span class="num">2</span><h3>Claude makes the start frame</h3><span class="who">Claude</span></summary>
@@ -240,15 +241,16 @@ footer{margin-top:40px;font:500 .8rem var(--mono);color:var(--muted)}
 </section>
 
 <section>
-  <div class="eyebrow">What you type</div>
-  <h2>Commands</h2>
+  <div class="eyebrow">No commands</div>
+  <h2>Just talk to Claude</h2>
+  <p>Write the way you'd text a friend who edits videos for you. A few examples:</p>
   <div class="cmds">
-    <div class="cmd"><code>start</code><span>First time: Claude sets everything up and tells you what to click.</span></div>
-    <div class="cmd"><code>new video &lt;link&gt; princess</code><span>Remakes a reel that works. Use <code>snoopy</code> for the other robe.</span></div>
-    <div class="cmd"><code>new hook princess: &lt;idea&gt;</code><span>Your own hook: describe the first frame, then how it moves.</span></div>
-    <div class="cmd"><code>fix: &lt;what&gt;</code><span>Redoes only that part, e.g. <code>fix: use another song</code>.</span></div>
-        <div class="cmd"><span><code>new people</code> · <code>new rooms</code></span><span>Fresh faces or rooms from Pinterest.</span></div>
-    <div class="cmd"><code>what happened?</code><span>Claude explains a problem and fixes it.</span></div>
+    <div class="cmd"><q>Hi, set me up</q><span>The very first time. Claude checks everything and tells you when it's ready.</span></div>
+    <div class="cmd"><q>Make this one with the princess robe: &lt;reel link&gt;</q><span>Remakes a reel that already works.</span></div>
+    <div class="cmd"><q>I have an idea: she opens the door and her mom holds a giant gift box</q><span>Your own hook. Claude shows you the first frame, you say how it moves.</span></div>
+    <div class="cmd"><q>The text is too big</q><span>Redoes only that part.</span></div>
+    <div class="cmd"><q>I want new girls</q><span>Fresh faces or rooms from Pinterest.</span></div>
+    <div class="cmd"><q>What went wrong?</q><span>Claude explains a problem and fixes it.</span></div>
   </div>
 </section>
 

@@ -1,129 +1,39 @@
-# Robe Studio — make finished robe videos with Claude Code
+# Robe Studio — full guide
 
-> Short version: **START-HERE.md** (2 minutes). This file is every detail.
+> Short version: **START-HERE.md**. Step-by-step with every click: **SETUP.html**. How the system works: **HOW-IT-WORKS.pdf**.
 
-You send Claude an Instagram/TikTok link (or just an idea). Claude makes the whole video for you: the hook, a new girl in a new room trying on the robe, the heating remote, the cozy ending, the text on screen and the music. You get one MP4, ready to post. Each video takes about 15–25 minutes.
+You send Claude a reel link or tell it an idea, in normal words. Claude makes the whole video: the hook, a new girl in a new room trying on the robe, the connector and the heating remote, the cozy ending, the text on screen and the music. You get one MP4, ready to post, in about 20 minutes. You don't need to know how to code and there are no commands to learn.
 
-You do NOT need to know how to code. You only type normal sentences.
+## What you need
+- A **Claude** subscription (Pro or Max) — Claude Code on the web is included.
+- A **Higgsfield** account with credits (higgsfield.ai) — this is where the images and videos are made.
+- A free **GitHub** account (github.com) — your kit lives there and your finished videos land there.
 
----
+## Setup, once (about 5 minutes)
+1. **Your copy of the kit.** Open the Robe Studio link you received (you must be logged in to GitHub). Click **Use this template** → **Create a new repository**. Name: `robe-studio`. Choose **Private**. Click **Create repository**.
+2. **Connect Higgsfield.** Open **claude.ai/customize/connectors**, find **Higgsfield**, click **Connect** and log in to your Higgsfield account.
+3. **Open Claude Code.** Go to **claude.ai/code**. The first time it asks to connect GitHub: allow it (give it access to `robe-studio`). Pick the `robe-studio` repository.
+4. **Let it reach Instagram/TikTok.** At the top of the chat click the environment name (the cloud icon) → **Edit** → **Network access** → **Full** → **Save**. (This lets Claude download the reels you send. You do it only once.)
+5. **Say hi.** Write: *Hi, set me up.* Claude checks everything, uploads the robe pictures to your Higgsfield once and tells you when it's ready. The tools it needs install themselves every time a session starts.
 
-## One-time setup (about 15 minutes)
+## Making videos — just talk
+- *"Make this one with the princess robe: https://www.instagram.com/reel/…"*
+- *"Can you do this TikTok with Snoopy?"*
+- *"I have my own idea: she opens the front door and her mom holds a giant gift box."* → Claude shows you the first frame, you say OK and how it should move, Claude does the rest.
+- Before each video Claude asks which cozy ending you want: the classic one, or your own idea (*reading a book on the bed*, *hot cocoa on the sofa*…). Change it often.
 
-### 1. Accounts you need
-- **Claude** — a Claude Pro or Max subscription (claude.ai). Claude Code is included.
-- **Higgsfield** — an account at higgsfield.ai with credits (any paid plan; Ultra is cheapest per video). This is where the images and videos are made.
+At the end Claude gives you the video and a caption. They are also saved in your GitHub repository: open github.com → `robe-studio` → `output` → your video → **Download**.
 
-### 2. Install Claude Code
-- **Mac**: open the app **Terminal** and paste:
-  ```
-  curl -fsSL https://claude.ai/install.sh | bash
-  ```
-- **Windows**: open **PowerShell** and paste:
-  ```
-  irm https://claude.ai/install.ps1 | iex
-  ```
-Close the window and open it again when it finishes.
+Want a change? Say it: *"the text is too big"*, *"use another song"*, *"the hood looks wrong at the end"*. Claude redoes only that part.
 
-### 3. Unzip the kit
-Unzip `robe-studio.zip` (the single big file — the `cloud-upload` pieces are only for Option B) somewhere easy, for example your Desktop. You get a folder called `robe-studio`.
+## Tips
+- The best reels to copy are short (10–20 s) with a strong first 3 seconds.
+- Mix: for every two or three copied reels, try one hook of your own. New hooks are what make your account stand out.
+- Every video gets a new girl and a new room automatically. When they run low, Claude finds new ones on Pinterest by itself. You can also just say *"I want new girls"* or *"new rooms please"*.
+- Start a new chat for each new video — it keeps things fast.
 
-### 4. Open Claude Code inside the folder
-- **Mac**: in Terminal type `cd ` (with a space), drag the `robe-studio` folder into the window, press Enter, then type `claude` and press Enter.
-- **Windows**: open the `robe-studio` folder, click the address bar, type `powershell`, press Enter, then type `claude` and press Enter.
-
-The first time, Claude asks you to log in (use your Claude account) and asks if you trust this folder → choose **Yes**. If it asks to use the MCP server **higgsfield** → choose **Yes**.
-
-### 5. Connect Higgsfield (once)
-In Claude type:
-```
-/mcp
-```
-Choose **higgsfield**, press Enter. A browser window opens: log in to your Higgsfield account and allow access. Go back to Claude.
-
-### 6. Let Claude set everything up
-Type:
-```
-start
-```
-Claude checks your computer, installs what is missing (ffmpeg, yt-dlp…), checks your credits and uploads the robe pictures to your Higgsfield account. If it asks permission to run something, choose **Yes** (or "Yes, don't ask again"). When it says everything is ready, you're done with setup forever.
-
----
-
-## Option B — no installing: run it in the browser (claude.ai/code)
-
-Use this if you can't install anything on your computer. Everything runs on a cloud computer.
-
-1. **GitHub** (free account at github.com): click **New repository**, name it `robe-studio`, choose **Private**, click **Create**. On the new page click **uploading an existing file**, drag in ALL the files from the `cloud-upload` folder you received (`robe-studio.zip.part-aa`, `robe-studio.zip.part-ab`, … — GitHub accepts max 25 MB per file, that's why the kit is in pieces) and click **Commit changes**. Wait until all pieces are uploaded.
-2. Go to **claude.ai/code**, connect your GitHub account and pick the `robe-studio` repository.
-3. **Higgsfield connector** (once): open https://claude.ai/customize/connectors, find **Higgsfield**, click **Connect** and log in to Higgsfield.
-4. **Cloud environment** (once): in claude.ai/code click the cloud icon / environment menu → **Add environment** (or **Edit**):
-   - **Name**: `robe-studio`
-   - **Network access**: **Limited** (or **Custom**) with **Allow package managers** ticked, and in **Allowed domains** paste the whole list from `setup/allowed-domains.txt`:
-     ```
-     *.higgsfield.ai
-     *.cloudfront.net
-     *.instagram.com
-     *.cdninstagram.com
-     *.fbcdn.net
-     *.facebook.com
-     *.tiktok.com
-     *.tiktokcdn.com
-     *.tiktokv.com
-     *.pinterest.com
-     *.pinimg.com
-     *.youtube.com
-     *.googlevideo.com
-     *.ytimg.com
-     huggingface.co
-     *.huggingface.co
-     *.hf.co
-     ```
-   - **Setup script**: paste the whole content of `setup/cloud-setup.sh`:
-     ```
-     #!/usr/bin/env bash
-     set -e
-     apt-get update -qq && apt-get install -y -qq ffmpeg >/dev/null
-     pip install -q --break-system-packages yt-dlp pillow numpy faster-whisper || pip install -q yt-dlp pillow numpy faster-whisper
-     ```
-   - Save.
-5. Start a new session in that environment (with the Higgsfield connector on) and send as the first message:
-   > join the pieces with `cat robe-studio.zip.part-* > robe-studio.zip`, unzip it and move everything from the robe-studio folder into the root of the repo (including the hidden .claude folder and .mcp.json), delete the zip, the pieces and the empty folder, commit and push, then read CLAUDE.md and run start
-   After that first time, start every new session with just `start`.
-6. From then on just type `start` and `new video ...` like everywhere else. Each finished video (`output/<name>/<name>-FINAL.mp4` + `caption.txt`) is committed and pushed by Claude — open your repo on github.com → `output` → the video → **Download** (the ⬇ button).
-
-If a download fails with a "network"/"domain" error, Claude tells you which domain to add to **Allowed domains** — add it, then start a new session.
-
----
-
-## Making a video
-
-Type one line, for example:
-```
-new video https://www.instagram.com/reel/XXXXXXXX/ snoopy
-```
-or
-```
-new video princess — girl at a Christmas market unwraps a big gift and it's the robe
-```
-That's it. Claude tells you what it's doing step by step. At the end you get:
-- `output/<name>/<name>-FINAL.mp4` — the video, ready to post (1080x1920, text and music included)
-- `output/<name>/caption.txt` — a caption with hashtags
-
-Want a change? Just say it in normal words, e.g. `fix: make the text smaller`, `fix: the hood looks wrong in the last shot`, `use another song`. Claude redoes only that part.
-
-### Other things you can type
-- `new hook princess: <your idea>` — your own hook: Claude makes the first frame from your words, you say OK and how it moves, Claude animates it and edits the whole video. Spend your energy here: new hooks are what make your account stand out.
-- `new video <link> snoopy` / `... princess` — choose the robe.
-- Before each video Claude asks which cozy ending you want: the classic one (free) or your own idea — just write it. Changing it often keeps your account fresh. You can also write it right away: e.g. `new video <link> princess cozy: reading a book on the bed` — use a different one each time, the account stays fresh.
-- `what can you do?` — Claude explains.
-
-### Tips for great results
-- The best links are short reels (10–20 s) with a clear hook in the first 3 seconds.
-- Each video automatically uses a new girl and a new room. The kit comes with 13 women and 26 rooms; when they run out, Claude finds new ones on Pinterest by itself, looks at them and keeps only the good ones. Only if Pinterest doesn't work will it ask you for photos (about 20 women + 20 cozy Christmas rooms, real, bright, high quality). You can also type `new people` or `new rooms` anytime.
-- Don't close Claude while it's working. If your computer sleeps, just type `continue`.
-
-### If something goes wrong
-- "Higgsfield not connected" → type `/mcp`, choose higgsfield, log in again.
-- "Not enough credits" → add credits on higgsfield.ai.
-- Anything else → type `what happened?` and Claude explains and fixes it.
+## If something goes wrong
+- Claude says Higgsfield is not connected → open **claude.ai/customize/connectors**, connect Higgsfield again, then start a new chat.
+- Claude says a download was blocked → check step 4 (Network access: Full), then start a new chat.
+- Credits ran out → top up on higgsfield.ai.
+- Anything else → ask *"what went wrong?"* — Claude explains and fixes it.

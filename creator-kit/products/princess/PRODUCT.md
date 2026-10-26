@@ -54,6 +54,9 @@ Edit the input video. Keep exactly the same shots, cuts, framing, movements and 
 ```
 After it finishes: `cuts` → ≈ 0.96, 3.58, 4.92. `cozy` from last cut + 0.15.
 
+
+**Foot pockets — ALWAYS add this sentence to every B-roll prompt (rule 26 Oct):** `FOOT POCKETS, step by step: when she opens the robe, BOTH her feet are still OUTSIDE the pockets, standing on the floor in front of the hem, the two pockets are empty and flat; then she lifts one foot from the outside, over the white fluffy band, and puts it INTO one pocket; then she lifts the other foot from the outside and puts it into the other pocket. No foot is ever inside a pocket before she puts it in.`
+
 ## Standard edit order (ALWAYS this order: hook → puts it on → foot pockets → connector → remote → cozy)
 1. hook clip(s) `"audio": true`
 2. broll.mp4 `0.15 → ~3.5`

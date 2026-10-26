@@ -84,8 +84,8 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
     <h2>What Alex does</h2>
     <ul>
       <li>Prepares the whole Robe Studio kit: the robes, the rules, the clips, everything.</li>
-      <li>Sends you <b>this page</b> and the <b>Robe Studio kit link</b>.</li>
-      <li>Sends you a GitHub invitation by email (if the kit is private), so you can open the link.</li>
+      <li>Sends you <b>this page</b> and a folder called <b>robe-studio-upload</b> with 5 files in it (the whole kit).</li>
+      <li>About once a week sends you a small <b>update file</b> with improvements.</li>
       <li>Is there if something doesn't work.</li>
     </ul>
   </div>
@@ -109,14 +109,15 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
 
 <ol class="steps">
   <li class="step" data-step>
-    <span class="n">1</span><h2>Get your own copy of the kit</h2>
+    <span class="n">1</span><h2>Put the kit in your own GitHub folder</h2>
     <div class="c">
+      <p>First download the <b>robe-studio-upload</b> folder Alex sent you to your computer. Inside are 5 files: <span class="url">CLAUDE.md</span> and 4 pieces called <span class="url">robe-studio.zip.part-aa</span> … <span class="url">-ad</span>. Don't open or unzip them.</p>
       <p>No GitHub account yet? Go to <span class="url">github.com</span>, click <span class="btn">Sign up</span> and make a free account (email + password).</p>
-      <p>If Alex sent you a GitHub invitation by email, open it and click <span class="btn">Accept invitation</span>.</p>
-      <p>Then open the <b>Robe Studio kit link</b> Alex sent you. You'll see a green button at the top right:</p>
-      <div class="clicks"><span class="btn">Use this template</span><span class="arrow">→</span><span class="btn">Create a new repository</span></div>
-      <p>In the box <b>Repository name</b> write <span class="url">robe-studio</span>. Choose <b>Private</b> (only you can see it). Click the green <span class="btn">Create repository</span> at the bottom.</p>
-      <p class="why">That's it: you now have your own copy of the kit. You don't need to look inside it.</p>
+      <p>On GitHub, click the <b>+</b> at the top right:</p>
+      <div class="clicks"><span class="btn">+</span><span class="arrow">→</span><span class="btn">New repository</span></div>
+      <p>In <b>Repository name</b> write <span class="url">robe-studio</span>, choose <b>Private</b> (only you can see it), click <span class="btn">Create repository</span>.</p>
+      <p>On the next page click the blue link <b>uploading an existing file</b>. Drag all 5 files from the folder into the page, wait until all 5 are listed, then click <span class="btn">Commit changes</span>.</p>
+      <p class="why">That's your own online folder with the kit in it. You never need to open it. Claude unpacks it by itself the first time you say hi.</p>
       <label class="check"><input type="checkbox" id="s1"> Done</label>
     </div>
   </li>
@@ -158,6 +159,14 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
     </div>
   </li>
 </ol>
+
+<section class="daily">
+  <div class="eyebrow">About once a week</div>
+  <h2>Updates from Alex</h2>
+  <p>When Alex sends you a file like <span class="url">robe-studio-update-2026-11-02.zip</span>, open a chat in claude.ai/code, drag the file into the chat and write:</p>
+  <div class="say">Here is the new update from Alex</div>
+  <p>Claude installs it and tells you in two lines what's new. Your videos and history stay as they are.</p>
+</section>
 
 <section class="daily">
   <div class="eyebrow">Every day after that</div>

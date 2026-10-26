@@ -68,6 +68,37 @@ section.daily h2{font-size:1.6rem;margin:.3rem 0 .6rem}
 @media print{.domains{max-height:none;overflow:visible}.copy{display:none}}
 .copy{font:600 .85rem var(--body);background:var(--royal);color:#fff;border:0;border-radius:6px;padding:6px 12px;cursor:pointer}
 .copy:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.shot{margin:.8rem 0;min-width:0}
+.frame{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg);max-width:520px}
+.bar{display:flex;align-items:center;gap:5px;padding:7px 10px;background:var(--chip);border-bottom:1px solid var(--line)}
+.bar i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.bar span{margin-left:8px;font:500 .75rem var(--mono);color:var(--muted);background:var(--surface);border-radius:5px;padding:2px 8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pg{padding:12px 14px;display:grid;gap:8px;font-size:.88rem}
+.row{display:flex;gap:8px;align-items:center}.between{justify-content:space-between}.end{justify-content:flex-end}
+.logo{font-family:var(--display)}
+.menu{display:grid;gap:2px;justify-self:end;border:1px solid var(--line);border-radius:8px;padding:6px;background:var(--surface);font-size:.85rem}
+.menu span{padding:3px 8px;border-radius:5px}
+.lbl{font-weight:600}.lbl.small{font-weight:500;color:var(--muted);font-size:.8rem}
+.m-input{border:1px solid var(--line);border-radius:6px;padding:5px 8px;background:var(--surface);font-family:var(--mono)}
+.m-radio{display:flex;align-items:center;gap:8px;padding:2px 4px;border-radius:6px}
+.m-radio i{width:12px;height:12px;border-radius:50%;border:2px solid var(--muted)}
+.m-radio.on i{border-color:var(--royal);background:radial-gradient(var(--royal) 45%,transparent 50%)}
+.m-btn{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:4px 10px;background:var(--surface);font-weight:600}
+.m-btn.green{background:#1f883d;color:#fff;border-color:#1f883d}
+.m-link{color:#0969da;text-decoration:underline}
+.m-drop{border:2px dashed var(--muted);border-radius:8px;padding:16px;text-align:center;color:var(--muted)}
+.m-card{display:flex;justify-content:space-between;align-items:center;gap:8px;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface)}
+.m-card.dim{opacity:.5}
+.m-chat{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--surface)}
+.m-chat .ph{flex:1;color:var(--muted)}
+.m-env{font-size:.8rem;border:1px solid var(--line);border-radius:6px;padding:2px 8px}
+.m-send{width:26px;height:26px;border-radius:50%;background:var(--royal);color:#fff;display:grid;place-items:center;font-weight:700}
+.m-msg{justify-self:end;background:var(--chip);border-radius:10px;padding:6px 10px}
+.m-panel{border:1px solid var(--line);border-radius:8px;padding:10px;display:grid;gap:6px;background:var(--surface)}
+.hl{position:relative;outline:3px solid var(--belt);outline-offset:2px;border-radius:6px}
+.hl::after{content:attr(data-n);position:absolute;top:-12px;right:-12px;width:20px;height:20px;border-radius:50%;background:var(--belt);color:#fff;font:700 .7rem/20px var(--body);text-align:center}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:4px}
+.note{font-size:.85rem;color:var(--muted)}
 .trouble{margin-top:28px}
 .trouble h3{font-size:1.05rem;margin-bottom:.4rem}
 .trouble ul{padding-left:1.1rem;margin:0}
@@ -114,6 +145,7 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
   <p><b>Claude Code</b> is a chat with Claude at claude.ai/code that can work inside that folder. That's where you talk to Claude.</p>
 </div>
 
+<p class="note">The pictures below are simplified drawings of the real screens: the red numbers show where to click, in order. Your screen may look a little different, but the button names are the same.</p>
 <div class="progress" id="ptext">0 of 5 done</div>
 <div class="bar"><i id="pbar"></i></div>
 
@@ -128,6 +160,14 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
       <p>In <b>Repository name</b> write <span class="url">robe-studio</span>, choose <b>Private</b> (only you can see it), click <span class="btn">Create repository</span>.</p>
       <p>On the next page click the blue link <b>uploading an existing file</b>. Drag all 5 files from the folder into the page, wait until all 5 are listed, then click <span class="btn">Commit changes</span>.</p>
       <p class="why">That's your own online folder with the kit in it. You never need to open it. Claude unpacks it by itself the first time you say hi.</p>
+      <figure class="shot"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>github.com</span></div><div class="pg"><div class="row between"><b class="logo">your GitHub page</b><span class="m-btn hl" data-n="1">+</span></div>
+<div class="menu right"><span class="hl" data-n="2">New repository</span><span>Import repository</span><span>New gist</span></div></div></div><figcaption>Top right: click <b>+</b>, then <b>New repository</b>.</figcaption></figure>
+      <figure class="shot"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>github.com/new</span></div><div class="pg"><div class="lbl">Repository name</div><div class="m-input hl" data-n="3">robe-studio</div>
+<div class="m-radio"><i></i> Public</div><div class="m-radio on hl" data-n="4"><i></i> Private</div>
+<div class="row end"><span class="m-btn green hl" data-n="5">Create repository</span></div></div></div><figcaption>Write <b>robe-studio</b>, tick <b>Private</b>, click <b>Create repository</b>.</figcaption></figure>
+      <figure class="shot"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>github.com/you/robe-studio</span></div><div class="pg"><div class="hint">Quick setup — get started by <span class="m-link hl" data-n="6">uploading an existing file</span></div>
+<div class="m-drop hl" data-n="7">Drag the 5 files here<br><small>CLAUDE.md · robe-studio.zip.part-aa · -ab · -ac · -ad</small></div>
+<div class="row end"><span class="m-btn green hl" data-n="8">Commit changes</span></div></div></div><figcaption>Click the blue link, drop the 5 files, wait until all 5 are listed, click <b>Commit changes</b>.</figcaption></figure>
       <label class="check"><input type="checkbox" id="s1"> Done</label>
     </div>
   </li>
@@ -138,6 +178,9 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
       <p>Open <span class="url">claude.ai/customize/connectors</span> (log in to Claude if asked). Find <b>Higgsfield</b> in the list:</p>
       <div class="clicks"><span class="btn">Higgsfield</span><span class="arrow">→</span><span class="btn">Connect</span><span class="arrow">→</span><span>log in with your Higgsfield account</span><span class="arrow">→</span><span class="btn">Allow</span></div>
       <p class="why">When it says "Connected", this step is done.</p>
+      <figure class="shot"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>claude.ai/customize/connectors</span></div><div class="pg"><div class="lbl">Connectors</div>
+<div class="m-card"><b>Higgsfield</b><span class="m-btn hl" data-n="1">Connect</span></div>
+<div class="m-card dim"><b>Other connectors…</b><span class="m-btn">Connect</span></div></div></div><figcaption>Find <b>Higgsfield</b>, click <b>Connect</b>, log in, click <b>Allow</b>.</figcaption></figure>
       <label class="check"><input type="checkbox" id="s2"> Done</label>
     </div>
   </li>
@@ -147,6 +190,9 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
       <p>Go to <span class="url">claude.ai/code</span>.</p>
       <p>The first time it asks to connect GitHub. Click <span class="btn">Connect GitHub</span>, log in, and when GitHub asks which folders Claude may use, choose <b>robe-studio</b> and click <span class="btn">Install</span> / <span class="btn">Save</span>.</p>
       <p>Back on claude.ai/code, choose <b>robe-studio</b> from the list. A chat box opens.</p>
+      <figure class="shot"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>claude.ai/code</span></div><div class="pg"><div class="lbl">Choose a repository</div>
+<div class="m-card hl" data-n="1"><b>robe-studio</b><small>private</small></div>
+<div class="m-card dim"><b>other-folder</b></div></div></div><figcaption>Pick <b>robe-studio</b>. A chat box opens.</figcaption></figure>
       <label class="check"><input type="checkbox" id="s3"> Done</label>
     </div>
   </li>
@@ -187,6 +233,10 @@ huggingface.co
         </div>
       </div>
       <p class="why">Either way, you do this once and never again.</p>
+      <figure class="shot"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>claude.ai/code</span></div><div class="pg"><div class="m-chat"><span class="m-env hl" data-n="1">☁ Default ▾</span><span class="ph">Ask Claude…</span></div>
+<div class="m-panel"><div class="lbl">Edit environment</div><div class="lbl small">Network access</div>
+<div class="m-radio on hl" data-n="2"><i></i> Full <small>(Option A)</small></div><div class="m-radio"><i></i> Custom <small>(Option B: paste the list)</small></div>
+<div class="row end"><span class="m-btn hl" data-n="3">Save</span></div></div></div></div><figcaption>Click the cloud name next to the chat box, then <b>Edit</b>, choose the network option, <b>Save</b>.</figcaption></figure>
       <label class="check"><input type="checkbox" id="s4"> Done</label>
     </div>
   </li>
@@ -196,6 +246,8 @@ huggingface.co
       <p>Write in the chat:</p>
       <div class="say">Hi, set me up</div>
       <p class="why">Press Enter and wait a few minutes. Claude prepares everything by itself and writes back when it's ready. If it asks you something, just answer in normal words. If a window pops up asking to allow something, click <b>Allow</b> / <b>Yes</b>.</p>
+      <figure class="shot"><div class="frame"><div class="bar"><i></i><i></i><i></i><span>claude.ai/code</span></div><div class="pg"><div class="m-msg">Hi, set me up</div>
+<div class="m-chat"><span class="ph">Hi, set me up</span><span class="m-send hl" data-n="1">↑</span></div></div></div><figcaption>Type the message and press <b>Enter</b>. Claude answers and does the rest.</figcaption></figure>
       <label class="check"><input type="checkbox" id="s5"> Done</label>
     </div>
   </li>

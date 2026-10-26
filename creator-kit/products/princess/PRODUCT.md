@@ -30,9 +30,12 @@ If it still says `nsfw`: (1) send the same call again once (it is random sometim
 | key in state/media.json | file | shots (seconds in the motion clip) | last shot |
 |---|---|---|---|
 | `motion` | `motion/broll-motion.mp4` (shared) | back view → opens + pouches → lying → cozy | sofa / bed |
-| `princess_motion_a` | `products/princess/motion/broll-a.mp4` | back of hood 0–0.8 → opens robe + steps into pouches 0.8–4.75 → sitting cozy 4.75–6.5 | sofa |
-| `princess_motion_b` | `products/princess/motion/broll-b.mp4` | holds robe rolled overhead + drops it 0–1.0 → back of hood 1.0–2.1 → opens + pouches 2.1–5.7 → sitting cozy 5.7–7.5 | bed / sofa |
-Pick the next one in this order every video (write the last used in `state/used.json` under `"princess_motion"`). Same prompt below; use `duration` = length of the motion clip (7 or 8). After it finishes run `cuts` and look at the sheet to find the shot borders (they move a little). Their on-screen text is already blurred out in broll-a/b; the prompt says to remove the blurred patches.
+| `princess_motion_a` | `products/princess/motion/broll-a.mp4` (6.5 s) | back of hood 0–0.8 → front: opens + steps into pouches 0.8–4.8 → sitting cozy on the sofa, hood up 4.8–6.5 | sofa |
+| `princess_motion_b` | `products/princess/motion/broll-b.mp4` (7.6 s) | rolled robe drops open 0–1.0 → back/shoulder close-ups 1.0–2.0 → opens + steps into pouches 2.0–5.7 → sitting cozy, robe closed 5.7–7.6 | sofa / bed |
+Rotate `motion` → `princess_motion_a` → `princess_motion_b` → `motion` … every video (write the last used in `state/used.json` under `"princess_motion"`). Same prompt below; `duration: 7` for `motion` and `princess_motion_a`, `duration: 8` for `princess_motion_b`. After it finishes run `cuts` and look at the sheet to find the shot borders (they move a little). The on-screen text is already blurred in broll-a and broll-b; the prompt says to remove the blurred patches.
+Extra lines to ADD to the prompt for these two clips (they fix what went wrong in the tests):
+- both: `The back of the robe and hood is plain royal blue with NO embroidery, exactly like Image 4. No apples, no fruit, no props anywhere. The last shot is in the SAME room of Image 2, on its sofa, and her face stays fully visible (the hood never covers her face).`
+- `princess_motion_b`: `At the start there is ONLY ONE robe: a single soft rolled bundle in her hands that unrolls downward into the one robe; the bundle disappears as it unrolls, never two robes.`
 **Room check (sofa or bed)** — see "Room check" in CLAUDE.md: the last cozy shot must match the room.
 
 ## B-roll (always new person + new room) — Kling 4.0 video-edit

@@ -15,3 +15,5 @@
 huggingface.co
 *.huggingface.co
 *.hf.co
+github.com
+*.githubusercontent.com

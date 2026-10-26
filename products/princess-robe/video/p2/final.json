@@ -1,0 +1,56 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p2/hook-copie.mp4",
+   "start": 0,
+   "end": 2.6
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p2/broll.mp4",
+   "start": 0.15,
+   "end": 3.5
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p2/conector.mp4",
+   "start": 1.0,
+   "end": 2.6
+  },
+  {
+   "file": "/home/user/limitless/creator-kit/products/princess/fixed/remote.mp4",
+   "start": 0,
+   "end": 3.1
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p2/broll.mp4",
+   "start": 3.62,
+   "end": 4.85
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/video/p2/cozy-zoom.mp4",
+   "start": 0,
+   "end": 2.05
+  }
+ ],
+ "texts": [
+  {
+   "text": "Do NOT let a Princess\nmom see this...\ud83e\udd29\ud83d\udc51",
+   "t0": 0,
+   "t1": 10.8,
+   "size": 76,
+   "y": 0.08
+  },
+  {
+   "text": "Comment \"PRINCESS\" if\nyou want one! \ud83d\udc51",
+   "t0": 10.8,
+   "t1": 99,
+   "size": 76,
+   "y": 0.08
+  }
+ ],
+ "music": "/home/user/heatgrump/library/music/princess/let-it-go.mp3",
+ "music_start": 56.2,
+ "music_vol": 0.75,
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/princess-robe/video/p2/printesa-pliat-final.mp4"
+}

@@ -4,13 +4,17 @@
 
 You send Claude a reel link or tell it an idea, in normal words. Claude makes the whole video: the hook, a new girl in a new room trying on the robe, the connector and the heating remote, the cozy ending, the text on screen and the music. You get one MP4, ready to post, in about 20 minutes. You don't need to know how to code and there are no commands to learn.
 
+## Who does what
+- **Alex** prepares the whole kit and sends you this guide, the Robe Studio kit link and, if the kit is private, a GitHub invitation by email. Write to Alex if you're stuck.
+- **You** make the accounts, do the 5 setup steps once, then talk to Claude and post the videos.
+
 ## What you need
 - A **Claude** subscription (Pro or Max) — Claude Code on the web is included.
 - A **Higgsfield** account with credits (higgsfield.ai) — this is where the images and videos are made.
 - A free **GitHub** account (github.com) — your kit lives there and your finished videos land there.
 
 ## Setup, once (about 5 minutes)
-1. **Your copy of the kit.** Open the Robe Studio link you received (you must be logged in to GitHub). Click **Use this template** → **Create a new repository**. Name: `robe-studio`. Choose **Private**. Click **Create repository**.
+1. **Your copy of the kit.** If Alex sent you a GitHub invitation by email, open it and click **Accept invitation**. Then open the Robe Studio kit link Alex sent you (you must be logged in to GitHub). Click **Use this template** → **Create a new repository**. Name: `robe-studio`. Choose **Private**. Click **Create repository**.
 2. **Connect Higgsfield.** Open **claude.ai/customize/connectors**, find **Higgsfield**, click **Connect** and log in to your Higgsfield account.
 3. **Open Claude Code.** Go to **claude.ai/code**. The first time it asks to connect GitHub: allow it (give it access to `robe-studio`). Pick the `robe-studio` repository.
 4. **Let it reach Instagram/TikTok.** At the top of the chat click the environment name (the cloud icon) → **Edit** → **Network access** → **Full** → **Save**. (This lets Claude download the reels you send. You do it only once.)
@@ -23,6 +27,8 @@ You send Claude a reel link or tell it an idea, in normal words. Claude makes th
 - Before each video Claude asks which cozy ending you want: the classic one, or your own idea (*reading a book on the bed*, *hot cocoa on the sofa*…). Change it often.
 
 At the end Claude gives you the video and a caption. They are also saved in your GitHub repository: open github.com → `robe-studio` → `output` → your video → **Download**.
+
+Want a specific song? Download it as an MP3, drag it into the chat (or use the paperclip) and say *"use this song"*. Claude picks the best part and puts the chorus on the big moment.
 
 Want a change? Say it: *"the text is too big"*, *"use another song"*, *"the hood looks wrong at the end"*. Claude redoes only that part.
 

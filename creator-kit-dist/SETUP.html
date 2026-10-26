@@ -54,6 +54,11 @@ section.daily h2{font-size:1.6rem;margin:.3rem 0 .6rem}
 .promise p{margin:0}
 .words{margin:16px 0 4px;color:var(--ink)}
 .words p{margin:.3rem 0}
+.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:14px;margin-top:16px}
+.roles>div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;min-width:0}
+.roles h2{font-size:1.1rem;color:var(--royal);margin-bottom:.3rem}
+.roles ul{margin:0;padding-left:1.1rem}
+.roles li{margin:.3rem 0}
 .trouble{margin-top:28px}
 .trouble h3{font-size:1.05rem;margin-bottom:.4rem}
 .trouble ul{padding-left:1.1rem;margin:0}
@@ -74,6 +79,25 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
   <h2>You don't edit anything. Ever.</h2>
   <p>No video editing, no files, no code, no settings to change later. You send a reel or an idea, Claude makes the whole video, checks it, and hands you the finished MP4. If you want something different, you just tell Claude in a normal sentence.</p>
 </div>
+<div class="roles">
+  <div>
+    <h2>What Alex does</h2>
+    <ul>
+      <li>Prepares the whole Robe Studio kit: the robes, the rules, the clips, everything.</li>
+      <li>Sends you <b>this page</b> and the <b>Robe Studio kit link</b>.</li>
+      <li>Sends you a GitHub invitation by email (if the kit is private), so you can open the link.</li>
+      <li>Is there if something doesn't work.</li>
+    </ul>
+  </div>
+  <div>
+    <h2>What you do</h2>
+    <ul>
+      <li>Make 3 free/paid accounts if you don't have them: Claude (Pro), Higgsfield, GitHub.</li>
+      <li>Click through the 5 steps below, once.</li>
+      <li>After that: send Claude reels and ideas, and post the videos.</li>
+    </ul>
+  </div>
+</div>
 <div class="words">
   <p><b>Two words you'll see:</b></p>
   <p><b>GitHub</b> is a free website that keeps your own online folder. In it lives the Robe Studio kit and your finished videos. You never open the files yourself.</p>
@@ -88,7 +112,8 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
     <span class="n">1</span><h2>Get your own copy of the kit</h2>
     <div class="c">
       <p>No GitHub account yet? Go to <span class="url">github.com</span>, click <span class="btn">Sign up</span> and make a free account (email + password).</p>
-      <p>Then open the Robe Studio link you received. You'll see a green button at the top right:</p>
+      <p>If Alex sent you a GitHub invitation by email, open it and click <span class="btn">Accept invitation</span>.</p>
+      <p>Then open the <b>Robe Studio kit link</b> Alex sent you. You'll see a green button at the top right:</p>
       <div class="clicks"><span class="btn">Use this template</span><span class="arrow">→</span><span class="btn">Create a new repository</span></div>
       <p>In the box <b>Repository name</b> write <span class="url">robe-studio</span>. Choose <b>Private</b> (only you can see it). Click the green <span class="btn">Create repository</span> at the bottom.</p>
       <p class="why">That's it: you now have your own copy of the kit. You don't need to look inside it.</p>
@@ -143,6 +168,7 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
     <div class="say">I have my own idea: she opens the front door and her mom holds a giant gift box.</div>
     <div class="say">The text is too big.</div>
   </div>
+  <p><b>Want a specific song?</b> Download it as an MP3 and drag it into the chat (or click the paperclip and choose it), then say <i>"use this song"</i>. Claude finds the best part of it and puts it in the video perfectly, with the chorus on the big moment.</p>
   <p>Claude asks you one question (which cozy ending you want), then makes the video, checks every frame and gives you the finished MP4 and a caption to copy. You don't cut, edit or fix anything. To save the video: click it in the chat and download it. (It's also kept in your GitHub folder, under <span class="url">output</span>.)</p>
   <p><b>Your part is the ideas.</b> Copy reels that work, and every two or three videos try a hook of your own.</p>
 
@@ -151,6 +177,7 @@ footer{margin-top:36px;font:500 .8rem var(--mono);color:var(--muted)}
     <ul>
       <li><b>Claude says Higgsfield isn't connected:</b> redo step 2, then start a new chat.</li>
       <li><b>Claude says a download was blocked:</b> check step 4, then start a new chat.</li>
+      <li><b>Still stuck:</b> write to Alex.</li>
       <li><b>Anything else:</b> ask <i>"what went wrong?"</i> and Claude explains and fixes it.</li>
     </ul>
   </div>

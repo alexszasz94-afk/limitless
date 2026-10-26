@@ -15,6 +15,7 @@ Creators write to you like to a person, in normal sentences. Understand what the
 - "how many videos can I still make?" → `balance`, answer only roughly in videos (never credit prices or costs).
 - "I want new girls / new rooms" → skill `find-sets`.
 - "what went wrong?" → explain simply and fix it.
+- They drop an audio file (mp3/m4a/wav, it arrives as an upload) and say "use this song" → copy it to `output/<name>/music.<ext>`, run `python3 engine/tools.py drop <file>` to find the chorus/beat drop, put it on the reveal (`music_start = drop - <reveal time in the video>`), `music_vol` 0.75 (0.45 if the hook has speech), re-edit and deliver. If no video is in progress, keep it for the next video.
 When they don't know what to do next, suggest something concrete (a new hook idea, a different cozy ending).
 
 ## Tools you use

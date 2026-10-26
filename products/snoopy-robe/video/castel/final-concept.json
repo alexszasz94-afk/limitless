@@ -8,9 +8,9 @@
    "audio": true
   },
   {
-   "file": "/home/user/limitless/products/snoopy-robe/video/castel/concept/unboxing-cabana.mp4",
-   "start": 0.2,
-   "end": 1.7,
+   "file": "/home/user/limitless/products/snoopy-robe/video/castel/concept/unboxing-sus.mp4",
+   "start": 0.8,
+   "end": 2.3,
    "audio": true
   },
   {
@@ -21,7 +21,12 @@
   {
    "file": "/home/user/limitless/products/snoopy-robe/video/castel/concept/telecomanda-cabana.mp4",
    "start": 0,
-   "end": 3.04
+   "end": 1.35
+  },
+  {
+   "file": "/home/user/limitless/products/snoopy-robe/video/castel/concept/telecomanda-snuglore2.mp4",
+   "start": 0.25,
+   "end": 2.16
   },
   {
    "file": "/home/user/limitless/products/snoopy-robe/video/castel/concept/cozy-pat.mp4",
@@ -41,20 +46,20 @@
   {
    "text": "vs..",
    "t0": 5.0,
-   "t1": 6.5,
+   "t1": 6.55,
    "size": 76,
    "y": 0.08
   },
   {
    "text": "The product: \ud83e\udd29\ud83d\udc36",
-   "t0": 6.5,
-   "t1": 15.5,
+   "t0": 6.55,
+   "t1": 15.6,
    "size": 76,
    "y": 0.08
   },
   {
    "text": "Comment \"SNOOPY\" if\nyou want one! \ud83d\udc36",
-   "t0": 15.5,
+   "t0": 15.6,
    "t1": 99,
    "size": 76,
    "y": 0.08

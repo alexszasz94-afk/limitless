@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Robe Studio Partnership Offer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+@page{size:A4;margin:0}
+:root{--ink:#1b1f3b;--muted:#5d6181;--line:#dcdcec;--royal:#2a3a9e;--belt:#c8283c;--gold:#e9b50f;--chip:#f0eff8;--bg:#ffffff;
+--display:"Bricolage Grotesque","Segoe UI",sans-serif;--body:"Figtree","Segoe UI",sans-serif;--mono:"JetBrains Mono",Menlo,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:10.5pt/1.55 var(--body);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;min-height:297mm;padding:20mm 20mm 16mm;position:relative;page-break-after:always;overflow:hidden}
+.page:last-child{page-break-after:auto}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.1}
+h2{font-size:17pt;font-weight:800;margin:0 0 3mm}
+h3{font-size:11.5pt;font-weight:600;margin:0 0 1.5mm}
+p{margin:0 0 3mm}
+.eyebrow{font:500 7.5pt/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--belt);margin-bottom:2.5mm}
+.foot{position:absolute;left:20mm;right:20mm;bottom:10mm;display:flex;justify-content:space-between;font:500 7pt var(--mono);color:var(--muted);border-top:1px solid var(--line);padding-top:3mm}
+/* cover */
+.cover{background:var(--royal);color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.cover .eyebrow{color:var(--gold)}
+.cover h1{font-size:44pt;font-weight:800;letter-spacing:-.02em;margin-top:30mm;max-width:150mm}
+.cover h1 span{color:var(--gold)}
+.cover .sub{font-size:14pt;max-width:140mm;margin-top:8mm;opacity:.92}
+.strip{display:flex;gap:2mm;margin-top:18mm}
+.strip div{flex:1;border-radius:2mm;padding:3mm 3.5mm;background:rgba(255,255,255,.12);font:600 9pt var(--body)}
+.strip small{display:block;font:500 6.5pt var(--mono);opacity:.75;margin-bottom:1mm}
+.cover .meta{display:flex;justify-content:space-between;font:500 8pt var(--mono);opacity:.85;border-top:1px solid rgba(255,255,255,.3);padding-top:4mm}
+.cover .foot{display:none}
+/* blocks */
+.lead{font-size:12.5pt;color:var(--ink);max-width:160mm;margin-bottom:7mm}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:5mm 8mm}
+.card{border:1px solid var(--line);border-radius:3mm;padding:4.5mm 5mm}
+.card p{margin:0;color:var(--muted);font-size:9.8pt}
+.num{font:800 20pt var(--display);color:var(--royal);line-height:1;margin-bottom:2mm}
+.price{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4mm;margin:6mm 0 7mm}
+.price div{border-radius:3mm;padding:5mm;background:var(--chip)}
+.price div:first-child{background:var(--royal);color:#fff}
+.price b{display:block;font:800 22pt var(--display);margin:1.5mm 0}
+.price small{font:500 7pt var(--mono);letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.price span{font-size:9pt;opacity:.85}
+table{width:100%;border-collapse:collapse;font-size:9.8pt;margin-bottom:6mm}
+th{text-align:left;font:500 7.5pt var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1.5px solid var(--ink);padding:2mm 2mm 2mm 0}
+td{border-bottom:1px solid var(--line);padding:2.6mm 2mm 2.6mm 0;vertical-align:top}
+td:first-child{font-weight:600;width:44mm}
+.steps{counter-reset:s;display:grid;gap:3mm;margin:0;padding:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:10mm 1fr;gap:3mm;align-items:start}
+.steps li::before{content:counter(s);font:800 13pt var(--display);color:#fff;background:var(--royal);border-radius:50%;width:9mm;height:9mm;display:grid;place-items:center}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:9.6pt}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:5mm 0 7mm;border-top:3px solid var(--royal)}
+.timeline div{padding:3mm 3mm 0 0;position:relative}
+.timeline div::before{content:"";position:absolute;top:-2.4mm;left:0;width:3.5mm;height:3.5mm;border-radius:50%;background:var(--gold);border:2px solid var(--royal)}
+.timeline small{font:500 7pt var(--mono);color:var(--belt);text-transform:uppercase;letter-spacing:.08em}
+.timeline b{display:block;font-size:10pt;margin:.8mm 0}
+.timeline span{font-size:9pt;color:var(--muted)}
+ul.clean{margin:0 0 4mm;padding-left:4.5mm}
+ul.clean li{margin:1mm 0}
+.note{background:var(--chip);border-left:3px solid var(--gold);padding:3.5mm 4.5mm;border-radius:0 2mm 2mm 0;font-size:9.8pt;margin:4mm 0}
+.sign{display:grid;grid-template-columns:1fr 1fr;gap:12mm;margin-top:14mm}
+.sign div{border-top:1px solid var(--ink);padding-top:2mm;font:500 8pt var(--mono);color:var(--muted)}
+</style></head><body>
+
+<section class="page cover">
+  <div>
+    <div class="eyebrow">Partnership offer · prepared for &lt;Brand name&gt;</div>
+    <h1>Winning reels, remade for <span>your product</span>, every day.</h1>
+    <p class="sub">Robe Studio is a done-for-you AI video system. Your creators send a reel that already works; they get back a finished, on-brand video in about 20 minutes. No editors, no agencies, no editing skills.</p>
+    <div class="strip">
+      <div><small>0–6 s</small>Hook</div><div><small>~1.5 s</small>Try-on</div><div><small>~2 s</small>Details</div><div><small>~1.6 s</small>Feature</div><div><small>~2 s</small>Feature</div><div><small>~2.5 s</small>Cozy ending</div>
+    </div>
+  </div>
+  <div class="meta"><span>Prepared by Alex · Robe Studio</span><span>October 2026</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">What you get</div>
+  <h2>A content engine your team runs by chatting</h2>
+  <p class="lead">Robe Studio replaces a video editor and a UGC agency with one system. It copies what already works in your niche and rebuilds it for your product, with quality checks at every step.</p>
+  <div class="grid">
+    <div class="card"><div class="num">01</div><h3>Winning hooks, remade</h3><p>Same motion, same timing and the same spoken words as the original reel, with new people and your product. Never a straight copy.</p></div>
+    <div class="card"><div class="num">02</div><h3>Your product, shown the way it sells</h3><p>Try-on, close-ups of the features and a cozy ending, in a new room with a new person every video.</p></div>
+    <div class="card"><div class="num">03</div><h3>Quality control built in</h3><p>Every clip is checked frame by frame and redone automatically when something looks off, before your team sees it.</p></div>
+    <div class="card"><div class="num">04</div><h3>Variety on autopilot</h3><p>Each video differs from the last three in hook, outfit, music and on-screen text, so your accounts never look repetitive.</p></div>
+    <div class="card"><div class="num">05</div><h3>Zero editing for your team</h3><p>Creators talk to Claude in plain English: a link, an idea, a song. They never open an editor or a file.</p></div>
+    <div class="card"><div class="num">06</div><h3>Volume at low cost</h3><p>About 20 minutes per finished video in 1080×1920, ready for TikTok, Reels and Shorts. Generation costs a few dollars per video.</p></div>
+  </div>
+  <div class="foot"><span>Robe Studio · Partnership offer</span><span>2</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">How it works</div>
+  <h2>From a reel link to a finished video</h2>
+  <ol class="steps">
+    <li><div><b>Your creator sends a reel and names the product</b><span>Or describes an idea of their own. Plain English, no commands.</span></div></li>
+    <li><div><b>The system studies the original</b><span>Every action and every spoken word is mapped to the second, so the remake moves and sounds the same.</span></div></li>
+    <li><div><b>New person, new room, your product</b><span>Faces and rooms rotate automatically; new ones are sourced when the library runs low.</span></div></li>
+    <li><div><b>Clips are generated and checked</b><span>Hook, try-on, product features and the ending. Anything with a glitch is redone with the fix written in.</span></div></li>
+    <li><div><b>Edited in a proven order</b><span>The original's on-screen text, music with the chorus on the reveal, 1080×1920.</span></div></li>
+    <li><div><b>Your creator posts</b><span>They get the MP4 and a caption. Their job is ideas and posting, nothing technical.</span></div></li>
+  </ol>
+  <div class="note"><b>Your team's only job is creativity:</b> picking reels that work, inventing new hooks, choosing the ending. Everything technical is handled by the system.</div>
+  <div class="foot"><span>Robe Studio · Partnership offer</span><span>3</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">Investment</div>
+  <h2>Built as a long-term partnership</h2>
+  <p class="lead">One start fee covers the full setup and your entire first month of support. After that, my fee grows only when your revenue does.</p>
+  <div class="price">
+    <div><small>To start</small><b>$5,000</b><span>Setup + first month of support included</span></div>
+    <div><small>From month 2</small><b>6%</b><span>of monthly store revenue</span></div>
+    <div><small>Monthly minimum</small><b>$1,500</b><span>whichever is higher applies</span></div>
+  </div>
+  <div class="timeline">
+    <div><small>Week 1</small><b>Adaptation</b><span>System adapted to your product: references, try-on and feature clips.</span></div>
+    <div><small>Week 1–2</small><b>Team onboarding</b><span>Setup for each creator, first test videos together.</span></div>
+    <div><small>Weeks 2–4</small><b>Daily production</b><span>Your team produces; I review, fix and improve.</span></div>
+    <div><small>Month 2+</small><b>Partnership</b><span>Updates every few days, support, new formats.</span></div>
+  </div>
+  <table>
+    <tr><th>Included</th><th>First month</th><th>Every month after</th></tr>
+    <tr><td>Setup for your product</td><td>Yes</td><td>New products on request</td></tr>
+    <tr><td>Creators supported</td><td>Up to 5</td><td>Up to 5 (more by agreement)</td></tr>
+    <tr><td>System updates</td><td>Every few days</td><td>Every few days</td></tr>
+    <tr><td>Support for your team</td><td>Reply within 24 h</td><td>Reply within 24 h + weekly check-in</td></tr>
+    <tr><td>New hook formats and fixes</td><td>Yes</td><td>Yes</td></tr>
+  </table>
+  <div class="foot"><span>Robe Studio · Partnership offer</span><span>4</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">Terms</div>
+  <h2>Partnership terms, in plain words</h2>
+  <ul class="clean">
+    <li><b>Start fee:</b> $5,000, paid before setup begins. Non-refundable; it covers the setup and the first month of support.</li>
+    <li><b>Revenue share:</b> from month 2, 6% of the store's gross monthly revenue, with a $1,500 monthly minimum. Invoiced by the 5th, due by the 10th of each month.</li>
+    <li><b>Reporting:</b> read-only collaborator access to the store (or the monthly sales report from the store and payment processor).</li>
+    <li><b>Term:</b> 6 months to start, then month to month. Either side can end it with 30 days' notice after the first 6 months.</li>
+    <li><b>License:</b> you get the right to use the system for your brand while the partnership runs. The system stays mine; it can't be shared, copied or resold.</li>
+    <li><b>Your accounts:</b> image and video generation credits, Claude and GitHub run on your own accounts, so you keep full control of your content and costs.</li>
+    <li><b>Your content:</b> every video your team makes is yours to keep and use, during and after the partnership.</li>
+  </ul>
+  <div class="eyebrow" style="margin-top:8mm">Next steps</div>
+  <h2>Getting started</h2>
+  <ol class="steps">
+    <li><div><b>Agree on the offer</b><span>A short call to confirm products, number of creators and start date.</span></div></li>
+    <li><div><b>Start fee and access</b><span>$5,000 paid; store collaborator access shared.</span></div></li>
+    <li><div><b>First videos within week 1</b><span>Your product set up and your first creator producing.</span></div></li>
+  </ol>
+  <div class="sign"><div>Alex · Robe Studio · date</div><div>&lt;Brand name&gt; · date</div></div>
+  <div class="foot"><span>Robe Studio · Partnership offer</span><span>5</span></div>
+</section>
+</body></html>

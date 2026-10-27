@@ -23,6 +23,7 @@ You are the creator's quality control. Nothing goes to the creator until it pass
 - Robe stays correct in EVERY frame (hood always the right one, pouches correct in the B-roll, robe full length).
 - End: no jump to a product/character photo, no sudden zoom, no fade → trim before it.
 - Person in the FOREGROUND in every shot: nothing (table, plant, chair) between her and the camera → redo with the room photo without that object.
+- Hook sound: when the reference has speech, `tools.py compare-audio <reference hook> <our hook>` must say OK, and the hook segment has `"audio": true` in the edit (check the final with `tools.py speech-times`: the voice bursts are there). A silent hook where the original speaks = redo.
 - Copied hook: `tools.py compare` original vs ours on each key action — same column = same second; faster/slower or different → redo (HOOKS.md step 5). Spoken words land on the same seconds as the original (loudness check).
 - B-roll pockets: at the start of the pocket shot BOTH feet are outside on the floor and she puts them in one after the other, from outside to inside. A foot already inside at the start → redo.
 - B-roll: the person is in EVERY shot (never an empty robe, never a missing head in the back view) → else cut that shot or redo.

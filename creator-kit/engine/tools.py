@@ -19,6 +19,8 @@
   python3 engine/tools.py speech-times <video> [seconds]                  -> when the voice bursts are (start-end), to put each spoken word on its exact second
   python3 engine/tools.py cleantext <video> <clean.jpg> <out.mp4> <l> <t> <r> <b> [...more boxes]  -> covers their on-screen text with the same spot from a clean photo (static camera only) - no blur for Kling to copy
   python3 engine/tools.py broll-check <broll.mp4> <motion.mp4> <out-folder>   -> B-roll safety check: shot count vs the motion clip, glitch spikes inside shots, safe segments, one sheet per shot to look at
+  python3 engine/tools.py hook-audio <reference.mp4> [seconds]            -> MANDATORY on every reference: is there speech? every word WITH its second + a ready "Sound:" line for the Kling prompt
+  python3 engine/tools.py compare-audio <reference.mp4> <our-hook.mp4> [seconds]   -> words + seconds of both, to prove our hook says the same thing at the same time
   python3 engine/tools.py history [n]                                     -> what the last n videos used (default 5), so the next one is different
 """
 import json, math, os, subprocess, sys, tempfile, glob
@@ -274,6 +276,51 @@ def broll_check(f, motion, folder):
     for p_ in problems: print(" -", p_)
 
 
+def words(f, until="8"):
+    """[(start, word)] with Whisper, or None if Whisper can't run"""
+    try:
+        from faster_whisper import WhisperModel
+        import numpy as np
+        m = WhisperModel("base.en", device="cpu", compute_type="int8")
+    except Exception as e:
+        print("WHISPER_UNAVAILABLE:", str(e)[:120]); return None
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-t", str(until), "-i", f, "-f", "s16le", "-ac", "1", "-ar", "16000", "-"], capture_output=True).stdout
+    segs, _ = m.transcribe(np.frombuffer(pcm, np.int16).astype(np.float32) / 32768.0, word_timestamps=True)
+    return [(round(w.start, 2), w.word.strip()) for s in segs for w in (s.words or [])]
+
+
+def hook_audio(f, until="8"):
+    ws = words(f, until)
+    speech_times(f, until)
+    if ws is None:
+        print("-> Use Higgsfield video_analysis_create on the uploaded hook part (WHO says WHAT), and the voice bursts above for WHEN. Do not skip this.")
+        return
+    if not ws:
+        print("SPEECH: none (music/sounds only) -> no voice in the hook; keep their kind of sounds in the prompt.")
+        return
+    print("SPEECH: yes")
+    for s, w in ws: print(f"  {s:5.2f}s  {w}")
+    line = ", ".join(f'"{w}" at {s} s' for s, w in ws)
+    print('PUT THIS IN THE HOOK PROMPT (add who says it, from Higgsfield video_analysis or the frames):')
+    print(f'Sound: <who> says out loud, <tone>, exactly like in the input video: {line}; <other real sounds>; no music. Their lips move in sync with their words.')
+
+
+def compare_audio(ref, ours, until="8"):
+    a, b = words(ref, until), words(ours, until)
+    if a is None or b is None:
+        print("Whisper unavailable: compare the voice bursts instead:"); speech_times(ref, until); speech_times(ours, until); return
+    print("REFERENCE:", "  ".join(f"{s}:{w}" for s, w in a)); print("OURS:     ", "  ".join(f"{s}:{w}" for s, w in b))
+    nums = {"0": "zero", "1": "one", "2": "two", "3": "three", "4": "four", "5": "five", "6": "six", "7": "seven", "8": "eight", "9": "nine", "10": "ten"}
+    def norm(x):
+        x = "".join(ch for ch in x.lower() if ch.isalnum()); return nums.get(x, x)
+    bad = [w for (s, w) in a if not any(norm(w) == norm(w2) and abs(s - s2) < 0.4 for s2, w2 in b)]
+    score = 1 - len(bad) / max(len(a), 1)
+    if score >= 0.8:
+        print(f"OK - {round(score * 100)}% of the words match at the same seconds" + (f" (Whisper missed: {bad} - listen-check by the voice bursts)" if bad else ""))
+    else:
+        print(f"NOT OK - only {round(score * 100)}% match. Missing/late in ours: {bad} -> regenerate the hook with every word and its second in the Sound: line")
+
+
 def history(n="5"):
     f = os.path.join(ROOT, "state/used.json")
     vids = (json.load(open(f)) if os.path.exists(f) else {}).get("videos", [])
@@ -308,5 +355,7 @@ if __name__ == "__main__":
     elif c == "speech-times": speech_times(a[1], a[2] if len(a) > 2 else "6")
     elif c == "cleantext": cleantext(a[1], a[2], a[3], a[4:])
     elif c == "broll-check": broll_check(a[1], a[2], a[3])
+    elif c == "hook-audio": hook_audio(a[1], a[2] if len(a) > 2 else "8")
+    elif c == "compare-audio": compare_audio(a[1], a[2], a[3] if len(a) > 3 else "8")
     elif c == "history": history(a[1] if len(a) > 1 else "5")
     else: print(__doc__)

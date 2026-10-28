@@ -1,0 +1,138 @@
+[
+ {
+  "index": 2200,
+  "key": "snoopy-conn-A",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 4,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "6e493245-a9ac-4ae2-a09f-ca61850bc4b2"
+    },
+    {
+     "role": "image_references",
+     "value": "1f8e0ca4-08c6-4035-a0c6-af57ccf98265"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same single close-up shot, the same camera, framing, both hand positions, movements and timing: the upper hand pushes the plug down into the lower part until the two parts are FULLY joined with NO gap, exactly when it happens in the input, and they stay joined. Change ONLY: (1) the connector becomes the grey two-part plastic cable connector of Image 1, REPRODUCE IT ONE TO ONE from Image 1: light grey, ribbed strain relief on the cable, the upper plug with small vertical grooves, the lower socket with the small chevron arrows; grey cables; (2) the hands are a young woman's hands with natural nude nails; (3) the sleeve cuff at the lower wrist and any robe fabric in frame become the Snoopy robe of Images 2-5, REPRODUCE IT ONE TO ONE from Images 2-5: light camel-brown ribbed plush with the embroidered dog and little yellow birds, white fluffy sherpa cuff; (4) the background becomes a real decorated Christmas tree right behind the hands, filling the whole background, slightly out of focus: deep green fir branches with red and gold glass baubles and warm white fairy lights in soft round bokeh. Very soft, very natural light, gentle and low-contrast, true slightly warm colours; UGC style, a real unedited iPhone 17 Pro Max close-up video, faint sensor grain, real skin texture with pores, correct hands with five fingers each; no glow, no HDR, no CGI look, no zoom. Natural real movement with real weight, the same speed as the input, no morphing, no jerks. NO TEXT ANYWHERE: no captions, no emoji, no watermark. Silent."
+  }
+ },
+ {
+  "index": 2201,
+  "key": "snoopy-conn-B",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 4,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "6e493245-a9ac-4ae2-a09f-ca61850bc4b2"
+    },
+    {
+     "role": "image_references",
+     "value": "1f8e0ca4-08c6-4035-a0c6-af57ccf98265"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same single close-up shot, the same camera, framing, both hand positions, movements and timing: the upper hand pushes the plug down into the lower part until the two parts are FULLY joined with NO gap, exactly when it happens in the input, and they stay joined. Change ONLY: (1) the connector becomes the grey two-part plastic cable connector of Image 1, REPRODUCE IT ONE TO ONE from Image 1: light grey, ribbed strain relief on the cable, the upper plug with small vertical grooves, the lower socket with the small chevron arrows; grey cables; (2) the hands are a young woman's hands with soft milky-pink nails; (3) the sleeve cuff at the lower wrist and any robe fabric in frame become the Snoopy robe of Images 2-5, REPRODUCE IT ONE TO ONE from Images 2-5: light camel-brown ribbed plush with the embroidered dog and little yellow birds, white fluffy sherpa cuff; (4) the background becomes a real decorated Christmas tree right behind the hands, filling the whole background, slightly out of focus: fir branches with frosted snowy tips, white and silver glass baubles and warm white fairy lights in soft round bokeh. Very soft, very natural light, gentle and low-contrast, true slightly warm colours; UGC style, a real unedited iPhone 17 Pro Max close-up video, faint sensor grain, real skin texture with pores, correct hands with five fingers each; no glow, no HDR, no CGI look, no zoom. Natural real movement with real weight, the same speed as the input, no morphing, no jerks. NO TEXT ANYWHERE: no captions, no emoji, no watermark. Silent."
+  }
+ },
+ {
+  "index": 2202,
+  "key": "princess-conn-B",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 4,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "6e493245-a9ac-4ae2-a09f-ca61850bc4b2"
+    },
+    {
+     "role": "image_references",
+     "value": "53a99198-de6e-4398-899b-dad1d20ad781"
+    },
+    {
+     "role": "image_references",
+     "value": "31225591-9171-4aba-b355-82942bbe66c6"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same single close-up shot, the same camera, framing, both hand positions, movements and timing: the upper hand pushes the plug down into the lower part until the two parts are FULLY joined with NO gap, exactly when it happens in the input, and they stay joined. THE CONNECTOR STAYS EXACTLY AS IN THE INPUT VIDEO: the same lilac two-part plastic connector and lilac cables, unchanged. Change ONLY: (1) the hands are a young woman's hands with soft milky-pink nails; (2) the sleeve cuff at the lower wrist becomes the princess robe of Images 1-2, REPRODUCE IT ONE TO ONE from Images 1-2: royal-blue plush sleeve ending in a white fluffy cuff with a gold embroidered band; (3) the background becomes a real decorated Christmas tree right behind the hands, filling the whole background, slightly out of focus: fir branches with frosted snowy tips, white and silver glass baubles and warm white fairy lights in soft round bokeh. Very soft, very natural light, gentle and low-contrast, true slightly warm colours; UGC style, a real unedited iPhone 17 Pro Max close-up video, faint sensor grain, real skin texture with pores, correct hands with five fingers each; no glow, no HDR, no CGI look, no zoom. Natural real movement with real weight, the same speed as the input, no morphing, no jerks. NO TEXT ANYWHERE: no captions, no emoji, no watermark. Silent."
+  }
+ },
+ {
+  "index": 2203,
+  "key": "princess-conn-C",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 4,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "6e493245-a9ac-4ae2-a09f-ca61850bc4b2"
+    },
+    {
+     "role": "image_references",
+     "value": "53a99198-de6e-4398-899b-dad1d20ad781"
+    },
+    {
+     "role": "image_references",
+     "value": "31225591-9171-4aba-b355-82942bbe66c6"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same single close-up shot, the same camera, framing, both hand positions, movements and timing: the upper hand pushes the plug down into the lower part until the two parts are FULLY joined with NO gap, exactly when it happens in the input, and they stay joined. THE CONNECTOR STAYS EXACTLY AS IN THE INPUT VIDEO: the same lilac two-part plastic connector and lilac cables, unchanged. Change ONLY: (1) the hands are a young woman's hands with classic glossy red nails; (2) the sleeve cuff at the lower wrist becomes the princess robe of Images 1-2, REPRODUCE IT ONE TO ONE from Images 1-2: royal-blue plush sleeve ending in a white fluffy cuff with a gold embroidered band; (3) the background becomes a real decorated Christmas tree right behind the hands, filling the whole background, slightly out of focus: deep green fir branches with blush-pink and gold glass baubles, small gold crowns and warm white fairy lights in soft round bokeh. Very soft, very natural light, gentle and low-contrast, true slightly warm colours; UGC style, a real unedited iPhone 17 Pro Max close-up video, faint sensor grain, real skin texture with pores, correct hands with five fingers each; no glow, no HDR, no CGI look, no zoom. Natural real movement with real weight, the same speed as the input, no morphing, no jerks. NO TEXT ANYWHERE: no captions, no emoji, no watermark. Silent."
+  }
+ }
+]

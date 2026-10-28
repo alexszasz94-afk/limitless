@@ -145,16 +145,19 @@ def next_motion(robe):
     return "motion2" if last == "motion" else "motion"
 
 
-def next_remote(robe):
-    """rule 28 Oct (Alex): connector = the fixed clip; remote = one of 3 tree close-ups (fixed/remote-tree-1..3.mp4), in rotation."""
+def next_fixed(robe, kind):
+    """rule 28 Oct (Alex): connector and remote are reused - 2 tree close-ups of each per robe (fixed/<kind>-tree-N.mp4, 4K), in rotation."""
     f = os.path.join(ROOT, "state/used.json")
     vids = [v for v in (json.load(open(f)) if os.path.exists(f) else {}).get("videos", []) if v.get("robe", "").lower() == robe.lower()]
-    have = sorted(glob.glob(os.path.join(ROOT, "products", robe.lower(), "fixed", "remote-tree-*.mp4")))
-    if not have:
+    names = [os.path.basename(h) for h in sorted(glob.glob(os.path.join(ROOT, "products", robe.lower(), "fixed", f"{kind}-tree-*.mp4")))]
+    if not names:
         return None
-    last = vids[-1].get("remote", "") if vids else ""
-    names = [os.path.basename(h) for h in have]
+    last = vids[-1].get(kind, "") if vids else ""
     return names[(names.index(last) + 1) % len(names)] if last in names else names[0]
+
+
+def next_remote(robe):
+    return next_fixed(robe, "remote")
 
 
 def next_set(robe=""):
@@ -171,8 +174,9 @@ def next_set(robe=""):
     print("character:", os.path.relpath(pick["characters"], ROOT)); print("room:", os.path.relpath(pick["rooms"], ROOT))
     if robe:
         m = next_motion(robe)
-        r = next_remote(robe)
-        if r: print("remote:", f"products/{robe.lower()}/fixed/{r} (whole clip; log it with remote={r}); connector: the fixed connector clip")
+        for kind in ("connector", "remote"):
+            r = next_fixed(robe, kind)
+            if r: print(f"{kind}:", f"products/{robe.lower()}/fixed/{r} (whole clip; log it with {kind}={r})")
         print("motion:", m, "-> B-roll from", "motion/broll-motion-2.mp4 (duration 6, hem sentence + edit times in PRODUCT.md)" if m == "motion2" else "motion/broll-motion.mp4 (classic)")
     for kind in ("characters", "rooms"):
         left = len([p for p in glob.glob(os.path.join(ROOT, "library", kind, "*.jpg")) if os.path.basename(p) not in used[kind]])

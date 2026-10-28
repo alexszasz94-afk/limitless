@@ -15,8 +15,8 @@ Long hooded heated robe. Outside: light camel-brown ribbed (corduroy-like) plush
 | snoopy_box | refs/box.jpg | the gift box (cream linen box, camel velvet ribbon, round seal) |
 
 ## Fixed clips (already made — never generate again)
-- `fixed/connector-and-remote.mp4` — 0.00–1.375 s = connector clicks in; after that = remote close-up. Use **0–1.375** for the connector.
-- `fixed/remote-tree-1.mp4`, `-2`, `-3` — white remote close-up next to the Christmas tree with the Snoopy sleeve (3 different trees/nails), 1.9 s, lights go up. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use the whole clip 0–1.9. Never generate a new remote. (`fixed/remote-closeup.mp4` = old one, not used.)
+- `fixed/connector-tree-1.mp4`, `-2` — grey connector pushed fully in, close-up next to the Christmas tree, woman's hands + Snoopy sleeve, 4K, 4 s. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use **1.2–4.0** (fully joined at ~3.0 s, then held — never cut before). Never generate a new connector. (`fixed/connector-and-remote.mp4` = old one, not used.)
+- `fixed/remote-tree-1.mp4`, `-2` — white remote close-up next to the Christmas tree with the Snoopy sleeve (2 different trees/nails), 4K, 1.9 s, lights go up. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use the whole clip 0–1.9. Never generate a new remote. (`fixed/remote-closeup.mp4` = old one, not used.)
 
 ## Music
 - `music/linus-and-lucy.mp3` — `"music_start": 0.8`, `"music_vol": 0.75`, `"orig_vol": 1.0`.
@@ -62,7 +62,7 @@ After it finishes: `python3 engine/tools.py cuts output/<name>/broll.mp4` → yo
 ## Standard edit order (ALWAYS this order: hook → puts it on → foot pockets → connector → remote → cozy) (edit.json segments)
 1. hook clip(s) with `"audio": true`
 2. broll.mp4 `0.15 → first cut of shot 3` (≈ 0.15–3.46) — robe on + pouch
-3. fixed/connector-and-remote.mp4 `0 → 1.375`
+3. fixed/connector-tree-N.mp4 `1.2 → 4.0` (N from next-set, rotation)
 4. fixed/remote-tree-N.mp4 whole clip (N from next-set, rotation)
 5. broll.mp4 shot 3 (lying) `cut2 + 0.05 → cut3 - 0.05` (≈ 3.54–4.79)
 6. cozy-zoom.mp4 `0 → 2.1`

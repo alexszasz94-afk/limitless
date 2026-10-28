@@ -19,7 +19,10 @@
   python3 engine/tools.py speech-times <video> [seconds]                  -> when the voice bursts are (start-end), to put each spoken word on its exact second
   python3 engine/tools.py cleantext <video> <clean.jpg> <out.mp4> <l> <t> <r> <b> [...more boxes]  -> covers their on-screen text with the same spot from a clean photo (static camera only) - no blur for Kling to copy
   python3 engine/tools.py broll-check <broll.mp4> <motion.mp4> <out-folder>   -> B-roll safety check: shot count vs the motion clip, glitch spikes inside shots, safe segments, one sheet per shot to look at
+  python3 engine/tools.py retime <our-hook.mp4> <reference-hook.mp4> <out.mp4> [hook end s] -> puts every cut/action on the EXACT second of the original and ends exactly where it ends (rule 28 Oct)
   python3 engine/tools.py vocals <hook.mp4> <out.mp4>                    -> keeps ONLY the voice of a copied hook (Demucs) - Kling copies the original music, never deliver it (rule 28 Oct)
+  python3 engine/tools.py onsets <file> [0.2]                            -> seconds where each word starts; on `vocals` of the REFERENCE = where our voice must go. No onsets in the vocals = the original has only a song (no voice)
+  python3 engine/tools.py place-voice <seedance.mp4> <out.wav> <hook end> <t1,t2,..> <s1,s2,..> [cap] -> puts Seedance words (onsets s) on the reference seconds (t)
   python3 engine/tools.py hook-audio <reference.mp4> [seconds]            -> MANDATORY on every reference: is there speech? every word WITH its second + a ready "Sound:" line for the Kling prompt
   python3 engine/tools.py compare-audio <reference.mp4> <our-hook.mp4> [seconds]   -> words + seconds of both, to prove our hook says the same thing at the same time
   python3 engine/tools.py history [n]                                     -> what the last n videos used (default 5), so the next one is different
@@ -232,6 +235,65 @@ def vocals(f, out):
     shutil.rmtree(d, ignore_errors=True); print(out, "- only the voice is left; check it with hook-audio")
 
 
+def _env(f):
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", f, "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
+    x = np.frombuffer(raw, np.int16).astype(np.float32) / 32768; n = len(x) // 160
+    e = np.sqrt((x[:n * 160].reshape(n, 160) ** 2).mean(1)); return np.convolve(e, np.ones(3) / 3, "same")   # 10 ms
+
+
+def onsets(f, fac="0.2"):
+    """seconds where each spoken word/scream starts (energy rising edges). Run it on `vocals` output of the
+    REFERENCE hook: our copied hook has the same lip seconds, so these are the targets for the voice."""
+    e = _env(f); thr = e.max() * float(fac); out, on, last = [], False, -9
+    for i, v in enumerate(e):
+        if v > thr and not on and i / 100 - last > 0.3: out.append(round(i / 100, 2)); last = i / 100
+        on = v > thr * 0.6 if on else v > thr
+    print(out); return out
+
+
+def place_voice(src, out, dur, targets, starts, cap="0.8"):
+    """rule 28 Oct: cut the Seedance voice at `starts` (its own word onsets, from `onsets`) and put each piece
+    on `targets` (the reference's word onsets). The last piece runs to the end (the full last phrase).
+    A silent bed from 0 s keeps every word on its second (without it amix shifts everything early)."""
+    T = [float(x) for x in targets.split(",")]; S = [float(x) for x in starts.split(",")]; dur = float(dur); cap = float(cap)
+    assert len(T) == len(S), "targets and starts need the same count"
+    sr = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=sample_rate", "-of", "csv=p=0", src], capture_output=True, text=True).stdout.strip() or "48000"
+    full = duration(src); fc = []
+    for i, (s, t) in enumerate(zip(S, T)):
+        s0 = max(0, s - 0.04); en = min(S[i + 1] - 0.02, s + cap) if i < len(S) - 1 else full
+        d = int(max(0, t - 0.04) * 1000)
+        fc.append(f"[0:a]atrim={s0:.3f}:{en:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.01,afade=t=out:st={max(0, en - s0 - 0.03):.3f}:d=0.03,adelay={d}|{d}[p{i}]")
+    fc.append(f"aevalsrc=0|0:d={dur}:s={sr}[z]")
+    fc.append("[z]" + "".join(f"[p{i}]" for i in range(len(S))) + f"amix=inputs={len(S) + 1}:duration=first:normalize=0,apad,atrim=0:{dur}[o]")
+    run(["ffmpeg", "-v", "error", "-y", "-i", src, "-filter_complex", ";".join(fc), "-map", "[o]", "-ac", "2", "-ar", "48000", out])
+    print(out, "- now check: tools.py onsets", out, "must give the targets", T)
+
+
+def retime(ours, ref, out, end=None):
+    """rule 28 Oct: our hook must have EXACTLY the original's seconds. Matches every cut of ours to the
+    nearest cut of the reference and speeds/slows each piece so every cut lands on the original's second;
+    the result ends exactly where the original hook ends."""
+    rc, oc = cuts(ref), cuts(ours)
+    end = float(end) if end else duration(ref)
+    pairs = []
+    for o in oc:   # each of our cuts -> the nearest cut of the original (same shot change)
+        c = min(rc, key=lambda x: abs(x - o)) if rc else None
+        if c is None or c >= end - 0.05 or abs(c - o) > 1.0: continue
+        if not pairs or (c > pairs[-1][0] and o > pairs[-1][1]): pairs.append((c, o))
+    src, dst = [0.0] + [p[1] for p in pairs], [0.0] + [p[0] for p in pairs]
+    od = duration(ours); last_src = min(od, end * (src[-1] / dst[-1]) if len(src) > 1 and dst[-1] > 0 else end)
+    src.append(min(od, max(last_src, src[-1] + 0.1))); dst.append(end)
+    parts, fc = [], []
+    for i in range(len(src) - 1):
+        f = (dst[i + 1] - dst[i]) / max(0.01, src[i + 1] - src[i])
+        fc.append(f"[0:v]trim={src[i]:.3f}:{src[i+1]:.3f},setpts=(PTS-STARTPTS)*{f:.4f}[v{i}]"); parts.append(f"[v{i}]")
+        print(f"piece {src[i]:.2f}-{src[i+1]:.2f}s -> {dst[i]:.2f}-{dst[i+1]:.2f}s (speed x{1/f:.2f})")
+    fc.append("".join(parts) + f"concat=n={len(parts)}:v=1:a=0,fps=30[v]")
+    run(["ffmpeg", "-v", "error", "-y", "-i", ours, "-filter_complex", ";".join(fc), "-map", "[v]", "-an", "-t", f"{end:.3f}", "-c:v", "libx264", "-crf", "16", out])
+    print(out, "- now every cut is on the original's second; check with compare and cuts")
+
+
 def cleantext(f, clean, out, boxes):
     w, h = map(int, run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).stdout.strip().split(","))
     fc, last = [f"[1:v]scale={w}:{h},split={len(boxes) // 4}" + "".join(f"[c{i}]" for i in range(len(boxes) // 4))], "0:v"
@@ -363,7 +425,10 @@ if __name__ == "__main__":
     elif c == "compare": compare(*a[1:6])
     elif c == "log": log(a[1], a[2:])
     elif c == "speech-times": speech_times(a[1], a[2] if len(a) > 2 else "6")
+    elif c == "retime": retime(a[1], a[2], a[3], a[4] if len(a) > 4 else None)
     elif c == "vocals": vocals(a[1], a[2])
+    elif c == "onsets": onsets(a[1], a[2] if len(a) > 2 else "0.2")
+    elif c == "place-voice": place_voice(*a[1:7])
     elif c == "cleantext": cleantext(a[1], a[2], a[3], a[4:])
     elif c == "broll-check": broll_check(a[1], a[2], a[3])
     elif c == "hook-audio": hook_audio(a[1], a[2] if len(a) > 2 else "8")

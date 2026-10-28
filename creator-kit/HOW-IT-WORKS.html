@@ -171,10 +171,12 @@ a{color:var(--royal)}
   <p>When you send a link, Claude doesn't just "get inspired". It rebuilds the reel's hook so it moves and sounds like the original, but with our robe and different people.</p>
   <ol class="flow">
     <li><div><b>Downloads the reel and studies it frame by frame.</b>It writes down every action with its second and speed, for example "0–2.7 s she sways the rolled robe slowly; at 2.8 s she lets it unroll".</div></li>
+    <li><div><b>Makes a list of every object and its job.</b>Before anything is generated, Claude writes down each object in their hook and what it is for. Their <i>product</i> becomes our robe, and it must clearly look like a robe (hood with the face, sleeves, full length), never a cape or a blanket. Their <i>packaging</i> becomes our box with our brand printed in the same spot (for example HEATGRUMP where their box says PRINCESSCOMFORT). A <i>decoration</i> themed like their product stays the same kind of object with our character on it: an Elsa blanket becomes a Grinch or Snoopy blanket, a Disney Princess pillow becomes a Grinch or Snoopy pillow. Plain things (a white blanket, a table, a shopping cart) and the place stay exactly as they are. Anything that belongs only to their product (a projector, a light) is removed. For every changed object Claude first makes a picture of it, checks it, and gives that picture to the video tool.</div></li>
     <li><div><b>Removes their caption, cleanly.</b>The text they put on top of their video is removed using a clean photo of the same spot, never with blur (blur would show up as a smudge in our video).</div></li>
     <li><div><b>Keeps their place as it is.</b>Store signs and logos in the scene stay exactly as in the original. Only the people and the product change.</div></li>
     <li><div><b>Changes the people.</b>Our person replaces theirs, and anyone else in the shot gets a clearly different face, so it is a remake, never a copy.</div></li>
-    <li><div><b>Generates the new hook from their real footage.</b>The motion, speed and seconds stay identical: if their robe falls slowly at 2.8 s, ours does too.</div></li>
+    <li><div><b>Generates the new hook from their real footage.</b>The motion, speed and seconds stay identical: if their robe falls slowly at 2.8 s, ours does too. Their clip is cut to whole seconds before it goes in (the video tool only makes whole seconds, and stretches anything else), and the second-by-second timeline goes into the instructions.</div></li>
+    <li><div><b>Put on the original's exact seconds.</b>After generating, every cut of our hook is moved onto the second of the matching cut in theirs, and the hook ends exactly where theirs ends. Same length, same actions, same moments.</div></li>
     <li><div><b>Compares ours with theirs, side by side.</b>Ten pictures per second, one row each. Anything faster, slower or different is regenerated.</div></li>
   </ol>
   <div class="note"><b>On-screen text:</b> the video uses the reference's original text, word for word, with the same emojis. It worked for them; we keep it.</div>
@@ -189,9 +191,9 @@ a{color:var(--royal)}
   <p>If the reel has a voice ("Three, two, one… let's see how it turns out!"), our hook says the same words on the same seconds. This step is never skipped:</p>
   <ol class="flow">
     <li><div><b>Who says what.</b>Higgsfield's video analysis listens to the reel and writes down who speaks (man or woman, which tone) and the exact words.</div></li>
-    <li><div><b>When each word falls.</b>A speech tool marks the second of every word, for example "three" at 0.0 s, "two" at 0.8 s, "one" at 1.9 s.</div></li>
+    <li><div><b>When each word falls.</b>Claude separates the voice from their music and measures where every word starts, for example "three" at 0.18 s, "two" at 0.89 s, "one" at 1.42 s. Our hook moves the lips on those same seconds, so these are the seconds for our voice. If there is no voice at all, only a song, our hook gets no voice either: just our music from the start, with the big moment of the song on the reveal.</div></li>
     <li><div><b>The words go into the clip too.</b>The words and their seconds also go into the video generation, so the lips and movements already fit the line.</div></li>
-    <li><div><b>The voice is made separately.</b>The video tool copies the whole sound of the original, their music too, so that sound is thrown away. Claude makes the same line again with a separate voice generator (Seedance), then places every word exactly on the second where it happens in our clip. Their music never ends up in your video.</div></li>
+    <li><div><b>The voice is made separately.</b>The video tool copies the whole sound of the original, their music too, so that sound is thrown away. Claude makes the same line again with a separate voice generator (Seedance), then places every word exactly on the second where it is said in the original, and measures again to be sure (within 0.05 s). Their music never ends up in your video.</div></li>
     <li><div><b>Checked afterwards.</b>Claude compares the words and seconds of our hook with the original. If they don't match, the hook is made again.</div></li>
   </ol>
   <h3>Music</h3>
@@ -241,7 +243,8 @@ a{color:var(--royal)}
   <div class="tablewrap"><table>
     <tr><th>Check</th><th>What it catches</th></tr>
     <tr><td>Every photo, looked at</td><td>Wrong face, wrong robe, extra fingers, text where there shouldn't be any</td></tr>
-    <tr><td>Hook vs original</td><td>Movement too fast or too slow, actions at the wrong second</td></tr>
+    <tr><td>Hook vs original</td><td>Movement too fast or too slow, actions at the wrong second, a different length</td></tr>
+    <tr><td>Object list</td><td>An object with the wrong job: their decoration turned into our robe, a box without our brand, something from their product left in, our robe looking like a cape</td></tr>
     <tr><td>Voice vs original</td><td>Missing words, words at the wrong time, a silent hook</td></tr>
     <tr><td>B-roll shot count</td><td>A missing or invented shot</td></tr>
     <tr><td>Glitch detector</td><td>Sudden jumps inside a shot: melting, a photo flashing in, a body part popping</td></tr>

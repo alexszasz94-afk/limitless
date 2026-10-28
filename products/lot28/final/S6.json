@@ -2,13 +2,13 @@
  "fps": 30,
  "segments": [
   {
-   "file": "/home/user/limitless/products/lot28/hooks/S6-v.mp4",
+   "file": "/home/user/limitless/products/lot28/hooks/S6-s.mp4",
    "start": 0,
-   "end": 4.73,
+   "end": 4.68,
    "audio": true
   },
   {
-   "file": "/home/user/limitless/products/lot28/broll/S6.mp4",
+   "file": "/home/user/limitless/products/lot28/broll4/S6.mp4",
    "start": 0.15,
    "end": 3.46,
    "audio": false
@@ -26,15 +26,15 @@
    "audio": false
   },
   {
-   "file": "/home/user/limitless/products/lot28/broll/S6.mp4",
+   "file": "/home/user/limitless/products/lot28/broll4/S6.mp4",
    "start": 3.66,
    "end": 4.84,
    "audio": false
   },
   {
-   "file": "/home/user/limitless/products/lot28/broll/S6.mp4",
-   "start": 5.04,
-   "end": 6.9,
+   "file": "/home/user/limitless/products/lot28/cozy/S6.mp4",
+   "start": 0.1,
+   "end": 2.3,
    "audio": false
   }
  ],

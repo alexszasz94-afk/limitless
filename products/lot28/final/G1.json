@@ -2,15 +2,15 @@
  "fps": 30,
  "segments": [
   {
-   "file": "/home/user/limitless/products/lot28/hooks/G1-v.mp4",
+   "file": "/home/user/limitless/products/lot28/hooks/G1-s.mp4",
    "start": 0,
-   "end": 4.53,
+   "end": 4.48,
    "audio": true
   },
   {
-   "file": "/home/user/limitless/products/lot28/broll2/G1.mp4",
+   "file": "/home/user/limitless/products/lot28/broll4/G1.mp4",
    "start": 0.15,
-   "end": 3.46,
+   "end": 3.5,
    "audio": false
   },
   {
@@ -26,15 +26,15 @@
    "audio": false
   },
   {
-   "file": "/home/user/limitless/products/lot28/broll2/G1.mp4",
-   "start": 3.66,
-   "end": 4.8,
+   "file": "/home/user/limitless/products/lot28/broll4/G1.mp4",
+   "start": 3.7,
+   "end": 4.75,
    "audio": false
   },
   {
-   "file": "/home/user/limitless/products/lot28/broll2/G1.mp4",
-   "start": 5.0,
-   "end": 6.9,
+   "file": "/home/user/limitless/products/lot28/cozy/G1.mp4",
+   "start": 0.1,
+   "end": 2.3,
    "audio": false
   }
  ],

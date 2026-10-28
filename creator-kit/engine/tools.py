@@ -9,7 +9,7 @@
   python3 engine/tools.py cozy <broll.mp4> <out.mp4> [start]             -> zoomed last cozy shot (default start 4.95 s, 2.1 s long)
   python3 engine/tools.py drop <song.mp3>                                 -> loud jumps in a song (where the beat/chorus drops)
   python3 engine/tools.py fanwipe <in.mp4> <out.mp4> <t1> [<t2> ...]       -> ceiling-fan blade wipe centred on each cut time
-  python3 engine/tools.py next-set                                        -> next unused character + room from library/ (and marks them used)
+  python3 engine/tools.py next-set <robe>                                 -> next unused character + room from library/ (and marks them used) + which B-roll motion (Princess rotates motion / motion2)
   python3 engine/tools.py reject <library/characters/x.jpg>               -> photo breaks the rules: moves it to library/rejected/ (then run next-set again)
   python3 engine/tools.py transcribe <video>                            -> what people SAY in the video, with seconds (first run downloads a small speech model, ~150 MB)
   python3 engine/tools.py voice-mix <clip.mp4> <voice.wav> <out.mp4> <delay_s> [orig_vol]   -> puts a voice line over a clip (clip sound lowered)
@@ -135,7 +135,17 @@ def fanwipe(f, out, times):
     print(out)
 
 
-def next_set():
+def next_motion(robe):
+    """rule 28 Oct (Alex): the Princess B-roll rotates between the two motions (motion, motion2) - never the same twice in a row."""
+    if robe.lower() != "princess":
+        return "motion"
+    f = os.path.join(ROOT, "state/used.json")
+    vids = [v for v in (json.load(open(f)) if os.path.exists(f) else {}).get("videos", []) if v.get("robe", "").lower() == "princess"]
+    last = vids[-1].get("motion", "motion2") if vids else "motion2"
+    return "motion2" if last == "motion" else "motion"
+
+
+def next_set(robe=""):
     used_f = os.path.join(ROOT, "state/used.json")
     used = json.load(open(used_f)) if os.path.exists(used_f) else {"characters": [], "rooms": []}
     pick = {}
@@ -147,6 +157,9 @@ def next_set():
         pick[kind] = free[0]; used[kind].append(os.path.basename(free[0]))
     json.dump(used, open(used_f, "w"), indent=1)
     print("character:", os.path.relpath(pick["characters"], ROOT)); print("room:", os.path.relpath(pick["rooms"], ROOT))
+    if robe:
+        m = next_motion(robe)
+        print("motion:", m, "-> B-roll from", "motion/broll-motion-2.mp4 (duration 6, hem sentence + edit times in PRODUCT.md)" if m == "motion2" else "motion/broll-motion.mp4 (classic)")
     for kind in ("characters", "rooms"):
         left = len([p for p in glob.glob(os.path.join(ROOT, "library", kind, "*.jpg")) if os.path.basename(p) not in used[kind]])
         if left < 5:
@@ -499,7 +512,7 @@ if __name__ == "__main__":
     elif c == "cozy": cozy(a[1], a[2], a[3] if len(a) > 3 else "4.95")
     elif c == "drop": drop(a[1])
     elif c == "fanwipe": fanwipe(a[1], a[2], a[3:])
-    elif c == "next-set": next_set()
+    elif c == "next-set": next_set(a[1] if len(a) > 1 else "")
     elif c == "reject": reject(a[1])
     elif c == "transcribe": transcribe(a[1])
     elif c == "voice-mix": voice_mix(*a[1:6])

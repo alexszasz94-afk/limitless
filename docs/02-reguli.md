@@ -163,3 +163,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 28 oct (Szasz): ORDINEA B-ROLL-ULUI: o „tăietură” găsită în mijlocul planului cu săculeții (sub 2,8 s) e falsă și se ignoră, altfel planul cu săculeții ajunge după telecomandă (greșeala de la Snoopy r4).
 - 28 oct (Szasz): PICIOARELE NU SE VĂD NICIODATĂ ÎN AFARA SĂCULEȚILOR — nici înainte să intre. Tivul halatului acoperă picioarele tot timpul, piciorul alunecă de sub tiv direct în săculeț. Se verifică la 8–15 cadre/s tot planul cu săculeții.
 - 28 oct (Szasz): ANALIZEAZĂ MEREU DACĂ E CORECT — orice rezultat (inclusiv al unui agent ajutător) îl verific eu cadru cu cadru înainte să-l trimit; „a trecut verificarea” nu e suficient.
+- 28 oct (Szasz): B-ROLL PRINȚESĂ PRIN ROTAȚIE — al doilea clip de mișcare (motion2, din instagram.com/p/De-wL1DSEhY, aprobat de Szasz) alternează video cu video cu cel clasic; `tools.py next-set princess` spune care urmează, se notează `motion=<cheie>` în log.

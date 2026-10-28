@@ -28,6 +28,7 @@ If it still says `nsfw`: (1) send the same call again once (it is random sometim
 
 ## B-roll motion clip — ONLY the classic one (rule 26 Oct)
 Use only `motion` (`motion/broll-motion.mp4`, shared with Snoopy): it is tested and comes out well. Variety comes from the new person, room, outfit, hook and the custom cozy — not from other motion clips.
+**Second motion (28 Oct, Alex): `motion2` = `motion/broll-motion-2.mp4` (7 s, from instagram.com/p/De-wL1DSEhY): back shot putting the hood on → front, opens the robe and steps into the pockets → sitting cozy on the sofa. Alternate `motion` / `motion2` between videos. Same medias and same prompt; with `motion2` the cuts are ≈ 1.17 (back→front) and 5.17 (→ sofa); edit: broll 0.15→1.1 + 1.2→5.1, cozy 5.25→6.9.**
 **Room check (sofa or bed)** — see "Room check" in CLAUDE.md: the last cozy shot must match the room.
 
 ## B-roll (always new person + new room) — Kling 4.0 video-edit

@@ -10,6 +10,7 @@ description: First run / "start" — checks the computer tools, the Higgsfield c
 2. Higgsfield: call `balance`. If the Higgsfield tools are missing or fail, tell the creator: "Type /mcp, choose higgsfield, press Enter and log in to your Higgsfield account in the browser that opens, then type start again." Stop until it works.
 3. Read `state/media.json` (create `{}` if missing). For every file below that has no id yet, upload it (see "Uploading a local file" in CLAUDE.md) and save the id under the key shown:
    - `motion` ← `motion/broll-motion.mp4` (video)
+   - `motion2` ← `motion/broll-motion-2.mp4` (video) — second B-roll motion, alternate with `motion`
    - Snoopy: `snoopy_front_closed`, `snoopy_front_open`, `snoopy_back`, `snoopy_hood`, `snoopy_pouch`, `snoopy_detail`, `snoopy_box` ← `products/snoopy/refs/*.jpg` (names in PRODUCT.md)
    - Princess: `princess_front`, `princess_back`, `princess_pouch_open`, `princess_pouch_feet` ← `products/princess/refs/*.jpg`
    Upload ONE file per `media_upload` call (exactly as in CLAUDE.md), PUT it with curl (must print 200), then confirm: one `media_confirm` with `type: "video"` for the motion clip and one with `type: "image"` for all the image ids. Save state/media.json after every file so nothing is uploaded twice if something stops.

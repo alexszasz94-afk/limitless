@@ -29,7 +29,7 @@ When they don't know what to do next, suggest something concrete (a new hook ide
 1. `media_upload` with `filename` = the file's name — ONE file per call (several files in one call come back without names and the answer is too long to read).
 2. Run exactly: `curl -s -o /dev/null -w '%{http_code}' -X PUT -H "Content-Type: <image/jpeg | video/mp4>" --data-binary @<path> '<upload_url>'` → must print 200.
 3. `media_confirm` with `type` (`image` / `video`) and the `media_id`. One type per call: confirm videos and images in separate calls (several ids of the same type in one call is fine).
-4. Save the id in `state/media.json` (keys listed in PRODUCT.md; `motion` for `motion/broll-motion.mp4`; characters/rooms under `"characters"` / `"rooms"` by file name) so you never upload the same file twice.
+4. Save the id in `state/media.json` (keys listed in PRODUCT.md; `motion` for `motion/broll-motion.mp4`, `motion2` for `motion/broll-motion-2.mp4`; characters/rooms under `"characters"` / `"rooms"` by file name) so you never upload the same file twice.
 Generated images/videos can be used directly by their job id (no upload needed).
 
 ## Rules (all learned the hard way — follow every time)

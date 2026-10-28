@@ -145,6 +145,18 @@ def next_motion(robe):
     return "motion2" if last == "motion" else "motion"
 
 
+def next_remote(robe):
+    """rule 28 Oct (Alex): connector = the fixed clip; remote = one of 3 tree close-ups (fixed/remote-tree-1..3.mp4), in rotation."""
+    f = os.path.join(ROOT, "state/used.json")
+    vids = [v for v in (json.load(open(f)) if os.path.exists(f) else {}).get("videos", []) if v.get("robe", "").lower() == robe.lower()]
+    have = sorted(glob.glob(os.path.join(ROOT, "products", robe.lower(), "fixed", "remote-tree-*.mp4")))
+    if not have:
+        return None
+    last = vids[-1].get("remote", "") if vids else ""
+    names = [os.path.basename(h) for h in have]
+    return names[(names.index(last) + 1) % len(names)] if last in names else names[0]
+
+
 def next_set(robe=""):
     used_f = os.path.join(ROOT, "state/used.json")
     used = json.load(open(used_f)) if os.path.exists(used_f) else {"characters": [], "rooms": []}
@@ -159,6 +171,8 @@ def next_set(robe=""):
     print("character:", os.path.relpath(pick["characters"], ROOT)); print("room:", os.path.relpath(pick["rooms"], ROOT))
     if robe:
         m = next_motion(robe)
+        r = next_remote(robe)
+        if r: print("remote:", f"products/{robe.lower()}/fixed/{r} (whole clip; log it with remote={r}); connector: the fixed connector clip")
         print("motion:", m, "-> B-roll from", "motion/broll-motion-2.mp4 (duration 6, hem sentence + edit times in PRODUCT.md)" if m == "motion2" else "motion/broll-motion.mp4 (classic)")
     for kind in ("characters", "rooms"):
         left = len([p for p in glob.glob(os.path.join(ROOT, "library", kind, "*.jpg")) if os.path.basename(p) not in used[kind]])

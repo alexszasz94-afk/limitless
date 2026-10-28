@@ -13,7 +13,7 @@ Long hooded heated robe in classic fairy-tale princess colours. Royal-blue plush
 
 ## Fixed clips (already made — never generate again)
 - `fixed/connector.mp4` — lilac connector clicking in. Use **1.0–2.6**.
-- `fixed/remote.mp4` — pink crystal remote, lights go up. Use **0–3.1**.
+- `fixed/remote-tree-1.mp4`, `-2`, `-3` — pink crystal remote close-up next to the Christmas tree (3 different trees/nails), lights go up. ROTATION (Alex 28 Oct): `tools.py next-set princess` says which one; use the whole clip **0–2.95**. Never generate a new remote. (`fixed/remote.mp4` = old one, not used.)
 
 ## Music
 - `music/let-it-go.mp3` — the chorus ("Let it go…") hits at ≈ 58.5 s. Put it on the reveal moment: `"music_start": 58.5 - <time of the reveal in the final video>` (e.g. reveal at 1.9 s → `56.6`). `"music_vol": 0.75`, `"orig_vol": 1.0`.
@@ -55,7 +55,7 @@ After it finishes: `cuts` → ≈ 0.96, 3.58, 4.92. `cozy` from last cut + 0.15.
 1. hook clip(s) `"audio": true`
 2. broll.mp4 `0.15 → ~3.5`
 3. fixed/connector.mp4 `1.0 → 2.6`
-4. fixed/remote.mp4 `0 → 3.1`
+4. fixed/remote-tree-N.mp4 `0 → 2.95` (N from next-set, rotation)
 5. broll.mp4 lying shot `~3.62 → ~4.9`
 6. cozy-zoom.mp4 `0 → 2.05`
 

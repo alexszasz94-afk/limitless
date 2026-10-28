@@ -2,10 +2,10 @@
  "fps": 30,
  "segments": [
   {
-   "file": "/home/user/limitless/products/lot28/hooks/S4-s.mp4",
+   "file": "/home/user/limitless/products/lot28/exact/S4.mp4",
    "start": 0,
-   "end": 4.69,
-   "audio": true
+   "end": 5.17,
+   "audio": false
   },
   {
    "file": "/home/user/limitless/products/lot28/broll2/S4.mp4",

@@ -20,13 +20,13 @@ QUERIES = {
         "candid selfie woman cozy sweater natural light",
     ],
     "rooms": [
-        "bright cozy living room christmas tree natural light",
-        "bedroom christmas decor bright natural light",
-        "farmhouse living room christmas sofa",
-        "white living room christmas tree daylight",
+        "our living room christmas tree ceiling fan sectional",
+        "real home christmas living room photo before decorating sectional tv",
+        "christmas tree up living room family home iphone photo",
+        "my living room christmas decor tv stand sectional couch",
     ],
 }
-MIN_SHORT_SIDE = 1080
+MIN_SHORT_SIDE = 720   # Alex's real phone photos are often 736-1200 px wide
 HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
            "Accept": "application/json", "X-Requested-With": "XMLHttpRequest", "X-Pinterest-PWS-Handler": "www/search/[scope].js"}
 

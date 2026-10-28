@@ -19,3 +19,6 @@ dashboard/bv/
 products/lot28/hooks6/
 products/lot28/exact-old/
 products/remotes/*.mp4
+products/v-spoiled/*.mp4
+products/v-spoiled/*.wav
+products/v-spoiled/qa/

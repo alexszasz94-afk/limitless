@@ -1,0 +1,43 @@
+{
+ "out": "/home/user/limitless/products/v-spoiled/final/spoiled-princess-FINAL.mp4",
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/v-spoiled/hookP-snd.mp4",
+   "start": 0,
+   "end": 4.0,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/broll-ref2/broll-test2.mp4",
+   "start": 0.15,
+   "end": 1.2
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/broll-ref2/broll-test2.mp4",
+   "start": 1.35,
+   "end": 4.35
+  },
+  {
+   "file": "/home/user/limitless/creator-kit/products/princess/fixed/connector-tree-1.mp4",
+   "start": 1.2,
+   "end": 4.0
+  },
+  {
+   "file": "/home/user/limitless/creator-kit/products/princess/fixed/remote-tree-1.mp4",
+   "start": 0,
+   "end": 2.95
+  },
+  {
+   "file": "/home/user/limitless/products/princess-robe/broll-ref2/broll-test2.mp4",
+   "start": 4.55,
+   "end": 5.9
+  }
+ ],
+ "texts": [],
+ "music": "/home/user/limitless/creator-kit/products/princess/music/let-it-go.mp3",
+ "music_start": 54.5,
+ "music_vol": 0.75,
+ "orig_vol": 1.0,
+ "music_duck": 4.0
+}

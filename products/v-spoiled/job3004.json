@@ -1,0 +1,96 @@
+[
+ {
+  "index": 3004,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 7,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "2286d4c5-c869-4624-ada5-187e1484659d"
+    },
+    {
+     "role": "image_references",
+     "value": "0efb279a-a7d8-4038-9c8b-4ac4d93a8005"
+    },
+    {
+     "role": "image_references",
+     "value": "ca59782d-30e9-449b-8ba8-487e33c6be21"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    },
+    {
+     "role": "image_references",
+     "value": "3d299288-bfc6-45da-82a3-8f09339d1b8c"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same four shots, the same cuts, the same camera position and framing, the same body movements and the same timing as the input video. Change only the person, the room and the robe. PERSON: exactly the woman of Image 1, same face; under the robe she wears a heather-grey hoodie and soft black long lounge pants, the same in every shot. ROOM: exactly the living room of Image 2 (beige walls, light carpet, the decorated Christmas tree with a red tree skirt next to the TV, the light-grey sectional sofa and the white sofa), only what is in Image 2, soft daylight; shots 3 and 4 happen on its sofa; nothing stands between the camera and her in shot 2, her whole body down to the floor is visible. ROBE: exactly the robe of Images 3-6, reproduced one to one in every frame: light camel-brown ribbed plush outside with the same embroidered motifs, white fluffy sherpa lining, white fluffy trim on the front edges, cuffs, pockets and hem, long to the ankles. HOOD: exactly Image 6 (front) and Image 5 (back): white fluffy dog face with black nose, closed-eye line and smile line, two long black floppy ears, red Santa hat with white brim and pom-pom; from behind only the camel back of the hood with the ears and the hat; a real 3D sewn hood. SHOT 1: seen from behind, she pulls the hood up. SHOT 2: facing the camera, hood up, she opens the robe wide showing the white lining. THE FOOT POUCH exactly as Image 7: one wide pouch across the whole width at the inside of the hem, open only at the top, camel outside, white fluffy trim on top. FEET ALREADY IN THE POUCH FROM THE FIRST FRAME OF SHOT 2: in every frame of shot 2 both her feet are already inside the pouch, hidden by camel fabric; where the input video shows her lifting a foot and stepping, she lifts her knee and the foot moves INSIDE the pouch - the pouch fabric rises and falls with it like a sack, the foot itself is never seen. The white hem and the pouch lie on the floor in front of her feet in every frame. NOT A SINGLE FRAME shows a bare foot, toes, a heel, a sock or an ankle on the floor - only the camel pouch, the white trim and the floor. Then she closes the robe. SHOT 3: she lies on the sofa wrapped in the closed robe, hood up. SHOT 4: she sits on the sofa leaning back, wrapped in the robe, hood up; the robe is CLOSED and tied with its belt, the two front panels overlap wide over her lap and legs down to the floor; from her waist down there is only camel robe fabric and white trim, never her black pants. FEET REALLY INSIDE: when she puts a foot in, the whole foot goes INTO the pocket fabric and fills it; the filled pocket rests on the floor with her foot inside it; NO bare foot, NO toe, NO heel, NO sock and NO pant leg is ever visible on the floor below, behind or between the pockets. FEET STAY IN THE POCKETS UNTIL THE END: once both feet are inside the foot pockets they never come out again; in the lying shot and in the sitting shot her legs are completely covered by the closed robe from the hips down to the feet, the hem closed over them; no pajama pants, no knee, no leg and no foot is ever visible outside the robe. KNEES COVERED: in the sitting shot the two front panels of the closed robe overlap over her bent knees and are tucked around her legs, so not a single bit of her pants, knees, legs or feet shows, only robe fabric and white trim from her waist down. UGC style, natural, real iPhone 17 Pro Max video, very soft natural daylight plus warm tree lights, low contrast, true colours, no HDR, no glow, no CGI look. Smooth natural movements with real weight, no morphing, no flicker. Correct hands with five fingers. No text, no logos. Silent."
+  }
+ },
+ {
+  "index": 3005,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 7,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "2286d4c5-c869-4624-ada5-187e1484659d"
+    },
+    {
+     "role": "image_references",
+     "value": "0efb279a-a7d8-4038-9c8b-4ac4d93a8005"
+    },
+    {
+     "role": "image_references",
+     "value": "ca59782d-30e9-449b-8ba8-487e33c6be21"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    },
+    {
+     "role": "image_references",
+     "value": "3d299288-bfc6-45da-82a3-8f09339d1b8c"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same four shots, the same cuts, the same camera position and framing, the same body movements and the same timing as the input video. Change only the person, the room and the robe. PERSON: exactly the woman of Image 1, same face; under the robe she wears a heather-grey hoodie and soft black long lounge pants, the same in every shot. ROOM: exactly the living room of Image 2 (beige walls, light carpet, the decorated Christmas tree with a red tree skirt next to the TV, the light-grey sectional sofa and the white sofa), only what is in Image 2, soft daylight; shots 3 and 4 happen on its sofa; nothing stands between the camera and her in shot 2, her whole body down to the floor is visible. ROBE: exactly the robe of Images 3-6, reproduced one to one in every frame: light camel-brown ribbed plush outside with the same embroidered motifs, white fluffy sherpa lining, white fluffy trim on the front edges, cuffs, pockets and hem, long to the ankles. HOOD: exactly Image 6 (front) and Image 5 (back): white fluffy dog face with black nose, closed-eye line and smile line, two long black floppy ears, red Santa hat with white brim and pom-pom; from behind only the camel back of the hood with the ears and the hat; a real 3D sewn hood. SHOT 1: seen from behind, she pulls the hood up. SHOT 2: facing the camera, hood up, she opens the robe wide showing the white lining. THE FOOT POUCH exactly as Image 7: one wide pouch across the whole width at the inside of the hem, open only at the top, camel outside, white fluffy trim on top. FEET ALREADY IN THE POUCH FROM THE FIRST FRAME OF SHOT 2: in every frame of shot 2 both her feet are already inside the pouch, hidden by camel fabric; where the input video shows her lifting a foot and stepping, she lifts her knee and the foot moves INSIDE the pouch - the pouch fabric rises and falls with it like a sack, the foot itself is never seen. The white hem and the pouch lie on the floor in front of her feet in every frame. NOT A SINGLE FRAME shows a bare foot, toes, a heel, a sock or an ankle on the floor - only the camel pouch, the white trim and the floor. Then she closes the robe. SHOT 3: she lies on the sofa wrapped in the closed robe, hood up. SHOT 4: she sits on the sofa leaning back, wrapped in the robe, hood up; the robe is CLOSED and tied with its belt, the two front panels overlap wide over her lap and legs down to the floor; from her waist down there is only camel robe fabric and white trim, never her black pants. FEET REALLY INSIDE: when she puts a foot in, the whole foot goes INTO the pocket fabric and fills it; the filled pocket rests on the floor with her foot inside it; NO bare foot, NO toe, NO heel, NO sock and NO pant leg is ever visible on the floor below, behind or between the pockets. FEET STAY IN THE POCKETS UNTIL THE END: once both feet are inside the foot pockets they never come out again; in the lying shot and in the sitting shot her legs are completely covered by the closed robe from the hips down to the feet, the hem closed over them; no pajama pants, no knee, no leg and no foot is ever visible outside the robe. KNEES COVERED: in the sitting shot the two front panels of the closed robe overlap over her bent knees and are tucked around her legs, so not a single bit of her pants, knees, legs or feet shows, only robe fabric and white trim from her waist down. UGC style, natural, real iPhone 17 Pro Max video, very soft natural daylight plus warm tree lights, low contrast, true colours, no HDR, no glow, no CGI look. Smooth natural movements with real weight, no morphing, no flicker. Correct hands with five fingers. No text, no logos. Silent."
+  }
+ }
+]

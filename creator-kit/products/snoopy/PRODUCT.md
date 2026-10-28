@@ -60,12 +60,13 @@ After it finishes: `python3 engine/tools.py cuts output/<name>/broll.mp4` → yo
 **Foot pouch — ALWAYS add this sentence to every B-roll prompt (rule 26 Oct):** `THE FOOT POUCH (one wide pouch across the whole width, open only at the top): both her feet start OUTSIDE the pouch on the floor; then she lifts her right foot over the white top edge into the right half of the pouch, then her left foot over the top edge into the left half; no foot is ever inside before she puts it in.`
 
 ## Standard edit order (ALWAYS this order: hook → puts it on → foot pockets → connector → remote → cozy) (edit.json segments)
+FEET RULE (28 Oct, kit test): the classic motion ALWAYS shows her bare feet on the floor while she steps in (≈ 1.0–2.5 s) — no prompt removes it (3 tries). So the edit skips that part: shot 1 is followed directly by the moment both feet are already in the pockets. Find that second yourself at 10 fps (`ffmpeg -ss 2.2 -t 1.2 -i broll.mp4 -vf "fps=10,crop=1080:800:0:1120,scale=216:160,tile=5x3"`): the first frame where no toe/heel/foot is visible, usually 2.5–2.6 s.
 1. hook clip(s) with `"audio": true`
-2. broll.mp4 `0.15 → first cut of shot 3` (≈ 0.15–3.46) — robe on + pouch
-3. fixed/connector-tree-N.mp4 `1.2 → 4.0` (N from next-set, rotation)
-4. fixed/remote-tree-N.mp4 whole clip (N from next-set, rotation)
-5. broll.mp4 shot 3 (lying) `cut2 + 0.05 → cut3 - 0.05` (≈ 3.54–4.79)
-6. cozy-zoom.mp4 `0 → 2.1`
+2. broll.mp4 `0.15 → first cut - 0.05` (≈ 0.15–0.95) — from behind, hood up
+3. broll.mp4 `<feet-in second> → cut2 - 0.05` (≈ 2.6–3.66) — feet in the pockets, she closes the robe
+4. fixed/connector-tree-N.mp4 `1.2 → 4.0` (N from next-set, rotation)
+5. fixed/remote-tree-N.mp4 whole clip (N from next-set, rotation)
+6. broll.mp4 shot 3 (lying) `cut2 + 0.05 → cut3 - 0.05`, slowed ×1.4 (`ffmpeg -vf setpts=1.4*PTS -an`) ≈ 1.7 s — the ending. The sitting shot (shot 4) shows her black pants/knees in every try so far: use it (cozy-zoom 0 → 2.1) ONLY if not a bit of pants/knee/leg is visible; otherwise end on the lying shot.
 
 Texts: `"size": 76, "y": 0.08` (high, so it never covers the face), 2–3 lines with `\n`. Second text (call to action) starts at the lying shot.
 Proven text examples: `DONT Show this to a\nSNOOPY LOVER...🎄🐶` · `Snoopy girlies, pls\ndon't hate... 🥺🐶` + `Comment "SNOOPY" if\nyou want one! 🐶` · `Burger King\nX\nSNOOPY 🐶🎄` + `Jk, we make them 🤭\n(Link in bio)` · `H&M X SNOOPY\n🤩🐶`.

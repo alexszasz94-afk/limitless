@@ -1,0 +1,127 @@
+[
+ {
+  "index": 3000,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 7,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "2286d4c5-c869-4624-ada5-187e1484659d"
+    },
+    {
+     "role": "image_references",
+     "value": "0efb279a-a7d8-4038-9c8b-4ac4d93a8005"
+    },
+    {
+     "role": "image_references",
+     "value": "ca59782d-30e9-449b-8ba8-487e33c6be21"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    },
+    {
+     "role": "image_references",
+     "value": "3d299288-bfc6-45da-82a3-8f09339d1b8c"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same four shots, the same cuts, the same camera position and framing, the same body movements and the same timing as the input video. Change only the person, the room and the robe. PERSON: exactly the woman of Image 1, same face; under the robe she wears a heather-grey hoodie and soft black long lounge pants, the same in every shot. ROOM: exactly the living room of Image 2 (beige walls, light carpet, the decorated Christmas tree with a red tree skirt next to the TV, the light-grey sectional sofa and the white sofa), only what is in Image 2, soft daylight; shots 3 and 4 happen on its sofa; nothing stands between the camera and her in shot 2, her whole body down to the floor is visible. ROBE: exactly the robe of Images 3-6, reproduced one to one in every frame: light camel-brown ribbed plush outside with the same embroidered motifs, white fluffy sherpa lining, white fluffy trim on the front edges, cuffs, pockets and hem, long to the ankles. HOOD: exactly Image 6 (front) and Image 5 (back): white fluffy dog face with black nose, closed-eye line and smile line, two long black floppy ears, red Santa hat with white brim and pom-pom; from behind only the camel back of the hood with the ears and the hat; a real 3D sewn hood. SHOT 1: seen from behind, she pulls the hood up. SHOT 2: facing the camera, hood up, she opens the robe wide showing the white lining. THE FOOT POUCH exactly as Image 7: one wide pouch across the whole width at the inside of the hem, open only at the top, camel outside, white fluffy trim on top. THE HEM COVERS HER FEET AT ALL TIMES: the robe is extra long, its white hem lies flat on the floor all around her, so her feet are always hidden behind the hem and inside the pouch - never visible on the floor, before, during and after she steps in. She slides each foot from behind the hem straight down into the pouch, right foot then left foot, so the pouch fills up; only camel fabric and the white trim are seen on the floor, never a sock, a foot, a heel or a toe; then she closes the robe. SHOT 3: she lies on the sofa wrapped in the closed robe, hood up. SHOT 4: she sits on the sofa leaning back with her legs stretched down to the floor (knees NOT pulled up), wrapped in the robe, hood up; the closed robe hangs over her legs. FEET REALLY INSIDE: when she puts a foot in, the whole foot goes INTO the pocket fabric and fills it; the filled pocket rests on the floor with her foot inside it; NO bare foot, NO toe, NO heel, NO sock and NO pant leg is ever visible on the floor below, behind or between the pockets. FEET STAY IN THE POCKETS UNTIL THE END: once both feet are inside the foot pockets they never come out again; in the lying shot and in the sitting shot her legs are completely covered by the closed robe from the hips down to the feet, the hem closed over them; no pajama pants, no knee, no leg and no foot is ever visible outside the robe. KNEES COVERED: in the sitting shot the two front panels of the closed robe overlap over her bent knees and are tucked around her legs, so not a single bit of her pants, knees, legs or feet shows, only robe fabric and white trim from her waist down. UGC style, natural, real iPhone 17 Pro Max video, very soft natural daylight plus warm tree lights, low contrast, true colours, no HDR, no glow, no CGI look. Smooth natural movements with real weight, no morphing, no flicker. Correct hands with five fingers. No text, no logos. Silent."
+  }
+ },
+ {
+  "index": 3001,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 4,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "3e86fcdf-a6c8-4e3e-8207-9e7522045573"
+    },
+    {
+     "role": "image_references",
+     "value": "0efb279a-a7d8-4038-9c8b-4ac4d93a8005"
+    },
+    {
+     "role": "image_references",
+     "value": "ca59782d-30e9-449b-8ba8-487e33c6be21"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video (4 s). TIMING, second by second, identical to the input: 0.0-2.8 s she stands in the room holding the tightly rolled robe horizontally in front of her chest with both arms stretched to the sides, and counts; at about 2.9 s she lifts it and lets it unroll downward; by 3.5 s it hangs open in full length in front of her and she holds it up by the shoulders until 4.0 s. The rolled bundle shows the light camel-brown ribbed outside of the Snoopy robe with its embroidered dog and little yellow birds - NOT the pink pattern of the input video. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally - no text anywhere. PERSON: the woman becomes exactly the woman of Image 1: SAME FACE and the SAME HAIR (colour, length, style) as Image 1, the same skin tone. Replace her face and hair completely, she must NOT look like the woman of the input video. She wears a heather-grey hoodie and soft black long lounge pants (not the clothes of the input video). PLACE: the room becomes the living room of Image 2 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 2; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. ACTION: she holds the rolled robe horizontally, then lifts it and lets it unroll downward exactly like in the input video, and it falls open into the full-length robe with the hood at the top. The rolled bundle and the open robe are OUR ROBE: the hooded Snoopy robe of Images 3-6, REPRODUCE IT ONE TO ONE from Images 3-6: light camel-brown plush outside with the embroidered dog and little yellow birds, white fluffy sherpa lining and trim, hood = white fluffy dog face with black nose and two long black floppy ears with a red Santa hat (Image 6); never a different robe. Sound: she counts out loud, playful, exactly like in the input video: \"Three,\" at 0.16 s, \"two,\" at 1.08 s, \"one,\" at 2.04 s, \"let's see how it turns out!\" from 2.8 s to 3.6 s; no music. Her lips move in sync with her words. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO TEXT ANYWHERE: no captions, no subtitles, no burned-in text, no emoji, no watermarks \u2014 any text or blurred patch in the input video is removed."
+  }
+ },
+ {
+  "index": 3002,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 4,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "3e86fcdf-a6c8-4e3e-8207-9e7522045573"
+    },
+    {
+     "role": "image_references",
+     "value": "18d594ea-58c7-43fd-af97-8ef37a21500c"
+    },
+    {
+     "role": "image_references",
+     "value": "7a309a6e-fbbd-435e-b752-5b74ed250936"
+    },
+    {
+     "role": "image_references",
+     "value": "53a99198-de6e-4398-899b-dad1d20ad781"
+    },
+    {
+     "role": "image_references",
+     "value": "31225591-9171-4aba-b355-82942bbe66c6"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video (4 s). TIMING, second by second, identical to the input: 0.0-2.8 s she stands in the room holding the tightly rolled robe horizontally in front of her chest with both arms stretched to the sides, and counts; at about 2.9 s she lifts it and lets it unroll downward; by 3.5 s it hangs open in full length in front of her and she holds it up by the shoulders until 4.0 s. The rolled bundle shows the yellow, royal-blue and red plush of OUR princess robe - NOT the pink pattern of the input video. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally - no text anywhere. PERSON: the woman becomes exactly the woman of Image 1: SAME FACE and the SAME HAIR (colour, length, style) as Image 1, the same skin tone. Replace her face and hair completely, she must NOT look like the woman of the input video. She wears a light-grey button-up long pajama set (not the clothes of the input video). PLACE: the room becomes the living room of Image 2 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 2; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. ACTION: she holds the rolled robe horizontally, then lifts it and lets it unroll downward exactly like in the input video, and it falls open into the full-length robe with the hood at the top. The rolled bundle and the open robe are OUR ROBE: the hooded princess robe of Images 3-4, REPRODUCE IT ONE TO ONE from Images 3-4: royal-blue plush top and long sleeves, puffed shoulders with red and light-blue stripes, white fluffy cuffs with a gold band, red velvet belt with bow and tassels, long bright-yellow plush lower part with a gold crown-and-heart border at the hem, white sherpa trim and lining, royal-blue pointed hood with a gold embroidered tiara; never a different robe. Sound: she counts out loud, playful, exactly like in the input video: \"Three,\" at 0.16 s, \"two,\" at 1.08 s, \"one,\" at 2.04 s, \"let's see how it turns out!\" from 2.8 s to 3.6 s; no music. Her lips move in sync with her words. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO TEXT ANYWHERE: no captions, no subtitles, no burned-in text, no emoji, no watermarks \u2014 any text or blurred patch in the input video is removed."
+  }
+ }
+]

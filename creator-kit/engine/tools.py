@@ -355,6 +355,12 @@ def voice_to_lips(seedance, out, end, starts, targets, last_speed="1.0", bg_gain
     subprocess.run([sys.executable, "-m", "demucs", "-n", "htdemucs", "-o", d, w], check=True, capture_output=True)
     st = os.path.join(d, "htdemucs", "a"); voc = os.path.join(st, "vocals.wav"); bg = os.path.join(d, "bg.wav")
     run(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(st, "drums.wav"), "-i", os.path.join(st, "bass.wav"), "-i", os.path.join(st, "other.wav"), "-filter_complex", "amix=inputs=3:normalize=0", bg])
+    db = duration(bg)
+    if db < end:   # Seedance often returns ~3.7 s for a 4 s input: continue the room tone (mirrored tail) so the hook never ends in dead silence
+        L = min(0.3, db); bg2 = os.path.join(d, "bg2.wav")
+        run(["ffmpeg", "-v", "error", "-y", "-i", bg, "-filter_complex",
+             f"[0:a]asplit=3[m][t1][t2];[t1]atrim={db - L:.3f},asetpts=PTS-STARTPTS,areverse,asplit=2[r1][r2];[t2]atrim={db - L:.3f},asetpts=PTS-STARTPTS[f];[m][r1][f][r2]concat=n=4:v=0:a=1[o]", "-map", "[o]", bg2])
+        bg = bg2
     e = _env(voc); thr = e.max() * 0.06; full = duration(voc); E = []
     for i, s0 in enumerate(S):   # end of each word = voice quiet for 80 ms
         lim = S[i + 1] - 0.05 if i + 1 < len(S) else full; k = int(s0 * 100) + 10

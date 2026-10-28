@@ -145,3 +145,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 26 oct (Szasz): ghidul spune clar că instalarea e doar pentru Claude Code web; la Network access creatorul alege: Full (cel mai simplu) sau Custom cu lista de domenii (mai strict).
 - 27 oct (Szasz): în chatul de test nu s-a făcut analiza audio. Acum e pas obligatoriu: `tools.py hook-audio` (cuvinte + secunde, linia Sound: gata) + Higgsfield video_analysis (cine vorbește), iar după generare `tools.py compare-audio` trebuie să zică OK.
 - 27 oct (Szasz): ghidul HOW-IT-WORKS rescris complet, foarte detaliat pentru începători (glosar, tot ce pot cere, hook-uri, audio, Pinterest, verificări, limite, rolul lor). De acum se actualizează MEREU la orice schimbare în kit.
+- 28 oct (Szasz): textul pe ecran stă MEREU sus (y 0.08), în aceeași poziție tot videoul — nu se mai mută niciodată în jos pe B-roll, nici ca să ocolească o față.

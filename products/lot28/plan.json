@@ -1,0 +1,104 @@
+{
+ "G": {
+  "1": {
+   "face": "bae23a91-ae08-4acb-b17b-5c9ba4be993d",
+   "room": "c81ecfa6-6f36-431b-8864-4ed10544a6a7",
+   "outfit": "cream knit sweater and grey long lounge pants",
+   "ch": "01",
+   "roomf": "14"
+  },
+  "2": {
+   "face": "cc885251-6109-4278-9ee5-c0b3c84d39eb",
+   "room": "51d54f58-743a-4ddd-afc2-2111b6b663a8",
+   "outfit": "red-and-green plaid flannel Christmas pajamas",
+   "ch": "02",
+   "roomf": "15"
+  },
+  "3": {
+   "face": "aac166d2-f388-4c95-b562-07761c5aaa61",
+   "room": "f0230c3d-043f-497b-b356-834dcca6d225",
+   "outfit": "white thermal top and red plaid long pajama pants",
+   "ch": "05",
+   "roomf": "16"
+  },
+  "4": {
+   "face": "fcbecadb-8ed3-43b7-98f5-36697a2024e6",
+   "room": "d3e02652-3c46-4efa-86f6-adec9eac375a",
+   "outfit": "navy USA college sweatshirt and grey sweatpants",
+   "ch": "06",
+   "roomf": "18"
+  },
+  "5": {
+   "face": "fa93f8c9-296f-4154-805d-ac005931038c",
+   "room": "0d704aba-da74-4db4-8080-b697804f5104",
+   "outfit": "green waffle-knit long pajama set",
+   "ch": "07",
+   "roomf": "19"
+  },
+  "6": {
+   "face": "c377f5c5-9461-4238-98c9-40fde060ff70",
+   "room": "67f319fc-7487-45ce-98f9-bc1add8795ef",
+   "outfit": "red and white striped long Christmas pajamas",
+   "ch": "08",
+   "roomf": "20"
+  },
+  "7": {
+   "face": "012aa548-7485-4dfb-adc7-b3f9ef9963f2",
+   "room": "4ea60602-fc9b-4cea-a089-6c5ab9c51073",
+   "outfit": "cream cable-knit sweater and black leggings",
+   "ch": "09",
+   "roomf": "21"
+  }
+ },
+ "S": {
+  "1": {
+   "face": "a166b927-d717-41d8-833e-8f1716988ea6",
+   "room": "77c44827-8fdd-47c9-8f15-563afdf1f93d",
+   "outfit": "red buffalo-plaid long pajamas",
+   "ch": "10",
+   "roomf": "23"
+  },
+  "2": {
+   "face": "26e965d0-aed5-4efc-bf5a-8e195401ad04",
+   "room": "13d0b94f-1691-41b5-bc13-e9c76fad6f3f",
+   "outfit": "cream fair-isle sweater and grey sweatpants",
+   "ch": "11",
+   "roomf": "24"
+  },
+  "3": {
+   "face": "58e77a3c-d40e-4502-869a-f5b784ec27ed",
+   "room": "57707416-eaa3-4273-940e-93e9a7f6c462",
+   "outfit": "pink fleece long pajama set",
+   "ch": "12",
+   "roomf": "25"
+  },
+  "4": {
+   "face": "f1795925-4c7d-4a5b-9ff0-0b18a970407a",
+   "room": "7c6b5ce0-7d68-45fd-9086-faeb592c4391",
+   "outfit": "white cozy hoodie and black joggers",
+   "ch": "13",
+   "roomf": "26"
+  },
+  "5": {
+   "face": "bae23a91-ae08-4acb-b17b-5c9ba4be993d",
+   "room": "a3fbeb56-0a52-4c89-a500-4eb7b5e6d8e3",
+   "outfit": "green plaid flannel long pajamas",
+   "ch": "01",
+   "roomf": "01"
+  },
+  "6": {
+   "face": "cc885251-6109-4278-9ee5-c0b3c84d39eb",
+   "room": "23dadf6d-3cf5-4977-bbd1-e02140f02b1f",
+   "outfit": "light-blue loungewear set with long pants",
+   "ch": "02",
+   "roomf": "02"
+  },
+  "7": {
+   "face": "aac166d2-f388-4c95-b562-07761c5aaa61",
+   "room": "d8dc17c1-b0f2-474d-9104-6286076b1e09",
+   "outfit": "red holiday sweater and black leggings",
+   "ch": "05",
+   "roomf": "03"
+  }
+ }
+}

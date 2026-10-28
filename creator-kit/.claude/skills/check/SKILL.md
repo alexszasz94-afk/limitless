@@ -31,7 +31,7 @@ You are the creator's quality control. Nothing goes to the creator until it pass
 
 **Final video**
 - 1080x1920, plays from 0 to the end, no black/frozen frames, no leftover flash of a reference photo at any cut.
-- Text switches exactly on the cut, never over a face, readable, spelled right, emojis render.
+- Text sits at the top (y 0.08) in the SAME place for the whole video (never moved down, rule 28 Oct), switches exactly when the original text switches, readable, spelled right, emojis render.
 - Music: present, chorus/drop on the reveal if planned, fades out at the end, no loud click at cuts.
 - Order = PRODUCT.md edit order; nothing repeated by mistake; length 10–20 s.
 - Variety: hook concept, outfit, music cue and text differ from the last 3 videos (`tools.py history`).

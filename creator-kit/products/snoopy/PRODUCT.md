@@ -57,7 +57,7 @@ QUALITY: UGC style, natural, real iPhone 17 Pro Max video. LIGHT: very soft, ver
 After it finishes: `python3 engine/tools.py cuts output/<name>/broll.mp4` → you get 3 cuts (≈0.9, 3.5, 4.8). Then `python3 engine/tools.py cozy output/<name>/broll.mp4 output/<name>/cozy-zoom.mp4 <last cut + 0.15>`.
 
 
-**Foot pockets — ALWAYS add this sentence to every B-roll prompt (rule 26 Oct):** `FOOT POCKETS, step by step: when she opens the robe, BOTH her feet are still OUTSIDE the pockets, standing on the floor in front of the hem, the two pockets are empty and flat; then she lifts one foot from the outside, over the white fluffy band, and puts it INTO one pocket; then she lifts the other foot from the outside and puts it into the other pocket. No foot is ever inside a pocket before she puts it in.`
+**Foot pouch — ALWAYS add this sentence to every B-roll prompt (rule 26 Oct):** `THE FOOT POUCH (one wide pouch across the whole width, open only at the top): both her feet start OUTSIDE the pouch on the floor; then she lifts her right foot over the white top edge into the right half of the pouch, then her left foot over the top edge into the left half; no foot is ever inside before she puts it in.`
 
 ## Standard edit order (ALWAYS this order: hook → puts it on → foot pockets → connector → remote → cozy) (edit.json segments)
 1. hook clip(s) with `"audio": true`

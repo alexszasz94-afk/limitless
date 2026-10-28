@@ -10,6 +10,7 @@
   python3 engine/tools.py drop <song.mp3>                                 -> loud jumps in a song (where the beat/chorus drops)
   python3 engine/tools.py fanwipe <in.mp4> <out.mp4> <t1> [<t2> ...]       -> ceiling-fan blade wipe centred on each cut time
   python3 engine/tools.py next-set <robe>                                 -> next unused character + room from library/ (and marks them used) + which B-roll motion (Princess rotates motion / motion2)
+  python3 engine/tools.py add-rooms <rooms.zip>                           -> Alex's rooms zip (the ONLY source of rooms, rule 28 Oct) -> library/rooms/room-NN.jpg (next free numbers)
   python3 engine/tools.py reject <library/characters/x.jpg>               -> photo breaks the rules: moves it to library/rejected/ (then run next-set again)
   python3 engine/tools.py transcribe <video>                            -> what people SAY in the video, with seconds (first run downloads a small speech model, ~150 MB)
   python3 engine/tools.py voice-mix <clip.mp4> <voice.wav> <out.mp4> <delay_s> [orig_vol]   -> puts a voice line over a clip (clip sound lowered)
@@ -167,7 +168,7 @@ def next_set(robe=""):
     for kind in ("characters", "rooms"):
         free = [p for p in sorted(glob.glob(os.path.join(ROOT, "library", kind, "*.jpg"))) if os.path.basename(p) not in used[kind]]
         if not free:
-            print(f"NO_{kind.upper()}_LEFT: run the skill find-sets now (Pinterest search, you pick the good ones), then run next-set again. Ask the creator for photos ONLY if Pinterest fails.")
+            print(f"NO_{kind.upper()}_LEFT: " + ("ask the creator for Alex's new ROOMS ZIP and run `tools.py add-rooms <zip>`; only if they have none, run find-sets (rooms that look EXACTLY like library/rooms: real phone photos, never AI)." if kind == "rooms" else "run the skill find-sets now (Pinterest search, you pick the good ones), then run next-set again. Ask the creator for photos ONLY if Pinterest fails."))
             return
         pick[kind] = free[0]; used[kind].append(os.path.basename(free[0]))
     json.dump(used, open(used_f, "w"), indent=1)
@@ -181,7 +182,7 @@ def next_set(robe=""):
     for kind in ("characters", "rooms"):
         left = len([p for p in glob.glob(os.path.join(ROOT, "library", kind, "*.jpg")) if os.path.basename(p) not in used[kind]])
         if left < 5:
-            print(f"ONLY {left} {kind.upper()} LEFT: after this video run the skill find-sets to add new ones (automatic Pinterest search).")
+            print(f"ONLY {left} {kind.upper()} LEFT: " + ("ask the creator for Alex's next rooms zip (`tools.py add-rooms <zip>`)." if kind == "rooms" else "after this video run the skill find-sets to add new ones (automatic Pinterest search)."))
 
 
 def transcribe(f):
@@ -212,6 +213,24 @@ def voice_mix(clip, voice, out, delay, orig_vol="0.3"):
     else:
         fc = f"[1:a]adelay={ms}|{ms},volume=1.6,apad[a]"
     run(["ffmpeg", "-v", "error", "-y", "-i", clip, "-i", voice, "-filter_complex", fc, "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-ar", "48000", "-shortest", out]); print(out)
+
+
+def add_rooms(z):
+    """rule 28 Oct (Alex): rooms come from the zips Alex gives (real phone photos of real American homes, picked by him)."""
+    import zipfile, io
+    from PIL import Image
+    d = os.path.join(ROOT, "library/rooms"); os.makedirs(d, exist_ok=True)
+    nums = [int(os.path.basename(p)[5:7]) for p in glob.glob(os.path.join(d, "room-*.jpg")) + glob.glob(os.path.join(ROOT, "library/rejected/*room-*.jpg")) if os.path.basename(p)[5:7].isdigit()]
+    nums += [int(x[-6:-4]) for x in glob.glob(os.path.join(ROOT, "library/rejected/*room-[0-9][0-9].jpg"))]
+    n = max(nums + [0]) + 1; added = []
+    with zipfile.ZipFile(z) as zf:
+        for name in sorted(zf.namelist()):
+            if not name.lower().replace("\\", "/").rsplit(".", 1)[-1] in ("jpg", "jpeg", "png", "webp"): continue
+            try: im = Image.open(io.BytesIO(zf.read(name))).convert("RGB")
+            except Exception: continue
+            out = os.path.join(d, f"room-{n:02d}.jpg"); im.save(out, quality=95); added.append((os.path.basename(out), im.size)); n += 1
+    for a, sz in added: print(a, f"{sz[0]}x{sz[1]}")
+    print(len(added), "rooms added - LOOK at each one (real, sharp, tree, floor free); reject only a broken file")
 
 
 def reject(f):
@@ -538,6 +557,7 @@ if __name__ == "__main__":
     elif c == "fanwipe": fanwipe(a[1], a[2], a[3:])
     elif c == "next-set": next_set(a[1] if len(a) > 1 else "")
     elif c == "reject": reject(a[1])
+    elif c == "add-rooms": add_rooms(a[1])
     elif c == "transcribe": transcribe(a[1])
     elif c == "voice-mix": voice_mix(*a[1:6])
     elif c == "crop": crop(*a[1:7])

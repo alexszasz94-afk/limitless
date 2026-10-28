@@ -1,0 +1,50 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/lot28/hooks/G1.mp4",
+   "start": 0,
+   "end": 4.53,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/G1.mp4",
+   "start": 0.15,
+   "end": 3.63
+  },
+  {
+   "file": "/home/user/limitless/products/grinch/video/concept/conector-real.mp4",
+   "start": 0.5,
+   "end": 2.1
+  },
+  {
+   "file": "/home/user/limitless/products/grinch/video/concept/telecomanda-reala.mp4",
+   "start": 0.3,
+   "end": 2.3
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/G1.mp4",
+   "start": 3.83,
+   "end": 4.92
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/G1.mp4",
+   "start": 5.12,
+   "end": 6.9
+  }
+ ],
+ "texts": [
+  {
+   "text": "H&M X GRINCH\n🤩💚",
+   "t0": 0,
+   "t1": 99,
+   "size": 76,
+   "y": 0.08
+  }
+ ],
+ "music": "/home/user/heatgrump/library/music/xmas/mean-one-grinch.mp3",
+ "music_start": 5.5,
+ "music_vol": 0.45,
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/lot28/final/grinch-r1-FINAL.mp4"
+}

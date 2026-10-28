@@ -1,0 +1,50 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/lot28/hooks/S1.mp4",
+   "start": 0,
+   "end": 4.53,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/S1.mp4",
+   "start": 0.15,
+   "end": 3.5
+  },
+  {
+   "file": "/home/user/limitless/creator-kit/products/snoopy/fixed/connector-and-remote.mp4",
+   "start": 0,
+   "end": 1.375
+  },
+  {
+   "file": "/home/user/limitless/creator-kit/products/snoopy/fixed/remote-closeup.mp4",
+   "start": 0.2,
+   "end": 2.9
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/S1.mp4",
+   "start": 3.7,
+   "end": 4.84
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/S1.mp4",
+   "start": 5.04,
+   "end": 6.9
+  }
+ ],
+ "texts": [
+  {
+   "text": "H&M X SNOOPY\n🤩🐶",
+   "t0": 0,
+   "t1": 99,
+   "size": 76,
+   "y": 0.08
+  }
+ ],
+ "music": "/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3",
+ "music_start": 0.8,
+ "music_vol": 0.45,
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/lot28/final/snoopy-r1-FINAL.mp4"
+}

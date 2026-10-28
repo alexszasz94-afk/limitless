@@ -1,0 +1,50 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/lot28/hooks/S6.mp4",
+   "start": 0,
+   "end": 4.73,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/S6.mp4",
+   "start": 0.15,
+   "end": 3.46
+  },
+  {
+   "file": "/home/user/limitless/creator-kit/products/snoopy/fixed/connector-and-remote.mp4",
+   "start": 0,
+   "end": 1.375
+  },
+  {
+   "file": "/home/user/limitless/creator-kit/products/snoopy/fixed/remote-closeup.mp4",
+   "start": 0.2,
+   "end": 2.9
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/S6.mp4",
+   "start": 3.66,
+   "end": 4.84
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/S6.mp4",
+   "start": 5.04,
+   "end": 6.9
+  }
+ ],
+ "texts": [
+  {
+   "text": "DO NOT show this to your\nmom😱😭...",
+   "t0": 0,
+   "t1": 99,
+   "size": 66,
+   "y": 0.08
+  }
+ ],
+ "music": "/home/user/heatgrump/library/music/snoopy/linus-and-lucy.mp3",
+ "music_start": 0.8,
+ "music_vol": 0.45,
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/lot28/final/snoopy-r6-FINAL.mp4"
+}

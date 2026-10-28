@@ -1,0 +1,50 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/lot28/hooks/G5.mp4",
+   "start": 0,
+   "end": 2.9,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/G5.mp4",
+   "start": 0.15,
+   "end": 3.54
+  },
+  {
+   "file": "/home/user/limitless/products/grinch/video/concept/conector-real.mp4",
+   "start": 0.5,
+   "end": 2.1
+  },
+  {
+   "file": "/home/user/limitless/products/grinch/video/concept/telecomanda-reala.mp4",
+   "start": 0.3,
+   "end": 2.3
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/G5.mp4",
+   "start": 3.74,
+   "end": 4.88
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/broll/G5.mp4",
+   "start": 5.08,
+   "end": 6.9
+  }
+ ],
+ "texts": [
+  {
+   "text": "DO NOT send this to a\ngrinch girlie 😭💚",
+   "t0": 0,
+   "t1": 99,
+   "size": 76,
+   "y": 0.08
+  }
+ ],
+ "music": "/home/user/heatgrump/library/music/xmas/mean-one-grinch.mp3",
+ "music_start": 6.9,
+ "music_vol": 0.45,
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/lot28/final/grinch-r5-FINAL.mp4"
+}

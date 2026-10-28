@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>AI Content System Offer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+@page{size:A4;margin:0}
+:root{--ink:#1b1f3b;--muted:#5d6181;--line:#dcdcec;--royal:#2a3a9e;--belt:#c8283c;--gold:#e9b50f;--chip:#f0eff8;--bg:#ffffff;
+--display:"Bricolage Grotesque","Segoe UI",sans-serif;--body:"Figtree","Segoe UI",sans-serif;--mono:"JetBrains Mono",Menlo,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:10.5pt/1.55 var(--body);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;min-height:297mm;padding:20mm 20mm 16mm;position:relative;page-break-after:always;overflow:hidden}
+.page:last-child{page-break-after:auto}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.1}
+h2{font-size:17pt;font-weight:800;margin:0 0 3mm}
+h3{font-size:11.5pt;font-weight:600;margin:0 0 1.5mm}
+p{margin:0 0 3mm}
+.eyebrow{font:500 7.5pt/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--belt);margin-bottom:2.5mm}
+.foot{position:absolute;left:20mm;right:20mm;bottom:10mm;display:flex;justify-content:space-between;font:500 7pt var(--mono);color:var(--muted);border-top:1px solid var(--line);padding-top:3mm}
+/* cover */
+.cover{background:var(--royal);color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.cover .eyebrow{color:var(--gold)}
+.cover h1{font-size:44pt;font-weight:800;letter-spacing:-.02em;margin-top:30mm;max-width:150mm}
+.cover h1 span{color:var(--gold)}
+.cover .sub{font-size:14pt;max-width:140mm;margin-top:8mm;opacity:.92}
+.strip{display:flex;gap:2mm;margin-top:18mm}
+.strip div{flex:1;border-radius:2mm;padding:3mm 3.5mm;background:rgba(255,255,255,.12);font:600 9pt var(--body)}
+.strip small{display:block;font:500 6.5pt var(--mono);opacity:.75;margin-bottom:1mm}
+.cover .meta{display:flex;justify-content:space-between;font:500 8pt var(--mono);opacity:.85;border-top:1px solid rgba(255,255,255,.3);padding-top:4mm}
+.cover .foot{display:none}
+/* blocks */
+.lead{font-size:12.5pt;color:var(--ink);max-width:160mm;margin-bottom:7mm}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:5mm 8mm}
+.card{border:1px solid var(--line);border-radius:3mm;padding:4.5mm 5mm}
+.card p{margin:0;color:var(--muted);font-size:9.8pt}
+.num{font:800 20pt var(--display);color:var(--royal);line-height:1;margin-bottom:2mm}
+.price{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4mm;margin:6mm 0 7mm}
+.price div{border-radius:3mm;padding:5mm;background:var(--chip)}
+.price div:first-child{background:var(--royal);color:#fff}
+.price b{display:block;font:800 22pt var(--display);margin:1.5mm 0}
+.price small{font:500 7pt var(--mono);letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.price span{font-size:9pt;opacity:.85}
+table{width:100%;border-collapse:collapse;font-size:9.8pt;margin-bottom:6mm}
+th{text-align:left;font:500 7.5pt var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1.5px solid var(--ink);padding:2mm 2mm 2mm 0}
+td{border-bottom:1px solid var(--line);padding:2.6mm 2mm 2.6mm 0;vertical-align:top}
+td:first-child{font-weight:600;width:44mm}
+.steps{counter-reset:s;display:grid;gap:3mm;margin:0;padding:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:10mm 1fr;gap:3mm;align-items:start}
+.steps li::before{content:counter(s);font:800 13pt var(--display);color:#fff;background:var(--royal);border-radius:50%;width:9mm;height:9mm;display:grid;place-items:center}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:9.6pt}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:5mm 0 7mm;border-top:3px solid var(--royal)}
+.timeline div{padding:3mm 3mm 0 0;position:relative}
+.timeline div::before{content:"";position:absolute;top:-2.4mm;left:0;width:3.5mm;height:3.5mm;border-radius:50%;background:var(--gold);border:2px solid var(--royal)}
+.timeline small{font:500 7pt var(--mono);color:var(--belt);text-transform:uppercase;letter-spacing:.08em}
+.timeline b{display:block;font-size:10pt;margin:.8mm 0}
+.timeline span{font-size:9pt;color:var(--muted)}
+ul.clean{margin:0 0 4mm;padding-left:4.5mm}
+ul.clean li{margin:1mm 0}
+.note{background:var(--chip);border-left:3px solid var(--gold);padding:3.5mm 4.5mm;border-radius:0 2mm 2mm 0;font-size:9.8pt;margin:4mm 0}
+.sign{display:grid;grid-template-columns:1fr 1fr;gap:12mm;margin-top:14mm}
+.sign div{border-top:1px solid var(--ink);padding-top:2mm;font:500 8pt var(--mono);color:var(--muted)}
+.big{font:800 26pt var(--display);color:var(--royal);line-height:1}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin:5mm 0 6mm}
+.stats div{background:var(--chip);border-radius:3mm;padding:4.5mm}
+.stats span{display:block;font-size:9.2pt;color:var(--muted);margin-top:1.5mm}
+.blank{border:1.5px dashed var(--royal);border-radius:3mm;padding:6mm;margin:5mm 0}
+.blank .line{border-bottom:1px solid var(--ink);height:9mm;margin-top:4mm}
+.agreed{background:var(--royal);color:#fff;border-radius:3mm;padding:5mm 6mm;margin:4mm 0}
+.agreed small{font:500 7pt var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+</style></head><body>
+
+<section class="page cover">
+  <div>
+    <div class="eyebrow">Offer · AI content system + creator coaching</div>
+    <h1>Your own AI content engine, built for <span>your products</span>.</h1>
+    <p class="sub">This month I'm fully dedicated to your business: building an AI content system around every product and personally coaching your creators, so your team can make professional videos every day in about 20 minutes each.</p>
+    <div class="strip">
+      <div><small>Product</small>AI system per robe</div><div><small>Content</small>Viral reels, remade</div><div><small>Quality</small>Frame-by-frame checks</div><div><small>Team</small>Creator coaching</div><div><small>Ongoing</small>Updates + support</div>
+    </div>
+  </div>
+  <div class="meta"><span>Prepared by Alexandru Szasz</span><span>October 2026</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">What you get</div>
+  <h2>A complete AI content system, tuned to each product</h2>
+  <p class="lead">This isn't a generic tool. Every part of it was built, tested and locked for your robes, so your creators get proven results instead of trial and error.</p>
+  <div class="grid">
+    <div class="card"><div class="num">01</div><h3>A system for every product</h3><p>Exact product references and tested try-on recipes for each robe. The robe always looks one-to-one like the real one: the hood, the colours, the trim, the foot pockets.</p></div>
+    <div class="card"><div class="num">02</div><h3>Viral reels, remade for you</h3><p>Reels that already perform in your niche are rebuilt with your product: the same timing, the same reveal and the same spoken words, with a new person in a new room. A remake, never a copy.</p></div>
+    <div class="card"><div class="num">03</div><h3>Your brand in every shot</h3><p>Your own branded packaging for unboxing and reveal hooks, 4K close-ups of the product features, and Christmas music timed to the reveal.</p></div>
+    <div class="card"><div class="num">04</div><h3>Real people, real homes</h3><p>34 real women and 55 real homes, all selected by hand, with nothing that looks AI-made. They rotate automatically, so every video looks fresh.</p></div>
+    <div class="card"><div class="num">05</div><h3>Pro-level hooks</h3><p>For the key hooks, the first frame is created and approved before anything is animated. That's how the videos look professional and not "AI".</p></div>
+    <div class="card"><div class="num">06</div><h3>Quality control built in</h3><p>Every image and clip is checked frame by frame (face, product, hands, sound and timing) and redone automatically before your team ever sees it.</p></div>
+  </div>
+  <div class="foot"><span>AI content system offer</span><span>2</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">My commitment</div>
+  <h2>100% dedicated to your business this month</h2>
+  <p class="lead">You don't just get a system. You get my full attention on two things: developing your business with AI and coaching your team until they run it with confidence.</p>
+  <h3>Coaching your creators, personally</h3>
+  <ul class="clean">
+    <li><b>Personal setup for every creator.</b> From their first message, the system explains everything in plain language: what they get, what they do, and how quality is checked.</li>
+    <li><b>Training on what makes content perform:</b> spotting reels that already work, judging the first 3 seconds, inventing their own hooks, using start frames for a pro look, and finishing the text in CapCut.</li>
+    <li><b>Working efficiently:</b> getting 2–3 videos out of one product shoot by changing only the hook and the ending.</li>
+    <li><b>A complete illustrated guide</b> (web page + PDF), written for people who have never used AI or a video editor.</li>
+    <li><b>Ongoing feedback</b> on their videos, with fixes and improvements.</li>
+  </ul>
+  <h3>Developing the system, continuously</h3>
+  <ul class="clean">
+    <li>New improvements, recipes and fixes throughout the month, sent to the whole team as simple update packs.</li>
+    <li>Photo libraries kept fresh, and new ideas tested before your team spends on them.</li>
+    <li>Available to you and your creators for anything technical, so your team only has to focus on ideas and posting.</li>
+  </ul>
+  <div class="timeline">
+    <div><small>Week 1</small><b>Products set up</b><span>References, recipes, packaging, libraries</span></div>
+    <div><small>Week 1–2</small><b>Creators onboarded</b><span>Setup, training, first videos together</span></div>
+    <div><small>Week 2–4</small><b>Daily production</b><span>I review, give feedback and improve</span></div>
+    <div><small>All month</small><b>Updates + support</b><span>Fixes, new formats, answers</span></div>
+  </div>
+  <div class="foot"><span>AI content system offer</span><span>3</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">Speed and scale</div>
+  <h2>From weeks per video to minutes</h2>
+  <div class="stats">
+    <div><div class="big">~20 min</div><span>from a reel or an idea to a finished 1080×1920 video. Classic UGC usually takes days or weeks.</span></div>
+    <div><div class="big">Same day</div><span>A trend that appears in the morning can have your version live the same afternoon.</span></div>
+    <div><div class="big">1,500+</div><span>videos a month possible with 5 creators making about 10 videos a day each.</span></div>
+  </div>
+  <ul class="clean">
+    <li><b>No waiting on anyone:</b> no shipping, no shoots, no editor and no agency queue.</li>
+    <li><b>Low cost per video:</b> a few dollars in generation costs instead of the usual price of a UGC video or an agency edit.</li>
+    <li><b>More accounts, more tests:</b> enough volume to run several accounts per product, test many hooks every day and double down on whatever takes off.</li>
+    <li><b>Easy to grow:</b> a new creator is producing on day one, and a new product plugs into the same system.</li>
+  </ul>
+  <h3>What it can earn (illustrative example, not a promise)</h3>
+  <p>1,500 videos a month. If only 1 in 20 reaches 50,000 views, that's about 3.75 million views from those alone. If 1 in 200 viewers clicks and 1% of those buy a $70 robe, that's about 190 sales, or roughly $13,000 a month, from the best 5% of the videos. Every bigger viral hit comes on top. With this volume you don't depend on luck: you get dozens of shots on goal every day.</p>
+  <div class="foot"><span>AI content system offer</span><span>4</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">Investment</div>
+  <h2>Your proposal for this month</h2>
+  <p class="lead">This month covers the full build of the system for your products, the onboarding and coaching of your creators, and my full dedication to your business. I'd like you to name the investment you think is fair for it.</p>
+  <div class="blank">
+    <h3>This month: AI system build + creator coaching + full dedication</h3>
+    <p style="color:var(--muted);margin:0">Your proposed amount:</p>
+    <div class="line"></div>
+  </div>
+  <div class="agreed"><small>Already agreed · from next month</small><div style="font:800 15pt var(--display);margin-top:1.5mm">10% per creator, paid upfront each month</div><div style="font-size:9.6pt;opacity:.9;margin-top:1mm">Covers the system, the updates, the maintenance and my ongoing support for your creators.</div></div>
+  <h3>Included in both</h3>
+  <ul class="clean">
+    <li>The AI content system for every product, kept up to date.</li>
+    <li>Your content stays yours: every video your team makes is yours to keep and use.</li>
+    <li>Generation tools run on your own accounts, so you keep full control of content and costs.</li>
+  </ul>
+  <div class="sign"><div>Alexandru Szasz · signature &amp; date</div><div>Client · signature &amp; date</div></div>
+  <div class="foot"><span>AI content system offer</span><span>5</span></div>
+</section>
+</body></html>

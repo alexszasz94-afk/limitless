@@ -13,6 +13,7 @@ Long hooded heated robe. Outside: light camel-brown ribbed (corduroy-like) plush
 | snoopy_pouch | refs/pouch.jpg | B-roll only (the foot pocket) |
 | snoopy_detail | refs/detail.jpg | close-ups of the fabric (connector/remote shots, bag shots) |
 | snoopy_box | refs/box.jpg | the gift box (cream linen box, camel velvet ribbon, round seal) |
+| snoopy_box_display | refs/box-display-red.jpg (or `box-display-camel.jpg`) | NEW 28 Oct (Alex: "the Snoopy box like the HeatGrump one"): tall display box with a window, the robe inside with the hood on top, "HEATPUP" at the bottom — use it for every box/unboxing hook. Lettering on packaging: make/fix it with `gpt_image_2_5` (quality high) — nano_banana misspells it (HEATTPUP/HEATGPUP). |
 
 ## Fixed clips (already made — never generate again)
 - `fixed/connector-tree-1.mp4`, `-2` — grey connector pushed fully in, close-up next to the Christmas tree, woman's hands + Snoopy sleeve, 4K, 4 s. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use **1.2–4.0** (fully joined at ~3.0 s, then held — never cut before). Never generate a new connector. (`fixed/connector-and-remote.mp4` = old one, not used.)

@@ -22,6 +22,8 @@
   python3 engine/tools.py retime <our-hook.mp4> <reference-hook.mp4> <out.mp4> [hook end s] -> puts every cut/action on the EXACT second of the original and ends exactly where it ends (rule 28 Oct)
   python3 engine/tools.py vocals <hook.mp4> <out.mp4>                    -> keeps ONLY the voice of a copied hook (Demucs) - Kling copies the original music, never deliver it (rule 28 Oct)
   python3 engine/tools.py audit-sound <hook.mp4> <hook end> "<expected line>" -> ALWAYS after making a hook/video: every word + second, missing words, music check
+  python3 engine/tools.py blur-for-sound <hook.mp4> <out.mp4> <x,y,w,h|none> [face until s] -> input for the Seedance SOUND pass (product blurred, lips sharp)
+  python3 engine/tools.py voice-to-lips <seedance.mp4> <out.wav> <hook end> <its word onsets> <original word onsets> [last phrase speed, e.g. 0.85] [background gain, default 0.5; lower if the background covers the voice] -> voice on the lips, no cut word, background untouched
   python3 engine/tools.py onsets <file> [0.2]                            -> seconds where each word starts; on `vocals` of the REFERENCE = where our voice must go. No onsets in the vocals = the original has only a song (no voice)
   python3 engine/tools.py place-voice <seedance.mp4> <out.wav> <hook end> <t1,t2,..> <s1,s2,..> [cap] -> puts Seedance words (onsets s) on the reference seconds (t)
   python3 engine/tools.py hook-audio <reference.mp4> [seconds]            -> MANDATORY on every reference: is there speech? every word WITH its second + a ready "Sound:" line for the Kling prompt
@@ -296,6 +298,59 @@ def audit_sound(f, end, expected=""):
     shutil.rmtree(d, ignore_errors=True)
 
 
+def blur_for_sound(f, out, box="none", until="99", dur=None):
+    """rule 28 Oct: Seedance refuses our robe (ip_detected). For the SOUND pass give it our hook with everything blurred
+    except the speaker's face (box = x,y,w,h as fractions; 'none' = all blurred, e.g. POV), face sharp only until <until> s.
+    480p, padded to whole seconds (min 4)."""
+    import math
+    d = float(dur) if dur else max(4, math.ceil(duration(f)))
+    if box == "none":
+        vf = ["-vf", "tpad=stop_mode=clone:stop_duration=1.5,scale=480:854,boxblur=22:3"]
+    else:
+        x, y, w, h = box.split(",")
+        vf = ["-filter_complex", f"[0:v]tpad=stop_mode=clone:stop_duration=1.5,scale=480:854,split[a][b];[a]boxblur=22:3[bl];[b]crop=iw*{w}:ih*{h}:iw*{x}:ih*{y}[f];[bl][f]overlay=W*{x}:H*{y}:enable='lt(t,{until})'"]
+    run(["ffmpeg", "-v", "error", "-y", "-i", f] + vf + ["-t", str(d), "-an", "-c:v", "libx264", "-crf", "22", out])
+    print(out, f"- {d:.0f} s; look at one frame: product unrecognisable, the speaker's lips sharp")
+
+
+def voice_to_lips(seedance, out, end, starts, targets, last_speed="1.0", bg_gain="0.5"):
+    """rule 28 Oct: Seedance sound -> voice exactly on the lips with NO cut word and NO gap: Demucs splits voice /
+    background; only the PAUSES of the voice are shortened/lengthened so each word starts on its target (the original's
+    seconds); the background (ambience + sound effects) stays untouched on our actions; mixed and loudness-normalised."""
+    import tempfile, numpy as np
+    end = float(end); S = [float(v) for v in starts.split(",")]; T = [float(v) for v in targets.split(",")]
+    d = tempfile.mkdtemp(); w = os.path.join(d, "a.wav")
+    run(["ffmpeg", "-v", "error", "-y", "-i", seedance, "-vn", "-ac", "2", "-ar", "44100", w])
+    subprocess.run([sys.executable, "-m", "demucs", "-n", "htdemucs", "-o", d, w], check=True, capture_output=True)
+    st = os.path.join(d, "htdemucs", "a"); voc = os.path.join(st, "vocals.wav"); bg = os.path.join(d, "bg.wav")
+    run(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(st, "drums.wav"), "-i", os.path.join(st, "bass.wav"), "-i", os.path.join(st, "other.wav"), "-filter_complex", "amix=inputs=3:normalize=0", bg])
+    e = _env(voc); thr = e.max() * 0.06; full = duration(voc); E = []
+    for i, s0 in enumerate(S):   # end of each word = voice quiet for 80 ms
+        lim = S[i + 1] - 0.05 if i + 1 < len(S) else full; k = int(s0 * 100) + 10
+        while k < int(lim * 100) and not all(e[k:k + 8] < thr): k += 1
+        E.append(min(lim, k / 100 + 0.05))
+    segs, pos, prev = [], 0.0, 0.0
+    for i, (s0, t) in enumerate(zip(S, T)):
+        ps, pe = prev, max(prev, s0 - 0.02); want = max(0.04, (t - 0.02) - pos); have = pe - ps
+        if have > 0.03:
+            r = min(4.0, max(0.5, have / want)); segs.append((ps, pe, r)); pos += have / r
+        segs.append((pe, E[i], 1.0)); pos += E[i] - pe; prev = E[i]
+    if float(last_speed) != 1.0:   # the last phrase spoken faster/slower than the original: stretch only that phrase (pitch kept)
+        a0, b0, _ = segs[-1]; segs[-1] = (a0, b0, float(last_speed))
+    segs.append((prev, full, 1.0)); fc = []
+    for j, (a, b, r) in enumerate(segs):
+        tempo = []
+        while r > 2.0: tempo.append("atempo=2.0"); r /= 2.0
+        tempo.append(f"atempo={r:.4f}")
+        fc.append(f"[0:a]atrim={a:.3f}:{b + 0.03:.3f},asetpts=PTS-STARTPTS,{','.join(tempo)}[p{j}]")
+    ch = "[p0]"
+    for j in range(1, len(segs)):
+        fc.append(f"{ch}[p{j}]acrossfade=d=0.03:c1=tri:c2=tri[c{j}]"); ch = f"[c{j}]"
+    fc.append(f"{ch}apad,atrim=0:{end}[v];[1:a]atrim=0:{end},apad,volume={bg_gain}[b];[v][b]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5,afade=t=out:st={end - 0.05}:d=0.05[o]")
+    run(["ffmpeg", "-v", "error", "-y", "-i", voc, "-i", bg, "-filter_complex", ";".join(fc), "-map", "[o]", "-ac", "2", "-ar", "48000", out])
+    print(out, "- now audit-sound + onsets + the spectrogram")
+
+
 def retime(ours, ref, out, end=None):
     """rule 28 Oct: our hook must have EXACTLY the original's seconds. Matches every cut of ours to the
     nearest cut of the reference and speeds/slows each piece so every cut lands on the original's second;
@@ -454,6 +509,8 @@ if __name__ == "__main__":
     elif c == "retime": retime(a[1], a[2], a[3], a[4] if len(a) > 4 else None)
     elif c == "vocals": vocals(a[1], a[2])
     elif c == "audit-sound": audit_sound(a[1], a[2], a[3] if len(a) > 3 else "")
+    elif c == "blur-for-sound": blur_for_sound(*a[1:6])
+    elif c == "voice-to-lips": voice_to_lips(*a[1:8])
     elif c == "onsets": onsets(a[1], a[2] if len(a) > 2 else "0.2")
     elif c == "place-voice": place_voice(*a[1:7])
     elif c == "cleantext": cleantext(a[1], a[2], a[3], a[4:])

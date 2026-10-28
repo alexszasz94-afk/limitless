@@ -16,7 +16,7 @@ Long hooded heated robe. Outside: light camel-brown ribbed (corduroy-like) plush
 
 ## Fixed clips (already made — never generate again)
 - `fixed/connector-tree-1.mp4`, `-2` — grey connector pushed fully in, close-up next to the Christmas tree, woman's hands + Snoopy sleeve, 4K, 4 s. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use **1.2–4.0** (fully joined at ~3.0 s, then held — never cut before). Never generate a new connector. (`fixed/connector-and-remote.mp4` = old one, not used.)
-- `fixed/remote-tree-1.mp4`, `-2` — white remote close-up next to the Christmas tree with the Snoopy sleeve (2 different trees/nails), 4K, 1.9 s, lights go up. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use the whole clip 0–1.9. Never generate a new remote. (`fixed/remote-closeup.mp4` = old one, not used.)
+- `fixed/remote-tree-1.mp4` — THE ONLY Snoopy remote (Alex 28 Oct: "la snoopy folosim doar a doua telecomanda"): white remote close-up next to the silver Christmas tree with the Snoopy sleeve, 4K, 1.9 s, lights go up. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use the whole clip 0–1.9. Never generate a new remote. (`fixed/remote-closeup.mp4` = old one, not used.)
 
 ## Music
 - `music/linus-and-lucy.mp3` — `"music_start": 0.8`, `"music_vol": 0.75`, `"orig_vol": 1.0`.

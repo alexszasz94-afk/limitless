@@ -1,1 +1,10 @@
-{"motion2":"597547c5-6769-472c-a8d1-217c3bebeab4","char-04-face":"18d594ea-58c7-43fd-af97-8ef37a21500c","room-05":"7a309a6e-fbbd-435e-b752-5b74ed250936","princess_front":"53a99198-de6e-4398-899b-dad1d20ad781","princess_back":"31225591-9171-4aba-b355-82942bbe66c6","princess_pouch_open":"74822585-83e6-437c-a696-2c65afca4666","princess_pouch_feet":"e65bea50-043a-49be-977d-1bf42c20f62a"}
+{
+ "motion2": "7df9a34f-1b54-4571-a84b-7f416b7d624a",
+ "char-04-face": "18d594ea-58c7-43fd-af97-8ef37a21500c",
+ "room-05": "7a309a6e-fbbd-435e-b752-5b74ed250936",
+ "princess_front": "53a99198-de6e-4398-899b-dad1d20ad781",
+ "princess_back": "31225591-9171-4aba-b355-82942bbe66c6",
+ "princess_pouch_open": "74822585-83e6-437c-a696-2c65afca4666",
+ "princess_pouch_feet": "e65bea50-043a-49be-977d-1bf42c20f62a",
+ "motion2_old_7s_feet_visible": "597547c5-6769-472c-a8d1-217c3bebeab4"
+}

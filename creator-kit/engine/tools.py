@@ -337,7 +337,8 @@ def voice_to_lips(seedance, out, end, starts, targets, last_speed="1.0", bg_gain
         segs.append((pe, E[i], 1.0)); pos += E[i] - pe; prev = E[i]
     if float(last_speed) != 1.0:   # the last phrase spoken faster/slower than the original: stretch only that phrase (pitch kept)
         a0, b0, _ = segs[-1]; segs[-1] = (a0, b0, float(last_speed))
-    segs.append((prev, full, 1.0)); fc = []
+    if full - prev > 0.05: segs.append((prev, full, 1.0))   # a zero-length tail (voice runs to the end) made acrossfade hang
+    fc = []
     for j, (a, b, r) in enumerate(segs):
         tempo = []
         while r > 2.0: tempo.append("atempo=2.0"); r /= 2.0

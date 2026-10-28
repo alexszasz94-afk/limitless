@@ -1,0 +1,442 @@
+[
+ {
+  "index": 1300,
+  "key": "G2",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 4,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "e53671ba-fe5c-4356-bdf2-561d361f869c"
+    },
+    {
+     "role": "image_references",
+     "value": "cc885251-6109-4278-9ee5-c0b3c84d39eb"
+    },
+    {
+     "role": "image_references",
+     "value": "51d54f58-743a-4ddd-afc2-2111b6b663a8"
+    },
+    {
+     "role": "image_references",
+     "value": "a9ebff95-7b4e-4a10-92f5-4c9377d01fd4"
+    },
+    {
+     "role": "image_references",
+     "value": "b3adf7e2-adcd-4ffc-9989-1fa0c822c78f"
+    },
+    {
+     "role": "image_references",
+     "value": "28a3d14b-3578-4569-bcf2-33a84d478cc0"
+    },
+    {
+     "role": "image_references",
+     "value": "71882d2b-aeab-4cc1-afa3-4f9d1a1951c5"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input: 0.0-2.8 s she stands in the room, holds the rolled robe horizontally in front of her chest and counts; at 2.83 s the robe drops and unrolls downward; by 3.67 s it hangs open in full length. The rolled bundle shows the outside of OUR robe with its own fabric and colours - NOT the pattern of the input video. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. PERSON: the woman becomes exactly the woman of Image 1: SAME FACE and the SAME HAIR (colour, length, style) as Image 1, the same skin tone. Replace her face and hair completely, she must NOT look like the woman of the input video. She wears red-and-green plaid flannel Christmas pajamas (not the clothes of the input video). PLACE: the room becomes the living room of Image 2 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 2; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. ACTION: she holds a tightly rolled robe horizontally in front of her chest, then lifts it and lets it unroll downward exactly like in the input video, and it falls open into the full-length robe with the hood at the top. The rolled bundle and the open robe are OUR ROBE: the hooded robe of Images 3-6, REPRODUCE IT ONE TO ONE from Images 3-6 (colours, hood with its face, trim, every detail); never a different robe. Sound: she counts out loud, playful, exactly like in the input video: \"Three,\" at 0.16 s, \"two,\" at 0.8 s, \"one,\" at 1.4 s, \"let's see how it looks like!\" from 1.94 s to 2.5 s; no music. Her lips move in sync with her words. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO TEXT ANYWHERE: no captions, no subtitles, no burned-in text, no emoji, no watermarks \u2014 any text or blurred patch in the input video is removed."
+  }
+ },
+ {
+  "index": 1301,
+  "key": "S2",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 4,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "e53671ba-fe5c-4356-bdf2-561d361f869c"
+    },
+    {
+     "role": "image_references",
+     "value": "26e965d0-aed5-4efc-bf5a-8e195401ad04"
+    },
+    {
+     "role": "image_references",
+     "value": "13d0b94f-1691-41b5-bc13-e9c76fad6f3f"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input: 0.0-2.8 s she stands in the room, holds the rolled robe horizontally in front of her chest and counts; at 2.83 s the robe drops and unrolls downward; by 3.67 s it hangs open in full length. The rolled bundle shows the light camel-brown ribbed outside of the Snoopy robe with its embroidered dog and little yellow birds - NO flowers, NO leaves, NOT the pattern of the input video. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. PERSON: the woman becomes exactly the woman of Image 1: SAME FACE and the SAME HAIR (colour, length, style) as Image 1, the same skin tone. Replace her face and hair completely, she must NOT look like the woman of the input video. She wears cream fair-isle sweater and grey sweatpants (not the clothes of the input video). PLACE: the room becomes the living room of Image 2 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 2; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. ACTION: she holds a tightly rolled robe horizontally in front of her chest, then lifts it and lets it unroll downward exactly like in the input video, and it falls open into the full-length robe with the hood at the top. The rolled bundle and the open robe are OUR ROBE: the hooded Snoopy robe of Images 3-6, REPRODUCE IT ONE TO ONE from Images 3-6: light camel-brown plush outside, white fluffy sherpa lining and trim, hood = white fluffy dog face with black nose and two long black floppy ears with a red Santa hat (Image 6); never a different robe. Sound: she counts out loud, playful, exactly like in the input video: \"Three,\" at 0.16 s, \"two,\" at 0.8 s, \"one,\" at 1.4 s, \"let's see how it looks like!\" from 1.94 s to 2.5 s; no music. Her lips move in sync with her words. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO TEXT ANYWHERE: no captions, no subtitles, no burned-in text, no emoji, no watermarks \u2014 any text or blurred patch in the input video is removed."
+  }
+ },
+ {
+  "index": 1302,
+  "key": "G4",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 6,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "2fb47fe6-8009-4bb6-866c-6aee18f41c54"
+    },
+    {
+     "role": "image_references",
+     "value": "d4782c1b-b813-48b3-83dc-b5392b1bcde9"
+    },
+    {
+     "role": "image_references",
+     "value": "d3e02652-3c46-4efa-86f6-adec9eac375a"
+    },
+    {
+     "role": "image_references",
+     "value": "a9ebff95-7b4e-4a10-92f5-4c9377d01fd4"
+    },
+    {
+     "role": "image_references",
+     "value": "b3adf7e2-adcd-4ffc-9989-1fa0c822c78f"
+    },
+    {
+     "role": "image_references",
+     "value": "28a3d14b-3578-4569-bcf2-33a84d478cc0"
+    },
+    {
+     "role": "image_references",
+     "value": "71882d2b-aeab-4cc1-afa3-4f9d1a1951c5"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input, with the same cuts at 4.04 and 5.17 s: 0-1.0 s the hand takes the box from the shelf; 1.0-2.0 s she lifts it towards the camera; 2.0-4.04 s she carries it and puts it into the red cart; at 4.04 s cut to the coffee table in the living room of Image 2, the box lies flat on the table and both hands rest on it until 5.17 s. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. Handheld POV in the same warehouse store with the same shelves and price labels (30.99), then the same red shopping cart, then the coffee table in the living room of Image 2. LOGIC OF THE SCENE, exactly like the input: a branded robe box bought in a warehouse store, the brand printed on the box like in the input. Every green PRINCESSCOMFORT box on the shelf, in the hand, in the cart and on the coffee table becomes exactly the HEATGRUMP box of Image 1: deep red rigid box with a large clear window showing the folded robe, and the brand name HEATGRUMP printed in bold white letters on the bottom band, exactly where PRINCESSCOMFORT is printed in the input video; the word HEATGRUMP stays sharp, readable and correctly spelled on every box in every frame, the same way PRINCESSCOMFORT is readable in the input. Inside the window: OUR ROBE: the hooded robe of Images 3-6, REPRODUCE IT ONE TO ONE from Images 3-6 (colours, hood with its face, trim, every detail); never a different robe. PLACE: the room becomes the living room of Image 2 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 2; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. No other text anywhere. The hand keeps the same black sleeve, the same light purple almond nails and bracelets. Sound: a woman off camera screams with excitement \"AAAHHH!\" at 1.0 s and again \"AAAHHH!\" at 3.3 s; real store sounds and the cart rattling; no music. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO OVERLAY TEXT: no captions, no subtitles, no burned-in overlay text, no emoji, no watermarks - the caption text of the input video is removed. The ONLY lettering in the video is the brand/title logo printed on our product packaging described above, which stays printed on it, sharp and correctly spelled, like real retail packaging."
+  }
+ },
+ {
+  "index": 1303,
+  "key": "S4",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 6,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "2fb47fe6-8009-4bb6-866c-6aee18f41c54"
+    },
+    {
+     "role": "image_references",
+     "value": "052a240e-d919-4b3a-850a-aa2d8067bb38"
+    },
+    {
+     "role": "image_references",
+     "value": "7c6b5ce0-7d68-45fd-9086-faeb592c4391"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input, with the same cuts at 4.04 and 5.17 s: 0-1.0 s the hand takes the box from the shelf; 1.0-2.0 s she lifts it towards the camera; 2.0-4.04 s she carries it and puts it into the red cart; at 4.04 s cut to the coffee table in the living room of Image 2, the box lies flat on the table and both hands rest on it until 5.17 s. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. Handheld POV in the same warehouse store with the same shelves and price labels (30.99), then the same red shopping cart, then the coffee table in the living room of Image 2. LOGIC OF THE SCENE, exactly like the input: a branded robe box bought in a warehouse store, the brand printed on the box like in the input. Every green PRINCESSCOMFORT box on the shelf, in the hand, in the cart and on the coffee table becomes exactly our real gift box of Image 1: white box with the brown velvet ribbon cross and the round brown HeatPup seal logo in the centre, exactly as in Image 1, the seal readable on every box in every frame. It is our product box; the robe inside is OUR ROBE: the hooded Snoopy robe of Images 3-6, REPRODUCE IT ONE TO ONE from Images 3-6: light camel-brown plush outside, white fluffy sherpa lining and trim, hood = white fluffy dog face with black nose and two long black floppy ears with a red Santa hat (Image 6); never a different robe. At 4.04-5.17 s on the coffee table the box stays CLOSED and in one piece, both hands resting on its lid exactly like in the input video - no robe outside the box, nothing popping out. PLACE: the room becomes the living room of Image 2 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 2; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. No other text anywhere. The hand keeps the same black sleeve, the same light purple almond nails and bracelets. Sound: a woman off camera screams with excitement \"AAAHHH!\" at 1.0 s and again \"AAAHHH!\" at 3.3 s; real store sounds and the cart rattling; no music. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO OVERLAY TEXT: no captions, no subtitles, no burned-in overlay text, no emoji, no watermarks - the caption text of the input video is removed. The ONLY lettering in the video is the brand/title logo printed on our product packaging described above, which stays printed on it, sharp and correctly spelled, like real retail packaging."
+  }
+ },
+ {
+  "index": 1304,
+  "key": "G5",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 5,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "d631d92f-1e3b-4763-9416-a1e948f459a0"
+    },
+    {
+     "role": "image_references",
+     "value": "fa93f8c9-296f-4154-805d-ac005931038c"
+    },
+    {
+     "role": "image_references",
+     "value": "3afe382a-5918-4311-9ba8-614e12cc68c6"
+    },
+    {
+     "role": "image_references",
+     "value": "d4782c1b-b813-48b3-83dc-b5392b1bcde9"
+    },
+    {
+     "role": "image_references",
+     "value": "a9ebff95-7b4e-4a10-92f5-4c9377d01fd4"
+    },
+    {
+     "role": "image_references",
+     "value": "b3adf7e2-adcd-4ffc-9989-1fa0c822c78f"
+    },
+    {
+     "role": "image_references",
+     "value": "28a3d14b-3578-4569-bcf2-33a84d478cc0"
+    },
+    {
+     "role": "image_references",
+     "value": "71882d2b-aeab-4cc1-afa3-4f9d1a1951c5"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input: 0-3.6 s she holds the box against her chest, completely covered by the fleece blanket draped over it, and plays with the corner of the blanket while she counts; 3.6-4.1 s she grabs the blanket and pulls it up and off with one hand; at 4.1 s the box is revealed, held in front of her chest, and she tosses the blanket aside. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. PERSON: the woman becomes exactly the woman of Image 1: SAME FACE and the SAME HAIR (colour, length, style, worn down under the beanie) as Image 1, the same skin tone. Replace her face and hair completely, she must NOT look like the blonde woman of the input video; she wears the same cream wool coat, cream beanie, white scarf and white mittens as in the input video, outside the same white house in the snow. OBJECT MAP, exactly like the input: the Frozen fleece blanket is a decorative prop, so it becomes the mint-green fleece throw of Image 2 with the big printed Grinch face in a Santa hat and snowflakes - a soft fleece blanket of the same size, draped the same way, never a robe or a cape; the Frozen-branded gift box is the packaging, so it becomes the HEATGRUMP box of Image 3 (deep red box with clear window showing our folded robe, brand name HEATGRUMP printed in bold white letters on the bottom band, correctly spelled), the same size and held the same way; the robe inside the box window, where visible, is OUR ROBE: the hooded robe of Images 4-7, REPRODUCE IT ONE TO ONE from Images 4-7 (colours, hood with its face, trim, every detail); never a different robe. Nothing from Frozen remains. Sound: she counts out loud, excited, exactly like in the input video: \"Three,\" at 0.0 s, \"two,\" at 0.62 s, \"one!\" at 1.92 s; soft outdoor winter ambience; no music. Her lips move in sync with her words. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO OVERLAY TEXT: no captions, no subtitles, no emoji, no watermarks - the caption text of the input video is removed. Store signs and logos that are in the input stay; the only lettering is the brand on our box."
+  }
+ },
+ {
+  "index": 1305,
+  "key": "S5",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 5,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "d631d92f-1e3b-4763-9416-a1e948f459a0"
+    },
+    {
+     "role": "image_references",
+     "value": "bae23a91-ae08-4acb-b17b-5c9ba4be993d"
+    },
+    {
+     "role": "image_references",
+     "value": "9aa93426-1b0e-4777-8531-f8be845fd12c"
+    },
+    {
+     "role": "image_references",
+     "value": "052a240e-d919-4b3a-850a-aa2d8067bb38"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input: 0-3.6 s she holds the box against her chest, completely covered by the fleece blanket draped over it, and plays with the corner of the blanket while she counts; 3.6-4.1 s she grabs the blanket and pulls it up and off with one hand; at 4.1 s the box is revealed, held in front of her chest, and she tosses the blanket aside. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. PERSON: the woman becomes exactly the woman of Image 1: SAME FACE and the SAME HAIR (colour, length, style, worn down under the beanie) as Image 1, the same skin tone. Replace her face and hair completely, she must NOT look like the blonde woman of the input video; she wears the same cream wool coat, cream beanie, white scarf and white mittens as in the input video, outside the same white house in the snow. OBJECT MAP, exactly like the input: the Frozen fleece blanket is a decorative prop, so it becomes the light-red fleece throw of Image 2 with the big printed Snoopy in a Santa hat, little yellow birds and snowflakes - a soft fleece blanket of the same size, draped the same way, never a robe or a cape; the Frozen-branded gift box is the packaging, so it becomes our gift box of Image 3 (white box with the brown velvet ribbon cross and the round brown HeatPup seal logo in the centre, readable), the same size and held the same way; the robe inside the box window, where visible, is OUR ROBE: the hooded Snoopy robe of Images 4-7, REPRODUCE IT ONE TO ONE from Images 4-7: light camel-brown plush outside, white fluffy sherpa lining and trim, hood = white fluffy dog face with black nose and two long black floppy ears with a red Santa hat (Image 7); never a different robe. Nothing from Frozen remains. Sound: she counts out loud, excited, exactly like in the input video: \"Three,\" at 0.0 s, \"two,\" at 0.62 s, \"one!\" at 1.92 s; soft outdoor winter ambience; no music. Her lips move in sync with her words. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO OVERLAY TEXT: no captions, no subtitles, no emoji, no watermarks - the caption text of the input video is removed. Store signs and logos that are in the input stay; the only lettering is the brand on our box."
+  }
+ },
+ {
+  "index": 1306,
+  "key": "G6",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 5,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "3b66737b-b768-4694-ae33-54b7f7b39727"
+    },
+    {
+     "role": "image_references",
+     "value": "67f319fc-7487-45ce-98f9-bc1add8795ef"
+    },
+    {
+     "role": "image_references",
+     "value": "a9ebff95-7b4e-4a10-92f5-4c9377d01fd4"
+    },
+    {
+     "role": "image_references",
+     "value": "b3adf7e2-adcd-4ffc-9989-1fa0c822c78f"
+    },
+    {
+     "role": "image_references",
+     "value": "28a3d14b-3578-4569-bcf2-33a84d478cc0"
+    },
+    {
+     "role": "image_references",
+     "value": "71882d2b-aeab-4cc1-afa3-4f9d1a1951c5"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input: 0-4.4 s POV looking down at her own legs while she counts, one slipper resting on the rolled robe; at about 4.5 s she kicks it and it unrolls on the rug. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. POV of the same person sitting on the rug, now in the living room of Image 1, wearing DIFFERENT clothes: red and white striped long Christmas pajama pants and grey fluffy slippers (not the pajamas and not the slippers of the input video). PLACE: the room becomes the living room of Image 1 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 1; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. The rolled bundle at her feet becomes the rolled-up robe: OUR ROBE: the hooded robe of Images 2-5, REPRODUCE IT ONE TO ONE from Images 2-5 (colours, hood with its face, trim, every detail); never a different robe. It is rolled tightly with the hood face visible at the end, and at the same second as in the input video it unrolls on the rug and shows the whole robe. Sound: she says out loud, excited, exactly like in the input video: \"Three,\" at 0.1 s, \"two,\" at 1.08 s, \"one,\" at 1.99 s, \"let's see how it comes out\" from 2.99 s to 3.9 s; no music. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO TEXT ANYWHERE: no captions, no subtitles, no burned-in text, no emoji, no watermarks \u2014 any text or blurred patch in the input video is removed."
+  }
+ },
+ {
+  "index": 1307,
+  "key": "S6",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 5,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "3b66737b-b768-4694-ae33-54b7f7b39727"
+    },
+    {
+     "role": "image_references",
+     "value": "23dadf6d-3cf5-4977-bbd1-e02140f02b1f"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input: 0-4.4 s POV looking down at her own legs while she counts, one slipper resting on the rolled robe; at about 4.5 s she kicks it and it unrolls on the rug. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. POV of the same person sitting on the rug, now in the living room of Image 1, wearing DIFFERENT clothes: light-blue long lounge pants and grey fluffy slippers (not the pajamas and not the slippers of the input video). PLACE: the room becomes the living room of Image 1 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 1; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. The rolled bundle at her feet becomes the rolled-up robe: OUR ROBE: the hooded Snoopy robe of Images 2-5, REPRODUCE IT ONE TO ONE from Images 2-5: light camel-brown plush outside, white fluffy sherpa lining and trim, hood = white fluffy dog face with black nose and two long black floppy ears with a red Santa hat (Image 5); never a different robe. It is rolled tightly with the hood face visible at the end, and at the same second as in the input video it unrolls on the rug and shows the whole robe. Sound: she says out loud, excited, exactly like in the input video: \"Three,\" at 0.1 s, \"two,\" at 1.08 s, \"one,\" at 1.99 s, \"let's see how it comes out\" from 2.99 s to 3.9 s; no music. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO TEXT ANYWHERE: no captions, no subtitles, no burned-in text, no emoji, no watermarks \u2014 any text or blurred patch in the input video is removed."
+  }
+ },
+ {
+  "index": 1308,
+  "key": "G7",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 6,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "11a29c07-86bc-4dab-8c2b-1451990b4d07"
+    },
+    {
+     "role": "image_references",
+     "value": "012aa548-7485-4dfb-adc7-b3f9ef9963f2"
+    },
+    {
+     "role": "image_references",
+     "value": "4ea60602-fc9b-4cea-a089-6c5ab9c51073"
+    },
+    {
+     "role": "image_references",
+     "value": "a9ebff95-7b4e-4a10-92f5-4c9377d01fd4"
+    },
+    {
+     "role": "image_references",
+     "value": "b3adf7e2-adcd-4ffc-9989-1fa0c822c78f"
+    },
+    {
+     "role": "image_references",
+     "value": "28a3d14b-3578-4569-bcf2-33a84d478cc0"
+    },
+    {
+     "role": "image_references",
+     "value": "71882d2b-aeab-4cc1-afa3-4f9d1a1951c5"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input: 0-3.3 s she bends over the coffee table holding the edges of the white fluffy blanket that covers the object on the table, and counts; 3.3-3.6 s she pulls the blanket up and throws it high into the air; 3.6-5.07 s she straightens up, arms raised, laughing happily, looking down at the revealed robe on the table. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. PERSON: the woman becomes exactly the woman of Image 1: SAME FACE and the SAME HAIR (colour, length, style) as Image 1, the same skin tone. Replace her face and hair completely, she must NOT look like the woman of the input video. She wears cream cable-knit sweater and black leggings (not the clothes of the input video). PLACE: the room becomes the living room of Image 2 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 2; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. OBJECT MAP, exactly like the input: the plain white fluffy blanket is a prop and stays exactly the same plain white blanket; the product under it in the input - the black octagonal projector device and its glowing Santa-sleigh light - is REMOVED completely: there is NO black device, NO sleigh, NO reindeer, NO projected light on or near the table. In its place, standing on the coffee table, is OUR product: our robe neatly folded and standing upright like a store display, clearly recognisable as a hooded robe - the hood with its face on top facing the camera, the front opening with its trim and the folded sleeves visible: OUR ROBE: the hooded robe of Images 3-6, REPRODUCE IT ONE TO ONE from Images 3-6 (colours, hood with its face, trim, every detail); never a different robe. Sound: she counts out loud, excited, exactly like in the input video: \"Three,\" at 0.0 s, \"two,\" at 0.72 s, \"one,\" at 2.44 s, \"let's see it!\" at 2.89 s; she laughs; no music. Her lips move in sync with her words. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO OVERLAY TEXT: no captions, no subtitles, no emoji, no watermarks - the caption text of the input video is removed. Store signs and logos that are in the input stay; on our objects there is no lettering unless described above."
+  }
+ },
+ {
+  "index": 1309,
+  "key": "S7",
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "duration": 6,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "11a29c07-86bc-4dab-8c2b-1451990b4d07"
+    },
+    {
+     "role": "image_references",
+     "value": "aac166d2-f388-4c95-b562-07761c5aaa61"
+    },
+    {
+     "role": "image_references",
+     "value": "d8dc17c1-b0f2-474d-9104-6286076b1e09"
+    },
+    {
+     "role": "image_references",
+     "value": "2de6dd11-adc6-4e2e-85b7-3a2b3a23ec66"
+    },
+    {
+     "role": "image_references",
+     "value": "78ba7a12-1955-41af-979d-d3b7a35f57cc"
+    },
+    {
+     "role": "image_references",
+     "value": "1a7e3b1d-4246-4654-8eb9-709b2af3146b"
+    },
+    {
+     "role": "image_references",
+     "value": "2762792f-8cf0-45b6-b94d-58ac8394e1b3"
+    }
+   ],
+   "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input: 0-3.3 s she bends over the coffee table holding the edges of the white fluffy blanket that covers the object on the table, and counts; 3.3-3.6 s she pulls the blanket up and throws it high into the air; 3.6-5.07 s she straightens up, arms raised, laughing happily, looking down at the revealed robe on the table. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. PERSON: the woman becomes exactly the woman of Image 1: SAME FACE and the SAME HAIR (colour, length, style) as Image 1, the same skin tone. Replace her face and hair completely, she must NOT look like the woman of the input video. She wears red holiday sweater and black leggings (not the clothes of the input video). PLACE: the room becomes the living room of Image 2 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 2; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. OBJECT MAP, exactly like the input: the plain white fluffy blanket is a prop and stays exactly the same plain white blanket; the product under it in the input - the black octagonal projector device and its glowing Santa-sleigh light - is REMOVED completely: there is NO black device, NO sleigh, NO reindeer, NO projected light on or near the table. In its place, standing on the coffee table, is OUR product: our robe neatly folded and standing upright like a store display, clearly recognisable as a hooded robe - the hood with its face on top facing the camera, the front opening with its trim and the folded sleeves visible: OUR ROBE: the hooded Snoopy robe of Images 3-6, REPRODUCE IT ONE TO ONE from Images 3-6: light camel-brown plush outside, white fluffy sherpa lining and trim, hood = white fluffy dog face with black nose and two long black floppy ears with a red Santa hat (Image 6); never a different robe. Sound: she counts out loud, excited, exactly like in the input video: \"Three,\" at 0.0 s, \"two,\" at 0.72 s, \"one,\" at 2.44 s, \"let's see it!\" at 2.89 s; she laughs; no music. Her lips move in sync with her words. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO OVERLAY TEXT: no captions, no subtitles, no emoji, no watermarks - the caption text of the input video is removed. Store signs and logos that are in the input stay; on our objects there is no lettering unless described above."
+  }
+ }
+]

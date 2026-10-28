@@ -16,15 +16,14 @@ Long hooded heated robe. Outside: light camel-brown ribbed (corduroy-like) plush
 | snoopy_box_display | refs/box-display-camel.jpg (Alex chose the CAMEL one, 28 Oct; remade with GPT Image 2.5 as a twin of the HeatGrump box) | NEW 28 Oct (Alex: "the Snoopy box like the HeatGrump one"): tall display box with a window, the robe inside with the hood on top, "HEATPUP" at the bottom — use it for every box/unboxing hook. Lettering on packaging: make/fix it with `gpt_image_2_5` (quality high) — nano_banana misspells it (HEATTPUP/HEATGPUP). |
 
 ## Fixed clips (already made — never generate again)
-- `fixed/connector-tree-1.mp4`, `-2` — grey connector pushed fully in, close-up next to the Christmas tree, woman's hands + Snoopy sleeve, 4K, 4 s. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use **1.2–4.0** (fully joined at ~3.0 s, then held — never cut before). Never generate a new connector. (`fixed/connector-and-remote.mp4` = old one, not used.)
-- `fixed/remote-tree-1.mp4` — THE ONLY Snoopy remote (Alex 28 Oct: "la snoopy folosim doar a doua telecomanda"): white remote close-up next to the silver Christmas tree with the Snoopy sleeve, 4K, 1.9 s, lights go up. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use the whole clip 0–1.9. Never generate a new remote. (`fixed/remote-closeup.mp4` = old one, not used.)
+- `fixed/connector-tree-1.mp4`, `-2` — grey connector pushed fully in, close-up next to the Christmas tree, woman's hands + Snoopy sleeve, 4K, 4 s. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use **1.2–4.0** (fully joined at ~3.0 s, then held — never cut before). Never generate a new connector.
+- `fixed/remote-tree-1.mp4` — THE ONLY Snoopy remote (Alex 28 Oct: "la snoopy folosim doar a doua telecomanda"): white remote close-up next to the silver Christmas tree with the Snoopy sleeve, 4K, 1.9 s, lights go up. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use the whole clip 0–1.9. Never generate a new remote.
 
 ## Music — Christmas songs (rule 28 Oct, Alex: "we use Christmas music for Snoopy too from now on")
 Pick one per video, different from the last video (`tools.py history`). Drop = the second the full band kicks in; put it on the hook → B-roll cut: `"music_start": <drop> - <hook end>`, `"music_duck": <hook end>` (quiet under the hook, louder from the drop).
 - `music/mariah-all-i-want.mp3` — drop at **53.4 s**.
 - `music/buble-beginning.mp3` — drop at **35.35 s**.
 - `music/wham-last-christmas.mp3` — no clear drop (steady from the start): `"music_start": 0`.
-- `music/linus-and-lucy.mp3` — not used any more (it is not a Christmas song).
 
 ## B-roll (always new person + new room) — Kling 4.0 video-edit
 Call `generate_video_batch` (or `generate_video`) with:

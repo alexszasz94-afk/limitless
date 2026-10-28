@@ -14,10 +14,10 @@ import json, os, sys, subprocess, urllib.parse, urllib.request, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUERIES = {
     "characters": [
-        "candid iphone photo woman at home cozy winter outfit",
-        "girl christmas pajamas at home candid",
-        "woman christmas sweater candid photo home",
-        "candid selfie woman cozy sweater natural light",
+        "mirror selfie christmas pajamas real girl",
+        "my christmas pajamas photo by the tree iphone",
+        "girl at home candid photo no makeup cozy sweater",
+        "christmas morning pajamas real photo woman living room",
     ],
     "rooms": [
         "our living room christmas tree ceiling fan sectional",

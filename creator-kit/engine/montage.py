@@ -122,9 +122,13 @@ def main(spec_path):
         mlen = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",m],capture_output=True,text=True).stdout)
         dur = min(dur, mlen - sp.get("music_start", 0) - 0.05)   # video ends when the music ends
         inputs += ["-ss", str(sp.get("music_start", 0)), "-i", m]
-        duck = sp.get("music_duck")   # rule 28 Oct: NO music under the hook, the music starts at the cut hook -> B-roll, on its drop
-        mv = f"volume='if(lt(t,{duck}),0,1.0)':eval=frame" if duck else f"volume={sp.get('music_vol',1.0)}"
-        filt.append(f"[0:a]volume={sp.get('orig_vol',0.15)}[oa];[{n}:a]{mv},afade=t=out:st={max(dur-0.5,0)}:d=0.5[ma];[oa][ma]amix=inputs=2:duration=first:normalize=0[a]")
+        duck = sp.get("music_duck")   # rule 28 Oct (updated): music QUIET under the hook (voice on top), a bit LOUDER from the drop at the cut hook -> B-roll
+        if duck:
+            lo, hi = sp.get("music_hook_vol", 0.2), sp.get("music_drop_vol", 1.1)
+            mv = f"volume='if(lt(t,{duck}),{lo},if(lt(t,{duck}+0.12),{lo}+({hi}-{lo})*(t-{duck})/0.12,{hi}))':eval=frame"
+        else:
+            mv = f"volume={sp.get('music_vol',1.0)}"
+        filt.append(f"[0:a]volume={sp.get('orig_vol',0.15)}[oa];[{n}:a]{mv},afade=t=out:st={max(dur-0.5,0)}:d=0.5[ma];[oa][ma]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]")
         amap = "[a]"
     else:
         amap = "0:a"

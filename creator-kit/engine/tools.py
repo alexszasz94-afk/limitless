@@ -19,6 +19,7 @@
   python3 engine/tools.py speech-times <video> [seconds]                  -> when the voice bursts are (start-end), to put each spoken word on its exact second
   python3 engine/tools.py cleantext <video> <clean.jpg> <out.mp4> <l> <t> <r> <b> [...more boxes]  -> covers their on-screen text with the same spot from a clean photo (static camera only) - no blur for Kling to copy
   python3 engine/tools.py broll-check <broll.mp4> <motion.mp4> <out-folder>   -> B-roll safety check: shot count vs the motion clip, glitch spikes inside shots, safe segments, one sheet per shot to look at
+  python3 engine/tools.py vocals <hook.mp4> <out.mp4>                    -> keeps ONLY the voice of a copied hook (Demucs) - Kling copies the original music, never deliver it (rule 28 Oct)
   python3 engine/tools.py hook-audio <reference.mp4> [seconds]            -> MANDATORY on every reference: is there speech? every word WITH its second + a ready "Sound:" line for the Kling prompt
   python3 engine/tools.py compare-audio <reference.mp4> <our-hook.mp4> [seconds]   -> words + seconds of both, to prove our hook says the same thing at the same time
   python3 engine/tools.py history [n]                                     -> what the last n videos used (default 5), so the next one is different
@@ -222,6 +223,15 @@ def speech_times(f, until="6"):
     print("voice bursts:", "  ".join(f"{a:.2f}-{b:.2f}" for a, b in bursts if b - a >= 0.05))
 
 
+def vocals(f, out):
+    import tempfile, shutil
+    d = tempfile.mkdtemp(); w = os.path.join(d, "a.wav")
+    run(["ffmpeg", "-v", "error", "-y", "-i", f, "-vn", "-ac", "2", "-ar", "44100", w])
+    subprocess.run([sys.executable, "-m", "demucs", "--two-stems=vocals", "-n", "htdemucs", "-o", d, w], check=True, capture_output=True)
+    run(["ffmpeg", "-v", "error", "-y", "-i", f, "-i", os.path.join(d, "htdemucs", "a", "vocals.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-shortest", out])
+    shutil.rmtree(d, ignore_errors=True); print(out, "- only the voice is left; check it with hook-audio")
+
+
 def cleantext(f, clean, out, boxes):
     w, h = map(int, run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).stdout.strip().split(","))
     fc, last = [f"[1:v]scale={w}:{h},split={len(boxes) // 4}" + "".join(f"[c{i}]" for i in range(len(boxes) // 4))], "0:v"
@@ -353,6 +363,7 @@ if __name__ == "__main__":
     elif c == "compare": compare(*a[1:6])
     elif c == "log": log(a[1], a[2:])
     elif c == "speech-times": speech_times(a[1], a[2] if len(a) > 2 else "6")
+    elif c == "vocals": vocals(a[1], a[2])
     elif c == "cleantext": cleantext(a[1], a[2], a[3], a[4:])
     elif c == "broll-check": broll_check(a[1], a[2], a[3])
     elif c == "hook-audio": hook_audio(a[1], a[2] if len(a) > 2 else "8")

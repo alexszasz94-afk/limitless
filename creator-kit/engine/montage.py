@@ -122,7 +122,9 @@ def main(spec_path):
         mlen = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",m],capture_output=True,text=True).stdout)
         dur = min(dur, mlen - sp.get("music_start", 0) - 0.05)   # video ends when the music ends
         inputs += ["-ss", str(sp.get("music_start", 0)), "-i", m]
-        filt.append(f"[0:a]volume={sp.get('orig_vol',0.15)}[oa];[{n}:a]volume={sp.get('music_vol',1.0)},afade=t=out:st={max(dur-0.5,0)}:d=0.5[ma];[oa][ma]amix=inputs=2:duration=first:normalize=0[a]")
+        duck = sp.get("music_duck")   # rule 28 Oct: NO music under the hook, the music starts at the cut hook -> B-roll, on its drop
+        mv = f"volume='if(lt(t,{duck}),0,1.0)':eval=frame" if duck else f"volume={sp.get('music_vol',1.0)}"
+        filt.append(f"[0:a]volume={sp.get('orig_vol',0.15)}[oa];[{n}:a]{mv},afade=t=out:st={max(dur-0.5,0)}:d=0.5[ma];[oa][ma]amix=inputs=2:duration=first:normalize=0[a]")
         amap = "[a]"
     else:
         amap = "0:a"

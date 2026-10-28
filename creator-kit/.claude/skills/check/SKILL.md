@@ -26,6 +26,8 @@ You are the creator's quality control. Nothing goes to the creator until it pass
 - Hook sound: when the reference has speech, `tools.py compare-audio <reference hook> <our hook>` must say OK, and the hook segment has `"audio": true` in the edit (check the final with `tools.py speech-times`: the voice bursts are there). A silent hook where the original speaks = redo.
 - Copied hook: `tools.py compare` original vs ours on each key action — same column = same second; faster/slower or different → redo (HOOKS.md step 5). Spoken words land on the same seconds as the original (loudness check).
 - B-roll pockets: at the start of the pocket shot BOTH feet are outside on the floor and she puts them in one after the other, from outside to inside. A foot already inside at the start → redo.
+- B-roll feet AFTER the pockets (rule 28 Oct, never skip): look at the lying and the sitting shot at 3 fps. Once her feet are in, they stay in until the end — any knee, pajama leg, sock or foot visible outside the closed robe → redo with the "FEET STAY IN THE POCKETS UNTIL THE END" sentence (CLAUDE.md rule 3b). Never deliver it.
+- Hook sound: the copied hook must NOT contain the original's music (Kling video-edit copies it) — only the voice after `tools.py vocals` (rule 9e).
 - B-roll: the person is in EVERY shot (never an empty robe, never a missing head in the back view) → else cut that shot or redo.
 - B-roll: same 4 shots as the motion clip, she steps into the pouches, last shot lying cozy; face = character.
 

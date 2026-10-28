@@ -2,35 +2,40 @@
  "fps": 30,
  "segments": [
   {
-   "file": "/home/user/limitless/products/lot28/hooks/G2.mp4",
+   "file": "/home/user/limitless/products/lot28/hooks/G2-v.mp4",
    "start": 0,
    "end": 3.67,
    "audio": true
   },
   {
-   "file": "/home/user/limitless/products/lot28/broll/G2.mp4",
+   "file": "/home/user/limitless/products/lot28/broll2/G2.mp4",
    "start": 0.15,
-   "end": 3.5
+   "end": 3.5,
+   "audio": false
   },
   {
-   "file": "/home/user/limitless/products/grinch/video/concept/conector-real.mp4",
-   "start": 0.5,
-   "end": 2.1
+   "file": "/home/user/limitless/products/lot28/cr/G2.mp4",
+   "start": 0.0,
+   "end": 1.74,
+   "audio": false
   },
   {
-   "file": "/home/user/limitless/products/grinch/video/concept/telecomanda-reala.mp4",
-   "start": 0.3,
-   "end": 2.3
+   "file": "/home/user/limitless/products/lot28/cr/G2.mp4",
+   "start": 1.84,
+   "end": 3.94,
+   "audio": false
   },
   {
-   "file": "/home/user/limitless/products/lot28/broll/G2.mp4",
+   "file": "/home/user/limitless/products/lot28/broll2/G2.mp4",
    "start": 3.7,
-   "end": 4.84
+   "end": 4.88,
+   "audio": false
   },
   {
-   "file": "/home/user/limitless/products/lot28/broll/G2.mp4",
-   "start": 5.04,
-   "end": 6.9
+   "file": "/home/user/limitless/products/lot28/broll2/G2.mp4",
+   "start": 5.08,
+   "end": 6.9,
+   "audio": false
   }
  ],
  "texts": [
@@ -42,9 +47,6 @@
    "y": 0.08
   }
  ],
- "music": "/home/user/heatgrump/library/music/xmas/mean-one-grinch.mp3",
- "music_start": 6.5,
- "music_vol": 0.45,
  "orig_vol": 1.0,
- "out": "/home/user/limitless/products/lot28/final/grinch-r2-FINAL.mp4"
+ "out": "/home/user/limitless/products/lot28/final/nomusic-G2.mp4"
 }

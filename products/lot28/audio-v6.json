@@ -1,0 +1,192 @@
+[
+ {
+  "index": 1100,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "720p",
+   "aspect_ratio": "9:16",
+   "duration": 5,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "19dea4d2-4644-40eb-864b-05520a697918"
+    }
+   ],
+   "prompt": "Edit the input video: keep the picture EXACTLY as it is, every frame, every person, every object, same timing - change nothing in the image. Your only job is the SOUND of this exact video: a real phone recording of what happens on screen, perfectly in sync with the picture. SOUND, second by second: a man and a woman, store employees, count down together out loud, excited and loud, lips in sync: \"Three!\" at 0.2 s, \"two!\" at 1.1 s, \"one!\" at 1.8 s; then the man says the whole sentence clearly: \"Let's see how it comes out!\" from 2.5 s to 3.4 s - every word complete. When the two of them whip the big satin cover cloth up and off the table (about 3.7-4.2 s), a loud swoosh and rustle of shiny satin fabric, then the soft sound of the cloth landing. Underneath everything: quiet clothing-store ambience (distant voices, soft footsteps, air conditioning). Every sound starts exactly on the frame where its action happens on screen; lips and words in perfect sync. ABSOLUTELY NO MUSIC of any kind: no song, no melody, no background music, no jingle, no bells, no chimes, no sound effects that are not caused by something visible. Natural, clear, real-life audio like an iPhone recording. If the picture freezes at the very end, only quiet room tone there."
+  }
+ },
+ {
+  "index": 1101,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "720p",
+   "aspect_ratio": "9:16",
+   "duration": 5,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "dc6bc528-8cae-4433-b8fd-4aa436ef0b89"
+    }
+   ],
+   "prompt": "Edit the input video: keep the picture EXACTLY as it is, every frame, every person, every object, same timing - change nothing in the image. Your only job is the SOUND of this exact video: a real phone recording of what happens on screen, perfectly in sync with the picture. SOUND, second by second: a man and a woman, store employees, count down together out loud, excited and loud, lips in sync: \"Three!\" at 0.2 s, \"two!\" at 1.1 s, \"one!\" at 1.8 s; then the man says the whole sentence clearly: \"Let's see how it comes out!\" from 2.5 s to 3.4 s - every word complete. When the two of them whip the big satin cover cloth up and off the table (about 3.7-4.2 s), a loud swoosh and rustle of shiny satin fabric, then the soft sound of the cloth landing. Underneath everything: quiet clothing-store ambience (distant voices, soft footsteps, air conditioning). Every sound starts exactly on the frame where its action happens on screen; lips and words in perfect sync. ABSOLUTELY NO MUSIC of any kind: no song, no melody, no background music, no jingle, no bells, no chimes, no sound effects that are not caused by something visible. Natural, clear, real-life audio like an iPhone recording. If the picture freezes at the very end, only quiet room tone there."
+  }
+ },
+ {
+  "index": 1102,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "720p",
+   "aspect_ratio": "9:16",
+   "duration": 4,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "ad51c9c2-5538-4642-9d4e-c93b92f9eb18"
+    }
+   ],
+   "prompt": "Edit the input video: keep the picture EXACTLY as it is, every frame, every person, every object, same timing - change nothing in the image. Your only job is the SOUND of this exact video: a real phone recording of what happens on screen, perfectly in sync with the picture. SOUND, second by second: the woman in the video counts out loud, playful and excited, lips in sync: \"Three,\" at 0.2 s, \"two,\" at 0.9 s, \"one,\" at 1.4 s, then right after she says the whole sentence clearly: \"let's see how it looks like!\" (about 1.7-2.6 s) - every word complete. Exactly when she lets the rolled robe drop and it unrolls down to full length, a soft heavy whoosh and flop of thick plush fabric falling open. Underneath: quiet living-room room tone. Every sound starts exactly on the frame where its action happens on screen; lips and words in perfect sync. ABSOLUTELY NO MUSIC of any kind: no song, no melody, no background music, no jingle, no bells, no chimes, no sound effects that are not caused by something visible. Natural, clear, real-life audio like an iPhone recording. If the picture freezes at the very end, only quiet room tone there."
+  }
+ },
+ {
+  "index": 1103,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "720p",
+   "aspect_ratio": "9:16",
+   "duration": 4,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "a705b0a4-d5ee-4a74-9434-2cfd403d66d2"
+    }
+   ],
+   "prompt": "Edit the input video: keep the picture EXACTLY as it is, every frame, every person, every object, same timing - change nothing in the image. Your only job is the SOUND of this exact video: a real phone recording of what happens on screen, perfectly in sync with the picture. SOUND, second by second: the woman in the video counts out loud, playful and excited, lips in sync: \"Three,\" at 0.2 s, \"two,\" at 0.9 s, \"one,\" at 1.4 s, then right after she says the whole sentence clearly: \"let's see how it looks like!\" (about 1.7-2.6 s) - every word complete. Exactly when she lets the rolled robe drop and it unrolls down to full length, a soft heavy whoosh and flop of thick plush fabric falling open. Underneath: quiet living-room room tone. Every sound starts exactly on the frame where its action happens on screen; lips and words in perfect sync. ABSOLUTELY NO MUSIC of any kind: no song, no melody, no background music, no jingle, no bells, no chimes, no sound effects that are not caused by something visible. Natural, clear, real-life audio like an iPhone recording. If the picture freezes at the very end, only quiet room tone there."
+  }
+ },
+ {
+  "index": 1104,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "720p",
+   "aspect_ratio": "9:16",
+   "duration": 5,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "6394ee60-fc9c-46aa-9a9f-3ff20a783c10"
+    }
+   ],
+   "prompt": "Edit the input video: keep the picture EXACTLY as it is, every frame, every person, every object, same timing - change nothing in the image. Your only job is the SOUND of this exact video: a real phone recording of what happens on screen, perfectly in sync with the picture. SOUND, second by second: the woman in the video counts out loud, excited, lips in sync: \"Three,\" at 0.0 s, \"two,\" at 1.1 s, \"one!\" at 2.0 s. While she fiddles with the fleece blanket, a soft rustle of fleece. Exactly when she grabs the blanket and pulls it up and off the box (about 3.6-4.1 s), a quick soft whoosh of fleece, then a light cardboard tap as the box is revealed in her hands. Underneath: quiet snowy outdoor ambience, a light winter breeze, muffled snow; no birds. Every sound starts exactly on the frame where its action happens on screen; lips and words in perfect sync. ABSOLUTELY NO MUSIC of any kind: no song, no melody, no background music, no jingle, no bells, no chimes, no sound effects that are not caused by something visible. Natural, clear, real-life audio like an iPhone recording. If the picture freezes at the very end, only quiet room tone there."
+  }
+ },
+ {
+  "index": 1105,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "720p",
+   "aspect_ratio": "9:16",
+   "duration": 5,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "fb7726ba-32f4-48b2-a289-7557d42b36fc"
+    }
+   ],
+   "prompt": "Edit the input video: keep the picture EXACTLY as it is, every frame, every person, every object, same timing - change nothing in the image. Your only job is the SOUND of this exact video: a real phone recording of what happens on screen, perfectly in sync with the picture. SOUND, second by second: the woman in the video counts out loud, excited, lips in sync: \"Three,\" at 0.0 s, \"two,\" at 1.1 s, \"one!\" at 2.0 s. While she fiddles with the fleece blanket, a soft rustle of fleece. Exactly when she grabs the blanket and pulls it up and off the box (about 3.6-4.1 s), a quick soft whoosh of fleece, then a light cardboard tap as the box is revealed in her hands. Underneath: quiet snowy outdoor ambience, a light winter breeze, muffled snow; no birds. Every sound starts exactly on the frame where its action happens on screen; lips and words in perfect sync. ABSOLUTELY NO MUSIC of any kind: no song, no melody, no background music, no jingle, no bells, no chimes, no sound effects that are not caused by something visible. Natural, clear, real-life audio like an iPhone recording. If the picture freezes at the very end, only quiet room tone there."
+  }
+ },
+ {
+  "index": 1106,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "720p",
+   "aspect_ratio": "9:16",
+   "duration": 5,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "b4dee4d2-97f0-459a-b690-4022f5db30c1"
+    }
+   ],
+   "prompt": "Edit the input video: keep the picture EXACTLY as it is, every frame, every person, every object, same timing - change nothing in the image. Your only job is the SOUND of this exact video: a real phone recording of what happens on screen, perfectly in sync with the picture. SOUND, second by second: the woman filming (her own legs in the shot, she is off camera) counts out loud, excited and close to the phone: \"Three,\" at 0.1 s, \"two,\" at 1.1 s, \"one,\" at 2.0 s, then she says the whole sentence clearly: \"let's see how it comes out!\" from 3.0 s to 3.9 s - every word complete. Exactly when her slipper kicks the rolled plush robe on the rug, a soft thump of the slipper on plush and the muffled whoosh of the roll tumbling open on the carpet. Underneath: quiet cozy living-room room tone. Every sound starts exactly on the frame where its action happens on screen; lips and words in perfect sync. ABSOLUTELY NO MUSIC of any kind: no song, no melody, no background music, no jingle, no bells, no chimes, no sound effects that are not caused by something visible. Natural, clear, real-life audio like an iPhone recording. If the picture freezes at the very end, only quiet room tone there."
+  }
+ },
+ {
+  "index": 1107,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "720p",
+   "aspect_ratio": "9:16",
+   "duration": 5,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "f26ea6f9-e98c-4691-abc6-cb6e22e09bb5"
+    }
+   ],
+   "prompt": "Edit the input video: keep the picture EXACTLY as it is, every frame, every person, every object, same timing - change nothing in the image. Your only job is the SOUND of this exact video: a real phone recording of what happens on screen, perfectly in sync with the picture. SOUND, second by second: the woman filming (her own legs in the shot, she is off camera) counts out loud, excited and close to the phone: \"Three,\" at 0.1 s, \"two,\" at 1.1 s, \"one,\" at 2.0 s, then she says the whole sentence clearly: \"let's see how it comes out!\" from 3.0 s to 3.9 s - every word complete. Exactly when her slipper kicks the rolled plush robe on the rug, a soft thump of the slipper on plush and the muffled whoosh of the roll tumbling open on the carpet. Underneath: quiet cozy living-room room tone. Every sound starts exactly on the frame where its action happens on screen; lips and words in perfect sync. ABSOLUTELY NO MUSIC of any kind: no song, no melody, no background music, no jingle, no bells, no chimes, no sound effects that are not caused by something visible. Natural, clear, real-life audio like an iPhone recording. If the picture freezes at the very end, only quiet room tone there."
+  }
+ },
+ {
+  "index": 1108,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "720p",
+   "aspect_ratio": "9:16",
+   "duration": 6,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "6ed42493-af64-4035-b356-905aaf2216b3"
+    }
+   ],
+   "prompt": "Edit the input video: keep the picture EXACTLY as it is, every frame, every person, every object, same timing - change nothing in the image. Your only job is the SOUND of this exact video: a real phone recording of what happens on screen, perfectly in sync with the picture. SOUND, second by second: the woman in the video counts out loud, excited, lips in sync: \"Three,\" at 0.3 s, \"two,\" at 1.4 s, \"one.\" at 2.3 s, then \"Let's see it!\" at 2.9 s - every word complete. Exactly when she pulls the fluffy white blanket off the coffee table and throws it up into the air (about 3.3-3.6 s), a big soft whoosh of a fluffy blanket. Then she laughs happily and squeals with joy, looking at the robe (from about 3.7 s to the end). Underneath: quiet living-room room tone. Every sound starts exactly on the frame where its action happens on screen; lips and words in perfect sync. ABSOLUTELY NO MUSIC of any kind: no song, no melody, no background music, no jingle, no bells, no chimes, no sound effects that are not caused by something visible. Natural, clear, real-life audio like an iPhone recording. If the picture freezes at the very end, only quiet room tone there."
+  }
+ },
+ {
+  "index": 1109,
+  "params": {
+   "model": "kling4_0",
+   "mode": "video-edit",
+   "resolution": "720p",
+   "aspect_ratio": "9:16",
+   "duration": 6,
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "use_unlim": false,
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "2811546e-e098-457b-930b-e78ea63fc8d5"
+    }
+   ],
+   "prompt": "Edit the input video: keep the picture EXACTLY as it is, every frame, every person, every object, same timing - change nothing in the image. Your only job is the SOUND of this exact video: a real phone recording of what happens on screen, perfectly in sync with the picture. SOUND, second by second: the woman in the video counts out loud, excited, lips in sync: \"Three,\" at 0.3 s, \"two,\" at 1.4 s, \"one.\" at 2.3 s, then \"Let's see it!\" at 2.9 s - every word complete. Exactly when she pulls the fluffy white blanket off the coffee table and throws it up into the air (about 3.3-3.6 s), a big soft whoosh of a fluffy blanket. Then she laughs happily and squeals with joy, looking at the robe (from about 3.7 s to the end). Underneath: quiet living-room room tone. Every sound starts exactly on the frame where its action happens on screen; lips and words in perfect sync. ABSOLUTELY NO MUSIC of any kind: no song, no melody, no background music, no jingle, no bells, no chimes, no sound effects that are not caused by something visible. Natural, clear, real-life audio like an iPhone recording. If the picture freezes at the very end, only quiet room tone there."
+  }
+ }
+]

@@ -47,6 +47,8 @@ One continuous real handheld phone video, starting exactly on the start image, n
 Never ask for snow/dust blowing in the wind (it makes a fake steam cloud).
 
 ## Hook sound — cheapest first
+**Rule 28 Oct replaces everything below for copied hooks: the sound is made ON OUR VIDEO (CLAUDE.md 9e): full line from the original, sound list of OUR clip, Kling video-edit on our muted hook (720p, audio only), voice put on the lips with `place-voice`, then `audit-sound` — always.** The steps below are only the fallback.
+
 1. **Write the line into the hook's own Kling prompt** (instead of `Silent`): `Sound: <who> says "<exact line>" <with the reference timing>, <other real sounds>.` One generation, no extra cost. Keep `"audio": true` for that segment.
 2. Only if that voice sounds wrong/robotic → make it in Seedance as below and mix it on.
 

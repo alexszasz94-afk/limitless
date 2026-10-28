@@ -193,8 +193,8 @@ a{color:var(--royal)}
     <li><div><b>Who says what.</b>Higgsfield's video analysis listens to the reel and writes down who speaks (man or woman, which tone) and the exact words.</div></li>
     <li><div><b>When each word falls.</b>Claude separates the voice from their music and measures where every word starts, for example "three" at 0.18 s, "two" at 0.89 s, "one" at 1.42 s. Our hook moves the lips on those same seconds, so these are the seconds for our voice. If there is no voice at all, only a song, our hook gets no voice either: just our music from the start, with the big moment of the song on the reveal.</div></li>
     <li><div><b>The words go into the clip too.</b>The words and their seconds also go into the video generation, so the lips and movements already fit the line.</div></li>
-    <li><div><b>The voice is made separately.</b>The video tool copies the whole sound of the original, their music too, so that sound is thrown away. Claude makes the same line again with a separate voice generator (Seedance), then places every word exactly on the second where it is said in the original, and measures again to be sure (within 0.05 s). Their music never ends up in your video.</div></li>
-    <li><div><b>Checked afterwards.</b>Claude compares the words and seconds of our hook with the original. If they don't match, the hook is made again.</div></li>
+    <li><div><b>The sound is made for OUR video.</b>The whole line of the original is written down word for word (not only "3, 2, 1" but also "let's see how it looks like"). Then Claude watches our hook frame by frame and lists every sound it needs: who speaks and what, the swoosh when the cloth is pulled, the soft thud when the robe drops, the whoosh of the blanket, a laugh, the sound of the room. The video tool then makes the sound on our own hook (it sees our picture), with no music. Claude moves each part of the voice onto the exact second the lips move and keeps every word whole. Their music and anything from their product that we don't have never end up in your video.</div></li>
+    <li><div><b>Audited every time.</b>After every hook and every finished video: every word is checked against the original line (nothing missing), every word's second against the lips (within 0.05 s), every sound effect against its action, and the sound is checked for music. If anything is off, it is fixed and checked again.</div></li>
   </ol>
   <h3>Music</h3>
   <ul>
@@ -245,7 +245,7 @@ a{color:var(--royal)}
     <tr><td>Every photo, looked at</td><td>Wrong face, wrong robe, extra fingers, text where there shouldn't be any</td></tr>
     <tr><td>Hook vs original</td><td>Movement too fast or too slow, actions at the wrong second, a different length</td></tr>
     <tr><td>Object list</td><td>An object with the wrong job: their decoration turned into our robe, a box without our brand, something from their product left in, our robe looking like a cape</td></tr>
-    <tr><td>Voice vs original</td><td>Missing words, words at the wrong time, a silent hook</td></tr>
+    <tr><td>Sound audit (every video)</td><td>Missing words, words at the wrong time, sound effects that don't match the action, music under the hook</td></tr>
     <tr><td>B-roll shot count</td><td>A missing or invented shot</td></tr>
     <tr><td>Glitch detector</td><td>Sudden jumps inside a shot: melting, a photo flashing in, a body part popping</td></tr>
     <tr><td>Shot-by-shot look</td><td>Empty robe, missing head, second robe, wrong pockets, blur patches</td></tr>

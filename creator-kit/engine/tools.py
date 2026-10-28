@@ -21,6 +21,7 @@
   python3 engine/tools.py broll-check <broll.mp4> <motion.mp4> <out-folder>   -> B-roll safety check: shot count vs the motion clip, glitch spikes inside shots, safe segments, one sheet per shot to look at
   python3 engine/tools.py retime <our-hook.mp4> <reference-hook.mp4> <out.mp4> [hook end s] -> puts every cut/action on the EXACT second of the original and ends exactly where it ends (rule 28 Oct)
   python3 engine/tools.py vocals <hook.mp4> <out.mp4>                    -> keeps ONLY the voice of a copied hook (Demucs) - Kling copies the original music, never deliver it (rule 28 Oct)
+  python3 engine/tools.py audit-sound <hook.mp4> <hook end> "<expected line>" -> ALWAYS after making a hook/video: every word + second, missing words, music check
   python3 engine/tools.py onsets <file> [0.2]                            -> seconds where each word starts; on `vocals` of the REFERENCE = where our voice must go. No onsets in the vocals = the original has only a song (no voice)
   python3 engine/tools.py place-voice <seedance.mp4> <out.wav> <hook end> <t1,t2,..> <s1,s2,..> [cap] -> puts Seedance words (onsets s) on the reference seconds (t)
   python3 engine/tools.py hook-audio <reference.mp4> [seconds]            -> MANDATORY on every reference: is there speech? every word WITH its second + a ready "Sound:" line for the Kling prompt
@@ -270,6 +271,31 @@ def place_voice(src, out, dur, targets, starts, cap="0.8"):
     print(out, "- now check: tools.py onsets", out, "must give the targets", T)
 
 
+def audit_sound(f, end, expected=""):
+    """rule 28 Oct: ALWAYS after a hook/video is made. Separates the sound (Demucs), writes every word with its
+    second (Whisper small on the voice only), lists missing/extra words against the expected line, and flags music
+    (bass/drums). Extra words in a song-only original = sung lyrics."""
+    import tempfile, shutil, re, numpy as np
+    d = tempfile.mkdtemp(); w = os.path.join(d, "a.wav")
+    run(["ffmpeg", "-v", "error", "-y", "-i", f, "-t", str(end), "-vn", "-ac", "2", "-ar", "44100", w])
+    subprocess.run([sys.executable, "-m", "demucs", "-n", "htdemucs", "-o", d, w], check=True, capture_output=True)
+    st = os.path.join(d, "htdemucs", "a")
+    def load(p):
+        r = subprocess.run(["ffmpeg", "-v", "error", "-i", p, "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
+        return np.frombuffer(r, np.int16).astype(np.float32) / 32768
+    rms = lambda x: float(np.sqrt((x ** 2).mean()) + 1e-9)
+    mix, v, b, dr = load(w), load(os.path.join(st, "vocals.wav")), load(os.path.join(st, "bass.wav")), load(os.path.join(st, "drums.wav"))
+    from faster_whisper import WhisperModel
+    segs, _ = WhisperModel("small.en", device="cpu", compute_type="int8").transcribe(v, word_timestamps=True, language="en")
+    words = [(round(x.start, 2), x.word.strip()) for sg in segs for x in sg.words]
+    norm = lambda t: re.sub(r"[^a-z0-9' ]", "", t.lower().replace("3", "three").replace("2", "two").replace("1", "one")).split()
+    got, exp = norm(" ".join(x[1] for x in words)), norm(expected)
+    print("words:", " ".join(f"{t}:{x}" for t, x in words))
+    print("missing:", [x for x in exp if x not in got] or "none", "| extra:", [x for x in got if x not in exp] or "none",
+          "| music:", "CHECK (bass %.2f drums %.2f of the mix; a single thump on an action is a sound effect)" % (rms(b) / rms(mix), rms(dr) / rms(mix)) if rms(b) / rms(mix) > 0.15 or rms(dr) / rms(mix) > 0.25 else "no")
+    shutil.rmtree(d, ignore_errors=True)
+
+
 def retime(ours, ref, out, end=None):
     """rule 28 Oct: our hook must have EXACTLY the original's seconds. Matches every cut of ours to the
     nearest cut of the reference and speeds/slows each piece so every cut lands on the original's second;
@@ -427,6 +453,7 @@ if __name__ == "__main__":
     elif c == "speech-times": speech_times(a[1], a[2] if len(a) > 2 else "6")
     elif c == "retime": retime(a[1], a[2], a[3], a[4] if len(a) > 4 else None)
     elif c == "vocals": vocals(a[1], a[2])
+    elif c == "audit-sound": audit_sound(a[1], a[2], a[3] if len(a) > 3 else "")
     elif c == "onsets": onsets(a[1], a[2] if len(a) > 2 else "0.2")
     elif c == "place-voice": place_voice(*a[1:7])
     elif c == "cleantext": cleantext(a[1], a[2], a[3], a[4:])

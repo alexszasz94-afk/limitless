@@ -1,0 +1,46 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/lot31/gen/h2seed.mp4",
+   "start": 0,
+   "end": 5.08,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/lot31/parts/b9.mp4",
+   "start": 0,
+   "end": 3.35,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/cr/G3.mp4",
+   "start": 0,
+   "end": 1.62,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/cr/G1.mp4",
+   "start": 1.72,
+   "end": 3.94,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot31/parts/cozy9.mp4",
+   "start": 0,
+   "end": 2.9,
+   "audio": false
+  }
+ ],
+ "texts": [
+  {
+   "text": "\u201cBabe stop buying Christmas\nstuff, your 45\u201d\nMe: \ud83c\udf84\ud83e\udee3",
+   "t0": 0,
+   "t1": 99,
+   "size": 70,
+   "y": 0.08
+  }
+ ],
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/lot31/final/nomusic-r2seed.mp4"
+}

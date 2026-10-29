@@ -183,3 +183,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 29 oct (Szasz): la B-roll picioarele NU trebuie să stea vizibil pe podea în fața săculeților înainte să intre (b9 a ieșit așa) — e o VERIFICARE după generare (dacă apare, refaci cu același prompt); promptul rămâne MEREU cel de la setul 8.
 - 29 oct (Szasz): promptul de B-roll de la setul 8 (lot30) e „perfect” → e rețeta fixă Grinch B-roll, cuvânt cu cuvânt (`recipes/grinch-broll-classic-cozy.md`).
 - 29 oct (Szasz): textul de pe ecran rămâne ACELAȘI pe tot videoul (un singur text de la început până la final), chiar dacă originalul îl schimbă pe parcurs.
+- 29 oct (Szasz): analiza Higgsfield e PAS OBLIGATORIU înainte de orice hook copiat (lot31: am sărit peste ea și am pus cuvinte greșite, „I need this”). Rezultatul se salvează în `ref/analysis-<id>.json`; fără el nu se generează nimic.

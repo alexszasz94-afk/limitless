@@ -9,8 +9,8 @@
   },
   {
    "file": "/home/user/limitless/products/lot31/gen/u1.mp4",
-   "start": 0,
-   "end": 2.0,
+   "start": 1.1,
+   "end": 2.7,
    "audio": false
   },
   {
@@ -42,13 +42,6 @@
   {
    "text": "Grinch-obsessed moms,\nRUN to Target😭💚",
    "t0": 0,
-   "t1": 5.3,
-   "size": 76,
-   "y": 0.08
-  },
-  {
-   "text": "Jk, we actually make\nthem😅",
-   "t0": 5.3,
    "t1": 99,
    "size": 76,
    "y": 0.08

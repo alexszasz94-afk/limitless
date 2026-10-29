@@ -1,0 +1,47 @@
+{
+ "index": 5000,
+ "params": {
+  "model": "kling4_0",
+  "mode": "video-edit",
+  "resolution": "1080p",
+  "aspect_ratio": "9:16",
+  "duration": 6,
+  "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+  "use_unlim": false,
+  "medias": [
+   {
+    "role": "video_references",
+    "value": "11a29c07-86bc-4dab-8c2b-1451990b4d07"
+   },
+   {
+    "role": "image_references",
+    "value": "012aa548-7485-4dfb-adc7-b3f9ef9963f2"
+   },
+   {
+    "role": "image_references",
+    "value": "4ea60602-fc9b-4cea-a089-6c5ab9c51073"
+   },
+   {
+    "role": "image_references",
+    "value": "a9ebff95-7b4e-4a10-92f5-4c9377d01fd4"
+   },
+   {
+    "role": "image_references",
+    "value": "b3adf7e2-adcd-4ffc-9989-1fa0c822c78f"
+   },
+   {
+    "role": "image_references",
+    "value": "28a3d14b-3578-4569-bcf2-33a84d478cc0"
+   },
+   {
+    "role": "image_references",
+    "value": "71882d2b-aeab-4cc1-afa3-4f9d1a1951c5"
+   },
+   {
+    "role": "image_references",
+    "value": "fe49746e-4356-452a-b386-990522532187"
+   }
+  ],
+  "prompt": "Edit the input video. Keep EXACTLY the same shot(s), cuts, camera position, camera movement, framing, body movements, speed and timing as the input video, second by second. The output has exactly the same length as the input video. TIMING, second by second, identical to the input: 0-3.3 s she bends over the coffee table holding the edges of the white fluffy blanket that covers the object on the ottoman, and counts; 3.3-3.6 s she pulls the blanket up and throws it high into the air; 3.6-5.07 s she straightens up, arms raised, laughing happily, looking down at the revealed HEATGRUMP box on the ottoman. The white caption text and emojis at the top of the input video are removed completely; the background behind them is rebuilt naturally. PERSON: the woman becomes exactly the woman of Image 1: SAME FACE and the SAME HAIR (colour, length, style) as Image 1, the same skin tone. Replace her face and hair completely, she must NOT look like the woman of the input video. She wears cream cable-knit sweater and black leggings (not the clothes of the input video). PLACE: the room becomes the living room of Image 2 EXACTLY as it is - the same walls, windows, floor, sofa, furniture, Christmas tree, decorations and light as Image 2; nothing from the room of the input video remains; the camera sees it from the same height and angle as in the input video. OBJECT MAP, exactly like the input: the plain white fluffy blanket is a prop and stays exactly the same plain white blanket; the product under it in the input - the black octagonal projector device and its glowing Santa-sleigh light - is REMOVED completely: there is NO black device, NO sleigh, NO reindeer, NO projected light. In its place, standing upright on the round woven ottoman under the blanket, is OUR PACKAGING: the tall red HEATGRUMP display box of Image 7, REPRODUCED ONE TO ONE from Image 7 - deep red cardboard box, big clear window on the front showing the folded robe inside - OUR robe of Images 3-6, reproduced one to one (green hood with the Grinch face and red Santa hat on top, red and white body, green lower part), small white snowflakes, and the word HEATGRUMP in big green cartoon letters at the bottom of the front. The box front with the window and the logo faces the camera. When she throws the blanket up, the box is revealed standing there, the logo clearly readable and spelled exactly HEATGRUMP. The box is about 80 cm tall, real size, solid, it does not move, bend or change; the robe stays INSIDE the box behind the window. LOGIC OF THE SCENE, exactly like the input: the blanket hides the box, she pulls the blanket away, the box is revealed and stays there to the end while she celebrates. Sound: she counts out loud, excited, exactly like in the input video: \"Three,\" at 0.0 s, \"two,\" at 0.72 s, \"one,\" at 2.44 s, \"let's see it!\" at 2.89 s; she laughs; no music. Her lips move in sync with her words. She is in the FOREGROUND with nothing between her and the camera; her whole face stays visible where her face is in the input video. LOOK \u2014 BRIGHT, EVERYDAY UGC, ABSOLUTE RULE: this must look like a normal person filming themselves on their own phone in a well-lit room, not like a cinematic ad. The room is BRIGHT and evenly lit \u2014 plenty of soft light on the person and on the robe, colours clearly readable, the whole frame well exposed, no dark corners, no heavy shadows, no moody or dim grade, no orange cinematic tint, no vignette, no colour grading of any kind. Slightly bright rather than slightly dark. Natural handheld phone look with small imperfections, plain amateur framing, ordinary phone sharpness \u2014 nothing polished or studio-lit.\n\nCAMERA & REALISM: UGC style, natural look, shot on an iPhone 17 Pro Max main camera, 24 mm, true-to-life white balance, faint sensor grain. Skin with visible pores and natural texture, fabrics with visible fibres, real catchlights in the eyes, correct hands with five fingers. Vivid, slightly warm colours \u2014 not golden, not orange. No beauty filter, no plastic skin, no AI glow, no CGI look, no cinematic grade, no vignette, no zoom. LIGHT: very soft, very natural light. Diffuse daylight from a window and/or the warm glow of real lamps and string lights; gentle, low-contrast, wrap-around light with soft shadow edges and smooth highlights; true, slightly warm colours. Never harsh, never hard direct light, no spotlight, no dramatic contrast, no HDR, no glow/bloom halos, no glossy CGI look, no over-sharpening. Looks like a real, unedited phone photo or video taken in a cozy home. MOTION \u2014 NATURAL AND QUICK, ABSOLUTE RULE: every movement is natural, smooth and physically real, like a real person filmed on a phone \u2014 no sudden jerks, no snapping, no teleporting objects, no unnatural speed-ups or slow motion, no morphing. Real weight and gravity for bodies, cups, liquids and fabrics; the handheld camera moves smoothly and naturally. When the input is a reference video, every action keeps exactly its speed and timing \u2014 never faster. In a new shot (from a start image) the action starts right away, without dead time. Vertical 9:16. NO OVERLAY TEXT: no captions, no subtitles, no emoji, no watermarks - the caption text of the input video is removed. Store signs and logos that are in the input stay; on our objects there is no lettering unless described above."
+ }
+}

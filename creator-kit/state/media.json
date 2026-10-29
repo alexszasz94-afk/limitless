@@ -1,1 +1,9 @@
-{}
+{
+ "princess_front": "8d75b314-bab8-419f-9b44-49a5ec5425b7",
+ "princess_back": "c0857cef-7248-44bd-a5a6-6de7c4097bbf",
+ "princess_pouch_open": "d5c086be-0111-4ca3-ac2c-b7a8f10accce",
+ "princess_pouch_feet": "14108df4-d071-40e1-9f5e-6b6b8a7c1eac",
+ "motion": "9468aa23-316d-48ac-b128-7d1b2bf5b64c",
+ "characters": {"character-07.jpg": "ea2bcfdb-eadd-444d-b11d-58b26b46908e", "character-07-face.jpg": "34d95bd9-fc3c-46af-9c2f-cf02152c93ba"},
+ "rooms": {"room-18.jpg": "0406aa26-128c-44d3-ba54-89765907df34"}
+}

@@ -11,6 +11,7 @@
   python3 engine/tools.py fanwipe <in.mp4> <out.mp4> <t1> [<t2> ...]       -> ceiling-fan blade wipe centred on each cut time
   python3 engine/tools.py next-set <robe>                                 -> next unused character + room from library/ (and marks them used) + which B-roll motion (Princess rotates motion / motion2)
   python3 engine/tools.py add-rooms <rooms.zip>                           -> Alex's rooms zip (the ONLY source of rooms, rule 28 Oct) -> library/rooms/room-NN.jpg (next free numbers)
+  python3 engine/tools.py photo-ok <photo>                               -> True/False + reason: short side >= 1080 (4K preferred) and sharp (rule 29 Oct)
   python3 engine/tools.py reject <library/characters/x.jpg>               -> photo breaks the rules: moves it to library/rejected/ (then run next-set again)
   python3 engine/tools.py transcribe <video>                            -> what people SAY in the video, with seconds (first run downloads a small speech model, ~150 MB)
   python3 engine/tools.py voice-mix <clip.mp4> <voice.wav> <out.mp4> <delay_s> [orig_vol]   -> puts a voice line over a clip (clip sound lowered)
@@ -161,12 +162,28 @@ def next_remote(robe):
     return next_fixed(robe, "remote")
 
 
+def photo_ok(f, min_side=1080, min_sharp=150):
+    """rule 29 Oct (Alex): rooms/characters ALWAYS high quality - short side >= 1080 (4K preferred), sharp. Returns (ok, reason)."""
+    from PIL import Image, ImageFilter, ImageStat
+    try: im = Image.open(f).convert("L")
+    except Exception: return False, "broken file"
+    w, h = im.size
+    if min(w, h) < min_side: return False, f"low resolution {w}x{h} (needs short side >= {min_side}, 4K preferred)"
+    im = im.resize((1080, max(2, round(1080 * h / w))))
+    var = ImageStat.Stat(im.filter(ImageFilter.Kernel((3, 3), (0, -1, 0, -1, 4, -1, 0, -1, 0), 1, 128))).var[0]
+    if var < min_sharp: return False, f"blurry (sharpness {var:.0f} < {min_sharp})"
+    return True, f"{w}x{h}" + (" 4K" if min(w, h) >= 2160 else " full HD")
+
+
 def next_set(robe=""):
     used_f = os.path.join(ROOT, "state/used.json")
     used = json.load(open(used_f)) if os.path.exists(used_f) else {"characters": [], "rooms": []}
     pick = {}
     for kind in ("characters", "rooms"):
         free = [p for p in sorted(glob.glob(os.path.join(ROOT, "library", kind, "*.jpg"))) if os.path.basename(p) not in used[kind]]
+        for p in list(free):
+            ok, why = photo_ok(p, min_sharp=150 if kind == "rooms" else 0)
+            if not ok: free.remove(p); reject(p); print(f"REJECTED {os.path.basename(p)}: {why}")
         if not free:
             print(f"NO_{kind.upper()}_LEFT: " + ("ask the creator for Alex's new ROOMS ZIP and run `tools.py add-rooms <zip>`; only if they have none, run find-sets (rooms that look EXACTLY like library/rooms: real phone photos, never AI)." if kind == "rooms" else "run the skill find-sets now (Pinterest search, you pick the good ones), then run next-set again. Ask the creator for photos ONLY if Pinterest fails."))
             return
@@ -228,7 +245,10 @@ def add_rooms(z):
             if not name.lower().replace("\\", "/").rsplit(".", 1)[-1] in ("jpg", "jpeg", "png", "webp"): continue
             try: im = Image.open(io.BytesIO(zf.read(name))).convert("RGB")
             except Exception: continue
-            out = os.path.join(d, f"room-{n:02d}.jpg"); im.save(out, quality=95); added.append((os.path.basename(out), im.size)); n += 1
+            out = os.path.join(d, f"room-{n:02d}.jpg"); im.save(out, quality=95)
+            ok, why = photo_ok(out)
+            if not ok: reject(out); print(f"REJECTED {name}: {why}"); n += 1; continue
+            added.append((os.path.basename(out), im.size)); n += 1
     for a, sz in added: print(a, f"{sz[0]}x{sz[1]}")
     print(len(added), "rooms added - LOOK at each one (real, sharp, tree, floor free); reject only a broken file")
 
@@ -557,6 +577,7 @@ if __name__ == "__main__":
     elif c == "fanwipe": fanwipe(a[1], a[2], a[3:])
     elif c == "next-set": next_set(a[1] if len(a) > 1 else "")
     elif c == "reject": reject(a[1])
+    elif c == "photo-ok": print(*photo_ok(a[1]))
     elif c == "add-rooms": add_rooms(a[1])
     elif c == "transcribe": transcribe(a[1])
     elif c == "voice-mix": voice_mix(*a[1:6])

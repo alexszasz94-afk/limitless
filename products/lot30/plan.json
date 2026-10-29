@@ -1,0 +1,26 @@
+{
+ "outfit": {
+  "1": "red-and-green plaid flannel long Christmas pajamas",
+  "2": "cream cable-knit sweater and light-grey long lounge pants",
+  "3": "navy USA college sweatshirt and grey long sweatpants",
+  "4": "red and white striped long Christmas pajamas",
+  "5": "white long-sleeve thermal top and red plaid long pajama pants",
+  "6": "heather-grey hoodie and black long lounge pants",
+  "7": "green waffle-knit long pajama set",
+  "8": "oatmeal knit sweater and black long lounge pants",
+  "9": "red holiday sweater and dark-grey long lounge pants",
+  "10": "white button-up long pajama set with little red hearts"
+ },
+ "cozy": {
+  "1": "cocoa",
+  "2": "book",
+  "3": "cocoa",
+  "4": "book",
+  "5": "cocoa",
+  "6": "book",
+  "7": "cocoa",
+  "8": "book",
+  "9": "cocoa",
+  "10": "book"
+ }
+}

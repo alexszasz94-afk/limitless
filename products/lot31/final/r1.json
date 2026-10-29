@@ -1,0 +1,59 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/lot31/gen/h1.mp4",
+   "start": 0,
+   "end": 5.3,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot31/gen/u1.mp4",
+   "start": 0,
+   "end": 2.9,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot31/parts/b6.mp4",
+   "start": 0,
+   "end": 3.35,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/cr/G3.mp4",
+   "start": 0,
+   "end": 1.62,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/cr/G1.mp4",
+   "start": 1.72,
+   "end": 3.94,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot31/parts/cozy6.mp4",
+   "start": 0,
+   "end": 2.9,
+   "audio": false
+  }
+ ],
+ "texts": [
+  {
+   "text": "Grinch-obsessed moms,\nRUN to Target😭💚",
+   "t0": 0,
+   "t1": 5.3,
+   "size": 76,
+   "y": 0.08
+  },
+  {
+   "text": "Jk, we actually make\nthem😅",
+   "t0": 5.3,
+   "t1": 99,
+   "size": 76,
+   "y": 0.08
+  }
+ ],
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/lot31/final/nomusic-r1.mp4"
+}

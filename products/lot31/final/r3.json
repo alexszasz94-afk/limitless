@@ -1,0 +1,46 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/lot31/gen/h3s.mp4",
+   "start": 0,
+   "end": 4.05,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/lot31/parts/b2.mp4",
+   "start": 0,
+   "end": 3.31,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/cr/G3.mp4",
+   "start": 0,
+   "end": 1.62,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot28/cr/G1.mp4",
+   "start": 1.72,
+   "end": 3.94,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot31/parts/cozy2.mp4",
+   "start": 0,
+   "end": 2.9,
+   "audio": false
+  }
+ ],
+ "texts": [
+  {
+   "text": "DONT Show this to a\nGRINCH LOVER...🎄💚",
+   "t0": 0,
+   "t1": 99,
+   "size": 76,
+   "y": 0.08
+  }
+ ],
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/lot31/final/nomusic-r3.mp4"
+}

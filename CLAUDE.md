@@ -37,3 +37,4 @@ Reguli de lucru:
 - Nu inventa date despre competitori: în `playbooks/` intră doar ce e observat (link, captură, cifră) sau spus explicit de Szasz.
 - După fiecare lot: commit + push, ca Szasz să-și ia fișierele din GitHub.
 - Ghidul creatorilor (regula 27 oct, Szasz): după ORICE schimbare în creator-kit, actualizează `creator-kit/HOW-IT-WORKS.html` (explicat în detaliu, pentru cineva care nu știe nimic: toate posibilitățile, hook-uri, audio, Pinterest, verificări, limite), regenerează PDF-ul, republică artifactul (https://claude.ai/artifact/XaMT7HjPTjwkP81XEcyUZG) și refă zip-ul + bucățile.
+- Rețete fixe (29 oct, Szasz: „ce a ieșit bine trebe să iasă bine mereu”): când un hook sau B-roll iese bine, promptul EXACT + referințele + setările se salvează în `recipes/` (cu corecturile învățate) și de atunci se folosește cuvânt cu cuvânt. Înainte de orice generare, caută întâi în `recipes/`.

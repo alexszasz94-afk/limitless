@@ -1,0 +1,17 @@
+{
+ "source": "Higgsfield video_analysis 85347adb-97ee-461d-bfac-ac1728b6493b + local transcription (tools.py transcribe)",
+ "duration": 16.84,
+ "cuts": [4.07, 5.1, 5.97, 7.1, 8.9, 11.17, 12.0, 14.2],
+ "speech": [{"text": "One, two, three.", "start": 0.0, "end": 3.6, "who": "the woman, behind the rolled robe she holds over her head (face hidden), counting down"}],
+ "music": "from ~3.6 s: 'It's beginning to look a lot like Christmas' (classic jazz version), drop on the unroll",
+ "on_screen_text": "DONT show this to\nyour mom😜❄️ (whole video, top)",
+ "scenes": [
+  "0-4.07 bedroom, dark grey ribbed pajama set, rolled red+green robe held overhead, counts 1-2-3, releases the roll and it unfurls",
+  "4.07-7.1 robe shown: front on her, hood from back, back view with belt",
+  "7.1-8.9 front, robe open, steps into the foot pockets (ORIGINAL: feet visible outside pockets -> FIX in ours)",
+  "8.9-11.17 front, robe closed, hands in front pockets",
+  "11.17-12.0 close-up: grey connector plugged into the robe",
+  "12.0-14.2 close-up: white remote, green LED 1->5",
+  "14.2-16.84 cozy: sits on the bed wrapped in the robe, hood up"
+ ]
+}

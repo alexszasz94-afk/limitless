@@ -1,0 +1,52 @@
+{
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/lot32/gen/kA.mp4",
+   "start": 0,
+   "end": 3.75,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot32/gen/kA.mp4",
+   "start": 4.45,
+   "end": 6.95,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot32/gen/kB.mp4",
+   "start": 0.36,
+   "end": 3.85,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot32/gen/kB.mp4",
+   "start": 4.45,
+   "end": 5.22,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot32/gen/kB.mp4",
+   "start": 5.28,
+   "end": 7.38,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/lot32/gen/kB.mp4",
+   "start": 7.45,
+   "end": 8.6,
+   "audio": false
+  }
+ ],
+ "texts": [
+  {
+   "text": "DONT show this to\nyour mom\ud83d\ude1c\u2744\ufe0f",
+   "t0": 0,
+   "t1": 99,
+   "size": 70,
+   "y": 0.08
+  }
+ ],
+ "orig_vol": 1.0,
+ "out": "/home/user/limitless/products/lot32/final/nomusic.mp4"
+}

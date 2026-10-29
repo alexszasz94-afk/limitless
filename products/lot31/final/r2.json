@@ -8,12 +8,6 @@
    "audio": true
   },
   {
-   "file": "/home/user/limitless/products/lot31/gen/u2.mp4",
-   "start": 0,
-   "end": 2.95,
-   "audio": false
-  },
-  {
    "file": "/home/user/limitless/products/lot31/parts/b9.mp4",
    "start": 0,
    "end": 3.35,
@@ -40,7 +34,7 @@
  ],
  "texts": [
   {
-   "text": "“Babe stop buying Christmas\nstuff, your 45”\nMe: 🎄🫣",
+   "text": "\u201cBabe stop buying Christmas\nstuff, your 45\u201d\nMe: \ud83c\udf84\ud83e\udee3",
    "t0": 0,
    "t1": 99,
    "size": 70,

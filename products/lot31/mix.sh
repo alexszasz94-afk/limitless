@@ -1,7 +1,7 @@
 #!/bin/bash
 # mix.sh NAME CUT DROP MODE  (MODE quiet = 0.2 under hook then 1.1 from CUT; MODE full = song from 0 at 1.0, drop on CUT)
 cd /home/user/limitless/products/lot31/final
-S=/home/user/heatgrump/library/music/xmas/mean-one-grinch.mp3
+S=${SONG:-/home/user/heatgrump/library/music/xmas/mean-one-grinch.mp3}
 ST=$(python3 -c "print(max(0,$3-$2))")
 D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 nomusic-$1.mp4)
 FO=$(python3 -c "print(round($D-0.8,2))")

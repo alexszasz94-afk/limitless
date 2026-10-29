@@ -2,10 +2,10 @@
  "fps": 30,
  "segments": [
   {
-   "file": "/home/user/limitless/products/lot32/gen/kA.mp4",
+   "file": "/home/user/limitless/products/lot32/gen/kA2.mp4",
    "start": 0,
    "end": 6.95,
-   "audio": false
+   "audio": true
   },
   {
    "file": "/home/user/limitless/products/lot32/gen/kB.mp4",
@@ -42,5 +42,5 @@
   }
  ],
  "orig_vol": 1.0,
- "out": "/home/user/limitless/products/lot32/final/nomusic.mp4"
+ "out": "/home/user/limitless/products/lot32/final/nomusic-r1.mp4"
 }

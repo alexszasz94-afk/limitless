@@ -1,0 +1,17 @@
+{
+ "reference_given": "https://www.instagram.com/reels/Deui1RKgYWF/",
+ "reference_used": "https://www.instagram.com/p/DfGoo7qyJ9o/",
+ "note": "Deui1RKgYWF is an IKEA pallet/blanket reveal (Frostybee boxes), NOT the roll-robe hook. The kit's snoopy-rollrobe Kling hook was actually made from the DfGoo7qyJ9o roll-robe hook (folder collision described in princess-unroll/notes.md). For a fair comparison the same DfGoo7qyJ9o hook (0-2.733 s) is used here.",
+ "hook_start": 0.0,
+ "hook_end": 2.733,
+ "higgsfield_video_analysis_id": "a2ee154e-1e11-4a52-b0dc-52c10ad9796f",
+ "speaker": null,
+ "words": [],
+ "song_only": true,
+ "words_source": "video_analysis: instrumental synth-pop only, no speech; whisper hallucinated 'You' at 0.0 s and hook-audio said SPEECH yes (false positive) -> NO voice",
+ "action": "rolled robe held horizontally overhead 0-1.75 s, unrolls downward 1.75-2.0 s, hangs full length (back side, hood on top) 2.0-2.73 s",
+ "other_sounds": [
+  "soft fabric whoosh when it unrolls ~1.8 s"
+ ],
+ "reveal_s": 1.8
+}

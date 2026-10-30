@@ -1,0 +1,46 @@
+{
+ "reference": "https://www.instagram.com/reels/Deuu2AXyPPx/",
+ "hook_start": 0.0,
+ "hook_end": 4.533,
+ "cut_after_hook": 4.53,
+ "higgsfield_video_analysis_id": "611c8251-405e-4a89-b316-de5afa9425a9",
+ "higgsfield_scenes": [
+  {
+   "t": "0:00-0:03",
+   "audio": "Female voice: Three, two, one. Background music festive pop (song 'Let it go' really starts ~4.2 s per kit notes)",
+   "visual": "woman outdoors in snow, beanie, scarf, cream coat, gloves, holds a blue fleece blanket with a cartoon print in front of her; snowy white house behind; static camera"
+  },
+  {
+   "t": "0:03-0:04",
+   "audio": "whoosh as the fabric is pulled away, music",
+   "visual": "she pulls the blanket down/aside with the right hand, revealing a square product box; excited open mouth"
+  }
+ ],
+ "speaker": "the woman in frame (on camera, lips visible)",
+ "words": [
+  {
+   "w": "Three",
+   "start": 0.0,
+   "end": 0.45
+  },
+  {
+   "w": "twooo (stretched)",
+   "start": 1.05,
+   "end": 1.9
+  },
+  {
+   "w": "ooone (stretched)",
+   "start": 2.6,
+   "end": 3.9
+  }
+ ],
+ "words_source": "transcribe (whisper): Three 0.00 / two 0.62 / one 1.94; speech-times bursts 0.05-0.12, 1.49-1.74, 2.65-3.09; kit energy envelope (notes.md): Three 0.0-0.45, two 1.05-1.9, one 2.6-3.9 -> energy envelope used",
+ "other_sounds": [
+  "blanket tugs ~1.0 s and ~2.3 s",
+  "whoosh of the blanket pulled off at ~4.2 s",
+  "outdoor winter ambience"
+ ],
+ "music": "song from ~4.2 s (not reproduced; music is added in the edit)",
+ "reveal_s": 4.2,
+ "local_cuts_in_hook": []
+}

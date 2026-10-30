@@ -1,0 +1,48 @@
+{
+ "reference": "https://www.instagram.com/reels/DdGwGMEx-Uj/",
+ "hook_start": 0.0,
+ "hook_end": 4.067,
+ "cut_after_hook": 4.07,
+ "higgsfield_video_analysis_id": "6cc0465c-4521-4c62-89a9-5bb24ec3929f",
+ "higgsfield_scenes": [
+  {
+   "t": "0:00-0:02",
+   "audio": "Three, two, one...",
+   "visual": "woman in red sweater holds a beige burlap/linen cloth over an object, Christmas tree, American flag, fireplace; static"
+  },
+  {
+   "t": "0:02-0:04",
+   "audio": "Let's see how it comes out!",
+   "visual": "she pulls the cloth up and away with the right hand revealing a green box held in the left hand, smiles to camera, pushes box toward lens"
+  }
+ ],
+ "speaker": "the woman in frame (on camera)",
+ "words": [
+  {
+   "w": "Three",
+   "start": 0.23,
+   "end": 0.49
+  },
+  {
+   "w": "two",
+   "start": 1.21,
+   "end": 1.44
+  },
+  {
+   "w": "one",
+   "start": 2.09,
+   "end": 2.3
+  },
+  {
+   "w": "Let's see how it comes out!",
+   "start": 3.16,
+   "end": 3.92
+  }
+ ],
+ "words_source": "transcribe text 'Three, two, one. Let's see how it comes out.'; seconds from speech-times bursts 0.23-0.49, 1.23-1.44, 2.09-2.30, 3.34-3.92 and kit onsets 0.23/1.21/2.11/3.16 (whisper word starts 0.00/0.72/1.74/2.84 are early)",
+ "other_sounds": [
+  "cloth whipped off ~2.8 s",
+  "room tone"
+ ],
+ "reveal_s": 2.8
+}

@@ -1,0 +1,15 @@
+{
+ "reference": "https://www.instagram.com/p/DfGoo7qyJ9o/",
+ "hook_start": 0.0,
+ "hook_end": 2.733,
+ "higgsfield_video_analysis_id": "a2ee154e-1e11-4a52-b0dc-52c10ad9796f",
+ "speaker": null,
+ "words": [],
+ "song_only": true,
+ "words_source": "video_analysis: instrumental only (+ whoosh), no speech; whisper 'You' at 0.0 = hallucination -> NO voice",
+ "action": "rolled robe held horizontally overhead 0-1.75 s, unrolls downward 1.75-2.0 s, hangs full length (back side) 2.0-2.73 s",
+ "other_sounds": [
+  "soft fabric whoosh ~1.8 s"
+ ],
+ "reveal_s": 1.8
+}

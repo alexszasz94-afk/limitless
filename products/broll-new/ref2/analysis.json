@@ -1,0 +1,37 @@
+{
+ "url": "https://www.instagram.com/p/Dc3sRnKtTw0/",
+ "higgsfield_analysis_id": "9384c831-b360-4332-814b-5bec5eaa60d8",
+ "motion": "creator-kit/motion/broll-motion-4.mp4",
+ "length_ref": 16.37,
+ "hook": "0-3.1 she holds the rolled red robe over her head and lets it unroll (skipped)",
+ "broll_in_reference": [
+  [
+   "3.10-4.80",
+   "BACK close in a kitchen: she pulls the robe over her shoulders and the hood UP over her head"
+  ],
+  [
+   "4.80-8.93",
+   "FRONT full body facing camera in front of the tree, hood down: robe open wide, lifts one leg into a foot pocket, then the other, then closes the robe"
+  ],
+  [
+   "8.93-10.43",
+   "CONNECTOR extreme close-up: right hand pushes the white plug into the socket on the robe edge held by the left hand"
+  ],
+  [
+   "10.43-13.60",
+   "REMOTE close-up, thumb presses, display numbers go up"
+  ],
+  [
+   "13.60-16.37",
+   "COZY sitting on a grey sofa, hood down, pulls the white collar up to her face, eyes closed"
+  ]
+ ],
+ "motion_edit": "3.1-10.43 + 10.43-12.43 + 13.6-16.27 (+1 frame) = 12.0 s",
+ "motion_timeline": {
+  "back": "0-1.7",
+  "front_puton_pockets": "1.7-5.83",
+  "connector": "5.83-7.33",
+  "remote": "7.33-9.33",
+  "cozy": "9.33-12.0"
+ }
+}

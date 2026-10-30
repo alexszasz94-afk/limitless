@@ -51,6 +51,13 @@ After it finishes: `cuts` → ≈ 0.96, 3.58, 4.92. `cozy` from last cut + 0.15.
 
 **Foot pockets:** already inside the proven prompt above — nothing to add (for `motion2` use the HEM sentence from the motion2 paragraph instead).
 
+## B-roll variants 3-5 (rule 30 Oct, Alex: 4 rotating B-roll variants so the videos are not all the same)
+The B-roll now ROTATES over the variants (`tools.py next-set princess` says which one; log `motion=<key>`): classic `motion`, `motion2`, and the three NEW variants below, copied from reference reels. **The prompts are FROZEN in `recipes/` (repo root) — copy them word for word, fill only the `<...>` parts; PRODUCT.md does not duplicate them.**
+- **Variant 3** — `motion/broll-motion-3.mp4` (12 s, from instagram.com/p/DdZxYkctpt1). Recipe: `recipes/broll-princess-v3.md`. Segments in the generated clip: back 0-1.0, put-on + foot pockets 1.0-6.7, CONNECTOR close-up 6.7-7.5, REMOTE close-up 7.5-10.0, cozy sitting 10.0-12.0.
+- **Variant 4** — `motion/broll-motion-4.mp4` (12 s, from instagram.com/p/Dc3sRnKtTw0). Recipe: `recipes/broll-princess-v4.md`. Segments: back + hood up 0-1.7, put-on + pockets 1.7-5.8, CONNECTOR 5.8-7.3, REMOTE 7.3-9.3, cozy 9.3-12.0.
+- **Variant 5** — `motion/broll-motion-5.mp4` (11 s, from instagram.com/p/Dco0N-Ctps-). Recipe: `recipes/broll-princess-v5.md`. Segments: sleeves 0-1.8, back 1.8-2.5, lying 2.5-4.2, CONNECTOR 4.2-5.0, REMOTE 5.0-7.1, lying hood up 7.1-9.1, cozy sitting 9.1-11.0. No foot-pocket shot (the reference has none).
+With variants 3-5 the CONNECTOR and REMOTE close-ups are generated INSIDE the B-roll itself (our lilac connector + pink crown remote as image refs, rule 30 Oct) - do NOT add the fixed tree clips to the edit. With the old `motion`/`motion2` variants they still come from `fixed/connector-tree-N.mp4` / `remote-tree-N.mp4` as before. Edit order stays hook -> put on -> pockets -> connector -> remote -> cozy, all inside the one B-roll clip (trim 0.12 s around its cuts; check the end for a flash).
+
 ## Standard edit order (ALWAYS this order: hook → puts it on → foot pockets → connector → remote → cozy)
 1. hook clip(s) `"audio": true`
 2. broll.mp4 `0.15 → ~3.5`

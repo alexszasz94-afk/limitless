@@ -1,0 +1,53 @@
+{
+ "url": "https://www.instagram.com/p/Dco0N-Ctps-/",
+ "higgsfield_analysis_id": "58d445fe-c7c5-49e4-b0bc-1a2227ba7508",
+ "motion": "creator-kit/motion/broll-motion-5.mp4",
+ "length_ref": 15.53,
+ "hook": "0-4.67 she holds the rolled red robe over her head and lets it unroll (skipped)",
+ "broll_in_reference": [
+  [
+   "4.67-5.67",
+   "SIDE close next to the bed: she puts her arms into the sleeves"
+  ],
+  [
+   "5.67-6.47",
+   "BACK close: robe on, hood with pom-pom on her back"
+  ],
+  [
+   "6.47-7.17",
+   "she lies on the bed under a white duvet (transition)"
+  ],
+  [
+   "7.17-8.87",
+   "she lies on the bed in the robe, hood down, wrapped"
+  ],
+  [
+   "8.87-9.67",
+   "CONNECTOR close: grey plug pushed into the socket on the robe"
+  ],
+  [
+   "9.67-11.80",
+   "REMOTE close-up, thumb presses, blue digits go up"
+  ],
+  [
+   "11.80-13.77",
+   "lying curled on her side on the bed, hood UP, eyes closed"
+  ],
+  [
+   "13.77-15.53",
+   "COZY sitting on a sofa, pulls the hood up over her head and adjusts the collar"
+  ]
+ ],
+ "note": "this reference has NO foot-pocket shot",
+ "motion_edit": "4.67-15.53 (+ last frame held 0.14 s) = 11.0 s",
+ "motion_timeline": {
+  "sleeves": "0-1.0",
+  "back": "1.0-1.8",
+  "duvet": "1.8-2.5",
+  "lying_robe": "2.5-4.2",
+  "connector": "4.2-5.0",
+  "remote": "5.0-7.13",
+  "lying_hood": "7.13-9.1",
+  "cozy_sitting": "9.1-11.0"
+ }
+}

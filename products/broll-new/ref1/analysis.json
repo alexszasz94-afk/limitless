@@ -1,0 +1,41 @@
+{
+ "url": "https://www.instagram.com/p/DdZxYkctpt1/",
+ "higgsfield_analysis_id": "6617894b-d546-4cfa-a267-b3877b8a2c83",
+ "motion": "creator-kit/motion/broll-motion-3.mp4",
+ "length_ref": 18.83,
+ "hook": "0-3.47 she holds the rolled red robe over her head and lets it unroll (skipped)",
+ "broll_in_reference": [
+  [
+   "3.47-4.50",
+   "BACK close: robe already on her shoulders, hood hanging down on her back with pom-pom"
+  ],
+  [
+   "4.50-10.23",
+   "FRONT full body facing camera, hood down: robe closed -> opens one side, lifts that leg into a foot pocket (jump cut 5.5) -> both sides wide open, white lining, feet on the floor, lifts the other leg into the other pocket (jump cut 7.4) -> both feet in pockets -> closes the robe"
+  ],
+  [
+   "10.23-11.03",
+   "CONNECTOR extreme close-up: one hand holds the robe edge, the other pushes the white plug into the socket"
+  ],
+  [
+   "11.03-13.97",
+   "REMOTE close-up against the red fabric, thumb presses the button, digital display L->2->3->4->5"
+  ],
+  [
+   "13.97-15.97",
+   "REMOTE second angle (not used)"
+  ],
+  [
+   "15.97-18.83",
+   "COZY sitting on a dark sofa, wrapped, hood down, pulls the white collar up to her face, smiling"
+  ]
+ ],
+ "motion_edit": "3.47-10.23 + 10.23-11.03 + 11.03-13.50 + 15.97-17.94 (+1 frame) = 12.0 s, silent, 720 wide",
+ "motion_timeline": {
+  "back": "0-1.0",
+  "front_puton_pockets": "1.0-6.73 (jump cuts 2.0, 3.9)",
+  "connector": "6.73-7.53",
+  "remote": "7.53-10.0",
+  "cozy": "10.0-12.0"
+ }
+}

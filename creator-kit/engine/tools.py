@@ -9,7 +9,7 @@
   python3 engine/tools.py cozy <broll.mp4> <out.mp4> [start]             -> zoomed last cozy shot (default start 4.95 s, 2.1 s long)
   python3 engine/tools.py drop <song.mp3>                                 -> loud jumps in a song (where the beat/chorus drops)
   python3 engine/tools.py fanwipe <in.mp4> <out.mp4> <t1> [<t2> ...]       -> ceiling-fan blade wipe centred on each cut time
-  python3 engine/tools.py next-set <robe>                                 -> next unused character + room from library/ (and marks them used) + which B-roll motion (Princess rotates motion / motion2)
+  python3 engine/tools.py next-set <robe>                                 -> next unused character + room from library/ (and marks them used) + which B-roll variant (rotation: classic, motion2 (Princess), variants 3-5)
   python3 engine/tools.py add-rooms <rooms.zip>                           -> Alex's rooms zip (the ONLY source of rooms, rule 28 Oct) -> library/rooms/room-NN.jpg (next free numbers)
   python3 engine/tools.py photo-ok <photo>                               -> True/False + reason: short side >= 1080 (4K preferred) and sharp (rule 29 Oct)
   python3 engine/tools.py reject <library/characters/x.jpg>               -> photo breaks the rules: moves it to library/rejected/ (then run next-set again)
@@ -137,14 +137,26 @@ def fanwipe(f, out, times):
     print(out)
 
 
+BROLL_VARIANTS = {   # rule 30 Oct (Alex): the B-roll rotates between these motions, never the same twice in a row
+    "motion":  ("motion/broll-motion.mp4",   7, "classic B-roll (PRODUCT.md 'B-roll' prompt); connector + remote = the fixed tree clips"),
+    "motion2": ("motion/broll-motion-2.mp4", 6, "Princess only: motion2 paragraph in PRODUCT.md (hem sentence); connector + remote = the fixed tree clips"),
+    "motion3": ("motion/broll-motion-3.mp4", 12, "PRODUCT.md 'B-roll variant 3' (from DdZxYkctpt1) - its OWN connector + remote are inside the B-roll"),
+    "motion4": ("motion/broll-motion-4.mp4", 12, "PRODUCT.md 'B-roll variant 4' (from Dc3sRnKtTw0) - its OWN connector + remote are inside the B-roll"),
+    "motion5": ("motion/broll-motion-5.mp4", 11, "PRODUCT.md 'B-roll variant 5' (from Dco0N-Ctps-) - its OWN connector + remote are inside the B-roll"),
+}
+
+
+def broll_variants(robe):
+    return [k for k in BROLL_VARIANTS if k != "motion2" or robe.lower() == "princess"]
+
+
 def next_motion(robe):
-    """rule 28 Oct (Alex): the Princess B-roll rotates between the two motions (motion, motion2) - never the same twice in a row."""
-    if robe.lower() != "princess":
-        return "motion"
+    """rule 30 Oct (Alex): the B-roll rotates over all variants of the robe (Snoopy: motion, motion3-5; Princess: also motion2) - never the same twice in a row."""
+    keys = broll_variants(robe)
     f = os.path.join(ROOT, "state/used.json")
-    vids = [v for v in (json.load(open(f)) if os.path.exists(f) else {}).get("videos", []) if v.get("robe", "").lower() == "princess"]
-    last = vids[-1].get("motion", "motion2") if vids else "motion2"
-    return "motion2" if last == "motion" else "motion"
+    vids = [v for v in (json.load(open(f)) if os.path.exists(f) else {}).get("videos", []) if v.get("robe", "").lower() == robe.lower()]
+    last = vids[-1].get("motion", "") if vids else ""
+    return keys[(keys.index(last) + 1) % len(keys)] if last in keys else keys[0]
 
 
 def next_fixed(robe, kind):
@@ -192,10 +204,14 @@ def next_set(robe=""):
     print("character:", os.path.relpath(pick["characters"], ROOT)); print("room:", os.path.relpath(pick["rooms"], ROOT))
     if robe:
         m = next_motion(robe)
-        for kind in ("connector", "remote"):
-            r = next_fixed(robe, kind)
-            if r: print(f"{kind}:", f"products/{robe.lower()}/fixed/{r} (whole clip; log it with {kind}={r})")
-        print("motion:", m, "-> B-roll from", "motion/broll-motion-2.mp4 (duration 6, hem sentence + edit times in PRODUCT.md)" if m == "motion2" else "motion/broll-motion.mp4 (classic)")
+        mf, dur, how = BROLL_VARIANTS[m]
+        if m in ("motion", "motion2"):
+            for kind in ("connector", "remote"):
+                r = next_fixed(robe, kind)
+                if r: print(f"{kind}:", f"products/{robe.lower()}/fixed/{r} (whole clip; log it with {kind}={r})")
+        else:
+            print("connector + remote: generated INSIDE this B-roll (no fixed tree clips for this video)")
+        print(f"motion: {m} -> B-roll from {mf} (duration {dur}) = {how}; edit times in PRODUCT.md; log it with motion={m}")
     for kind in ("characters", "rooms"):
         left = len([p for p in glob.glob(os.path.join(ROOT, "library", kind, "*.jpg")) if os.path.basename(p) not in used[kind]])
         if left < 5:

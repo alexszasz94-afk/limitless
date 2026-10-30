@@ -1,0 +1,52 @@
+# Kit test notes — princess-countdown (ref: instagram.com/reels/DdGwGMEx-Uj)
+
+Tested 30 Oct with the kit exactly as given to creators (kit-test). Each item = step / what the kit said / what happened.
+
+## Setup / first run
+- setup skill + CLAUDE.md "Uploading": ONE file per media_upload call → 4 Princess refs = 4 upload calls + 4 curl PUTs with ~2 KB presigned URLs pasted by hand. Very token-heavy and error-prone; a `tools.py upload <file>` helper (or allowing files[] and writing ids by filename) would save a lot.
+- setup/check.sh does not check `demucs` (needed by `tools.py vocals` / `audit-sound`, rule 9e) — on a creator laptop without demucs the mandatory sound pipeline fails at the first step. Not in the setup install lines either.
+- Two agents in the same folder: `next-set` writes state/used.json and `tools.py log` too, with no lock and no re-read → parallel sessions can pick the same character/room or overwrite each other's history. media.json has the same problem (the kit says "save after every file", no merge). Low risk for a single creator, real risk if they open two chats.
+- next-set prints the connector/remote as "(whole clip ...)" but PRODUCT.md says connector 1.2–4.0 (never before 3.0 s joined). Contradiction; I followed PRODUCT.md.
+
+## new-video steps
+- Step 0a: kit asks the creator "classic or something new" cozy BEFORE anything else (and waits). Asked → answered "classic" (as instructed for the test). History was empty so "last 3 cozy" line was empty — fine.
+- Character-01 photo: woman holding a glass of juice at chest, plaid mini skirt (legs) — passes find-sets rules; head+shoulders crop made per PRODUCT.md. The crop example `0.15 0 0.85 0.45` doesn't fit most photos (face not at the top); had to pick numbers by eye (0.35 0.22 0.9 0.52). Fine but kit could say "look at the face position".
+- Room-14 = bedroom with only a bed (no sofa). CLAUDE.md "Room check" says: write "on its bed" in the prompt. PRODUCT.md says the Princess classic prompt is PROVEN, "copy WORD FOR WORD, fill ONLY <colour> and <living room / bedroom>, never add sentences". Contradiction → followed PRODUCT.md (only "bedroom"); see B-roll result below.
+- CLAUDE.md 4b says paste look/light/no-text (+motion) blocks into EVERY image and video prompt; PRODUCT.md proven B-roll prompt has none of them and says add nothing. Contradiction → followed PRODUCT.md. Also 7b says write the foreground sentence in EVERY prompt — not in the proven prompt either.
+- PRODUCT.md "Standard edit order" item 6 = `cozy-zoom.mp4 0 → 2.05` but no step anywhere tells you to make cozy-zoom.mp4 (tools.py cozy exists, default start 4.95 = Snoopy timing). new-video 7d only says "cozy from the last cut + 0.15". Unclear whether the classic cozy = B-roll lying shot or a cozy-zoom file.
+
+## Reference analysis (hook = 0–4.07 s: she counts "Three, two, one", whips a linen cloth off a boxed product at 2.8 s, "Let's see how it comes out", pushes box to lens; cut 4.07)
+- Three different word timings from three kit tools on the same clip: `hook-audio` (whisper) "two" at 0.62 s / "one" at 1.94 s; `speech-times` bursts 0.23 / 1.21 / 2.11 / 3.34; `onsets` only [0.23, 2.11, 3.16] (misses "two" entirely, even at 0.1). The kit says onsets = the targets (9e.1, 9e.5) — with a missed word, voice-to-lips can't be fed correctly. Used the speech-times bursts (they match the lips on the 10 fps sheet).
+- `audit-sound <v.mp4> <end>` without the expected line prints "extra: [every word]" — confusing; kit should say pass the line or ignore "extra".
+- Their caption sits over the moving cloth/box (camera static, subject moving under the text). HOOKS.md cleantext "works when the camera stands still" — but the patch would freeze over moving hands/cloth. Kit doesn't cover "static camera, moving subject under the text". Used the fallback "remove the caption text completely" in the prompt → Kling removed it cleanly (0 credits for a clean frame).
+- Packaging: their product is in a green branded box ("Holly Glow"). Rule 9g/9h: our box with OUR brand. Princess has NO box ref and NO brand name anywhere in the kit (Snoopy has snoopy_box). Check skill also says "no invented logos". Had to invent: royal-blue box, gold script "Princess" + "HEATED ROBE", robe visible through a window (gpt_image_2_5, ~4 cr, spelled right first try). → Add a princess_box ref + the brand wording to PRODUCT.md.
+- Their product is a light, not a robe, so the reveal is "the box", fine. Kit says nothing on what to do when their product ≠ robe category (here it worked by making the box show the robe).
+- Image numbering conflict: 9g says "give the branded object to Kling as Image 1", 9i says "her photo as Image 1", HOOKS.md step 3 says character, room, front, back. Used character=1, room=2, box=3.
+- 9f.2 whole-second input: ceil(4.07)=5 s input, so the input contains 0.93 s of THEIR next shot (top-down table). Our output just continued the same shot (no cut) — fine, trimmed at 4.07 with retime. Kit could say "the extra second after the hook end may be a different shot; it is cut away anyway".
+- Sound conflict: 9d + new-video 1a/5b + HOOKS.md "Best way" step 4 say put the words in the Kling prompt ("approved method") with `compare-audio`; 9e says NEVER Kling for voice, Seedance only; HOOKS.md "Hook sound" header says the sound is made with "Kling video-edit on our muted hook (720p, audio only)" + `place-voice` — a third, contradicting version (and 720p is banned by rule 4). Followed 9e (Seedance, voice-to-lips).
+
+## Generation results
+- B-roll try 1 (proven prompt word for word, "bedroom"): good face/robe/feet, BUT Kling INVENTED A GREY SOFA in the bedroom for the lying + sitting shots (room-14 has only a bed). Exactly the case the "Room check" warns about, but PRODUCT.md forbids adding the "on its bed" sentence. Check skill says background must be our room → redo (28 cr wasted).
+- B-roll try 2: proven prompt + ONE added sentence "The lying shot and the sitting shot happen on the bed of Image 2 (this bedroom has no sofa; never add a sofa)." → lying + sitting on the real bed, everything else equally good. → PRODUCT.md should contain the bed variant of the sentence (or say Room check overrides "word for word").
+- B-roll detail: back shot — the gold tiara on the back of the hood is visible only in the first frames, then the hood back is plain blue (ref back.jpg has the tiara); pocket shot: white socks visible before she steps in (allowed for classic motion per 9k), pockets read as big yellow flaps; after closing, the yellow pockets look a bit like yellow trouser legs. No leg/knee visible in lying/sitting. Face = character (updo + brows match the hook better than the B-roll; B-roll hair is looser/lighter).
+- broll-check "safe segments" (0.12 s away from cuts) vs PRODUCT.md edit "broll 0.15 → ~3.5" (which crosses the back→front cut at 1.0): new-video 7d says ONLY safe segments → had to split into 0.15–0.88 + 1.12–3.46 (0.24 s of motion skipped at that cut). The two instructions disagree.
+- Hook (Kling video-edit, 5 s, 20 cr): first try very good — same action at the same seconds (reveal 2.75 vs 2.8), our room, our woman, caption removed, box logo "Princess / HEATED ROBE" readable. `compare` output is a 4510 px wide strip of 110 px frames — unreadable at normal zoom; I had to make my own 4 fps sheet. Make compare tile in 2–3 rows.
+- Outfit continuity (9i): I asked for the same "red and white striped Christmas pajama set" in both prompts; the hook came out red/white Fair-Isle pattern, the B-roll plain candy stripes → small mismatch hook→B-roll. The kit has no step to lock the outfit (e.g. give the hook frame as a ref to the B-roll or vice versa).
+- Sound (9e): blur-for-sound (face box), Seedance video_edit 480p 5 s (18 cr, ~9 min in queue), voice-to-lips → onsets 0.21/1.19/2.07/3.11 vs targets 0.23/1.21/2.11/3.16 (±0.05 OK), audit-sound: all words, no music; compare-audio OK. Works, but onsets on the Seedance voice found an extra burst at 4.17 s and a breath at 2.6 s — needed judgment to pick the right 4 numbers.
+- Music: Let It Go, music_start = 58.5 − 4.07 = 54.43, duck at 4.07 (rule 9e.7). PRODUCT.md says chorus "on the reveal moment" (music_start = 58.5 − reveal) — contradicts 9e.7 ("drop on the hook→B-roll cut"). Followed 9e.7.
+- Loudness: the hook voice is loudness-normalised to −16 LUFS (voice-to-lips) but the music after the cut is NOT; measured mean −14…−17 dB in the hook vs −22…−29 dB after it. The video gets noticeably QUIETER at the "drop", the opposite of the intent. montage.py should normalise the whole mix (or music_drop_vol ~2).
+- Text: rule 9 says suggest the original's text "for as long as it is on screen in theirs" — theirs shows it 0–9.4 s (until their projector shot); our video has a different structure (16 s). Unclear whether to give their seconds or map to our segments. Gave 0–9.4 s.
+- PRODUCT.md music note says "music_vol 0.75" while 9e.7 uses music_hook_vol/music_drop_vol — unclear whether music_vol still applies with music_duck (in montage.py it is ignored when music_duck is set).
+
+## Credits (video 1)
+B-roll 28 + B-roll redo 28 + box image 4.25 + hook 5 s 20 + Seedance sound 5 s 18 = **98.25 credits** (checked with get_cost). Over the kit's "never pass ~90 without asking". CLAUDE.md rule 13 estimate (≈58) is too low: the 9f.2 whole-second rule makes a 4.07 s hook a 5 s generation (20 not 16), Seedance 5 s = 18 not 14, and a branded-box image is needed for every packaging hook (9g).
+
+## My frame-by-frame check of the FINAL (princess-countdown-FINAL.mp4, 16.0 s, 1080x1920)
+OK: hook action + timing match the original (count, reveal 2.8 s, push to lens), voice words + seconds match, no caption, logo readable, clean hook→B-roll cut (no flash frames), order hook → back/hood → pockets → connector → remote → lying → sitting, no text, music ends with fade.
+Wrong / not perfect:
+1. Pajamas change pattern between hook (Fair-Isle) and B-roll (stripes).
+2. Volume drops ~7 dB after the hook (music after the cut much quieter than the voiced hook).
+3. Back-view hood loses its gold tiara after the first frames.
+4. Pocket shot: socks/feet visible before stepping in; the filled yellow pockets look like yellow trouser legs once the robe is closed (proven classic look, but not like pouch-feet.jpg).
+5. The box is an invented design (no official Princess box exists in the kit).
+6. Text suggestion copies "Christmas-aholic" word for word — fine per rule 9, but it's a text written for a Christmas light product.

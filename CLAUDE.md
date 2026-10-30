@@ -31,6 +31,7 @@ Comenzi noi (13 oct):
 - Ceva a picat / Szasz corectează → skill `log-lesson` (Mistakes log). Citește `lessons` înainte de orice producție.
 
 Reguli de lucru:
+- VERIFICARE ÎN DETALIU, MEREU (30 oct, Szasz): orice facem — prompt, imagine, video, montaj, rezultatul unui agent — se compară cadru cu cadru cu originalul ÎNAINTE de folosire/livrare (încotro privește persoana, ce parte a produsului se vede, acțiunea pe secunde, tăieturile). Nimic nu se trimite neverificat de mine.
 - LUMINA, regulă pe viață (23 oct): MEREU foarte moale și foarte naturală la orice imagine/video — blocul `prompts/blocks/light-soft-natural.txt` în fiecare prompt.
 - Orice regulă nouă de la Szasz (`regula: ...`) → linie datată în `docs/02-reguli.md`.
 - Orice afirmație de tip „merge” trebuie legată de o cifră (retenție, views, CTR, comenzi). Fără cifră e ipoteză și se marchează ca atare.

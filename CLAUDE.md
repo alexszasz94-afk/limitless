@@ -6,6 +6,7 @@ Citește în ordinea asta:
 1. `docs/00-viziune.md` — ținta și cifrele.
 2. `docs/01-pipeline.md` — fiecare pas și modulul care îl face.
 3. `docs/02-reguli.md` — regulile absolute (cea mai recentă câștigă).
+3b. `docs/11-metoda-one-click.md` — METODA: cum iese un video perfect, pas cu pas (sinteza testelor).
 4. `playbooks/` — metodele dovedite, cu sursa.
 5. `docs/04-produs-universal.md` — cum se detectează produsul și se alege strategia.
 6. `docs/05-motorul-autonom.md` — cum lucrează aplicația singură, agenții, scara de cost, stilul.

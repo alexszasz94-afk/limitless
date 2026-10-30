@@ -1,0 +1,8 @@
+{
+ "S1": {"character": "character-29", "room": "camera-22", "room_job": "a6dd0e3d-968b-4e39-b020-58a06bfdca1b", "outfit": "red-and-green tartan flannel long-sleeve pajama top and matching long pajama pants"},
+ "S2": {"character": "character-37", "room": "camera-28", "room_job": "03369024-4225-4ecf-8bae-35cfe5e075e9", "outfit": "oatmeal cable-knit long-sleeve sweater and matching long oatmeal knit lounge pants"},
+ "S3": {"character": "character-39", "room": "camera-30", "room_job": "b4c64685-720d-4cf8-80df-25b876c35d90", "outfit": "burgundy waffle-knit long-sleeve top and matching long burgundy lounge pants"},
+ "S4": {"character": "character-27", "room": "camera-34", "room_job": "3cc224b3-cf47-418b-9ebb-50afc38cb42f", "outfit": "white long-sleeve thermal top and long blue-and-white gingham flannel pajama pants"},
+ "S5": {"character": "character-21", "room": "camera-38", "room_job": "ad53970d-3d70-4143-af2b-72e2b7442c50", "outfit": "forest-green long-sleeve pajama top and matching long forest-green pajama pants with small white snowflakes"},
+ "note": "different women from princess/picks.json (38,30,35,22,43)"
+}

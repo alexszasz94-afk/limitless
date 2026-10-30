@@ -1,0 +1,98 @@
+{
+ "reference": "https://www.instagram.com/reels/Deuu2AXyPPx/",
+ "hook_start": 0.0,
+ "hook_end": 4.533,
+ "hard_cut_at": 4.53,
+ "input": "0-4.533 s + last frame frozen to 5.000 s, silent (-an)",
+ "input_media_id": "ed169046-828d-481b-8f0a-97fb69ad7513",
+ "higgsfield_video_analysis_id": "918e8c71-2ac6-428b-8a6a-9f562d0af398",
+ "higgsfield_scenes": [
+  {
+   "t": "0:00-0:03",
+   "audio": "Music: whimsical orchestral intro. Vocals: Three, two, one!",
+   "visual": "woman outdoors in snow, white beanie, scarf, cream coat, gloves, holds a light-blue blanket in front of her chest; white two-story house behind; static"
+  },
+  {
+   "t": "0:03-0:04",
+   "audio": "music swells + magical chime. Vocals: Oh!",
+   "visual": "she quickly pulls the blanket away to her right, revealing the product box; wide smile; static camera"
+  }
+ ],
+ "speaker": "the woman in frame, on camera, lips visible",
+ "song_in_original": "yes (orchestral, 'Let it go' from ~4.2 s) - NOT reproduced, music added in the edit",
+ "words": [
+  {
+   "w": "Three!",
+   "start": 0.0,
+   "end": 0.45
+  },
+  {
+   "w": "Twooo! (stretched)",
+   "start": 1.05,
+   "end": 1.9
+  },
+  {
+   "w": "Ooone! (stretched)",
+   "start": 2.55,
+   "end": 3.9
+  },
+  {
+   "w": "Oh! (short excited gasp)",
+   "start": 4.2,
+   "end": 4.45
+  }
+ ],
+ "words_source": "video_analysis words 'Three, two, one!' + 'Oh!'; transcribe/hook-audio: Three 0.00 / two 0.62 / one 1.94 (whisper starts early on stretched words); speech-times bursts 0.05-0.12, 1.49-1.74, 2.65-3.09; 100 ms energy envelope: 0.0-0.45 / 1.05-1.9 (peak 1.6) / 2.55-3.9 (peak 2.7) -> envelope used",
+ "actions": [
+  {
+   "t": "0.0-3.4",
+   "a": "holds the folded blanket over the box at chest height with both gloved hands, smiling; small teasing tugs at ~1.0 s and ~2.0 s that show the lower edge of the box"
+  },
+  {
+   "t": "3.5",
+   "a": "right hand grabs the top edge of the blanket"
+  },
+  {
+   "t": "3.75-4.2",
+   "a": "pulls the blanket up and away to her right (frame left) in one quick move"
+  },
+  {
+   "t": "4.2-4.53",
+   "a": "box fully revealed held in her left hand at chest height, blanket flying out of frame, open-mouth excited smile"
+  }
+ ],
+ "reveal_s": 4.2,
+ "other_sounds": [
+  "fabric rustle at tugs ~1.0 / ~2.0 s",
+  "fleece whoosh at 3.8-4.2 s",
+  "quiet outdoor winter ambience"
+ ],
+ "local_cuts_in_hook": [],
+ "kling_result": {
+  "kept": "video-edit try 1 (job 003fec40), trimmed to 4.533 s",
+  "our_words": [
+   [
+    "Three",
+    0.1,
+    0.7
+   ],
+   [
+    "Two",
+    1.4,
+    2.0
+   ],
+   [
+    "One (stretched)",
+    2.6,
+    3.4
+   ],
+   [
+    "Oh! (cut by the hook end)",
+    4.4,
+    4.53
+   ]
+  ],
+  "music": "none",
+  "extra_words": "none"
+ }
+}

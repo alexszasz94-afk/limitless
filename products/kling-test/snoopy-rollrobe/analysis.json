@@ -1,0 +1,55 @@
+{
+ "reference": "https://www.instagram.com/p/DfGoo7qyJ9o/",
+ "hook_start": 0.0,
+ "hook_end": 2.733,
+ "hard_cut_at": 2.73,
+ "input": "0-2.733 s + last frame frozen to 3.000 s, silent",
+ "input_media_id": "6043a21d-28ab-4620-b55d-f1068951a2ea",
+ "higgsfield_video_analysis_id": "1211649d-4bf6-4e1a-9c29-185ba6465c34",
+ "higgsfield_scenes": [
+  {
+   "t": "0:00-0:01",
+   "audio": "Upbeat rhythmic instrumental music, whimsical orchestral synth melody",
+   "visual": "woman holds a large rolled-up teal velvet bundle over her head with both hands, living room, static"
+  },
+  {
+   "t": "0:01-0:03",
+   "audio": "same instrumental continues",
+   "visual": "she unrolls it downward: plush teal robe, back side with embroidered emblem, held by the shoulders full length; static"
+  }
+ ],
+ "speaker": null,
+ "song_only": true,
+ "words": [],
+ "words_source": "video_analysis: instrumental only, no speech. Local tools are FALSE POSITIVES: transcribe 'Thanks for watching!', hook-audio 'A. 4 3 5' (song) -> NO voice in ours",
+ "actions": [
+  {
+   "t": "0.0-1.75",
+   "a": "rolled robe held horizontally overhead with both hands, slight sway"
+  },
+  {
+   "t": "1.75-2.0",
+   "a": "she lets the roll drop: it unrolls DOWNWARD from her hands"
+  },
+  {
+   "t": "2.0-2.73",
+   "a": "robe hangs full length, back side to camera, hood at top, held by the shoulders; her face hidden behind it"
+  }
+ ],
+ "reveal_s": 1.8,
+ "other_sounds": [
+  "soft fabric whoosh/flap at ~1.8-2.0 s",
+  "room tone"
+ ],
+ "local_cuts_in_hook": [],
+ "reference_given": "https://www.instagram.com/reels/Deui1RKgYWF/",
+ "reference_used": "https://www.instagram.com/p/DfGoo7qyJ9o/",
+ "note": "Deui1RKgYWF is an IKEA pallet reveal (Frostybee boxes), NOT a roll-robe hook. The kit's snoopy-rollrobe hook was actually made from DfGoo7qyJ9o (folder collision, see kit-test/output/princess-unroll/notes.md), so the same hook is used here for a fair comparison.",
+ "kling_result": {
+  "kept": "video-edit try 1 (job ef56daac), trimmed to 2.733 s",
+  "our_words": [],
+  "sounds": "room tone + fabric whoosh 1.6-2.7 s",
+  "music": "none",
+  "extra_words": "none (whisper 'You' at 0.0 = hallucination on silence)"
+ }
+}

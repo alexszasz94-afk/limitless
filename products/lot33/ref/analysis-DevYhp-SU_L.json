@@ -1,0 +1,31 @@
+{
+ "source": "https://www.instagram.com/p/DevYhp-SU_L/",
+ "file": "products/lot33/ref/orig.mp4",
+ "length_s": 13.07,
+ "cuts": [3.87, 5.17, 5.67, 6.2, 7.0, 9.2, 10.37, 11.3],
+ "speech": "NO - song only. The only voice is a sung female vocal of the song 'Almost There' (musical-theatre jazz): 'I know exactly where I'm going, getting closer and closer every day, and I'm almost there... almost there'. Nobody in the video speaks; her lips never say the words (face hidden / closed mouth).",
+ "local_transcribe": "3.04 I'm, 3.54 going, 3.78 getting, 4.34 closer, 4.90 and, 5.26 closer, 5.54 every, 6.18 day, 6.90 and, 7.18 I'm, 7.46 almost, 7.82 there, 9.18 I'm, 10.96 almost, 11.64 there (song lyrics)",
+ "sound_rule": "song-only original -> our music from 0 s with the drop on the unroll/reveal (~3.9 s); Kling prompt: nobody speaks, only quiet room tone + real action sounds, no music",
+ "higgsfield_analysis_id": "8e741df8-64ce-4e0d-a441-83eb9acd8581",
+ "higgsfield_scenes": [
+  {"t": "0-2", "audio": "female vocal singing '...I know exactly where I'm going...'", "visual": "young woman (black crop top, black sweatpants) in the centre of a warm living room holds a rolled-up green velvet robe with white faux-fur edges with both hands, unrolls it downward revealing a large green hooded robe with white lotus embroidery; marble coffee table in foreground"},
+  {"t": "2-4", "audio": "'...getting closer and closer every day...'", "visual": "she turns her back to camera showing the rear of the hooded robe, white faux-fur lined hood; pulls the robe over her shoulders; static camera"},
+  {"t": "4-8", "audio": "'...and I'm almost there...'", "visual": "faces camera fully wearing the robe, holds the front panels open showing white sherpa lining and black outfit, shifts weight side to side"},
+  {"t": "8-9", "audio": "'...almost there...'", "visual": "extreme close-up: hands connect a two-part white plug connector in the white faux-fur lining"},
+  {"t": "9-10", "audio": "jazz brass", "visual": "hand holds white remote with display '86 F' against the green velvet, thumb presses up"},
+  {"t": "10-12", "audio": "vocal fades 'I'm almost there'", "visual": "sitting on a white couch wrapped tightly in the robe, pulls the white fur collar up over mouth and nose, looks at camera, cozy; candle + marble table foreground right"}
+ ],
+ "my_timeline_from_sheet_4fps": {
+  "0-3.0": "wide static shot, woman standing in the middle of the room on a rug, robe rolled up held overhead with both hands in front of her face (face hidden), small sways",
+  "3.0-3.87": "she lets it unroll downward: the robe drops open hanging from her raised hands, back side + hood toward camera, covering her body",
+  "3.87-5.17": "over-the-shoulder close view from behind-left: she is putting the robe on over her shoulders, sherpa collar edge, then the hood back with embroidery comes into view",
+  "5.17-5.67": "close view of hood/back of the robe from behind",
+  "5.67-6.2": "hood/back view from behind, hood up",
+  "6.2-7.0": "front wide: wearing the robe with the hood up, holds both sides open showing the sherpa lining, lifts one knee",
+  "7.0-9.2": "front wide: robe held wide open, she steps into the foot pockets at the bottom (one leg then the other), then closes the robe",
+  "9.2-10.37": "connector close-up",
+  "10.37-11.3": "remote close-up",
+  "11.3-13.07": "cozy on a white sofa, hood up, pulls the white collar up over mouth and nose, looking at camera"
+ },
+ "on_screen_text": "'Do NOT let a Tiana fan see this...' + emojis, whole video, top"
+}

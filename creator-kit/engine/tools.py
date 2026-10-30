@@ -180,10 +180,10 @@ def next_motion(robe):
 
 
 def next_fixed(robe, kind):
-    """rule 28 Oct (Alex): connector and remote are reused - 2 tree close-ups of each per robe (fixed/<kind>-tree-N.mp4, 4K), in rotation."""
+    """rule 30 Oct (Alex): connector and remote are reused - the NEW fabric close-ups (fixed/<kind>-fabric-N.mp4, v4 style, on the robe fabric) are the DEFAULT/first in rotation; the old tree close-ups (fixed/<kind>-tree-N.mp4, 4K) stay as alternates."""
     f = os.path.join(ROOT, "state/used.json")
     vids = [v for v in (json.load(open(f)) if os.path.exists(f) else {}).get("videos", []) if v.get("robe", "").lower() == robe.lower()]
-    names = [os.path.basename(h) for h in sorted(glob.glob(os.path.join(ROOT, "products", robe.lower(), "fixed", f"{kind}-tree-*.mp4")))]
+    names = [os.path.basename(h) for h in sorted(glob.glob(os.path.join(ROOT, "products", robe.lower(), "fixed", f"{kind}-fabric-*.mp4"))) + sorted(glob.glob(os.path.join(ROOT, "products", robe.lower(), "fixed", f"{kind}-tree-*.mp4")))]
     if not names:
         return None
     last = vids[-1].get(kind, "") if vids else ""

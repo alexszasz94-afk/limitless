@@ -12,6 +12,7 @@ Long hooded heated robe in classic fairy-tale princess colours. Royal-blue plush
 | princess_pouch_feet | refs/pouch-feet.jpg | B-roll (both feet in the pockets) |
 
 ## Fixed clips (already made — never generate again)
+- `fixed/connector-fabric-1.mp4` (3 s) + `fixed/remote-fabric-1.mp4` (3 s) — NEW 30 Oct (Alex: nicer than the tree ones), DEFAULT/first in the rotation: v4-style extreme close-ups on the robe's blue velvet; lilac connector slides COMPLETELY in then is held up joined; pink crown remote, 5 crystal lights. Frozen recipe: `recipes/connector-remote-fabric.md`. Use connector ~0.1-2.0 (joined at ~1.3). REMOTE FLAG (30 Oct, after 3 tries): use ONLY 0.2-1.3 of remote-fabric-1 (single light; after ~1.3 s a second crystal lights up - Kling kept lighting several crystals); if the edit needs a longer remote shot, take a tree remote instead.
 - `fixed/connector-tree-1.mp4`, `-2` — lilac connector pushed fully in, close-up next to the Christmas tree, woman's hands + princess sleeve, 4K, 4 s. ROTATION (Alex 28 Oct): `tools.py next-set princess` says which one; use **1.2–4.0** (fully joined at ~3.0 s, then held — never cut before). Never generate a new connector. (`fixed/connector.mp4` = old one, not used.)
 - `fixed/remote-tree-1.mp4`, `-2` — pink crystal remote close-up next to the Christmas tree (2 different trees/nails), 4K, lights go up. ROTATION (Alex 28 Oct): `tools.py next-set princess` says which one; use the whole clip **0–2.95**. Never generate a new remote. (`fixed/remote.mp4` = old one, not used.)
 

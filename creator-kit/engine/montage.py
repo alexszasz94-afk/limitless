@@ -6,7 +6,7 @@ edit.json:
   "fps": 30,
   "segments": [{"file": "output/<name>/hook.mp4", "start": 0, "end": 2.5, "audio": true}, ...],   # in edit order; "audio": true keeps the clip sound (hooks)
   "texts":    [{"segs": [0, 2], "text": "Line one\nLine two 🐶", "size": 76, "y": 0.08}, ...],   # "segs": [first, last] = from the start of segment `first` to the end of segment `last` (0 = first segment; -1 = last) — ALWAYS use this, it lands exactly on the cuts. ("t0"/"t1" in seconds also works.) y = top of text as share of height
-  "music": "products/snoopy/music/linus-and-lucy.mp3", "music_start": 0.8, "music_vol": 0.75, "orig_vol": 1.0
+  "music": "music/xmas/mariah-all-i-want.mp3", "music_start": 0.8, "music_vol": 0.75, "orig_vol": 1.0
 }
 The video ends when the music ends; the music fades out in the last 0.5 s.
 It prints the real start of every segment in the final video ("cuts at ...") — use those numbers when you check the final sheet.

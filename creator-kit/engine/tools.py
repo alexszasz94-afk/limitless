@@ -146,6 +146,26 @@ BROLL_VARIANTS = {   # rule 30 Oct (Alex): the B-roll rotates between these moti
 }
 
 
+XMAS_SONGS = {   # rule 30 Oct (Alex): rotating Christmas songs, shared pool for both robes - file in music/xmas/, drop second (the full-band/chorus entry, LISTEN-checked)
+    "mariah-all-i-want.mp3": 53.4,
+    "buble-beginning.mp3": 35.35,
+    "wham-last-christmas.mp3": 0.0,   # steady from the start, no clear drop
+    "let-it-go.mp3": 58.5,            # chorus; Alex: fits the Princess robe best
+}
+
+
+def next_song(robe):
+    """rule 30 Oct (Alex): next-set also rotates the Christmas song - never the same as the last 2 videos (any robe)."""
+    f = os.path.join(ROOT, "state/used.json")
+    vids = (json.load(open(f)) if os.path.exists(f) else {}).get("videos", [])
+    recent = [v.get("song", "") for v in vids[-2:]]
+    keys = list(XMAS_SONGS)
+    for k in keys:
+        if k not in recent:
+            return k
+    return keys[0]
+
+
 def broll_variants(robe):
     return [k for k in BROLL_VARIANTS if k != "motion2" or robe.lower() == "princess"]
 
@@ -212,6 +232,10 @@ def next_set(robe=""):
         else:
             print("connector + remote: generated INSIDE this B-roll (no fixed tree clips for this video)")
         print(f"motion: {m} -> B-roll from {mf} (duration {dur}) = {how}; edit times in PRODUCT.md; log it with motion={m}")
+        song = next_song(robe)
+        drop = XMAS_SONGS[song]
+        start = f"{drop} - <hook end>" if drop else "0"
+        print(f"song: music/xmas/{song} (drop at {drop} s; log it with song={song}) -> edit.json: \"music\": \"music/xmas/{song}\", \"music_start\": {start}, \"music_duck\": <hook end>")
     for kind in ("characters", "rooms"):
         left = len([p for p in glob.glob(os.path.join(ROOT, "library", kind, "*.jpg")) if os.path.basename(p) not in used[kind]])
         if left < 5:

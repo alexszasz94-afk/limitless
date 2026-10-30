@@ -15,9 +15,14 @@ Long hooded heated robe in classic fairy-tale princess colours. Royal-blue plush
 - `fixed/connector-tree-1.mp4`, `-2` — lilac connector pushed fully in, close-up next to the Christmas tree, woman's hands + princess sleeve, 4K, 4 s. ROTATION (Alex 28 Oct): `tools.py next-set princess` says which one; use **1.2–4.0** (fully joined at ~3.0 s, then held — never cut before). Never generate a new connector. (`fixed/connector.mp4` = old one, not used.)
 - `fixed/remote-tree-1.mp4`, `-2` — pink crystal remote close-up next to the Christmas tree (2 different trees/nails), 4K, lights go up. ROTATION (Alex 28 Oct): `tools.py next-set princess` says which one; use the whole clip **0–2.95**. Never generate a new remote. (`fixed/remote.mp4` = old one, not used.)
 
-## Music
-- `music/let-it-go.mp3` — the chorus ("Let it go…") hits at ≈ 58.5 s. Put it on the reveal moment: `"music_start": 58.5 - <time of the reveal in the final video>` (e.g. reveal at 1.9 s → `56.6`). `"music_vol": 0.75`, `"orig_vol": 1.0`.
-- `music/princess-trend.mp3` — 15 s trending sound, `"music_start": 0`. Video can be max ~14.5 s with it.
+## Music — rotating Christmas pool (rule 30 Oct, Alex)
+The songs live in ONE shared pool, `music/xmas/` (both robes). `tools.py next-set princess` picks the song (never the same as the last 2 videos) and prints the edit.json lines; log it with `song=<file>`.
+- `music/xmas/let-it-go.mp3` — chorus at **58.5 s** (fits the Princess robe best; put the chorus on the reveal/drop).
+- `music/xmas/mariah-all-i-want.mp3` — drop at **53.4 s**.
+- `music/xmas/buble-beginning.mp3` — drop at **35.35 s**.
+- `music/xmas/wham-last-christmas.mp3` — steady from the start: `"music_start": 0`.
+Rule 28 Oct still applies: quiet under the hook (`music_duck` = hook end, `music_hook_vol` 0.2), louder from the drop at the hook → B-roll cut (`music_start = drop - hook end`).
+- `music/princess-trend.mp3` (in products/princess/music/) — 15 s trending sound, `"music_start": 0`, video max ~14.5 s; only when the creator asks for it.
 
 ## ⚠️ Content filter (important)
 Kling sometimes refuses the princess B-roll with status `nsfw`. It does NOT cost credits (refunded). Causes: long prompts that mention bare legs, feet, toes, satin shorts, AND a character photo that shows legs (skirt, shorts, dress) — the motion clip already shows legs, the two together trigger the filter. So, EVERY time:

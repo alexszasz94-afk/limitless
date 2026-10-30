@@ -19,11 +19,12 @@ Long hooded heated robe. Outside: light camel-brown ribbed (corduroy-like) plush
 - `fixed/connector-tree-1.mp4`, `-2` — grey connector pushed fully in, close-up next to the Christmas tree, woman's hands + Snoopy sleeve, 4K, 4 s. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use **1.2–4.0** (fully joined at ~3.0 s, then held — never cut before). Never generate a new connector.
 - `fixed/remote-tree-1.mp4` — THE ONLY Snoopy remote (Alex 28 Oct: "la snoopy folosim doar a doua telecomanda"): white remote close-up next to the silver Christmas tree with the Snoopy sleeve, 4K, 1.9 s, lights go up. ROTATION (Alex 28 Oct): `tools.py next-set snoopy` says which one; use the whole clip 0–1.9. Never generate a new remote.
 
-## Music — Christmas songs (rule 28 Oct, Alex: "we use Christmas music for Snoopy too from now on")
-Pick one per video, different from the last video (`tools.py history`). Drop = the second the full band kicks in; put it on the hook → B-roll cut: `"music_start": <drop> - <hook end>`, `"music_duck": <hook end>` (quiet under the hook, louder from the drop).
-- `music/mariah-all-i-want.mp3` — drop at **53.4 s**.
-- `music/buble-beginning.mp3` — drop at **35.35 s**.
-- `music/wham-last-christmas.mp3` — no clear drop (steady from the start): `"music_start": 0`.
+## Music — rotating Christmas pool (rule 30 Oct, Alex)
+The songs live in ONE shared pool, `music/xmas/` (both robes). `tools.py next-set snoopy` picks the song (never the same as the last 2 videos) and prints the edit.json lines; log it with `song=<file>`. Drop = the second the full band kicks in; put it on the hook → B-roll cut: `"music_start": <drop> - <hook end>`, `"music_duck": <hook end>`.
+- `music/xmas/mariah-all-i-want.mp3` — drop at **53.4 s**.
+- `music/xmas/buble-beginning.mp3` — drop at **35.35 s**.
+- `music/xmas/wham-last-christmas.mp3` — no clear drop (steady from the start): `"music_start": 0`.
+- `music/xmas/let-it-go.mp3` — chorus at **58.5 s** (mostly for Princess, but in the rotation).
 
 ## B-roll (always new person + new room) — Kling 4.0 video-edit
 Call `generate_video_batch` (or `generate_video`) with:

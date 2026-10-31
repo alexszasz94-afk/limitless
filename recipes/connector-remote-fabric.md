@@ -28,3 +28,6 @@ Edit the input video. Keep exactly the same framing, camera position, hand movem
 
 ## 30 oct (corectură Szasz, aplicată): telecomanda Prințesă refăcută prin metoda noastră
 Video-edit-ul nu ținea o singură lumină aprinsă → refăcută: (1) start frame gpt_image_2_5 (high, 9:16, 4k) din cadrul 0 al clipului vechi, cu „ALL FIVE indicator lights completely OFF"; (2) kling4_0 image-to-video, 1080p, 9:16, 5 s, promptul cu luminile pe secunde (apasă la 0,5 s → DOAR 1 aprinsă; mută la 2, 3, 4, 5 la ~1,4/2,3/3,2/4,1 s; „EXACTLY ONE indicator is lit... never two at once, no blinking"). Verificat la 4 fps: o singură lumină, urcă 1→5. Jobul: start frame fa6bc924, video 93490a8f. Conectoarele tăiate la partea necesară (0–1,7 s, fără planul ridicat spre cameră).
+
+## 31 oct: telecomanda Snoopy refăcută la fel (start frame + animare)
+Start frame = cadrul 0 din clipul vechi (toate 5 stinse, folosit direct, media cd6327f3). kling4_0 image-to-video 1080p 9:16 5 s. Încercarea 1 (f78a2789): la trecere ardeau 2 deodată și se oprea pe 4 → respinsă. Încercarea 2 (23e6f5d6), prompt cu „the previous light turns OFF in the SAME INSTANT… an instant jump, never a crossfade… never two lit, not even for a single frame… number 5 (the TOP indicator) stays lit alone” → ACCEPTATĂ: mereu o singură lumină, urcă 2→3→4→5 și rămâne pe 5 (pornește de la 2, nu de la 1 — abatere mică, notată).

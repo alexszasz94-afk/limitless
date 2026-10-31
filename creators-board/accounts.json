@@ -1,0 +1,26 @@
+{"_note":"From Alex's spreadsheet updated_creators_for_snoopy_and_princcess.xlsx (1 Nov). Short links resolved. 'resolve' = only a reel link was given; the scan finds the owner.",
+"creators":[
+ {"name":"Abed","accounts":[
+  {"platform":"tiktok","handle":"snugsnoopy1"},{"platform":"instagram","handle":"snugsnoopy"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61594499985489"},
+  {"platform":"tiktok","handle":"snoopyycozy"},{"platform":"instagram","handle":"snoopyycozy"},{"platform":"facebook","resolve":"https://www.facebook.com/reel/1125712353711792"}]},
+ {"name":"Elsayed","accounts":[
+  {"platform":"instagram","handle":"comfort.princesstiara"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61595458822598"}]},
+ {"name":"Elgabry","accounts":[
+  {"platform":"tiktok","handle":"royalsnuggle.usa"},{"platform":"instagram","handle":"royalsnuggle.usa"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61594160010108"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61594640925734"}]},
+ {"name":"Dennis","accounts":[
+  {"platform":"tiktok","handle":"cozyroyal1"},{"platform":"instagram","handle":"heatroyalco"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61595177294121"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61595636763869"},{"platform":"tiktok","handle":"snoopysnuggles38"}]},
+ {"name":"Muaz","accounts":[
+  {"platform":"tiktok","handle":"snoophknqvy"},{"platform":"instagram","handle":"shopsnoopytrobe"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61595266354599"}]},
+ {"name":"Dax","accounts":[
+  {"platform":"tiktok","handle":"snoopy_snugs"},{"platform":"instagram","handle":"snowboarding_hoodies"},{"platform":"facebook","resolve":"https://www.facebook.com/reel/1443929201287065"},{"platform":"facebook","resolve":"https://www.facebook.com/reel/1155875370340514"}]},
+ {"name":"Madalina","accounts":[
+  {"platform":"tiktok","handle":"princess.cozy28"},{"platform":"instagram","handle":"princesscozyyy"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61594984716482"}]},
+ {"name":"Yusuf","accounts":[
+  {"platform":"tiktok","handle":"peanutsplush"},{"platform":"instagram","handle":"peanutsplush"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61595554783514"}]},
+ {"name":"Miah","accounts":[
+  {"platform":"tiktok","handle":"cozysnoopyrobe_"},{"platform":"instagram","handle":"cozy_snoopy_robe"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61595613766069"}]},
+ {"name":"Awada","note":"still making the accounts","accounts":[
+  {"platform":"instagram","handle":"comfysnoop"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61595746719079"}]},
+ {"name":"Jonny","accounts":[
+  {"platform":"instagram","resolve":"https://www.instagram.com/reel/DfBchidyzFd/"}]}
+]}

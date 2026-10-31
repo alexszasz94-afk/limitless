@@ -64,7 +64,7 @@ LOOK: UGC style, a real unedited iPhone 16 video of a real person in a real home
 ```
 **After generating — ALWAYS (rule 31 Oct, Alex):** `python3 engine/tools.py cutjerk output/<name>/broll.mp4 output/<name>/broll-cut.mp4` — cuts 3.10–3.40 s out (the robe-opening jerk) and gives one clean cut from the half-open to the fully open robe; everything after 3.40 s comes 0.30 s earlier. Check 2.7–3.5 s at 15 fps (no jerk frame). Use ONLY `broll-cut.mp4` in the edit.
 **Edit times (in broll-cut.mp4, ±0.1 s — take the real cuts from `tools.py cuts`):** puts it on (back + hood) 0.10 → ~1.7 · foot pockets ~1.7 → ~5.4 (cozy cut − 0.12) · cozy ~5.6 (cozy cut + 0.12) → ~7.5.
-**Check (skill `check`):** her face in every front shot; the back shot cut not later than ~1.8 s; feet never visible outside the pockets (15 fps on the pocket shot); in the cozy shot she SITS on the real sofa of the room (never stands), and no pajama legs or socks show between the robe flaps. Any fail → regenerate ONCE with the SAME prompt.
+**Check (skill `check`):** her face in every front shot; the back shot cut not later than ~1.8 s; in the cozy shot she SITS on the real sofa of the room (never stands). Any of these fails → regenerate ONCE with the SAME prompt. Feet, socks or pajama legs are NOT a fail (rule 31 Oct, Alex): only obvious long bare feet on the floor > 0.5 s → cut those frames if the cut stays clean, otherwise deliver.
 
 ### B-roll v5 (motion `motion/princess-v5.mp4`, duration 6)
 Shots in the generated clip: sleeves, she slides her arm in 0–1.8 (small jump cut at 1.0) · from behind, she pulls the hood up 1.8–2.4 · lying on her back on the sofa, hood up 2.4–3.5 · cozy: curled up on her side WIDE on the real sofa 3.5–6.0 (still from 5.5). No foot-pocket shot.
@@ -77,7 +77,7 @@ SHOT 4 (3.5 s to the end, a SEPARATE shot with a hard cut at 3.5 s - never skip 
 LOOK: UGC style, a real unedited iPhone 16 video of a real person in a real home, Full HD, completely realistic; warm, very soft, very natural light, diffuse daylight and the warm glow of real lamps, gentle low contrast, true slightly warm colours; no HDR, no glow, no orange cast, no CGI look. Natural real movements with real weight and gravity, no morphing, no flicker. Correct hands with five fingers. NO TEXT: the caption text of the input video is removed completely; no captions, no emoji, no subtitles, no watermark, no other logos. No cable connector and no remote anywhere. Silent.
 ```
 **Edit times (±0.1 s, take the real cuts from `tools.py cuts`):** puts it on (sleeves + hood) 0.10 → ~2.3 and lying ~2.5 → ~3.4 (play 0.10 → 3.38 as ONE segment) · cozy ~3.62 → ~5.9.
-**Check (skill `check`):** the SAME woman (face and hair colour) in every shot; the real sofa of the room; legs always covered by the robe. Any fail → regenerate ONCE with the SAME prompt.
+**Check (skill `check`):** the SAME woman (face and hair colour) in every shot; the real sofa of the room. Any fail → regenerate ONCE with the SAME prompt (feet/legs showing are not a fail, rule 31 Oct, Alex).
 
 ## Standard edit order (rule 31 Oct, Alex — ALWAYS: hook → B-roll → connector → remote → cozy)
 1. hook clip(s) `"audio": true` — exactly as long as the original's hook (ends on the original's hook end)

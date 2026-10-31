@@ -1,6 +1,6 @@
 """Helper commands Claude uses while making a video. Run from the kit folder:
 
-  python3 engine/tools.py download <instagram-or-tiktok-url> <folder>   -> <folder>/reference.mp4 (+ prints length and cuts)
+  python3 engine/tools.py download <url | inbox/file.mp4> <folder>       -> <folder>/reference.mp4 (+ prints length and cuts); a local file (inbox/) is copied
   python3 engine/tools.py sheet <video> <out.jpg> [fps]                 -> contact sheet of frames (default 2 fps) to look at
   python3 engine/tools.py frame <video> <seconds> <out.jpg>             -> one full-size frame
   python3 engine/tools.py cuts <video>                                   -> times where the shot changes
@@ -8,7 +8,7 @@
   python3 engine/tools.py fetch <url> <out-file>                          -> download a Higgsfield result (png results are saved as jpg)
   python3 engine/tools.py drop <song.mp3>                                 -> loud jumps in a song (where the beat/chorus drops)
   python3 engine/tools.py fanwipe <in.mp4> <out.mp4> <t1> [<t2> ...]       -> ceiling-fan blade wipe centred on each cut time
-  python3 engine/tools.py next-set <robe>                                 -> next character + room (only the missing one after a reject) + B-roll variant v4/v5 (motion file, PRODUCT.md section, duration) + fixed connector/remote + song (rule 31 Oct, Alex)
+  python3 engine/tools.py next-set <robe> [--new]                         -> character (sharpest free) + room (in order) + B-roll v4/v5 + fixed connector/remote + song; run twice without `log` = the SAME pick (rule 31 Oct, Alex)
   python3 engine/tools.py cutjerk <broll.mp4> <out.mp4>                   -> B-roll v4 ONLY: cuts 3.10-3.40 s out (the robe-opening jerk); everything after comes 0.30 s earlier (rule 31 Oct, Alex)
   python3 engine/tools.py add-rooms <rooms.zip>                           -> Alex's rooms zip (the ONLY source of rooms, rule 28 Oct) -> library/rooms/room-NN.jpg (next free numbers)
   python3 engine/tools.py photo-ok <photo>                               -> True/False + reason: short side >= 1080 (4K preferred) and sharp (rule 29 Oct)
@@ -18,12 +18,14 @@
   python3 engine/tools.py log <video-name> key=value ...                 -> remembers what this video used (hook, outfit, music, text, motion, robe)
   python3 engine/tools.py cleantext <video> <clean.jpg> <out.mp4> <l> <t> <r> <b> [...more boxes]  -> covers their on-screen text with the same spot from a clean photo (static camera only) - no blur for Kling to copy
   python3 engine/tools.py broll-check <broll.mp4> <motion.mp4> <out-folder>   -> B-roll safety check: shot count vs the motion clip, glitch spikes inside shots, safe segments, one sheet per shot to look at
-  python3 engine/tools.py retime <our-hook.mp4> <reference-hook.mp4> <out.mp4> [hook end s] -> puts every cut/action on the EXACT second of the original and ends exactly where it ends (rule 28 Oct)
-  python3 engine/tools.py compare-audio <original a3 folder> <our-hook.mp4> <hook end> <our a3 folder>  -> runs audio3 on OUR hook and compares every word START with the original (+-0.15 s), extra/missing words, music (rule 31 Oct, Alex)
+  python3 engine/tools.py retime <our-hook.mp4> <reference-hook.mp4> <out.mp4> [hook end s] -> ends our hook EXACTLY on the original's hook end (trim / hold last frame), keeps the sound, never changes speed; prints cut differences (rule 31 Oct, Alex)
+  python3 engine/tools.py hold <hook.mp4> <out.mp4> <action start in ours> <action start in original> [our a3 folder] -> action EARLY: lengthens the still part before it (forward/back/forward, sound mirrored); LATE (negative shift): removes still part; refuses if words would be cut (rule 31 Oct, Alex)
+  python3 engine/tools.py put <file> <upload_url>                         -> the upload PUT for Higgsfield (prints 200), instead of a curl line (rule 31 Oct, Alex)
+  python3 engine/tools.py compare-audio <original a3 folder> <our-hook.mp4> <hook end> <our a3 folder>  -> ADVICE ONLY: runs audio3 on OUR hook, word starts side by side, extra/missing words, sustained music; never decides a redo (rule 31 Oct, Alex)
   python3 engine/tools.py history [n]                                     -> what the last n videos used (default 5), so the next one is different
 
   HOOK SOUND ANALYSIS (the ONE way, rule 31 Oct, Alex):
-  python3 engine/audio3.py <hook part.mp4> <hook end s> <out folder> "<line from Higgsfield video_analysis>"
+  python3 engine/audio3.py <hook part.mp4> <hook end s> <out folder> "<line from Higgsfield video_analysis>" [--no-voice]   (--no-voice when the analysis says nobody speaks)
       -> 3 parts: VOICE (every word with its start/end second, tone), ACTION SOUNDS (+ events.jpg), BACKGROUND (music / room tone)
   (`tools.py hook-audio` and `tools.py audit-sound` are only old names: they run audio3 / compare-audio.)
 """
@@ -48,6 +50,8 @@ def cuts(f, thr=0.2):
 def download(url, folder):
     os.makedirs(folder, exist_ok=True)
     out = os.path.join(folder, "reference.mp4")
+    if os.path.exists(url):   # a file the creator put in inbox/ (when the link download fails)
+        import shutil; shutil.copy(url, out); print(out, "length", round(duration(out), 2), "cuts", cuts(out, 0.25)); return
     for _ in range(3):
         run(["yt-dlp", "-q", "-f", "mp4/best", "-o", out, url])
         if os.path.exists(out):
@@ -164,7 +168,7 @@ def broll_info(robe, key):
 def _used():
     f = os.path.join(ROOT, "state/used.json")
     u = json.load(open(f)) if os.path.exists(f) else {}
-    u.setdefault("characters", []); u.setdefault("rooms", [])
+    for k in ("characters", "rooms", "videos"): u.setdefault(k, [])
     return u
 
 
@@ -219,24 +223,36 @@ def photo_ok(f, min_side=1080, min_sharp=150):
 FIXED_TIMES = {"connector": "0 -> 1.7 (whole clip, fully joined at the end)", "remote": "0.3 -> 3.0 (one light climbing, never two)"}
 
 
-def next_set(robe=""):
-    """Picks a new character + room. rule 31 Oct (Alex): if the last pick lost ONE photo to `reject`, only that kind is
-    picked again - the other photo of the pick is kept (a rejected room never burns the character)."""
-    used = _used(); cur = used.get("current") or {}
+def sharpness(f):
+    from PIL import Image, ImageFilter, ImageStat
+    im = Image.open(f).convert("L"); w, h = im.size
+    im = im.resize((1080, max(2, round(1080 * h / w))))
+    return ImageStat.Stat(im.filter(ImageFilter.Kernel((3, 3), (0, -1, 0, -1, 4, -1, 0, -1, 0), 1, 128))).var[0]
+
+
+def next_set(robe="", new=False):
+    """Picks a character + room (rule 31 Oct, Alex):
+    - run twice without `log` in between -> the SAME pick again (nothing is burned); `--new` forces a fresh pick;
+    - after `reject` of one photo only that kind is picked again, the other photo is kept;
+    - characters: only ones passing photo_ok (full HD + sharp), the SHARPEST free one first; failing ones -> library/rejected;
+    - rooms: in file-name order from library/rooms (Alex's 4K rooms with a sofa first)."""
+    used = _used(); cur = {} if new else (used.get("current") or {})
     keep = {k: cur[k] for k in ("characters", "rooms") if cur.get(k) and os.path.exists(os.path.join(ROOT, "library", k, cur[k]))}
-    if len(keep) == 2 or not cur.get("partial"):
-        keep = {}   # a complete pick = it was used: start a new set
+    if len(keep) == 2:
+        print("(same pick as before - it was not logged yet; `next-set <robe> --new` for a different one)")
     pick = {}
     for kind in ("characters", "rooms"):
         if kind in keep:
             pick[kind] = os.path.join(ROOT, "library", kind, keep[kind]); continue
         free = [p for p in sorted(glob.glob(os.path.join(ROOT, "library", kind, "*.jpg"))) if os.path.basename(p) not in used[kind]]
         for p in list(free):
-            ok, why = photo_ok(p, min_sharp=150 if kind == "rooms" else 0)
+            ok, why = photo_ok(p, min_sharp=150)
             if not ok: free.remove(p); reject(p, quiet=True); print(f"REJECTED {os.path.basename(p)}: {why}")
+        if kind == "characters":
+            free.sort(key=lambda p: -sharpness(p))   # the clearest photo first (Alex: "the character must be clear")
         if not free:
-            print(f"NO_{kind.upper()}_LEFT: " + ("ask the creator for Alex's new ROOMS ZIP and run `tools.py add-rooms <zip>`; only if they have none, run find-sets (rooms that look EXACTLY like library/rooms: real phone photos, never AI)." if kind == "rooms" else "run the skill find-sets now (Pinterest search, you pick the good ones), then run next-set again. Ask the creator for photos ONLY if Pinterest fails."))
-            if pick: used["current"] = {**{k: os.path.basename(v) for k, v in pick.items()}, "partial": True}; _save_used(used)
+            print(f"NO_{kind.upper()}_LEFT: " + ("ask the creator for Alex's new rooms (zip) and run `tools.py add-rooms <zip>`." if kind == "rooms" else "run the skill find-sets now (Pinterest search, you pick the good ones), then run next-set again. Ask the creator for photos ONLY if Pinterest fails."))
+            if pick: used["current"] = {k: os.path.basename(v) for k, v in pick.items()}; _save_used(used)
             return
         pick[kind] = free[0]; used[kind].append(os.path.basename(free[0]))
     used["current"] = {"characters": os.path.basename(pick["characters"]), "rooms": os.path.basename(pick["rooms"])}
@@ -305,7 +321,7 @@ def reject(f, quiet=False):
         used = _used(); cur = used.get("current") or {}
         if name in used.get(kind, []): used[kind].remove(name)
         if cur.get(kind) == name:
-            cur.pop(kind); cur["partial"] = True; used["current"] = cur
+            cur.pop(kind); used["current"] = cur
         _save_used(used)
         print("moved to library/rejected/ - run next-set again: it re-picks only the", kind, "and keeps the other photo")
     else:
@@ -336,27 +352,87 @@ def log(name, pairs):
 
 
 def retime(ours, ref, out, end=None):
-    """rule 28 Oct: our hook must have EXACTLY the original's seconds. Matches every cut of ours to the
-    nearest cut of the reference and speeds/slows each piece so every cut lands on the original's second;
-    the result ends exactly where the original hook ends."""
+    """rule 31 Oct (Alex): the hook in the edit ends EXACTLY on the original's hook end. retime only TRIMS (or, when ours
+    is shorter, holds the last frame) - it never changes speed, so the lips stay in sync - and it KEEPS the hook's sound.
+    It prints our cuts next to the original's; an action that is early/late is fixed with `tools.py hold`, not here."""
     rc, oc = cuts(ref), cuts(ours)
     end = float(end) if end else duration(ref)
-    pairs = []
-    for o in oc:   # each of our cuts -> the nearest cut of the original (same shot change)
+    od = duration(ours)
+    print("cuts original:", [c for c in rc if c < end], " ours:", [c for c in oc if c < end + 0.5])
+    for o in oc:
+        if o >= end - 0.05: continue
         c = min(rc, key=lambda x: abs(x - o)) if rc else None
-        if c is None or c >= end - 0.05 or abs(c - o) > 1.0: continue
-        if not pairs or (c > pairs[-1][0] and o > pairs[-1][1]): pairs.append((c, o))
-    src, dst = [0.0] + [p[1] for p in pairs], [0.0] + [p[0] for p in pairs]
-    od = duration(ours); last_src = min(od, end * (src[-1] / dst[-1]) if len(src) > 1 and dst[-1] > 0 else end)
-    src.append(min(od, max(last_src, src[-1] + 0.1))); dst.append(end)
-    parts, fc = [], []
-    for i in range(len(src) - 1):
-        f = (dst[i + 1] - dst[i]) / max(0.01, src[i + 1] - src[i])
-        fc.append(f"[0:v]trim={src[i]:.3f}:{src[i+1]:.3f},setpts=(PTS-STARTPTS)*{f:.4f}[v{i}]"); parts.append(f"[v{i}]")
-        print(f"piece {src[i]:.2f}-{src[i+1]:.2f}s -> {dst[i]:.2f}-{dst[i+1]:.2f}s (speed x{1/f:.2f})")
-    fc.append("".join(parts) + f"concat=n={len(parts)}:v=1:a=0,fps=30[v]")
-    run(["ffmpeg", "-v", "error", "-y", "-i", ours, "-filter_complex", ";".join(fc), "-map", "[v]", "-an", "-t", f"{end:.3f}", "-c:v", "libx264", "-crf", "16", out])
-    print(out, "- now every cut is on the original's second; check with compare and cuts")
+        if c is not None and abs(c - o) <= 1.0:
+            print(f"  our cut {o:.2f} s vs original {c:.2f} s: {o - c:+.2f} s" + ("  -> off by more than 0.1 s: move it with `tools.py hold` on the still part before it" if abs(o - c) > 0.1 else "  OK"))
+    has_a = run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", ours]).stdout.strip()
+    pad = max(0.0, end - od)
+    vf = f"tpad=stop_mode=clone:stop_duration={pad + 0.1:.3f}" if pad > 0 else "null"
+    cmd = ["ffmpeg", "-v", "error", "-y", "-i", ours, "-vf", vf]
+    cmd += (["-af", f"apad=pad_dur={pad + 0.1:.3f}", "-c:a", "aac", "-b:a", "192k"] if has_a else ["-an"])
+    run(cmd + ["-t", f"{end:.3f}", "-c:v", "libx264", "-crf", "16", "-pix_fmt", "yuv420p", out])
+    print(out, f"- {duration(out):.2f} s (original hook end {end:.2f} s), speed x1.00, sound " + ("kept" if has_a else "none (the clip had none)")
+          + (f"; last frame held {pad:.2f} s" if pad > 0 else ""))
+
+
+def hold(f, out, ours_t, orig_t, words_json=None):
+    """rule 31 Oct (Alex): Kling often makes the main action (unroll, reveal) EARLY. This lengthens the still part right
+    before the action (forward / backward / forward of the calm frames, no visible jump) so the action starts on the
+    original's second. A NEGATIVE shift (action LATE) removes that much of the still part instead. Sound: the room tone
+    of the same frames is mirrored the same way (continuous, no click). Words are never cut: if a word (from
+    <a3 folder>/audio3.json of OUR hook, or a loud sound) is inside the part that would change, it refuses."""
+    t, T0 = float(ours_t), float(orig_t); delta = round(T0 - t, 3); d = duration(f)
+    if abs(delta) < 0.04:
+        print("already on time (|shift| < 0.04 s) - nothing to do"); return
+    has_a = run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", f]).stdout.strip()
+    if delta > 0:
+        w = min(t - 0.04, max(0.4, delta / 2))   # calm window just before the action
+        if w < 0.15: sys.exit(f"REFUSED: the action starts at {t:.2f} s - not enough still picture before it to hold. Use a start frame + Kling image-to-video (HOOKS.md \"Start frame\").")
+        zone = (t - w, t)
+    else:
+        w = -delta; zone = (t - w - 0.05, t - 0.05)
+        if zone[0] < 0.05: sys.exit(f"REFUSED: only {t:.2f} s of picture before the action - cannot remove {w:.2f} s. Trim the start of the hook instead.")
+    # words / loud sounds inside the zone -> refuse
+    if words_json:
+        js = json.load(open(os.path.join(words_json, "audio3.json")) if os.path.isdir(words_json) else open(words_json))
+        hit = [x for x in js.get("part1_voice", {}).get("words", []) if x["start"] < zone[1] and x["end"] > zone[0]]
+        if hit: sys.exit(f"REFUSED: words inside {zone[0]:.2f}-{zone[1]:.2f} s ({' '.join(x['word'] for x in hit)}) - holding would cut them. Regenerate the hook or move the action with a start frame.")
+    elif has_a:
+        import numpy as np
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", f, "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
+        x = np.frombuffer(raw, np.int16).astype(np.float32) / 32768; n = len(x) // 160
+        e = 20 * np.log10(np.sqrt((x[:n * 160].reshape(n, 160) ** 2).mean(1)) + 1e-9)
+        z = e[int(zone[0] * 100):int(zone[1] * 100)]
+        if len(z) and z.max() > np.median(e) + 18:
+            sys.exit(f"REFUSED: a loud sound inside {zone[0]:.2f}-{zone[1]:.2f} s (a word?). Run audio3 on our hook and pass its folder as the 5th argument, or fix the hook another way.")
+    a0, a1 = zone
+    if delta > 0:
+        pieces = [("f", 0, t)]; left = delta
+        while left > 0.005:
+            r = min(w, left / 2)
+            pieces += [("r", t - r, t), ("f", t - r, t)]; left -= 2 * r
+        pieces.append(("f", t, d))
+    else:
+        pieces = [("f", 0, a0), ("f", a1, d)]
+    fc, vs, as_ = [], "", ""
+    for i, (k, s0, s1) in enumerate(pieces):
+        rv = ",reverse" if k == "r" else ""; ra = ",areverse" if k == "r" else ""
+        fc.append(f"[0:v]trim={s0:.3f}:{s1:.3f},setpts=PTS-STARTPTS{rv}[v{i}]"); vs += f"[v{i}]"
+        if has_a: fc.append(f"[0:a]atrim={s0:.3f}:{s1:.3f},asetpts=PTS-STARTPTS{ra}[a{i}]"); as_ += f"[a{i}]"
+    fc.append(vs + f"concat=n={len(pieces)}:v=1:a=0,fps=30[v]")
+    if has_a: fc.append(as_ + f"concat=n={len(pieces)}:v=0:a=1[a]")
+    run(["ffmpeg", "-v", "error", "-y", "-i", f, "-filter_complex", ";".join(fc), "-map", "[v]"] + (["-map", "[a]", "-c:a", "aac", "-b:a", "192k"] if has_a else ["-an"])
+        + ["-c:v", "libx264", "-crf", "16", "-pix_fmt", "yuv420p", out])
+    print(out, f"- {d:.2f} s -> {duration(out):.2f} s; the action now starts at {t + delta:.2f} s (was {t:.2f} s, original {T0:.2f} s); "
+          + (f"held {delta:.2f} s of the calm part {a0:.2f}-{a1:.2f} s (forward/back/forward)" if delta > 0 else f"removed {-delta:.2f} s of the still part {a0:.2f}-{a1:.2f} s")
+          + ". Check: `tools.py compare <original> " + out + "` around the action and a 10 fps sheet of the held part (no visible jump).")
+
+
+def put(f, url):
+    """rule 31 Oct (Alex): the upload PUT of the Higgsfield 'Uploading a local file' step, so nobody pastes curl lines."""
+    ext = os.path.splitext(f)[1].lower()
+    ctype = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp", ".mp4": "video/mp4", ".mov": "video/quicktime", ".mp3": "audio/mpeg", ".wav": "audio/wav"}.get(ext, "application/octet-stream")
+    r = run(["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}", "-X", "PUT", "-H", f"Content-Type: {ctype}", "--data-binary", "@" + f, url])
+    print(r.stdout.strip() or "FAILED", "(200 = uploaded; now media_confirm)")
 
 
 def cleantext(f, clean, out, boxes):
@@ -417,27 +493,34 @@ def broll_check(f, motion, folder):
 
 
 def compare_audio(orig_folder, ours, end, out_folder):
-    """rule 31 Oct (Alex): after generating a hook, run audio3 on OUR hook and compare with the original's audio3.json:
-    every word START within +-0.15 s, no extra / missing words, no music. Prints OK or exactly what to fix."""
+    """rule 31 Oct (Alex): ADVISORY only. Runs audio3 on OUR hook and prints the original's and our word starts side
+    by side, extra/missing words and sustained music. It never decides a regeneration: YOU listen and look, and
+    regenerate only for a real problem (wrong / missing / extra words you can hear, music, a word clearly > 0.3 s off)."""
     import re
-    subprocess.run([sys.executable, os.path.join(ROOT, "engine", "audio3.py"), ours, str(end), out_folder], check=True)
-    o = json.load(open(os.path.join(orig_folder, "audio3.json"))); u = json.load(open(os.path.join(out_folder, "audio3.json")))
+    o = json.load(open(os.path.join(orig_folder, "audio3.json")))
+    nv = o.get("no_voice") or not o["part1_voice"]["words"]
+    subprocess.run([sys.executable, os.path.join(ROOT, "engine", "audio3.py"), ours, str(end), out_folder, ""] + (["--no-voice"] if nv else []), check=True)
+    u = json.load(open(os.path.join(out_folder, "audio3.json")))
     norm = lambda w: {"3": "three", "2": "two", "1": "one"}.get(re.sub(r"[^a-z0-9']", "", w.lower()), re.sub(r"[^a-z0-9']", "", w.lower()))
-    ow = [(norm(x["word"]), x["start"]) for x in o["part1_voice"]["words"]]; uw = [(norm(x["word"]), x["start"]) for x in u["part1_voice"]["words"]]
-    used, bad, rows = set(), [], []
-    for w, t in ow:
-        j = next((k for k, (w2, _) in enumerate(uw) if k not in used and w2 == w), None)
-        if j is None: bad.append(f'missing "{w}"'); rows.append(f"  {w:<10} original {t:5.2f}  ours  --"); continue
-        used.add(j); dt = uw[j][1] - t
-        rows.append(f"  {w:<10} original {t:5.2f}  ours {uw[j][1]:5.2f}  {dt:+.2f} s " + ("OK" if abs(dt) <= 0.15 else ("LATE" if dt > 0 else "EARLY")))
-        if abs(dt) > 0.15: bad.append(f'"{w}" {dt:+.2f} s')
-    extra = [w for k, (w, _) in enumerate(uw) if k not in used]
+    notes = []
+    if nv:
+        print("WORDS: the original has no speech (--no-voice) - nothing to compare; listen that ours has no voice either.")
+    else:
+        ow = [(norm(x["word"]), x["start"]) for x in o["part1_voice"]["words"]]; uw = [(norm(x["word"]), x["start"]) for x in u["part1_voice"]["words"]]
+        used, rows = set(), []
+        for w, t in ow:
+            j = next((k for k, (w2, _) in enumerate(uw) if k not in used and w2 == w), None)
+            if j is None: notes.append(f'"{w}" not found in ours'); rows.append(f"  {w:<10} original {t:5.2f}  ours  --"); continue
+            used.add(j); dt = uw[j][1] - t
+            rows.append(f"  {w:<10} original {t:5.2f}  ours {uw[j][1]:5.2f}  {dt:+.2f} s" + ("" if abs(dt) <= 0.15 else ("  later" if dt > 0 else "  earlier")))
+            if abs(dt) > 0.3: notes.append(f'"{w}" {dt:+.2f} s')
+        print("WORD STARTS (the tool can be wrong by ~0.1-0.2 s; Whisper may mishear words):"); print("\n".join(rows) or "  (no words)")
+        extra = [w for k, (w, _) in enumerate(uw) if k not in used]
+        if extra: notes.append(f"words only in ours: {extra}")
     music = [m["t"] for m in u["part3_background"] if m["kind"] == "MUSIC"]
-    print("WORD STARTS (tolerance +-0.15 s):"); print("\n".join(rows) or "  (no words in the original)")
-    if extra: bad.append(f"extra words {extra}")
-    if music: bad.append(f"MUSIC in our hook at {music} s (must be room tone only)")
-    print("OK - same words on the same seconds, no extra words, no music" if not bad else "NOT OK: " + "; ".join(bad) +
-          " -> regenerate once with the fix in the SOUND block (a late sentence: ask for it 0.4 s earlier). Also check the reveal second in the picture.")
+    if music: notes.append(f"sustained music in ours at {music} s")
+    print("ADVICE ONLY (rule 31 Oct, Alex): " + ("nothing stands out." if not notes else "; ".join(notes) + ".")
+          + " LISTEN to our hook next to the original before you decide anything; regenerate only if YOU hear/see a real problem.")
 
 
 def history(n="5"):
@@ -451,6 +534,8 @@ def history(n="5"):
 
 
 if __name__ == "__main__":
+    import signal
+    if hasattr(signal, "SIGPIPE"): signal.signal(signal.SIGPIPE, signal.SIG_DFL)   # `| head` must not crash a command
     a = sys.argv[1:]
     if not a:
         print(__doc__); sys.exit()
@@ -463,7 +548,7 @@ if __name__ == "__main__":
     elif c == "fetch": fetch(a[1], a[2])
     elif c == "drop": drop(a[1])
     elif c == "fanwipe": fanwipe(a[1], a[2], a[3:])
-    elif c == "next-set": next_set(a[1] if len(a) > 1 else "")
+    elif c == "next-set": next_set(next((x for x in a[1:] if not x.startswith("--")), ""), "--new" in a)
     elif c == "reject": reject(a[1])
     elif c == "photo-ok": print(*photo_ok(a[1]))
     elif c == "add-rooms": add_rooms(a[1])
@@ -474,6 +559,8 @@ if __name__ == "__main__":
     elif c == "cleantext": cleantext(a[1], a[2], a[3], a[4:])
     elif c == "broll-check": broll_check(a[1], a[2], a[3])
     elif c == "cutjerk": cutjerk(a[1], a[2])
+    elif c == "hold": hold(a[1], a[2], a[3], a[4], a[5] if len(a) > 5 else None)
+    elif c == "put": put(a[1], a[2])
     elif c == "compare-audio": compare_audio(a[1], a[2], a[3], a[4])
     elif c == "hook-audio":   # old name -> the ONE way: audio3
         print("hook-audio is an old name: running engine/audio3.py"); subprocess.run([sys.executable, os.path.join(ROOT, "engine", "audio3.py"), *a[1:5]])

@@ -1,0 +1,2 @@
+# Metoda C (31 oct) — input = clipul nostru, prompt = promptul A (înlocuiește și halatul)
+720p, prima încercare. Total 2/8. Camera 8/8, halatul 8/8, secundele 6/8, fața în toate planurile doar 3/8 (ultimul prim-plan păstrează fața fetei din input). Detalii pe rulări: raportul agentului din sesiune; picate: princess v4 r1 (față cozy), v4 r2 (secunde), v5 r1+r2 (față plan final), snoopy v4 r2 (secunde), v5 r1 (față). Trec: snoopy v4 r1, snoopy v5 r2 (identitate medie).

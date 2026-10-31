@@ -1,0 +1,205 @@
+{
+ "file": "../../kling-test/princess-countdown/hook-kling.mp4",
+ "hook_end": 5.0,
+ "higgsfield_line": "x",
+ "part1_voice": {
+  "who": "high voice (woman/child)",
+  "phrases": [
+   {
+    "text": "Three two one.",
+    "start": 0.29,
+    "end": 2.34,
+    "words_per_s": 1.5
+   },
+   {
+    "text": "Let's see how it comes out",
+    "start": 3.56,
+    "end": 4.84,
+    "words_per_s": 4.7
+   }
+  ],
+  "words": [
+   {
+    "word": "Three",
+    "start": 0.29,
+    "end": 1.26,
+    "len": 0.97,
+    "peak_db": -5.4,
+    "pitch_hz": 283,
+    "tone": "stretched"
+   },
+   {
+    "word": "two",
+    "start": 1.26,
+    "end": 2.15,
+    "len": 0.89,
+    "peak_db": -2.2,
+    "pitch_hz": 264,
+    "tone": "stretched"
+   },
+   {
+    "word": "one.",
+    "start": 2.16,
+    "end": 2.34,
+    "len": 0.18,
+    "peak_db": -2.2,
+    "pitch_hz": 225,
+    "tone": "normal"
+   },
+   {
+    "word": "Let's",
+    "start": 3.56,
+    "end": 3.77,
+    "len": 0.21,
+    "peak_db": -4.2,
+    "pitch_hz": 234,
+    "tone": "normal"
+   },
+   {
+    "word": "see",
+    "start": 3.77,
+    "end": 4.12,
+    "len": 0.35,
+    "peak_db": -3.2,
+    "pitch_hz": 287,
+    "tone": "normal"
+   },
+   {
+    "word": "how",
+    "start": 4.12,
+    "end": 4.26,
+    "len": 0.14,
+    "peak_db": -6.5,
+    "pitch_hz": 398,
+    "tone": "normal"
+   },
+   {
+    "word": "it",
+    "start": 4.27,
+    "end": 4.36,
+    "len": 0.09,
+    "peak_db": -1.0,
+    "pitch_hz": null,
+    "tone": "normal"
+   },
+   {
+    "word": "comes",
+    "start": 4.36,
+    "end": 4.52,
+    "len": 0.16,
+    "peak_db": -3.3,
+    "pitch_hz": null,
+    "tone": "normal"
+   },
+   {
+    "word": "out",
+    "start": 4.52,
+    "end": 4.84,
+    "len": 0.32,
+    "peak_db": -7.5,
+    "pitch_hz": 316,
+    "tone": "normal"
+   }
+  ]
+ },
+ "part2_action_sounds": [
+  {
+   "start": 1.44,
+   "peak": 1.45,
+   "end": 1.52,
+   "peak_db": -50.6,
+   "centroid_hz": 1629,
+   "kind": "mid tap/knock/paper",
+   "during_speech": true,
+   "matches_movement": false
+  },
+  {
+   "start": 2.71,
+   "peak": 2.74,
+   "end": 2.88,
+   "peak_db": -40.9,
+   "centroid_hz": 1259,
+   "kind": "mid tap/knock/paper",
+   "during_speech": false,
+   "matches_movement": true
+  },
+  {
+   "start": 4.27,
+   "peak": 4.32,
+   "end": 4.48,
+   "peak_db": -47.7,
+   "centroid_hz": 2263,
+   "kind": "mid tap/knock/paper",
+   "during_speech": true,
+   "matches_movement": false
+  }
+ ],
+ "part2_picture_movements": [
+  {
+   "start": 2.77,
+   "end": 2.9,
+   "peak": 2.83,
+   "strength": 25.6,
+   "type": "movement"
+  },
+  {
+   "start": 3.0,
+   "end": 3.07,
+   "peak": 3.0,
+   "strength": 9.0,
+   "type": "movement"
+  },
+  {
+   "start": 3.17,
+   "end": 3.23,
+   "peak": 3.17,
+   "strength": 10.4,
+   "type": "movement"
+  },
+  {
+   "start": 3.43,
+   "end": 3.57,
+   "peak": 3.5,
+   "strength": 11.0,
+   "type": "movement"
+  },
+  {
+   "start": 3.67,
+   "end": 3.73,
+   "peak": 3.67,
+   "strength": 14.4,
+   "type": "movement"
+  },
+  {
+   "start": 3.83,
+   "end": 3.9,
+   "peak": 3.83,
+   "strength": 21.6,
+   "type": "movement"
+  },
+  {
+   "start": 4.0,
+   "end": 4.07,
+   "peak": 4.0,
+   "strength": 21.6,
+   "type": "movement"
+  }
+ ],
+ "part3_background": [
+  {
+   "t": "0.0-2.5",
+   "kind": "room tone / ambience",
+   "level_db": -46.6
+  },
+  {
+   "t": "2.5-3.0",
+   "kind": "MUSIC",
+   "level_db": -30.1
+  },
+  {
+   "t": "3.0-4.6",
+   "kind": "room tone / ambience",
+   "level_db": -14.5
+  }
+ ]
+}

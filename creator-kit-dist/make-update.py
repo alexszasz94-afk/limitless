@@ -3,11 +3,12 @@
   python3 creator-kit-dist/make-update.py "what changed, one line per item"          -> robe-studio-update-<date>.zip
       weekly UPDATE for creators who already have the kit: rules, skills, tools, prompts, guides, products/, motion/, music/
       - NEVER state/, output/ or library/ (their history, videos and photos stay).
-  python3 creator-kit-dist/make-update.py --full                                      -> robe-studio-<date>.zip
+  python3 creator-kit-dist/make-update.py --full                                      -> robe-studio.zip (files under robe-studio/)
       the FULL kit for a NEW creator: everything above + library/characters + library/rooms, with EMPTY state files
       (state/used.json = {"characters": [], "rooms": [], "videos": []}, state/media.json = {}), never output/,
       library/rejected, library/candidates, library/rooms-old, library/incoming-rooms.
-  add --dry to only count the files and the size (nothing written).
+  add --dry to only count the files and the size (nothing written). OUT_DIR=/dev/shm writes the zip there.
+  Pieces for robe-studio-upload/ (GitHub web upload limit): split -b 20000000 robe-studio.zip robe-studio.zip.part-
 """
 import os, sys, zipfile, datetime, json
 
@@ -19,7 +20,9 @@ SKIP_DIRS = {"output", "state", "__pycache__", "rejected", "candidates", "rooms-
 LIB_KEEP = {"characters", "rooms"}
 date = datetime.date.today().isoformat()
 notes = args[0] if args else "Improvements to the rules and tools."
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), f"robe-studio-{date}.zip" if FULL else f"robe-studio-update-{date}.zip")
+OUT_DIR = os.environ.get("OUT_DIR") or os.path.dirname(os.path.abspath(__file__))   # e.g. OUT_DIR=/dev/shm when the disk is full
+out = os.path.join(OUT_DIR, "robe-studio.zip" if FULL else f"robe-studio-update-{date}.zip")
+PREFIX = "robe-studio/" if FULL else ""   # the bootstrap (robe-studio-upload/CLAUDE.md) unzips the full kit into _kit/robe-studio/
 EMPTY_STATE = {"state/used.json": json.dumps({"characters": [], "rooms": [], "videos": []}, indent=1) + "\n", "state/media.json": "{}\n"}
 
 files = []
@@ -44,11 +47,11 @@ if DRY:
     sys.exit()
 with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
     for rel in files:
-        z.write(os.path.join(SRC, rel), rel)
+        z.write(os.path.join(SRC, rel), PREFIX + rel)
     if FULL:
         for rel, txt in EMPTY_STATE.items():
-            z.writestr(rel, txt)
-        z.writestr("output/.keep", "")
+            z.writestr(PREFIX + rel, txt)
+        z.writestr(PREFIX + "output/.keep", "")
     else:
         z.writestr("UPDATE-NOTES.md", f"# Robe Studio update {date}\n\n{notes}\n")
 print(out, len(files), "files", os.path.getsize(out) // 1024, "KB")

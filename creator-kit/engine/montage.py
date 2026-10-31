@@ -91,7 +91,19 @@ def text_png(text, path, size=88, y0=None):
     canvas.save(path)
 
 def main(spec_path):
-    sp = json.load(open(spec_path)); tmp = tempfile.mkdtemp(); segs = []
+    # rule 31 Oct (Alex): temp files go to <output folder>/_tmp (or $TMPDIR if set), segments at crf 20, and the temp
+    # folder is deleted even when something fails - the disk is small.
+    sp = json.load(open(spec_path))
+    outdir = os.path.dirname(os.path.join(ROOT, sp["out"])) or ROOT
+    tmp = tempfile.mkdtemp(prefix="_tmp-", dir=os.environ.get("TMPDIR") or outdir)
+    try:
+        _run(sp, tmp)
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def _run(sp, tmp):
+    segs = []
     fps = str(sp.get("fps", 30))
     for i, s in enumerate(sp["segments"]):
         f = os.path.join(ROOT, s["file"]) if not os.path.isabs(s["file"]) else s["file"]
@@ -101,7 +113,7 @@ def main(spec_path):
         cmd = ["ffmpeg","-y","-loglevel","error","-ss",str(s["start"]),"-to",str(s["end"]),"-i",f]
         if not has_a or not keep: cmd += ["-f","lavfi","-i","anullsrc=r=48000:cl=stereo","-shortest"]
         else: cmd += ["-af","loudnorm=I=-16:TP=-1.5:LRA=11,apad","-shortest"]   # hook voice at a fixed loudness (rule 31 Oct, REPARATII #6); sound exactly as long as the picture, so cuts don't drift
-        cmd += ["-vf",f"scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps={fps},format=yuv420p","-c:v","libx264","-crf","16","-c:a","aac","-ar","48000","-ac","2"]
+        cmd += ["-vf",f"scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps={fps},format=yuv420p","-c:v","libx264","-crf","20","-c:a","aac","-ar","48000","-ac","2"]
         cmd += (["-map","0:v","-map","1:a"] if not has_a or not keep else []) + [o]
         subprocess.run(cmd, check=True); segs.append(o)
     lst = os.path.join(tmp, "l.txt"); open(lst, "w").write("\n".join(f"file '{x}'" for x in segs))
@@ -142,7 +154,6 @@ def main(spec_path):
     if filt: cmd += ["-filter_complex", ";".join(filt)]
     cmd += ["-map", vmap, "-map", amap, "-c:v","libx264","-profile:v","high","-pix_fmt","yuv420p","-r",fps,"-crf","18","-preset","medium","-c:a","aac","-b:a","192k","-ar","48000","-movflags","+faststart","-t",str(dur),out]   # Reels/TikTok spec: 1080x1920, H.264 high, AAC 48 kHz, faststart
     subprocess.run(cmd, check=True); print(out, round(dur, 2))
-    shutil.rmtree(tmp, ignore_errors=True)   # temp clips otherwise fill the disk
 
 if __name__ == "__main__":
     main(sys.argv[1])

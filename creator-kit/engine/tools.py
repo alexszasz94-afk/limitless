@@ -6,7 +6,7 @@
   python3 engine/tools.py cuts <video>                                   -> times where the shot changes
   python3 engine/tools.py safe-end <video>                               -> last safe second before Kling appends a reference image / fades out
   python3 engine/tools.py fetch <url> <out-file>                          -> download a Higgsfield result (png results are saved as jpg)
-  python3 engine/tools.py drop <song.mp3>                                 -> loud jumps in a song (where the beat/chorus drops)
+  python3 engine/tools.py drop <song.mp3>                                 -> candidate drop seconds to LISTEN to (the kit songs have fixed, checked drops in XMAS_SONGS)
   python3 engine/tools.py fanwipe <in.mp4> <out.mp4> <t1> [<t2> ...]       -> ceiling-fan blade wipe centred on each cut time
   python3 engine/tools.py next-set <robe> [--new]                         -> character (sharpest free) + room (in order) + B-roll v4/v5 + fixed connector/remote + song; run twice without `log` = the SAME pick (rule 31 Oct, Alex)
   python3 engine/tools.py cutjerk <broll.mp4> <out.mp4>                   -> B-roll v4 ONLY: cuts 3.10-3.40 s out (the robe-opening jerk); everything after comes 0.30 s earlier (rule 31 Oct, Alex)
@@ -20,8 +20,12 @@
   python3 engine/tools.py broll-check <broll.mp4> <motion.mp4> <out-folder>   -> B-roll safety check: shot count vs the motion clip, glitch spikes inside shots, safe segments, one sheet per shot to look at
   python3 engine/tools.py retime <our-hook.mp4> <reference-hook.mp4> <out.mp4> [hook end s] -> ends our hook EXACTLY on the original's hook end (trim / hold last frame), keeps the sound, never changes speed; prints cut differences (rule 31 Oct, Alex)
   python3 engine/tools.py hold <hook.mp4> <out.mp4> <action start in ours> <action start in original> [our a3 folder] -> action EARLY: lengthens the still part before it (forward/back/forward, sound mirrored); LATE (negative shift): removes still part; refuses if words would be cut (rule 31 Oct, Alex)
+  python3 engine/tools.py hookinput <reference.mp4> <hook end> <out.mp4>   -> Kling input of a copied hook: 0..hook end, silent, last frame frozen to the next whole second (min 3) - never the next scene (rule 31 Oct, Alex)
+  python3 engine/tools.py roomtone <hook.mp4> <out.mp4>                   -> fills dead-silent gaps of a hook with a quiet bed made from its own quietest part (rule 31 Oct, Alex)
+  python3 engine/tools.py still <video> [start] [end]                     -> YES/NO: is the camera still? Run it BEFORE making a clean frame for cleantext (rule 31 Oct, Alex)
+  python3 engine/tools.py spectro <audio-or-video> <out.jpg> [seconds]    -> picture of the sound: check MUSIC by eye (horizontal note lines + regular beat) (rule 31 Oct, Alex)
   python3 engine/tools.py put <file> <upload_url>                         -> the upload PUT for Higgsfield (prints 200), instead of a curl line (rule 31 Oct, Alex)
-  python3 engine/tools.py compare-audio <original a3 folder> <our-hook.mp4> <hook end> <our a3 folder>  -> ADVICE ONLY: runs audio3 on OUR hook, word starts side by side, extra/missing words, sustained music; never decides a redo (rule 31 Oct, Alex)
+  python3 engine/tools.py compare-audio <original a3 folder> <our-hook.mp4> <hook end> <our a3 folder>  -> ADVICE ONLY: runs audio3 on OUR hook, word starts side by side, extra/missing words, dead-silent gaps; no music verdict (use spectro); never decides a redo (rule 31 Oct, Alex)
   python3 engine/tools.py history [n]                                     -> what the last n videos used (default 5), so the next one is different
 
   HOOK SOUND ANALYSIS (the ONE way, rule 31 Oct, Alex):
@@ -101,12 +105,76 @@ def fetch(url, out):
 
 
 def drop(f):
+    """Candidates for the drop: the biggest steps in loudness (median of 4 s after vs 4 s before, every 0.1 s), first 5 s
+    skipped. Only a list to LISTEN to (rule 31 Oct, Alex): the kit songs have fixed, checked drops in XMAS_SONGS - use those."""
     import numpy as np
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", f, "-ac", "1", "-ar", "8000", "-f", "s16le", "-"], capture_output=True).stdout
-    a = np.frombuffer(raw, dtype=np.int16).astype(float); w = 4000
-    r = np.array([np.sqrt(np.mean(a[i:i + w] ** 2)) for i in range(0, len(a) - w, w)])
-    hits = [(round(i * 0.5, 1), int(r[i])) for i in range(3, len(r)) if r[i] > 1.6 * np.mean(r[max(0, i - 6):i]) and r[i] > np.percentile(r, 60)]
-    print("loud jumps (second, loudness):", hits[:15])
+    a = np.frombuffer(raw, dtype=np.int16).astype(float); w = 800
+    d = 20 * np.log10(np.sqrt(np.array([np.mean(a[i:i + w] ** 2) for i in range(0, len(a) - w, w)])) + 1)
+    sc = sorted(((float(np.median(d[i:i + 40]) - np.median(d[i - 40:i])), i / 10) for i in range(50, len(d) - 40)), reverse=True)
+    picks = []
+    for v, t in sc:
+        if all(abs(t - p) > 4 for _, p in picks): picks.append((round(v, 1), t))
+        if len(picks) >= 6: break
+    known = XMAS_SONGS.get(os.path.basename(f))
+    print("biggest loudness steps (dB, second) - LISTEN around them:", picks, f"| kit value for this song: {known} s" if known is not None else "")
+
+
+def hookinput(ref, end, out):
+    """rule 31 Oct (Alex): the Kling video-edit input of a copied hook: the reference from 0 to the hook end, SILENT,
+    the last frame frozen up to the next whole second (min 3 s) - never the next scene."""
+    end = float(end); n = max(3, math.ceil(end - 0.001))
+    run(["ffmpeg", "-v", "error", "-y", "-i", ref, "-vf", f"trim=0:{end:.3f},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop_duration={n - end + 0.2:.3f}",
+         "-an", "-t", str(n), "-c:v", "libx264", "-crf", "17", "-pix_fmt", "yuv420p", out])
+    print(out, f"- {duration(out):.2f} s silent (hook {end:.2f} s + last frame frozen to {n} s) -> Kling duration {n}")
+
+
+def roomtone(f, out, gap_db="-50"):
+    """rule 31 Oct (Alex): Kling sometimes leaves dead-silent gaps in a hook. Builds a quiet bed from the hook's own
+    quietest non-silent 0.5 s (looped, mirrored joins) and mixes it under the hook sound, so the room tone never stops."""
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", f, "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
+    x = np.frombuffer(raw, np.int16).astype(np.float32) / 32768; n = len(x) // 160
+    if n < 60: sys.exit("roomtone: the clip has no usable sound")
+    e = 20 * np.log10(np.sqrt((x[:n * 160].reshape(n, 160) ** 2).mean(1)) + 1e-9)
+    win = [(float(np.mean(e[i:i + 50])), i) for i in range(0, n - 50, 5) if e[i:i + 50].min() > float(gap_db)]
+    if not win: sys.exit("roomtone: no non-silent 0.5 s in the hook to make a bed from - regenerate the hook sound instead")
+    lv, i0 = min(win); t0 = i0 / 100; d = duration(f)
+    fc = (f"[0:a]aresample=48000,asplit[m][s];[s]atrim={t0:.3f}:{t0 + 0.5:.3f},asetpts=PTS-STARTPTS,asplit[p][q];[q]areverse[r];[p][r]concat=n=2:v=0:a=1,"
+          f"aloop=loop=-1:size=48000,atrim=0:{d:.3f},asetpts=N/SR/TB,volume=0.9[bed];[m][bed]amix=inputs=2:duration=first:normalize=0[a]")
+    run(["ffmpeg", "-v", "error", "-y", "-i", f, "-filter_complex", fc, "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", out])
+    gaps = int((e < float(gap_db)).sum())
+    print(out, f"- room-tone bed from {t0:.2f}-{t0 + 0.5:.2f} s ({lv:.0f} dB) under the whole hook; it had {gaps / 100:.2f} s of dead silence before")
+
+
+def still(f, start="0", end=None, px="2"):
+    """rule 31 Oct (Alex): is the CAMERA still between start and end? (cleantext only works on a still camera - run this
+    BEFORE making any clean frame.) Phase correlation of every frame against the first one (128 px wide, 15 fps):
+    a total drift of >= 2 px (~1.5 % of the width), or the top third of the picture (background, where captions sit)
+    changing by > 6 grey levels on average = moving."""
+    import numpy as np
+    end = float(end) if end else duration(f); w, h = 128, 228
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(start), "-to", f"{end:.3f}", "-i", f, "-vf", f"fps=15,scale={w}:{h},format=gray", "-f", "rawvideo", "-"], capture_output=True).stdout
+    fr = np.frombuffer(raw, np.uint8).reshape(-1, h, w).astype(float)
+    if len(fr) < 2: sys.exit("still: too short")
+    win = np.outer(np.hanning(h), np.hanning(w)); A = np.fft.fft2((fr[0] - fr[0].mean()) * win); drift = []
+    for k in range(1, len(fr)):
+        R = A * np.conj(np.fft.fft2((fr[k] - fr[k].mean()) * win)); R /= np.abs(R) + 1e-9
+        y, x = np.unravel_index(np.abs(np.fft.ifft2(R)).argmax(), (h, w))
+        y = y - h if y > h // 2 else y; x = x - w if x > w // 2 else x
+        drift.append((round(float(start) + k / 15, 2), int(abs(x) + abs(y))))
+    top = [(round(float(start) + k / 15, 2), float(np.abs(fr[k][:h // 3] - fr[0][:h // 3]).mean())) for k in range(1, len(fr))]
+    moving = sorted(set([t for t, d in drift if d >= int(px)] + [t for t, v in top if v > 6]))   # + the top third (where captions sit) changes
+    print(("YES - the camera is still" if not moving else f"NO - the camera/background moves from {moving[0]} s (drift up to {max(d for _, d in drift)} px, top-third change up to {max(v for _, v in top):.0f})")
+          + ". " + ("cleantext can work; still LOOK that nothing (a hand, the product) crosses the caption box." if not moving else "Do NOT use cleantext for this part: leave the caption in and write `remove the caption text completely` in the Kling prompt."))
+    return not moving
+
+
+def spectro(f, out, end=None):
+    """rule 31 Oct (Alex): picture of the sound to check MUSIC by eye: music = long horizontal lines (held notes) and a
+    regular vertical beat; room tone = even grey haze; a thump = one short vertical stripe."""
+    run(["ffmpeg", "-v", "error", "-y"] + (["-t", str(end)] if end else []) + ["-i", f, "-lavfi", "showspectrumpic=s=1200x500:legend=1:scale=log:fscale=log", out])
+    print(out, "- music = horizontal lines (notes) + a regular vertical beat across the whole width; room tone = even haze; a thump = one short vertical stripe")
 
 
 def fanwipe(f, out, times):
@@ -220,7 +288,11 @@ def photo_ok(f, min_side=1080, min_sharp=150):
     return True, f"{w}x{h}" + (" 4K" if min(w, h) >= 2160 else " full HD")
 
 
-FIXED_TIMES = {"connector": "0 -> 1.7 (whole clip, fully joined at the end)", "remote": "0.3 -> 3.0 (one light climbing, never two)"}
+FIXED_TIMES = {   # rule 31 Oct (Alex): checked frame by frame at 24 fps - princess connector: another hand 0-0.12 s; both: 1 flash frame at 1.67 s
+    ("princess", "connector-fabric-1.mp4"): "0.15 -> 1.63 (clean range: another hand before 0.13 s, a flash frame at 1.67 s)",
+    ("snoopy", "connector-fabric-1.mp4"): "0.05 -> 1.63 (clean range: a flash frame at 1.67 s)",
+    ("princess", "remote-fabric-1.mp4"): "0.3 -> 3.0 (one light climbing, never two)", ("snoopy", "remote-fabric-1.mp4"): "0.3 -> 3.0 (one light climbing, never two)",
+    "connector": "1.2 -> 4.0 (tree clip: fully joined at ~3.0 s)", "remote": "the whole clip (tree clip)"}
 
 
 def sharpness(f):
@@ -269,7 +341,7 @@ def next_set(robe="", new=False):
             r = next_fixed(robe, kind)
             fab, tree = fixed_clips(robe, kind)
             alt = [x for x in fab + tree if x != r]
-            if r: print(f"{kind}: products/{robe.lower()}/fixed/{r} use {FIXED_TIMES[kind]}; log it with {kind}={r}" + (f" (alternates only if it fails the check: {', '.join(alt)})" if alt else ""))
+            if r: print(f"{kind}: products/{robe.lower()}/fixed/{r} use {FIXED_TIMES.get((robe.lower(), r), FIXED_TIMES[kind])}; log it with {kind}={r}" + (f" (alternates only if it fails the check: {', '.join(alt)})" if alt else ""))
         song = next_song(robe)
         drop = XMAS_SONGS[song]
         start = f"{drop} - <hook end>" if drop else "0"
@@ -436,6 +508,8 @@ def put(f, url):
 
 
 def cleantext(f, clean, out, boxes):
+    if not still(f):   # rule 31 Oct (Alex): the patch would sit in the wrong place
+        sys.exit("cleantext stopped: the camera moves (see above).")
     w, h = map(int, run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).stdout.strip().split(","))
     fc, last = [f"[1:v]scale={w}:{h},split={len(boxes) // 4}" + "".join(f"[c{i}]" for i in range(len(boxes) // 4))], "0:v"
     for i in range(len(boxes) // 4):
@@ -494,7 +568,7 @@ def broll_check(f, motion, folder):
 
 def compare_audio(orig_folder, ours, end, out_folder):
     """rule 31 Oct (Alex): ADVISORY only. Runs audio3 on OUR hook and prints the original's and our word starts side
-    by side, extra/missing words and sustained music. It never decides a regeneration: YOU listen and look, and
+    by side, extra/missing words and dead-silent gaps (no music verdict - use spectro). It never decides a regeneration: YOU listen and look, and
     regenerate only for a real problem (wrong / missing / extra words you can hear, music, a word clearly > 0.3 s off)."""
     import re
     o = json.load(open(os.path.join(orig_folder, "audio3.json")))
@@ -517,8 +591,9 @@ def compare_audio(orig_folder, ours, end, out_folder):
         print("WORD STARTS (the tool can be wrong by ~0.1-0.2 s; Whisper may mishear words):"); print("\n".join(rows) or "  (no words)")
         extra = [w for k, (w, _) in enumerate(uw) if k not in used]
         if extra: notes.append(f"words only in ours: {extra}")
-    music = [m["t"] for m in u["part3_background"] if m["kind"] == "MUSIC"]
-    if music: notes.append(f"sustained music in ours at {music} s")
+    gaps = [m["t"] for m in u["part3_background"] if m["kind"].startswith("SILENT")]
+    if gaps: notes.append(f"dead-silent parts in ours at {gaps} s (fill with `tools.py roomtone`)")
+    print("MUSIC: not judged by this tool (rule 31 Oct, Alex) - look at `tools.py spectro <our hook> <out.jpg>`: long horizontal lines + a regular beat = music.")
     print("ADVICE ONLY (rule 31 Oct, Alex): " + ("nothing stands out." if not notes else "; ".join(notes) + ".")
           + " LISTEN to our hook next to the original before you decide anything; regenerate only if YOU hear/see a real problem.")
 
@@ -561,6 +636,10 @@ if __name__ == "__main__":
     elif c == "cutjerk": cutjerk(a[1], a[2])
     elif c == "hold": hold(a[1], a[2], a[3], a[4], a[5] if len(a) > 5 else None)
     elif c == "put": put(a[1], a[2])
+    elif c == "hookinput": hookinput(a[1], a[2], a[3])
+    elif c == "roomtone": roomtone(a[1], a[2])
+    elif c == "still": still(a[1], a[2] if len(a) > 2 else "0", a[3] if len(a) > 3 else None)
+    elif c == "spectro": spectro(a[1], a[2], a[3] if len(a) > 3 else None)
     elif c == "compare-audio": compare_audio(a[1], a[2], a[3], a[4])
     elif c == "hook-audio":   # old name -> the ONE way: audio3
         print("hook-audio is an old name: running engine/audio3.py"); subprocess.run([sys.executable, os.path.join(ROOT, "engine", "audio3.py"), *a[1:5]])

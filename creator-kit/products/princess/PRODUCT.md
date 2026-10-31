@@ -10,12 +10,13 @@ Long hooded heated robe in classic fairy-tale princess colours. Royal-blue plush
 | princess_back | refs/back.jpg | every robe shot |
 | princess_pouch_open | refs/pouch-open.jpg | B-roll (robe held open, foot pockets) |
 | princess_pouch_feet | refs/pouch-feet.jpg | B-roll (both feet in the pockets) |
+| princess_box | refs/box.jpg | NEW 31 Oct (rule 31 Oct, Alex): the official Princess box — tall royal-blue window box with gold border, gold crowns and snowflakes, the robe visible in the window, brand "Princess" in gold script + "HEATED ROBE" under it. Use it for every box / packaging / unboxing / store-shelf hook (rules 9g, 9h); never invent another box or brand. |
 | princess_v4 | ../../motion/princess-v4.mp4 (video) | input of B-roll v4 |
 | princess_v5 | ../../motion/princess-v5.mp4 (video) | input of B-roll v5 |
 
 ## Fixed clips — connector + remote (rule 31 Oct, Alex: ALWAYS these, never generated)
 `tools.py next-set princess` prints which ones; log them with `connector=<file> remote=<file>`. They are used as they are — no Kling, no upscale, no edits. The B-roll v4/v5 has NO connector or remote inside (its prompt says so).
-- **Default, every video:** `fixed/connector-fabric-1.mp4` (1.7 s, lilac connector slides COMPLETELY in on the robe's blue velvet) — use **0 → 1.7**; `fixed/remote-fabric-1.mp4` (5 s, pink crown remote, all 5 crystal lights off, then ONE light climbs 1 → 5) — use **0.3 → 3.0**.
+- **Default, every video:** `fixed/connector-fabric-1.mp4` (1.7 s, lilac connector slides COMPLETELY in on the robe's blue velvet) — use **0.15 → 1.63** (rule 31 Oct, Alex — checked at 24 fps: frames 0–0.12 s are another hand, the frame at 1.67 s is a flash of another shot); `fixed/remote-fabric-1.mp4` (5 s, pink crown remote, all 5 crystal lights off, then ONE light climbs 1 → 5) — use **0.3 → 3.0**.
 - **Alternates, only if a fabric clip fails the check:** `fixed/connector-tree-1.mp4`, `-2` (use 1.2 → 4.0, fully joined at ~3.0 s) and `fixed/remote-tree-1.mp4`, `-2` (use 0 → 2.95).
 - Frozen recipe they were made with (once): `recipes/connector-remote-fabric.md` in Alex's repo. Never make a new one.
 
@@ -64,6 +65,7 @@ LOOK: UGC style, a real unedited iPhone 16 video of a real person in a real home
 ```
 **After generating — ALWAYS (rule 31 Oct, Alex):** `python3 engine/tools.py cutjerk output/<name>/broll.mp4 output/<name>/broll-cut.mp4` — cuts 3.10–3.40 s out (the robe-opening jerk) and gives one clean cut from the half-open to the fully open robe; everything after 3.40 s comes 0.30 s earlier. Check 2.7–3.5 s at 15 fps (no jerk frame). Use ONLY `broll-cut.mp4` in the edit.
 **Edit times (in broll-cut.mp4, ±0.1 s — take the real cuts from `tools.py cuts`):** puts it on (back + hood) 0.10 → ~1.7 · foot pockets ~1.7 → ~5.4 (cozy cut − 0.12) · cozy ~5.6 (cozy cut + 0.12) → ~7.5.
+**Hood in the pocket shot (rule 31 Oct, Alex):** the prompt and the motion clip have the hood DOWN there, but Kling often keeps it UP — either is fine, never a reason to redo (the frozen prompt stays as it is).
 **Check (skill `check`):** her face in every front shot; the back shot cut not later than ~1.8 s; in the cozy shot she SITS on the real sofa of the room (never stands). Any of these fails → regenerate ONCE with the SAME prompt. Feet, socks or pajama legs are NOT a fail (rule 31 Oct, Alex): only obvious long bare feet on the floor > 0.5 s → cut those frames if the cut stays clean, otherwise deliver.
 
 ### B-roll v5 (motion `motion/princess-v5.mp4`, duration 6)
@@ -82,7 +84,7 @@ LOOK: UGC style, a real unedited iPhone 16 video of a real person in a real home
 ## Standard edit order (rule 31 Oct, Alex — ALWAYS: hook → B-roll → connector → remote → cozy)
 1. hook clip(s) `"audio": true` — exactly as long as the original's hook (ends on the original's hook end)
 2. B-roll part 1: v4 `broll-cut.mp4 0.10 → ~5.4` (puts it on + foot pockets) / v5 `broll.mp4 0.10 → ~3.38` (puts it on + lying)
-3. `fixed/connector-fabric-1.mp4 0 → 1.7`
+3. `fixed/connector-fabric-1.mp4 0.15 → 1.63`
 4. `fixed/remote-fabric-1.mp4 0.3 → 3.0`
 5. B-roll cozy: v4 `broll-cut.mp4 ~5.62 → ~7.5` / v5 `broll.mp4 ~3.62 → ~5.9`
 `"texts": []` — the suggested text goes in text.txt (CLAUDE.md rule 9). Text examples: `Princess girlies, pls\ndon't hate...🥺👑` · `Don't show this to a\nPrincess lover...🥺🌹` · `H&M X DISNEY 🤩🔔`.

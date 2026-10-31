@@ -19,7 +19,7 @@ Long hooded heated robe. Outside: light camel-brown ribbed (corduroy-like) plush
 
 ## Fixed clips — connector + remote (rule 31 Oct, Alex: ALWAYS these, never generated)
 `tools.py next-set snoopy` prints which ones; log them with `connector=<file> remote=<file>`. They are used as they are — no Kling, no upscale, no edits. The B-roll v4/v5 has NO connector or remote inside (its prompt says so).
-- **Default, every video:** `fixed/connector-fabric-1.mp4` (1.7 s, grey connector slides COMPLETELY in on the camel corduroy) — use **0 → 1.7**; `fixed/remote-fabric-1.mp4` (5 s, white remote, lights off, then ONE green light climbs up to 5) — use **0.3 → 3.0**.
+- **Default, every video:** `fixed/connector-fabric-1.mp4` (1.7 s, grey connector slides COMPLETELY in on the camel corduroy) — use **0.05 → 1.63** (rule 31 Oct, Alex — checked at 24 fps: the frame at 1.67 s is a flash of another shot); `fixed/remote-fabric-1.mp4` (5 s, white remote, lights off, then ONE green light climbs up to 5) — use **0.3 → 3.0**.
 - **Alternates, only if a fabric clip fails the check:** `fixed/connector-tree-1.mp4`, `-2` (use 1.2 → 4.0, fully joined at ~3.0 s) and `fixed/remote-tree-1.mp4` (use 0 → 1.9).
 - Frozen recipe they were made with (once): `recipes/connector-remote-fabric.md` in Alex's repo. Never make a new one.
 
@@ -81,7 +81,7 @@ LOOK: UGC style, a real unedited iPhone 16 video of a real person in a real home
 ## Standard edit order (rule 31 Oct, Alex — ALWAYS: hook → B-roll → connector → remote → cozy)
 1. hook clip(s) `"audio": true` — exactly as long as the original's hook (ends on the original's hook end)
 2. B-roll part 1: v4 `broll-cut.mp4 0.10 → ~5.4` (puts it on + foot pouch) / v5 `broll.mp4 0.10 → ~4.18` (puts it on + lying)
-3. `fixed/connector-fabric-1.mp4 0 → 1.7`
+3. `fixed/connector-fabric-1.mp4 0.05 → 1.63`
 4. `fixed/remote-fabric-1.mp4 0.3 → 3.0`
 5. B-roll cozy: v4 `broll-cut.mp4 ~5.62 → ~7.5` / v5 `broll.mp4 ~4.42 → ~6.9`
 `"texts": []` — the suggested text goes in text.txt (CLAUDE.md rule 9). Proven text examples: `DONT Show this to a\nSNOOPY LOVER...🎄🐶` · `Snoopy girlies, pls\ndon't hate... 🥺🐶` + `Comment "SNOOPY" if\nyou want one! 🐶` · `Burger King\nX\nSNOOPY 🐶🎄` + `Jk, we make them 🤭\n(Link in bio)` · `H&M X SNOOPY\n🤩🐶`.

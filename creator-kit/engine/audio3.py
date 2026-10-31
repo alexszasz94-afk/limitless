@@ -1,11 +1,11 @@
 """Hook sound analysis in THREE separate parts (rule 31 Oct, Szasz), so the Kling prompt describes the sound exactly.
 
-  python3 engine/audio3.py <hook.mp4> <hook end s> <out folder> ["<line from Higgsfield video_analysis>"] [--no-voice]
+  python3 engine/audio3.py <hook.mp4> <hook end s> <out folder> ["<line from Higgsfield video_analysis>"] [--no-voice] [--keep-stems]
 
   --no-voice : the Higgsfield analysis says NOBODY speaks (song only / sounds only) -> PART 1 is skipped (otherwise
                sung lyrics come out as "words"). Rule 31 Oct, Alex.
 
-The sound is split with Demucs (htdemucs, 4 stems, kept in <out>/stems and reused on a second run) and every part is measured on its own:
+The sound is split with Demucs (htdemucs, 4 stems in <out>/stems, deleted at the end unless --keep-stems) and every part is measured on its own:
   PART 1 VOICE      (vocals stem)          -> every word with START and END: Whisper gives the words and their order,
                                               the START is the real rising edge of the voice energy (a jump of >= 10 dB
                                               over the level just before, up to 12 dB under the word's peak) searched
@@ -13,9 +13,9 @@ The sound is split with Demucs (htdemucs, 4 stems, kept in <out>/stems and reuse
                                               often says 0.00 s); loudness, pitch, length -> tone, pace, pauses, who
   PART 2 ACTIONS    (drums + other stems,  -> every short sound event (start, peak, end, loudness, low thump /
                      while nobody speaks)     mid tap / high swoosh-rustle) + a frame at each, to name the action
-  PART 3 BACKGROUND (everything else)      -> per 0.5 s: MUSIC only when bass+drums (or a tonal song) last >= 1.5 s
-                                              without a break (rule 31 Oct, Alex: a single robe thump is NOT music),
-                                              otherwise room tone or silence, with its level
+  PART 3 BACKGROUND (everything else)      -> per 0.5 s: its level and SILENT (dead gaps). NO music verdict (rule 31 Oct,
+                                              Alex: it was wrong both ways) - check music by eye with
+                                              `tools.py spectro` + the Higgsfield analysis
 Writes <out>/audio3.json, <out>/events.jpg (frame at every action sound) and prints a SOUND block draft for the
 Kling prompt. The Higgsfield video_analysis line (who says what) is still MANDATORY and wins on the words;
 this tool gives the seconds and the delivery. Its numbers are ADVICE for the prompt and the check - they never
@@ -108,7 +108,7 @@ def snap_words(raw, ev):
     return [tuple(w) for w in seq]
 
 
-def main(f, end, out, line="", no_voice=False):
+def main(f, end, out, line="", no_voice=False, keep_stems=False):
     end = float(end); os.makedirs(out, exist_ok=True)
     st = separate(f, end, out); w = os.path.join(st, "mix.wav"); d = tempfile.mkdtemp()
     mix = load(w); voc = load(os.path.join(st, "vocals.wav"))
@@ -213,35 +213,15 @@ def main(f, end, out, line="", no_voice=False):
         e["matches_movement"] = any(m["start"] - 0.1 <= e["peak"] <= m["end"] + 0.1 for m in moves)
 
     # ---------- PART 3: BACKGROUND ----------
-    # rule 31 Oct (Alex): MUSIC only when bass+drums (or a tonal song) are there for >= 1.5 s without a break of > 0.2 s.
-    # A single thump (robe drop, cup) or quiet room hum is never music.
-    fr = []   # per 0.1 s
-    for k in range(0, T, 10):
-        sl = slice(k, min(k + 10, T))
-        lvl = db(np.median(em[sl]) / ref); mus = (eb[sl].mean() + ed[sl].mean()) / (em[sl].mean() + 1e-9)
-        seg = other[k * HOP:min(k + 10, T) * HOP]; tonal = 0.0
-        if len(seg) > 1024:
-            fl = librosa.feature.spectral_flatness(y=seg, n_fft=1024, hop_length=HOP); tonal = float(1 - np.median(fl))
-        fr.append(lvl > -45 and (mus > 0.35 or (tonal > 0.985 and not speaking[sl].mean() > 0.5 and lvl > -30)))
-    sustained = np.zeros(len(fr), bool); i = 0
-    while i < len(fr):
-        if fr[i]:
-            j = i; gap = 0
-            while j + 1 < len(fr) and (fr[j + 1] or gap < 2):
-                gap = 0 if fr[j + 1] else gap + 1; j += 1
-            while j > i and not fr[j]: j -= 1
-            if (j - i + 1) >= 15: sustained[i:j + 1] = True
-            i = j + 1
-        else:
-            i += 1
     bg = []
     for k in range(0, T, 50):
         sl = slice(k, min(k + 50, T))
         mus = (eb[sl].mean() + ed[sl].mean()) / (em[sl].mean() + 1e-9)
         lvl = db(np.median(em[sl]) / ref)
-        if sustained[k // 10:(k + 50) // 10].mean() > 0.5: kind = "MUSIC"
-        elif lvl < -55: kind = "silence"
-        else: kind = "room tone / ambience"
+        # rule 31 Oct (Alex): no music verdict here any more (it was wrong both ways) - only the level and the
+        # bass+drums share; music is checked by eye on `tools.py spectro` + the Higgsfield analysis.
+        if lvl < -55: kind = "SILENT (dead gap)"
+        else: kind = "sound"
         bg.append({"t": f"{k / 100:.1f}-{min(k + 50, T) / 100:.1f}", "kind": kind, "level_db": round(lvl, 1), "bass_drums_share": round(float(mus), 2)})
     # merge
     merged = []
@@ -266,6 +246,8 @@ def main(f, end, out, line="", no_voice=False):
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(lst, "%02d.jpg"), "-vf", f"tile={cols}x{(min(len(pts), 24) + cols - 1) // cols}",
                         "-frames:v", "1", os.path.join(out, "events.jpg")])
     shutil.rmtree(d, ignore_errors=True)
+    if not keep_stems:   # rule 31 Oct (Alex): the disk is small - stems go unless --keep-stems
+        shutil.rmtree(st, ignore_errors=True)
 
     res = {"file": f, "hook_end": end, "higgsfield_line": line, "no_voice": bool(no_voice), "part1_voice": {"who": who, "phrases": ph, "words": words},
            "part2_action_sounds": events, "part2_picture_movements": moves, "part3_background": merged}
@@ -278,17 +260,24 @@ def main(f, end, out, line="", no_voice=False):
     for e in events: print(f"  {e['start']:5.2f}-{e['end']:5.2f} peak {e['peak']:5.2f} {e['peak_db']:6.1f} dB {e['kind']}" + ("  (during speech)" if e["during_speech"] else ""))
     print("PART 2b MOVEMENTS IN THE PICTURE (each one gets its action sound at these seconds; name it from the frames)")
     for m in moves: print(f"  {m['start']:5.2f}-{m['end']:5.2f} peak {m['peak']:5.2f} strength {m['strength']:5.1f}  {m['type']}")
-    print("PART 3 BACKGROUND")
+    print("PART 3 BACKGROUND (music: check `tools.py spectro` + the Higgsfield analysis, not this list)")
     for m in merged: print(f"  {m['t']:>9} s  {m['kind']:<22} {m['level_db']} dB")
-    print("\nSOUND block draft (fill <who>, <tone>, name each action sound from events.jpg):")
-    vparts = "; ".join(f"\"{x['word']}\" from {x['start']} s to {x['end']} s" + (f" ({x['tone']})" if x['tone'] != 'normal' else "") for x in words)
-    print(f"SOUND - made by you, in sync with the picture. VOICE: {who}, <tone>, lips in perfect sync, EXACTLY these words at EXACTLY these seconds, each word starting on its second: {vparts or 'nobody speaks'}. "
-          f"Nothing else is said. ACTION SOUNDS: " + "; ".join(f"from {m['start']} s to {m['end']} s <sound of this movement>" for m in moves if m["type"] == "movement")
-          + ". BACKGROUND: " + "; ".join(f"{m['t']} s {m['kind']}" for m in merged) + ". No music.")
-
+    print("\nSOUND block draft (name each action sound from events.jpg; music is never asked for):")
+    acts = "; ".join(f"at {m['start']}-{m['end']} s <sound> as <action>" for m in moves if m["type"] == "movement") or "<none>"
+    gaps = [m["t"] for m in merged if m["kind"].startswith("SILENT")]
+    if words:
+        vparts = "; ".join(f"\"{x['word']}\" from {x['start']} s to {x['end']} s" + (f" ({x['tone']})" if x['tone'] != 'normal' else "") for x in words)
+        voice = (f"VOICE (layer 1): {who}, <tone>, lips in perfect sync. She says ONLY these words, each word starting exactly on its second: {vparts}. "
+                 f"After \"{words[-1]['word']}\" nobody says anything else. No other words, no other voice, no narrator, no whisper. ")
+    else:
+        voice = "VOICE (layer 1): nobody speaks - no voice, no words, no humming. "
+    print("SOUND - made by you, with the picture, in three layers. ABSOLUTELY NO MUSIC: no song, no beat, no melody, no instruments, no jingle bells, no humming. "
+          + voice + f"ACTION SOUNDS (layer 2), exactly when they happen in the picture: {acts}. "
+          "BACKGROUND (layer 3): from 0 s to the end only the quiet room tone of <OUR place> (<details>), continuous, never silent, never louder than the voice.")
+    if gaps: print("NOTE: dead-silent parts in this clip at", gaps, "s (if this is OUR hook: `tools.py roomtone`)")
 
 if __name__ == "__main__":
-    args = [a for a in sys.argv[1:] if a != "--no-voice"]
+    args = [a for a in sys.argv[1:] if a not in ("--no-voice", "--keep-stems")]
     if len(args) < 3:
         print(__doc__); sys.exit(1)
-    main(*args[:4], no_voice="--no-voice" in sys.argv[1:])
+    main(*args[:4], no_voice="--no-voice" in sys.argv[1:], keep_stems="--keep-stems" in sys.argv[1:])

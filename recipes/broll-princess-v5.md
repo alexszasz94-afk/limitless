@@ -85,3 +85,5 @@ SHOT 4 (3.5 s to the end, a SEPARATE shot with a hard cut at 3.5 s - never skip 
 LOOK: UGC style, a real unedited iPhone 16 video of a real person in a real home, Full HD, completely realistic; warm, very soft, very natural light, diffuse daylight and the warm glow of real lamps, gentle low contrast, true slightly warm colours; no HDR, no glow, no orange cast, no CGI look. Natural real movements with real weight and gravity, no morphing, no flicker. Correct hands with five fingers. NO TEXT: the caption text of the input video is removed completely; no captions, no emoji, no subtitles, no watermark, no other logos. No cable connector and no remote anywhere. Silent.
 ```
 - 31 oct, test metoda C runda 2 (input fără planul așezat, proofC2/): run1 character-22/room-51 TRECE (toate planurile, room-51 exact cu secționala gri și bucătăria în spate, ea în toate planurile, halat corect); run2 character-14/room-34 TRECE cu observații (cozy foarte larg pe secționala gri reală, blonda ei; craci în carouri vizibili scurt în planul întins, 2,5–3,2 s). Verdict: 2/2.
+
+## 31 oct — ÎNGHEȚAT (Szasz a aprobat): metoda C, cozy de departe = varianta de producție pentru v5.

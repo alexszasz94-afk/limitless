@@ -24,3 +24,4 @@ products/v-spoiled/*.wav
 products/v-spoiled/qa/
 creator-kit-dist/robe-studio.zip
 creator-kit-dist/robe-studio-update-*.zip
+products/hook-audio3/**/stems/

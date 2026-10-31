@@ -26,7 +26,7 @@ You send Claude a reel link or tell it an idea, in normal words. Claude makes th
 - *"Make this one with the princess robe: https://www.instagram.com/reel/…"*
 - *"Can you do this TikTok with Snoopy?"*
 - *"I have my own idea: she opens the front door and her mom holds a giant gift box."* → Claude shows you the first frame, you say OK and how it should move, Claude does the rest.
-- Before each video Claude asks which cozy ending you want: the classic one, or your own idea (*reading a book on the bed*, *hot cocoa on the sofa*…). Change it often.
+- Every video ends with the classic cozy shot on the sofa. Want something else? Just say it (*reading a book on the sofa*, *hot cocoa*…) — Claude doesn't wait for you to choose (rule 31 Oct, Alex). Change it often.
 
 At the end Claude gives you the video and a caption. They are also saved in your GitHub repository: open github.com → `robe-studio` → `output` → your video → **Download**.
 

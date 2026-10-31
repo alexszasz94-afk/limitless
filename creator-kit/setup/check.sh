@@ -9,7 +9,9 @@ command -v curl    >/dev/null && ok curl    || miss "curl"
 command -v $PY     >/dev/null && ok "$PY"   || miss "python3"
 $PY -c "import PIL" 2>/dev/null && ok "python pillow" || miss "python pillow (pip install pillow)"
 $PY -c "import numpy" 2>/dev/null && ok "python numpy" || miss "python numpy (pip install numpy)"
-$PY -c "import faster_whisper" 2>/dev/null && ok "python faster-whisper (transcribe)" || miss "python faster-whisper (pip install faster-whisper)"
+$PY -c "import faster_whisper" 2>/dev/null && ok "python faster-whisper (hook words, audio3)" || miss "python faster-whisper (pip install faster-whisper)"
+$PY -c "import demucs" 2>/dev/null && ok "python demucs (hook sound layers, audio3)" || miss "python demucs (pip install demucs)"
+$PY -c "import librosa" 2>/dev/null && ok "python librosa (hook sound analysis, audio3)" || miss "python librosa (pip install librosa)"
 cd "$(dirname "$0")/.."
-for f in motion/broll-motion.mp4 products/snoopy/refs/front-closed.jpg products/princess/refs/front.jpg engine/fonts/TikTokSans-w700-semicond.ttf; do [ -f "$f" ] && ok "$f" || miss "$f (the zip was not fully extracted)"; done
+for f in motion/princess-v4.mp4 motion/princess-v5.mp4 motion/snoopy-v4.mp4 motion/snoopy-v5.mp4 products/snoopy/refs/front-closed.jpg products/princess/refs/front.jpg engine/fonts/TikTokSans-w700-semicond.ttf; do [ -f "$f" ] && ok "$f" || miss "$f (the zip was not fully extracted)"; done
 [ -z "$M" ] && echo "ALL GOOD" || echo "SOMETHING IS MISSING"

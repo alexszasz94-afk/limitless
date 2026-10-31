@@ -23,22 +23,22 @@ You are the creator's quality control. Nothing goes to the creator until it pass
 - Robe stays correct in EVERY frame (hood always the right one, pouches correct in the B-roll, robe full length).
 - End: no jump to a product/character photo, no sudden zoom, no fade → trim before it.
 - Person in the FOREGROUND in every shot: nothing (table, plant, chair) between her and the camera → redo with the room photo without that object.
-- Hook sound: when the reference has speech, `tools.py compare-audio <reference hook> <our hook>` must say OK, and the hook segment has `"audio": true` in the edit (check the final with `tools.py speech-times`: the voice bursts are there). A silent hook where the original speaks = redo.
+- Hook sound (CLAUDE.md rules 9d + 9e, rule 31 Oct, Alex — made by Kling in the same generation, never another model): `tools.py compare-audio output/<name>/a3 <our hook> <hook end> output/<name>/a3-ours` must say OK — every word START within ±0.15 s of the original (words = the Higgsfield analysis), no extra words, no MUSIC (room tone + action sounds only; our song comes in the edit). Each action sound sits on its action in OUR clip. The hook segment has `"audio": true`. A silent hook where the original speaks = redo.
 - Copied hook: `tools.py compare` original vs ours on each key action — same column = same second; faster/slower or different → redo (HOOKS.md step 5). Spoken words land on the same seconds as the original (loudness check).
-- B-roll pockets: at the start of the pocket shot BOTH feet are outside on the floor and she puts them in one after the other, from outside to inside. A foot already inside at the start → redo.
-- B-roll feet AFTER the pockets (rule 28 Oct, never skip): look at the lying and the sitting shot at 3 fps. Once her feet are in, they stay in until the end — any knee, pajama leg, sock or foot visible outside the closed robe → redo with the "FEET STAY IN THE POCKETS UNTIL THE END" sentence (CLAUDE.md rule 3b). Never deliver it.
+- B-roll v4 pockets: at the start of the pocket shot BOTH feet are outside (Snoopy: on the floor, stepping in over the top edge is right) / hidden behind the hem (Princess: never visible) and she puts them in one after the other. A foot already inside at the start, or a foot out AFTER it went in → redo once with the SAME prompt.
+- B-roll legs in the lying and cozy shots (never skip): look at them at 3 fps. Any knee, pajama leg or sock visible between or below the closed robe flaps → redo once with the SAME frozen prompt (never add sentences). Never deliver it.
 - Object map (rule 9h): every object has the same role as in the original — props stay props (their blanket → our-character blanket, never our robe), packaging → our box with our logo, product → our robe. Wherever our robe appears it must read as a hooded robe (hood with face, sleeves, length); a cape, poncho or blanket → redo.
 - Copied hook logic + logos (rule 9g): same reveal as the original (what is hidden stays hidden until the same second, what is there at the end is still there — e.g. the box on the table), and our brand/title printed where theirs is, readable and spelled right.
-- Hook sound (rule 9e, ALWAYS audited): `tools.py audit-sound <hook> <end> "<full line of the original>"` → no missing word (the WHOLE line, not just the count), no music; voice onsets on the original's seconds (±0.05 s); every sound effect on its action in OUR clip (cloth, blanket, robe drop, kick) and no sound of something that is not in our clip; our music plays quiet under the hook (voice clearly on top) and goes a bit louder on the drop at the cut (rule 28 Oct, updated).
+- Copied hook timing (rule 31 Oct, Alex): the reveal / main action lands on the same second as the original (`tools.py compare`; Kling tends to pull a cloth or open a box ~0.6 s early); off by more than 0.3 s → regenerate once with `the <object> stays <state> until exactly <s> s`. Our music: quiet under the hook, full from the drop exactly on the hook → B-roll cut (rule 9n).
 - Pockets: at 6 fps, no toes/feet/socks on the floor under or behind the pockets once she has put her feet in.
 - B-roll: the person is in EVERY shot (never an empty robe, never a missing head in the back view) → else cut that shot or redo.
-- B-roll: same 4 shots as the motion clip, she steps into the pouches, last shot lying cozy; face = character.
+- B-roll v4/v5 (rule 31 Oct, Alex): the same shots as the motion clip (v4: back + hood, pockets, cozy SITTING; v5: sleeves, back, lying, cozy lying), the SAME woman (face and hair colour) in every shot, the room = our room photo with its REAL sofa (no invented furniture), the cozy shot WIDE on that sofa (never standing in front of it), no connector/remote/text anywhere. v4: `tools.py cutjerk` was run and no jerk frame is left at 2.7–3.5 s.
 
 **Final video**
 - 1080x1920, plays from 0 to the end, no black/frozen frames, no leftover flash of a reference photo at any cut.
-- Text sits at the top (y 0.08) in the SAME place for the whole video (never moved down, rule 28 Oct), switches exactly when the original text switches, readable, spelled right, emojis render.
-- Music: present, chorus/drop on the reveal if planned, fades out at the end, no loud click at cuts.
-- Order = PRODUCT.md edit order; nothing repeated by mistake; length 10–20 s.
+- NO on-screen text in the video (rule 9): the suggested text is in text.txt and in the delivery message.
+- Music: present, drop exactly on the hook → B-roll cut (rule 9n), the video never gets quieter after the hook, fades out at the end, no loud click at cuts.
+- Order = PRODUCT.md edit order (hook → B-roll part 1 → connector → remote → cozy); the hook exactly as long as the original's; connector + remote = the fixed clips; nothing repeated by mistake; length 10–20 s.
 - Variety: hook concept, outfit, music cue and text differ from the last 3 videos (`tools.py history`).
 
 ## Fixing (alone)

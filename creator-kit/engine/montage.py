@@ -6,9 +6,12 @@ edit.json:
   "fps": 30,
   "segments": [{"file": "output/<name>/hook.mp4", "start": 0, "end": 2.5, "audio": true}, ...],   # in edit order; "audio": true keeps the clip sound (hooks)
   "texts":    [{"segs": [0, 2], "text": "Line one\nLine two 🐶", "size": 76, "y": 0.08}, ...],   # "segs": [first, last] = from the start of segment `first` to the end of segment `last` (0 = first segment; -1 = last) — ALWAYS use this, it lands exactly on the cuts. ("t0"/"t1" in seconds also works.) y = top of text as share of height
-  "music": "music/xmas/mariah-all-i-want.mp3", "music_start": 0.8, "music_vol": 0.75, "orig_vol": 1.0
+  "music": "music/xmas/mariah-all-i-want.mp3", "music_start": <drop> - <hook end>, "music_duck": <hook end>
 }
-The video ends when the music ends; the music fades out in the last 0.5 s.
+Sound (rule 31 Oct, Alex - REPARATII #6): every "audio": true clip (the hook voice) is loudness-normalised (-16 LUFS), the song too
+(-14 LUFS); the song plays quiet under the hook (music_hook_vol 0.2) and at full level from the drop, which lands exactly on the
+hook -> B-roll cut (music_drop_vol 1.0, about as loud as the hook voice); the WHOLE final mix is then normalised to -14 LUFS, so the
+video never gets quieter after the hook. The video ends when the music ends; the music fades out in the last 0.5 s.
 It prints the real start of every segment in the final video ("cuts at ...") — use those numbers when you check the final sheet.
 """
 import shutil, sys, json, os, subprocess, tempfile, unicodedata
@@ -97,7 +100,7 @@ def main(spec_path):
         keep = s.get("audio", False)   # keep clip sound only where "audio": true
         cmd = ["ffmpeg","-y","-loglevel","error","-ss",str(s["start"]),"-to",str(s["end"]),"-i",f]
         if not has_a or not keep: cmd += ["-f","lavfi","-i","anullsrc=r=48000:cl=stereo","-shortest"]
-        else: cmd += ["-af","apad","-shortest"]   # sound exactly as long as the picture, so cuts don't drift
+        else: cmd += ["-af","loudnorm=I=-16:TP=-1.5:LRA=11,apad","-shortest"]   # hook voice at a fixed loudness (rule 31 Oct, REPARATII #6); sound exactly as long as the picture, so cuts don't drift
         cmd += ["-vf",f"scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps={fps},format=yuv420p","-c:v","libx264","-crf","16","-c:a","aac","-ar","48000","-ac","2"]
         cmd += (["-map","0:v","-map","1:a"] if not has_a or not keep else []) + [o]
         subprocess.run(cmd, check=True); segs.append(o)
@@ -124,11 +127,12 @@ def main(spec_path):
         inputs += ["-ss", str(sp.get("music_start", 0)), "-i", m]
         duck = sp.get("music_duck")   # rule 28 Oct (updated): music QUIET under the hook (voice on top), a bit LOUDER from the drop at the cut hook -> B-roll
         if duck:
-            lo, hi = sp.get("music_hook_vol", 0.2), sp.get("music_drop_vol", 1.1)
+            lo, hi = sp.get("music_hook_vol", 0.2), sp.get("music_drop_vol", 1.0)
             mv = f"volume='if(lt(t,{duck}),{lo},if(lt(t,{duck}+0.12),{lo}+({hi}-{lo})*(t-{duck})/0.12,{hi}))':eval=frame"
         else:
             mv = f"volume={sp.get('music_vol',1.0)}"
-        filt.append(f"[0:a]volume={sp.get('orig_vol',0.15)}[oa];[{n}:a]{mv},afade=t=out:st={max(dur-0.5,0)}:d=0.5[ma];[oa][ma]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]")
+        # rule 31 Oct (Alex, REPARATII #6): song normalised first, whole mix normalised last -> never quieter after the hook
+        filt.append(f"[0:a]volume={sp.get('orig_vol',1.0)}[oa];[{n}:a]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,{mv},afade=t=out:st={max(dur-0.5,0)}:d=0.5[ma];[oa][ma]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[a]")
         amap = "[a]"
     else:
         amap = "0:a"

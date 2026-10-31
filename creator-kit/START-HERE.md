@@ -25,4 +25,4 @@ Want a specific song? Drag the MP3 into the chat and say "use this song" — Cla
 
 **Updates:** when Alex sends `robe-studio-update-<date>.zip`, drag it into a chat and write "here is the new update from Alex". Claude installs it.
 
-Claude asks you which cozy ending you want, makes the video, checks it and gives you the MP4 + a caption. Your part is the ideas: copy reels that work, and invent your own hooks.
+Claude makes the video (classic cozy ending, or tell it another one), checks it and gives you the MP4 + a caption. Your part is the ideas: copy reels that work, and invent your own hooks.

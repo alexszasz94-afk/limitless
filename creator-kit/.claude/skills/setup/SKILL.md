@@ -3,17 +3,16 @@ name: setup
 description: First run / "start" — checks the computer tools, the Higgsfield connection and credits, and uploads all reference files to Higgsfield once (IDs saved in state/media.json). Run when the creator types start, setup, or before the first video.
 ---
 1. Run `bash setup/check.sh`. If something is missing, install it yourself:
-   - macOS: `brew install ffmpeg yt-dlp` (if `brew` is missing, install Homebrew with the official one-line command from brew.sh, then retry), `python3 -m pip install --user pillow numpy faster-whisper`.
-   - Windows: `winget install Gyan.FFmpeg` and `winget install yt-dlp.yt-dlp`, `py -m pip install pillow numpy faster-whisper`. On Windows use `py` where the docs say `python3`.
-   - Linux: `sudo apt-get install -y ffmpeg python3-pip && pip install --user yt-dlp pillow numpy faster-whisper`.
+   - macOS: `brew install ffmpeg yt-dlp` (if `brew` is missing, install Homebrew with the official one-line command from brew.sh, then retry), `python3 -m pip install --user pillow numpy faster-whisper librosa demucs`.
+   - Windows: `winget install Gyan.FFmpeg` and `winget install yt-dlp.yt-dlp`, `py -m pip install pillow numpy faster-whisper librosa demucs`. On Windows use `py` where the docs say `python3`.
+   - Linux: `sudo apt-get install -y ffmpeg python3-pip && pip install --user yt-dlp pillow numpy faster-whisper librosa demucs`.
    Run the check again until everything says OK.
 2. Higgsfield: call `balance`. If the Higgsfield tools are missing or fail, tell the creator: "Type /mcp, choose higgsfield, press Enter and log in to your Higgsfield account in the browser that opens, then type start again." Stop until it works.
 3. Read `state/media.json` (create `{}` if missing). For every file below that has no id yet, upload it (see "Uploading a local file" in CLAUDE.md) and save the id under the key shown:
-   - `motion` ← `motion/broll-motion.mp4` (video)
-   - `motion2` ← `motion/broll-motion-2.mp4` (video) — second B-roll motion, alternate with `motion`
-   - Snoopy: `snoopy_front_closed`, `snoopy_front_open`, `snoopy_back`, `snoopy_hood`, `snoopy_pouch`, `snoopy_detail`, `snoopy_box`, `snoopy_box_display` ← `products/snoopy/refs/*.jpg` (names in PRODUCT.md)
+   - B-roll motion clips (rule 31 Oct, Alex — only these 2 variants per robe): `princess_v4` ← `motion/princess-v4.mp4`, `princess_v5` ← `motion/princess-v5.mp4`, `snoopy_v4` ← `motion/snoopy-v4.mp4`, `snoopy_v5` ← `motion/snoopy-v5.mp4` (videos)
+   - Snoopy: `snoopy_front_closed`, `snoopy_front_open`, `snoopy_back`, `snoopy_hood`, `snoopy_detail`, `snoopy_box`, `snoopy_box_display` ← `products/snoopy/refs/*.jpg` (names in PRODUCT.md; `snoopy_pouch` is NOT uploaded — it shows another robe)
    - Princess: `princess_front`, `princess_back`, `princess_pouch_open`, `princess_pouch_feet` ← `products/princess/refs/*.jpg`
-   Upload ONE file per `media_upload` call (exactly as in CLAUDE.md), PUT it with curl (must print 200), then confirm: one `media_confirm` with `type: "video"` for the motion clip and one with `type: "image"` for all the image ids. Save state/media.json after every file so nothing is uploaded twice if something stops.
+   Upload ONE file per `media_upload` call (exactly as in CLAUDE.md), PUT it with curl (must print 200), then confirm: one `media_confirm` with `type: "video"` for the 4 motion clips and one with `type: "image"` for all the image ids. Save state/media.json after every file so nothing is uploaded twice if something stops.
 4. **Explain EVERYTHING to the creator, directly here in the chat (rule 28 Oct, Alex: "after they press set me up, explain exactly everything we do and how — directly in Claude").** Not a link, not "read the PDF": write it in the chat, in simple English, friendly, short paragraphs with a bold title each, no jargon, no commands, never credit numbers or prices. Cover all of this, in this order:
    1. **You're ready.** Everything is installed; roughly how many videos they can make now (balance ÷ ~60, said as "about N videos"; ≥ 2× more when they reuse a B-roll).
    2. **What you get.** A finished vertical video (Reels/TikTok), always in the same order: hook (the first 3–7 s that stop the scroll) → she puts the robe on → steps into the foot pockets → the heating cable clicks in → the remote lights go up → cozy ending. A new woman and a new room every time, music (Christmas songs) with the beat drop on the cut after the hook, quiet music under the hook so the voice stays on top.

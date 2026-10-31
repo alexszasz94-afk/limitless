@@ -10,66 +10,79 @@ Long hooded heated robe in classic fairy-tale princess colours. Royal-blue plush
 | princess_back | refs/back.jpg | every robe shot |
 | princess_pouch_open | refs/pouch-open.jpg | B-roll (robe held open, foot pockets) |
 | princess_pouch_feet | refs/pouch-feet.jpg | B-roll (both feet in the pockets) |
+| princess_v4 | ../../motion/princess-v4.mp4 (video) | input of B-roll v4 |
+| princess_v5 | ../../motion/princess-v5.mp4 (video) | input of B-roll v5 |
 
-## Fixed clips (already made — never generate again)
-- `fixed/connector-fabric-1.mp4` (3 s) + `fixed/remote-fabric-1.mp4` (3 s) — NEW 30 Oct (Alex: nicer than the tree ones), DEFAULT/first in the rotation: v4-style extreme close-ups on the robe's blue velvet; lilac connector slides COMPLETELY in then is held up joined; pink crown remote, 5 crystal lights. Frozen recipe: `recipes/connector-remote-fabric.md`. Use connector ~0.1-2.0 (joined at ~1.3). REMOTE FLAG (30 Oct, after 3 tries): use ONLY 0.2-1.3 of remote-fabric-1 (single light; after ~1.3 s a second crystal lights up - Kling kept lighting several crystals); if the edit needs a longer remote shot, take a tree remote instead.
-- `fixed/connector-tree-1.mp4`, `-2` — lilac connector pushed fully in, close-up next to the Christmas tree, woman's hands + princess sleeve, 4K, 4 s. ROTATION (Alex 28 Oct): `tools.py next-set princess` says which one; use **1.2–4.0** (fully joined at ~3.0 s, then held — never cut before). Never generate a new connector. (`fixed/connector.mp4` = old one, not used.)
-- `fixed/remote-tree-1.mp4`, `-2` — pink crystal remote close-up next to the Christmas tree (2 different trees/nails), 4K, lights go up. ROTATION (Alex 28 Oct): `tools.py next-set princess` says which one; use the whole clip **0–2.95**. Never generate a new remote. (`fixed/remote.mp4` = old one, not used.)
+## Fixed clips — connector + remote (rule 31 Oct, Alex: ALWAYS these, never generated)
+`tools.py next-set princess` prints which ones; log them with `connector=<file> remote=<file>`. They are used as they are — no Kling, no upscale, no edits. The B-roll v4/v5 has NO connector or remote inside (its prompt says so).
+- **Default, every video:** `fixed/connector-fabric-1.mp4` (1.7 s, lilac connector slides COMPLETELY in on the robe's blue velvet) — use **0 → 1.7**; `fixed/remote-fabric-1.mp4` (5 s, pink crown remote, all 5 crystal lights off, then ONE light climbs 1 → 5) — use **0.3 → 3.0**.
+- **Alternates, only if a fabric clip fails the check:** `fixed/connector-tree-1.mp4`, `-2` (use 1.2 → 4.0, fully joined at ~3.0 s) and `fixed/remote-tree-1.mp4`, `-2` (use 0 → 2.95).
+- Frozen recipe they were made with (once): `recipes/connector-remote-fabric.md` in Alex's repo. Never make a new one.
 
 ## Music — rotating Christmas pool (rule 30 Oct, Alex)
 The songs live in ONE shared pool, `music/xmas/` (both robes). `tools.py next-set princess` picks the song (never the same as the last 2 videos) and prints the edit.json lines; log it with `song=<file>`.
-- `music/xmas/let-it-go.mp3` — chorus at **58.5 s** (fits the Princess robe best; put the chorus on the reveal/drop).
+- `music/xmas/let-it-go.mp3` — chorus at **58.5 s** (fits the Princess robe best).
 - `music/xmas/mariah-all-i-want.mp3` — drop at **53.4 s**.
 - `music/xmas/buble-beginning.mp3` — drop at **35.35 s**.
 - `music/xmas/wham-last-christmas.mp3` — steady from the start: `"music_start": 0`.
-Rule 28 Oct still applies: quiet under the hook (`music_duck` = hook end, `music_hook_vol` 0.2), louder from the drop at the hook → B-roll cut (`music_start = drop - hook end`).
-- `music/princess-trend.mp3` (in products/princess/music/) — 15 s trending sound, `"music_start": 0`, video max ~14.5 s; only when the creator asks for it.
+ONE rule for the drop (rule 31 Oct, Alex): the drop/chorus ALWAYS lands exactly on the hook → B-roll cut: `"music_start": <drop> - <hook end>`, `"music_duck": <hook end>` (quiet under the hook, full from the cut; montage.py evens out the loudness).
+- `products/princess/music/princess-trend.mp3` — 15 s trending sound, `"music_start": 0`, video max ~14.5 s; only when the creator asks for it.
 
-## ⚠️ Content filter (important)
-Kling sometimes refuses the princess B-roll with status `nsfw`. It does NOT cost credits (refunded). Causes: long prompts that mention bare legs, feet, toes, satin shorts, AND a character photo that shows legs (skirt, shorts, dress) — the motion clip already shows legs, the two together trigger the filter. So, EVERY time:
-- **Crop the character photo to head + shoulders** before uploading it for the B-roll: look at the photo, then `python3 engine/tools.py crop library/characters/<x>.jpg output/<name>/char-face.jpg <left> <top> <right> <bottom>` (e.g. `0.15 0 0.85 0.45` — face and shoulders only, nothing below the chest). Upload that crop and use it as Image 1 in the B-roll (the full photo is still fine for hook start frames).
-- Long pajama PANTS set under the robe (never shorts/skirt), and never write "bare", "legs", "toes", "satin", "skin".
-- Use EXACTLY the short prompt below.
-If it still says `nsfw`: (1) send the same call again once (it is random sometimes); (2) replace `wearing a <colour> long pajama set under the robe` with `wearing a <colour> long-sleeve pajama top and long pajama pants`; (3) remove Image 6 (pouch-feet) from the medias and from the prompt (keep Image 5). Never more than 5 tries — then tell the creator.
+## Content filter (`nsfw`, refunded, costs nothing)
+Kling sometimes refuses a princess B-roll with `nsfw`. Causes: a character photo that shows legs (skirt, shorts, dress) together with the motion clip. So, EVERY time:
+- If the character photo shows legs, **crop it to head + shoulders** before uploading it for the B-roll: `python3 engine/tools.py crop library/characters/<x>.jpg output/<name>/char-face.jpg <left> <top> <right> <bottom>` (e.g. `0.15 0 0.85 0.45`) and use that crop as Image 1 (the full photo is still fine for the hook).
+- `<OUTFIT>` = a long pajama set (never shorts/skirt), e.g. `a red and green plaid long pajama set`.
+If it still says `nsfw`: (1) send the same call again once; (2) write `<OUTFIT>` as `a <colour> long-sleeve pajama top and long pajama pants`. Never change anything else in the prompt; after 3 refusals tell the creator.
 
-## B-roll motion clips
-`motion` (classic, `motion/broll-motion.mp4`, shared with Snoopy) and `motion2` alternate (see below).
-**Second motion (28 Oct, Alex): `motion2` = `motion/broll-motion-2.mp4` (6 s, from instagram.com/p/De-wL1DSEhY): back shot putting the hood on → front, opens the robe and steps into the pockets → sitting cozy on the sofa. ROTATION (Alex 28 Oct: "il facem prin rotatie"): `motion` and `motion2` alternate video by video — `tools.py next-set princess` says which one; log it with `motion=<key>`. Same medias and prompt, `duration: 6`, BUT replace the FOOT POCKETS sentence with: `THE HEM COVERS HER FEET AT ALL TIMES: the robe is extra long, its white hem lies flat on the floor all around her and touches the rug, there is NO gap between the hem and the floor, so her feet are always hidden behind the hem and inside the pockets - never visible on the floor, before, during and after she steps in, also when the robe is still closed. She slides each foot from behind the hem straight down into its pocket, so the pocket fills up; only the yellow fabric and the white band are seen on the floor, never a sock, a foot, a heel or a toe.` (with motion2 the old sentence "feet OUTSIDE ... standing on the floor" made socks show before they went in — Alex 28 Oct). Cuts ≈ 1.29 (back→front), 2.46, 4.42 (→ sofa); edit: broll 0.15→1.2 + 1.35→4.35, cozy 4.55→5.9. Check the pocket shot at 15 fps: no sock/foot under the hem.**
-**Room check (sofa or bed)** — see "Room check" in CLAUDE.md: the last cozy shot must match the room.
+## B-roll (rule 31 Oct, Alex) — ONLY v4 and v5, rotating
+The B-roll is made from OUR finished, approved silent B-roll (method C): Kling keeps its shots, cuts, movements and seconds, and the prompt replaces the person, the room and the robe. `tools.py next-set princess` says which variant (v4 / v5, never the same twice in a row); log it with `motion=v4` or `motion=v5`. The prompts below are FROZEN: copy them word for word; fill ONLY `<OUTFIT>`, `<SOFA>` and `<COZY_BG>`. Never add, remove or "improve" a sentence.
+- `<OUTFIT>` = the long pajamas/lounge set under the robe (the same in the hook).
+- `<SOFA>` = the real sofa you SEE in the room photo, where it stands, e.g. `the light-grey sectional sofa under the window on the right side of Image 2`.
+- `<COZY_BG>` = what is really behind that sofa in the room photo, e.g. `the window with white curtains and the Christmas tree in the corner`.
+- Room: must show a SOFA clearly (the cozy shot is filmed WIDE on that real sofa). Room without a sofa → `tools.py reject` it and run next-set again. Character: real photo, light skin only (rule 31 Oct).
 
-## B-roll (always new person + new room) — Kling 4.0 video-edit
-`model: "kling4_0"`, `mode: "video-edit"`, `resolution: "1080p"`, `aspect_ratio: "9:16"`, `duration: 7`, `declined_preset_id: "24bae836-2c4a-48e0-89b6-49fcc0b21612"` (if the tool says another preset was recommended, retry with the id it gives you).
-`medias` in THIS order:
-1. `motion` (role `video_references`)
-2. character photo CROPPED to head + shoulders (role `image_references`) = Image 1
-3. room photo (role `image_references`) = Image 2
-4. princess_front (role `image_references`) = Image 3
-5. princess_back (role `image_references`) = Image 4
-6. princess_pouch_open (role `image_references`) = Image 5
-7. princess_pouch_feet (role `image_references`) = Image 6
+**Settings (both variants):** `generate_video` with `model: "kling4_0"`, `mode: "video-edit"`, `resolution: "1080p"`, `aspect_ratio: "9:16"`, `duration`: 8 (v4) / 6 (v5) — the exact length of the motion clip, `declined_preset_id: "24bae836-2c4a-48e0-89b6-49fcc0b21612"` (if the tool says another preset was recommended, retry with the id it gives you). No sound needed (the prompt ends with "Silent").
+**`medias` in THIS order (both variants):**
+1. `princess_v4` (or `princess_v5`) — role `video_references`
+2. character photo (`characters[<file>]`, or the head + shoulders crop) — role `image_references` = Image 1
+3. room photo with the sofa visible (`rooms[<file>]`) — role `image_references` = Image 2
+4. `princess_front` = Image 3
+5. `princess_back` = Image 4
+6. `princess_pouch_open` = Image 5
+7. `princess_pouch_feet` = Image 6
+(all images with role `image_references`)
 
-(FROZEN as `recipes/broll-princess-v1.md`, rule 30 Oct — the recipe file is the single source; if they ever differ, the recipe wins.) Prompt — THE PROVEN ONE for the classic `motion` (tested 28 Oct, first try right: same face, real room, robe one to one, both feet go in and stay in, legs covered in the lying and sitting shots, no nsfw). Copy it WORD FOR WORD; fill ONLY `<colour>` and `<living room / bedroom>`. Never add sentences (no "bare", "toe", "legs", "skin"). Her stepping into the pockets with her feet visible is the RIGHT action (like Snoopy).
+### B-roll v4 (motion `motion/princess-v4.mp4`, duration 8)
+Shots in the generated clip: back view, she lifts the hood 0–0.8 · hood up from behind 0.8–~1.7 (hard cut at ~1.67–1.79) · full body facing the camera: one foot slides into a pocket, robe held wide open, other foot, she wraps it closed ~1.7–5.8 · cozy: sitting WIDE on the real sofa, hood up, collar to her face 5.8–8.0 (still from 7.8).
 ```
-Edit the input video. Keep exactly the same shots, cuts, framing, movements and timing. Change only the person to the woman of Image 1 (same face, wearing a <colour> long pajama set under the robe), the room to the <living room / bedroom> of Image 2, and the robe to the hooded robe of Image 3 (front) and Image 4 (back) reproduced one to one: royal-blue top with puffed red and light-blue striped shoulders, red belt with bow, long yellow lower part with gold crown border, white sherpa trim, white sherpa lining inside, blue hood with gold tiara. The foot pockets of the robe are exactly like Image 5 and Image 6: two yellow pockets with a white fluffy band on top, sewn inside at the hem, joined in the middle, open only at the top; when she opens the robe she steps into them one after the other exactly like in the input video, and then they look exactly like Image 6. FOOT POCKETS, step by step: when she opens the robe, BOTH her feet are still OUTSIDE the pockets, standing on the floor in front of the hem, the two pockets are empty and flat; then she lifts one foot from the outside, over the white fluffy band, and puts it INTO one pocket; then she lifts the other foot from the outside and puts it into the other pocket. No foot is ever inside a pocket before she puts it in. FEET STAY IN THE POCKETS UNTIL THE END: once both feet are inside the foot pockets they never come out again; in the lying shot and in the sitting shot her legs are completely covered by the closed robe from the hips down to the feet, the hem closed over them; no pajama pants and no knee is ever visible outside the robe. UGC style, real iPhone video, soft natural light, true colours. No text. Silent.
+Edit the input video. Keep exactly the same four shots, the same cuts, the same camera position and framing (except the last shot, which is filmed WIDE from about 3 metres away), the same body movements and the same timing as the input video, second by second; the output has exactly the same length as the input. Change only the person, the room and the robe. PERSON: exactly the woman of Image 1, same face and hair; under the robe she wears <OUTFIT>, the same in every shot. ROOM: exactly the living room of Image 2, only what is in Image 2; the last shot is on its sofa. THE SOFA: <SOFA>. Never add, move or invent furniture: she uses only the sofa that is already in Image 2, in its real place, seen from a camera angle where that sofa really is; the background behind her in the cozy shot is the part of Image 2 that is really behind that sofa: <COZY_BG>. ROBE: the hooded robe of Image 3 (front) and Image 4 (back): REPRODUCE IT ONE TO ONE from Images 3-4 in every frame, every colour, every trim, the white sherpa lining and the hood with its tiara. The foot pockets are exactly like Image 5 and Image 6.
+SHOT 1 (0 to 0.8 s): close, seen from behind, the robe is already on her shoulders, the hood down on her back, she lifts the hood with both hands; her face is not seen.
+SHOT 2 (0.8 to 1.7 s): hard cut at exactly 1.67 s, never later; the back shot never lasts longer than in the input. Seen from behind, the hood is pulled up over her head, we see the back of the hood up on her head exactly like Image 4; her face is not seen.
+SHOT 3 (1.7 to 5.8 s): full body, she stands on the floor in the FOREGROUND facing the camera, nothing between her and the camera, the hood DOWN on her back in this shot, her whole face visible. Exactly like the input: the robe is open, she holds one side out and slides one foot down behind the hem into a foot pocket, then she holds the robe wide open with both arms showing the white sherpa lining, she slides the other foot down behind the hem into the other foot pocket, then she wraps the robe closed and stands wrapped in it. THE HEM COVERS HER FEET AT ALL TIMES: the robe is extra long, its white hem lies flat on the floor all around her and touches the floor, there is NO gap between the hem and the floor, so her feet are always hidden behind the hem and inside the pockets - never visible on the floor, before, during and after she steps in, also when the robe is still closed. She slides each foot from behind the hem straight down into its pocket, so the pocket fills up and rests full on the floor; only the yellow fabric and the white fluffy band are seen on the floor, never a sock, a foot or a heel. FEET STAY IN THE POCKETS UNTIL THE END: once both feet are inside the foot pockets they never come out again.
+SHOT 4 (5.8 s to the end): In the final shot she is SITTING DOWN on the sofa of Image 2 - her bottom on the seat cushion, her back against the backrest, knees bent, wrapped in the robe, hood up; she is NEVER standing, never standing in front of the sofa, never between armchairs. Wide framing, about 3 metres away: the whole sofa and her full seated body, face small. The room of Image 2 around the sofa. She sits on the sofa of Image 2, wrapped in the closed robe, the hood UP on her head (the blue hood with its gold tiara exactly like Images 3-4), and pulls the white sherpa collar up to her face with both hands and closes her eyes, smiling; her legs are completely covered by the closed robe down to the feet, the hem closed over them; no pajama pants, no knee and no foot visible. From 7.8 s to the end she holds still.
+LOOK: UGC style, a real unedited iPhone 16 video of a real person in a real home, Full HD, completely realistic; warm, very soft, very natural light, diffuse daylight and the warm glow of real lamps, gentle low contrast, true slightly warm colours; no HDR, no glow, no orange cast, no CGI look. Natural real movements with real weight and gravity, no morphing, no flicker. Correct hands with five fingers. NO TEXT: the caption text of the input video is removed completely; no captions, no emoji, no subtitles, no watermark, no other logos. No cable connector and no remote anywhere. Silent.
 ```
-After it finishes: `cuts` → ≈ 0.96, 3.58, 4.92. `cozy` from last cut + 0.15.
+**After generating — ALWAYS (rule 31 Oct, Alex):** `python3 engine/tools.py cutjerk output/<name>/broll.mp4 output/<name>/broll-cut.mp4` — cuts 3.10–3.40 s out (the robe-opening jerk) and gives one clean cut from the half-open to the fully open robe; everything after 3.40 s comes 0.30 s earlier. Check 2.7–3.5 s at 15 fps (no jerk frame). Use ONLY `broll-cut.mp4` in the edit.
+**Edit times (in broll-cut.mp4, ±0.1 s — take the real cuts from `tools.py cuts`):** puts it on (back + hood) 0.10 → ~1.7 · foot pockets ~1.7 → ~5.4 (cozy cut − 0.12) · cozy ~5.6 (cozy cut + 0.12) → ~7.5.
+**Check (skill `check`):** her face in every front shot; the back shot cut not later than ~1.8 s; feet never visible outside the pockets (15 fps on the pocket shot); in the cozy shot she SITS on the real sofa of the room (never stands), and no pajama legs or socks show between the robe flaps. Any fail → regenerate ONCE with the SAME prompt.
 
+### B-roll v5 (motion `motion/princess-v5.mp4`, duration 6)
+Shots in the generated clip: sleeves, she slides her arm in 0–1.8 (small jump cut at 1.0) · from behind, she pulls the hood up 1.8–2.4 · lying on her back on the sofa, hood up 2.4–3.5 · cozy: curled up on her side WIDE on the real sofa 3.5–6.0 (still from 5.5). No foot-pocket shot.
+```
+Edit the input video. Keep exactly the same four shots, the same cuts, the same camera position and framing, the same body movements and the same timing as the input video, second by second; the output has exactly the same length as the input. Change only the person, the room and the robe. PERSON: exactly the woman of Image 1, same face and hair; under the robe she wears <OUTFIT>, the same in every shot. ROOM: exactly the living room of Image 2, only what is in Image 2; the lying shots are on its sofa. THE SOFA: <SOFA>. Never add, move or invent furniture: she uses only the sofa that is already in Image 2, in its real place, seen from a camera angle where that sofa really is; the background behind her in the cozy shot is the part of Image 2 that is really behind that sofa: <COZY_BG>. ROBE: the hooded robe of Image 3 (front) and Image 4 (back): REPRODUCE IT ONE TO ONE from Images 3-4 in every frame, every colour, every trim, the white sherpa lining and the hood with its tiara. The foot pockets are exactly like Image 5 and Image 6.
+SHOT 1 (0 to 1.8 s, with the same small jump cut at 1.0 s): close, from the side, she slides her arm into the long sleeve of the robe and pulls the robe onto her shoulder; her face is mostly out of the frame.
+SHOT 2 (1.8 to 2.4 s): close, seen from behind, the robe is on her shoulders and she pulls the hood up over her head, the back of the hood exactly like Image 4; her face is not seen.
+SHOT 3 (2.4 to 3.5 s): she lies stretched out on her back on the sofa of Image 2, her head on a cushion, the hood UP on her head (the blue hood with its gold tiara exactly like Images 3-4), relaxed, pulling the robe over herself like a blanket, her face visible; her legs are completely covered by the closed robe down to the feet, the hem closed over them; no pajama pants, no knee and no foot visible.
+SHOT 4 (3.5 s to the end, a SEPARATE shot with a hard cut at 3.5 s - never skip or merge this shot): THE COZY SHOT, A WIDE SHOT exactly as framed in the input: we see the whole sofa of Image 2 and her full body lying on it, her face small in the frame; the room of Image 2 around the sofa. She lies curled up on her side on the sofa of Image 2, completely wrapped in the closed robe, the hood UP on her head (the blue hood with its gold tiara exactly like Images 3-4), eyes closed, cozy; her legs are completely covered by the closed robe down to the feet, the hem closed over them; no pajama pants, no knee and no foot visible. From 5.5 s to the end she holds still.
+LOOK: UGC style, a real unedited iPhone 16 video of a real person in a real home, Full HD, completely realistic; warm, very soft, very natural light, diffuse daylight and the warm glow of real lamps, gentle low contrast, true slightly warm colours; no HDR, no glow, no orange cast, no CGI look. Natural real movements with real weight and gravity, no morphing, no flicker. Correct hands with five fingers. NO TEXT: the caption text of the input video is removed completely; no captions, no emoji, no subtitles, no watermark, no other logos. No cable connector and no remote anywhere. Silent.
+```
+**Edit times (±0.1 s, take the real cuts from `tools.py cuts`):** puts it on (sleeves + hood) 0.10 → ~2.3 and lying ~2.5 → ~3.4 (play 0.10 → 3.38 as ONE segment) · cozy ~3.62 → ~5.9.
+**Check (skill `check`):** the SAME woman (face and hair colour) in every shot; the real sofa of the room; legs always covered by the robe. Any fail → regenerate ONCE with the SAME prompt.
 
-**Foot pockets:** already inside the proven prompt above — nothing to add (for `motion2` use the HEM sentence from the motion2 paragraph instead).
-
-## B-roll variants 3-5 (rule 30 Oct, Alex: 4 rotating B-roll variants so the videos are not all the same)
-The B-roll now ROTATES over the variants (`tools.py next-set princess` says which one; log `motion=<key>`): classic `motion`, `motion2`, and the three NEW variants below, copied from reference reels. **The prompts are FROZEN in `recipes/` (repo root) — copy them word for word, fill only the `<...>` parts; PRODUCT.md does not duplicate them.**
-- **Variant 3** — `motion/broll-motion-3.mp4` (12 s, from instagram.com/p/DdZxYkctpt1). Recipe: `recipes/broll-princess-v3.md`. Segments in the generated clip: back 0-1.0, put-on + foot pockets 1.0-6.7, CONNECTOR close-up 6.7-7.5, REMOTE close-up 7.5-10.0, cozy sitting 10.0-12.0.
-- **Variant 4** — `motion/broll-motion-4.mp4` (12 s, from instagram.com/p/Dc3sRnKtTw0). Recipe: `recipes/broll-princess-v4.md`. Segments: back + hood up 0-1.7, put-on + pockets 1.7-5.8, CONNECTOR 5.8-7.3, REMOTE 7.3-9.3, cozy 9.3-12.0.
-- **Variant 5** — `motion/broll-motion-5.mp4` (11 s, from instagram.com/p/Dco0N-Ctps-). Recipe: `recipes/broll-princess-v5.md`. Segments: sleeves 0-1.8, back 1.8-2.5, lying 2.5-4.2, CONNECTOR 4.2-5.0, REMOTE 5.0-7.1, lying hood up 7.1-9.1, cozy sitting 9.1-11.0. No foot-pocket shot (the reference has none).
-With variants 3-5 the CONNECTOR and REMOTE close-ups are generated INSIDE the B-roll itself (our lilac connector + pink crown remote as image refs, rule 30 Oct) - do NOT add the fixed tree clips to the edit. With the old `motion`/`motion2` variants they still come from `fixed/connector-tree-N.mp4` / `remote-tree-N.mp4` as before. Edit order stays hook -> put on -> pockets -> connector -> remote -> cozy, all inside the one B-roll clip (trim 0.12 s around its cuts; check the end for a flash).
-
-## Standard edit order (ALWAYS this order: hook → puts it on → foot pockets → connector → remote → cozy)
-1. hook clip(s) `"audio": true`
-2. broll.mp4 `0.15 → ~3.5`
-3. fixed/connector-tree-N.mp4 `1.2 → 4.0` (N from next-set, rotation)
-4. fixed/remote-tree-N.mp4 `0 → 2.95` (N from next-set, rotation)
-5. broll.mp4 lying shot `~3.62 → ~4.9`
-6. cozy-zoom.mp4 `0 → 2.05`
-
-Texts `"size": 76, "y": 0.08`. Examples: `Princess girlies, pls\ndon't hate...🥺👑` + `Comment "PRINCESS" if\nyou want one! 👑` · `Don't show this to a\nPrincess lover...🥺🌹` · `H&M X DISNEY 🤩🔔`.
+## Standard edit order (rule 31 Oct, Alex — ALWAYS: hook → B-roll → connector → remote → cozy)
+1. hook clip(s) `"audio": true` — exactly as long as the original's hook (ends on the original's hook end)
+2. B-roll part 1: v4 `broll-cut.mp4 0.10 → ~5.4` (puts it on + foot pockets) / v5 `broll.mp4 0.10 → ~3.38` (puts it on + lying)
+3. `fixed/connector-fabric-1.mp4 0 → 1.7`
+4. `fixed/remote-fabric-1.mp4 0.3 → 3.0`
+5. B-roll cozy: v4 `broll-cut.mp4 ~5.62 → ~7.5` / v5 `broll.mp4 ~3.62 → ~5.9`
+`"texts": []` — the suggested text goes in text.txt (CLAUDE.md rule 9). Text examples: `Princess girlies, pls\ndon't hate...🥺👑` · `Don't show this to a\nPrincess lover...🥺🌹` · `H&M X DISNEY 🤩🔔`.

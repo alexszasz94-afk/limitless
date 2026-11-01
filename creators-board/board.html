@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adam's Creators: Way to 1M$</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* One committed world: a night vault of gold. Layout: hero with a live 3D skyline of creators, then scan-first leaderboard, creator cards, picks, top videos. */
+:root{
+  --bg:#070a17; --bg2:#0d1230; --panel:rgba(22,28,64,.72); --line:rgba(255,215,120,.16);
+  --ink:#f3efe3; --muted:#a8a7c4; --gold:#f5c451; --gold2:#ffdf8a; --violet:#7c6cff;
+  --ok:#39d98a; --warn:#ffb547; --bad:#ff5d73;
+  --tt:#25d5c6; --ig:#ff6a3d; --fb:#5b8dff;
+  --display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --body:"Manrope","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:radial-gradient(1200px 700px at 70% -10%,#1b1f5c 0%,transparent 60%),radial-gradient(900px 600px at -10% 30%,#2a1546 0%,transparent 55%),var(--bg);
+  color:var(--ink);font:15px/1.55 var(--body);
+  padding:0 max(16px,env(safe-area-inset-right,0px)) 64px max(16px,env(safe-area-inset-left,0px));min-height:100%}
+a{color:var(--gold2)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;line-height:1.1}
+.num{font-variant-numeric:tabular-nums}
+/* hero */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:24px;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 34px) 0 18px}
+@media (max-width:860px){.hero{grid-template-columns:1fr}}
+.eyebrow{font:500 .72rem/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(2rem,5.4vw,3.6rem);font-weight:800;letter-spacing:-.01em;margin-top:12px}
+h1 .m{background:linear-gradient(180deg,var(--gold2),var(--gold) 55%,#c98a12);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px rgba(245,196,81,.25)}
+.sub{color:var(--muted);max-width:52ch;margin:12px 0 0}
+.stage{position:relative;height:360px;border-radius:22px;overflow:hidden;background:radial-gradient(closest-side at 50% 70%,rgba(124,108,255,.25),transparent 80%);border:1px solid var(--line)}
+.stage canvas{display:block;width:100%;height:100%}
+.stage .legend{position:absolute;left:12px;bottom:10px;right:12px;display:flex;flex-wrap:wrap;gap:6px 12px;font:500 .7rem var(--mono);color:var(--muted);pointer-events:none}
+.stage .legend b{color:var(--ink);font-weight:500}
+.stage .fallback{position:absolute;inset:0;display:flex;align-items:flex-end;gap:8px;padding:28px 18px 46px}
+.stage .fallback i{flex:1;background:linear-gradient(180deg,var(--gold2),#a46b06);border-radius:6px 6px 2px 2px;min-height:4px}
+/* road to 1M */
+.road{margin-top:20px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 16px;backdrop-filter:blur(8px)}
+.road .top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-weight:600}
+.road .bar{height:12px;border-radius:99px;background:rgba(255,255,255,.07);margin-top:10px;overflow:hidden}
+.road .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#c98a12,var(--gold),var(--gold2));box-shadow:0 0 18px rgba(245,196,81,.6)}
+.road small{display:block;color:var(--muted);margin-top:8px;font-size:.8rem}
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}
+@media (max-width:860px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tile{perspective:900px}
+.tile>div{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 16px;transform:rotateX(8deg);transform-origin:bottom;transition:transform .35s ease;box-shadow:0 18px 30px -18px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.06);height:100%}
+.tile>div:hover{transform:rotateX(0) translateY(-3px)}
+.tile .k{font:500 .68rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tile .v{font:700 clamp(1.4rem,3vw,2rem) var(--display);margin-top:6px}
+.tile .h{color:var(--muted);font-size:.82rem;margin-top:2px}
+/* sections */
+section{margin-top:40px}
+.sh{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+h2{font-size:clamp(1.25rem,2.6vw,1.6rem);font-weight:700}
+.note{color:var(--muted);font-size:.85rem}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;backdrop-filter:blur(8px)}
+/* leaderboard */
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:720px}
+th{font:500 .66rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:left;padding:12px 14px;border-bottom:1px solid var(--line)}
+td{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+td.r,th.r{text-align:right}
+.rank{font:800 1rem var(--display);color:var(--gold)}
+.who{font-weight:700}
+.pill{display:inline-block;font:600 .7rem var(--body);padding:3px 9px;border-radius:99px;white-space:nowrap}
+.pill.ok{background:rgba(57,217,138,.14);color:var(--ok)}.pill.warn{background:rgba(255,181,71,.14);color:var(--warn)}.pill.bad{background:rgba(255,93,115,.14);color:var(--bad)}
+.meter{display:flex;align-items:center;gap:8px;min-width:150px}
+.meter .t{flex:1;height:8px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden}
+.meter .t i{display:block;height:100%;border-radius:99px}
+/* creator cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:14px}
+.card{perspective:1000px}
+.card>div{background:linear-gradient(160deg,rgba(40,46,104,.8),rgba(16,20,48,.85));border:1px solid var(--line);border-radius:18px;padding:16px;height:100%;transition:transform .25s ease;transform-style:preserve-3d;box-shadow:0 24px 40px -26px rgba(0,0,0,.9)}
+.card h3{font-size:1.05rem;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.acc{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 10px;align-items:center;margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.06)}
+.chip{font:600 .66rem var(--mono);padding:3px 7px;border-radius:6px;color:#0a0d1e}
+.chip.tiktok{background:var(--tt)}.chip.instagram{background:var(--ig)}.chip.facebook{background:var(--fb)}
+.acc .name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.acc .stat{grid-column:2 / 4;color:var(--muted);font-size:.8rem}
+.days{display:flex;gap:3px;align-items:flex-end;height:26px}
+.days span{width:9px;border-radius:2px;background:rgba(255,255,255,.12)}
+.days span.hit{background:var(--ok)}.days span.some{background:var(--gold)}
+.err{color:var(--bad);font-size:.8rem;grid-column:2 / 4}
+/* picks */
+.picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,350px),1fr));gap:14px}
+.pick{padding:16px;border-radius:18px;background:linear-gradient(150deg,rgba(245,196,81,.16),rgba(124,108,255,.12));border:1px solid rgba(245,196,81,.35)}
+.pick .v{font:800 1.5rem var(--display);color:var(--gold2)}
+.pick p{margin:.4rem 0}
+.pick .how{background:rgba(0,0,0,.25);border-radius:10px;padding:10px 12px;font-size:.88rem}
+/* top list */
+ol.top{list-style:none;margin:0;padding:0;counter-reset:t}
+ol.top li{counter-increment:t;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.05)}
+ol.top li:last-child{border-bottom:0}
+ol.top li::before{content:counter(t);font:800 .95rem var(--display);color:var(--gold)}
+ol.top .cap{color:var(--muted);font-size:.8rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.state{padding:28px;text-align:center;color:var(--muted)}
+footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:flex;flex-wrap:wrap;gap:6px 18px}
+@media (prefers-reduced-motion:reduce){.tile>div,.card>div{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Snoopy &amp; Princess robes · creator board</div>
+      <h1>Adam's Creators: <span class="m">Way to 1M$</span></h1>
+      <p class="sub">Every creator, every account, every video. Who posts their 5 a day on each social, what the videos earn in views, and which hooks the whole team should remake next.</p>
+      <div class="road" id="road">
+        <div class="top"><span>Road to the first 1,000,000 views</span><span class="num" id="roadNum">–</span></div>
+        <div class="bar"><i id="roadBar" style="width:0%"></i></div>
+        <small id="roadNote">Views counted on the videos in the latest scan. Dollars appear here once store sales are connected.</small>
+      </div>
+    </div>
+    <div class="stage" id="stage" aria-label="3D skyline: one gold tower per creator, height = views in the latest scan">
+      <div class="legend" id="legend"></div>
+    </div>
+  </header>
+
+  <div class="tiles" id="tiles"></div>
+
+  <section>
+    <div class="sh"><h2>Leaderboard</h2><span class="note" id="targetNote">Target: 5 posts a day on every social</span></div>
+    <div class="panel tablewrap" id="board"><div class="state">Loading the latest scan…</div></div>
+  </section>
+
+  <section>
+    <div class="sh"><h2>Remake these</h2><span class="note">The videos that beat their account by far, and how to copy the hook</span></div>
+    <div class="picks" id="picks"></div>
+  </section>
+
+  <section>
+    <div class="sh"><h2>Creators</h2><span class="note">Last 7 days: green = 5 or more posts that day, gold = some, grey = none</span></div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section>
+    <div class="sh"><h2>Top videos</h2><span class="note">All accounts, most views</span></div>
+    <div class="panel"><ol class="top" id="top"></ol></div>
+  </section>
+
+  <footer id="foot"><span>Public numbers from TikTok, Instagram and Facebook</span></footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  const $ = id => document.getElementById(id);
+  const fmt = n => n == null ? "–" : n >= 1e6 ? (n/1e6).toFixed(n>=1e7?0:1).replace(/\.0$/,"")+"M" : n >= 1e3 ? (n/1e3).toFixed(n>=1e5?0:1).replace(/\.0$/,"")+"k" : String(Math.round(n));
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const PL = {tiktok:"TikTok",instagram:"Instagram",facebook:"Facebook"};
+  function when(iso){ if(!iso) return "–"; const d=new Date(iso); if(isNaN(d)) return "–"; const m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getUTCMonth()]; return d.getUTCDate()+" "+m+" "+String(d.getUTCHours()).padStart(2,"0")+":"+String(d.getUTCMinutes()).padStart(2,"0")+" UTC"; }
+
+  // ---------- 3D skyline ----------
+  let three = null;
+  function skyline(creators){
+    const stage = $("stage");
+    const max = Math.max(1, ...creators.map(c => c.views));
+    $("legend").innerHTML = creators.slice(0,8).map((c,i)=>`<span><b>${i+1}.</b> ${esc(c.name)} <b class="num">${fmt(c.views)}</b></span>`).join("");
+    if (!window.THREE) { // no WebGL library: flat gold bars
+      const f = document.createElement("div"); f.className="fallback";
+      f.innerHTML = creators.map(c=>`<i title="${esc(c.name)}" style="height:${Math.max(3,100*c.views/max)}%"></i>`).join("");
+      stage.prepend(f); return;
+    }
+    if (three) { three.dispose(); }
+    const W = stage.clientWidth, H = stage.clientHeight;
+    let renderer;
+    try { renderer = new THREE.WebGLRenderer({antialias:true, alpha:true}); } catch(e){ three=null; window.THREE=undefined; return skyline(creators); }
+    renderer.setPixelRatio(Math.min(2, window.devicePixelRatio||1)); renderer.setSize(W,H);
+    stage.prepend(renderer.domElement);
+    const scene = new THREE.Scene();
+    const cam = new THREE.PerspectiveCamera(38, W/H, 0.1, 200); cam.position.set(0, 9, 22); cam.lookAt(0, 3, 0);
+    scene.add(new THREE.AmbientLight(0x8a86ff, 0.55));
+    const key = new THREE.DirectionalLight(0xffe2a0, 1.1); key.position.set(6, 14, 10); scene.add(key);
+    const rim = new THREE.PointLight(0x7c6cff, 1.4, 60); rim.position.set(-10, 6, -8); scene.add(rim);
+    const group = new THREE.Group(); scene.add(group);
+    // floor grid
+    const grid = new THREE.GridHelper(40, 40, 0x3b3f8f, 0x1d2156); grid.material.transparent = true; grid.material.opacity = .55; group.add(grid);
+    const n = creators.length, cols = Math.ceil(Math.sqrt(n)), gap = 2.6;
+    const towers = [];
+    creators.forEach((c,i)=>{
+      const h = 0.25 + 9 * c.views / max;
+      const geo = new THREE.BoxGeometry(1.5, 1, 1.5);
+      const mat = new THREE.MeshStandardMaterial({color: i===0?0xffd56b:0xd9a63a, metalness:.85, roughness:.28, emissive: i===0?0x5a3a00:0x2a1a00});
+      const m = new THREE.Mesh(geo, mat);
+      const x = (i % cols - (cols-1)/2) * gap, z = (Math.floor(i/cols) - (Math.ceil(n/cols)-1)/2) * gap;
+      m.position.set(x, 0.01, z); m.scale.y = 0.01; m.userData.h = h; group.add(m); towers.push(m);
+      const cap = new THREE.Mesh(new THREE.BoxGeometry(1.56,.08,1.56), new THREE.MeshBasicMaterial({color:0xfff1c4}));
+      cap.position.set(x, 0, z); group.add(cap); m.userData.cap = cap;
+    });
+    // gold coin with 1M
+    const cv = document.createElement("canvas"); cv.width = cv.height = 256; const g = cv.getContext("2d");
+    const gr = g.createRadialGradient(110,100,20,128,128,128); gr.addColorStop(0,"#fff0b8"); gr.addColorStop(.6,"#f5c451"); gr.addColorStop(1,"#b37a0c");
+    g.fillStyle = gr; g.beginPath(); g.arc(128,128,124,0,Math.PI*2); g.fill();
+    g.strokeStyle="#8a5a05"; g.lineWidth=8; g.beginPath(); g.arc(128,128,104,0,Math.PI*2); g.stroke();
+    g.fillStyle="#5a3a00"; g.font="800 76px Unbounded, Arial Black, sans-serif"; g.textAlign="center"; g.textBaseline="middle"; g.fillText("1M$",128,134);
+    const tex = new THREE.CanvasTexture(cv);
+    const coin = new THREE.Mesh(new THREE.CylinderGeometry(2.1,2.1,.32,64), [new THREE.MeshStandardMaterial({color:0xc9921c,metalness:.9,roughness:.25}), new THREE.MeshStandardMaterial({map:tex,metalness:.6,roughness:.35}), new THREE.MeshStandardMaterial({map:tex,metalness:.6,roughness:.35})]);
+    coin.rotation.x = Math.PI/2; coin.position.set(0, 12.5, -4); scene.add(coin);
+    const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let t0 = performance.now(), raf = 0, alive = true;
+    function frame(t){
+      if(!alive) return;
+      const k = Math.min(1, (t - t0) / 1600), e = 1 - Math.pow(1-k, 3);
+      towers.forEach(m=>{ const h = m.userData.h * (reduce ? 1 : e); m.scale.y = Math.max(.01,h); m.position.y = h/2; m.userData.cap.position.y = h + .04; });
+      if(!reduce){ group.rotation.y = (t/1000) * .12; coin.rotation.z = (t/1000) * .9; }
+      renderer.render(scene, cam);
+      if(!reduce || k < 1) raf = requestAnimationFrame(frame);
+    }
+    raf = requestAnimationFrame(frame);
+    const onR = () => { const w = stage.clientWidth, h = stage.clientHeight; renderer.setSize(w,h); cam.aspect = w/h; cam.updateProjectionMatrix(); if(reduce) renderer.render(scene,cam); };
+    window.addEventListener("resize", onR);
+    three = { dispose(){ alive=false; cancelAnimationFrame(raf); window.removeEventListener("resize", onR); renderer.dispose(); renderer.domElement.remove(); } };
+  }
+
+  // ---------- render ----------
+  function render(d){
+    const T = d.target_per_day || 5;
+    const creators = (d.creators || []).map(c => {
+      const ok = c.accounts.filter(a => !a.error || a.posts_scanned);
+      const views = ok.reduce((s,a)=>s+(a.views_total||0),0);
+      const p24 = ok.reduce((s,a)=>s+(a.posts_24h||0),0);
+      const socials = c.accounts.length;
+      const target = socials * T;
+      return {...c, views, p24, target, socials, ratio: target ? p24/target : 0};
+    }).sort((a,b)=>b.views-a.views);
+    const totViews = creators.reduce((s,c)=>s+c.views,0);
+    const totP24 = creators.reduce((s,c)=>s+c.p24,0), totTarget = creators.reduce((s,c)=>s+c.target,0);
+    const onTarget = creators.filter(c=>c.ratio>=1).length;
+    $("roadNum").textContent = fmt(totViews) + " / 1M views";
+    $("roadBar").style.width = Math.min(100, 100*totViews/1e6).toFixed(1) + "%";
+    const best = (d.top_posts||[])[0];
+    $("tiles").innerHTML = [
+      ["Views in the scan", fmt(totViews), `${(d.top_posts||[]).length ? "across " + creators.reduce((s,c)=>s+c.accounts.length,0) + " accounts" : ""}`],
+      ["Posts last 24 h", `${totP24}<span style="font-size:.55em;color:var(--muted)"> / ${totTarget}</span>`, "target = 5 per social per creator"],
+      ["Creators on target", `${onTarget}<span style="font-size:.55em;color:var(--muted)"> / ${creators.length}</span>`, "posted 5 a day on every social"],
+      ["Best video", best ? fmt(best.views) : "–", best ? `${esc(best.creator)} · ${PL[best.platform]||""}` : ""]
+    ].map(([k,v,h])=>`<div class="tile"><div><div class="k">${k}</div><div class="v num">${v}</div><div class="h">${h}</div></div></div>`).join("");
+
+    $("board").innerHTML = `<table><thead><tr><th>#</th><th>Creator</th><th>Posts last 24 h vs target</th><th class="r">Views</th><th class="r">Median / video</th><th class="r">Best video</th><th>Status</th></tr></thead><tbody>${
+      creators.map((c,i)=>{
+        const meds = c.accounts.filter(a=>a.posts_scanned).map(a=>a.views_median||0);
+        const med = meds.length ? Math.max(...meds) : null;
+        const bestA = c.accounts.filter(a=>a.best).sort((a,b)=>b.best_views-a.best_views)[0];
+        const st = c.ratio>=1 ? ["ok","On target"] : c.p24===0 ? ["bad","No posts today"] : ["warn","Behind"];
+        const col = c.ratio>=1 ? "var(--ok)" : c.p24===0 ? "var(--bad)" : "var(--warn)";
+        return `<tr><td class="rank">${i+1}</td><td class="who">${esc(c.name)}<div class="note">${c.socials} accounts</div></td>
+          <td><div class="meter"><div class="t"><i style="width:${Math.min(100,100*c.ratio)}%;background:${col}"></i></div><span class="num">${c.p24}/${c.target}</span></div></td>
+          <td class="r num">${fmt(c.views)}</td><td class="r num">${med==null?"–":fmt(med)}</td>
+          <td class="r num">${bestA?`<a href="${esc(bestA.best)}">${fmt(bestA.best_views)}</a>`:"–"}</td>
+          <td><span class="pill ${st[0]}">${st[1]}</span></td></tr>`;
+      }).join("")}</tbody></table>`;
+
+    const days = [...Array(7)].map((_,i)=>{ const x=new Date(Date.parse(d.scanned_at)); x.setUTCDate(x.getUTCDate()-6+i); return x.toISOString().slice(0,10); });
+    $("cards").innerHTML = creators.map(c=>`<div class="card"><div><h3><span>${esc(c.name)}</span><span class="pill ${c.ratio>=1?"ok":c.p24===0?"bad":"warn"} num">${c.p24}/${c.target} today</span></h3>${
+      c.accounts.map(a=>{
+        const label = a.handle ? "@"+a.handle : (a.account||"").replace(/^https?:\/\/(www\.)?/,"").slice(0,32);
+        const bars = days.map(dd=>{ const n=(a.last7_by_day||{})[dd]||0; return `<span title="${dd}: ${n}" class="${n>=T?"hit":n?"some":""}" style="height:${n?Math.min(100,25+15*n):18}%"></span>`; }).join("");
+        return `<div class="acc"><span class="chip ${a.platform}">${PL[a.platform]?PL[a.platform].slice(0,2).toUpperCase():"?"}</span><span class="name">${a.url?`<a href="${esc(a.url)}">${esc(label)}</a>`:esc(label)}</span><span class="days" aria-label="posts per day, last 7 days">${bars}</span>${
+          a.posts_scanned ? `<span class="stat num">${a.posts_24h} today · ${a.posts_per_day}/day · median ${fmt(a.views_median)} · ${a.followers!=null?fmt(a.followers)+" followers":"followers n/a"}</span>`
+                          : `<span class="err">Not readable yet: ${esc(a.error||"no videos")}</span>`}</div>`;
+      }).join("")}</div></div>`).join("");
+
+    const picks = d.picks || [];
+    $("picks").innerHTML = picks.length ? picks.map(p=>`<div class="pick"><div class="eyebrow">${esc(p.creator)} · ${PL[p.platform]||""} · ${esc(p.x_median?p.x_median+"× its account":"")}</div>
+        <div class="v num">${fmt(p.views)} views</div><p><b>${esc(p.title)}</b></p><p class="note">${esc(p.why||"")}</p>
+        ${p.how?`<div class="how"><b>How to remake:</b> ${esc(p.how)}</div>`:""}<p><a href="${esc(p.url)}">Watch the original</a></p></div>`).join("")
+      : `<div class="panel state">The hook analysis of the best videos is being written.</div>`;
+
+    $("top").innerHTML = (d.top_posts||[]).slice(0,15).map(p=>`<li><div style="min-width:0"><div><b>${esc(p.creator)}</b> <span class="chip ${p.platform}">${(PL[p.platform]||"").slice(0,2).toUpperCase()}</span> <span class="note">${esc((p.posted||"").slice(0,10))}</span></div><div class="cap">${esc(p.caption||"")}</div></div><a class="num" href="${esc(p.url)}">${fmt(p.views)}</a></li>`).join("");
+
+    $("foot").innerHTML = `<span>Updated ${when(d.scanned_at)}</span><span>Public numbers from TikTok, Instagram and Facebook (the newest ${d.posts_per_account||15} videos of each account)</span>`;
+    skyline(creators.map(c=>({name:c.name, views:c.views})));
+  }
+
+  // ---------- data ----------
+  async function start(){
+    const timer = setTimeout(()=>{ $("board").innerHTML = `<div class="state">The numbers could not be loaded. Open the page again in a moment.</div>`; }, 10000);
+    const db = window.claude && window.claude.use ? await window.claude.use("db") : null;
+    if (!db) { clearTimeout(timer); $("board").innerHTML = `<div class="state">Sign in to claude.ai to see the numbers.</div>`; return; }
+    db.doc("board/latest").onSnapshot(snap => {
+      clearTimeout(timer);
+      const d = snap && (snap.data ? snap.data() : snap);
+      if (!d || !d.creators) { $("board").innerHTML = `<div class="state">No scan yet. The first numbers arrive after the next scan.</div>`; return; }
+      render(d);
+    }, err => { clearTimeout(timer); $("board").innerHTML = `<div class="state">The numbers could not be loaded (${esc(err && err.message || "error")}).</div>`; });
+  }
+  start();
+})();
+</script>
+</body>
+</html>

@@ -143,6 +143,10 @@ dialog#vm .box{background:#0d1230;border:1px solid var(--line);border-radius:18p
 dialog#vm video{display:block;width:100%;max-height:72vh;background:#000}
 dialog#vm .meta{padding:12px 14px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:.85rem}
 dialog#vm button{font:600 .85rem var(--body);background:var(--gold);color:#1a1200;border:0;border-radius:99px;padding:7px 14px;cursor:pointer}
+.wa{display:inline-flex;align-items:center;gap:7px;font:700 .82rem var(--body);color:#06210f;background:#25d366;border-radius:99px;padding:8px 14px;text-decoration:none;box-shadow:0 8px 20px -10px rgba(37,211,102,.8);white-space:nowrap}
+.wa:hover{filter:brightness(1.08)}
+.wa svg{width:16px;height:16px}
+.wa.sm{padding:5px 9px;font-size:.72rem}
 /* top list */
 ol.top{list-style:none;margin:0;padding:0;counter-reset:t}
 ol.top li{counter-increment:t;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.05)}
@@ -271,6 +275,17 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
     three = { dispose(){ alive=false; cancelAnimationFrame(raf); window.removeEventListener("resize", onR); renderer.dispose(); renderer.domElement.remove(); } };
   }
 
+  // ---------- WhatsApp ----------
+  const WA_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>';
+  function waLink(c, phone){
+    if (!phone) return "";
+    const lines = [`Hi ${c.name}! 👋`, `Today: ${c.p24}/${c.target} posts (target 5 a day on every account).`];
+    if (c.next) lines.push(`Next: ${c.next}`);
+    if ((c.remakes||[]).length) { lines.push("Remake these:"); c.remakes.forEach((r,i)=>lines.push(`${i+1}) ${r.label} – ${r.url}`)); }
+    lines.push("Let's go 🚀");
+    return `https://wa.me/${String(phone).replace(/\D/g,"")}?text=${encodeURIComponent(lines.join("\n"))}`;
+  }
+
   // ---------- render ----------
   function render(d){
     const T = d.target_per_day || 5;
@@ -306,7 +321,7 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
           <td><div class="meter"><div class="t"><i style="width:${Math.min(100,100*c.ratio)}%;background:${col}"></i></div><span class="num">${c.p24}/${c.target}</span></div></td>
           <td class="r num">${fmt(c.views)}</td><td class="r num">${med==null?"–":fmt(med)}</td>
           <td class="r num">${bestA?`<a href="${esc(bestA.best)}">${fmt(bestA.best_views)}</a>`:"–"}</td>
-          <td><span class="pill ${st[0]}">${st[1]}</span></td></tr>`;
+          <td><span class="pill ${st[0]}">${st[1]}</span>${c.phone?` <a class="wa sm" href="${esc(waLink(c,c.phone))}" aria-label="WhatsApp ${esc(c.name)}">${WA_ICON}</a>`:""}</td></tr>`;
       }).join("")}</tbody></table>`;
 
     const days = [...Array(7)].map((_,i)=>{ const x=new Date(Date.parse(d.scanned_at)); x.setUTCDate(x.getUTCDate()-6+i); return x.toISOString().slice(0,10); });
@@ -318,7 +333,7 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
     $("car").innerHTML = creators.map((c,i)=>{
       const meds = c.accounts.filter(a=>a.posts_scanned).map(a=>a.views_median||0);
       return `<article class="slide" id="cr-${i}" aria-label="${esc(c.name)}"><div>
-      <div class="head"><div><span class="pill ${c.ratio>=1?"ok":c.p24===0?"bad":"warn"}">${esc(c.tag || (c.ratio>=1?"On target":"Behind"))}</span><h3 style="margin-top:8px">${esc(c.name)}</h3><div class="note">${c.socials} accounts</div></div><div class="rk">#${i+1}</div></div>
+      <div class="head"><div><span class="pill ${c.ratio>=1?"ok":c.p24===0?"bad":"warn"}">${esc(c.tag || (c.ratio>=1?"On target":"Behind"))}</span><h3 style="margin-top:8px">${esc(c.name)}</h3><div class="note">${c.socials} accounts</div>${c.phone?`<a class="wa" style="margin-top:10px" href="${esc(waLink(c,c.phone))}">${WA_ICON} Message ${esc(c.name)}</a>`:""}</div><div class="rk">#${i+1}</div></div>
       <div class="kpis"><div><b class="num">${fmt(c.views)}</b><span>views</span></div><div><b class="num" style="color:${stCol(c)}">${c.p24}/${c.target}</b><span>posts 24 h</span></div><div><b class="num">${meds.length?fmt(Math.max(...meds)):"–"}</b><span>best median</span></div></div>
       <div class="ana"><p style="margin:0">${esc(c.text||"")}</p>${c.next?`<div class="nx"><b>Next:</b> ${esc(c.next)}</div>`:""}</div>
       ${(c.videos||[]).length?`<div class="eyebrow" style="margin-top:16px">Their best videos</div><div class="vids">${c.videos.map(vcard).join("")}</div>`:""}
@@ -366,7 +381,7 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
     const timer = setTimeout(()=>{ $("board").innerHTML = `<div class="state">The numbers could not be loaded. Open the page again in a moment.</div>`; }, 10000);
     const db = window.claude && window.claude.use ? await window.claude.use("db") : null;
     if (!db) { clearTimeout(timer); $("board").innerHTML = `<div class="state">Sign in to claude.ai to see the numbers.</div>`; return; }
-    let latest = null, extra = null;
+    let latest = null, extra = null, contacts = null;
     const draw = () => {
       if (!latest || !latest.creators) return;
       const d = JSON.parse(JSON.stringify(latest));
@@ -375,6 +390,7 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
         d.creators.forEach(c => { Object.assign(c, A[c.name] || {}); c.remakes = ((R.assign||{})[c.name] || []).map(k => R.pool[k]).filter(Boolean); });
         if (extra.picks) d.picks = extra.picks;
       }
+      if (contacts && contacts.phones) d.creators.forEach(c => { c.phone = contacts.phones[c.name] || null; });
       render(d);
     };
     const fail = err => { clearTimeout(timer); $("board").innerHTML = `<div class="state">The numbers could not be loaded (${esc(err && err.message || "error")}).</div>`; };
@@ -385,6 +401,7 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
       draw();
     }, fail);
     db.doc("board/analysis").onSnapshot(snap => { extra = val(snap); draw(); }, () => {});
+    db.doc("board/contacts").onSnapshot(snap => { contacts = val(snap); draw(); }, () => {});
   }
   start();
 })();

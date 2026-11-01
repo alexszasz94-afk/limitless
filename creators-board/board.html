@@ -115,7 +115,7 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
       <h1>Adam's Creators: <span class="m">Way to 1M$</span></h1>
       <p class="sub">Every creator, every account, every video. Who posts their 5 a day on each social, what the videos earn in views, and which hooks the whole team should remake next.</p>
       <div class="road" id="road">
-        <div class="top"><span>Road to the first 1,000,000 views</span><span class="num" id="roadNum">–</span></div>
+        <div class="top"><span>Road to 10,000,000 views</span><span class="num" id="roadNum">–</span></div>
         <div class="bar"><i id="roadBar" style="width:0%"></i></div>
         <small id="roadNote">Views counted on the videos in the latest scan. Dollars appear here once store sales are connected.</small>
       </div>
@@ -177,7 +177,7 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
     renderer.setPixelRatio(Math.min(2, window.devicePixelRatio||1)); renderer.setSize(W,H);
     stage.prepend(renderer.domElement);
     const scene = new THREE.Scene();
-    const cam = new THREE.PerspectiveCamera(38, W/H, 0.1, 200); cam.position.set(0, 9, 22); cam.lookAt(0, 3, 0);
+    const cam = new THREE.PerspectiveCamera(38, W/H, 0.1, 200); cam.position.set(0, 10, 24); cam.lookAt(0, 4.5, 0);
     scene.add(new THREE.AmbientLight(0x8a86ff, 0.55));
     const key = new THREE.DirectionalLight(0xffe2a0, 1.1); key.position.set(6, 14, 10); scene.add(key);
     const rim = new THREE.PointLight(0x7c6cff, 1.4, 60); rim.position.set(-10, 6, -8); scene.add(rim);
@@ -204,7 +204,7 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
     g.fillStyle="#5a3a00"; g.font="800 76px Unbounded, Arial Black, sans-serif"; g.textAlign="center"; g.textBaseline="middle"; g.fillText("1M$",128,134);
     const tex = new THREE.CanvasTexture(cv);
     const coin = new THREE.Mesh(new THREE.CylinderGeometry(2.1,2.1,.32,64), [new THREE.MeshStandardMaterial({color:0xc9921c,metalness:.9,roughness:.25}), new THREE.MeshStandardMaterial({map:tex,metalness:.6,roughness:.35}), new THREE.MeshStandardMaterial({map:tex,metalness:.6,roughness:.35})]);
-    coin.rotation.x = Math.PI/2; coin.position.set(0, 12.5, -4); scene.add(coin);
+    coin.rotation.x = Math.PI/2; coin.scale.setScalar(.8); coin.position.set(7.5, 10.5, -6); scene.add(coin);
     const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
     let t0 = performance.now(), raf = 0, alive = true;
     function frame(t){
@@ -235,8 +235,8 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
     const totViews = creators.reduce((s,c)=>s+c.views,0);
     const totP24 = creators.reduce((s,c)=>s+c.p24,0), totTarget = creators.reduce((s,c)=>s+c.target,0);
     const onTarget = creators.filter(c=>c.ratio>=1).length;
-    $("roadNum").textContent = fmt(totViews) + " / 1M views";
-    $("roadBar").style.width = Math.min(100, 100*totViews/1e6).toFixed(1) + "%";
+    $("roadNum").textContent = fmt(totViews) + " / 10M views";
+    $("roadBar").style.width = Math.min(100, 100*totViews/1e7).toFixed(1) + "%";
     const best = (d.top_posts||[])[0];
     $("tiles").innerHTML = [
       ["Views in the scan", fmt(totViews), `${(d.top_posts||[]).length ? "across " + creators.reduce((s,c)=>s+c.accounts.length,0) + " accounts" : ""}`],

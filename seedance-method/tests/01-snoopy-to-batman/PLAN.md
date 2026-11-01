@@ -62,3 +62,9 @@ Caption (pentru toate): „Comment “BAT” for the link 🦇🖤” — fără
 - Contact sheet la 0,5 s, original lângă al nostru: ritm, unde e produsul, ce parte se vede, fără logo-uri reale, liliacul clar pe asfalt.
 - Higgsfield `virality_predictor` pe fiecare variantă, doar ca filtru (ipoteză).
 - Decizia finală: postăm toate 3 și câștigă cea cu retenția la 3 s și vizualizările cele mai mari.
+
+## Decizia lui Szasz (1 nov): păstrăm hook-ul drive-thru, originalul = video_reference, prompt pe fiecare secvență, fără timp mort
+- Referințele noastre: `refs-ours/` (GPT Image 2.5). Prima rundă desena logo-ul Batman oficial, așa că am refăcut-o cu un liliac REAL în zbor (al nostru).
+- Job-uri Higgsfield: produs 4c5f09ec, cutie 8cccf6c0, drive-thru c6754caf, 6 modele 2cef452d, noapte 291eb7dc.
+- Prompt v1: `prompt-v1.txt`. Seedance 2.5 omni_reference, 14 s, 9:16, fără audio (muzica o punem noi). Draft 480p = 42 credite, final 1080p = 224 credite.
+- Îmbunătățiri față de original: fără secunda de condus (0–1 s), fără punguță, produsul apare la 1,5 s în loc de 5 s, proiecția mare în cadru, tăietură pe mișcare la fiecare ușă, 6 modele în loc de 5.

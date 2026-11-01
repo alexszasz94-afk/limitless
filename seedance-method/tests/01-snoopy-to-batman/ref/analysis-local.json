@@ -1,0 +1,29 @@
+{
+  "source": "https://www.facebook.com/reel/2405071133364459",
+  "page": "Snoopy Beams",
+  "views_title": "1.3M views, 15K reactions",
+  "views_ytdlp": 586126,
+  "duration_s": 13.93,
+  "format": "1080x1920, 9:16",
+  "speech": "none - music only (no voice detected; continuous audio, mean -17.6 dB)",
+  "on_screen_text_all_video": "Snoopy 🐶💕 X In-N-Out",
+  "caption": "Just kidding!! We sell these 😍🥹 Comment “Snoopy” for the link 🐶💕 #Snoopy #SnoopyLovers #christmas #mom",
+  "method": "frames every 0.5 s (contact-sheet-original.jpg), checked by eye; Higgsfield video_analysis d7b05a4f-27f1-4500-820c-f5d340d45d6f stuck in queue",
+  "shots": [
+    {"t": "0.0-1.0", "shot": "POV driver, hands on wheel, pulling into In-N-Out drive-thru, sunny, palm trees", "camera": "handheld POV from driver seat", "dead_space": "yes - 1 s of driving with no product"},
+    {"t": "1.0-2.4", "shot": "smiling female worker in white uniform + paper hat hands a branded red/white box with Snoopy through the window; driver's hand (long nails, bracelets) takes it", "camera": "POV through driver window"},
+    {"t": "2.5-3.3", "shot": "box on passenger seat, hand opens the lid", "camera": "top-down POV"},
+    {"t": "3.3-4.9", "shot": "hand lifts a Snoopy pouch out of the box, projector visible inside", "camera": "top-down POV", "dead_space": "slight - pouch, not product"},
+    {"t": "5.0-5.9", "shot": "two hands hold the projector (white/red doghouse design), show it, tap the side", "camera": "close POV inside car, daylight"},
+    {"t": "6.0-6.9", "shot": "projector pressed onto lower inside of the car door (adhesive), 1 s", "camera": "close POV"},
+    {"t": "7.0-13.9", "shot": "NIGHT, residential street, white car: hand opens door -> Snoopy projection on asphalt; closes/opens -> new design each time: Snoopy+daisies, Snoopy hugging Woodstock+heart, Joe Cool sunglasses, Christmas Snoopy with Santa hat + wreath (last, held)", "camera": "handheld POV standing at the door", "dead_space": "yes - door closing between designs ~0.5 s each, projection small in frame"}
+  ],
+  "why_it_works_hypotheses": [
+    "fake brand collab 'X x Y' -> 'is this real?' -> comments/shares; caption 'Just kidding' + 'Comment Snoopy' = more comments",
+    "second 1: drive-thru gift handover = reward + curiosity (what's in the box)",
+    "branded box = perceived value / collectible",
+    "install in 1 s = easy",
+    "looped reveal: every door open = new design -> watch to the end; ends on Christmas (season)",
+    "identity niche: fans buy their personality"
+  ]
+}

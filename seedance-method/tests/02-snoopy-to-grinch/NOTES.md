@@ -30,3 +30,7 @@
 ## Generări
 - v2 Seedance (referințe proprii, nu din cadrele lor): job 2a732304 → **ip_detected** (Grinch). Creditele s-au întors.
 - v3 Kling 4.0 video-edit, 1080p, 14 s, 56 credite: video = originalul (ac7bc714), Images 1–8 = cadrele lor refăcute (ec9e8c48, a87cb0e9, 69a29b0e, 8fbb062d, c29dc3d4, abee7d81, cfdc78e7, 6d7dfa88), Image 9 = grila de modele (9171c496). Job 7de338fa.
+- v4 Kling 4.0 video-edit (job 6a1d089f): fără grila de modele, câte o referință pe fiecare deschidere de ușă, din cadrele LOR (8,3 / 9,8 / 11,5 / 13,0 s → 6d7dfa88, 645519a4, 17431a6b, e4a9cb03). Tăieturile exacte sunt scrise în prompt. Drive-in-ul și stick-ul sunt doar în prompt (9 imagini).
+
+## Lecție (v3 → v4)
+O grilă cu mai multe modele într-o singură referință = Kling le amestecă / repetă. **Câte o referință pentru fiecare variantă a produsului care apare pe ecran, din cadrul lor de la secunda respectivă.**

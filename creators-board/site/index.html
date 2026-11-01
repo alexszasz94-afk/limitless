@@ -238,14 +238,14 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
 
   <section id="comp">
     <div class="sh"><h2>Competition</h2><span class="note" id="compNote">Robe accounts on TikTok, all niches</span></div>
-    <div class="panel" style="padding:16px"><b>Hook types that win (median views, competitors)</b><div class="hb" id="hookBoard" style="margin-top:12px"></div></div>
+    <div class="panel" style="padding:16px"><b>Hook types that win (median views, competitors, last 30 days)</b><div class="hb" id="hookBoard" style="margin-top:12px"></div></div>
     <h3 style="margin:22px 0 10px">Competitor accounts</h3>
     <div class="accs" id="compAccs"></div>
   </section>
   <section id="wall">
     <div class="sh"><h2>Hook wall</h2><span class="note">Every hook that works for them. Tap to watch, pick a creator to send it.</span></div>
     <div class="tabs" id="wallTabs"></div>
-    <div class="tabs"><select id="wallHook" aria-label="Hook type"></select><label><input type="checkbox" id="wallFresh"> Only last 30 days</label></div>
+    <div class="tabs"><select id="wallHook" aria-label="Hook type"></select><select id="wallPlat" aria-label="Platform"><option value="">All platforms</option><option value="tiktok">TikTok</option><option value="instagram">Instagram</option><option value="facebook">Facebook</option></select><label><input type="checkbox" id="wallFresh"> Only last 7 days</label></div>
     <div class="wall" id="wallGrid"></div>
   </section>
   <section>
@@ -358,17 +358,18 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
   function renderComp(){
     if (!comp) return;
     const max = Math.max(...comp.hooks.map(h=>h.median));
-    $("compNote").textContent = `TikTok, all robe niches · ${comp.accounts.length} accounts, ${comp.videos.length} videos · updated ${comp.updated}`;
+    const bp = (comp.counts||{}).by_platform || {};
+    $("compNote").textContent = `Last 30 days · ${(comp.counts||{}).videos_scanned_30d||comp.videos.length} competitor videos (TikTok ${bp.tiktok||0} · Instagram ${bp.instagram||0} · Facebook ${bp.facebook||0}) · ${comp.accounts.length} accounts · updated ${comp.updated}`;
     $("hookBoard").innerHTML = comp.hooks.map(h=>`<div class="row"><span><b>${esc(h.hook)}</b> <span class="note">· ${h.videos} videos</span></span><span class="bar"><i style="width:${Math.max(3,100*h.median/max)}%"></i></span><span class="num">${fmt(h.median)}</span></div>`).join("");
-    $("compAccs").innerHTML = comp.accounts.slice(0,16).map(a=>`<a href="${esc(a.url)}"><b>@${esc(a.handle)}</b><span class="note">${esc(a.niches.join(" · "))}</span><div class="num" style="margin-top:6px"><span style="color:var(--gold2);font-weight:700">${fmt(a.best)}</span> best · ${fmt(a.followers)} followers${a.fresh?` · <span style="color:var(--ok)">${a.fresh} new</span>`:""}</div></a>`).join("");
+    $("compAccs").innerHTML = comp.accounts.slice(0,24).map(a=>`<a href="${esc(a.url)}"><b><span class="chip ${a.platform}" style="margin-right:6px">${(PL[a.platform]||"").slice(0,2).toUpperCase()}</span>${a.platform==="facebook"?"":"@"}${esc(a.handle)}</b><span class="note">${esc(a.niches.join(" · "))}</span><div class="num" style="margin-top:6px"><span style="color:var(--gold2);font-weight:700">${fmt(a.views30)}</span> views in 30 days · ${a.videos30} videos · best ${fmt(a.best)}</div></a>`).join("");
     const niches = ["All", ...[...new Set(comp.videos.map(v=>v.niche))]];
     $("wallTabs").innerHTML = niches.map(n=>`<button type="button" class="${n===wallNiche?"on":""}" data-n="${esc(n)}">${esc(n)}</button>`).join("");
     const hk = $("wallHook"), cur = hk.value || "";
     hk.innerHTML = `<option value="">All hook types</option>` + comp.hooks.map(h=>`<option ${h.hook===cur?"selected":""}>${esc(h.hook)}</option>`).join("");
-    const fresh = $("wallFresh").checked;
-    const vids = comp.videos.filter(v => (wallNiche==="All"||v.niche===wallNiche) && (!hk.value||v.hook===hk.value) && (!fresh||(v.age_days??999)<=30)).sort((a,b)=>b.views-a.views);
+    const fresh = $("wallFresh").checked, plat = $("wallPlat").value;
+    const vids = comp.videos.filter(v => (wallNiche==="All"||v.niche===wallNiche) && (!hk.value||v.hook===hk.value) && (!plat||v.platform===plat) && (!fresh||(v.age_days??999)<=7)).sort((a,b)=>b.views-a.views);
     const opts = lastCreators.filter(c=>c.phone).map(c=>`<option value="${esc(c.name)}">${esc(c.name)}</option>`).join("");
-    $("wallGrid").innerHTML = vids.map((v,i)=>`<div class="wc"><a href="${esc(v.url)}">${v.thumb?`<img src="${esc(v.thumb)}" alt="" loading="lazy">`:""}<span class="tag">${esc(v.hook)}</span>${(v.age_days??999)<=30?`<span class="fresh">${v.age_days}d</span>`:""}<span class="ov"><b class="num">${fmt(v.views)}</b><small>@${esc(v.handle)} · ${esc(v.niche)}</small></span></a>
+    $("wallGrid").innerHTML = vids.map((v,i)=>`<div class="wc"><a href="${esc(v.url)}">${v.thumb?`<img src="${esc(v.thumb)}" alt="" loading="lazy">`:""}<span class="tag">${esc(v.hook)}</span><span class="fresh">${v.age_days}d ago</span><span class="ov"><b class="num">${fmt(v.views)}</b><small><span class="chip ${v.platform}" style="padding:1px 5px">${(PL[v.platform]||"").slice(0,2).toUpperCase()}</span> ${v.platform==="facebook"?"":"@"}${esc(v.handle)} · ${esc(v.niche)}</small></span></a>
       <div class="txt">“${esc(v.text)}”</div><div class="send"><select data-i="${i}" aria-label="Send to a creator"><option value="">Send to…</option>${opts}</select><a class="wa sm" hidden>${WA_ICON} Send</a></div></div>`).join("") || `<div class="panel state">No video matches these filters.</div>`;
     $("wallGrid").querySelectorAll("select").forEach(sel => sel.onchange = () => {
       const v = vids[+sel.dataset.i], c = lastCreators.find(x=>x.name===sel.value), a = sel.nextElementSibling;
@@ -378,7 +379,7 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
     });
   }
   document.addEventListener("click", e => { const b = e.target.closest && e.target.closest("#wallTabs button"); if (b) { wallNiche = b.dataset.n; renderComp(); } });
-  document.addEventListener("change", e => { if (e.target.id==="wallHook" || e.target.id==="wallFresh") renderComp(); });
+  document.addEventListener("change", e => { if (e.target.id==="wallHook" || e.target.id==="wallFresh" || e.target.id==="wallPlat") renderComp(); });
   fetch("competition.json").then(r=>r.ok?r.json():null).then(d=>{ comp = d; renderComp(); if (lastCreators.length) renderToday(lastCreators); }).catch(()=>{});
 
   // ---------- render ----------

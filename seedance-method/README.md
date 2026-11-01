@@ -2,6 +2,10 @@
 
 Separat de halate / creator-kit / board-ul lui Adam. Aici Seedance 2.5 ESTE permis (regula „Seedance deloc” din 30 oct rămâne doar pentru halate).
 
+## Regulile proiectului
+- 1 nov 2026 (Szasz): în proiectul ăsta Seedance 2.5 ESTE permis. Regula „Seedance deloc” din docs/02-reguli.md (30 oct) rămâne valabilă doar pentru halate / creator-kit.
+- 1 nov 2026: „mai bun” = cifră, nu părere. Fiecare hook nou se testează în 2–3 variante; câștigătorul (retenție 3 s, views, comenzi) intră în rețetă. Până la cifră, e ipoteză.
+
 ## Sursa
 YouTube: https://www.youtube.com/watch?v=ttERTQEQBYA — Duff (@duffy_bag), „stealing viral videos will keep you broke, do this instead (AI organic dropshipping)”, 31 oct 2026, ~13,5 min.
 Analiza Higgsfield (video_analysis id 2ce3950f-ab9c-4a8d-aeef-a289f844addb) a prins doar 0:00–1:32. Restul (referințele, prompturile, Seedance) LIPSEȘTE — Szasz trebuie să descarce videoul și să-l pună în chat (YouTube blochează descărcarea de pe server: „confirm you're not a bot”).

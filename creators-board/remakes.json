@@ -1,0 +1,14 @@
+{"pool":{
+ "hm":{"file":"v/dennis-fb-hm.mp4","poster":"v/dennis-fb-hm.jpg","url":"https://www.facebook.com/reel/1659310232438614/","views":64222,"platform":"facebook","by":"Dennis","label":"H&M X SNOOPY · mall window","how":"Girl in a mall, shocked, points; pan to a shop window with our robe on mannequins. Text \"H&M X SNOOPY\" (Princess: \"H&M X PRINCESS\")."},
+ "cake":{"file":"v/dennis-ig-cake.mp4","poster":"v/dennis-ig-cake.jpg","url":"https://www.instagram.com/p/DfBilo1zKmC/","views":104474,"platform":"instagram","by":"Dennis","label":"Cake-tray reveal","how":"Top-down: the rolled robe on a tray like a cake, lift the baking tray off. Text \"I made this for cold American winters 🥶🇺🇸\"."},
+ "flat":{"file":"v/dennis-fb-flatlay.mp4","poster":"v/dennis-fb-flatlay.jpg","url":"https://www.facebook.com/reel/1156578990129547/","views":57272,"platform":"facebook","by":"Dennis","label":"Flat-lay brushing (ASMR)","how":"Robe flat on the floor, top-down, gloved hands smooth and brush it slowly. Text \"Do NOT let a Snoopy mom see this…\"."},
+ "costco":{"file":"v/abed-ig-costco.mp4","poster":"v/abed-ig-costco.jpg","url":"https://www.instagram.com/p/DfDrbPRx6sG/","views":56205,"platform":"instagram","by":"Abed","label":"Costco X Snoopy · staff + pallet","how":"Two store workers in red vests dance by a pallet of our boxes. Text \"Costco X Snoopy 🤩\" (Princess: our blue Princess boxes)."},
+ "mom":{"file":"v/madalina-fb.mp4","poster":"v/madalina-fb.jpg","url":"https://www.facebook.com/reel/1391020019450992/","views":19973,"platform":"facebook","by":"Madalina","label":"\"DO NOT show this to your mom\" try-on","how":"Back view of the hood, then the full try-on, opening the robe wide. Text \"DO NOT show this to your mom\"."},
+ "roll":{"file":"v/yusuf-fb.mp4","poster":"v/yusuf-fb.jpg","url":"https://www.facebook.com/reel/1846817606341165/","views":10282,"platform":"facebook","by":"Yusuf","label":"POV roll kick","how":"POV over her legs: she kicks the rolled robe and it unrolls on the floor. Text \"Moms are so hard to gift\"."},
+ "tt140":{"url":"https://www.tiktok.com/@snoopyycozy/video/7698076025992842527","views":139700,"platform":"tiktok","by":"Abed","label":"The team's biggest TikTok","how":"Watch it and copy it shot for shot on TikTok."},
+ "ig115":{"url":"https://www.instagram.com/p/DeK1fJvhc6v/","views":115451,"platform":"instagram","by":"Elsayed","label":"The team's best Princess video","how":"Watch it and copy it shot for shot with the Princess robe."}
+},
+"assign":{
+ "Dennis":["costco","tt140","roll"],"Abed":["cake","hm","flat"],"Elsayed":["cake","hm","costco"],"Dax":["hm","cake","costco"],
+ "Elgabry":["hm","costco","flat"],"Madalina":["ig115","cake","hm"],"Yusuf":["hm","flat","costco"],"Muaz":["cake","flat","costco"],
+ "Miah":["hm","cake","costco"],"Awada":["hm","flat","cake"],"Jonny":["hm","cake","costco"]}}

@@ -96,6 +96,53 @@ td.r,th.r{text-align:right}
 .pick .v{font:800 1.5rem var(--display);color:var(--gold2)}
 .pick p{margin:.4rem 0}
 .pick .how{background:rgba(0,0,0,.25);border-radius:10px;padding:10px 12px;font-size:.88rem}
+/* creator carousel */
+.strip{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.strip button{flex:none;font:600 .82rem var(--body);color:var(--ink);background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:99px;padding:7px 14px;cursor:pointer}
+.strip button.on{background:var(--gold);color:#1a1200;border-color:var(--gold)}
+.strip button i{font-style:normal;display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:1px}
+.carwrap{position:relative}
+.car{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:6px 2px 18px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.slide{flex:0 0 min(92%,560px);min-width:0;max-width:min(92%,560px);scroll-snap-align:start;perspective:1200px}
+.slide>div{min-width:0;overflow:hidden;height:100%;background:linear-gradient(165deg,rgba(46,52,118,.92),rgba(14,18,44,.94));border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 30px 50px -30px rgba(0,0,0,.95);transition:transform .3s ease;transform-style:preserve-3d}
+.slide>div:hover{transform:rotateY(-3deg) rotateX(2deg)}
+.nav{position:absolute;top:40%;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:rgba(10,13,32,.85);color:var(--gold2);font:700 1.2rem var(--display);cursor:pointer;display:grid;place-items:center;z-index:2}
+.nav.prev{left:-8px}.nav.next{right:-8px}
+@media (max-width:640px){.nav{display:none}}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.head .rk{font:800 2.4rem/1 var(--display);color:var(--gold);opacity:.9}
+.head h3{font-size:1.4rem}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:14px}
+.kpis div{background:rgba(0,0,0,.22);border-radius:12px;padding:9px 10px}
+.kpis b{display:block;font:700 1.15rem var(--display)}
+.kpis span{font:500 .62rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.ana{margin-top:14px;font-size:.92rem}
+.ana .nx{margin-top:8px;padding:10px 12px;border-radius:12px;background:rgba(245,196,81,.12);border:1px solid rgba(245,196,81,.3)}
+.vids{display:flex;gap:10px;overflow-x:auto;margin-top:14px;padding-bottom:4px}
+.vcard{flex:0 0 132px;border-radius:14px;overflow:hidden;position:relative;aspect-ratio:9/16;border:1px solid var(--line);background:linear-gradient(160deg,#2b2f6e,#14173a);cursor:pointer;color:var(--ink);text-decoration:none;display:block;padding:0}
+.vcard img{width:100%;height:100%;object-fit:cover;display:block}
+.vcard .ov{position:absolute;inset:auto 0 0 0;padding:28px 8px 8px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:.72rem;text-align:left;line-height:1.3}
+.vcard .ov b{display:block;font:700 .95rem var(--display);color:var(--gold2)}
+.vcard .play{position:absolute;top:50%;left:50%;width:42px;height:42px;margin:-21px 0 0 -21px;border-radius:50%;background:rgba(245,196,81,.92);display:grid;place-items:center;color:#1a1200;font-size:1rem;box-shadow:0 0 24px rgba(245,196,81,.6)}
+.vcard.link{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;text-align:center;padding:10px}
+.vcard.link .ov{position:static;background:none;padding:0}
+.rem{margin-top:16px;padding:12px;border-radius:14px;background:rgba(124,108,255,.12);border:1px solid rgba(124,108,255,.35)}
+.rrow{display:grid;grid-template-columns:72px minmax(0,1fr);gap:10px;align-items:center;margin-top:10px}
+.rrow .vcard{flex:none;width:72px}
+.rrow .vcard .ov{display:none}
+.rrow .vcard .play{width:30px;height:30px;margin:-15px 0 0 -15px;font-size:.8rem}
+.rrow p{margin:.2rem 0 0;font-size:.84rem;color:var(--muted)}
+.rrow .vcard.link{padding:4px}
+.pick .media{display:flex;gap:12px;align-items:flex-start}
+.pick .media .vcard{flex:0 0 110px}
+/* video modal */
+dialog#vm{border:0;padding:0;background:transparent;max-width:min(94vw,420px);width:100%}
+dialog#vm::backdrop{background:rgba(3,4,12,.82);backdrop-filter:blur(4px)}
+dialog#vm .box{background:#0d1230;border:1px solid var(--line);border-radius:18px;overflow:hidden;color:var(--ink)}
+dialog#vm video{display:block;width:100%;max-height:72vh;background:#000}
+dialog#vm .meta{padding:12px 14px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:.85rem}
+dialog#vm button{font:600 .85rem var(--body);background:var(--gold);color:#1a1200;border:0;border-radius:99px;padding:7px 14px;cursor:pointer}
 /* top list */
 ol.top{list-style:none;margin:0;padding:0;counter-reset:t}
 ol.top li{counter-increment:t;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.05)}
@@ -128,6 +175,12 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
   <div class="tiles" id="tiles"></div>
 
   <section>
+    <div class="sh"><h2>The team, one by one</h2><span class="note">Swipe or use the arrows · tap a video to play it</span></div>
+    <div class="strip" id="strip" role="tablist" aria-label="Creators"></div>
+    <div class="carwrap"><button class="nav prev" id="prev" aria-label="Previous creator">‹</button><div class="car" id="car"></div><button class="nav next" id="next" aria-label="Next creator">›</button></div>
+    <p class="note">Bars = posts per day, last 7 days: green = 5 or more, gold = some, grey = none.</p>
+  </section>
+  <section>
     <div class="sh"><h2>Leaderboard</h2><span class="note" id="targetNote">Target: 5 posts a day on every social</span></div>
     <div class="panel tablewrap" id="board"><div class="state">Loading the latest scan…</div></div>
   </section>
@@ -137,16 +190,13 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
     <div class="picks" id="picks"></div>
   </section>
 
-  <section>
-    <div class="sh"><h2>Creators</h2><span class="note">Last 7 days: green = 5 or more posts that day, gold = some, grey = none</span></div>
-    <div class="cards" id="cards"></div>
-  </section>
 
   <section>
     <div class="sh"><h2>Top videos</h2><span class="note">All accounts, most views</span></div>
     <div class="panel"><ol class="top" id="top"></ol></div>
   </section>
 
+  <dialog id="vm" aria-label="Video"><div class="box"><video id="vmv" controls playsinline preload="metadata"></video><div class="meta"><span id="vmt"></span><span><a id="vml" href="#">Open original</a> &nbsp;<button id="vmc" type="button">Close</button></span></div></div></dialog>
   <footer id="foot"><span>Public numbers from TikTok, Instagram and Facebook</span></footer>
 </div>
 
@@ -260,19 +310,37 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
       }).join("")}</tbody></table>`;
 
     const days = [...Array(7)].map((_,i)=>{ const x=new Date(Date.parse(d.scanned_at)); x.setUTCDate(x.getUTCDate()-6+i); return x.toISOString().slice(0,10); });
-    $("cards").innerHTML = creators.map(c=>`<div class="card"><div><h3><span>${esc(c.name)}</span><span class="pill ${c.ratio>=1?"ok":c.p24===0?"bad":"warn"} num">${c.p24}/${c.target} today</span></h3>${
-      c.accounts.map(a=>{
-        const label = a.handle ? "@"+a.handle : (a.account||"").replace(/^https?:\/\/(www\.)?/,"").slice(0,32);
+    const vcard = v => v.file
+      ? `<button class="vcard" type="button" data-file="${esc(v.file)}" data-url="${esc(v.url)}" data-label="${esc(v.label||"")}" aria-label="Play: ${esc(v.label||"video")}">${v.poster?`<img src="${esc(v.poster)}" alt="" loading="lazy">`:""}<span class="play">▶</span><span class="ov"><b class="num">${fmt(v.views)}</b>${esc(v.label||"")}</span></button>`
+      : `<a class="vcard link" href="${esc(v.url)}"><span class="chip ${v.platform}">${(PL[v.platform]||"").slice(0,2).toUpperCase()}</span><span class="ov"><b class="num">${fmt(v.views)}</b>${esc(v.label||"")}<br><u>Watch on ${PL[v.platform]||"the app"}</u></span></a>`;
+    const stCol = c => c.ratio>=1 ? "var(--ok)" : c.p24===0 ? "var(--bad)" : "var(--warn)";
+    $("strip").innerHTML = creators.map((c,i)=>`<button type="button" role="tab" data-i="${i}"><i style="background:${stCol(c)}"></i>${esc(c.name)}</button>`).join("");
+    $("car").innerHTML = creators.map((c,i)=>{
+      const meds = c.accounts.filter(a=>a.posts_scanned).map(a=>a.views_median||0);
+      return `<article class="slide" id="cr-${i}" aria-label="${esc(c.name)}"><div>
+      <div class="head"><div><span class="pill ${c.ratio>=1?"ok":c.p24===0?"bad":"warn"}">${esc(c.tag || (c.ratio>=1?"On target":"Behind"))}</span><h3 style="margin-top:8px">${esc(c.name)}</h3><div class="note">${c.socials} accounts</div></div><div class="rk">#${i+1}</div></div>
+      <div class="kpis"><div><b class="num">${fmt(c.views)}</b><span>views</span></div><div><b class="num" style="color:${stCol(c)}">${c.p24}/${c.target}</b><span>posts 24 h</span></div><div><b class="num">${meds.length?fmt(Math.max(...meds)):"–"}</b><span>best median</span></div></div>
+      <div class="ana"><p style="margin:0">${esc(c.text||"")}</p>${c.next?`<div class="nx"><b>Next:</b> ${esc(c.next)}</div>`:""}</div>
+      ${(c.videos||[]).length?`<div class="eyebrow" style="margin-top:16px">Their best videos</div><div class="vids">${c.videos.map(vcard).join("")}</div>`:""}
+      ${(c.remakes||[]).length?`<div class="rem"><div class="eyebrow">Remake these ${c.remakes.length}</div>${c.remakes.map(r=>`<div class="rrow">${vcard({...r,label:""})}<div><b>${esc(r.label)}</b> <span class="note">· ${esc(r.by)}, ${fmt(r.views)} views</span><p>${esc(r.how)}</p></div></div>`).join("")}</div>`:""}
+      ${c.accounts.map(a=>{
+        const label = a.handle ? "@"+a.handle : (a.url||"").replace(/^https?:\/\/(www\.)?/,"").slice(0,32) || "account";
         const bars = days.map(dd=>{ const n=(a.last7_by_day||{})[dd]||0; return `<span title="${dd}: ${n}" class="${n>=T?"hit":n?"some":""}" style="height:${n?Math.min(100,25+15*n):18}%"></span>`; }).join("");
         return `<div class="acc"><span class="chip ${a.platform}">${PL[a.platform]?PL[a.platform].slice(0,2).toUpperCase():"?"}</span><span class="name">${a.url?`<a href="${esc(a.url)}">${esc(label)}</a>`:esc(label)}</span><span class="days" aria-label="posts per day, last 7 days">${bars}</span>${
-          a.posts_scanned ? `<span class="stat num">${a.posts_24h} today · ${a.posts_per_day}/day · median ${fmt(a.views_median)} · ${a.followers!=null?fmt(a.followers)+" followers":"followers n/a"}</span>`
+          a.posts_scanned ? `<span class="stat num">${a.posts_24h} today · ${a.posts_per_day}/day · median ${fmt(a.views_median)} · best ${a.best?`<a href="${esc(a.best)}">${fmt(a.best_views)}</a>`:"–"} · ${a.followers!=null?fmt(a.followers)+" followers":"followers n/a"}</span>`
                           : `<span class="err">Not readable yet: ${esc(a.error||"no videos")}</span>`}</div>`;
-      }).join("")}</div></div>`).join("");
-
+      }).join("")}</div></article>`;}).join("");
+    const car = $("car"), strip = $("strip");
+    const setOn = i => strip.querySelectorAll("button").forEach((b,j)=>b.classList.toggle("on", j===i));
+    strip.onclick = e => { const b = e.target.closest("button"); if(!b) return; const el=$("cr-"+b.dataset.i); car.scrollTo({left: el.offsetLeft - car.offsetLeft, behavior:"smooth"}); setOn(+b.dataset.i); };
+    const step = dir => car.scrollBy({left: dir * (car.querySelector(".slide").offsetWidth + 16), behavior:"smooth"});
+    $("prev").onclick = () => step(-1); $("next").onclick = () => step(1);
+    car.onscroll = () => { const w = car.querySelector(".slide").offsetWidth + 16; setOn(Math.round(car.scrollLeft / w)); };
+    setOn(0);
     const picks = d.picks || [];
-    $("picks").innerHTML = picks.length ? picks.map(p=>`<div class="pick"><div class="eyebrow">${esc(p.creator)} · ${PL[p.platform]||""} · ${esc(p.x_median?p.x_median+"× its account":"")}</div>
+    $("picks").innerHTML = picks.length ? picks.map(p=>`<div class="pick"><div class="media">${p.file?vcard({file:p.file,poster:p.poster,url:p.url,views:p.views,label:"",platform:p.platform}):""}<div style="min-width:0"><div class="eyebrow">${esc(p.creator)} · ${PL[p.platform]||""} · ${esc(p.x_median?p.x_median+"× its account":"")}</div>
         <div class="v num">${fmt(p.views)} views</div><p><b>${esc(p.title)}</b></p><p class="note">${esc(p.why||"")}</p>
-        ${p.how?`<div class="how"><b>How to remake:</b> ${esc(p.how)}</div>`:""}<p><a href="${esc(p.url)}">Watch the original</a></p></div>`).join("")
+        ${p.how?`<div class="how"><b>How to remake:</b> ${esc(p.how)}</div>`:""}<p><a href="${esc(p.url)}">Open the original</a></p></div></div></div>`).join("")
       : `<div class="panel state">The hook analysis of the best videos is being written.</div>`;
 
     $("top").innerHTML = (d.top_posts||[]).slice(0,15).map(p=>`<li><div style="min-width:0"><div><b>${esc(p.creator)}</b> <span class="chip ${p.platform}">${(PL[p.platform]||"").slice(0,2).toUpperCase()}</span> <span class="note">${esc((p.posted||"").slice(0,10))}</span></div><div class="cap">${esc(p.caption||"")}</div></div><a class="num" href="${esc(p.url)}">${fmt(p.views)}</a></li>`).join("");
@@ -281,17 +349,42 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
     skyline(creators.map(c=>({name:c.name, views:c.views})));
   }
 
+  // ---------- video player ----------
+  const vm = $("vm"), vmv = $("vmv");
+  document.addEventListener("click", e => {
+    const b = e.target.closest && e.target.closest("button.vcard"); if (!b) return;
+    vmv.src = b.dataset.file; $("vmt").textContent = b.dataset.label || ""; $("vml").href = b.dataset.url || "#";
+    if (vm.showModal) vm.showModal(); else vm.setAttribute("open","");
+    const pr = vmv.play(); if (pr && pr.catch) pr.catch(()=>{});
+  });
+  const closeVm = () => { vmv.pause(); vmv.removeAttribute("src"); vmv.load(); vm.close ? vm.close() : vm.removeAttribute("open"); };
+  $("vmc").onclick = closeVm; vm.addEventListener("cancel", e => { e.preventDefault(); closeVm(); });
+  vm.addEventListener("click", e => { if (e.target === vm) closeVm(); });
+
   // ---------- data ----------
   async function start(){
     const timer = setTimeout(()=>{ $("board").innerHTML = `<div class="state">The numbers could not be loaded. Open the page again in a moment.</div>`; }, 10000);
     const db = window.claude && window.claude.use ? await window.claude.use("db") : null;
     if (!db) { clearTimeout(timer); $("board").innerHTML = `<div class="state">Sign in to claude.ai to see the numbers.</div>`; return; }
-    db.doc("board/latest").onSnapshot(snap => {
-      clearTimeout(timer);
-      const d = snap && (snap.data ? snap.data() : snap);
-      if (!d || !d.creators) { $("board").innerHTML = `<div class="state">No scan yet. The first numbers arrive after the next scan.</div>`; return; }
+    let latest = null, extra = null;
+    const draw = () => {
+      if (!latest || !latest.creators) return;
+      const d = JSON.parse(JSON.stringify(latest));
+      if (extra) {
+        const A = extra.analysis || {}, R = extra.remakes || {pool:{}, assign:{}};
+        d.creators.forEach(c => { Object.assign(c, A[c.name] || {}); c.remakes = ((R.assign||{})[c.name] || []).map(k => R.pool[k]).filter(Boolean); });
+        if (extra.picks) d.picks = extra.picks;
+      }
       render(d);
-    }, err => { clearTimeout(timer); $("board").innerHTML = `<div class="state">The numbers could not be loaded (${esc(err && err.message || "error")}).</div>`; });
+    };
+    const fail = err => { clearTimeout(timer); $("board").innerHTML = `<div class="state">The numbers could not be loaded (${esc(err && err.message || "error")}).</div>`; };
+    const val = snap => snap && (snap.data ? snap.data() : snap);
+    db.doc("board/latest").onSnapshot(snap => {
+      clearTimeout(timer); latest = val(snap);
+      if (!latest || !latest.creators) { $("board").innerHTML = `<div class="state">No scan yet. The first numbers arrive after the next scan.</div>`; return; }
+      draw();
+    }, fail);
+    db.doc("board/analysis").onSnapshot(snap => { extra = val(snap); draw(); }, () => {});
   }
   start();
 })();

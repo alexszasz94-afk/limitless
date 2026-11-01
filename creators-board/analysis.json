@@ -1,21 +1,185 @@
 {
-"Dennis":{"tag":"Top performer","text":"The team's best account: Instagram @heatroyalco gets ~29k views on an ordinary video and has 3 videos over 50k this week. Facebook hits too (64k and 57k). TikTok is the weak spot (median 450). Posting 2–5 a day on Instagram, 0–3 elsewhere.","next":"Go to 5 a day on Instagram and repost the Facebook hits (H&M window, flat-lay) on TikTok. One Facebook page is private: send its public page link.",
- "videos":[{"file":"v/dennis-ig-cake.mp4","poster":"v/dennis-ig-cake.jpg","url":"https://www.instagram.com/p/DfBilo1zKmC/","views":104474,"platform":"instagram","label":"Cake-tray reveal · \"I made this for cold American winters\""},{"file":"v/dennis-fb-hm.mp4","poster":"v/dennis-fb-hm.jpg","url":"https://www.facebook.com/reel/1659310232438614/","views":64222,"platform":"facebook","label":"H&M X SNOOPY · mall window surprise"},{"file":"v/dennis-fb-flatlay.mp4","poster":"v/dennis-fb-flatlay.jpg","url":"https://www.facebook.com/reel/1156578990129547/","views":57272,"platform":"facebook","label":"Flat-lay brushing · \"Do not let a Snoopy mom see this\""}]},
-"Abed":{"tag":"Viral TikTok, needs consistency","text":"Has the single biggest video (TikTok @snoopyycozy, 140k) and two strong Instagrams (median ~4k, a 56k Costco video). But @snoopyycozy TikTok stopped on 29 Oct, and both Facebook links can't be read.","next":"Restart @snoopyycozy TikTok today, remake the Costco X Snoopy hook on every account, send the public Facebook page links.",
- "videos":[{"file":"v/abed-ig-costco.mp4","poster":"v/abed-ig-costco.jpg","url":"https://www.instagram.com/p/DfDrbPRx6sG/","views":56205,"platform":"instagram","label":"Costco X Snoopy · staff with a pallet of boxes"},{"url":"https://www.tiktok.com/@snoopyycozy/video/7698076025992842527","views":139700,"platform":"tiktok","label":"Biggest video of the team (TikTok)"}]},
-"Elsayed":{"tag":"High views, low volume","text":"Instagram @comfort.princesstiara gets ~4.9k on an ordinary video (2nd best on the team) and a 115k hit, but posts only every second day. Facebook posts more (2/day) with lower views.","next":"Same Instagram, 5 a day: \"Princess must have\" works (45k, 28k, 25k this week). Add a TikTok account.",
- "videos":[{"file":"v/elsayed-fb.mp4","poster":"v/elsayed-fb.jpg","url":"https://www.facebook.com/reel/1517444910442120/","views":6556,"platform":"facebook","label":"\"What people think we sell\" vs the handmade robe"},{"url":"https://www.instagram.com/p/DeK1fJvhc6v/","views":115451,"platform":"instagram","label":"Best Instagram (115k)"}]},
-"Dax":{"tag":"Big followers, few posts","text":"Instagram has 7.3k followers but only ~0.8 posts a day and ~1.7k views per video. TikTok the same pace. The two Facebook links are single reels, not pages.","next":"Use the followers: 5 a day with the proven hooks (H&M window, cake tray). Send the Facebook page links.",
- "videos":[{"url":"https://www.instagram.com/p/Dew3Za9KUp_/","views":3268,"platform":"instagram","label":"Best Instagram"},{"url":"https://www.tiktok.com/@snoopy_snugs/video/7699323681524387080","views":3868,"platform":"tiktok","label":"Best TikTok"}]},
-"Elgabry":{"tag":"Posting, views low","text":"Posts 1–3 a day on TikTok and Instagram, but videos stay under 2.5k and followers are tiny (13–55). Even the cake hook (Facebook) got only 309 views there. One Facebook profile is private.","next":"Switch to the hooks that win elsewhere on the team (H&M window, Costco pallet, flat-lay) and post 5 a day.",
- "videos":[{"file":"v/elgabry-fb.mp4","poster":"v/elgabry-fb.jpg","url":"https://www.facebook.com/reel/4409861029230780/","views":309,"platform":"facebook","label":"Cake with torch and knife · \"Don't show this to a Snoopy lover\""}]},
-"Madalina":{"tag":"One Facebook hit, then stopped","text":"Her Facebook got a 20k video on 23 Oct, then no Facebook posts since. TikTok and Instagram post under 1 a day with ~150–600 views.","next":"Restart Facebook with the same idea as the 20k video, and 5 a day everywhere.",
- "videos":[{"file":"v/madalina-fb.mp4","poster":"v/madalina-fb.jpg","url":"https://www.facebook.com/reel/1391020019450992/","views":19973,"platform":"facebook","label":"\"DO NOT show this to your mom\" · try-on"}]},
-"Yusuf":{"tag":"Most consistent, low views","text":"Exactly 2 a day on TikTok and Instagram every day this week — the most regular on the team — but views stay low (~150–400). Facebook got one 10k hit.","next":"Keep the rhythm, raise it to 5 a day, and swap to the proven hooks; the 10k \"Moms are so hard to gift\" roll is a good one to repeat.",
- "videos":[{"file":"v/yusuf-fb.mp4","poster":"v/yusuf-fb.jpg","url":"https://www.facebook.com/reel/1846817606341165/","views":10282,"platform":"facebook","label":"POV roll kick · \"Moms are so hard to gift\""}]},
-"Muaz":{"tag":"Inactive since 25 Oct","text":"No new video on any account since 25 October. Before that ~1 a day with low views; the best was a 5.9k H&M X Snoopy store reveal on Facebook.","next":"Restart today. Remake his own H&M reveal on all three accounts.",
- "videos":[{"file":"v/muaz-fb.mp4","poster":"v/muaz-fb.jpg","url":"https://www.facebook.com/reel/2152866801989482/","views":5859,"platform":"facebook","label":"H&M X Snoopy · red cloth pulled off the boxes"}]},
-"Miah":{"tag":"Just started","text":"Started 29 Oct with 8 videos in two days, nothing since 30 Oct. Views are still very low (a new account). Facebook profile is private.","next":"Post daily to warm up the accounts; use the proven hooks; send the public Facebook page link.","videos":[]},
-"Awada":{"tag":"Setting up","text":"Still making the accounts: one Instagram video so far. Facebook is private.","next":"Finish the TikTok account and start 5 a day.","videos":[]},
-"Jonny":{"tag":"Account link missing","text":"Only a reel link was given, so the account can't be followed yet.","next":"Send the profile links of his accounts.","videos":[]}
+ "Dennis": {
+  "tag": "Top performer",
+  "text": "The team's best account: Instagram @heatroyalco gets ~29k views on an ordinary video and has 3 videos over 50k this week. Facebook hits too (64k and 57k). TikTok is the weak spot (median 450). Posting 2–5 a day on Instagram, 0–3 elsewhere.",
+  "next": "Go to 5 a day on Instagram and repost the Facebook hits (H&M window, flat-lay) on TikTok. One Facebook page is private: send its public page link.",
+  "videos": [
+   {
+    "file": "v/dennis-ig-cake.mp4",
+    "poster": "v/dennis-ig-cake.jpg",
+    "url": "https://www.instagram.com/p/DfBilo1zKmC/",
+    "views": 104474,
+    "platform": "instagram",
+    "label": "Cake-tray reveal · \"I made this for cold American winters\""
+   },
+   {
+    "file": "v/dennis-fb-hm.mp4",
+    "poster": "v/dennis-fb-hm.jpg",
+    "url": "https://www.facebook.com/reel/1659310232438614/",
+    "views": 64222,
+    "platform": "facebook",
+    "label": "H&M X SNOOPY · mall window surprise"
+   },
+   {
+    "file": "v/dennis-fb-flatlay.mp4",
+    "poster": "v/dennis-fb-flatlay.jpg",
+    "url": "https://www.facebook.com/reel/1156578990129547/",
+    "views": 57272,
+    "platform": "facebook",
+    "label": "Flat-lay brushing · \"Do not let a Snoopy mom see this\""
+   }
+  ]
+ },
+ "Abed": {
+  "tag": "Strong Instagram",
+  "text": "Instagram @snugsnoopy gets ~4k views on an ordinary video, with a 56k Costco X Snoopy hit and a 42k this week; TikTok @snugsnoopy1 posts 2–5 a day (median ~600, best 11.6k). Facebook profile can't be read (private).",
+  "next": "Go to 5 a day on Instagram and TikTok; remake the Costco hook on TikTok; send the public Facebook page link.",
+  "videos": [
+   {
+    "file": "v/abed-ig-costco.mp4",
+    "poster": "v/abed-ig-costco.jpg",
+    "url": "https://www.instagram.com/p/DfDrbPRx6sG/",
+    "views": 56205,
+    "platform": "instagram",
+    "label": "Costco X Snoopy · staff with a pallet of boxes"
+   }
+  ]
+ },
+ "Elsayed": {
+  "tag": "Viral TikTok, needs consistency",
+  "text": "@snoopyycozy has the team's biggest TikTok (140k) and a solid Instagram (median ~3.5k), but the TikTok stopped on 29 Oct and Instagram posts only ~1 a day. The Facebook link is a private reel.",
+  "next": "Restart @snoopyycozy TikTok today and post 5 a day on both; send the public Facebook page link.",
+  "videos": [
+   {
+    "url": "https://www.tiktok.com/@snoopyycozy/video/7698076025992842527",
+    "views": 139700,
+    "platform": "tiktok",
+    "label": "Biggest TikTok of the team"
+   },
+   {
+    "url": "https://www.instagram.com/p/DfIWaJoSU8S/",
+    "views": 22157,
+    "platform": "instagram",
+    "label": "Best Instagram"
+   }
+  ]
+ },
+ "Salsabel": {
+  "tag": "High views, low volume",
+  "text": "Instagram @comfort.princesstiara gets ~4.9k on an ordinary video and a 115k hit; \"Princess must have\" did 45k, 28k and 25k this week, but she posts only every second day. Facebook posts ~2 a day with lower views.",
+  "next": "5 a day on Instagram with the \"Princess must have\" idea; add a TikTok account.",
+  "videos": [
+   {
+    "file": "v/elsayed-fb.mp4",
+    "poster": "v/elsayed-fb.jpg",
+    "url": "https://www.facebook.com/reel/1517444910442120/",
+    "views": 6556,
+    "platform": "facebook",
+    "label": "\"What people think we sell\" vs the handmade robe"
+   },
+   {
+    "url": "https://www.instagram.com/p/DeK1fJvhc6v/",
+    "views": 115451,
+    "platform": "instagram",
+    "label": "Best Instagram (115k)"
+   }
+  ]
+ },
+ "Dax": {
+  "tag": "Big followers, few posts",
+  "text": "Instagram has 7.3k followers but only ~0.8 posts a day and ~1.7k views per video. TikTok the same pace. The two Facebook links are single reels, not pages.",
+  "next": "Use the followers: 5 a day with the proven hooks (H&M window, cake tray). Send the Facebook page links.",
+  "videos": [
+   {
+    "url": "https://www.instagram.com/p/Dew3Za9KUp_/",
+    "views": 3268,
+    "platform": "instagram",
+    "label": "Best Instagram"
+   },
+   {
+    "url": "https://www.tiktok.com/@snoopy_snugs/video/7699323681524387080",
+    "views": 3868,
+    "platform": "tiktok",
+    "label": "Best TikTok"
+   }
+  ]
+ },
+ "Elgabry": {
+  "tag": "Posting, views low",
+  "text": "Posts 1–3 a day on TikTok and Instagram, but videos stay under 2.5k and followers are tiny (13–55). Even the cake hook (Facebook) got only 309 views there. One Facebook profile is private.",
+  "next": "Switch to the hooks that win elsewhere on the team (H&M window, Costco pallet, flat-lay) and post 5 a day.",
+  "videos": [
+   {
+    "file": "v/elgabry-fb.mp4",
+    "poster": "v/elgabry-fb.jpg",
+    "url": "https://www.facebook.com/reel/4409861029230780/",
+    "views": 309,
+    "platform": "facebook",
+    "label": "Cake with torch and knife · \"Don't show this to a Snoopy lover\""
+   }
+  ]
+ },
+ "Madalina": {
+  "tag": "One Facebook hit, then stopped",
+  "text": "Her Facebook got a 20k video on 23 Oct, then no Facebook posts since. TikTok and Instagram post under 1 a day with ~150–600 views.",
+  "next": "Restart Facebook with the same idea as the 20k video, and 5 a day everywhere.",
+  "videos": [
+   {
+    "file": "v/madalina-fb.mp4",
+    "poster": "v/madalina-fb.jpg",
+    "url": "https://www.facebook.com/reel/1391020019450992/",
+    "views": 19973,
+    "platform": "facebook",
+    "label": "\"DO NOT show this to your mom\" · try-on"
+   }
+  ]
+ },
+ "Yusuf": {
+  "tag": "Most consistent, low views",
+  "text": "Exactly 2 a day on TikTok and Instagram every day this week — the most regular on the team — but views stay low (~150–400). Facebook got one 10k hit.",
+  "next": "Keep the rhythm, raise it to 5 a day, and swap to the proven hooks; the 10k \"Moms are so hard to gift\" roll is a good one to repeat.",
+  "videos": [
+   {
+    "file": "v/yusuf-fb.mp4",
+    "poster": "v/yusuf-fb.jpg",
+    "url": "https://www.facebook.com/reel/1846817606341165/",
+    "views": 10282,
+    "platform": "facebook",
+    "label": "POV roll kick · \"Moms are so hard to gift\""
+   }
+  ]
+ },
+ "Muaz": {
+  "tag": "Inactive since 25 Oct",
+  "text": "No new video on any account since 25 October. Before that ~1 a day with low views; the best was a 5.9k H&M X Snoopy store reveal on Facebook.",
+  "next": "Restart today. Remake his own H&M reveal on all three accounts.",
+  "videos": [
+   {
+    "file": "v/muaz-fb.mp4",
+    "poster": "v/muaz-fb.jpg",
+    "url": "https://www.facebook.com/reel/2152866801989482/",
+    "views": 5859,
+    "platform": "facebook",
+    "label": "H&M X Snoopy · red cloth pulled off the boxes"
+   }
+  ]
+ },
+ "Miah": {
+  "tag": "Just started",
+  "text": "Started 29 Oct with 8 videos in two days, nothing since 30 Oct. Views are still very low (a new account). Facebook profile is private.",
+  "next": "Post daily to warm up the accounts; use the proven hooks; send the public Facebook page link.",
+  "videos": []
+ },
+ "Awada": {
+  "tag": "Setting up",
+  "text": "Still making the accounts: one Instagram video so far. Facebook is private.",
+  "next": "Finish the TikTok account and start 5 a day.",
+  "videos": []
+ },
+ "Jonny": {
+  "tag": "Account link missing",
+  "text": "Only a reel link was given, so the account can't be followed yet.",
+  "next": "Send the profile links of his accounts.",
+  "videos": []
+ }
 }

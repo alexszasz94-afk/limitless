@@ -1,5 +1,5 @@
 {
- "_note": "From Alex's spreadsheet updated_creators_for_snoopy_and_princcess.xlsx (1 Nov). Short links resolved. 'resolve' = only a reel link was given; the scan finds the owner.",
+ "_note": "From Alex's spreadsheet updated_creators_for_snoopy_and_princcess.xlsx (1 Nov). Short links resolved. 'resolve' = only a reel link was given; the scan finds the owner. Updated 1 Nov from updated_creators_for_snoopy_and_princcess_1.xlsx: snoopyycozy -> Elsayed; comfort.princesstiara + FB 61595458822598 -> Salsabel (Sal).",
  "creators": [
   {
    "name": "Abed",
@@ -15,7 +15,12 @@
     {
      "platform": "facebook",
      "url": "https://www.facebook.com/profile.php?id=61594499985489"
-    },
+    }
+   ]
+  },
+  {
+   "name": "Elsayed",
+   "accounts": [
     {
      "platform": "tiktok",
      "handle": "snoopyycozy"
@@ -31,7 +36,7 @@
    ]
   },
   {
-   "name": "Elsayed",
+   "name": "Salsabel",
    "accounts": [
     {
      "platform": "instagram",

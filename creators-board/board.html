@@ -477,7 +477,6 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
   async function start(){
     const timer = setTimeout(()=>{ $("board").innerHTML = `<div class="state">The numbers could not be loaded. Open the page again in a moment.</div>`; }, 10000);
     const db = window.claude && window.claude.use ? await window.claude.use("db") : null;
-    if (!db) { clearTimeout(timer); $("board").innerHTML = `<div class="state">Sign in to claude.ai to see the numbers.</div>`; return; }
     let latest = null, extra = null, contacts = null;
     const draw = () => {
       if (!latest || !latest.creators) return;
@@ -492,13 +491,16 @@ footer{margin-top:44px;color:var(--muted);font:500 .74rem var(--mono);display:fl
     };
     const fail = err => { clearTimeout(timer); $("board").innerHTML = `<div class="state">The numbers could not be loaded (${esc(err && err.message || "error")}).</div>`; };
     const val = snap => snap && (snap.data ? snap.data() : snap);
-    db.doc("board/latest").onSnapshot(snap => {
-      clearTimeout(timer); latest = val(snap);
-      if (!latest || !latest.creators) { $("board").innerHTML = `<div class="state">No scan yet. The first numbers arrive after the next scan.</div>`; return; }
-      draw();
-    }, fail);
-    db.doc("board/analysis").onSnapshot(snap => { extra = val(snap); draw(); }, () => {});
-    db.doc("board/contacts").onSnapshot(snap => { contacts = val(snap); draw(); }, () => {});
+    // numbers + analysis are published with the page (latest.json, analysis.json); the database only holds private contacts
+    const getJSON = f => fetch(f, {cache:"no-store"}).then(r => r.ok ? r.json() : null).catch(() => null);
+    Promise.all([getJSON("latest.json"), getJSON("analysis.json")]).then(([L, A]) => {
+      clearTimeout(timer);
+      if (L && L.creators) { latest = L; extra = A; draw(); return; }
+      if (!db) { $("board").innerHTML = `<div class="state">Sign in to claude.ai to see the numbers.</div>`; return; }
+      db.doc("board/latest").onSnapshot(snap => { latest = val(snap); if (latest && latest.creators) draw(); else $("board").innerHTML = `<div class="state">No scan yet.</div>`; }, fail);
+      db.doc("board/analysis").onSnapshot(snap => { extra = val(snap); draw(); }, () => {});
+    });
+    if (db) db.doc("board/contacts").onSnapshot(snap => { contacts = val(snap); draw(); }, () => {});
   }
   start();
 })();

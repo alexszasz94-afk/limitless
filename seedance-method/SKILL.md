@@ -35,3 +35,7 @@ Ideea lui Szasz: pui videoul viral în Higgsfield ca **video_reference**, scrii 
 
 ## Lecții
 - 1 nov: Seedance a picat fără motiv (creditele s-au întors) cu viralul brut ca `video_references`. Cauza probabilă: chipul real al unei persoane în videoul de referință. Soluția: estompezi fața cu ffmpeg (`crop` + `boxblur` + `overlay` doar pe secundele cu fața) și reîncerci.
+- 1 nov (test 02 Grinch): **Seedance refuză personajele protejate (`ip_detected`)**. Pentru ele: Kling 4.0 `video-edit` (decizia lui Szasz). Video-edit păstrează tăieturile originalului la ±0,1 s.
+- Referințele = **cadrele LOR** (unul pe fiecare plan, extras la secunda exactă) refăcute cu GPT Image 2.5 edit: aceeași încadrare, fără text, obiectele noastre. Câte o referință pentru FIECARE variantă de produs care apare pe ecran (nu grilă).
+- Kling cu 9–10 imagini mai „alunecă” o referință pe planul vecin. Verifici la 0,1 s, și pentru că toate variantele au aceleași tăieturi, **îmbini planurile bune din variante diferite exact la tăieturi** (ffmpeg trim + concat), fără credite în plus.
+- Studiul: cadre la 0,1 s + `ffmpeg -vf "select='gt(scene,0.25)',showinfo"` pentru tăieturi + logica produsului + lista obiectelor.

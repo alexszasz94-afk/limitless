@@ -14,3 +14,6 @@
 | v1 | instagram.com/p/DfFlgmHhxAJ (@grinchtissue, 219 likes) | originalul fără sunet | efde2a15 | tânăr creț, bunic, bărbat cu ochelari |
 | v2 | același | ieșirea v1 | 204b0f44 | tânăr blond, bunică, bunic barbă albă; sufragerie + spital din Pinterest |
 Rețeta exactă: `recipes/buttcracker-video-edit.md`.
+| v3 | același (analiza 86be2bf0) | originalul fără sunet (15 s) | 42ab4f5c | bărbat ~35 cu barbă (magazin garden-center), bunic cu ochelari rotunzi + căciulă (spital verde), bunică (bucătărie) — `products/buttcracker/video/buttcracker-v3.mp4` |
+
+v3 (6 nov): Kling a lungit mașina cu 1,2 s → în montaj am scos 6,72–7,96 s (a doua tragere, exact la tăietura lui Kling). Tăieturi finale 4,79 / 6,75 / 10,21 (original 4,6 / 6,62 / 10,07). 13,8 s.

@@ -11,3 +11,5 @@ Fata: `creator-kit/library/characters/character-07.jpg` (media `43a36543-f52d-48
 Verificat: ambele fețe ca în referințe, corp întreg, în prim-plan, semnele Walmart sus, pahar roșu de Crăciun fără logo, mâini OK, fără text lizibil pe pulover.
 
 v2 cald (Szasz: „fă mai caldă imaginea”): același cadru, doar culoare mai caldă local (ffmpeg colortemperature 4300 mix 0.55 + colorbalance spre roșu/galben), fără regenerare → `start-frame-v2-cuplu-cald.jpg`. Fețele rămân identice.
+
+v3 (Szasz: „din Higgsfield mai caldă” + „mai clară”): GPT Image 2.5 edit pe v2 (job `7cfa249e-5a52-496b-8d3a-67ab2905bd04`, refs: v2 + fata + băiatul) → lumină caldă aurie, luminițe pe brazi; apoi upscale bytedance 4k (job `b9ae5bfb-74df-4030-bb6f-b6759ad1c43a`, 2304x4096) → `start-frame-v3-cald-clar.jpg`. Verificat: aceleași fețe, aceeași încadrare, pielea naturală, semnele Walmart rămân.

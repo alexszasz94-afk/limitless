@@ -19,3 +19,8 @@ Szasz: „merg spre cameră, se opresc, ea scapă cafeaua, arată spre raft, am�
 Kling 4.0 image-to-video 1080p 6 s, job `e407e20c-f9cb-414a-9da3-15238b963e20` (start_image = v3 cald-clar `b9ae5bfb`, refs: produs bed865e3, fata, băiatul), sunet în 3 straturi, fără muzică (spectro OK).
 Verificat la 4 fps: 0–1,75 merg; ~2,0 cafeaua cade și se varsă; ea arată; 2,5–3,7 râd tare amândoi; ~3,75 whip-pan. ❌ raftul din hook (4–6 s): spărgătorii cu fața, șervețelul prin față → NEFOLOSIT.
 Montaj v4: hook 0–3,8 + v3 3,7–6,72 (whip-pan → raftul cu spatele, mașina) + v3 7,96–15,04 (spital, bucătărie); text 🇩🇪, râsete 0.8 + muzica originalului 0.7. 13,9 s → `products/buttcracker/video/buttcracker-v4-walmart.mp4`.
+
+## Hook Seedance + video v5 (6 nov, Szasz: „fă cu Seedance, mai realist, ea să cadă pe spate”)
+Seedance 2.5 omni_reference, start_image = v3 cald-clar (`b9ae5bfb`), refs fata + băiatul, 5 s, audio generat. Draft 480p `223271d7-c09b-41c0-b63d-1455f7cbf5d6` → final 1080p `d098d805-79d5-439c-8c84-db9d68b4b824` (`hook-seedance-1080p.mp4`). Prompt = cel din job (timeline pe secunde + SOUND fără muzică).
+Verificat la 4 fps: merg 0–1,7; cafeaua cade ~1,8 și se varsă; ea arată spre dreapta; râde și cade pe spate ~2,8–3,7; el se îndoaie și arată spre dreapta 4,2–5. Fețe constante, fără muzică. Camera NU face whip-pan la final → tăiat direct pe whip-pan-ul din v3.
+Montaj v5: hook 0–5,0 + v3 3,7–6,72 + v3 7,96–15,04; text 🇩🇪; râsete 0.8 + muzica originalului 0.7 (fade 13,2–14). 15,1 s → `products/buttcracker/video/buttcracker-v5-walmart-seedance.mp4`. Tăieturi 5,0 / 6,08 / 8,04 / 11,5.

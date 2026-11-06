@@ -36,3 +36,6 @@ Montaj: hook 0–6,6 + B-roll 0–10, scalat local la 1080x1920 (fără generare
 - Bunicul (șervețelul nu ieșea) refăcut: Kling 720p 4 s, job `80ac0d37-dead-4b77-aeec-58469134a993`, input original 10,07–14 (media `c5ac3b12`); șervețelul iese la 1,4 s → folosit 0,69–4,04 ca ieșirea să cadă pe bășina de la 10,8.
 - Verificat: mașina iese 7,7 ↔ bășină 7,6–7,75; biroul 9,6 ↔ 9,4–9,8; bunicul ~13,0 ↔ 12,8–13,05. 15,5 s → `products/buttcracker/video/buttcracker-v7.mp4`.
 REGULĂ de metodă: la orice B-roll Buttcracker făcut cu video-edit pe original, sunetul originalului se pune decalat cu (lungimea hook-ului − secunda din original unde începe B-roll-ul), apoi se verifică fiecare tragere ↔ bășină.
+
+## v8 = v7 la 1080p (6 nov, Szasz: „e ok, dă upscale la 1080”)
+Hook: Seedance final 1080p din draft-ul aprobat be6dbe98 → job `eca72ebe-a076-45c3-88a8-13e33a8792ab` (aceeași mișcare). B-roll: upscale bytedance 1080p aigc 24fps → `05ab9a6e-9132-46af-afd3-f69a470de743` (mașină/birou/bunic) + `8198d5a8-0672-49a6-a8cc-5ec2c5b79a50` (bunicul refăcut). Montaj identic cu v7. Verificat: tăieturi 6,62/8,71/12,17, bășini 7,6 / 9,4–9,8 / 12,8–13,0. → `products/buttcracker/video/buttcracker-v8-1080p.mp4` (FINAL aprobat).

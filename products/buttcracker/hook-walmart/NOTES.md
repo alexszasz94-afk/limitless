@@ -39,3 +39,10 @@ REGULĂ de metodă: la orice B-roll Buttcracker făcut cu video-edit pe original
 
 ## v8 = v7 la 1080p (6 nov, Szasz: „e ok, dă upscale la 1080”)
 Hook: Seedance final 1080p din draft-ul aprobat be6dbe98 → job `eca72ebe-a076-45c3-88a8-13e33a8792ab` (aceeași mișcare). B-roll: upscale bytedance 1080p aigc 24fps → `05ab9a6e-9132-46af-afd3-f69a470de743` (mașină/birou/bunic) + `8198d5a8-0672-49a6-a8cc-5ec2c5b79a50` (bunicul refăcut). Montaj identic cu v7. Verificat: tăieturi 6,62/8,71/12,17, bășini 7,6 / 9,4–9,8 / 12,8–13,0. → `products/buttcracker/video/buttcracker-v8-1080p.mp4` (FINAL aprobat).
+
+## v9 (6 nov, Szasz: „la bătrân tot nu iese bine șervețelul”)
+Problema (zoom 8 fps): șervețelul era apucat din lateral, se deforma și rămânea agățat de spate.
+- Încercarea 1: Kling image-to-video din primul cadru + refs produs & bunic (job `7a5852d6`) → ❌ Kling a tăiat spre o masă și spre fotoliul roșu din poza bunicului; șervețelul ca o panglică.
+- Încercarea 2 (BUNĂ): Kling 4.0 image-to-video 720p, 4 s, job `66c9f9b2-7b2c-4475-9611-6ad8004e155d`, DOAR start_image (cadrul cu mâna pe vârful șervețelului, media `b1e95efa`), fără alte referințe, prompt „ONE single continuous shot… never cut to another place” + „one normal square white facial tissue… never a long ribbon”. Upscale 1080p `38371284-7849-4d36-a323-c979eb5274f0`.
+LECȚIE: la image-to-video NU pune poza persoanei ca referință dacă are alt decor (Kling sare în decorul pozei). Startul ajunge.
+Montaj ca v8, bunicul = gp3[0:3,34]; șervețelul iese la 12,9 ↔ bășina 12,8–13,05. → `products/buttcracker/video/buttcracker-v9-1080p.mp4`.

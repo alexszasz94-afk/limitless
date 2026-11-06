@@ -199,3 +199,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 2026-11-06 (Szasz): NU se mai face nimic la 1080p până nu spune Szasz — Seedance doar draft 480p, Kling la 720p.
 - 2026-11-06 (Szasz): hook-ul cu întoarcerea camerei spre raft se face DINTR-O BUCATĂ (aceeași generare), cu raftul arătând frumos și natural în același magazin — nu se lipește raftul din alt video (raftul de lemn din v3 lipit după Walmart = nenatural).
 - 2026-11-06 (Szasz): la Buttcracker, după hook, B-roll-ul cu Kling are la FIECARE video persoane NOI și acțiuni NOI (nu se refolosește B-roll-ul altui video). „Fii inteligent.”
+- 2026-11-06 (Szasz): IMAGINI — de acum DOAR GPT Image 2.6 Sunburst (`gpt_image_2_6`, high, 9:16, 4k) la orice poză. Înlocuiește GPT Image 2.5 (regula 28 oct).

@@ -13,7 +13,7 @@ Fișier scurt, ca un chat nou să nu se blocheze citind tot. Nimic nu s-a șters
 **Unelte**
 - Halate / creator-kit: video DOAR **Kling 4.0 (`kling4_0`) 1080p** — `video-edit` pe clipul original FĂRĂ sunet; vocea o face tot Kling. Seedance și Genjutsu NU.
 - Proiectul `seedance-method/`: Seedance 2.5 PERMIS; dacă dă `ip_detected` (Grinch, Snoopy) → Kling 4.0 `video-edit`.
-- Imagini DOAR **GPT Image 2.5** (`gpt_image_2_5`, high, 9:16, 4k).
+- Imagini DOAR **GPT Image 2.6 Sunburst** (`gpt_image_2_6`, high, 9:16, 4k) — regula 6 nov (înainte 2.5).
 
 **Înainte de orice generare**
 1. Caută întâi în `recipes/` — ce a ieșit bine se copiază cuvânt cu cuvânt, se schimbă doar `<...>`. Orice modificare se scrie ÎNTÂI în rețetă, datată.

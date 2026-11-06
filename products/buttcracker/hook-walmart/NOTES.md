@@ -29,3 +29,10 @@ Montaj v5: hook 0–5,0 + v3 3,7–6,72 + v3 7,96–15,04; text 🇩🇪; râset
 Hook: Seedance 2.5 omni_reference DRAFT 480p, 7 s, job `be6dbe98-f97a-4d47-9faa-50e5ba145d98`; start_image = `4dea3580` (v2 cuplu, culoarea inițială), refs fata, băiatul, produsul bed865e3. O singură filmare: merg → cafeaua cade ~1,8 → ea cade pe spate ~2,5–3,5 → el arată → camera se întoarce 4,5–5,3 → raft Walmart de metal cu spărgătorii cu spatele, șervețelele afară.
 B-roll: Kling 4.0 video-edit 720p, 10 s, job `72e974e6-3880-4fbd-b852-8e30520531b3`, input = original 4,6–14 s fără sunet (media `7338f6d7`); refs produs, femeie roșcată (character-13, media `1a4f1b3a`), bunic cu ochelari (Pinterest gpa-04, media `3b6fe2d5`). Scene: mașină bej + mână cu unghii roșii; femeia la birou trage șervețelul și râde; bunicul pe canapea lângă brad râde și își șterge ochii. Tăieturi 2,08 / 5,54 (original 2,0 / 5,5).
 Montaj: hook 0–6,6 + B-roll 0–10, scalat local la 1080x1920 (fără generare 1080p), text 🇩🇪, râsete 0.8 + muzica originalului 0.7 (prelungită cu crossfade). 16,6 s → `products/buttcracker/video/buttcracker-v6.mp4`.
+
+## v7 (6 nov, Szasz: „bășinile pe momentul când scoate” + „la unul nu i-a ieșit șervețelul”)
+- Bășinile din sunetul originalului: 5,55–5,85 / 6,2 (mașina), 7,4–7,8 / 8,1 (spital), 10,8–11,1 (masa) — găsite cu energia 40–250 Hz.
+- B-roll-ul Kling e video-edit pe originalul 4,6–14 s → tragerile cad pe aceleași secunde ⇒ sunetul originalului se pune DECALAT: video = original + 2,0 s (hook 6,6 s − 4,6 s).
+- Bunicul (șervețelul nu ieșea) refăcut: Kling 720p 4 s, job `80ac0d37-dead-4b77-aeec-58469134a993`, input original 10,07–14 (media `c5ac3b12`); șervețelul iese la 1,4 s → folosit 0,69–4,04 ca ieșirea să cadă pe bășina de la 10,8.
+- Verificat: mașina iese 7,7 ↔ bășină 7,6–7,75; biroul 9,6 ↔ 9,4–9,8; bunicul ~13,0 ↔ 12,8–13,05. 15,5 s → `products/buttcracker/video/buttcracker-v7.mp4`.
+REGULĂ de metodă: la orice B-roll Buttcracker făcut cu video-edit pe original, sunetul originalului se pune decalat cu (lungimea hook-ului − secunda din original unde începe B-roll-ul), apoi se verifică fiecare tragere ↔ bășină.

@@ -17,3 +17,8 @@ Rețeta exactă: `recipes/buttcracker-video-edit.md`.
 | v3 | același (analiza 86be2bf0) | originalul fără sunet (15 s) | 42ab4f5c | bărbat ~35 cu barbă (magazin garden-center), bunic cu ochelari rotunzi + căciulă (spital verde), bunică (bucătărie) — `products/buttcracker/video/buttcracker-v3.mp4` |
 
 v3 (6 nov): Kling a lungit mașina cu 1,2 s → în montaj am scos 6,72–7,96 s (a doua tragere, exact la tăietura lui Kling). Tăieturi finale 4,79 / 6,75 / 10,21 (original 4,6 / 6,62 / 10,07). 13,8 s.
+
+## Reguli (6 nov, Szasz)
+- Fără 1080p până zice el: Seedance draft 480p, Kling 720p.
+- Hook + întoarcerea spre raft = o singură generare, raft frumos, același magazin.
+- După hook: B-roll Kling NOU la fiecare video — alte persoane, alte locuri, alte acțiuni (pe ritmul/tăieturile originalului).

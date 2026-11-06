@@ -2,7 +2,9 @@
 
 Proprietar: Szasz. Vorbește cu el în română, simplu, fără jargon. Textul de marketing (replici, text pe ecran, caption-uri) e în engleză.
 
-Citește în ordinea asta:
+**LA ORICE CHAT NOU: citește ÎNTÂI doar `docs/00-START.md`** (unde am rămas + regulile active, rezumat). Fișierele de mai jos le deschizi doar când sarcina le cere — citite toate deodată blochează chatul. La final de lot/test actualizezi „Unde am rămas” din 00-START.md.
+
+Referințe complete (la nevoie), în ordinea asta:
 1. `docs/00-viziune.md` — ținta și cifrele.
 2. `docs/01-pipeline.md` — fiecare pas și modulul care îl face.
 3. `docs/02-reguli.md` — regulile absolute (cea mai recentă câștigă).

@@ -201,4 +201,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 2026-11-06 (Szasz): la Buttcracker, după hook, B-roll-ul cu Kling are la FIECARE video persoane NOI și acțiuni NOI (nu se refolosește B-roll-ul altui video). „Fii inteligent.”
 - 2026-11-06 (Szasz): IMAGINI — de acum DOAR GPT Image 2.6 Sunburst (`gpt_image_2_6`, high, 9:16, 4k) la orice poză. Înlocuiește GPT Image 2.5 (regula 28 oct).
 - 2026-11-06 (Szasz): Buttcracker — sunetele de bășini din montaje se iau DOAR din `products/buttcracker/sfx/` (tăiate din farts-top10.mp3 dat de Szasz), câte una pe fiecare tragere de șervețel, fix pe cadrul în care iese.
-- 2026-11-06 (Szasz): Buttcracker — muzica din montaje = The Drifters „White Christmas” (`products/buttcracker/music/white-christmas-drifters.mp3`), drop ~24,0 s pe tăietura hook → B-roll.
+- 2026-11-06 (Szasz): Buttcracker — muzica din montaje = The Drifters „White Christmas” (`products/buttcracker/music/white-christmas-drifters.mp3`), pornește de la intro (0 s), de la începutul videoului (Szasz: „de la intro poți să începi”).

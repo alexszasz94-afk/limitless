@@ -9,3 +9,5 @@ Urmează: Szasz aprobă / corectează, apoi animare Kling 4.0 image-to-video + r
 GPT Image 2.5 job `4dea3580-2be3-4af7-9066-04adea5e0734` → `start-frame-v2-cuplu.jpg`.
 Fata: `creator-kit/library/characters/character-07.jpg` (media `43a36543-f52d-4897-bbbf-a39570ad2651`). Băiatul: Pinterest „candid photo young man christmas sweater” (media `3203f00b-0acf-42a1-bdb4-4f29177231ec`, 1366x1707, photo-ok).
 Verificat: ambele fețe ca în referințe, corp întreg, în prim-plan, semnele Walmart sus, pahar roșu de Crăciun fără logo, mâini OK, fără text lizibil pe pulover.
+
+v2 cald (Szasz: „fă mai caldă imaginea”): același cadru, doar culoare mai caldă local (ffmpeg colortemperature 4300 mix 0.55 + colorbalance spre roșu/galben), fără regenerare → `start-frame-v2-cuplu-cald.jpg`. Fețele rămân identice.

@@ -27,3 +27,10 @@ De observat: în pat produsul stă pe pat lângă ea (nu pe noptieră) și nu ar
 - Text (Szasz): „Nutcracker? No” / „Meet the Buttcracker 😂🎄💩🇩🇪”.
 - Bășini mai încet (0,7): fart-02 la 9,70 (pat), fart-05 la 12,07 (birou), fart-04 la 16,22 (familie). White Christmas de la 0 (0,2 sub hook, 0,55 după).
 → `products/buttcracker/video/buttcracker-v11.mp4` (18,1 s).
+
+## Video v12 (7 nov, Szasz: „produsul mai mare la fata cu servanta”, „hook mai natural, fără pauze”)
+- Hook: Seedance draft 480p 7 s, job `8e85f35a-7774-445c-b975-eb1c27a78eb8` (start v5), mișcări naturale, „One, two, three!” 1,2–2,5, „Let's see how it comes out!” 2,6–3,6, reveal ~3,5, râd de la ~4,6. Folosit 0,9–7,0 (fără liniștea de la început).
+- Pat: Nano Banana Pro nu a apropiat camera (a2/a64a… identic) → zoom LOCAL pe poza bună (crop 60 %, 1440x2560, media `b5b83bee`) → Kling i2v 720p 3 s, job `fe65f0cc-ef52-45ae-a0d3-53aea4d8d518`; șervețelul iese ~0,9.
+- Montaj: hook 6,1 + pat 2,4 + birou 3,87 + familie 3,0 = 15,4 s; text „Nutcracker? No / Meet the Buttcracker 😂🎄💩🇩🇪”; bășini 0,7 la 6,95 / 9,30 / 13,25; White Christmas de la 0.
+→ `products/buttcracker/video/buttcracker-v12.mp4`.
+LECȚIE: ca să mărești produsul în cadru, decupează (zoom) local poza bună în loc să ceri modelului „camera mai aproape”.

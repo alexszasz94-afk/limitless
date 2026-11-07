@@ -202,3 +202,4 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 2026-11-06 (Szasz): IMAGINI — de acum DOAR GPT Image 2.6 Sunburst (`gpt_image_2_6`, high, 9:16, 4k) la orice poză. Înlocuiește GPT Image 2.5 (regula 28 oct).
 - 2026-11-06 (Szasz): Buttcracker — sunetele de bășini din montaje se iau DOAR din `products/buttcracker/sfx/` (tăiate din farts-top10.mp3 dat de Szasz), câte una pe fiecare tragere de șervețel, fix pe cadrul în care iese.
 - 2026-11-06 (Szasz): Buttcracker — muzica din montaje = The Drifters „White Christmas” (`products/buttcracker/music/white-christmas-drifters.mp3`), pornește de la intro (0 s), de la începutul videoului (Szasz: „de la intro poți să începi”).
+- 2026-11-07 (Szasz): IMAGINI — de acum TOATE cu Nano Banana Pro (`nano_banana_pro`, 9:16, 4k). Înlocuiește GPT Image 2.6 (regula 6 nov) și GPT Image 2.5.

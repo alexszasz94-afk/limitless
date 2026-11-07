@@ -19,3 +19,11 @@ De observat: în pat produsul stă pe pat lângă ea (nu pe noptieră) și nu ar
 ## v4 / v5 (7 nov)
 - v4 (GPT 2.6, job `b3a9f48c`): aceleași 2 personaje, poziție naturală (drepți) → animat Seedance draft `1eda2e43-2c80-46f8-b351-3ea1284125a9` (bun: stau natural, trag mantia, raftul, râd, el cade ~6–7 s).
 - v5 (Szasz: „alt start frame, alte personaje, alt Costco, editat de Crăciun”): Nano Banana Pro job `8f583000-458c-4e00-bf83-1b03bea306a4` pe poza reală Costco c2-11 (media `85b876b6`), personaje character-37 (roșcată, `934bdbe5`) + Pinterest gpa-24 (`cf295390`) → `start-frame-v5-craciun.jpg` (3072x5504). Decor de Crăciun (brazi în cutii, ghirlande cu luminițe, Moși gonflabili, semne Christmas Sale), mantia peste raft, amândoi drepți, câte un colț în mână.
+
+## Video v11 (7 nov) — hook Costco de Crăciun + B-roll 3 scene + text nou
+- Hook: Seedance draft 480p 9 s, job `ca85cd83-f235-4a78-b55e-32c59ed44242` (start v5 `8f583000`), numărătoare rară: „One” ~1,0 / „two” ~2,4 / „three” ~3,5 / „Let's see how it comes out!” 4,1–5,0; mantia ~5,3–6,0; râd ~7,8–9,0. Tăiat la 9,0 (Szasz: „se taie fix după ce râd puțin”).
+- Pat (Szasz: „să tragă de pe servantă”): start Nano Banana Pro `2a9b18fe` → Kling i2v 720p 3 s, DOAR start_image, job `54245135-161e-4b2a-90ad-107a3efb95d0`; șervețelul iese ~0,75, își suflă nasul.
+- Birou: br3 2,08–5,95; familie: fam2 0–3,0.
+- Text (Szasz): „Nutcracker? No” / „Meet the Buttcracker 😂🎄💩🇩🇪”.
+- Bășini mai încet (0,7): fart-02 la 9,70 (pat), fart-05 la 12,07 (birou), fart-04 la 16,22 (familie). White Christmas de la 0 (0,2 sub hook, 0,55 după).
+→ `products/buttcracker/video/buttcracker-v11.mp4` (18,1 s).

@@ -3,6 +3,7 @@
 Fișier scurt, ca un chat nou să nu se blocheze citind tot. Nimic nu s-a șters: istoricul complet e în `docs/02-reguli.md` (toate regulile, datate) și în celelalte fișiere. Le deschizi DOAR când lucrul de acum le cere.
 
 ## Unde am rămas
+- **7 nov — lot Snoopy (HeatPup), 3 videouri după reelul Grinch „Do NOT let a Grinch mom see this”** (metoda creatorilor: hook Kling video-edit + B-roll v4/v5 + conector + telecomandă + cozy): `products/snoopy-lot-nov7/snoopy-nov7-1..3.mp4` (720p mărit local la 1080x1920; 1080p din Higgsfield doar când zice Szasz).
 - Ultimul lucru făcut: **proiectul `seedance-method/`** (separat de halate), testul 02 — reel Snoopy x In-N-Out → nișa **Grinch**.
   - FINAL gata, fără sunet: `seedance-method/tests/02-snoopy-to-grinch/out/FINAL-grinch-1080p-silent.mp4` (îmbinare v5/v4 la tăieturi, verificat la 0,1 s → `out/VERIFICARE-FINAL.md`).
   - **Pasul următor:** montajul (muzică, text pe ecran în engleză, caption „Comment “X” for the link”), apoi 2–3 variante postate și măsurate.

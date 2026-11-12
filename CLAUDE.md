@@ -29,6 +29,7 @@ La `start`/`panou`: citește inbox-ul și actualizează config/agents. O regulă
 
 Comenzi noi (13 oct):
 - `produs nou` / `concept nou de produs` → skill `product-sheet` (referințe generate cu Higgsfield, Szasz aprobă; variațiile ca la HeatGrump, doar la concept nou).
+- `research produse` / `produse noi` / `caută pe AliExpress` → skill `aliexpress-research` (12 nov: produse noi de pe AliExpress cu emoție puternică și care se pot exagera cinstit; listă în `products/ideas/`, Szasz alege).
 - Primul video la orice produs → skill `pilot-video` (obligatoriu).
 - `rezultate` → skill `results` (Apify pe conturile noastre → `posts` → ce hook-uri merg la noi).
 - Ceva a picat / Szasz corectează → skill `log-lesson` (Mistakes log). Citește `lessons` înainte de orice producție.

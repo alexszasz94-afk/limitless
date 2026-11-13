@@ -1,0 +1,186 @@
+<title>AliExpress Christmas Board</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* layout: one header with the verdict, filter chips, then a 2-column board of equal product cards ranked by recommendation */
+:root{--bg:#f2f5f3;--surface:#ffffff;--ink:#14261f;--muted:#5a6b64;--line:#d6dfda;--pine:#1d6a4e;--berry:#b0233a;--gold:#96700f;--soft:#e7eeea;
+--display:"Space Grotesk",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1613;--surface:#16211d;--ink:#e6efea;--muted:#9aaea5;--line:#2a3a34;--pine:#5cc49a;--berry:#f0788a;--gold:#e0b84e;--soft:#1d2b26;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1613;--surface:#16211d;--ink:#e6efea;--muted:#9aaea5;--line:#2a3a34;--pine:#5cc49a;--berry:#f0788a;--gold:#e0b84e;--soft:#1d2b26;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:22px}
+h1{font-family:var(--display);font-size:clamp(26px,4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.kicker{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--berry);font-weight:600}
+.lede{max-width:68ch;color:var(--muted);margin:0}
+.top3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:0;padding:0;list-style:none}
+.top3 li{background:var(--soft);border-radius:10px;padding:12px 14px;min-width:0}
+.top3 b{font-family:var(--display);display:block}
+.top3 span{color:var(--muted);font-size:13.5px}
+.note{border-left:3px solid var(--gold);padding:2px 0 2px 12px;color:var(--muted);font-size:13.5px;max-width:80ch;margin:0}
+.note b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:500 13.5px var(--body);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chips button:focus-visible,a:focus-visible{outline:2px solid var(--berry);outline-offset:2px}
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));gap:16px;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card header{display:flex;gap:12px;align-items:flex-start}
+.rank{font:700 15px var(--display);color:var(--muted);border:1px solid var(--line);border-radius:6px;min-width:30px;height:30px;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.hd{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+h2{font:700 19px/1.2 var(--display);margin:0;text-wrap:balance}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11.5px;font-weight:600;letter-spacing:.03em;padding:2px 8px;border-radius:4px;background:var(--soft);color:var(--muted)}
+.t-new{color:var(--berry)} .t-xmas{color:var(--pine)}
+.score{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.score strong{font:700 28px/1 var(--display);color:var(--gold)} .score span{color:var(--muted);font-size:13px}
+p{margin:0} .what{color:var(--muted)}
+.lab{display:block;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.emo{font-weight:500}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px 14px;margin:0;padding:12px 0;border-block:1px solid var(--line)}
+.nums dt{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.nums dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}
+.crs{display:flex;flex-direction:column;gap:5px}
+.cr{display:grid;grid-template-columns:150px 1fr 18px;gap:10px;align-items:center;font-size:12.5px;color:var(--muted)}
+.cr i{height:6px;background:var(--soft);border-radius:3px;overflow:hidden;display:block}
+.cr b{display:block;height:100%;background:var(--pine)}
+.cr em{font-style:normal;font-weight:600;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.hooks ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.hooks q{display:block;font:500 15.5px/1.35 var(--display);quotes:"\201C" "\201D"}
+.hooks li span{font-size:13px;color:var(--muted)}
+.row{font-size:13.5px} .risk{color:var(--ink)}
+.links{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13.5px} .links .lab{flex-basis:100%}
+a{color:var(--pine);text-underline-offset:2px}
+footer{color:var(--muted);font-size:13px;max-width:80ch}
+@media (max-width:480px){.cr{grid-template-columns:118px 1fr 18px}}
+</style>
+<div class="wrap">
+<div><div class="kicker">Product research · AliExpress · 13 Nov 2026</div><h1>10 products to test this Christmas</h1></div>
+<p class="lede">Picked for emotion in the first three seconds and for scenes we can exaggerate without lying about the product. Every product is a hypothesis until our own numbers come in from a pilot video.</p>
+<ul class="top3">
+<li><b>1. Magic Trail Wall Light</b><span>The only one with a wave of fresh listings and big order counts already (2,000+ and 1,000+).</span></li>
+<li><b>2. Sleigh Pet Bed</b><span>Highest emotion score (44/50) and a fresh wave of listings, but few orders so far.</span></li>
+<li><b>3. Felt Tree Cat House</b><span>Not new, but the idea has demand proof: a related product reportedly hit 34M views on one video.</span></li>
+</ul>
+<p class="note"><b>Not verified yet:</b> shipping cost and delivery days to the US (product pages need a login), how many accounts already run each product on Instagram and TikTok, and dollars per 1M views. Prices, orders and ratings were read from AliExpress search pages on 13 Nov 2026. "New" is an estimate from the listing number and from how many fresh listings appeared together. Christmas items must reach buyers before Dec 25, so the selling window closes in early December.</p>
+<div class="chips" role="group" aria-label="Filter products">
+<button id="f-all" data-f="" aria-pressed="true">All 10</button><button id="f-new" data-f="new" aria-pressed="false">New on AliExpress</button><button id="f-xmas" data-f="xmas" aria-pressed="false">Christmas</button><button id="f-pets" data-f="pets" aria-pressed="false">Pets</button>
+</div>
+<div class="board"><article class="card" data-tags="new xmas">
+<header><span class="rank">1</span><div class="hd"><h2>Christmas Magic Trail Wall Light</h2><div class="tags"><span class="tag t-new">New on AliExpress</span><span class="tag t-xmas">Christmas</span></div></div><div class="score"><strong>37</strong><span>/50</span></div></header>
+<p class="what">LED wall decoration: a glowing curved trail with Santa, sleigh and reindeer that hangs on the wall.</p>
+<p class="emo"><span class="lab">Emotion</span>Parents and kids feel &#x27;Christmas magic&#x27; the second the room lights go off and the trail lights up.</p>
+<dl class="nums"><div><dt>Supplier price</dt><dd>$12.50 to $18.93</dd></div><div><dt>Orders</dt><dd>2,000+ and 1,000+</dd></div><div><dt>Rating</dt><dd>4.9 (both top listings)</dd></div><div><dt>Our price</dt><dd>$39.99</dd></div><div><dt>Margin before shipping</dt><dd>about $21 to $27</dd></div></dl>
+<p class="row"><span class="lab">How new</span>Every listing found is a fresh one (about 10 sellers appeared at once). The two biggest already show 2,000+ and 1,000+ orders.</p>
+<div class="crs"><div class="cr"><span>Emotion in 3 s</span><i><b style="width:80%"></b></i><em>8</em></div><div class="cr"><span>Can be exaggerated</span><i><b style="width:70%"></b></i><em>7</em></div><div class="cr"><span>Filmable reaction</span><i><b style="width:60%"></b></i><em>6</em></div><div class="cr"><span>Clear without sound</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Comments and shares</span><i><b style="width:70%"></b></i><em>7</em></div></div>
+<div class="hooks"><span class="lab">Exaggerated hooks</span><ol><li><q>POV: you turn the lights off and Santa takes off across your wall</q><span>Dark room, kid flips the switch, the trail lights up from bottom to top. 3-2-1 reveal.</span></li><li><q>My husband said no more Christmas decorations. So I used the wall.</q><span>She hangs it in one move, he walks in and freezes. Pattern interrupt, humor.</span></li></ol></div>
+<p class="row risk"><span class="lab">Risks</span>Clone listings at $6 to $9 with ratings of 1 to 3 stars: quality varies a lot, so the supplier must be one of the 4.9 ones. Some versions need assembly. Low price on AliExpress makes $39.99 hard to defend without a larger size or a 2-pack.</p>
+<p class="row"><span class="lab">Competition</span>No US retailer or social post found under this name in a web search. Not checked on Instagram or TikTok directly.</p>
+<div class="links"><span class="lab">AliExpress listings</span><a href="https://www.aliexpress.us/item/3256813237585599.html" target="_blank" rel="noopener">Top listing, 2,000+ sold</a><a href="https://www.aliexpress.us/item/3256813406056769.html" target="_blank" rel="noopener">Second listing, 1,000+ sold</a></div>
+</article><article class="card" data-tags="new xmas pets">
+<header><span class="rank">2</span><div class="hd"><h2>Christmas Sleigh Pet Bed</h2><div class="tags"><span class="tag t-new">New on AliExpress</span><span class="tag t-xmas">Christmas</span><span class="tag t-pets">Pets</span></div></div><div class="score"><strong>44</strong><span>/50</span></div></header>
+<p class="what">Plush pet bed shaped like Santa&#x27;s sleigh, for cats and small dogs. Washable cover, non-slip base.</p>
+<p class="emo"><span class="lab">Emotion</span>Pet owners melt when their dog or cat sits in Santa&#x27;s sleigh. It is a ready-made Christmas photo.</p>
+<dl class="nums"><div><dt>Supplier price</dt><dd>$11.09 to $36.59</dd></div><div><dt>Orders</dt><dd>about 120 in total across 11 listings</dd></div><div><dt>Rating</dt><dd>5.0 on the few rated listings</dd></div><div><dt>Our price</dt><dd>$39.99 to $49.99</dd></div><div><dt>Margin before shipping</dt><dd>about $13 to $29</dd></div></dl>
+<p class="row"><span class="lab">How new</span>11 listings, almost all fresh, each with only 3 to 21 orders. The wave is just starting on AliExpress.</p>
+<div class="crs"><div class="cr"><span>Emotion in 3 s</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Can be exaggerated</span><i><b style="width:80%"></b></i><em>8</em></div><div class="cr"><span>Filmable reaction</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Clear without sound</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Comments and shares</span><i><b style="width:90%"></b></i><em>9</em></div></div>
+<div class="hooks"><span class="lab">Exaggerated hooks</span><ol><li><q>Do NOT show this to a dog mom before Christmas</q><span>Dog sits in the sleigh wearing reindeer antlers, owner covers her mouth. Same hook family as our Grinch reel.</span></li><li><q>He thinks he is delivering the presents this year</q><span>Small dog in the sleigh, gift boxes stacked behind him, &#x27;sleigh bells&#x27; on the beat. Humor plus reaction.</span></li></ol></div>
+<p class="row risk"><span class="lab">Risks</span>Very little order proof on AliExpress so far. Similar beds are sold by Walmart sellers for $13 to $35 and T.J. Maxx carried one, so price pressure is real. Size: only small pets fit, which must be clear in the video.</p>
+<p class="row"><span class="lab">Competition</span>A festive cat bed was reported as viral and sold out (Yahoo). No Instagram or TikTok account count yet.</p>
+<div class="links"><span class="lab">AliExpress listings</span><a href="https://www.aliexpress.us/item/3256810366894861.html" target="_blank" rel="noopener">21 sold, 5.0</a><a href="https://www.aliexpress.us/item/3256813037054703.html" target="_blank" rel="noopener">17 sold, 5.0</a><a href="https://www.aliexpress.us/item/3256812984784938.html" target="_blank" rel="noopener">Larger sled bed, $36.59</a></div>
+</article><article class="card" data-tags="xmas pets">
+<header><span class="rank">3</span><div class="hd"><h2>Felt Christmas Tree Cat House</h2><div class="tags"><span class="tag t-xmas">Christmas</span><span class="tag t-pets">Pets</span></div></div><div class="score"><strong>40</strong><span>/50</span></div></header>
+<p class="what">Cone-shaped felt cat cave that looks like a small Christmas tree, with pom-pom ornaments.</p>
+<p class="emo"><span class="lab">Emotion</span>Cat owners laugh and relate: every cat attacks the real tree, this one is theirs.</p>
+<dl class="nums"><div><dt>Supplier price</dt><dd>$24.79 to $36.08</dd></div><div><dt>Orders</dt><dd>90 and 39</dd></div><div><dt>Rating</dt><dd>4.8 and 4.9</dd></div><div><dt>Our price</dt><dd>$49.99</dd></div><div><dt>Margin before shipping</dt><dd>about $14 to $25</dd></div></dl>
+<p class="row"><span class="lab">How new</span>Not brand new: listed for some time and also sold by Walmart and Etsy. A newer 2-level version has 15 orders.</p>
+<div class="crs"><div class="cr"><span>Emotion in 3 s</span><i><b style="width:80%"></b></i><em>8</em></div><div class="cr"><span>Can be exaggerated</span><i><b style="width:70%"></b></i><em>7</em></div><div class="cr"><span>Filmable reaction</span><i><b style="width:80%"></b></i><em>8</em></div><div class="cr"><span>Clear without sound</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Comments and shares</span><i><b style="width:80%"></b></i><em>8</em></div></div>
+<div class="hooks"><span class="lab">Exaggerated hooks</span><ol><li><q>The only Christmas tree my cat is allowed to destroy</q><span>Cat knocks ornaments off the real tree, cut to the cat asleep inside its own tree. Problem and solution.</span></li><li><q>3... 2... 1... find the cat</q><span>Living room with two trees, the small one moves, a paw comes out. 3-2-1 reveal.</span></li></ol></div>
+<p class="row risk"><span class="lab">Risks</span>Felt shape may arrive folded and need reshaping. Amazon lists one at $49.88 and Etsy at about $62, so $49.99 is the ceiling.</p>
+<p class="row"><span class="lab">Competition</span>A different product, a cat tree that turns into a Christmas tree, reportedly reached 34 million views on one video and sold out. That shows demand for the idea, not for this exact item.</p>
+<div class="links"><span class="lab">AliExpress listings</span><a href="https://www.aliexpress.us/item/3256810025060388.html" target="_blank" rel="noopener">Finished cat house, 90 sold</a><a href="https://www.aliexpress.us/item/3256810025048367.html" target="_blank" rel="noopener">Handmade felt cone, 39 sold</a><a href="https://www.aliexpress.us/item/3256813284738191.html" target="_blank" rel="noopener">New 2-level version</a></div>
+</article><article class="card" data-tags="new xmas">
+<header><span class="rank">4</span><div class="hd"><h2>Pop-Up Pre-Decorated Christmas Tree</h2><div class="tags"><span class="tag t-new">New on AliExpress</span><span class="tag t-xmas">Christmas</span></div></div><div class="score"><strong>41</strong><span>/50</span></div></header>
+<p class="what">Flat, collapsed tree that pulls up into a full tree with lights and ornaments already on it. 4 ft to 7 ft.</p>
+<p class="emo"><span class="lab">Emotion</span>Busy moms feel relief and a bit of triumph: the whole tree is done before anyone else has found the box.</p>
+<dl class="nums"><div><dt>Supplier price</dt><dd>$48.76 to $98.47</dd></div><div><dt>Orders</dt><dd>391, 51 and 27</dd></div><div><dt>Rating</dt><dd>4.4 on the biggest listing, 5.0 on the 51-sold one</dd></div><div><dt>Our price</dt><dd>$129 to $149</dd></div><div><dt>Margin before shipping</dt><dd>about $30 to $80</dd></div></dl>
+<p class="row"><span class="lab">How new</span>Mix of one older listing (391 orders) and about ten fresh ones with 1 to 51 orders.</p>
+<div class="crs"><div class="cr"><span>Emotion in 3 s</span><i><b style="width:70%"></b></i><em>7</em></div><div class="cr"><span>Can be exaggerated</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Filmable reaction</span><i><b style="width:70%"></b></i><em>7</em></div><div class="cr"><span>Clear without sound</span><i><b style="width:100%"></b></i><em>10</em></div><div class="cr"><span>Comments and shares</span><i><b style="width:80%"></b></i><em>8</em></div></div>
+<div class="hooks"><span class="lab">Exaggerated hooks</span><ol><li><q>Him: 3 hours and a ladder. Me:</q><span>Split screen. He untangles lights, she pulls the tree up in one move and sits down with cocoa. Product vs product.</span></li><li><q>I decorated the whole tree during one commercial break</q><span>One continuous shot of the pull-up, timer on screen showing the real time. Too good to be true, then proven.</span></li></ol></div>
+<p class="row risk"><span class="lab">Risks</span>Bulky box, so shipping cost and delivery time decide everything and are not verified. The biggest listing is rated 4.4, below our 4.5 rule. The set-up time shown in the video must be the real one. Late orders will miss Christmas.</p>
+<p class="row"><span class="lab">Competition</span>At least one brand already sells it with paid marketing (a 60-second pop-up tree, press release). Walmart lists a 6 ft version rated 4 stars from 78 reviews.</p>
+<div class="links"><span class="lab">AliExpress listings</span><a href="https://www.aliexpress.us/item/3256809539423578.html" target="_blank" rel="noopener">Biggest listing, 391 sold, 4.4</a><a href="https://www.aliexpress.us/item/3256812712026934.html" target="_blank" rel="noopener">Pencil tree, 51 sold, 5.0</a><a href="https://www.aliexpress.us/item/3256813257048250.html" target="_blank" rel="noopener">Fresh listing, $48.76</a></div>
+</article><article class="card" data-tags="xmas">
+<header><span class="rank">5</span><div class="hd"><h2>Electric Climbing Santa (rope or ladder, with music)</h2><div class="tags"><span class="tag t-xmas">Christmas</span></div></div><div class="score"><strong>36</strong><span>/50</span></div></header>
+<p class="what">Small motorised Santa that climbs up and down a rope or a red ladder while music plays.</p>
+<p class="emo"><span class="lab">Emotion</span>Kids and cats stare at it for minutes. The watcher&#x27;s reaction is the content.</p>
+<dl class="nums"><div><dt>Supplier price</dt><dd>$13.28 to $13.55</dd></div><div><dt>Orders</dt><dd>1,000+ and 52</dd></div><div><dt>Rating</dt><dd>4.6 and 5.0</dd></div><div><dt>Our price</dt><dd>$39.99 for a 2-pack</dd></div><div><dt>Margin before shipping</dt><dd>about $13</dd></div></dl>
+<p class="row"><span class="lab">How new</span>The rope version is an older listing with 1,000+ orders. The red-ladder version is a fresh listing with 52 orders.</p>
+<div class="crs"><div class="cr"><span>Emotion in 3 s</span><i><b style="width:70%"></b></i><em>7</em></div><div class="cr"><span>Can be exaggerated</span><i><b style="width:60%"></b></i><em>6</em></div><div class="cr"><span>Filmable reaction</span><i><b style="width:80%"></b></i><em>8</em></div><div class="cr"><span>Clear without sound</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Comments and shares</span><i><b style="width:60%"></b></i><em>6</em></div></div>
+<div class="hooks"><span class="lab">Exaggerated hooks</span><ol><li><q>My cat has been watching Santa climb for 40 minutes</q><span>Cat&#x27;s head moves up and down with Santa. Pet reaction.</span></li><li><q>Santa has been climbing since November 1st. Somebody help him.</q><span>Close shot of the little Santa struggling up the rope, deadpan text. Humor.</span></li></ol></div>
+<p class="row risk"><span class="lab">Risks</span>Low price: only works as a 2-pack or set, and the margin is thin. Small motor toys break, which means refunds. Plays music, so the sound in the video must be the real one.</p>
+<p class="row"><span class="lab">Competition</span>Not checked.</p>
+<div class="links"><span class="lab">AliExpress listings</span><a href="https://www.aliexpress.us/item/3256809458469879.html" target="_blank" rel="noopener">Rope climber, 1,000+ sold</a><a href="https://www.aliexpress.us/item/3256812871015807.html" target="_blank" rel="noopener">Red ladder, fresh listing</a></div>
+</article><article class="card" data-tags="xmas">
+<header><span class="rank">6</span><div class="hd"><h2>Inflatable Santa Climbing In Through The Window</h2><div class="tags"><span class="tag t-xmas">Christmas</span></div></div><div class="score"><strong>35</strong><span>/50</span></div></header>
+<p class="what">LED-lit inflatable Santa (or sitting elf) that sticks to a window so he looks like he is climbing in. 2 m and 3 m sizes.</p>
+<p class="emo"><span class="lab">Emotion</span>Neighbours and kids do a double take. It is a harmless prank on the whole street.</p>
+<dl class="nums"><div><dt>Supplier price</dt><dd>$23.06 to $35.26</dd></div><div><dt>Orders</dt><dd>461 and 287</dd></div><div><dt>Rating</dt><dd>4.7 and 4.9</dd></div><div><dt>Our price</dt><dd>$49.99 to $59.99</dd></div><div><dt>Margin before shipping</dt><dd>about $15 to $37</dd></div></dl>
+<p class="row"><span class="lab">How new</span>One fresh listing with 287 orders. The product itself is already in US stores.</p>
+<div class="crs"><div class="cr"><span>Emotion in 3 s</span><i><b style="width:60%"></b></i><em>6</em></div><div class="cr"><span>Can be exaggerated</span><i><b style="width:80%"></b></i><em>8</em></div><div class="cr"><span>Filmable reaction</span><i><b style="width:60%"></b></i><em>6</em></div><div class="cr"><span>Clear without sound</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Comments and shares</span><i><b style="width:60%"></b></i><em>6</em></div></div>
+<div class="hooks"><span class="lab">Exaggerated hooks</span><ol><li><q>The neighbours called to say someone is breaking into our house</q><span>Night shot from the street, phone buzzing, then the Santa lit up in the window. Pattern interrupt.</span></li><li><q>He is stuck. He has been stuck since Thanksgiving.</q><span>Kids waving at Santa from inside. Humor plus kid reaction.</span></li></ol></div>
+<p class="row risk"><span class="lab">Risks</span>Not new: Lowe&#x27;s, Target and Costway sell it for about $25 to $70. Needs a blower and a plug, which adds weight and the US plug question.</p>
+<p class="row"><span class="lab">Competition</span>Sold by big US retailers. No social check done.</p>
+<div class="links"><span class="lab">AliExpress listings</span><a href="https://www.aliexpress.us/item/3256812724136778.html" target="_blank" rel="noopener">Fresh listing, 287 sold, 4.9</a><a href="https://www.aliexpress.us/item/3256809491538526.html" target="_blank" rel="noopener">2 m and 3 m, 461 sold</a></div>
+</article><article class="card" data-tags="xmas">
+<header><span class="rank">7</span><div class="hd"><h2>10 ft Sitting Santa Inflatable With Reindeer</h2><div class="tags"><span class="tag t-xmas">Christmas</span></div></div><div class="score"><strong>36</strong><span>/50</span></div></header>
+<p class="what">3 m (about 10 ft) inflatable Santa sitting with a reindeer and gift box, built-in LED lights, for roof or yard.</p>
+<p class="emo"><span class="lab">Emotion</span>Pride and laughter: the biggest Santa on the street.</p>
+<dl class="nums"><div><dt>Supplier price</dt><dd>$83.96</dd></div><div><dt>Orders</dt><dd>1,000+</dd></div><div><dt>Rating</dt><dd>4.9</dd></div><div><dt>Our price</dt><dd>$149 to $169</dd></div><div><dt>Margin before shipping</dt><dd>about $65 to $85</dd></div></dl>
+<p class="row"><span class="lab">How new</span>Older listing with strong sales. Not new on the market.</p>
+<div class="crs"><div class="cr"><span>Emotion in 3 s</span><i><b style="width:60%"></b></i><em>6</em></div><div class="cr"><span>Can be exaggerated</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Filmable reaction</span><i><b style="width:60%"></b></i><em>6</em></div><div class="cr"><span>Clear without sound</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Comments and shares</span><i><b style="width:60%"></b></i><em>6</em></div></div>
+<div class="hooks"><span class="lab">Exaggerated hooks</span><ol><li><q>We bought the 10 ft Santa. The HOA has emailed twice.</q><span>Santa towering over the garage, dad proud, mom facepalming. Humor, scale.</span></li><li><q>Day 1 vs my husband after he saw the neighbour&#x27;s Santa</q><span>Small yard Santa, then the 10 ft one inflating in real time. Contrast.</span></li></ol></div>
+<p class="row risk"><span class="lab">Risks</span>Heavy and bulky, so shipping is the open question. Big-box stores sell similar ones. Hard for Kling to keep a huge inflatable consistent between shots.</p>
+<p class="row"><span class="lab">Competition</span>Not checked.</p>
+<div class="links"><span class="lab">AliExpress listings</span><a href="https://www.aliexpress.us/item/3256809969009521.html" target="_blank" rel="noopener">3 m sitting Santa, 1,000+ sold</a></div>
+</article><article class="card" data-tags="new">
+<header><span class="rank">8</span><div class="hd"><h2>AI Talking Plush Pet</h2><div class="tags"><span class="tag t-new">New on AliExpress</span></div></div><div class="score"><strong>35</strong><span>/50</span></div></header>
+<p class="what">Soft plush robot that listens and answers by voice over Wi-Fi. Several shapes (cat, rabbit, cow).</p>
+<p class="emo"><span class="lab">Emotion</span>Kids treat it as a friend that answers back. Strong &#x27;I need this&#x27; and strong debate in comments.</p>
+<dl class="nums"><div><dt>Supplier price</dt><dd>$31.27 to $92.99</dd></div><div><dt>Orders</dt><dd>1,000+ on each of the two main listings, 12 to 37 on the fresh ones</dd></div><div><dt>Rating</dt><dd>4.9 and 4.5</dd></div><div><dt>Our price</dt><dd>$79 to $129</dd></div><div><dt>Margin before shipping</dt><dd>about $36 to $48</dd></div></dl>
+<p class="row"><span class="lab">How new</span>A 2026 category: branded versions shown at CES cost $140 to $429. AliExpress has fresh listings from $31.</p>
+<div class="crs"><div class="cr"><span>Emotion in 3 s</span><i><b style="width:80%"></b></i><em>8</em></div><div class="cr"><span>Can be exaggerated</span><i><b style="width:60%"></b></i><em>6</em></div><div class="cr"><span>Filmable reaction</span><i><b style="width:80%"></b></i><em>8</em></div><div class="cr"><span>Clear without sound</span><i><b style="width:50%"></b></i><em>5</em></div><div class="cr"><span>Comments and shares</span><i><b style="width:80%"></b></i><em>8</em></div></div>
+<div class="hooks"><span class="lab">Exaggerated hooks</span><ol><li><q>I asked it one question and my 6-year-old has not put it down since</q><span>Kid whispers to the plush, it answers, kid&#x27;s jaw drops. Reaction plus unboxing.</span></li><li><q>This is the $40 version of the $400 AI pet</q><span>Side by side with a generic expensive robot pet. Product vs product.</span></li></ol></div>
+<p class="row risk"><span class="lab">Risks</span>Hardest to do honestly: the video must only show answers the toy really gives. Needs Wi-Fi and an app, which means support and returns. Press is already warning parents about AI toys. Language and server quality of cheap versions unknown.</p>
+<p class="row"><span class="lab">Competition</span>Many brands are launching these. No count of organic sellers.</p>
+<div class="links"><span class="lab">AliExpress listings</span><a href="https://www.aliexpress.us/item/3256809773989740.html" target="_blank" rel="noopener">Main listing, 1,000+ sold, 4.9</a><a href="https://www.aliexpress.us/item/3256813236086469.html" target="_blank" rel="noopener">Fresh cat version, $31.27</a><a href="https://www.aliexpress.us/item/3256810042301500.html" target="_blank" rel="noopener">Mid-price version, $47.56</a></div>
+</article><article class="card" data-tags="xmas pets">
+<header><span class="rank">9</span><div class="hd"><h2>Santa Riding The Dog Costume</h2><div class="tags"><span class="tag t-xmas">Christmas</span><span class="tag t-pets">Pets</span></div></div><div class="score"><strong>44</strong><span>/50</span></div></header>
+<p class="what">Dog outfit with a small Santa figure sitting on the dog&#x27;s back, so Santa &#x27;rides&#x27; when the dog runs.</p>
+<p class="emo"><span class="lab">Emotion</span>Instant laugh. The dog running with Santa bouncing on top needs no words.</p>
+<dl class="nums"><div><dt>Supplier price</dt><dd>$15.99 to $21.65</dd></div><div><dt>Orders</dt><dd>361, 218 and 41</dd></div><div><dt>Rating</dt><dd>4.9 to 5.0</dd></div><div><dt>Our price</dt><dd>$39.99 only as a set</dd></div><div><dt>Margin before shipping</dt><dd>about $18 to $24</dd></div></dl>
+<p class="row"><span class="lab">How new</span>Older product with new listings (361 and 218 orders).</p>
+<div class="crs"><div class="cr"><span>Emotion in 3 s</span><i><b style="width:80%"></b></i><em>8</em></div><div class="cr"><span>Can be exaggerated</span><i><b style="width:80%"></b></i><em>8</em></div><div class="cr"><span>Filmable reaction</span><i><b style="width:90%"></b></i><em>9</em></div><div class="cr"><span>Clear without sound</span><i><b style="width:100%"></b></i><em>10</em></div><div class="cr"><span>Comments and shares</span><i><b style="width:90%"></b></i><em>9</em></div></div>
+<div class="hooks"><span class="lab">Exaggerated hooks</span><ol><li><q>Santa came early and he is NOT in control</q><span>Dog sprints through the house, Santa bouncing on his back. Pattern interrupt, humor.</span></li><li><q>Do not buy this if you want a calm Christmas</q><span>Kids screaming with laughter as the dog runs past the tree. Reaction.</span></li></ol></div>
+<p class="row risk"><span class="lab">Risks</span>Fails our price rule on its own: sold cheaply everywhere, so $39.99 needs a set (costume plus matching item). Sizes cause returns. Not new.</p>
+<p class="row"><span class="lab">Competition</span>Not checked.</p>
+<div class="links"><span class="lab">AliExpress listings</span><a href="https://www.aliexpress.us/item/3256809604491122.html" target="_blank" rel="noopener">Santa riding costume, 41 sold, 5.0</a><a href="https://www.aliexpress.us/item/3256813146098508.html" target="_blank" rel="noopener">Fresh fleece version</a></div>
+</article><article class="card" data-tags="">
+<header><span class="rank">10</span><div class="hd"><h2>Plush Smart Hand Warmer</h2><div class="tags"><span class="tag">Evergreen winter</span></div></div><div class="score"><strong>31</strong><span>/50</span></div></header>
+<p class="what">Small rechargeable hand warmer inside a soft plush cover, with temperature control.</p>
+<p class="emo"><span class="lab">Emotion</span>Cozy comfort for someone who is always cold. A small &#x27;thinking of you&#x27; gift.</p>
+<dl class="nums"><div><dt>Supplier price</dt><dd>$10.79</dd></div><div><dt>Orders</dt><dd>3,000+</dd></div><div><dt>Rating</dt><dd>4.9</dd></div><div><dt>Our price</dt><dd>$39.99 for a 2-pack</dd></div><div><dt>Margin before shipping</dt><dd>about $18</dd></div></dl>
+<p class="row"><span class="lab">How new</span>Listed in the last year or so. Not a fresh wave.</p>
+<div class="crs"><div class="cr"><span>Emotion in 3 s</span><i><b style="width:70%"></b></i><em>7</em></div><div class="cr"><span>Can be exaggerated</span><i><b style="width:60%"></b></i><em>6</em></div><div class="cr"><span>Filmable reaction</span><i><b style="width:60%"></b></i><em>6</em></div><div class="cr"><span>Clear without sound</span><i><b style="width:60%"></b></i><em>6</em></div><div class="cr"><span>Comments and shares</span><i><b style="width:60%"></b></i><em>6</em></div></div>
+<div class="hooks"><span class="lab">Exaggerated hooks</span><ol><li><q>My girlfriend&#x27;s hands are always freezing. So I got her this.</q><span>She grabs it, hugs it, refuses to give it back. Gifting.</span></li><li><q>Day 1 of winter vs. now</q><span>Blowing on cold hands at the bus stop, then holding the plush warmer. Change of state, not of body.</span></li></ol></div>
+<p class="row risk"><span class="lab">Risks</span>Battery product: shipping limits and safety. Heated items are already crowded in our product finder. Weakest on screen of the ten.</p>
+<p class="row"><span class="lab">Competition</span>Not checked.</p>
+<div class="links"><span class="lab">AliExpress listings</span><a href="https://www.aliexpress.us/item/3256810253089535.html" target="_blank" rel="noopener">Plush hand warmer, 3,000+ sold</a></div>
+</article></div>
+<footer>Score is the sum of five 0 to 10 marks. Below 30 does not make the board. Margin is our price minus supplier price, before shipping, payment fees and refunds.</footer>
+</div>
+<script>
+document.querySelectorAll('.chips button').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('.chips button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+ const f=b.dataset.f;document.querySelectorAll('.card').forEach(c=>{c.hidden=!!f&&!c.dataset.tags.split(' ').includes(f)});
+}));
+</script>

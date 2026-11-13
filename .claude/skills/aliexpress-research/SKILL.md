@@ -33,6 +33,13 @@ Cum cauți (verificat 12 nov 2026 — merge cu WebFetch):
 `https://www.aliexpress.com/w/wholesale-<cuvinte-cu-liniuță>.html?SortType=total_tranpro_desc` (sortat după comenzi).
 Cere din pagină: titlu, preț, „sold”, rating, link. Dacă pagina dă captcha/login → încearcă alte cuvinte sau WebSearch (`site:aliexpress.com <cuvinte>`); nu inventa cifre.
 
+Învățat la prima rulare (13 nov 2026):
+- Paginile de produs (`/item/<id>.html`) cer login → nu se pot citi. Prețul, „sold” și ratingul se iau din pagina de căutare; livrarea rămâne „neverificat” până o verifică Szasz sau comandăm.
+- Maxim ~6 căutări deodată; la mai multe, unele pagini vin goale (se reiau).
+- „Nou pe piață” (estimare): numărul listării e mare (în nov 2026 cele mai noi încep cu `32568130…`–`32568134…`) ȘI apar deodată multe listări noi pentru același produs. Caută apoi numele exact al produsului ca să vezi tot valul.
+- Căutarea web NU vede Instagram/TikTok → concurența organică se scrie „neverificat”; numărătoarea reală cere Apify (cu acordul lui Szasz pe cost).
+- Board: pagina se generează în `products/ideas/board/` și se publică drept artifact (UI în engleză).
+
 Surse în plus (WebSearch): „trending dropshipping products <luna anul>”, „tiktok made me buy it <nișă>”, Google Trends pe numele produsului. Astea dau doar idei — cifra de comenzi se ia tot de pe AliExpress.
 
 ## 2. Triere rapidă (aruncă imediat)

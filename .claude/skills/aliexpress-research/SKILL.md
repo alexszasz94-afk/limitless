@@ -40,6 +40,15 @@ Cere din pagină: titlu, preț, „sold”, rating, link. Dacă pagina dă captc
 - Căutarea web NU vede Instagram/TikTok → concurența organică se scrie „neverificat”; numărătoarea reală cere Apify (cu acordul lui Szasz pe cost).
 - Board: pagina se generează în `products/ideas/board/` și se publică drept artifact (UI în engleză).
 
+Învățat la a doua rulare (13 nov 2026, board de 30):
+- Pozele: pagina de căutare dă și poza produsului (`ae-pic-a1.aliexpress-media.com/kf/...`). Se descarcă, se verifică pe o foaie de cadre (poza = produsul din link?) și se pun în board ca imagini încorporate (artifactul nu încarcă poze din afară).
+- AliExpress blochează după ~8 căutări: pagini goale 2–4 minute; rezultatul gol se ține minte 15 min pe același URL → la reluare schimbă ordinea cuvintelor.
+- Sortarea după comenzi îngroapă listările noi; fără `SortType` apar mai multe noi (bune pentru descoperire), apoi o căutare sortată pe numele exact.
+- Prețul „$1.09” / „FREE with any purchase” e promoție de bun-venit, nu prețul real → scrie „preț real neafișat”.
+- Număr de listare nou + zeci de mii de comenzi = produs vechi relistat, nu produs nou.
+- Semințele scurte, concrete (2–3 cuvinte, numele produsului) merg; cele generice („christmas gift 2026 new”) nu dau nimic. Randament: ~1 produs la 3 căutări la decor, mult mai slab la „cozy/amuzant”.
+- Pe board, fiecare produs are eticheta: Fresh wave (mai mulți vânzători noi) / Fresh, one seller / Already known, și 2 concepte pe familiile noastre de hook.
+
 Surse în plus (WebSearch): „trending dropshipping products <luna anul>”, „tiktok made me buy it <nișă>”, Google Trends pe numele produsului. Astea dau doar idei — cifra de comenzi se ia tot de pe AliExpress.
 
 ## 2. Triere rapidă (aruncă imediat)

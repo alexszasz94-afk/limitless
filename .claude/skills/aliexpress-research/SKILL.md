@@ -20,6 +20,8 @@ NU verificăm rețelele sociale la research. Dacă un produs e „nerulat” ne 
 Cel mai bun semn: tip de produs care există DOAR în listări noi, cu comenzi puține. Dacă același produs apare și în listări vechi cu mii de comenzi → e vechi relistat, afară.
 Țintă: produse cu cel mai mare potențial pe ecran dintre cele prea noi ca să le ruleze cineva. Fără Apify și fără căutări pe Instagram/TikTok la pasul ăsta.
 
+Învățat la runda 3 (14 nov 2026, „apărute în ultimele zile”): listările cu cele mai mari numere (ultimele zile) sunt aproape toate marfă banală sau produse vechi relistate — din ~165 de căutări au ieșit 3 produse. Zona bună e cea de **2–6 săptămâni**: tip de produs care există doar în listări noi, cu zeci de comenzi, nu mii. Acolo se caută întâi.
+
 ## 1. Semințe de căutare (15–25 de căutări, în engleză)
 Pornește de la **emoție**, nu de la categorie. Câte 2–4 căutări pe fiecare:
 

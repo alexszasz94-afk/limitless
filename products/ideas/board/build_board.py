@@ -296,6 +296,30 @@ P("Duck Pedal Treat Dispenser","duckfeeder.jpg","early",["pets"],[7,6,9,9,7],
  [("Pattern interrupt","My cat has a job now and she is overpaid","Cat pressing the pedal again and again, staring at the owner between presses."),
   ("Story","Day 1: confused. Day 3: employed.","Three short shots of the same dog getting faster at it.")],
  "No orders shown. A similar duck dispenser with a new listing number shows 7,000+ orders, which usually means an older product listed again. Not every pet learns it, and the video must not promise that."),
+P("Snowman Icicle Railing Light","icicle.jpg","early",["xmas"],[8,7,6,10,7],
+ "Glowing snowman figure that sits on a porch or balcony railing with lit icicles hanging below it. About 1 m tall with the icicles.",
+ "Made for the American front porch and clear in one second. About 15 listings, all from this season, and the most any of them has is 25 orders.",
+ "$14.17 to $27.69","25, 20, 15, 14 and less","5.0 on the one rated","$59 to $69 for a set of 3",
+ [("14 sold, $19.89","3256813159792452"),("25 sold, 5.0","3256813181193923"),("Newest, $18.99","3256813350369617")],
+ [("Day 1 vs now","Our porch on December 1st vs. tonight","Bare railing in daylight, then three snowmen glowing along it at dusk with the icicles lit."),
+  ("Do NOT let… see this","Do NOT let a Christmas mom see this before she finishes the porch","She clips one on, steps back, immediately orders two more.")],
+ "Listing photos look rendered, so the real glow and size need a sample. Outdoor power or batteries are not stated. The set must be priced as three, since one is cheap."),
+P("Campfire Friends Inflatable (8 to 10 ft)","warmtrio.jpg","early",["xmas"],[7,8,7,10,8],
+ "LED yard inflatable of Santa, a polar bear, a reindeer and a dog sitting round a glowing campfire with mugs in hand.",
+ "A whole funny scene instead of one figure, and it already sells for $74 to $90. Only 4 listings, all recent, none with orders.",
+ "$73.79 to $90.09","none shown","none shown","$149 to $169",
+ [("Newest, $90.09","3256813383620098"),("10 ft, $73.79","3256813342261625")],
+ [("Pattern interrupt","Santa finished early and invited the boys over","Night shot of the lawn: the four of them round the fire, mugs up. Dad walks out with his own mug and sits next to them."),
+  ("3-2-1 reveal","3… 2… 1… the neighbours are going to talk","Flat fabric on the snow, blower on, the campfire scene rises.")],
+ "No orders and no ratings at all. Large and heavy to ship, and expensive to test. The mugs look like beer, which some buyers will not want in the yard."),
+P("Christmas Tree With Legs","elftree.jpg","early",["xmas"],[8,7,6,10,7],
+ "Small decorated tree with a curled top that stands on two legs in red boots. Sold as a DIY light-up piece in two sizes.",
+ "A tree that looks like it could walk off is funny at a glance. The newest listing is days old; an earlier cheap one has 35 orders.",
+ "$11.65 to $36.19","35 on the cheaper listing","none shown","$49.99",
+ [("Newest, $36.19","3256813440357275"),("35 sold, $11.65","3256813330919792")],
+ [("Pattern interrupt","I turned around and the tree had moved","Tree by the door, cut, tree by the fridge, cut, tree at the top of the stairs. Kid points."),
+  ("Gifting reaction","She opened it and said 'it has BOOTS'","Mom lifts it out of the box by the boots and cannot stop laughing.")],
+ "The curled-top tree style is close to a well-known Christmas film look, so no green character, no film words and no similar music in the video. Not confirmed that the two listings are the same object. Says DIY, so the buyer may have to assemble it."),
 # ---------- already known ----------
 P("Felt Christmas Tree Cat House","3.jpg","known",["xmas","pets"],[8,7,8,9,8],
  "Cone-shaped felt cat cave that looks like a small Christmas tree with pom-pom ornaments.",
@@ -365,6 +389,19 @@ P("Plush Smart Hand Warmer","10.jpg","known",[],[7,6,6,6,6],
 N=len(D)
 order={"wave":0,"early":1,"single":2,"known":3}
 D.sort(key=lambda p:(order[p["fresh"]],-p["score"]))
+def lno(p):
+    m=max(int(k)+(2251799813685248 if k.startswith("1005") else 0) for _,k in p["links"])
+    return str(m)[:11]+"…"
+BETS=[("Tornado Vortex Lamp","Not seasonal. 12 recent listings, about 22 orders in total, already $35 to $70 at the supplier."),
+("Lying Santa Roof Inflatable (8 to 12 ft)","7 recent listings, about 172 orders. Funny from the street."),
+("Snowman Icicle Railing Light","About 15 listings from this season, none above 25 orders. Built for a US porch."),
+("Christmas Sleigh Pet Bed","11 listings, about 120 orders. Highest emotion score on the board."),
+("Stacked Santa, Reindeer and Snowman Inflatable (7.8 ft)","2 recent listings, 525 orders, both 5.0. A design nobody has seen."),
+("Campfire Friends Inflatable (8 to 10 ft)","4 recent listings, no orders yet. A whole scene, priced high."),
+("Christmas Tree Cat Tower With Caves","4 recent listings, no orders yet. Priced above our minimum on its own."),
+("Christmas Tree With Legs","Newest listing is days old. Funny at a glance."),
+("Solar Santa Sleigh Light-Waterfall Stake","About 19 listings at once, about 29 orders. As early as it gets."),
+("Pet Christmas Tree Costume","5 recent listings, about 275 orders. Cute in one second, but only works as a set.")]
 def datauri(name):
     im=Image.open(os.path.join(IMG,name)).convert("RGB").resize((360,360),Image.LANCZOS)
     b=io.BytesIO(); im.save(b,"WEBP",quality=72); return "data:image/webp;base64,"+base64.b64encode(b.getvalue()).decode()
@@ -376,7 +413,7 @@ md=[f"# Research AliExpress — {N} de produse, mai ales de Crăciun ({DATE})\n"
 "Board cu poze: https://claude.ai/artifact/8XheU6FkHoaHgTLPfzZ32N\n",
 "Cifrele (preț, comenzi, rating) sunt din paginile de căutare AliExpress, 13 nov 2026. Toate produsele sunt **ipoteze** până la cifrele noastre (pilot → `rezultate`).\n",
 "**Neverificat:** livrarea în SUA (cost, zile), concurența pe Instagram/TikTok (trebuie Apify, cu acord pe cost), $/1M vizualizări. „Nou” = estimare după numărul listării și câte listări noi au apărut deodată; nou pe AliExpress NU înseamnă automat nesaturat pe Instagram.\n",
-"Ordinea: valuri noi (14), apoi foarte noi aproape fără comenzi (13, runda 2 din 14 nov), apoi listări noi cu un singur vânzător (9), apoi deja cunoscute (8); fiecare grup după scor.\n",
+"Ordinea: valuri noi (14), apoi foarte noi aproape fără comenzi (16, rundele 2–3 din 14 nov), apoi listări noi cu un singur vânzător (9), apoi deja cunoscute (8); fiecare grup după scor.\n",
 "| # | Produs | Cât de nou | Scor | Preț furnizor | Comenzi | Rating | Preț propus |","|---|---|---|---|---|---|---|---|"]
 for i,p in enumerate(D,1): md.append(f"| {i} | {p['n']} | {FRRO[p['fresh']]} | {p['score']}/50 | {p['cost']} | {p['sold']} | {p['rating']} | {p['sell']} |")
 for i,p in enumerate(D,1):
@@ -399,7 +436,7 @@ for i,p in enumerate(D,1):
 <div class="top"><img src="{datauri(p['img'])}" alt="{e(p['n'])}, supplier photo" width="360" height="360" loading="lazy">
 <div class="hd"><div class="line"><span class="rank">{i}</span><div class="score"><strong>{p['score']}</strong><span>/50</span></div></div><h2>{e(p['n'])}</h2><div class="tags">{tags}</div><p class="what">{e(p['what'])}</p></div></div>
 <p class="row pot"><span class="lab">Potential</span>{e(p['pot'])}</p>
-<dl class="nums"><div><dt>Supplier price</dt><dd>{e(p['cost'])}</dd></div><div><dt>Orders</dt><dd>{e(p['sold'])}</dd></div><div><dt>Rating</dt><dd>{e(p['rating'])}</dd></div><div><dt>Our price</dt><dd>{e(p['sell'])}</dd></div></dl>
+<dl class="nums"><div><dt>Supplier price</dt><dd>{e(p['cost'])}</dd></div><div><dt>Orders</dt><dd>{e(p['sold'])}</dd></div><div><dt>Rating</dt><dd>{e(p['rating'])}</dd></div><div><dt>Our price</dt><dd>{e(p['sell'])}</dd></div><div><dt>Newest listing no.</dt><dd>{lno(p)}</dd></div></dl>
 <div class="hooks"><span class="lab">Concept ideas</span><ol>{con}</ol></div>
 <p class="row"><span class="lab">Risks</span>{e(p['risks'])}</p>
 <div class="links"><span class="lab">AliExpress listings</span>{links}</div>
@@ -424,6 +461,11 @@ h1{{font-family:var(--display);font-size:clamp(26px,4vw,38px);line-height:1.1;ma
 .guide b{{font-family:var(--display);font-size:15px;display:block;color:var(--ink)}}
 .note{{border-left:3px solid var(--gold);padding:2px 0 2px 12px;color:var(--muted);font-size:13.5px;max-width:86ch;margin:0}}
 .note b{{color:var(--ink)}}
+.bets{{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}}
+.bh{{font:700 18px/1.25 var(--display);margin:0 0 10px}}
+.bets ol{{margin:0;padding-left:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:8px 28px}}
+.bets li{{font-size:13.5px;color:var(--muted);min-width:0}} .bets li b{{display:block;color:var(--ink);font-size:14.5px}}
+.bn{{font-size:13px;color:var(--muted);margin-top:10px;max-width:86ch}}
 .chips{{display:flex;flex-wrap:wrap;gap:8px}}
 .chips button{{font:500 13.5px var(--body);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}}
 .chips button[aria-pressed="true"]{{background:var(--ink);color:var(--bg);border-color:var(--ink)}}
@@ -465,7 +507,8 @@ footer{{color:var(--muted);font-size:13px;max-width:86ch}}
 <li><b>Fresh, one seller · {ns} products</b>A new listing with orders, but only one seller found. Newer, less proven.</li>
 <li><b>Already known · {nk} products</b>Older listings or already in US stores. Kept from the first board; expect competition.</li>
 </ul>
-<p class="note"><b>Not verified yet:</b> how many Instagram and TikTok accounts already run each product, shipping cost and delivery days to the US, and dollars per 1M views. New on AliExpress is not the same as unsaturated on Instagram; that check needs a paid account scrape. Prices, orders and ratings were read from AliExpress search pages on {DATE}. Christmas items must reach buyers before Dec 25, so the selling window closes in early December; the Valentine and non-seasonal items are there for what comes after.</p>
+<section class="bets"><h2 class="bh">Best bets: high potential, too new for anyone to be running</h2><ol>{''.join(f'<li><b>{e(n)}</b><span>{e(t)}</span></li>' for n,t in BETS)}</ol><p class="bn">Chosen by two things only: the listing number (higher means newer) and the order count (few means nobody has picked it up). Products with thousands of orders were left out even when they score well.</p></section>
+<p class="note"><b>Not verified yet:</b> shipping cost and delivery days to the US, and dollars per 1M views. AliExpress shows no listing date, so how new a product is comes from its listing number and its order count. Prices, orders and ratings were read from AliExpress search pages on {DATE}. Christmas items must reach buyers before Dec 25, so the selling window closes in early December; the Valentine and non-seasonal items are there for what comes after.</p>
 <div class="chips" role="group" aria-label="Filter products">
 <button id="f-all" data-f="" aria-pressed="true">All {N}</button><button id="f-wave" data-f="wave" aria-pressed="false">Fresh wave</button><button id="f-early" data-f="early" aria-pressed="false">Very new</button><button id="f-single" data-f="single" aria-pressed="false">Fresh, one seller</button><button id="f-known" data-f="known" aria-pressed="false">Already known</button><button id="f-xmas" data-f="xmas" aria-pressed="false">Christmas</button><button id="f-pets" data-f="pets" aria-pressed="false">Pets</button><button id="f-val" data-f="val" aria-pressed="false">Valentine</button>
 </div>

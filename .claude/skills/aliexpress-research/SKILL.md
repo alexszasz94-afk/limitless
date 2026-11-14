@@ -13,6 +13,13 @@ Argumente opționale: o nișă / un sezon / o emoție (ex. `aliexpress-research 
 - Citește `lessons` (Mistakes log).
 - Research-ul e gratis (doar căutări web). Nu genera imagini/video aici și nu folosi Apify fără acordul lui Szasz pe cost.
 
+## Regula de saturație (14 nov 2026, Szasz)
+NU verificăm rețelele sociale la research. Dacă un produs e „nerulat” ne dăm seama din două lucruri de pe AliExpress:
+1. **numărul listării** — cu cât e mai mare, cu atât e mai nou (14 nov 2026: cele mai noi încep cu `32568134…`; forma `1005…` = aceeași listare minus 2251799813685248);
+2. **numărul de comenzi** — puține sau deloc = nu l-a prins încă nimeni.
+Cel mai bun semn: tip de produs care există DOAR în listări noi, cu comenzi puține. Dacă același produs apare și în listări vechi cu mii de comenzi → e vechi relistat, afară.
+Țintă: produse cu cel mai mare potențial pe ecran dintre cele prea noi ca să le ruleze cineva. Fără Apify și fără căutări pe Instagram/TikTok la pasul ăsta.
+
 ## 1. Semințe de căutare (15–25 de căutări, în engleză)
 Pornește de la **emoție**, nu de la categorie. Câte 2–4 căutări pe fiecare:
 
@@ -84,7 +91,7 @@ Deschide pagina produsului (WebFetch) și notează, cu link:
 - **Cerere:** comenzi („sold”), rating, nr. de recenzii. Google Trends dacă e clar numele.
 - **Cost:** preț + livrare în SUA; termenul de livrare (ideal ≤ 12 zile; peste 20 → risc de chargeback).
 - **Marjă:** preț de vânzare propus (≥ 38,99 $) − cost − livrare. Țintă: costul total ≤ ~1/3 din preț.
-- **Concurență organică:** WebSearch `site:instagram.com/reel <nume produs>` și `site:tiktok.com <nume produs>` + colecția `finder`. Notează câte conturi ai găsit. E o estimare grosieră → scrie „estimare”, nu cifră sigură. > 4 conturi active → doar dacă avem un unghi pe care ei nu-l fac.
+- **Concurență (regula 14 nov):** se judecă după numărul listării + comenzi, vezi „Regula de saturație”. (Vechi, nu se mai face:) WebSearch `site:instagram.com/reel <nume produs>` și `site:tiktok.com <nume produs>` + colecția `finder`. Notează câte conturi ai găsit. E o estimare grosieră → scrie „estimare”, nu cifră sigură. > 4 conturi active → doar dacă avem un unghi pe care ei nu-l fac.
 - **Se poate produce:** Kling 4.0 + Nano Banana Pro îl pot reda fidel din poze? (fără text mărunt, fără mecanisme fine care driftează, fără IP)
 - **Variante:** culori / teme / personalizare posibile (pentru mai târziu).
 

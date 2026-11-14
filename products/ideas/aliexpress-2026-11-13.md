@@ -1,4 +1,4 @@
-# Research AliExpress — 30 de produse, mai ales de Crăciun (13 Nov 2026)
+# Research AliExpress — 39 de produse, mai ales de Crăciun (14 Nov 2026)
 
 Board cu poze: https://claude.ai/artifact/8XheU6FkHoaHgTLPfzZ32N
 
@@ -6,7 +6,7 @@ Cifrele (preț, comenzi, rating) sunt din paginile de căutare AliExpress, 13 no
 
 **Neverificat:** livrarea în SUA (cost, zile), concurența pe Instagram/TikTok (trebuie Apify, cu acord pe cost), $/1M vizualizări. „Nou” = estimare după numărul listării și câte listări noi au apărut deodată; nou pe AliExpress NU înseamnă automat nesaturat pe Instagram.
 
-Ordinea: întâi valurile noi (13), apoi listările noi cu un singur vânzător (9), apoi produsele deja cunoscute (8), fiecare grup după scor.
+Ordinea: valuri noi (13), apoi foarte noi aproape fără comenzi (9, runda 2 din 14 nov), apoi listări noi cu un singur vânzător (9), apoi deja cunoscute (8); fiecare grup după scor.
 
 | # | Produs | Cât de nou | Scor | Preț furnizor | Comenzi | Rating | Preț propus |
 |---|---|---|---|---|---|---|---|
@@ -23,23 +23,32 @@ Ordinea: întâi valurile noi (13), apoi listările noi cu un singur vânzător 
 | 11 | Recordable Christmas Tree Message Bottle | val nou de listări | 33/50 | $5.82 to $19.99 | 215, 190, 84, 71 and more | 5.0 on the best, 3.5 on the biggest | $39.99 for a set of 2 |
 | 12 | Glowing Crochet Door Strands | val nou de listări | 33/50 | $1.09 to $12.85 | 1,000+ on the top listing | 4.9 on the top, 1 to 3.2 on copies | $39.99 for a set of 3 |
 | 13 | Snowman Magic Fountain Light | val nou de listări | 31/50 | $9.75 to $23.79 | 65, 43, 32 and more | mostly 5.0, one 1.0 | $39.99 to $49.99 for a pair |
-| 14 | Inflatable Gingerbread Man With Gift (8 ft) | listare nouă, un singur vânzător | 39/50 | $44.89 | 5,000+ | 4.9 | $99 to $119 |
-| 15 | Pet Stairs With a Hidden Cave | listare nouă, un singur vânzător | 38/50 | $8.68 to $13.57 | 115 and 48 | 4.9 | $39.99 to $49.99 |
-| 16 | Roller-Coaster Santa Train Music Box | listare nouă, un singur vânzător | 36/50 | $60.99 | 17 | 5.0 | $119 to $129 |
-| 17 | Santa Sleigh Flying Over a Snow Village (34 cm) | listare nouă, un singur vânzător | 34/50 | $48.30 | 37 | 4.5 | $99 to $119 |
-| 18 | Cat Window Hammock With Wooden Frame | listare nouă, un singur vânzător | 34/50 | $21.67 to $27.38 | 291 | 4.9 | $49.99 |
-| 19 | LED Ferris Wheel Christmas Scene | listare nouă, un singur vânzător | 33/50 | $21.89 | 138 | not shown | $59.99 |
-| 20 | 5 ft Snowman Inflatable With Rotating Lights | listare nouă, un singur vânzător | 32/50 | $9.25 | 511 | 4.9 | $39.99 to $49.99 |
-| 21 | Ceramic-Look Lit Tree With Train Base | listare nouă, un singur vânzător | 32/50 | $17.33 | 229 | 4.9 | $49.99 |
-| 22 | Musical Carousel Tree With Climbing Santa | listare nouă, un singur vânzător | 31/50 | $27.56 | 52 | 4.5 | $59.99 |
-| 23 | Santa Riding the Dog Costume | deja cunoscut | 44/50 | $15.99 to $21.65 | 361, 218, 41 | 4.9 to 5.0 | $39.99 only as a set |
-| 24 | Pop-Up Pre-Decorated Christmas Tree | deja cunoscut | 41/50 | $48.76 to $98.47 | 391, 51, 27 | 4.4 on the biggest, 5.0 on the 51-sold | $129 to $149 |
-| 25 | Felt Christmas Tree Cat House | deja cunoscut | 40/50 | $24.79 to $36.08 | 90 and 39 | 4.8 and 4.9 | $49.99 |
-| 26 | Electric Climbing Santa (rope or ladder) | deja cunoscut | 36/50 | $13.28 to $13.55 | 1,000+ and 52 | 4.6 and 5.0 | $39.99 for a 2-pack |
-| 27 | 10 ft Sitting Santa Inflatable With Reindeer | deja cunoscut | 36/50 | $83.96 | 1,000+ | 4.9 | $149 to $169 |
-| 28 | AI Talking Plush Pet | deja cunoscut | 35/50 | $31.27 to $92.99 | 1,000+ on each main listing | 4.9 and 4.5 | $79 to $129 |
-| 29 | Inflatable Santa Climbing In Through the Window | deja cunoscut | 35/50 | $23.06 to $35.26 | 461 and 287 | 4.7 and 4.9 | $49.99 to $59.99 |
-| 30 | Plush Smart Hand Warmer | deja cunoscut | 31/50 | $10.79 | 3,000+ | 4.9 | $39.99 for a 2-pack |
+| 14 | Tornado Vortex Lamp | foarte nou, aproape fără comenzi | 39/50 | $34.69 to $69.99 (small ones from $10.32) | about 22 across 12 listings | 5.0 on five listings with 1 to 8 orders | $69 to $99 |
+| 15 | Christmas Village Projection Centerpiece | foarte nou, aproape fără comenzi | 37/50 | $14.62 to $69.59 | 67 on the best-rated, 115 and 47 on cheap copies | 5.0 on one, 1.5 and 2.0 on the best-selling cheap ones | $79 to $99 (the $42 to $70 version only) |
+| 16 | Remote-Control Blooming Rose Bouquet (building blocks) | foarte nou, aproape fără comenzi | 37/50 | $84.39 | none shown | none shown | $149 to $169 |
+| 17 | Solar Santa Sleigh Light-Waterfall Stake | foarte nou, aproape fără comenzi | 36/50 | $13.01 to $39.69 | about 29 across 19 listings | 5.0 on the one rated | $49.99 for a pair |
+| 18 | Rotating Santa Sleigh Tree Topper | foarte nou, aproape fără comenzi | 36/50 | $11.40 to $47.19 | about 6 across 6 fresh listings; 45 and 40 on older ones | 5.0 and 4.8 on the older ones | $59 to $69 |
+| 19 | Infinity Cube Lamp | foarte nou, aproape fără comenzi | 35/50 | $15.05 to $36.51 | about 5 on fresh listings; 276, 234, 176 on older ones | 4.6 to 5.0 on the older ones | $59 to $69 |
+| 20 | Valentine Squishy Box (24 pieces) | foarte nou, aproape fără comenzi | 35/50 | $3.05 to $23.29 | none shown | none shown | $39.99 for a large or double set |
+| 21 | Gingerbread House Music Box With Train | foarte nou, aproape fără comenzi | 33/50 | $15.25 to $85.09 | none shown | none shown | $99 to $119 |
+| 22 | Auto-Blooming Flower Lamp With Date | foarte nou, aproape fără comenzi | 33/50 | $15.65 | none shown | none shown | $49.99 |
+| 23 | Inflatable Gingerbread Man With Gift (8 ft) | listare nouă, un singur vânzător | 39/50 | $44.89 | 5,000+ | 4.9 | $99 to $119 |
+| 24 | Pet Stairs With a Hidden Cave | listare nouă, un singur vânzător | 38/50 | $8.68 to $13.57 | 115 and 48 | 4.9 | $39.99 to $49.99 |
+| 25 | Roller-Coaster Santa Train Music Box | listare nouă, un singur vânzător | 36/50 | $60.99 | 17 | 5.0 | $119 to $129 |
+| 26 | Santa Sleigh Flying Over a Snow Village (34 cm) | listare nouă, un singur vânzător | 34/50 | $48.30 | 37 | 4.5 | $99 to $119 |
+| 27 | Cat Window Hammock With Wooden Frame | listare nouă, un singur vânzător | 34/50 | $21.67 to $27.38 | 291 | 4.9 | $49.99 |
+| 28 | LED Ferris Wheel Christmas Scene | listare nouă, un singur vânzător | 33/50 | $21.89 | 138 | not shown | $59.99 |
+| 29 | 5 ft Snowman Inflatable With Rotating Lights | listare nouă, un singur vânzător | 32/50 | $9.25 | 511 | 4.9 | $39.99 to $49.99 |
+| 30 | Ceramic-Look Lit Tree With Train Base | listare nouă, un singur vânzător | 32/50 | $17.33 | 229 | 4.9 | $49.99 |
+| 31 | Musical Carousel Tree With Climbing Santa | listare nouă, un singur vânzător | 31/50 | $27.56 | 52 | 4.5 | $59.99 |
+| 32 | Santa Riding the Dog Costume | deja cunoscut | 44/50 | $15.99 to $21.65 | 361, 218, 41 | 4.9 to 5.0 | $39.99 only as a set |
+| 33 | Pop-Up Pre-Decorated Christmas Tree | deja cunoscut | 41/50 | $48.76 to $98.47 | 391, 51, 27 | 4.4 on the biggest, 5.0 on the 51-sold | $129 to $149 |
+| 34 | Felt Christmas Tree Cat House | deja cunoscut | 40/50 | $24.79 to $36.08 | 90 and 39 | 4.8 and 4.9 | $49.99 |
+| 35 | Electric Climbing Santa (rope or ladder) | deja cunoscut | 36/50 | $13.28 to $13.55 | 1,000+ and 52 | 4.6 and 5.0 | $39.99 for a 2-pack |
+| 36 | 10 ft Sitting Santa Inflatable With Reindeer | deja cunoscut | 36/50 | $83.96 | 1,000+ | 4.9 | $149 to $169 |
+| 37 | AI Talking Plush Pet | deja cunoscut | 35/50 | $31.27 to $92.99 | 1,000+ on each main listing | 4.9 and 4.5 | $79 to $129 |
+| 38 | Inflatable Santa Climbing In Through the Window | deja cunoscut | 35/50 | $23.06 to $35.26 | 461 and 287 | 4.7 and 4.9 | $49.99 to $59.99 |
+| 39 | Plush Smart Hand Warmer | deja cunoscut | 31/50 | $10.79 | 3,000+ | 4.9 | $39.99 for a 2-pack |
 
 ## 1. Christmas Sleigh Pet Bed — scor 44/50 — val nou de listări
 
@@ -262,7 +271,160 @@ Riscuri: Low order counts. Solar brightness in winter is unknown. Weakest emotio
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 6 / 5 / 9 / 5
 
 
-## 14. Inflatable Gingerbread Man With Gift (8 ft) — scor 39/50 — listare nouă, un singur vânzător
+## 14. Tornado Vortex Lamp — scor 39/50 — foarte nou, aproape fără comenzi
+
+Ce e: Desk lamp with a column of water in which a spinning tornado is lit by colour-changing LEDs. About 35 cm, USB or battery.
+
+Potențial: The only clear new wave outside Christmas: 12 recent listings, no big seller yet, and the real-size ones already cost $35 to $70, so the price holds. Not seasonal.
+
+Link AliExpress: [Main size, $34.69](https://www.aliexpress.us/item/3256813214453875.html) · [Larger, $67.79](https://www.aliexpress.us/item/3256813200555522.html) · [Small, 8 sold, 5.0](https://www.aliexpress.us/item/3256813086972932.html)
+
+Concept 1 (Pattern interrupt), hook EN: "There is a tornado on my nightstand and nobody warned me" — Dark bedroom, hand presses the button, the vortex spins up and changes colour. B-roll: unbox, fill, kid's face lit blue.
+
+Concept 2 (Gifting reaction), hook EN: "I got my dad the one lamp he cannot stop staring at" — Dad unwraps it, switches it on, pulls his chair closer.
+
+Riscuri: Almost no orders, so no proof of demand. Unclear whether the tube is glass or acrylic; glass would rule it out. One cheap version is titled 'simulated' vortex, so only a version with a real water vortex may be filmed.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 7 / 10 / 7
+
+
+## 15. Christmas Village Projection Centerpiece — scor 37/50 — foarte nou, aproape fără comenzi
+
+Ce e: Tabletop gingerbread village in a tree shape with a light inside that throws gingerbread men, candy canes and stars onto the walls and ceiling.
+
+Potențial: Lights off, switch on, the whole room fills with shapes: a strong kid reaction. About 12 fresh listings and 260 orders.
+
+Link AliExpress: [67 sold, 5.0](https://www.aliexpress.us/item/3256813124222731.html) · [$42.89 version](https://www.aliexpress.us/item/3256813375389938.html) · [Rotating, $69.59](https://www.aliexpress.us/item/3256813172850638.html)
+
+Concept 1 (3-2-1 reveal), hook EN: "3… 2… 1… watch the ceiling" — Family at the table, lights off, the room fills with gingerbread men. Kids point up.
+
+Concept 2 (Do NOT let… see this), hook EN: "Do NOT let a Christmas mom see this before December" — She walks past it in a generic store aisle, stops, walks back.
+
+Riscuri: The best-selling cheap copies are rated 1.5 and 2.0, which says the product does not match its photos. A sample is needed before any video: we may only show the projection it really makes. Room projectors are already crowded in our product finder.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 7 / 9 / 6
+
+
+## 16. Remote-Control Blooming Rose Bouquet (building blocks) — scor 37/50 — foarte nou, aproape fără comenzi
+
+Ce e: Building-block rose bouquet in a pot whose flowers open and close by remote, with a glow.
+
+Potențial: Roses that bloom on a button press is a clear 3-second wow for Valentine's, and the supplier price already supports a premium.
+
+Link AliExpress: [Only listing](https://www.aliexpress.us/item/3256813373643371.html)
+
+Concept 1 (3-2-1 reveal), hook EN: "3… 2… 1… press it" — He hands her the remote, the closed buds open and light up.
+
+Concept 2 (Product vs product), hook EN: "Real roses: dead by Friday. These:" — Wilted bouquet in the bin, then the block roses opening.
+
+Riscuri: One listing, no orders, no rating. The buyer has to build it. How the flowers move is unclear from the listing, so a sample is needed first. Expensive to test.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 7 / 9 / 6
+
+
+## 17. Solar Santa Sleigh Light-Waterfall Stake — scor 36/50 — foarte nou, aproape fără comenzi
+
+Ce e: Garden stake about 70 cm tall with Santa's sleigh on top and strands of warm star lights pouring down from it. Solar.
+
+Potențial: About 19 listings appeared at once and none has volume yet: as early as it gets. Reads instantly at dusk.
+
+Link AliExpress: [16 sold, 5.0](https://www.aliexpress.us/item/3256813245253925.html) · [70 cm resin and iron](https://www.aliexpress.us/item/3256813302857973.html) · [$39.69 version](https://www.aliexpress.us/item/3256813372324240.html)
+
+Concept 1 (3-2-1 reveal), hook EN: "3… 2… 1… Santa is dropping the presents early" — Dusk lawn, the lights pour out of the sleigh as it gets dark. Kids run to it.
+
+Concept 2 (Day 1 vs now), hook EN: "Our front path on December 1st vs. tonight" — Dark path, then a sleigh every few steps.
+
+Riscuri: No proof yet. Solar brightness in winter is unknown and the listing photos look rendered, so the real glow may be weaker. Close to the Snowman Magic Fountain: test one, not both.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 7 / 6 / 10 / 6
+
+
+## 18. Rotating Santa Sleigh Tree Topper — scor 36/50 — foarte nou, aproape fără comenzi
+
+Ce e: Lit star tree topper with Santa's sleigh and reindeer on an arm that circles the top of the tree, with music.
+
+Potențial: The sleigh flying round the tree top makes kids look up. Fresh listings already sit at $45 to $47.
+
+Link AliExpress: [Fresh, $45.29](https://www.aliexpress.us/item/3256813377840716.html) · [Older, 45 sold, 5.0](https://www.aliexpress.us/item/3256812751218674.html)
+
+Concept 1 (Pattern interrupt), hook EN: "My son has not looked at a single present. He is watching the roof of the tree." — Kid on the floor staring up, sleigh circling the star.
+
+Concept 2 (Product vs product), hook EN: "Every tree has a star. Ours has air traffic." — Normal star, then the sleigh doing laps.
+
+Riscuri: Second-season product, not brand new, and still low volume after a year. Close in idea to the sleigh-over-village piece.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 7 / 7 / 9 / 6
+
+
+## 19. Infinity Cube Lamp — scor 35/50 — foarte nou, aproape fără comenzi
+
+Ce e: Clear acrylic cube lamp with layered mirrors that looks like an endless tunnel of light.
+
+Potențial: A small box that looks bottomless on camera. 6 fresh listings; an older listing of the same type has 276 orders at 4.9.
+
+Link AliExpress: [Fresh, $36.51](https://www.aliexpress.us/item/3256813276656536.html) · [Older, 276 sold, 4.9](https://www.aliexpress.us/item/3256810573323342.html)
+
+Concept 1 (Pattern interrupt), hook EN: "How deep is this box? Wrong." — Finger pointing into the cube, camera moves round to show it is 10 cm thick.
+
+Concept 2 (Gifting reaction), hook EN: "He asked for nothing. He has not left his desk since." — Husband unwraps it, turns the room light off.
+
+Riscuri: The type has existed since earlier in 2026 and infinity mirrors are known in the West. Titles lean to gamer rooms, which is younger than our buyer.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 10 / 6
+
+
+## 20. Valentine Squishy Box (24 pieces) — scor 35/50 — foarte nou, aproape fără comenzi
+
+Ce e: Gift box of 24 small squeeze toys shaped like hearts, roses and sweets, sold as a Valentine countdown or surprise box.
+
+Potențial: The Valentine version of the Christmas squishy box, listed early: 9 fresh listings and none has orders yet. The Christmas version on the same page shows 1,000+ orders at 4.9.
+
+Link AliExpress: [$23.29 set](https://www.aliexpress.us/item/3256813362914392.html)
+
+Concept 1 (Unboxing + reaction), hook EN: "A little squishy, a lot of love: she opened all 24 in one go" — Hands open the lid, squeeze each heart, she steals the pink one.
+
+Concept 2 (Gifting reaction), hook EN: "He forgot the flowers. He did not forget this." — She frowns at the small box, opens it, cannot stop squeezing.
+
+Riscuri: No orders at all yet. Cheap unit price. Several titles say 'for kids', which is outside our buyer. Avoid listings that use a toy brand's name.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 7 / 8 / 7
+
+
+## 21. Gingerbread House Music Box With Train — scor 33/50 — foarte nou, aproape fără comenzi
+
+Ce e: Lit gingerbread candy-store house that plays music, with a small train or gingerbread man turning inside.
+
+Potențial: Cozy and kid-friendly at a price that needs no bundle. 6 fresh listings.
+
+Link AliExpress: [$65.89 version](https://www.aliexpress.us/item/3256813336763485.html) · [With rotating train, $63.99](https://www.aliexpress.us/item/3256813360511250.html)
+
+Concept 1 (Gifting reaction), hook EN: "She thought it was a cake box" — Grandma lifts the lid, the house lights up and the train starts.
+
+Concept 2 (Story), hook EN: "The one decoration the kids are allowed to switch on themselves" — Small hand on the switch every evening, three nights in a row.
+
+Riscuri: Zero orders and no ratings. Resin or ceramic can break in transit. Very close to the village house and the ceramic tree already on the board.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 8 / 6
+
+
+## 22. Auto-Blooming Flower Lamp With Date — scor 33/50 — foarte nou, aproape fără comenzi
+
+Ce e: Flower-shaped lamp on a wood base whose petals open by themselves, with a warm glow and a date display in the centre.
+
+Potențial: A calm wow gift for a mom or grandma. Not seasonal.
+
+Link AliExpress: [Only listing](https://www.aliexpress.us/item/3256813328441235.html)
+
+Concept 1 (Gifting reaction), hook EN: "Mom, press the button" — She presses, the petals open slowly, she looks up.
+
+Concept 2 (Day 1 vs now), hook EN: "What my mom's nightstand looked like before vs. now" — Pile of chargers and a dead lamp, then the flower opening at dusk.
+
+Riscuri: One listing, no orders. Petals are called 'crystal', which may mean glass.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 9 / 5
+
+
+## 23. Inflatable Gingerbread Man With Gift (8 ft) — scor 39/50 — listare nouă, un singur vânzător
 
 Ce e: 2.4 m LED yard inflatable gingerbread man in a Santa hat holding a candy cane and a present.
 
@@ -279,7 +441,7 @@ Riscuri: A fresh listing with 5,000+ orders can be an older product listed again
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 8 / 7 / 10 / 7
 
 
-## 15. Pet Stairs With a Hidden Cave — scor 38/50 — listare nouă, un singur vânzător
+## 24. Pet Stairs With a Hidden Cave — scor 38/50 — listare nouă, un singur vânzător
 
 Ce e: Felt steps for small dogs and cats to reach the bed or sofa, with a hiding cave inside.
 
@@ -296,7 +458,7 @@ Riscuri: Plain pet stairs are an old category; the cave is the fresh part. Felt 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 6 / 8 / 9 / 7
 
 
-## 16. Roller-Coaster Santa Train Music Box — scor 36/50 — listare nouă, un singur vânzător
+## 25. Roller-Coaster Santa Train Music Box — scor 36/50 — listare nouă, un singur vânzător
 
 Ce e: 32 cm tabletop loop track with a mini Santa train that runs the loop, with lights and 8 songs.
 
@@ -313,7 +475,7 @@ Riscuri: One seller and 17 orders: no proof yet. High supplier cost means a fail
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 7 / 7 / 9 / 6
 
 
-## 17. Santa Sleigh Flying Over a Snow Village (34 cm) — scor 34/50 — listare nouă, un singur vânzător
+## 26. Santa Sleigh Flying Over a Snow Village (34 cm) — scor 34/50 — listare nouă, un singur vânzător
 
 Ce e: Musical tabletop village with a Santa sleigh and reindeer that fly in a circle above the houses.
 
@@ -330,7 +492,7 @@ Riscuri: One seller, 37 orders. Moving parts can arrive broken.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 6 / 6 / 8 / 6
 
 
-## 18. Cat Window Hammock With Wooden Frame — scor 34/50 — listare nouă, un singur vânzător
+## 27. Cat Window Hammock With Wooden Frame — scor 34/50 — listare nouă, un singur vânzător
 
 Ce e: Plush cat bed on a wooden frame that mounts at the window or beside the bed.
 
@@ -347,7 +509,7 @@ Riscuri: Window perches are sold everywhere; only this frame design is fresh. Ho
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 5 / 8 / 8 / 6
 
 
-## 19. LED Ferris Wheel Christmas Scene — scor 33/50 — listare nouă, un singur vânzător
+## 28. LED Ferris Wheel Christmas Scene — scor 33/50 — listare nouă, un singur vânzător
 
 Ce e: Tabletop Christmas fairground with a lit ferris wheel, carousel and tiny stalls.
 
@@ -364,7 +526,7 @@ Riscuri: No rating shown. Unclear whether the wheel really turns: the video may 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 8 / 6
 
 
-## 20. 5 ft Snowman Inflatable With Rotating Lights — scor 32/50 — listare nouă, un singur vânzător
+## 29. 5 ft Snowman Inflatable With Rotating Lights — scor 32/50 — listare nouă, un singur vânzător
 
 Ce e: Indoor or outdoor inflatable snowman with coloured lights that turn inside it.
 
@@ -381,7 +543,7 @@ Riscuri: The $9.25 may be a promo price. Snowman inflatables are common; the rot
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 6 / 6 / 9 / 5
 
 
-## 21. Ceramic-Look Lit Tree With Train Base — scor 32/50 — listare nouă, un singur vânzător
+## 30. Ceramic-Look Lit Tree With Train Base — scor 32/50 — listare nouă, un singur vânzător
 
 Ce e: Tabletop lit Christmas tree with coloured bulbs and a small train turning around the base.
 
@@ -398,7 +560,7 @@ Riscuri: Ceramic breaks in transit. Lighted ceramic trees are an old US category
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 5 / 6 / 8 / 6
 
 
-## 22. Musical Carousel Tree With Climbing Santa — scor 31/50 — listare nouă, un singur vânzător
+## 31. Musical Carousel Tree With Climbing Santa — scor 31/50 — listare nouă, un singur vânzător
 
 Ce e: Tabletop carousel with a lit tree on top, turning figures and a Santa climbing a ladder.
 
@@ -415,7 +577,7 @@ Riscuri: Low orders and exactly 4.5. Close to the other village pieces, so test 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 5 / 6 / 8 / 5
 
 
-## 23. Santa Riding the Dog Costume — scor 44/50 — deja cunoscut
+## 32. Santa Riding the Dog Costume — scor 44/50 — deja cunoscut
 
 Ce e: Dog outfit with a small Santa figure on the dog's back, so Santa rides when the dog runs.
 
@@ -432,7 +594,7 @@ Riscuri: Sold cheaply everywhere for years. Fails our price rule alone. Sizes ca
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 8 / 9 / 10 / 9
 
 
-## 24. Pop-Up Pre-Decorated Christmas Tree — scor 41/50 — deja cunoscut
+## 33. Pop-Up Pre-Decorated Christmas Tree — scor 41/50 — deja cunoscut
 
 Ce e: Flat collapsed tree that pulls up into a full tree with lights and ornaments already on it. 4 to 7 ft.
 
@@ -449,7 +611,7 @@ Riscuri: At least one brand already sells it with paid marketing and Walmart lis
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 9 / 7 / 10 / 8
 
 
-## 25. Felt Christmas Tree Cat House — scor 40/50 — deja cunoscut
+## 34. Felt Christmas Tree Cat House — scor 40/50 — deja cunoscut
 
 Ce e: Cone-shaped felt cat cave that looks like a small Christmas tree with pom-pom ornaments.
 
@@ -466,7 +628,7 @@ Riscuri: Sold by Walmart, Etsy (about $62) and Amazon ($49.88). Felt may arrive 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 8 / 9 / 8
 
 
-## 26. Electric Climbing Santa (rope or ladder) — scor 36/50 — deja cunoscut
+## 35. Electric Climbing Santa (rope or ladder) — scor 36/50 — deja cunoscut
 
 Ce e: Small motorised Santa that climbs up and down a rope or a red ladder while music plays.
 
@@ -483,7 +645,7 @@ Riscuri: An old product. Thin margin, small motors break.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 8 / 9 / 6
 
 
-## 27. 10 ft Sitting Santa Inflatable With Reindeer — scor 36/50 — deja cunoscut
+## 36. 10 ft Sitting Santa Inflatable With Reindeer — scor 36/50 — deja cunoscut
 
 Ce e: 3 m LED inflatable Santa sitting with a reindeer and gift box, for roof or yard.
 
@@ -500,7 +662,7 @@ Riscuri: Older listing, big-box stores sell similar ones. Heavy to ship.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 9 / 6 / 9 / 6
 
 
-## 28. AI Talking Plush Pet — scor 35/50 — deja cunoscut
+## 37. AI Talking Plush Pet — scor 35/50 — deja cunoscut
 
 Ce e: Soft plush robot that listens and answers by voice over Wi-Fi. Several characters.
 
@@ -517,7 +679,7 @@ Riscuri: Hardest to film honestly: only answers the toy really gives. Needs Wi-F
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 6 / 8 / 5 / 8
 
 
-## 29. Inflatable Santa Climbing In Through the Window — scor 35/50 — deja cunoscut
+## 38. Inflatable Santa Climbing In Through the Window — scor 35/50 — deja cunoscut
 
 Ce e: LED inflatable Santa that hangs from a window or balcony so he looks like he is climbing in. 2 m and 3 m.
 
@@ -534,7 +696,7 @@ Riscuri: Lowe's, Target and Costway sell it for about $25 to $70.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 8 / 6 / 9 / 6
 
 
-## 30. Plush Smart Hand Warmer — scor 31/50 — deja cunoscut
+## 39. Plush Smart Hand Warmer — scor 31/50 — deja cunoscut
 
 Ce e: Small rechargeable hand warmer in a soft plush cover with a temperature display.
 

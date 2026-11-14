@@ -183,6 +183,79 @@ P("Musical Carousel Tree With Climbing Santa","carousel.jpg","single",["xmas"],[
  [("Pattern interrupt","He has been climbing since Thanksgiving. Somebody help him.","Close on the tiny Santa on the ladder, carousel turning under him."),
   ("Gifting reaction","The gift my mother-in-law actually kept on the table","Unwrap, switch on, she moves the fruit bowl to make room.")],
  "Low orders and exactly 4.5. Close to the other village pieces, so test only one of them."),
+# ---------- very new, almost no orders yet (round 2, 14 Nov) ----------
+P("Tornado Vortex Lamp","vortex.jpg","early",[],[8,7,7,10,7],
+ "Desk lamp with a column of water in which a spinning tornado is lit by colour-changing LEDs. About 35 cm, USB or battery.",
+ "The only clear new wave outside Christmas: 12 recent listings, no big seller yet, and the real-size ones already cost $35 to $70, so the price holds. Not seasonal.",
+ "$34.69 to $69.99 (small ones from $10.32)","about 22 across 12 listings","5.0 on five listings with 1 to 8 orders","$69 to $99",
+ [("Main size, $34.69","3256813214453875"),("Larger, $67.79","3256813200555522"),("Small, 8 sold, 5.0","3256813086972932")],
+ [("Pattern interrupt","There is a tornado on my nightstand and nobody warned me","Dark bedroom, hand presses the button, the vortex spins up and changes colour. B-roll: unbox, fill, kid's face lit blue."),
+  ("Gifting reaction","I got my dad the one lamp he cannot stop staring at","Dad unwraps it, switches it on, pulls his chair closer.")],
+ "Almost no orders, so no proof of demand. Unclear whether the tube is glass or acrylic; glass would rule it out. One cheap version is titled 'simulated' vortex, so only a version with a real water vortex may be filmed."),
+P("Solar Santa Sleigh Light-Waterfall Stake","solarsleigh.jpg","early",["xmas"],[7,7,6,10,6],
+ "Garden stake about 70 cm tall with Santa's sleigh on top and strands of warm star lights pouring down from it. Solar.",
+ "About 19 listings appeared at once and none has volume yet: as early as it gets. Reads instantly at dusk.",
+ "$13.01 to $39.69","about 29 across 19 listings","5.0 on the one rated","$49.99 for a pair",
+ [("16 sold, 5.0","3256813245253925"),("70 cm resin and iron","3256813302857973"),("$39.69 version","3256813372324240")],
+ [("3-2-1 reveal","3… 2… 1… Santa is dropping the presents early","Dusk lawn, the lights pour out of the sleigh as it gets dark. Kids run to it."),
+  ("Day 1 vs now","Our front path on December 1st vs. tonight","Dark path, then a sleigh every few steps.")],
+ "No proof yet. Solar brightness in winter is unknown and the listing photos look rendered, so the real glow may be weaker. Close to the Snowman Magic Fountain: test one, not both."),
+P("Christmas Village Projection Centerpiece","projvillage.jpg","early",["xmas"],[8,7,7,9,6],
+ "Tabletop gingerbread village in a tree shape with a light inside that throws gingerbread men, candy canes and stars onto the walls and ceiling.",
+ "Lights off, switch on, the whole room fills with shapes: a strong kid reaction. About 12 fresh listings and 260 orders.",
+ "$14.62 to $69.59","67 on the best-rated, 115 and 47 on cheap copies","5.0 on one, 1.5 and 2.0 on the best-selling cheap ones","$79 to $99 (the $42 to $70 version only)",
+ [("67 sold, 5.0","3256813124222731"),("$42.89 version","3256813375389938"),("Rotating, $69.59","3256813172850638")],
+ [("3-2-1 reveal","3… 2… 1… watch the ceiling","Family at the table, lights off, the room fills with gingerbread men. Kids point up."),
+  ("Do NOT let… see this","Do NOT let a Christmas mom see this before December","She walks past it in a generic store aisle, stops, walks back.")],
+ "The best-selling cheap copies are rated 1.5 and 2.0, which says the product does not match its photos. A sample is needed before any video: we may only show the projection it really makes. Room projectors are already crowded in our product finder."),
+P("Rotating Santa Sleigh Tree Topper","topper.jpg","early",["xmas"],[7,7,7,9,6],
+ "Lit star tree topper with Santa's sleigh and reindeer on an arm that circles the top of the tree, with music.",
+ "The sleigh flying round the tree top makes kids look up. Fresh listings already sit at $45 to $47.",
+ "$11.40 to $47.19","about 6 across 6 fresh listings; 45 and 40 on older ones","5.0 and 4.8 on the older ones","$59 to $69",
+ [("Fresh, $45.29","3256813377840716"),("Older, 45 sold, 5.0","3256812751218674")],
+ [("Pattern interrupt","My son has not looked at a single present. He is watching the roof of the tree.","Kid on the floor staring up, sleigh circling the star."),
+  ("Product vs product","Every tree has a star. Ours has air traffic.","Normal star, then the sleigh doing laps.")],
+ "Second-season product, not brand new, and still low volume after a year. Close in idea to the sleigh-over-village piece."),
+P("Gingerbread House Music Box With Train","gingerhouse.jpg","early",["xmas"],[7,6,6,8,6],
+ "Lit gingerbread candy-store house that plays music, with a small train or gingerbread man turning inside.",
+ "Cozy and kid-friendly at a price that needs no bundle. 6 fresh listings.",
+ "$15.25 to $85.09","none shown","none shown","$99 to $119",
+ [("$65.89 version","3256813336763485"),("With rotating train, $63.99","3256813360511250")],
+ [("Gifting reaction","She thought it was a cake box","Grandma lifts the lid, the house lights up and the train starts."),
+  ("Story","The one decoration the kids are allowed to switch on themselves","Small hand on the switch every evening, three nights in a row.")],
+ "Zero orders and no ratings. Resin or ceramic can break in transit. Very close to the village house and the ceramic tree already on the board."),
+P("Infinity Cube Lamp","hypercube.jpg","early",[],[7,6,6,10,6],
+ "Clear acrylic cube lamp with layered mirrors that looks like an endless tunnel of light.",
+ "A small box that looks bottomless on camera. 6 fresh listings; an older listing of the same type has 276 orders at 4.9.",
+ "$15.05 to $36.51","about 5 on fresh listings; 276, 234, 176 on older ones","4.6 to 5.0 on the older ones","$59 to $69",
+ [("Fresh, $36.51","3256813276656536"),("Older, 276 sold, 4.9","3256810573323342")],
+ [("Pattern interrupt","How deep is this box? Wrong.","Finger pointing into the cube, camera moves round to show it is 10 cm thick."),
+  ("Gifting reaction","He asked for nothing. He has not left his desk since.","Husband unwraps it, turns the room light off.")],
+ "The type has existed since earlier in 2026 and infinity mirrors are known in the West. Titles lean to gamer rooms, which is younger than our buyer."),
+P("Valentine Squishy Box (24 pieces)","valsquish.jpg","early",["val"],[7,6,7,8,7],
+ "Gift box of 24 small squeeze toys shaped like hearts, roses and sweets, sold as a Valentine countdown or surprise box.",
+ "The Valentine version of the Christmas squishy box, listed early: 9 fresh listings and none has orders yet. The Christmas version on the same page shows 1,000+ orders at 4.9.",
+ "$3.05 to $23.29","none shown","none shown","$39.99 for a large or double set",
+ [("$23.29 set","3256813362914392")],
+ [("Unboxing + reaction","A little squishy, a lot of love: she opened all 24 in one go","Hands open the lid, squeeze each heart, she steals the pink one."),
+  ("Gifting reaction","He forgot the flowers. He did not forget this.","She frowns at the small box, opens it, cannot stop squeezing.")],
+ "No orders at all yet. Cheap unit price. Several titles say 'for kids', which is outside our buyer. Avoid listings that use a toy brand's name."),
+P("Remote-Control Blooming Rose Bouquet (building blocks)","rosebloom.jpg","early",["val"],[8,7,7,9,6],
+ "Building-block rose bouquet in a pot whose flowers open and close by remote, with a glow.",
+ "Roses that bloom on a button press is a clear 3-second wow for Valentine's, and the supplier price already supports a premium.",
+ "$84.39","none shown","none shown","$149 to $169",
+ [("Only listing","3256813373643371")],
+ [("3-2-1 reveal","3… 2… 1… press it","He hands her the remote, the closed buds open and light up."),
+  ("Product vs product","Real roses: dead by Friday. These:","Wilted bouquet in the bin, then the block roses opening.")],
+ "One listing, no orders, no rating. The buyer has to build it. How the flowers move is unclear from the listing, so a sample is needed first. Expensive to test."),
+P("Auto-Blooming Flower Lamp With Date","lotus.jpg","early",[],[7,6,6,9,5],
+ "Flower-shaped lamp on a wood base whose petals open by themselves, with a warm glow and a date display in the centre.",
+ "A calm wow gift for a mom or grandma. Not seasonal.",
+ "$15.65","none shown","none shown","$49.99",
+ [("Only listing","3256813328441235")],
+ [("Gifting reaction","Mom, press the button","She presses, the petals open slowly, she looks up."),
+  ("Day 1 vs now","What my mom's nightstand looked like before vs. now","Pile of chargers and a dead lamp, then the flower opening at dusk.")],
+ "One listing, no orders. Petals are called 'crystal', which may mean glass."),
 # ---------- already known ----------
 P("Felt Christmas Tree Cat House","3.jpg","known",["xmas","pets"],[8,7,8,9,8],
  "Cone-shaped felt cat cave that looks like a small Christmas tree with pom-pom ornaments.",
@@ -249,21 +322,21 @@ P("Plush Smart Hand Warmer","10.jpg","known",[],[7,6,6,6,6],
   ("Day 1 vs now","Day 1 of winter vs. now","Blowing on cold hands at the bus stop, then holding the plush warmer.")],
  "Battery product. Heated items are already crowded in our product finder. Weakest on screen."),
 ]
-assert len(D)==30, len(D)
-order={"wave":0,"single":1,"known":2}
+N=len(D)
+order={"wave":0,"early":1,"single":2,"known":3}
 D.sort(key=lambda p:(order[p["fresh"]],-p["score"]))
 def datauri(name):
     im=Image.open(os.path.join(IMG,name)).convert("RGB").resize((360,360),Image.LANCZOS)
     b=io.BytesIO(); im.save(b,"WEBP",quality=72); return "data:image/webp;base64,"+base64.b64encode(b.getvalue()).decode()
-DATE="13 Nov 2026"
-FR={"wave":"Fresh wave","single":"Fresh, one seller","known":"Already known"}
-FRRO={"wave":"val nou de listări","single":"listare nouă, un singur vânzător","known":"deja cunoscut"}
+DATE="14 Nov 2026"
+FR={"wave":"Fresh wave","early":"Very new, no proof yet","single":"Fresh, one seller","known":"Already known"}
+FRRO={"wave":"val nou de listări","early":"foarte nou, aproape fără comenzi","single":"listare nouă, un singur vânzător","known":"deja cunoscut"}
 # ---------- markdown ----------
-md=[f"# Research AliExpress — 30 de produse, mai ales de Crăciun ({DATE})\n",
+md=[f"# Research AliExpress — {N} de produse, mai ales de Crăciun ({DATE})\n",
 "Board cu poze: https://claude.ai/artifact/8XheU6FkHoaHgTLPfzZ32N\n",
 "Cifrele (preț, comenzi, rating) sunt din paginile de căutare AliExpress, 13 nov 2026. Toate produsele sunt **ipoteze** până la cifrele noastre (pilot → `rezultate`).\n",
 "**Neverificat:** livrarea în SUA (cost, zile), concurența pe Instagram/TikTok (trebuie Apify, cu acord pe cost), $/1M vizualizări. „Nou” = estimare după numărul listării și câte listări noi au apărut deodată; nou pe AliExpress NU înseamnă automat nesaturat pe Instagram.\n",
-"Ordinea: întâi valurile noi (13), apoi listările noi cu un singur vânzător (9), apoi produsele deja cunoscute (8), fiecare grup după scor.\n",
+"Ordinea: valuri noi (13), apoi foarte noi aproape fără comenzi (9, runda 2 din 14 nov), apoi listări noi cu un singur vânzător (9), apoi deja cunoscute (8); fiecare grup după scor.\n",
 "| # | Produs | Cât de nou | Scor | Preț furnizor | Comenzi | Rating | Preț propus |","|---|---|---|---|---|---|---|---|"]
 for i,p in enumerate(D,1): md.append(f"| {i} | {p['n']} | {FRRO[p['fresh']]} | {p['score']}/50 | {p['cost']} | {p['sold']} | {p['rating']} | {p['sell']} |")
 for i,p in enumerate(D,1):
@@ -276,7 +349,7 @@ for i,p in enumerate(D,1):
 open(OUT_MD,"w").write("\n".join(md))
 # ---------- html ----------
 e=html.escape
-TAG={"xmas":"Christmas","pets":"Pets"}
+TAG={"xmas":"Christmas","pets":"Pets","val":"Valentine"}
 cards=[]
 for i,p in enumerate(D,1):
     tags=f'<span class="tag f-{p["fresh"]}">{FR[p["fresh"]]}</span>'+"".join(f'<span class="tag">{TAG[t]}</span>' for t in p['tags'])
@@ -291,7 +364,7 @@ for i,p in enumerate(D,1):
 <p class="row"><span class="lab">Risks</span>{e(p['risks'])}</p>
 <div class="links"><span class="lab">AliExpress listings</span>{links}</div>
 </article>''')
-nw=sum(p['fresh']=="wave" for p in D); ns=sum(p['fresh']=="single" for p in D); nk=sum(p['fresh']=="known" for p in D)
+ne=sum(p['fresh']=="early" for p in D); nw=sum(p['fresh']=="wave" for p in D); ns=sum(p['fresh']=="single" for p in D); nk=sum(p['fresh']=="known" for p in D)
 page=f'''<title>AliExpress Christmas Board</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
@@ -325,7 +398,7 @@ h1{{font-family:var(--display);font-size:clamp(26px,4vw,38px);line-height:1.1;ma
 h2{{font:700 18px/1.2 var(--display);margin:0;text-wrap:balance}}
 .tags{{display:flex;flex-wrap:wrap;gap:6px}}
 .tag{{font-size:11.5px;font-weight:600;letter-spacing:.03em;padding:2px 8px;border-radius:4px;background:var(--soft);color:var(--muted)}}
-.f-wave{{color:var(--bg);background:var(--pine)}} .f-single{{color:var(--pine)}} .f-known{{color:var(--berry)}}
+.f-wave{{color:var(--bg);background:var(--pine)}} .f-early{{color:var(--bg);background:var(--gold)}} .f-single{{color:var(--pine)}} .f-known{{color:var(--berry)}}
 .score{{white-space:nowrap;font-variant-numeric:tabular-nums}}
 .score strong{{font:700 24px/1 var(--display);color:var(--gold)}} .score span{{color:var(--muted);font-size:12px}}
 p{{margin:0}} .what{{color:var(--muted);font-size:13.5px}}
@@ -344,16 +417,17 @@ footer{{color:var(--muted);font-size:13px;max-width:86ch}}
 @media (max-width:480px){{.top img{{width:104px;height:104px}}}}
 </style>
 <div class="wrap">
-<div><div class="kicker">Product research · AliExpress · {DATE}</div><h1>30 products to test this Christmas</h1></div>
+<div><div class="kicker">Product research · AliExpress · {DATE}</div><h1>{N} new products to test</h1></div>
 <p class="lede">Sorted by how new they are, then by score. Each card has the supplier photo, why it could work, and two concept ideas built on our method: a hook copied from a proven viral, then B-roll, then “Comment X for the link”. Every product is a hypothesis until our own pilot numbers come in.</p>
 <ul class="guide">
 <li><b>Fresh wave · {nw} products</b>Several sellers listed the same product in the last weeks. The best sign we have that a product is new.</li>
+<li><b>Very new, no proof yet · {ne} products</b>Listed in the last weeks with almost no orders. Added 14 Nov. Earliest, and the least proven.</li>
 <li><b>Fresh, one seller · {ns} products</b>A new listing with orders, but only one seller found. Newer, less proven.</li>
 <li><b>Already known · {nk} products</b>Older listings or already in US stores. Kept from the first board; expect competition.</li>
 </ul>
-<p class="note"><b>Not verified yet:</b> how many Instagram and TikTok accounts already run each product, shipping cost and delivery days to the US, and dollars per 1M views. New on AliExpress is not the same as unsaturated on Instagram; that check needs a paid account scrape. Prices, orders and ratings were read from AliExpress search pages on {DATE}. Christmas items must reach buyers before Dec 25, so the selling window closes in early December.</p>
+<p class="note"><b>Not verified yet:</b> how many Instagram and TikTok accounts already run each product, shipping cost and delivery days to the US, and dollars per 1M views. New on AliExpress is not the same as unsaturated on Instagram; that check needs a paid account scrape. Prices, orders and ratings were read from AliExpress search pages on {DATE}. Christmas items must reach buyers before Dec 25, so the selling window closes in early December; the Valentine and non-seasonal items are there for what comes after.</p>
 <div class="chips" role="group" aria-label="Filter products">
-<button id="f-all" data-f="" aria-pressed="true">All 30</button><button id="f-wave" data-f="wave" aria-pressed="false">Fresh wave</button><button id="f-single" data-f="single" aria-pressed="false">Fresh, one seller</button><button id="f-known" data-f="known" aria-pressed="false">Already known</button><button id="f-xmas" data-f="xmas" aria-pressed="false">Christmas</button><button id="f-pets" data-f="pets" aria-pressed="false">Pets</button>
+<button id="f-all" data-f="" aria-pressed="true">All {N}</button><button id="f-wave" data-f="wave" aria-pressed="false">Fresh wave</button><button id="f-early" data-f="early" aria-pressed="false">Very new</button><button id="f-single" data-f="single" aria-pressed="false">Fresh, one seller</button><button id="f-known" data-f="known" aria-pressed="false">Already known</button><button id="f-xmas" data-f="xmas" aria-pressed="false">Christmas</button><button id="f-pets" data-f="pets" aria-pressed="false">Pets</button><button id="f-val" data-f="val" aria-pressed="false">Valentine</button>
 </div>
 <div class="board">{''.join(cards)}</div>
 <footer>Score is the sum of five 0 to 10 marks: emotion in 3 seconds, can be exaggerated, filmable reaction, clear without sound, comments and shares. Exaggeration applies to the scene and the reaction, never to what the product does. Photos are the suppliers' own listing photos.</footer>

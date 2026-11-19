@@ -1,5 +1,5 @@
 {
- "out": "/home/user/limitless/products/grinch-earbuds/final/grinch-earbuds-321-v2.mp4",
+ "out": "/home/user/limitless/products/grinch-earbuds/final/grinch-earbuds-321-v3.mp4",
  "fps": 30,
  "segments": [
   {
@@ -11,6 +11,18 @@
   {
    "file": "/home/user/limitless/products/grinch-earbuds/hook321/broll-kling.mp4",
    "start": 0,
+   "end": 3.4583,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/hook321/finger.mp4",
+   "start": 0.3,
+   "end": 1.7,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/hook321/broll-kling.mp4",
+   "start": 4.7917,
    "end": 11.28,
    "audio": true
   },
@@ -39,8 +51,8 @@
   },
   {
    "segs": [
-    2,
-    3
+    4,
+    5
    ],
    "text": "Comment 'GRINCH' for link! 🎄",
    "size": 56,

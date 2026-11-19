@@ -18,3 +18,6 @@ Fata: character-21 (media `cf66731c-f970-443b-8059-6cba4911012a`). Camera: `crea
 - Carcasa din hook e puțin prea mare pe palmă.
 - Acoperământul nu are nimic recognoscibil de Grinch (filtrul blochează).
 Prompturile exacte stau în joburile de mai sus; se copiază aici cuvânt cu cuvânt când Szasz aprobă.
+
+## Corectură 19 nov (Szasz: „când l-a arătat în mână a greșit cum arată produsul”)
+În B-roll-ul Kling cadrul cu capul pe deget (3,46–4,79 s) avea două vârfuri albe. Înlocuit cu clip separat: start frame `hook321/finger-A_1e913e3d.png` (job `1e913e3d-ac1d-4550-8d61-0447bd3f9a66`, Nano Banana Pro din fișă) → Kling image-to-video 3 s job `2421e0aa-22db-4d7a-9d23-5985cfacf941` → `hook321/finger.mp4` 0,3–1,7 s. Montaj v3: `final/edit-321.json`. De acum prim-planul în mână se face MEREU separat.

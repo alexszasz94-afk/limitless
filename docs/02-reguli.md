@@ -206,3 +206,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 2026-11-07 (Szasz): text pe ecran — MAXIMUM 2 emoji-uri pe un text (la Buttcracker unul e 🇩🇪).
 - 19 nov 2026 (Szasz, căști Grinch): LA SFÂRȘITUL fiecărui video cu căștile — MEREU un cadru cu ea dintr-o parte și un cadru din cealaltă (dreapta = capul cu căciulă, stânga = fundul cu piciorușe). Accentul e pe modelul căștilor, că sunt funny.
 - 19 nov 2026 (Szasz, căști Grinch): personaje noi = fete albe, brunete sau blonde, frumoase, în haine de Crăciun; dacă originalul e într-o cameră → cameră Grinch; atenție la detalii (mâini/degete verificate la fiecare start frame).
+
+- **19 nov 2026 (Szasz, căști Grinch):** prim-planul cu produsul în mână / pe deget se face separat (start frame din fișa produsului → Kling image-to-video → tăiat în montaj), nu în B-roll-ul lung; se verifică partea din spate a căștii (un singur vârf alb) înainte de livrare.

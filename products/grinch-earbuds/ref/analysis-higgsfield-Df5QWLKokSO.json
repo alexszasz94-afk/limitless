@@ -1,0 +1,45 @@
+{
+ "id": "92e272b1-525a-4359-8c00-845081fe4253",
+ "reel": "Df5QWLKokSO",
+ "status": "completed",
+ "completed_at": "2026-11-19T12:36:30Z",
+ "note": "condensed from the Higgsfield result by Claude; visuals shortened, audio lines verbatim",
+ "scenes": [
+  {
+   "t": "0:00-0:02",
+   "label": "Opening Hook",
+   "audio": "A medium-tempo electronic pop beat with a high-pitched, playful vocal sample saying 'Yummy' repeatedly.",
+   "visual": "female hands hold matte pink case, right hand lifts the lid: two white cat-face earbuds with pink bows; pink bedroom with plush toys, string lights"
+  },
+  {
+   "t": "0:02-0:04",
+   "label": "Product Information",
+   "audio": "The rhythmic electronic beat continues with upbeat synth pulses.",
+   "visual": "single earbud balanced on the tip of the index finger, static; white cat face, pink bow, grey silicone tip; pink couch, bedside lamp"
+  },
+  {
+   "t": "0:04-0:07",
+   "label": "Usage Scenarios",
+   "audio": "The vocal sample 'Yummy' repeats in sync with the beat.",
+   "visual": "young blonde woman, ponytail, freckles, chunky pink sweater; side profile; inserts the earbud into her RIGHT ear with her right hand"
+  },
+  {
+   "t": "0:07-0:08",
+   "label": "Product Selling Points",
+   "audio": "A short transition sound effect, like a high-pitched chime, over the music.",
+   "visual": "tight shot of the ear with the earbud fully inserted; two small gold studs in the earlobe"
+  },
+  {
+   "t": "0:08-0:10",
+   "label": "Real Experience",
+   "audio": "The music continues at a steady volume with the 'Yummy' vocal sample.",
+   "visual": "she sits on a pink bed against a faux-fur pillow under a fuzzy blanket, sips from a white mug with both hands, eyes closed"
+  },
+  {
+   "t": "0:10-0:11",
+   "label": "Call to Action",
+   "audio": "The music fades out with a final beat.",
+   "visual": "final static shot identical to scene 4, earbud in the ear"
+  }
+ ]
+}

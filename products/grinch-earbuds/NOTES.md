@@ -66,3 +66,4 @@ CAP singur pe alb = blocat de filtru (nsfw ×2) → se decupează din imaginile 
 - B: în avion bărbatul SE APLEACĂ să se uite de aproape la urechea ei (0:07–0:10), apoi reacția (0:10–0:11); eu am scris „se uită în jos, apoi aruncă o privire”.
 - Tăieturile și urechile (stânga la inserare) se potrivesc cu harta mea. A (Df5QWLKokSO, 92e272b1) e încă in_progress.
 Fișiere: `ref/analysis-higgsfield-Df4SMoEyWW5.json`, `ref/analysis-higgsfield-Df1ry_FyQS6.json`.
+- A (Df5QWLKokSO, analiza 92e272b1 sosită 12:36 UTC): se potrivește cu harta mea — 6 scene, urechea DREAPTĂ, fără replici; sunetul e un beat pop electronic cu sample „Yummy” (muzică, nu voce). Nimic de corectat la A / A2. Fișier: `ref/analysis-higgsfield-Df5QWLKokSO.json`.

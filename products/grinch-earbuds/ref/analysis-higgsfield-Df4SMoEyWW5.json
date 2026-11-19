@@ -1,0 +1,51 @@
+{
+ "id": "07196957-e67a-4ce3-929c-7f9ef09932c5",
+ "reel": "Df4SMoEyWW5",
+ "status": "completed",
+ "completed_at": "2026-11-19T11:38:47Z",
+ "note": "condensed from the Higgsfield result by Claude; visuals shortened, audio lines verbatim",
+ "scenes": [
+  {
+   "t": "0:00-0:01",
+   "label": "Opening Hook",
+   "audio": "A rhythmic, high-pitched vocalizing sound, reminiscent of a comical scream or a 'woo' sound, repeating at a fast tempo.",
+   "visual": "hand with black polka-dot nails holds matte olive green case, two tiny frogs inside; bedroom with blurred American flag and string lights"
+  },
+  {
+   "t": "0:01-0:02",
+   "label": "Product Information",
+   "audio": "The high-pitched 'woo' sounds continue, synced with the action of picking up the earbud.",
+   "visual": "right hand picks up the LEFT frog earbud; frog sits on a dark green silicone ear tip"
+  },
+  {
+   "t": "0:02-0:03",
+   "label": "Product Selling Points",
+   "audio": "The repetitive high-pitched vocalizations continue.",
+   "visual": "frog earbud held between thumb and index finger, static, shallow depth of field"
+  },
+  {
+   "t": "0:03-0:05",
+   "label": "Usage Scenarios",
+   "audio": "The vocal 'woo' sounds increase in intensity and frequency.",
+   "visual": "blonde woman outdoors in profile, hoop earrings, pearl necklace, beige trench; places the frog earbud into her LEFT ear"
+  },
+  {
+   "t": "0:05-0:07",
+   "label": "Real Experience",
+   "audio": "The vocalizations continue at a steady, upbeat tempo.",
+   "visual": "she turns to camera and smiles widely, earbud visible"
+  },
+  {
+   "t": "0:07-0:10",
+   "label": "Usage Scenarios",
+   "audio": "The 'woo' sounds continue, but slightly muffled to simulate the background noise of an airplane.",
+   "visual": "airplane cabin: blonde woman in pink hoodie, eyes closed; muscular man in black tank top leans in to look closely at her ear"
+  },
+  {
+   "t": "0:10-0:11",
+   "label": "Call to Action",
+   "audio": "The high-pitched vocalizing reaches a crescendo and ends abruptly with a final 'woo' sound.",
+   "visual": "man reacts with exaggerated shock, mouth wide open, hands raised; woman opens her eyes, confused"
+  }
+ ]
+}

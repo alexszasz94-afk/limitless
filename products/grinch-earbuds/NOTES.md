@@ -59,3 +59,10 @@ Keep the source video's camera framing, timing and every movement exactly the sa
 Fișa: pereche față 74a9444c-13ae-4ab8-86f3-3dfa1f9d6fb1 · pereche profil 1e8cda86-fb89-4384-8bc0-50409ec63501 · pereche spate 54492b03 (GATA, bună: gâturile în oglindă) · FUND 3/4 2fe6e1d3-b8a1-4706-ab91-18ba97e83b09 · FUND de sus 3cf2b2fd-9519-42f1-b6cf-7197c61b3b31 · carcasă închisă e944d603-9085-456a-9e1c-8a61cd7cb179 · carcasă deschisă fără mână 7aa4fb9d-f8dc-48eb-9206-ebf93ae538a1 · CAP ținut cu o mână 1ad844b7-1c2c-400b-bd0b-f0c81abc0977 · FUND ținut cu o mână 86a958e5-fdc4-4a2a-b909-a53e98fd656c.
 Camere noi (runda 2): 3d001b63-6c2b-4161-af23-eba39d960d05 · 4c42e8bf-548f-48b8-8396-f21e68c0f57f. Fete runda 2: A2 character-31, B2 character-22, C2 character-29.
 CAP singur pe alb = blocat de filtru (nsfw ×2) → se decupează din imaginile cu perechea.
+
+## Analiza Higgsfield (sosită 11:38–11:43 UTC, după ce Szasz a zis „fă generările Kling”) — diferențe față de harta mea
+- C (Df1ry_FyQS6): replica „What is that?” o spune OFIȚERUL de la aeroport (0:08–0:11), urmată de râsul fetei — NU bunica din avion. În A/C runda 1 și C2 am pus-o greșit pe bunică la 4,3 s (transcrierea locală nu avea timpi siguri). Bunica doar se uită șocată și gesticulează, fără replică. De corectat la următoarea generare C.
+- B și C: sunetul original NU e muzică, e un sunet viral („woo” repetat la B; râs ascuțit, șuierat la C). În montaj am pus muzică de Crăciun — de decis cu Szasz dacă vrea sunetul viral în loc.
+- B: în avion bărbatul SE APLEACĂ să se uite de aproape la urechea ei (0:07–0:10), apoi reacția (0:10–0:11); eu am scris „se uită în jos, apoi aruncă o privire”.
+- Tăieturile și urechile (stânga la inserare) se potrivesc cu harta mea. A (Df5QWLKokSO, 92e272b1) e încă in_progress.
+Fișiere: `ref/analysis-higgsfield-Df4SMoEyWW5.json`, `ref/analysis-higgsfield-Df1ry_FyQS6.json`.

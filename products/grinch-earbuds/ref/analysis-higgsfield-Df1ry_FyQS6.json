@@ -1,0 +1,39 @@
+{
+ "id": "1799e79c-bf18-48dd-9282-165a4b6717b1",
+ "reel": "Df1ry_FyQS6",
+ "status": "completed",
+ "completed_at": "2026-11-19T11:43:31Z",
+ "note": "condensed from the Higgsfield result by Claude; visuals shortened, audio lines verbatim",
+ "scenes": [
+  {
+   "t": "0:00-0:01",
+   "label": "Opening Hook",
+   "audio": "A high-pitched, wheezing, rhythmic laughter track (viral audio) starts at high volume.",
+   "visual": "side profile of blonde woman, beige trench, pearls; her hand inserts the frog earbud into her LEFT ear"
+  },
+  {
+   "t": "0:01-0:03",
+   "label": "Product Information",
+   "audio": "Continuation of the high-pitched, wheezing laughter track.",
+   "visual": "she turns slightly to the lens, frog in ear, calm neutral face"
+  },
+  {
+   "t": "0:03-0:05",
+   "label": "Real Experience",
+   "audio": "The wheezing laughter track continues at a consistent volume.",
+   "visual": "airplane: young woman in pink hoodie, eyes closed; elderly woman with short white hair, glasses, purple floral shirt looks at her ear shocked, gesturing"
+  },
+  {
+   "t": "0:05-0:08",
+   "label": "Product Information",
+   "audio": "The high-pitched laughter track continues, accompanied by a faint mechanical 'click' sound when the case is held open.",
+   "visual": "POV over zebra crossing: hands hold matte green case with two frogs; right thumb and forefinger lift one out"
+  },
+  {
+   "t": "0:08-0:11",
+   "label": "Usage Scenarios",
+   "audio": "Male voice asks: \"What is that?\" followed by the woman's audible laughter and the continuation of the high-pitched laughter sound effect.",
+   "visual": "airport security: male officer in his 40s, grey uniform, black gloves, points toward her ear, confused but smiling; woman in pink hoodie holds the case in one hand and a frog in the other, laughing"
+  }
+ ]
+}

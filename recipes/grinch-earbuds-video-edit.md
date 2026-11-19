@@ -15,8 +15,8 @@ Stare: scrisă înainte de prima generare. Se marchează „dovedit” doar dup�
 ## Imagini (ID-uri Higgsfield)
 - head-in-ear (Szasz) `b1e4b9c6-1411-403e-89ad-53ed984a501f`
 - butt-in-ear (Szasz) `f6fe037e-b1d4-488c-b85c-3d0788e6aa1b`
-- case-pair normal (cap stânga, fund dreapta) job `134c3b2b-0976-4e1e-93cb-58bccb36420c`
-- case-pair oglindită (fund stânga, cap dreapta) `705b95ff-752d-49d4-8460-7832bd5fbdb6`
+- case-pair normal (cap stânga, fund dreapta) job `fcf5ac3e-4c2e-4e93-b6cc-d99c5b2cf2b5` (19 nov, corectat: prima variantă 134c3b2b avea degetele greșite — Szasz; refăcut cu mână suplă, 5 degete, carcasă la mărime reală)
+- case-pair oglindită (fund stânga, cap dreapta) = `case-pair-hand2-flipped.jpg`, ID în `products/grinch-earbuds/media-ids.json` (vechea 705b95ff NU se mai folosește)
 - held-head job `28257601-31da-4988-a6b7-eb3dee2c74b7`
 - held-butt job `35b743a7-306b-414e-aeef-4ffc61ac6b70`
 - room-grinch-bedroom job `1080c5c2-9cbe-48f5-9f64-6658a8aebb89`

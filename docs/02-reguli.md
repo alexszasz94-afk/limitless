@@ -204,3 +204,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 2026-11-06 (Szasz): Buttcracker — muzica din montaje = The Drifters „White Christmas” (`products/buttcracker/music/white-christmas-drifters.mp3`), pornește de la intro (0 s), de la începutul videoului (Szasz: „de la intro poți să începi”).
 - 2026-11-07 (Szasz): IMAGINI — de acum TOATE cu Nano Banana Pro (`nano_banana_pro`, 9:16, 4k). Înlocuiește GPT Image 2.6 (regula 6 nov) și GPT Image 2.5.
 - 2026-11-07 (Szasz): text pe ecran — MAXIMUM 2 emoji-uri pe un text (la Buttcracker unul e 🇩🇪).
+- 19 nov 2026 (Szasz, căști Grinch): LA SFÂRȘITUL fiecărui video cu căștile — MEREU un cadru cu ea dintr-o parte și un cadru din cealaltă (dreapta = capul cu căciulă, stânga = fundul cu piciorușe). Accentul e pe modelul căștilor, că sunt funny.
+- 19 nov 2026 (Szasz, căști Grinch): personaje noi = fete albe, brunete sau blonde, frumoase, în haine de Crăciun; dacă originalul e într-o cameră → cameră Grinch; atenție la detalii (mâini/degete verificate la fiecare start frame).

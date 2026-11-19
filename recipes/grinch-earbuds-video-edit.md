@@ -34,3 +34,10 @@ Imagini: 1 head-in-ear, 2 butt-in-ear, 3 case oglindită, 4 held-butt, 5 charact
 
 ## C — Df1ry_FyQS6 (frog + grandma + airport), input `ecb45949-f633-47a3-a7d1-cddd085a3f87`, duration 13
 Imagini: 1 head-in-ear, 2 butt-in-ear, 3 case normală, 4 held-head, 5 character-02.
+
+## FINAL OBLIGATORIU (Szasz, 19 nov): două cadre de profil
+După videoul copiat se lipesc MEREU două cadre: profil dreapta (capul în ureche) + profil stânga (fundul în ureche), aceeași fată, aceleași haine.
+Start frame-uri (Nano Banana Pro 4K, ref: fata + poza lui Szasz cu casca în ureche): A `a43723d2` / `374660eb`, B `3f5aabe0` / `83b6ef6a`, C `6367753a` / `ad0ef806`.
+
+## Joburi Kling, runda 1 (19 nov, 1080p)
+A `2e5f6d0d-4902-4163-9648-f857ee5103fb` · B `c0ca18e6-a895-49dd-a6ac-20b72289da57` · C `e6a54b86-217b-4246-80ab-2d8eac179918`. Prompturile exacte: `products/grinch-earbuds/PROMPTS-USED.md`.

@@ -54,3 +54,8 @@ Keep the source video's shots, framing, timing, movements and voices exactly. Re
 ### f89cab1b-f90e-414b-9642-752fee02c8fa (ip_detected)
 Keep the source video's camera framing, timing and every movement exactly the same. Replace the snake earbud with the green Grinch-head earbud from the reference images (only the head with the small Santa hat, face looking out of the ear, sitting in the ear like a normal earbud, nothing sticking out). Replace the woman with the woman from the first reference image: long dark brown hair in a high ponytail, black knit running headband, black winter running jacket with high zipped collar and reflective stripes. Change the setting to winter: snowy park, snow-covered trees, light snow falling, cold daylight. No text, no captions, no logos.
 
+
+## Joburi în lucru (19 nov ~11:55 UTC) — fișa + runda 2
+Fișa: pereche față 74a9444c-13ae-4ab8-86f3-3dfa1f9d6fb1 · pereche profil 1e8cda86-fb89-4384-8bc0-50409ec63501 · pereche spate 54492b03 (GATA, bună: gâturile în oglindă) · FUND 3/4 2fe6e1d3-b8a1-4706-ab91-18ba97e83b09 · FUND de sus 3cf2b2fd-9519-42f1-b6cf-7197c61b3b31 · carcasă închisă e944d603-9085-456a-9e1c-8a61cd7cb179 · carcasă deschisă fără mână 7aa4fb9d-f8dc-48eb-9206-ebf93ae538a1 · CAP ținut cu o mână 1ad844b7-1c2c-400b-bd0b-f0c81abc0977 · FUND ținut cu o mână 86a958e5-fdc4-4a2a-b909-a53e98fd656c.
+Camere noi (runda 2): 3d001b63-6c2b-4161-af23-eba39d960d05 · 4c42e8bf-548f-48b8-8396-f21e68c0f57f. Fete runda 2: A2 character-31, B2 character-22, C2 character-29.
+CAP singur pe alb = blocat de filtru (nsfw ×2) → se decupează din imaginile cu perechea.

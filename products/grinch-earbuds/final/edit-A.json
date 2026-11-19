@@ -1,0 +1,39 @@
+{
+ "out": "/home/user/limitless/products/grinch-earbuds/final/grinch-earbuds-A-v1.mp4",
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/out/A-kling-r1.mp4",
+   "start": 0,
+   "end": 11.28,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/end/A-left.mp4",
+   "start": 0,
+   "end": 2.8,
+   "audio": true
+  }
+ ],
+ "texts": [
+  {
+   "segs": [
+    0,
+    -1
+   ],
+   "text": "Don't let Grinch fans\nfind this 🤫",
+   "size": 58,
+   "y": 0.15
+  },
+  {
+   "t0": 8.57,
+   "t1": 999,
+   "text": "Comment 'GRINCH' for link! 🎄",
+   "size": 52,
+   "y": 0.8
+  }
+ ],
+ "music": "music/xmas/mariah-all-i-want.mp3",
+ "music_start": 53.4,
+ "music_vol": 0.45
+}

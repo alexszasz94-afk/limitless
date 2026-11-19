@@ -27,7 +27,7 @@ Stare: scrisă înainte de prima generare. Se marchează „dovedit” doar dup�
 
 ## A — Df5QWLKokSO (Hello Kitty → Grinch), input `252cc0d1-d119-4038-bc4e-1a7eb141ac44`, duration 12
 Imagini: 1 head-in-ear, 2 butt-in-ear, 3 case oglindită, 4 held-head, 5 character-05, 6 room-grinch-bedroom.
-Prompt: vezi PROMPTS-USED.md (se completează din job după generare, cuvânt cu cuvânt).
+Promptul exact stă în jobul Higgsfield de mai jos (runda 1); se copiază aici cuvânt cu cuvânt abia când Szasz aprobă rezultatul.
 
 ## B — Df4SMoEyWW5 (frog + muscle man), input `f76da41a-c7b1-4add-b278-82ce743b8fa1`, duration 12
 Imagini: 1 head-in-ear, 2 butt-in-ear, 3 case oglindită, 4 held-butt, 5 character-30, 6 room-grinch-bedroom.
@@ -40,4 +40,9 @@ După videoul copiat se lipesc MEREU două cadre: profil dreapta (capul în urec
 Start frame-uri (Nano Banana Pro 4K, ref: fata + poza lui Szasz cu casca în ureche): A `a43723d2` / `374660eb`, B `3f5aabe0` / `83b6ef6a`, C `6367753a` / `ad0ef806`.
 
 ## Joburi Kling, runda 1 (19 nov, 1080p)
-A `2e5f6d0d-4902-4163-9648-f857ee5103fb` · B `c0ca18e6-a895-49dd-a6ac-20b72289da57` · C `e6a54b86-217b-4246-80ab-2d8eac179918`. Prompturile exacte: `products/grinch-earbuds/PROMPTS-USED.md`.
+A `2e5f6d0d-4902-4163-9648-f857ee5103fb` · B `c0ca18e6-a895-49dd-a6ac-20b72289da57` · C `e6a54b86-217b-4246-80ab-2d8eac179918`. Prompturile exacte: în Higgsfield, pe ID-ul jobului.
+
+## Rezultat runda 1 (19 nov) — de corectat la runda 2
+- A: capul pe vârful degetului e prea mare. B: fundul ținut cu două mâini (referința held-butt avea două mâini → refă referința cu o mână). C: în avion urechea dinspre bunică arată bilă verde, nu capul; bunica are ecuson necerut; capul ținut deasupra trecerii e puțin prea mare.
+- Finaluri: clipuri Kling image-to-video 3 s din cadrele decupate pe ureche (B/C dreapta+stânga, A stânga; la A dreapta = ultimul cadru al videoului). A-right still `0a02cf35` are cercel → nefolosit.
+- Montaj: `creator-kit/engine/montage.py` cu `products/grinch-earbuds/final/edit-<A|B|C>.json` (text, muzică de la drop, music_vol 0.45, sunetul Kling păstrat).

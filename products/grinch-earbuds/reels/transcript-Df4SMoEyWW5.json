@@ -1,0 +1,12 @@
+{
+ "lang": "en",
+ "lang_prob": 0.56,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 7.0,
+   "text": " Oh",
+   "no_speech": 0.25
+  }
+ ]
+}

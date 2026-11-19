@@ -14,6 +14,14 @@ Perechea NU mai e două capete identice. Referințe în `ref/v2/` (singurele val
 Material: blană fină realistă (nu plastic mat ca la v1). Tot ce e în `ref/v1-old/` (două capete, plastic) e ÎNLOCUIT — nu se mai folosește ca referință de produs.
 De făcut pentru v2: carcasa cu perechea nouă (cap + fund) și cum arată fiecare cască ținută în degete (spate/tip) — nu există încă referințe.
 
+## LOT 19 nov — 3 reel-uri de copiat (Szasz), Kling 4.0 întâi
+Cerința: personaje noi (fete albe, brunete/blonde, frumoase), haine de Crăciun, dacă e în cameră → cameră Grinch, atenție la detalii.
+- A `reels/Df5QWLKokSO.mp4` (Hello Kitty, 11,28 s) · B `reels/Df4SMoEyWW5.mp4` (broască + tip musculos, 11,07 s) · C `reels/Df1ry_FyQS6.mp4` (broască + bunică + aeroport, 12,35 s)
+- Analiza mea cadru cu cadru + tăieturi + transcriere: `ref/analysis-<id>.json`, `reels/transcript-<id>.json`.
+- Analiza Higgsfield pornită 09:46 UTC (92e272b1 = A, 07196957 = B, 1799e79c = C) — la coadă. Szasz: AȘTEPT analiza înainte de generare.
+- Referințe noi v2 (Nano Banana Pro 4K): `ref/v2/case-pair`, `held-head`, `held-butt`, `room-grinch-bedroom`. Inputuri Kling fără sunet: `in/`.
+- Rețeta și ID-urile: `recipes/grinch-earbuds-video-edit.md`; ID-uri urcate: `media-ids.json`.
+
 ## Originale (`src/`)
 - `snakepod-jog_55e72291.mp4` — 10,9 s, 720x1280. Tăieturi (analiza Higgsfield): 1.8 / 3.2 / 4.9 / 7.8 / 8.9 s.
 - `snakepod-car_43c7595a.mp4` — 12,3 s, 720x1280. Tăieturi: 4.5 / 8.6 s.

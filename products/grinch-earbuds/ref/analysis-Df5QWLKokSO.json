@@ -1,0 +1,36 @@
+{
+ "id": "Df5QWLKokSO",
+ "source": "local frame-by-frame (2-5 fps sheets) + ffmpeg scene cuts + faster-whisper; Higgsfield analysis 92e272b1 queued since 09:46 UTC",
+ "duration": 11.28,
+ "overlay": [
+  "Don't let hello kitty fans find this 🤫 (0-11.3, top)",
+  "Comment 'KITTY' for link! 🎀 (8.57-11.3, lower)"
+ ],
+ "audio": "music only, no speech (whisper no_speech 0.76)",
+ "scenes": [
+  {
+   "t": "0-3.33",
+   "what": "POV over a pink bed with plushies: left hand holds the closed pink case, lid flips open at ~0.5 s, two earbuds face up; right hand's fingers pinch the RIGHT-slot earbud and lift it out by 3.3 s"
+  },
+  {
+   "t": "3.33-4.70",
+   "what": "same bedroom, wider: one earbud balanced on an index fingertip, seen in profile/from behind (nozzle visible), bed and lamp behind"
+  },
+  {
+   "t": "4.70-7.83",
+   "what": "girl (blonde low ponytail, pink knit sweater) sits facing camera, looks down smiling at the earbud in her right hand (4.7-5.5), turns her head to her left (screen-right) and puts it into her RIGHT ear with her right hand (5.5-7.8)"
+  },
+  {
+   "t": "7.83-8.57",
+   "what": "close-up of her right ear in profile, earbud seated, face of the earbud to camera"
+  },
+  {
+   "t": "8.57-10.07",
+   "what": "she sits on a sofa under a fluffy blanket, lamp behind, drinks from a mug held in both hands"
+  },
+  {
+   "t": "10.07-11.28",
+   "what": "close-up profile of her right ear with the earbud, slight smile"
+  }
+ ]
+}

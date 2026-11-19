@@ -1,0 +1,31 @@
+{
+ "id": "Df4SMoEyWW5",
+ "source": "local frame-by-frame + cuts + faster-whisper; Higgsfield analysis 07196957 queued",
+ "duration": 11.07,
+ "overlay": [
+  "POV: You bought the most weirdest earbuds ever 🤭 (0-11.1, top)"
+ ],
+ "audio": "music with vocals; man's scream 'AHHH' at ~10.2-10.6 s",
+ "scenes": [
+  {
+   "t": "0-2.50",
+   "what": "POV in a bedroom (US flag + string lights on wall): left hand (black-and-cream jacket cuff, black nails with white dots) holds closed green case; lid opens at ~0.5 s; two frog earbuds; right hand pinches the LEFT-slot earbud (1.2-2.0) and lifts it up; case sinks to lower right"
+  },
+  {
+   "t": "2.50-4.00",
+   "what": "close-up: the earbud held upright between thumb and index finger, flag blurred behind"
+  },
+  {
+   "t": "4.00-5.63",
+   "what": "outdoors, blue sky, bare trees: girl in profile facing screen-left (short hair up, beige trench, black top, pearl necklace) pushes the earbud into her LEFT ear with her left hand, hand drops by 5.4 s"
+  },
+  {
+   "t": "5.63-7.97",
+   "what": "jump cut closer, 3/4 face toward camera, earbud visible in her left ear, she looks at camera and breaks into a smile (6.8-7.9)"
+  },
+  {
+   "t": "7.97-11.07",
+   "what": "airplane cabin: muscular man in black tank top (screen-left) and blonde girl in pink hoodie + white skirt (screen-right) seated side by side; he looks down (8-9.3), glances at her ear, at ~9.6 recoils with open mouth and raised hand, screams ~10.2; she turns to him"
+  }
+ ]
+}

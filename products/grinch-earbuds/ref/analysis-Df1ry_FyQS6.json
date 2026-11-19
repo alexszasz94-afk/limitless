@@ -1,0 +1,28 @@
+{
+ "id": "Df1ry_FyQS6",
+ "source": "local frame-by-frame + cuts + faster-whisper; Higgsfield analysis 1799e79c queued",
+ "duration": 12.35,
+ "overlay": [
+  "POV: You bought the weirdest AirPods ever 🐸😂 (0-12.35, top)",
+  "Comment \"FROG\" For Link 🐸 (~11-12.35, lower)"
+ ],
+ "audio": "music; sung/spoken 'What is that?' ~6.9-9.5 s (whisper, low confidence on timing)",
+ "scenes": [
+  {
+   "t": "0-2.40",
+   "what": "outdoors, blue sky: close profile facing screen-left, girl (short blonde hair, beige trench, pearls) adjusts the earbud in her LEFT ear with her left hand, then lowers the hand"
+  },
+  {
+   "t": "2.40-5.57",
+   "what": "airplane cabin: grandma (grey curls, purple top, screen-left) and blonde girl in pink hoodie (screen-right); grandma looks at the girl's ear, at ~4.3 leans in startled, raises her hand; girl turns to her at ~5"
+  },
+  {
+   "t": "5.57-8.73",
+   "what": "POV above a zebra crossing: left hand (black nails with white dots, black-cream cuff) holds closed green case, opens it (~6.0), right hand takes the LEFT-slot earbud out (6.5-7.5) and holds it up between fingers (7.5-8.7); open case lower right with one earbud left in the right slot"
+  },
+  {
+   "t": "8.73-12.35",
+   "what": "airport security: officer (dark uniform, black gloves, screen-left) and the girl in pink hoodie + white skirt (screen-right) holding the green case; he examines something small in his gloved hands, she laughs and touches her ear (~10), he looks at the case and grins"
+  }
+ ]
+}

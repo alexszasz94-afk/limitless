@@ -1,0 +1,47 @@
+{
+ "out": "/home/user/limitless/products/grinch-earbuds/final/grinch-earbuds-B2-v1.mp4",
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/out/B2-kling.mp4",
+   "start": 0,
+   "end": 11.07,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/end2/B2-right.mp4",
+   "start": 0,
+   "end": 2.5,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/end2/B2-left.mp4",
+   "start": 0,
+   "end": 2.5,
+   "audio": true
+  }
+ ],
+ "texts": [
+  {
+   "segs": [
+    0,
+    -1
+   ],
+   "text": "POV: You bought the most\nweirdest earbuds ever 🤭",
+   "size": 64,
+   "y": 0.14
+  },
+  {
+   "segs": [
+    1,
+    2
+   ],
+   "text": "Comment 'GRINCH' for link! 🎄",
+   "size": 56,
+   "y": 0.8
+  }
+ ],
+ "music": "music/xmas/buble-beginning.mp3",
+ "music_start": 35.35,
+ "music_vol": 0.45
+}

@@ -1,0 +1,45 @@
+{
+ "out": "/home/user/limitless/products/grinch-earbuds/final/grinch-earbuds-C2-v1.mp4",
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/out/C2-kling.mp4",
+   "start": 0,
+   "end": 12.35,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/end2/C2-right.mp4",
+   "start": 0,
+   "end": 2.5,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/end2/C2-left.mp4",
+   "start": 0,
+   "end": 2.5,
+   "audio": true
+  }
+ ],
+ "texts": [
+  {
+   "segs": [
+    0,
+    -1
+   ],
+   "text": "POV: You bought the weirdest\nearbuds ever 💚😂",
+   "size": 64,
+   "y": 0.12
+  },
+  {
+   "t0": 11.0,
+   "t1": 999,
+   "text": "Comment 'GRINCH' for link! 🎄",
+   "size": 56,
+   "y": 0.78
+  }
+ ],
+ "music": "music/xmas/mariah-all-i-want.mp3",
+ "music_start": 53.4,
+ "music_vol": 0.45
+}

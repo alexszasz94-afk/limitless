@@ -1,0 +1,45 @@
+{
+ "out": "/home/user/limitless/products/grinch-earbuds/final/grinch-earbuds-A2-v1.mp4",
+ "fps": 30,
+ "segments": [
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/out/A2-kling.mp4",
+   "start": 0,
+   "end": 11.28,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/end2/A2-right.mp4",
+   "start": 0,
+   "end": 2.5,
+   "audio": true
+  },
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/end2/A2-left.mp4",
+   "start": 0,
+   "end": 2.5,
+   "audio": true
+  }
+ ],
+ "texts": [
+  {
+   "segs": [
+    0,
+    -1
+   ],
+   "text": "Don't let Grinch fans\nfind this 🤫",
+   "size": 64,
+   "y": 0.15
+  },
+  {
+   "t0": 8.57,
+   "t1": 999,
+   "text": "Comment 'GRINCH' for link! 🎄",
+   "size": 56,
+   "y": 0.8
+  }
+ ],
+ "music": "music/xmas/wham-last-christmas.mp3",
+ "music_start": 0.0,
+ "music_vol": 0.45
+}

@@ -59,8 +59,12 @@ Blocate de filtrul Higgsfield (nsfw): CAP singur pe alb (×2), pereche din profi
 | A-v1 | instagram.com/reel/Df5QWLKokSO (Hello Kitty) | `2e5f6d0d` | character-05, dormitor Grinch | `final/grinch-earbuds-A-v1.mp4` |
 | B-v1 | instagram.com/reel/Df4SMoEyWW5 (broască + tip musculos) | `c0ca18e6` | character-30, dormitor Grinch + parc + avion | `final/grinch-earbuds-B-v1.mp4` |
 | C-v1 | instagram.com/reel/Df1ry_FyQS6 (broască + bunică + aeroport) | `e6a54b86` | character-02, parc + avion + trecere + aeroport | `final/grinch-earbuds-C-v1.mp4` |
-| A2 | același cu A | `a1d8c4d0-ab6a-4712-9d93-3b17c43ce55d` | character-31, dormitor seara | în lucru |
-| B2 | același cu B | `6e77db2b-b5e3-431f-821a-764844a8d4fb` | character-22, dormitor dimineața + parc + avion | în lucru |
-| C2 | același cu C | `0f3263a6-649b-49f8-b45b-9d50586f4d4d` | character-29 | în lucru |
+| A2 | același cu A | `a1d8c4d0-ab6a-4712-9d93-3b17c43ce55d` | character-31, dormitor seara | `final/grinch-earbuds-A2-v1.mp4` |
+| B2 | același cu B | `6e77db2b-b5e3-431f-821a-764844a8d4fb` | character-22, dormitor dimineața + parc + avion | `final/grinch-earbuds-B2-v1.mp4` |
+| C2 | același cu C | `0f3263a6-649b-49f8-b45b-9d50586f4d4d` | character-29 | `final/grinch-earbuds-C2-v1.mp4` |
 Cadre de final runda 2 (profil dr/st): A2 `ae243faf`/`8153f26b`, B2 `190c4f2c`/`56c91b51`, C2 `7576d9bd`/`0bba4cf8`.
 Rețeta: `recipes/grinch-earbuds-video-edit.md`. Context complet: `products/grinch-earbuds/NOTES.md`.
+
+## Runda 2 (19 nov) — ce a ieșit
+Cu referințele din fișă: căști mai mici în mână/carcasă, B2 ținut cu o singură mână, bunica fără ecuson, profilurile de final cu casca ÎN ureche și fără cercei.
+De corectat: A2 capul pe vârful degetului încă ~cât degetul; B2/C2 în avion casca din ureche nu se distinge ca fiind capul; C2 la aeroport puloverul a ieșit rochie scurtă (cere explicit „jeans”). Muzică: A2 Wham, B2 Bublé, C2 Mariah. Text mărit la 64/56.

@@ -29,16 +29,29 @@ Sursa de adevăr pentru cum arată produsul = cele 3 poze trimise de Szasz pe 19
 | Carcasă oglindită (CAP dreapta) | `case-pair-hand2-flipped.jpg` | media `d048c0d3-8a41-4c11-9a7f-64b0ac720d35` | oglinda celei de sus |
 | Dormitor Grinch | `room-grinch-bedroom_1080c5c2.png` | job `1080c5c2-9cbe-48f5-9f64-6658a8aebb89` | generat, neaprobat explicit |
 
-## Referințe SLABE (de înlocuit — nu se mai folosesc după ce apar cele noi)
-| Ce | Fișier | Problemă |
-|---|---|---|
-| CAP ținut în degete | `held-head_28257601.png` | arată a plastic, nu blană; în video capul a ieșit prea mare |
-| FUND ținut în degete | `held-butt_35b743a7.png` | ținut cu DOUĂ mâini → Kling a copiat două mâini (originalul are una) |
-| Carcasă cu degete greșite | `rejected-case-pair-badhand_134c3b2b.png` | respinsă de Szasz |
-| Tot ce e în `ref/v1-old/` | — | design vechi (două capete, plastic) |
+## FIȘA — unghiuri (19 nov, Nano Banana Pro 4K) — planșa: `products/grinch-earbuds/ref/sheet/PRODUCT-SHEET.jpg`
+| Ce | Fișier (`ref/sheet/`) | ID Higgsfield | Când se folosește |
+|---|---|---|---|
+| PERECHE din spate = partea care intră în ureche (gât scurt + vârf alb de silicon, în oglindă st/dr, 2 contacte aurii) | `pair-back_54492b03.png` | job `54492b03-2d4b-4107-84ec-92965b79166c` | MEREU, ca Image 3 — fixează construcția căștii |
+| CAP față (decupaj din poza lui Szasz) | `crop-head-szasz.png` | media `369ee5ca-2898-47c8-9985-7c396a1c9ea2` | referință la imagini noi cu capul |
+| CAP ținut cu O mână, din lateral | `held1-head_1ad844b7.png` | job `1ad844b7-1c2c-400b-bd0b-f0c81abc0977` | când capul e ținut în degete (și ca reper de mărime) |
+| FUND față | `butt-out_043874dc.png` | job `043874dc-f2cf-48ef-aaab-02c05f4d5b89` | referință la imagini noi cu fundul |
+| FUND spate (partea din ureche) | `butt-in_7426a617.png` | job `7426a617-33a3-4413-9807-09116ed59ef8` | |
+| FUND profil | `butt-side_7998e6ed.png` | job `7998e6ed-88d4-4b18-9235-f3f88a110f5d` | |
+| FUND trei sferturi | `butt-34_2fe6e1d3.png` | job `2fe6e1d3-b8a1-4706-ab91-18ba97e83b09` | |
+| FUND de sus | `butt-top_3cf2b2fd.png` | job `3cf2b2fd-9519-42f1-b6cf-7197c61b3b31` | |
+| FUND ținut cu O mână | `held1-butt_86a958e5.png` | job `86a958e5-fdc4-4a2a-b909-a53e98fd656c` | când fundul e ținut în degete |
+| Carcasă închisă | `case-closed_e944d603.png` | job `e944d603-9085-456a-9e1c-8a61cd7cb179` | |
+| FUND decupaj Szasz | `crop-butt-szasz.png` | media `2c57d4a5-7821-48e8-9889-0681ba793e28` | |
+| Dormitor Grinch seara (perete verde) | `../v2/room-grinch-evening_3d001b63.png` | job `3d001b63-6c2b-4161-af23-eba39d960d05` | cameră |
+| Dormitor Grinch dimineața (flanel roșu) | `../v2/room-grinch-morning_4c42e8bf.png` | job `4c42e8bf-548f-48b8-8396-f21e68c0f57f` | cameră |
 
-## Referințe care LIPSESC (de generat după aprobarea lui Szasz)
-Vezi propunerea din chat (19 nov): produs curat pe alb (CAP față / spate, FUND față / spate), pereche alăturată, carcasă închisă, carcasă deschisă fără mână, CAP și FUND ținute cu O mână.
+Ordinea standard a imaginilor la Kling video-edit: 1 CAP în ureche (Szasz) · 2 FUND în ureche (Szasz) · 3 PERECHE din spate · 4 carcasa (normală/oglindită) · 5 casca ținută cu o mână (CAP sau FUND, după cadru) · 6 fata · 7 camera.
+
+Blocate de filtrul Higgsfield (nsfw): CAP singur pe alb (×2), pereche din profil, carcasă deschisă fără mână → capul apare doar în mână / ureche / carcasă ținută / pereche din spate. Nu se mai încearcă capul singur pe alb.
+
+## Referințe RESPINSE (nu se folosesc)
+- `v2/held-head_28257601.png` (plastic, prea mare în video) · `v2/held-butt_35b743a7.png` (două mâini) · `v2/rejected-case-pair-badhand_134c3b2b.png` (degete greșite) · `sheet/rejected-butt-34_501994f8.png` (blană în plus) · tot `ref/v1-old/` (design vechi).
 
 ## Videouri
 | v | original | job Kling | fată / loc | final |
@@ -46,4 +59,8 @@ Vezi propunerea din chat (19 nov): produs curat pe alb (CAP față / spate, FUND
 | A-v1 | instagram.com/reel/Df5QWLKokSO (Hello Kitty) | `2e5f6d0d` | character-05, dormitor Grinch | `final/grinch-earbuds-A-v1.mp4` |
 | B-v1 | instagram.com/reel/Df4SMoEyWW5 (broască + tip musculos) | `c0ca18e6` | character-30, dormitor Grinch + parc + avion | `final/grinch-earbuds-B-v1.mp4` |
 | C-v1 | instagram.com/reel/Df1ry_FyQS6 (broască + bunică + aeroport) | `e6a54b86` | character-02, parc + avion + trecere + aeroport | `final/grinch-earbuds-C-v1.mp4` |
+| A2 | același cu A | `a1d8c4d0-ab6a-4712-9d93-3b17c43ce55d` | character-31, dormitor seara | în lucru |
+| B2 | același cu B | `6e77db2b-b5e3-431f-821a-764844a8d4fb` | character-22, dormitor dimineața + parc + avion | în lucru |
+| C2 | același cu C | `0f3263a6-649b-49f8-b45b-9d50586f4d4d` | character-29 | în lucru |
+Cadre de final runda 2 (profil dr/st): A2 `ae243faf`/`8153f26b`, B2 `190c4f2c`/`56c91b51`, C2 `7576d9bd`/`0bba4cf8`.
 Rețeta: `recipes/grinch-earbuds-video-edit.md`. Context complet: `products/grinch-earbuds/NOTES.md`.

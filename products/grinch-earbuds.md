@@ -17,6 +17,7 @@ Sursa de adevăr pentru cum arată produsul = cele 3 poze trimise de Szasz pe 19
 4. Din ce locaș iese casca în original decide carcasa: normală (CAP stânga) sau oglindită (CAP dreapta).
 5. Fără cercei, fără căciulă/bentiță peste urechi, părul după ureche.
 6. Finalul fiecărui video: profil dreapta (CAP) + profil stânga (FUND) — regula 19 nov.
+8. Prim-planul cu casca în mână / pe deget NU se lasă în seama lui Kling într-un B-roll lung (19 nov: a ieșit cu două vârfuri albe — Szasz). Se face separat: start frame Nano Banana Pro din fișă → Kling image-to-video 3 s → tăiat în montaj.
 7. Verificare înainte de folosire: mâini (5 degete, proporții), mărimea căștii, casca ÎN ureche (nu pe lob), blană nu plastic.
 
 ## Referințe APROBATE / în uz
@@ -35,6 +36,7 @@ Sursa de adevăr pentru cum arată produsul = cele 3 poze trimise de Szasz pe 19
 | PERECHE din spate = partea care intră în ureche (gât scurt + vârf alb de silicon, în oglindă st/dr, 2 contacte aurii) | `pair-back_54492b03.png` | job `54492b03-2d4b-4107-84ec-92965b79166c` | MEREU, ca Image 3 — fixează construcția căștii |
 | CAP față (decupaj din poza lui Szasz) | `crop-head-szasz.png` | media `369ee5ca-2898-47c8-9985-7c396a1c9ea2` | referință la imagini noi cu capul |
 | CAP ținut cu O mână, din lateral | `held1-head_1ad844b7.png` | job `1ad844b7-1c2c-400b-bd0b-f0c81abc0977` | când capul e ținut în degete (și ca reper de mărime) |
+| CAP pe vârful degetului (un singur vârf alb, în spate) | `../../hook321/finger-A_1e913e3d.png` | job `1e913e3d-ac1d-4550-8d61-0447bd3f9a66` | start frame pentru orice cadru „casca arătată pe deget” |
 | FUND față | `butt-out_043874dc.png` | job `043874dc-f2cf-48ef-aaab-02c05f4d5b89` | referință la imagini noi cu fundul |
 | FUND spate (partea din ureche) | `butt-in_7426a617.png` | job `7426a617-33a3-4413-9807-09116ed59ef8` | |
 | FUND profil | `butt-side_7998e6ed.png` | job `7998e6ed-88d4-4b18-9235-f3f88a110f5d` | |
@@ -70,4 +72,4 @@ Cu referințele din fișă: căști mai mici în mână/carcasă, B2 ținut cu o
 De corectat: A2 capul pe vârful degetului încă ~cât degetul; B2/C2 în avion casca din ureche nu se distinge ca fiind capul; C2 la aeroport puloverul a ieșit rochie scurtă (cere explicit „jeans”). Muzică: A2 Wham, B2 Bublé, C2 Mariah. Text mărit la 64/56.
 
 ## Hook „3, 2, 1” (19 nov)
-`final/grinch-earbuds-321-v2.mp4` (21,3 s) — fată character-21, sufragerie room-4k-14. Rețeta și ce e de îmbunătățit: `recipes/grinch-earbuds-hook-321.md`.
+`final/grinch-earbuds-321-v3.mp4` (21,5 s) — fată character-21, sufragerie room-4k-14. Rețeta și ce e de îmbunătățit: `recipes/grinch-earbuds-hook-321.md`.

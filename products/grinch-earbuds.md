@@ -68,3 +68,6 @@ Rețeta: `recipes/grinch-earbuds-video-edit.md`. Context complet: `products/grin
 ## Runda 2 (19 nov) — ce a ieșit
 Cu referințele din fișă: căști mai mici în mână/carcasă, B2 ținut cu o singură mână, bunica fără ecuson, profilurile de final cu casca ÎN ureche și fără cercei.
 De corectat: A2 capul pe vârful degetului încă ~cât degetul; B2/C2 în avion casca din ureche nu se distinge ca fiind capul; C2 la aeroport puloverul a ieșit rochie scurtă (cere explicit „jeans”). Muzică: A2 Wham, B2 Bublé, C2 Mariah. Text mărit la 64/56.
+
+## Hook „3, 2, 1” (19 nov)
+`final/grinch-earbuds-321-v1.mp4` (21,3 s) — fată character-21, sufragerie room-4k-14. Rețeta și ce e de îmbunătățit: `recipes/grinch-earbuds-hook-321.md`.

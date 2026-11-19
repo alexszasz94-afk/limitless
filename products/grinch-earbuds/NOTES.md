@@ -6,11 +6,19 @@ fișierele locale de pe PC (videourile Kling, montaj, note) NU sunt aici.
 Concept: căști wireless în formă de cap de Grinch cu căciulă de Moș, copiate după reel-urile SnakePod
 ("Do not show this to a SNAKE-PHOBIC" / "Perfect earbuds for snake-holics doesn't exi-"), mutate în iarnă.
 
+## DESIGN ACTUAL (v2) — de la Szasz, 19 nov 2026: „așa o să arate căștile de acum”
+Perechea NU mai e două capete identice. Referințe în `ref/v2/` (singurele valabile de acum):
+- `earbud-head-right-ear.jpg` — urechea DREAPTĂ a ei: capul de Grinch, blană verde, rânjet, ochi galbeni, căciulă de Moș roșie cu bordură albă.
+- `earbud-butt-left-ear.jpg` — urechea STÂNGĂ a ei: fundul Grinch-ului, minge de blană verde cu două piciorușe/tălpi verzi jos, fără căciulă.
+- `front-both-ears.jpg` — din față: capul în dreapta ei (stânga ecranului), fundul în stânga ei (dreapta ecranului).
+Material: blană fină realistă (nu plastic mat ca la v1). Tot ce e în `ref/v1-old/` (două capete, plastic) e ÎNLOCUIT — nu se mai folosește ca referință de produs.
+De făcut pentru v2: carcasa cu perechea nouă (cap + fund) și cum arată fiecare cască ținută în degete (spate/tip) — nu există încă referințe.
+
 ## Originale (`src/`)
 - `snakepod-jog_55e72291.mp4` — 10,9 s, 720x1280. Tăieturi (analiza Higgsfield): 1.8 / 3.2 / 4.9 / 7.8 / 8.9 s.
 - `snakepod-car_43c7595a.mp4` — 12,3 s, 720x1280. Tăieturi: 4.5 / 8.6 s.
 
-## Referințe (`ref/`) — sufixul = primele 8 caractere din ID-ul Higgsfield
+## Referințe vechi v1 (`ref/v1-old/`) — sufixul = primele 8 caractere din ID-ul Higgsfield
 | Fișier | Ce e | Sursa |
 |---|---|---|
 | earbud-first-concept_9ea09d44 | primul concept (Grinch întreg, ghemuit) — înlocuit | GPT Image 2.6 |

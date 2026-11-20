@@ -1,10 +1,16 @@
 {
- "out": "/home/user/limitless/products/grinch-earbuds/final/grinch-earbuds-C5-v1.mp4",
+ "out": "/home/user/limitless/products/grinch-earbuds/final/grinch-earbuds-C5-v2.mp4",
  "fps": 30,
  "segments": [
   {
    "file": "/home/user/limitless/products/grinch-earbuds/out/C5-kling.mp4",
    "start": 0,
+   "end": 8.75,
+   "audio": false
+  },
+  {
+   "file": "/home/user/limitless/products/grinch-earbuds/out/C5-kling.mp4",
+   "start": 8.75,
    "end": 12.35,
    "audio": true
   },
@@ -12,13 +18,13 @@
    "file": "/home/user/limitless/products/grinch-earbuds/end3/C5-right.mp4",
    "start": 0,
    "end": 2.5,
-   "audio": true
+   "audio": false
   },
   {
    "file": "/home/user/limitless/products/grinch-earbuds/end3/C5-left.mp4",
    "start": 0,
    "end": 2.5,
-   "audio": true
+   "audio": false
   }
  ],
  "texts": [

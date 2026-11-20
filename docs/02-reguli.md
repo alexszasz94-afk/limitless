@@ -208,3 +208,5 @@ Format: `- (data) regula — sursa`. Regula mai nouă bate regula mai veche.
 - 19 nov 2026 (Szasz, căști Grinch): personaje noi = fete albe, brunete sau blonde, frumoase, în haine de Crăciun; dacă originalul e într-o cameră → cameră Grinch; atenție la detalii (mâini/degete verificate la fiecare start frame).
 
 - **19 nov 2026 (Szasz, căști Grinch):** prim-planul cu produsul în mână / pe deget se face separat (start frame din fișa produsului → Kling image-to-video → tăiat în montaj), nu în B-roll-ul lung; se verifică partea din spate a căștii (un singur vârf alb) înainte de livrare.
+
+- **20 nov 2026 (Szasz, montaj):** sunetul generat de Kling se păstrează DOAR pe porțiunile cu voce (replică / râs); unde nu vorbește nimeni se taie și rămâne doar muzica. În `edit-*.json`: segmentul se împarte la tăietură, `audio: false` pe partea fără voce.

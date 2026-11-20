@@ -64,9 +64,9 @@ Blocate de filtrul Higgsfield (nsfw): CAP singur pe alb (×2), pereche din profi
 | A2 | același cu A | `a1d8c4d0-ab6a-4712-9d93-3b17c43ce55d` | character-31, dormitor seara | `final/grinch-earbuds-A2-v1.mp4` |
 | B2 | același cu B | `6e77db2b-b5e3-431f-821a-764844a8d4fb` | character-22, dormitor dimineața + parc + avion | `final/grinch-earbuds-B2-v1.mp4` |
 | C2 | același cu C | `0f3263a6-649b-49f8-b45b-9d50586f4d4d` | character-29 | `final/grinch-earbuds-C2-v1.mp4` |
-| C3 | același cu C | `9f3f9b08-7035-407d-bc7c-40c33b32847a` | character-07, parc + avion + trecere + aeroport | `final/grinch-earbuds-C3-v1.mp4` |
-| C4 | același cu C | `60e11ef2-c735-4a7b-80ff-52309648aba2` | character-26, stradă cu ghirlande | `final/grinch-earbuds-C4-v1.mp4` |
-| C5 | același cu C | `b373c4e0-34f9-4953-94bd-296f959bb085` (prima `22427eb4` respinsă: două vârfuri albe) | character-25, în fața terminalului | `final/grinch-earbuds-C5-v1.mp4` |
+| C3 | același cu C | `9f3f9b08-7035-407d-bc7c-40c33b32847a` | character-07, parc + avion + trecere + aeroport | `final/grinch-earbuds-C3-v2.mp4` |
+| C4 | același cu C | `60e11ef2-c735-4a7b-80ff-52309648aba2` | character-26, stradă cu ghirlande | `final/grinch-earbuds-C4-v2.mp4` |
+| C5 | același cu C | `b373c4e0-34f9-4953-94bd-296f959bb085` (prima `22427eb4` respinsă: două vârfuri albe) | character-25, în fața terminalului | `final/grinch-earbuds-C5-v2.mp4` |
 Cadre de final runda 2 (profil dr/st): A2 `ae243faf`/`8153f26b`, B2 `190c4f2c`/`56c91b51`, C2 `7576d9bd`/`0bba4cf8`.
 Rețeta: `recipes/grinch-earbuds-video-edit.md`. Context complet: `products/grinch-earbuds/NOTES.md`.
 

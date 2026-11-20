@@ -65,3 +65,5 @@ Joburile și rezultatul se trec mai jos după verificare.
 C3 9f3f9b08-7035-407d-bc7c-40c33b32847a · C4 60e11ef2-c735-4a7b-80ff-52309648aba2 · C5 22427eb4-0d99-4eab-8cb6-97af4758fa20 (Kling, 20 nov)
 Rezultat runda 3 (20 nov): C3 și C4 bune (un singur vârf alb, blugi, fața clară în avion). C5 prima încercare `22427eb4` RESPINSĂ (două vârfuri albe în mână și în ureche) → refăcut cu fraza în plus „exactly ONE white tip, at its back only - never a white tip on each side” + ofițerul doar arată spre ureche: job `b373c4e0-34f9-4953-94bd-296f959bb085`.
 Cadre de final (Nano Banana → Kling i2v 3 s): C3 dr/st stills `4310225d`/`83013185` → clipuri `25461700`/`53f923aa`; C4 `32665f76`/`3d64e111` → `707cd09f`/`d693aaaa`; C5 `86a89cc3`/`aea1f37b` → `78947572`/`e137e712`.
+
+Montaj (regula 20 nov): sunetul Kling doar pe scena cu ofițerul (de la tăietura ~8,6–8,75 s până la 12,35 s); restul și cadrele de final `audio: false`. Finale: `final/grinch-earbuds-C3|C4|C5-v2.mp4`.

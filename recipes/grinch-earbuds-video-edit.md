@@ -46,3 +46,20 @@ A `2e5f6d0d-4902-4163-9648-f857ee5103fb` · B `c0ca18e6-a895-49dd-a6ac-20b72289d
 - A: capul pe vârful degetului e prea mare. B: fundul ținut cu două mâini (referința held-butt avea două mâini → refă referința cu o mână). C: în avion urechea dinspre bunică arată bilă verde, nu capul; bunica are ecuson necerut; capul ținut deasupra trecerii e puțin prea mare.
 - Finaluri: clipuri Kling image-to-video 3 s din cadrele decupate pe ureche (B/C dreapta+stânga, A stânga; la A dreapta = ultimul cadru al videoului). A-right still `0a02cf35` are cercel → nefolosit.
 - Montaj: `creator-kit/engine/montage.py` cu `products/grinch-earbuds/final/edit-<A|B|C>.json` (text, muzică de la drop, music_vol 0.45, sunetul Kling păstrat).
+
+## RUNDA 3 — stilul „aeroport” (C), 20 nov 2026 (Szasz: „mai fă-mi 3 videouri în stilul ăla cu aeroportul cu alte personaje”, „ai grijă la detalii la fișa produs”)
+Baza = promptul C2 (job `0f3263a6-649b-49f8-b45b-9d50586f4d4d`), cuvânt cu cuvânt, cu aceste modificări datate 20 nov:
+1. VOCE: replica „What is that?” o spune OFIȚERUL (bărbat) la 9,0–10,3 s, nu bunica (analiza Higgsfield 1799e79c, lecția l14). Bunica doar mimează șocul, fără cuvinte.
+2. Ofițerul e bărbat (ca în original).
+3. Haine: se scrie explicit „long blue jeans” + pulover scurt până la talie (la C2 puloverul a ieșit rochie).
+4. Avion: se scrie că în urechea DREAPTĂ se vede clar fața Grinch-ului cu căciula roșie (la C2 nu se distingea).
+5. Mărime: „never bigger than her fingernail-to-knuckle fingertip segment”.
+Imagini (ordinea fișei): 1 CAP în ureche `b1e4b9c6` · 2 FUND în ureche `f6fe037e` · 3 pereche spate `54492b03` · 4 carcasa normală `fcf5ac3e` · 5 CAP ținut cu o mână `1ad844b7` · 6 fata. Input `ecb45949` (13 s), kling4_0 video-edit 1080p 9:16.
+Se schimbă doar: <GIRL/HAIR>, <OUTFIT>, <OUTDOOR>, <GRANDMA>, <OFFICER>.
+| v | fata | păr | ținută | afară | bunica | ofițerul |
+|---|---|---|---|---|---|---|
+| C3 | character-07 `57bb9785` | șaten deschis, coadă înaltă | pulover crem împletit cu bandă roșie fair-isle + blugi | parc cu zăpadă | ~70, bucle albe scurte, ochelari, cardigan vișiniu | ~45, păr închis scurt, uniformă bleumarin |
+| C4 | character-26 `5658fa75` | brunetă, coc jos | pulover roșu pe gât + blugi | stradă cu luminițe, ziua | ~70, păr gri în coc, cardigan bleu | ~35, blond scurt, cămașă de uniformă bleu |
+| C5 | character-25 `00196f98` | blondă, coadă înaltă | cardigan nordic roșu-alb încheiat + blugi | în fața terminalului, iarna | ~75, păr argintiu împletit, pulover bej pe gât | ~50, păr gri, mustață, uniformă închisă |
+Joburile și rezultatul se trec mai jos după verificare.
+C3 9f3f9b08-7035-407d-bc7c-40c33b32847a · C4 60e11ef2-c735-4a7b-80ff-52309648aba2 · C5 22427eb4-0d99-4eab-8cb6-97af4758fa20 (Kling, 20 nov)

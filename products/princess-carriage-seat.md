@@ -34,3 +34,6 @@ Câinele: Maltez alb cu fundiță roz (din concept-v1/v3a).
 ## Pilot video 1 (25 nov) — Seedance 2.5 video_edit, draft 480p, fără sunet
 Original: `ref/original.mp4` (@itsbottomspup DgJJXq2JkbD), analiza `ref/analysis-ce165c30.json`. Input = `original-silent.mp4` (media 772ac4d4-ff67-4885-8823-39a93eef4594).
 Job: af865a00-78ac-44ff-8d0d-fce25e7abd80 (39 credite).
+Montaj: `video/princess-pilot1-480p.mp4` — draftul mărit la 1080x1920 local, textul originalului cuvânt cu cuvânt (sus) + „Me:😂” (stânga), sunetul originalului („It's the Most Wonderful Time of the Year”).
+Verificare (25 nov): produsul = referința în toate cadrele, Maltezul OK, acțiunile și tăieturile ca la original (1.54/3.5/5/6.5/7.9/9.3 vs 1.63/…/9.5).
+Probleme: (1) ultimul cadru nu are șofer și pare mașina oprită (a copiat ref2 în loc de scena originalului); (2) căciula de Moș plutește pe tetieră la 6.5–8 s; (3) câinele nu poartă puloverul roz cerut.

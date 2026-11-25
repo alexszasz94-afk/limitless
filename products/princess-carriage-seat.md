@@ -49,3 +49,9 @@ ref2-back-dog.png (fundă pe spate) = GREȘIT, nu se mai folosește.
 - Început: scaunul GOL în folie (fără câine).
 - Text nou (Szasz: alt text, emoji de prințesă): sus „“Babe she’s a DOG, not a princess”🙄”, stânga „Me: 👑🎀” (`video/cap2.png`, montage.text_png 72px).
 - Sunet: piesa originalului (de schimbat înainte de postare).
+
+## 4K (25 nov, Szasz: „dă-i upscale la 4K”)
+- Finalizarea Seedance din draft: 4K = 373 credite, 1080p = 220 (sold 182) → NU. S-a făcut upscale bytedance 4K aigc 30 fps pe pilot 3: job 10ef5946-879d-41c1-a467-3f8280baf5da → `video/pilot3-4k-upscale.mp4` (2160x3840).
+- `video/princess-v1-4k-letitgo.mp4` — text de prințesă + „Let It Go” (creator-kit/music/xmas, refrenul 58.5 s pe tăietura de la 1.54 → start 56.96).
+- `video/princess-v1-4k-nomusic.mp4` — fără muzică, pentru sunetul pus din aplicație.
+- Szasz vrea piesa cu „across my memory” = „Once Upon a December” (Anastasia) — nu e în repo; se pune din aplicație sau o trimite Szasz ca mp3.

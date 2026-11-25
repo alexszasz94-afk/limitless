@@ -42,3 +42,10 @@ Probleme: (1) ultimul cadru nu are șofer și pare mașina oprită (a copiat ref
 | spate corectat A (panou roz cu coroniță + volute aurii) | ae607926-251f-41b1-94b6-5c21b8b3b308 | refs/ref2b-back-a.png |
 | spate corectat B | eca422a7-b901-471d-8d64-5cab41078802 | refs/ref2b-back-b.png |
 ref2-back-dog.png (fundă pe spate) = GREȘIT, nu se mai folosește.
+
+## Pilot 2 (25 nov) — job e27714ba-cfb2-49f9-a067-b335e0f30051: spate corectat, șofer la final, pulover roz. Probleme: a PĂSTRAT textul originalului (deși i s-a cerut să-l scoată) + câinele în folie la început (Szasz: „n-are sens”).
+## Pilot 3 (25 nov) — job 802f6b14-63fc-4c30-93db-30d9426e160b — `video/princess-pilot3-480p.mp4`
+- Input fără text: `ref/original-notext.mp4` (ffmpeg delogo pe text sus x110 y330 860x180 + „Me:” x160 y915 200x80), media 2df7218b-126b-4de2-a4ad-6071ea654b66. LECȚIE: Seedance video_edit copiază textul ars din input chiar dacă promptul zice să-l scoată → textul se șterge ÎNAINTE din input (delogo).
+- Început: scaunul GOL în folie (fără câine).
+- Text nou (Szasz: alt text, emoji de prințesă): sus „“Babe she’s a DOG, not a princess”🙄”, stânga „Me: 👑🎀” (`video/cap2.png`, montage.text_png 72px).
+- Sunet: piesa originalului (de schimbat înainte de postare).

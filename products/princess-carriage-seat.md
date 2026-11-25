@@ -37,3 +37,8 @@ Job: af865a00-78ac-44ff-8d0d-fce25e7abd80 (39 credite).
 Montaj: `video/princess-pilot1-480p.mp4` — draftul mărit la 1080x1920 local, textul originalului cuvânt cu cuvânt (sus) + „Me:😂” (stânga), sunetul originalului („It's the Most Wonderful Time of the Year”).
 Verificare (25 nov): produsul = referința în toate cadrele, Maltezul OK, acțiunile și tăieturile ca la original (1.54/3.5/5/6.5/7.9/9.3 vs 1.63/…/9.5).
 Probleme: (1) ultimul cadru nu are șofer și pare mașina oprită (a copiat ref2 în loc de scena originalului); (2) căciula de Moș plutește pe tetieră la 6.5–8 s; (3) câinele nu poartă puloverul roz cerut.
+
+## 25 nov — Szasz: funda e pe INTERIORUL spătarului (se vede doar din față); în spate broderie de prințesă
+| spate corectat A (panou roz cu coroniță + volute aurii) | ae607926-251f-41b1-94b6-5c21b8b3b308 | refs/ref2b-back-a.png |
+| spate corectat B | eca422a7-b901-471d-8d64-5cab41078802 | refs/ref2b-back-b.png |
+ref2-back-dog.png (fundă pe spate) = GREȘIT, nu se mai folosește.

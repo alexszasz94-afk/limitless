@@ -35,6 +35,8 @@ Reguli de la Szasz (25 nov 2026, seara):
 - **1688 și Alibaba.com nu se pot căuta de aici**: pagina de căutare cere verificare cu glisor (CAPTCHA), testat 25 nov. Nu se ocolește. Căi: Szasz caută logat și trimite linkuri/capturi, un agent de sourcing, sau un scraper plătit cu acord pe cost.
 - Căutarea pe produse generale din ultimele 5 zile (casă, bucătărie, mașină, grădină, jucării, cadouri) a ieșit aproape goală în 2 runde: listările proaspete din zonele astea sunt marfă ieftină sau produse vechi. Lucrurile noi cu comenzi apar la animale și la decor cu lumină.
 
+**ȚINTA (regula 25 nov 2026, Szasz): femei 35+, organic pe Facebook, la tot.** Fiecare produs se judecă prin ochii ei: îl cumpără pentru animalul ei, pentru casă sau cadou (soț, copii, nepoți, părinți). „Cui i-l vinzi” se scrie din perspectiva ei (ex. nu „pasionați de mașini”, ci „soții care cumpără pentru el”). Se pot propune și produse mai scumpe (99–169 $) când produsul duce prețul.
+
 ## 1. Semințe de căutare (15–25 de căutări, în engleză)
 Pornește de la **emoție**, nu de la categorie. Câte 2–4 căutări pe fiecare:
 

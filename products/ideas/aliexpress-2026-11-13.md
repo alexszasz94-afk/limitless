@@ -145,6 +145,8 @@ Potențial: Highland cow fans buy the animal on everything, and this one is days
 
 Link AliExpress: [Only listing](https://www.aliexpress.us/item/3256813493161595.html)
 
+De inventat pe același principiu — Principiul: The animal this group loves, big and glowing in the yard. Produse noi: The same cow for Halloween (witch hat) and for spring (flower crown); a highland-cow railing sitter with lights; a highland-cow door hanger; a chicken or goat for farm families. Pentru cine: Highland cow lovers, farmhouse-style decorators, hobby-farm women.
+
 Dovadă de custom: Highland cow now, listed in the last 5 days. Dog breeds exist from other sellers: golden retriever, dachshund, pug.
 
 Versiuni de nișă: Highland cow lovers, each dog breed, chicken and farm families. A custom shape needs a minimum order.
@@ -232,6 +234,8 @@ Ce e: Animal figure covered in warm lights for the yard. The photo shows a horse
 Potențial: A lit horse on the lawn is unusual and reads at night. About 7 listings; a dog series has 70 orders.
 
 Link AliExpress: [Horse and foal, $54.19](https://www.aliexpress.us/item/3256813399585724.html) · [Dog series, 70 sold](https://www.aliexpress.us/item/3256810206041345.html)
+
+De inventat pe același principiu — Principiul: Her own animal, life-like and lit, where the neighbours can see it. Produse noi: Breed statues that match the buyer's dog; a mare and foal for horse women; a cat on the windowsill that glows; a memorial version with a name plate. Pentru cine: Horse women, breed owners, pet loss.
 
 Dovadă de custom: Horse and foal now; a dog series exists in three breeds from another seller.
 
@@ -1039,6 +1043,8 @@ Ce e: Flat collapsed tree that pulls up into a full tree with lights and ornamen
 Potențial: The pull-up moment is the strongest too-good-to-be-true shot here, and it is true.
 
 Link AliExpress: [391 sold, 4.4](https://www.aliexpress.us/item/3256809539423578.html) · [51 sold, 5.0](https://www.aliexpress.us/item/3256812712026934.html) · [Fresh, $48.76](https://www.aliexpress.us/item/3256813257048250.html)
+
+De inventat pe același principiu — Principiul: A big seasonal job done in one move. Produse noi: A pop-up Halloween tree in black and orange; a pop-up Easter tree with eggs; a pull-up pre-lit porch garland; a pop-up birthday backdrop that stores flat. Pentru cine: Busy moms, grandmothers, anyone who decorates alone or has little storage.
 
 Concept 1 (Product vs product), hook EN: "Him: 3 hours and a ladder. Me:" — Split screen: he untangles lights, she pulls the tree up in one move and sits down with cocoa.
 

@@ -190,9 +190,9 @@ NP("Dog collar (angel or dragon wings), horse tack, runners and cyclists, motorc
  "Other wing shapes per group: eagle wings for hunters and bikers, butterfly for small dogs, breed-coloured sets; a horse-show version; a kids' scooter version.",
  P("Clip-On LED Wing Light","wingdog.jpg","niche",["pets"],[8,8,8,10,8],
  "Small light that clips to a dog collar, horse tack, a runner's belt or a bike and throws a pair of glowing wings on the ground behind.",
- "The strongest find of this round: about 30 listings, every one from the last 2 to 3 weeks and none older. Orders are still small. Reads instantly at night.",
- "$10.19 to $36.89","95, 49, 41, 30, 18 and less across about 30 listings","none shown","$39.99 to $49.99",
- [("Dog, newest, $21.42","3256813494657967"),("Dog, 95 sold","3256813454540410"),("Horse version","3256813497935533"),("Runner version, 49 sold","3256813447514699")],
+ "The strongest find so far: about 30 listings, all from the last 3 weeks, and 11 more dog listings appeared in the last 5 days alone. The biggest has about 247 orders. Reads instantly at night and is not seasonal.",
+ "$10.19 to $36.89","about 247 on the biggest, then 95, 49, 41, 30 and less","none shown","$44.99 to $49.99",
+ [("Dog, newest, $36.89","3256813509831358"),("Dog, about 247 sold","3256813447494385"),("Dog, 95 sold","3256813454540410"),("Horse version","3256813497935533"),("Runner version, 49 sold","3256813447514699")],
  [("Pattern interrupt","People keep stopping their cars to ask what my dog is","Night walk filmed from behind: plain dog, click, red wings spread on the road. Driver slows down."),
   ("Do NOT let… see this","Do NOT let a horse girl see this before the evening ride","Rider at dusk, wings glowing on the trail behind the horse.")],
  "Every listing photo is computer-made, and one carries an AI watermark: the real projection will be smaller and dimmer. A sample must be filmed before any video, and we show only what it really throws. Cheap versions at $6 to $11 suggest quality varies.")),
@@ -205,7 +205,7 @@ NP("Golden retriever now. Titles name the breed, so the breed is the part that c
  [("38 sold, $25.32","3256813444222943"),("Older, 6 sold","3256813187163457")],
  [("Do NOT let… see this","Do NOT let a golden retriever mom see this","Real golden sits next to the glowing one, tilts its head. Owner gasps."),
   ("3-2-1 reveal","3… 2… 1… he has a twin now","Blower on, the inflatable rises beside the real dog.")],
- "Only one breed exists today; other breeds mean a custom order with a minimum quantity, which is not confirmed. Christmas-only as it stands.")),
+ "Other sellers list a dachshund and a pug, so breeds do exist, but each is a separate supplier. A breed nobody makes means a custom order with a minimum quantity. Christmas-only as it stands.")),
 NP("Golden retriever now. Dog figure on top, lit paw and icicles below.",
  "Any breed head on the same hanger; cat version; a horse head for stable doors; a name plate under the paw.",
  P("Dog Door Hanger With Lit Paw and Icicles","pawporch.png","niche",["xmas","pets"],[8,6,7,9,7],
@@ -286,6 +286,26 @@ NP("Titles say 'Custom Embroidered Name Text Logo', 'Monogrammed', 'Couples Robe
  [("Gifting reaction","It has her name on it. She has not taken it off.","She opens the box, finds her name on the chest."),
   ("Unboxing + reaction","His and hers, and yes they are heated","Two robes, two names, same couch.")],
  "Plain robes are an old product. The idea here is the name on our own robe, which needs our supplier to agree and a longer delivery time.")),
+NP("Every unit is custom: the photo shows two dogs, each with its own face and name on the ground. Titles say custom photo.",
+ "Any breed and any name; a cat version; a memorial version with dates; a horse name for riders.",
+ P("Name-and-Face Collar Projector","photocollar.jpg","niche",["pets"],[9,7,8,10,9],
+ "Small light on the dog's collar that projects the dog's own face and name onto the pavement during a night walk.",
+ "Listed in the last 5 days, two listings, no orders yet. Custom, tiny to ship, filmed in the dark, and aimed at people who buy anything with their dog on it.",
+ "$23.39 to $25.29","1","none shown","$49.99 to $59.99",
+ [("Newest, $25.29","3256813492939389"),("Second listing","3256813479870301")],
+ [("Pattern interrupt","Strangers now know my dog's name before they know mine","Night walk past a cafe terrace, the dog's face and name glide over the pavement, people at the tables point and laugh."),
+  ("Gifting reaction","I put his name on the street. She cried.","She clips it on, the name lights up on the ground, the dog sniffs its own face.")],
+ "No orders and no ratings. The listing photo is computer-made, so the real projection will be smaller and blurrier: a sample is needed before filming. Every order needs a photo and a name from the buyer, which means messages and a longer wait.")),
+NP("Highland cow now, listed in the last 5 days. Dog breeds exist from other sellers: golden retriever, dachshund, pug.",
+ "Highland cow lovers, each dog breed, chicken and farm families. A custom shape needs a minimum order.",
+ P("Highland Cow Light-Up Inflatable (5 ft)","cowinfl.jpg","niche",["xmas"],[8,7,7,10,8],
+ "LED yard inflatable of a highland cow in a Santa hat holding a small tree and a candy cane.",
+ "Highland cow fans buy the animal on everything, and this one is days old with nobody on it. Sits at $58 at the supplier.",
+ "$57.79","none shown","none shown","$99 to $119",
+ [("Only listing","3256813493161595")],
+ [("Do NOT let… see this","Do NOT let a highland cow girl see this","She pulls into the driveway, the cow is glowing on the lawn, she stays in the car with her hands on her face."),
+  ("3-2-1 reveal","3… 2… 1… he said no more cows in this house","Blower on, the cow rises outside the window. Technically not in the house.")],
+ "One listing, no orders. Christmas-only as it stands, and the window closes in early December. Bulky to ship. Expensive to test.")),
 # ---------- very new, almost no orders yet (round 2, 14 Nov) ----------
 P("Tornado Vortex Lamp","vortex.jpg","early",[],[8,7,7,10,7],
  "Desk lamp with a column of water in which a spinning tornado is lit by colour-changing LEDs. About 35 cm, USB or battery.",
@@ -495,16 +515,22 @@ D.sort(key=lambda p:(order[p["fresh"]],-p["score"]))
 def lno(p):
     m=max(int(k)+(2251799813685248 if k.startswith("1005") else 0) for _,k in p["links"])
     return str(m)[:11]+"…"
-BETS=[("Tornado Vortex Lamp","Not seasonal. 12 recent listings, about 22 orders in total, already $35 to $70 at the supplier."),
-("Lying Santa Roof Inflatable (8 to 12 ft)","7 recent listings, about 172 orders. Funny from the street."),
-("Snowman Icicle Railing Light","About 15 listings from this season, none above 25 orders. Built for a US porch."),
-("Christmas Sleigh Pet Bed","11 listings, about 120 orders. Highest emotion score on the board."),
-("Stacked Santa, Reindeer and Snowman Inflatable (7.8 ft)","2 recent listings, 525 orders, both 5.0. A design nobody has seen."),
-("Campfire Friends Inflatable (8 to 10 ft)","4 recent listings, no orders yet. A whole scene, priced high."),
-("Christmas Tree Cat Tower With Caves","4 recent listings, no orders yet. Priced above our minimum on its own."),
-("Christmas Tree With Legs","Newest listing is days old. Funny at a glance."),
-("Solar Santa Sleigh Light-Waterfall Stake","About 19 listings at once, about 29 orders. As early as it gets."),
-("Pet Christmas Tree Costume","5 recent listings, about 275 orders. Cute in one second, but only works as a set.")]
+BETS=[
+("Clip-On LED Wing Light","Dog owners who walk at night, big-dog owners first; then horse riders.","New wave growing this week, tiny to ship, $10 to $22 cost, a dark-street wow that needs no words."),
+("Name-and-Face Collar Projector","Breed owners: frenchie, dachshund, golden, corgi.","Days old, custom for every dog, same night-walk video as the wing light. Unproven: sample first."),
+("Tornado Vortex Lamp","Gift for him: dads, husbands, desk and nightstand.","Already $35 to $70 at the supplier, a silent wow in a dark room, 12 recent listings with about 22 orders."),
+("Electric Cat Whack-a-Mole Toy","Cat owners.","About 990 orders at 4.9. The cat's reaction is the whole video. Sell as a set."),
+("Car Alarm Clock With Engine Sound","Car guys and the wives who buy for them.","A gift that holds an $89 price: $40 to $57 at the supplier. The base can move to trucks and tractors."),
+("Giraffe Automatic Rope Cat Teaser","Cat owners who work from home.","726 orders on two new listings. Pairs with the whack-a-mole as one set."),
+("Personalised Pet Memorial Stone","People who lost a pet.","The deepest emotion on the board, custom per order, sells all year."),
+("Clamp-On Desk Cat Bed","Cat owners who work from home.","The base has 1,000+ orders at 4.8; the rotating version is new. Price already near $40."),
+("Hand-Crank Music Box With Your Own Song","Couples and new parents; Valentine's next.","Custom per buyer, $42 at the supplier. Needs sound, so it is harder to film."),
+("Infinity Cube Lamp","Gift for him; desk and gaming room.","A small box that looks bottomless on camera. An older listing of the type has 276 orders at 4.9."),
+("Pet Stairs With a Hidden Cave","Owners of old or small dogs.","An honest problem-and-solution video. 163 orders at 4.9 on two new listings."),
+("Dog Tissue Box Snuffle Toy","Dog owners.","Funny to watch, about 270 orders at 4.9 on a slightly older listing. Sell as a set."),
+("Christmas Magic Trail Wall Light","Christmas moms. Short window: about two weeks.","The only one with proven demand (3,000+ orders). Our Christmas hooks fit as they are."),
+("Snowman Icicle Railing Light","Christmas moms with a porch. Short window.","About 15 new listings, none above 25 orders. Sold as a set of three."),
+("Christmas Village Projection Centerpiece","Christmas moms. Short window.","Closest thing to the projector that made $25,817 in six days in our archive. Only the $42 to $70 version, and only after a sample.")]
 def datauri(name):
     im=Image.open(os.path.join(IMG,name)).convert("RGB").resize((360,360),Image.LANCZOS)
     b=io.BytesIO(); im.save(b,"WEBP",quality=72); return "data:image/webp;base64,"+base64.b64encode(b.getvalue()).decode()
@@ -516,7 +542,7 @@ md=[f"# Research AliExpress — {N} de produse, mai ales de Crăciun ({DATE})\n"
 "Board cu poze: https://claude.ai/artifact/8XheU6FkHoaHgTLPfzZ32N\n",
 "Cifrele (preț, comenzi, rating) sunt din paginile de căutare AliExpress, 13 nov 2026. Toate produsele sunt **ipoteze** până la cifrele noastre (pilot → `rezultate`).\n",
 "**Neverificat:** livrarea în SUA (cost, zile), concurența pe Instagram/TikTok (trebuie Apify, cu acord pe cost), $/1M vizualizări. „Nou” = estimare după numărul listării și câte listări noi au apărut deodată; nou pe AliExpress NU înseamnă automat nesaturat pe Instagram.\n",
-"Sus: baze de nișat custom (10, runda 4 din 25 nov; listate săptămâna asta sau în ultimele 2–3 săptămâni). Apoi: valuri noi (14), apoi foarte noi aproape fără comenzi (16, rundele 2–3 din 14 nov), apoi listări noi cu un singur vânzător (9), apoi deja cunoscute (8); fiecare grup după scor.\n",
+"Sus: baze de nișat custom (12, rundele 4–5 din 25 nov; listate săptămâna asta sau în ultimele 2–3 săptămâni). Apoi: valuri noi (14), apoi foarte noi aproape fără comenzi (16, rundele 2–3 din 14 nov), apoi listări noi cu un singur vânzător (9), apoi deja cunoscute (8); fiecare grup după scor.\n",
 "| # | Produs | Cât de nou | Scor | Preț furnizor | Comenzi | Rating | Preț propus |","|---|---|---|---|---|---|---|---|"]
 for i,p in enumerate(D,1): md.append(f"| {i} | {p['n']} | {FRRO[p['fresh']]} | {p['score']}/50 | {p['cost']} | {p['sold']} | {p['rating']} | {p['sell']} |")
 for i,p in enumerate(D,1):
@@ -569,7 +595,7 @@ h1{{font-family:var(--display);font-size:clamp(26px,4vw,38px);line-height:1.1;ma
 .bets{{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}}
 .bh{{font:700 18px/1.25 var(--display);margin:0 0 10px}}
 .bets ol{{margin:0;padding-left:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:8px 28px}}
-.bets li{{font-size:13.5px;color:var(--muted);min-width:0}} .bets li b{{display:block;color:var(--ink);font-size:14.5px}}
+.bets li{{font-size:13.5px;color:var(--muted);min-width:0}} .bets li b{{display:block;color:var(--ink);font-size:14.5px}} .bets li em{{display:block;font-style:normal;color:var(--pine);font-weight:600;font-size:13px}} .bets li span{{display:block}}
 .bn{{font-size:13px;color:var(--muted);margin-top:10px;max-width:86ch}}
 .chips{{display:flex;flex-wrap:wrap;gap:8px}}
 .chips button{{font:500 13.5px var(--body);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}}
@@ -613,7 +639,7 @@ footer{{color:var(--muted);font-size:13px;max-width:86ch}}
 <li><b>Fresh, one seller · {ns} products</b>A new listing with orders, but only one seller found. Newer, less proven.</li>
 <li><b>Already known · {nk} products</b>Older listings or already in US stores. Kept from the first board; expect competition.</li>
 </ul>
-<section class="bets"><h2 class="bh">Best bets: high potential, too new for anyone to be running</h2><ol>{''.join(f'<li><b>{e(n)}</b><span>{e(t)}</span></li>' for n,t in BETS)}</ol><p class="bn">Chosen by two things only: the listing number (higher means newer) and the order count (few means nobody has picked it up). Products with thousands of orders were left out even when they score well.</p></section>
+<section class="bets"><h2 class="bh">Top 15: what I would run to reach $10k fast, and who to aim it at</h2><ol>{''.join(f'<li><b>{e(n)}</b><em>{e(ni)}</em><span>{e(t)}</span></li>' for n,ni,t in BETS)}</ol><p class="bn">Ranked the way our playbooks rank a product: a wow you can see without sound, small and light, a price above $39, a passionate group to aim at, and new on AliExpress by listing number and order count. The first twelve sell all year; the last three are Christmas and have about two weeks left. Nothing here has our own sales numbers yet, so every line is a bet.</p></section>
 <p class="note"><b>Not verified yet:</b> shipping cost and delivery days to the US, and dollars per 1M views. AliExpress shows no listing date, so how new a product is comes from its listing number and its order count. Prices, orders and ratings were read from AliExpress search pages on 13, 14 and 25 Nov 2026. Listing numbers grow by about 5 million a day, so a number above 32568134650… means listed in the week of 25 Nov. Christmas items must reach buyers before Dec 25, so the selling window closes in early December; the Valentine and non-seasonal items are there for what comes after.</p>
 <div class="chips" role="group" aria-label="Filter products">
 <button id="f-all" data-f="" aria-pressed="true">All {N}</button><button id="f-niche" data-f="niche" aria-pressed="false">Custom niche</button><button id="f-wave" data-f="wave" aria-pressed="false">Fresh wave</button><button id="f-early" data-f="early" aria-pressed="false">Very new</button><button id="f-single" data-f="single" aria-pressed="false">Fresh, one seller</button><button id="f-known" data-f="known" aria-pressed="false">Already known</button><button id="f-xmas" data-f="xmas" aria-pressed="false">Christmas</button><button id="f-pets" data-f="pets" aria-pressed="false">Pets</button><button id="f-val" data-f="val" aria-pressed="false">Valentine</button>

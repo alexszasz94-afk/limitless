@@ -1,4 +1,4 @@
-# Research AliExpress — 57 de produse, mai ales de Crăciun (25 Nov 2026)
+# Research AliExpress — 59 de produse, mai ales de Crăciun (25 Nov 2026)
 
 Board cu poze: https://claude.ai/artifact/8XheU6FkHoaHgTLPfzZ32N
 
@@ -6,75 +6,98 @@ Cifrele (preț, comenzi, rating) sunt din paginile de căutare AliExpress, 13 no
 
 **Neverificat:** livrarea în SUA (cost, zile), concurența pe Instagram/TikTok (trebuie Apify, cu acord pe cost), $/1M vizualizări. „Nou” = estimare după numărul listării și câte listări noi au apărut deodată; nou pe AliExpress NU înseamnă automat nesaturat pe Instagram.
 
-Sus: baze de nișat custom (10, runda 4 din 25 nov; listate săptămâna asta sau în ultimele 2–3 săptămâni). Apoi: valuri noi (14), apoi foarte noi aproape fără comenzi (16, rundele 2–3 din 14 nov), apoi listări noi cu un singur vânzător (9), apoi deja cunoscute (8); fiecare grup după scor.
+Sus: baze de nișat custom (12, rundele 4–5 din 25 nov; listate săptămâna asta sau în ultimele 2–3 săptămâni). Apoi: valuri noi (14), apoi foarte noi aproape fără comenzi (16, rundele 2–3 din 14 nov), apoi listări noi cu un singur vânzător (9), apoi deja cunoscute (8); fiecare grup după scor.
 
 | # | Produs | Cât de nou | Scor | Preț furnizor | Comenzi | Rating | Preț propus |
 |---|---|---|---|---|---|---|---|
-| 1 | Clip-On LED Wing Light | bază de nișat custom | 42/50 | $10.19 to $36.89 | 95, 49, 41, 30, 18 and less across about 30 listings | none shown | $39.99 to $49.99 |
-| 2 | Light-Up Inflatable Dog (5 ft) | bază de nișat custom | 41/50 | $25.32 to $38.89 | 38 and 6 | none shown | $69 to $79 |
-| 3 | Car Alarm Clock With Engine Sound | bază de nișat custom | 38/50 | $39.32 to $57.19 | 9, 3, 1 and less | none shown | $89 to $99 |
-| 4 | Dog Door Hanger With Lit Paw and Icicles | bază de nișat custom | 37/50 | $10.79 | none shown | none shown | $39.99 to $49.99 |
-| 5 | Personalised Pet Memorial Stone | bază de nișat custom | 35/50 | $20.09 to $22.06 | 1 | none shown | $49.99 to $59.99 |
-| 6 | Glowing Animal Yard Statue | bază de nișat custom | 35/50 | $24.52 to $63.39 | 70 on the dog series; none shown on the newest | none shown | $99 to $119 |
-| 7 | Motorcycle Alarm Clock | bază de nișat custom | 33/50 | $24.59 | none shown | none shown | $39.99 to $49.99 |
-| 8 | Hand-Crank Music Box With Your Own Song | bază de nișat custom | 32/50 | $42.49 | none shown on the newest; 1,000+ on an older custom-print box | 4.8 on the older one | $89 to $99 |
-| 9 | LED Neon Shape Sign | bază de nișat custom | 31/50 | $15.62 to $56.99 | up to 121 on older shapes | none shown | $79 to $89 |
-| 10 | Embroidered Name Robe | bază de nișat custom | 30/50 | $18.69 | 1 on the newest; 100 and 33 on older ones | none shown | add-on of $10 to $15 on our robes |
-| 11 | Christmas Sleigh Pet Bed | val nou de listări | 44/50 | $11.09 to $36.59 | about 120 across 11 listings | 5.0 on the few rated | $39.99 to $49.99 |
-| 12 | Electric Cat Whack-a-Mole Toy | val nou de listări | 42/50 | $8.33 to $12.45 | 365, 269, 238, 60, 59 | 4.9, 4.7, 4.6 | $39.99 with spare feather set |
-| 13 | Pet Christmas Tree Costume | val nou de listări | 42/50 | real price not shown (promo prices only) | 86, 56, 54, 44, 35 | 4.8 to 5.0 | $39.99 for a 2-cape set |
-| 14 | Giraffe Automatic Rope Cat Teaser | val nou de listări | 42/50 | $7.33 to $10.19 | 468 and 258 | 4.9 and 4.6 | $39.99 as a set with spare ropes |
-| 15 | Lying Santa Roof Inflatable (8 to 12 ft) | val nou de listări | 41/50 | $28.31 to $102.70 | about 172 across 7 listings | 4.4 on the one rated listing | $79 to $129 |
-| 16 | Stacked Santa, Reindeer and Snowman Inflatable (7.8 ft) | val nou de listări | 39/50 | $32.74 to $49.57 | 265 and 260 | 5.0 and 5.0 | $79 to $89 |
-| 17 | Christmas Magic Trail Wall Light | val nou de listări | 37/50 | $12.50 to $18.93 | 2,000+ and 1,000+ | 4.9 and 4.9 | $39.99 |
-| 18 | Santa in a Hot Cocoa Mug Inflatable (6 ft) | val nou de listări | 35/50 | $35.66 to $46.98 | 212 and 45 | 4.9 | $89 to $99 |
-| 19 | Christmas Squishy Surprise Box | val nou de listări | 35/50 | $1.09 to $21 | 137, 100, 97, 97, 88 and more | mixed: 2 to 5 | $39.99 for a full gift box |
-| 20 | LED Starburst Christmas Ball (30 or 50 cm) | val nou de listări | 34/50 | $8.55 to $13.12 | 411 and 193 | not shown | $39.99 for the 50 cm or a set of 3 |
-| 21 | Lighted Musical Village House With Skaters | val nou de listări | 33/50 | $14.59 to $16.59 | 279 and 278 | 4.9 and 4.9 | $39.99 to $49.99 |
-| 22 | Recordable Christmas Tree Message Bottle | val nou de listări | 33/50 | $5.82 to $19.99 | 215, 190, 84, 71 and more | 5.0 on the best, 3.5 on the biggest | $39.99 for a set of 2 |
-| 23 | Glowing Crochet Door Strands | val nou de listări | 33/50 | $1.09 to $12.85 | 1,000+ on the top listing | 4.9 on the top, 1 to 3.2 on copies | $39.99 for a set of 3 |
-| 24 | Snowman Magic Fountain Light | val nou de listări | 31/50 | $9.75 to $23.79 | 65, 43, 32 and more | mostly 5.0, one 1.0 | $39.99 to $49.99 for a pair |
-| 25 | Christmas Tree Cat Tower With Caves | foarte nou, aproape fără comenzi | 40/50 | $20.19 to $131.49 | none shown | none shown | $99 to $129 |
-| 26 | Campfire Friends Inflatable (8 to 10 ft) | foarte nou, aproape fără comenzi | 40/50 | $73.79 to $90.09 | none shown | none shown | $149 to $169 |
-| 27 | Tornado Vortex Lamp | foarte nou, aproape fără comenzi | 39/50 | $34.69 to $69.99 (small ones from $10.32) | about 22 across 12 listings | 5.0 on five listings with 1 to 8 orders | $69 to $99 |
-| 28 | Dog Tissue Box Snuffle Toy | foarte nou, aproape fără comenzi | 39/50 | $11.59 to $25.89 | 1 on fresh listings; 269, 191, 72 on older ones | 4.6 to 5.0 on the older ones | $39.99 as a set of 2 |
-| 29 | Clamp-On Desk Cat Bed | foarte nou, aproape fără comenzi | 38/50 | $24.25 to $83.69 | about 8 on fresh listings; 1,000+ and 700+ on older ones | 4.8 and 4.9 on the older ones | $59 to $69 |
-| 30 | Duck Pedal Treat Dispenser | foarte nou, aproape fără comenzi | 38/50 | $19.55 to $32.99 | none shown on the fresh listings | none shown | $39.99 to $49.99 |
-| 31 | Snowman Icicle Railing Light | foarte nou, aproape fără comenzi | 38/50 | $14.17 to $27.69 | 25, 20, 15, 14 and less | 5.0 on the one rated | $59 to $69 for a set of 3 |
-| 32 | Christmas Tree With Legs | foarte nou, aproape fără comenzi | 38/50 | $11.65 to $36.19 | 35 on the cheaper listing | none shown | $49.99 |
-| 33 | Christmas Village Projection Centerpiece | foarte nou, aproape fără comenzi | 37/50 | $14.62 to $69.59 | 67 on the best-rated, 115 and 47 on cheap copies | 5.0 on one, 1.5 and 2.0 on the best-selling cheap ones | $79 to $99 (the $42 to $70 version only) |
-| 34 | Remote-Control Blooming Rose Bouquet (building blocks) | foarte nou, aproape fără comenzi | 37/50 | $84.39 | none shown | none shown | $149 to $169 |
-| 35 | Solar Santa Sleigh Light-Waterfall Stake | foarte nou, aproape fără comenzi | 36/50 | $13.01 to $39.69 | about 29 across 19 listings | 5.0 on the one rated | $49.99 for a pair |
-| 36 | Rotating Santa Sleigh Tree Topper | foarte nou, aproape fără comenzi | 36/50 | $11.40 to $47.19 | about 6 across 6 fresh listings; 45 and 40 on older ones | 5.0 and 4.8 on the older ones | $59 to $69 |
-| 37 | Infinity Cube Lamp | foarte nou, aproape fără comenzi | 35/50 | $15.05 to $36.51 | about 5 on fresh listings; 276, 234, 176 on older ones | 4.6 to 5.0 on the older ones | $59 to $69 |
-| 38 | Valentine Squishy Box (24 pieces) | foarte nou, aproape fără comenzi | 35/50 | $3.05 to $23.29 | none shown | none shown | $39.99 for a large or double set |
-| 39 | Gingerbread House Music Box With Train | foarte nou, aproape fără comenzi | 33/50 | $15.25 to $85.09 | none shown | none shown | $99 to $119 |
-| 40 | Auto-Blooming Flower Lamp With Date | foarte nou, aproape fără comenzi | 33/50 | $15.65 | none shown | none shown | $49.99 |
-| 41 | Inflatable Gingerbread Man With Gift (8 ft) | listare nouă, un singur vânzător | 39/50 | $44.89 | 5,000+ | 4.9 | $99 to $119 |
-| 42 | Pet Stairs With a Hidden Cave | listare nouă, un singur vânzător | 38/50 | $8.68 to $13.57 | 115 and 48 | 4.9 | $39.99 to $49.99 |
-| 43 | Roller-Coaster Santa Train Music Box | listare nouă, un singur vânzător | 36/50 | $60.99 | 17 | 5.0 | $119 to $129 |
-| 44 | Santa Sleigh Flying Over a Snow Village (34 cm) | listare nouă, un singur vânzător | 34/50 | $48.30 | 37 | 4.5 | $99 to $119 |
-| 45 | Cat Window Hammock With Wooden Frame | listare nouă, un singur vânzător | 34/50 | $21.67 to $27.38 | 291 | 4.9 | $49.99 |
-| 46 | LED Ferris Wheel Christmas Scene | listare nouă, un singur vânzător | 33/50 | $21.89 | 138 | not shown | $59.99 |
-| 47 | 5 ft Snowman Inflatable With Rotating Lights | listare nouă, un singur vânzător | 32/50 | $9.25 | 511 | 4.9 | $39.99 to $49.99 |
-| 48 | Ceramic-Look Lit Tree With Train Base | listare nouă, un singur vânzător | 32/50 | $17.33 | 229 | 4.9 | $49.99 |
-| 49 | Musical Carousel Tree With Climbing Santa | listare nouă, un singur vânzător | 31/50 | $27.56 | 52 | 4.5 | $59.99 |
-| 50 | Santa Riding the Dog Costume | deja cunoscut | 44/50 | $15.99 to $21.65 | 361, 218, 41 | 4.9 to 5.0 | $39.99 only as a set |
-| 51 | Pop-Up Pre-Decorated Christmas Tree | deja cunoscut | 41/50 | $48.76 to $98.47 | 391, 51, 27 | 4.4 on the biggest, 5.0 on the 51-sold | $129 to $149 |
-| 52 | Felt Christmas Tree Cat House | deja cunoscut | 40/50 | $24.79 to $36.08 | 90 and 39 | 4.8 and 4.9 | $49.99 |
-| 53 | Electric Climbing Santa (rope or ladder) | deja cunoscut | 36/50 | $13.28 to $13.55 | 1,000+ and 52 | 4.6 and 5.0 | $39.99 for a 2-pack |
-| 54 | 10 ft Sitting Santa Inflatable With Reindeer | deja cunoscut | 36/50 | $83.96 | 1,000+ | 4.9 | $149 to $169 |
-| 55 | AI Talking Plush Pet | deja cunoscut | 35/50 | $31.27 to $92.99 | 1,000+ on each main listing | 4.9 and 4.5 | $79 to $129 |
-| 56 | Inflatable Santa Climbing In Through the Window | deja cunoscut | 35/50 | $23.06 to $35.26 | 461 and 287 | 4.7 and 4.9 | $49.99 to $59.99 |
-| 57 | Plush Smart Hand Warmer | deja cunoscut | 31/50 | $10.79 | 3,000+ | 4.9 | $39.99 for a 2-pack |
+| 1 | Name-and-Face Collar Projector | bază de nișat custom | 43/50 | $23.39 to $25.29 | 1 | none shown | $49.99 to $59.99 |
+| 2 | Clip-On LED Wing Light | bază de nișat custom | 42/50 | $10.19 to $36.89 | about 247 on the biggest, then 95, 49, 41, 30 and less | none shown | $44.99 to $49.99 |
+| 3 | Light-Up Inflatable Dog (5 ft) | bază de nișat custom | 41/50 | $25.32 to $38.89 | 38 and 6 | none shown | $69 to $79 |
+| 4 | Highland Cow Light-Up Inflatable (5 ft) | bază de nișat custom | 40/50 | $57.79 | none shown | none shown | $99 to $119 |
+| 5 | Car Alarm Clock With Engine Sound | bază de nișat custom | 38/50 | $39.32 to $57.19 | 9, 3, 1 and less | none shown | $89 to $99 |
+| 6 | Dog Door Hanger With Lit Paw and Icicles | bază de nișat custom | 37/50 | $10.79 | none shown | none shown | $39.99 to $49.99 |
+| 7 | Personalised Pet Memorial Stone | bază de nișat custom | 35/50 | $20.09 to $22.06 | 1 | none shown | $49.99 to $59.99 |
+| 8 | Glowing Animal Yard Statue | bază de nișat custom | 35/50 | $24.52 to $63.39 | 70 on the dog series; none shown on the newest | none shown | $99 to $119 |
+| 9 | Motorcycle Alarm Clock | bază de nișat custom | 33/50 | $24.59 | none shown | none shown | $39.99 to $49.99 |
+| 10 | Hand-Crank Music Box With Your Own Song | bază de nișat custom | 32/50 | $42.49 | none shown on the newest; 1,000+ on an older custom-print box | 4.8 on the older one | $89 to $99 |
+| 11 | LED Neon Shape Sign | bază de nișat custom | 31/50 | $15.62 to $56.99 | up to 121 on older shapes | none shown | $79 to $89 |
+| 12 | Embroidered Name Robe | bază de nișat custom | 30/50 | $18.69 | 1 on the newest; 100 and 33 on older ones | none shown | add-on of $10 to $15 on our robes |
+| 13 | Christmas Sleigh Pet Bed | val nou de listări | 44/50 | $11.09 to $36.59 | about 120 across 11 listings | 5.0 on the few rated | $39.99 to $49.99 |
+| 14 | Electric Cat Whack-a-Mole Toy | val nou de listări | 42/50 | $8.33 to $12.45 | 365, 269, 238, 60, 59 | 4.9, 4.7, 4.6 | $39.99 with spare feather set |
+| 15 | Pet Christmas Tree Costume | val nou de listări | 42/50 | real price not shown (promo prices only) | 86, 56, 54, 44, 35 | 4.8 to 5.0 | $39.99 for a 2-cape set |
+| 16 | Giraffe Automatic Rope Cat Teaser | val nou de listări | 42/50 | $7.33 to $10.19 | 468 and 258 | 4.9 and 4.6 | $39.99 as a set with spare ropes |
+| 17 | Lying Santa Roof Inflatable (8 to 12 ft) | val nou de listări | 41/50 | $28.31 to $102.70 | about 172 across 7 listings | 4.4 on the one rated listing | $79 to $129 |
+| 18 | Stacked Santa, Reindeer and Snowman Inflatable (7.8 ft) | val nou de listări | 39/50 | $32.74 to $49.57 | 265 and 260 | 5.0 and 5.0 | $79 to $89 |
+| 19 | Christmas Magic Trail Wall Light | val nou de listări | 37/50 | $12.50 to $18.93 | 2,000+ and 1,000+ | 4.9 and 4.9 | $39.99 |
+| 20 | Santa in a Hot Cocoa Mug Inflatable (6 ft) | val nou de listări | 35/50 | $35.66 to $46.98 | 212 and 45 | 4.9 | $89 to $99 |
+| 21 | Christmas Squishy Surprise Box | val nou de listări | 35/50 | $1.09 to $21 | 137, 100, 97, 97, 88 and more | mixed: 2 to 5 | $39.99 for a full gift box |
+| 22 | LED Starburst Christmas Ball (30 or 50 cm) | val nou de listări | 34/50 | $8.55 to $13.12 | 411 and 193 | not shown | $39.99 for the 50 cm or a set of 3 |
+| 23 | Lighted Musical Village House With Skaters | val nou de listări | 33/50 | $14.59 to $16.59 | 279 and 278 | 4.9 and 4.9 | $39.99 to $49.99 |
+| 24 | Recordable Christmas Tree Message Bottle | val nou de listări | 33/50 | $5.82 to $19.99 | 215, 190, 84, 71 and more | 5.0 on the best, 3.5 on the biggest | $39.99 for a set of 2 |
+| 25 | Glowing Crochet Door Strands | val nou de listări | 33/50 | $1.09 to $12.85 | 1,000+ on the top listing | 4.9 on the top, 1 to 3.2 on copies | $39.99 for a set of 3 |
+| 26 | Snowman Magic Fountain Light | val nou de listări | 31/50 | $9.75 to $23.79 | 65, 43, 32 and more | mostly 5.0, one 1.0 | $39.99 to $49.99 for a pair |
+| 27 | Christmas Tree Cat Tower With Caves | foarte nou, aproape fără comenzi | 40/50 | $20.19 to $131.49 | none shown | none shown | $99 to $129 |
+| 28 | Campfire Friends Inflatable (8 to 10 ft) | foarte nou, aproape fără comenzi | 40/50 | $73.79 to $90.09 | none shown | none shown | $149 to $169 |
+| 29 | Tornado Vortex Lamp | foarte nou, aproape fără comenzi | 39/50 | $34.69 to $69.99 (small ones from $10.32) | about 22 across 12 listings | 5.0 on five listings with 1 to 8 orders | $69 to $99 |
+| 30 | Dog Tissue Box Snuffle Toy | foarte nou, aproape fără comenzi | 39/50 | $11.59 to $25.89 | 1 on fresh listings; 269, 191, 72 on older ones | 4.6 to 5.0 on the older ones | $39.99 as a set of 2 |
+| 31 | Clamp-On Desk Cat Bed | foarte nou, aproape fără comenzi | 38/50 | $24.25 to $83.69 | about 8 on fresh listings; 1,000+ and 700+ on older ones | 4.8 and 4.9 on the older ones | $59 to $69 |
+| 32 | Duck Pedal Treat Dispenser | foarte nou, aproape fără comenzi | 38/50 | $19.55 to $32.99 | none shown on the fresh listings | none shown | $39.99 to $49.99 |
+| 33 | Snowman Icicle Railing Light | foarte nou, aproape fără comenzi | 38/50 | $14.17 to $27.69 | 25, 20, 15, 14 and less | 5.0 on the one rated | $59 to $69 for a set of 3 |
+| 34 | Christmas Tree With Legs | foarte nou, aproape fără comenzi | 38/50 | $11.65 to $36.19 | 35 on the cheaper listing | none shown | $49.99 |
+| 35 | Christmas Village Projection Centerpiece | foarte nou, aproape fără comenzi | 37/50 | $14.62 to $69.59 | 67 on the best-rated, 115 and 47 on cheap copies | 5.0 on one, 1.5 and 2.0 on the best-selling cheap ones | $79 to $99 (the $42 to $70 version only) |
+| 36 | Remote-Control Blooming Rose Bouquet (building blocks) | foarte nou, aproape fără comenzi | 37/50 | $84.39 | none shown | none shown | $149 to $169 |
+| 37 | Solar Santa Sleigh Light-Waterfall Stake | foarte nou, aproape fără comenzi | 36/50 | $13.01 to $39.69 | about 29 across 19 listings | 5.0 on the one rated | $49.99 for a pair |
+| 38 | Rotating Santa Sleigh Tree Topper | foarte nou, aproape fără comenzi | 36/50 | $11.40 to $47.19 | about 6 across 6 fresh listings; 45 and 40 on older ones | 5.0 and 4.8 on the older ones | $59 to $69 |
+| 39 | Infinity Cube Lamp | foarte nou, aproape fără comenzi | 35/50 | $15.05 to $36.51 | about 5 on fresh listings; 276, 234, 176 on older ones | 4.6 to 5.0 on the older ones | $59 to $69 |
+| 40 | Valentine Squishy Box (24 pieces) | foarte nou, aproape fără comenzi | 35/50 | $3.05 to $23.29 | none shown | none shown | $39.99 for a large or double set |
+| 41 | Gingerbread House Music Box With Train | foarte nou, aproape fără comenzi | 33/50 | $15.25 to $85.09 | none shown | none shown | $99 to $119 |
+| 42 | Auto-Blooming Flower Lamp With Date | foarte nou, aproape fără comenzi | 33/50 | $15.65 | none shown | none shown | $49.99 |
+| 43 | Inflatable Gingerbread Man With Gift (8 ft) | listare nouă, un singur vânzător | 39/50 | $44.89 | 5,000+ | 4.9 | $99 to $119 |
+| 44 | Pet Stairs With a Hidden Cave | listare nouă, un singur vânzător | 38/50 | $8.68 to $13.57 | 115 and 48 | 4.9 | $39.99 to $49.99 |
+| 45 | Roller-Coaster Santa Train Music Box | listare nouă, un singur vânzător | 36/50 | $60.99 | 17 | 5.0 | $119 to $129 |
+| 46 | Santa Sleigh Flying Over a Snow Village (34 cm) | listare nouă, un singur vânzător | 34/50 | $48.30 | 37 | 4.5 | $99 to $119 |
+| 47 | Cat Window Hammock With Wooden Frame | listare nouă, un singur vânzător | 34/50 | $21.67 to $27.38 | 291 | 4.9 | $49.99 |
+| 48 | LED Ferris Wheel Christmas Scene | listare nouă, un singur vânzător | 33/50 | $21.89 | 138 | not shown | $59.99 |
+| 49 | 5 ft Snowman Inflatable With Rotating Lights | listare nouă, un singur vânzător | 32/50 | $9.25 | 511 | 4.9 | $39.99 to $49.99 |
+| 50 | Ceramic-Look Lit Tree With Train Base | listare nouă, un singur vânzător | 32/50 | $17.33 | 229 | 4.9 | $49.99 |
+| 51 | Musical Carousel Tree With Climbing Santa | listare nouă, un singur vânzător | 31/50 | $27.56 | 52 | 4.5 | $59.99 |
+| 52 | Santa Riding the Dog Costume | deja cunoscut | 44/50 | $15.99 to $21.65 | 361, 218, 41 | 4.9 to 5.0 | $39.99 only as a set |
+| 53 | Pop-Up Pre-Decorated Christmas Tree | deja cunoscut | 41/50 | $48.76 to $98.47 | 391, 51, 27 | 4.4 on the biggest, 5.0 on the 51-sold | $129 to $149 |
+| 54 | Felt Christmas Tree Cat House | deja cunoscut | 40/50 | $24.79 to $36.08 | 90 and 39 | 4.8 and 4.9 | $49.99 |
+| 55 | Electric Climbing Santa (rope or ladder) | deja cunoscut | 36/50 | $13.28 to $13.55 | 1,000+ and 52 | 4.6 and 5.0 | $39.99 for a 2-pack |
+| 56 | 10 ft Sitting Santa Inflatable With Reindeer | deja cunoscut | 36/50 | $83.96 | 1,000+ | 4.9 | $149 to $169 |
+| 57 | AI Talking Plush Pet | deja cunoscut | 35/50 | $31.27 to $92.99 | 1,000+ on each main listing | 4.9 and 4.5 | $79 to $129 |
+| 58 | Inflatable Santa Climbing In Through the Window | deja cunoscut | 35/50 | $23.06 to $35.26 | 461 and 287 | 4.7 and 4.9 | $49.99 to $59.99 |
+| 59 | Plush Smart Hand Warmer | deja cunoscut | 31/50 | $10.79 | 3,000+ | 4.9 | $39.99 for a 2-pack |
 
-## 1. Clip-On LED Wing Light — scor 42/50 — bază de nișat custom
+## 1. Name-and-Face Collar Projector — scor 43/50 — bază de nișat custom
+
+Ce e: Small light on the dog's collar that projects the dog's own face and name onto the pavement during a night walk.
+
+Potențial: Listed in the last 5 days, two listings, no orders yet. Custom, tiny to ship, filmed in the dark, and aimed at people who buy anything with their dog on it.
+
+Link AliExpress: [Newest, $25.29](https://www.aliexpress.us/item/3256813492939389.html) · [Second listing](https://www.aliexpress.us/item/3256813479870301.html)
+
+Dovadă de custom: Every unit is custom: the photo shows two dogs, each with its own face and name on the ground. Titles say custom photo.
+
+Versiuni de nișă: Any breed and any name; a cat version; a memorial version with dates; a horse name for riders.
+
+Concept 1 (Pattern interrupt), hook EN: "Strangers now know my dog's name before they know mine" — Night walk past a cafe terrace, the dog's face and name glide over the pavement, people at the tables point and laugh.
+
+Concept 2 (Gifting reaction), hook EN: "I put his name on the street. She cried." — She clips it on, the name lights up on the ground, the dog sniffs its own face.
+
+Riscuri: No orders and no ratings. The listing photo is computer-made, so the real projection will be smaller and blurrier: a sample is needed before filming. Every order needs a photo and a name from the buyer, which means messages and a longer wait.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 9 / 7 / 8 / 10 / 9
+
+
+## 2. Clip-On LED Wing Light — scor 42/50 — bază de nișat custom
 
 Ce e: Small light that clips to a dog collar, horse tack, a runner's belt or a bike and throws a pair of glowing wings on the ground behind.
 
-Potențial: The strongest find of this round: about 30 listings, every one from the last 2 to 3 weeks and none older. Orders are still small. Reads instantly at night.
+Potențial: The strongest find so far: about 30 listings, all from the last 3 weeks, and 11 more dog listings appeared in the last 5 days alone. The biggest has about 247 orders. Reads instantly at night and is not seasonal.
 
-Link AliExpress: [Dog, newest, $21.42](https://www.aliexpress.us/item/3256813494657967.html) · [Dog, 95 sold](https://www.aliexpress.us/item/3256813454540410.html) · [Horse version](https://www.aliexpress.us/item/3256813497935533.html) · [Runner version, 49 sold](https://www.aliexpress.us/item/3256813447514699.html)
+Link AliExpress: [Dog, newest, $36.89](https://www.aliexpress.us/item/3256813509831358.html) · [Dog, about 247 sold](https://www.aliexpress.us/item/3256813447494385.html) · [Dog, 95 sold](https://www.aliexpress.us/item/3256813454540410.html) · [Horse version](https://www.aliexpress.us/item/3256813497935533.html) · [Runner version, 49 sold](https://www.aliexpress.us/item/3256813447514699.html)
 
 Dovadă de custom: Dog collar (angel or dragon wings), horse tack, runners and cyclists, motorcycles: the same light already sold in four niches.
 
@@ -89,7 +112,7 @@ Riscuri: Every listing photo is computer-made, and one carries an AI watermark: 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 8 / 8 / 10 / 8
 
 
-## 2. Light-Up Inflatable Dog (5 ft) — scor 41/50 — bază de nișat custom
+## 3. Light-Up Inflatable Dog (5 ft) — scor 41/50 — bază de nișat custom
 
 Ce e: LED yard inflatable of a sitting golden retriever in a Santa hat with a gift box.
 
@@ -105,12 +128,33 @@ Concept 1 (Do NOT let… see this), hook EN: "Do NOT let a golden retriever mom 
 
 Concept 2 (3-2-1 reveal), hook EN: "3… 2… 1… he has a twin now" — Blower on, the inflatable rises beside the real dog.
 
-Riscuri: Only one breed exists today; other breeds mean a custom order with a minimum quantity, which is not confirmed. Christmas-only as it stands.
+Riscuri: Other sellers list a dachshund and a pug, so breeds do exist, but each is a separate supplier. A breed nobody makes means a custom order with a minimum quantity. Christmas-only as it stands.
 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 8 / 10 / 8
 
 
-## 3. Car Alarm Clock With Engine Sound — scor 38/50 — bază de nișat custom
+## 4. Highland Cow Light-Up Inflatable (5 ft) — scor 40/50 — bază de nișat custom
+
+Ce e: LED yard inflatable of a highland cow in a Santa hat holding a small tree and a candy cane.
+
+Potențial: Highland cow fans buy the animal on everything, and this one is days old with nobody on it. Sits at $58 at the supplier.
+
+Link AliExpress: [Only listing](https://www.aliexpress.us/item/3256813493161595.html)
+
+Dovadă de custom: Highland cow now, listed in the last 5 days. Dog breeds exist from other sellers: golden retriever, dachshund, pug.
+
+Versiuni de nișă: Highland cow lovers, each dog breed, chicken and farm families. A custom shape needs a minimum order.
+
+Concept 1 (Do NOT let… see this), hook EN: "Do NOT let a highland cow girl see this" — She pulls into the driveway, the cow is glowing on the lawn, she stays in the car with her hands on her face.
+
+Concept 2 (3-2-1 reveal), hook EN: "3… 2… 1… he said no more cows in this house" — Blower on, the cow rises outside the window. Technically not in the house.
+
+Riscuri: One listing, no orders. Christmas-only as it stands, and the window closes in early December. Bulky to ship. Expensive to test.
+
+Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 7 / 10 / 8
+
+
+## 5. Car Alarm Clock With Engine Sound — scor 38/50 — bază de nișat custom
 
 Ce e: Model car that is an alarm clock: display in the windscreen, engine sound, doors open, remote. Some versions spray mist.
 
@@ -131,7 +175,7 @@ Riscuri: The body in the photo copies a real sports car, so only a generic shape
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 8 / 7 / 9 / 7
 
 
-## 4. Dog Door Hanger With Lit Paw and Icicles — scor 37/50 — bază de nișat custom
+## 6. Dog Door Hanger With Lit Paw and Icicles — scor 37/50 — bază de nișat custom
 
 Ce e: Golden retriever figure in a Santa hat that hangs on the front door, with a glowing paw and lit icicles under it.
 
@@ -152,7 +196,7 @@ Riscuri: One seller and no orders. The listing was described to me as a projecto
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 6 / 7 / 9 / 7
 
 
-## 5. Personalised Pet Memorial Stone — scor 35/50 — bază de nișat custom
+## 7. Personalised Pet Memorial Stone — scor 35/50 — bază de nișat custom
 
 Ce e: Heart-shaped stone for the garden with the pet's photo, name, dates, angel wings and paw prints.
 
@@ -173,7 +217,7 @@ Riscuri: Grief is the subject, so the tone must stay gentle and nothing is exagg
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 9 / 4 / 7 / 8 / 7
 
 
-## 6. Glowing Animal Yard Statue — scor 35/50 — bază de nișat custom
+## 8. Glowing Animal Yard Statue — scor 35/50 — bază de nișat custom
 
 Ce e: Animal figure covered in warm lights for the yard. The photo shows a horse.
 
@@ -194,7 +238,7 @@ Riscuri: The newest listing is about three weeks old, not this week. No custom w
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 10 / 6
 
 
-## 7. Motorcycle Alarm Clock — scor 33/50 — bază de nișat custom
+## 9. Motorcycle Alarm Clock — scor 33/50 — bază de nișat custom
 
 Ce e: Battery alarm clock shaped like a red motorcycle, clock face in the rear wheel.
 
@@ -215,7 +259,7 @@ Riscuri: It only tells the time: nothing moves or lights up, so it is weak on sc
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 6 / 6 / 9 / 6
 
 
-## 8. Hand-Crank Music Box With Your Own Song — scor 32/50 — bază de nișat custom
+## 10. Hand-Crank Music Box With Your Own Song — scor 32/50 — bază de nișat custom
 
 Ce e: Wooden box with a brass movement that plays a song punched into a paper strip when you turn the handle. The song can be chosen.
 
@@ -236,7 +280,7 @@ Riscuri: Needs sound to be understood. Custom songs mean a wait and a supplier w
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 5 / 8 / 4 / 7
 
 
-## 9. LED Neon Shape Sign — scor 31/50 — bază de nișat custom
+## 11. LED Neon Shape Sign — scor 31/50 — bază de nișat custom
 
 Ce e: USB neon-style sign in the shape of an object. The newest one is a bowl of noodles.
 
@@ -257,7 +301,7 @@ Riscuri: Neon signs are an old, crowded product; only the shapes are new. Weak e
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 5 / 5 / 10 / 5
 
 
-## 10. Embroidered Name Robe — scor 30/50 — bază de nișat custom
+## 12. Embroidered Name Robe — scor 30/50 — bază de nișat custom
 
 Ce e: Terry bathrobe with a name, text or logo embroidered on the chest or back. Sold as couples sets.
 
@@ -278,7 +322,7 @@ Riscuri: Plain robes are an old product. The idea here is the name on our own ro
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 5 / 6 / 7 / 6
 
 
-## 11. Christmas Sleigh Pet Bed — scor 44/50 — val nou de listări
+## 13. Christmas Sleigh Pet Bed — scor 44/50 — val nou de listări
 
 Ce e: Plush pet bed shaped like Santa's sleigh, for cats and small dogs. Washable cover, non-slip base.
 
@@ -295,7 +339,7 @@ Riscuri: Little order proof yet. Walmart sellers list similar beds at $13 to $35
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 9 / 8 / 9 / 9 / 9
 
 
-## 12. Electric Cat Whack-a-Mole Toy — scor 42/50 — val nou de listări
+## 14. Electric Cat Whack-a-Mole Toy — scor 42/50 — val nou de listări
 
 Ce e: Rechargeable box with 6 holes. Feather tassels pop up at random and the cat smacks them.
 
@@ -312,7 +356,7 @@ Riscuri: Cheap item, so $39.99 needs a bundle. Two listings are rated under 4.5.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 10 / 9 / 8
 
 
-## 13. Pet Christmas Tree Costume — scor 42/50 — val nou de listări
+## 15. Pet Christmas Tree Costume — scor 42/50 — val nou de listări
 
 Ce e: Green hooded cape with pom-poms and a star on the hood that turns a cat or small dog into a little Christmas tree. A red Santa version exists.
 
@@ -329,7 +373,7 @@ Riscuri: Very cheap item and pet costumes are an old category; only this design 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 9 / 10 / 8
 
 
-## 14. Giraffe Automatic Rope Cat Teaser — scor 42/50 — val nou de listări
+## 16. Giraffe Automatic Rope Cat Teaser — scor 42/50 — val nou de listări
 
 Ce e: Tall giraffe-shaped machine that sticks to a door and throws a rope out, then reels it back, over and over. Rechargeable.
 
@@ -346,7 +390,7 @@ Riscuri: Cheap, so a set is needed for $39.99. Older door-hanging string toys al
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 10 / 9 / 8
 
 
-## 15. Lying Santa Roof Inflatable (8 to 12 ft) — scor 41/50 — val nou de listări
+## 17. Lying Santa Roof Inflatable (8 to 12 ft) — scor 41/50 — val nou de listări
 
 Ce e: Giant LED inflatable Santa lying on his side with sunglasses and a drink, for the garage roof or lawn. Up to 3.6 m.
 
@@ -363,7 +407,7 @@ Riscuri: The only rating shown is 4.4, under our 4.5 rule. Low orders so far. Bu
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 9 / 7 / 10 / 8
 
 
-## 16. Stacked Santa, Reindeer and Snowman Inflatable (7.8 ft) — scor 39/50 — val nou de listări
+## 18. Stacked Santa, Reindeer and Snowman Inflatable (7.8 ft) — scor 39/50 — val nou de listări
 
 Ce e: 2.4 m LED yard inflatable: Santa sitting on a reindeer sitting on an upside-down snowman.
 
@@ -380,7 +424,7 @@ Riscuri: Bulky. Shipping cost and days not verified. Inflatables as a category a
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 8 / 7 / 10 / 7
 
 
-## 17. Christmas Magic Trail Wall Light — scor 37/50 — val nou de listări
+## 19. Christmas Magic Trail Wall Light — scor 37/50 — val nou de listări
 
 Ce e: Glowing winding track that hangs on the wall with a small Christmas train on it. Some versions show Santa's sleigh and reindeer.
 
@@ -397,7 +441,7 @@ Riscuri: Clone listings at $6 to $9 are rated 1 to 3 stars, so the supplier must
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 6 / 9 / 7
 
 
-## 18. Santa in a Hot Cocoa Mug Inflatable (6 ft) — scor 35/50 — val nou de listări
+## 20. Santa in a Hot Cocoa Mug Inflatable (6 ft) — scor 35/50 — val nou de listări
 
 Ce e: LED yard inflatable of a Santa-face cocoa mug with a gingerbread man and a marshmallow on top.
 
@@ -414,7 +458,7 @@ Riscuri: Bulky, shipping not verified. Second listing has no rating.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 7 / 6 / 9 / 6
 
 
-## 19. Christmas Squishy Surprise Box — scor 35/50 — val nou de listări
+## 21. Christmas Squishy Surprise Box — scor 35/50 — val nou de listări
 
 Ce e: Display box of soft squeeze toys with Santa, snowman and elk faces. Titles call them dumpling squishies in a steamer box; the photo shows a surprise box.
 
@@ -431,7 +475,7 @@ Riscuri: Ratings are mixed, so quality varies by seller. Tiny unit price. The au
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 7 / 8 / 7
 
 
-## 20. LED Starburst Christmas Ball (30 or 50 cm) — scor 34/50 — val nou de listări
+## 22. LED Starburst Christmas Ball (30 or 50 cm) — scor 34/50 — val nou de listări
 
 Ce e: Large hanging ball that lights up like a frozen firework, with snowflakes inside.
 
@@ -448,7 +492,7 @@ Riscuri: No rating shown on either listing. Similar starburst lights exist as ga
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 9 / 6
 
 
-## 21. Lighted Musical Village House With Skaters — scor 33/50 — val nou de listări
+## 23. Lighted Musical Village House With Skaters — scor 33/50 — val nou de listări
 
 Ce e: Tabletop snow village house with lights, music and small figures skating in a circle.
 
@@ -465,7 +509,7 @@ Riscuri: Lighted villages are an old US category; only this model is fresh. Musi
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 8 / 6
 
 
-## 22. Recordable Christmas Tree Message Bottle — scor 33/50 — val nou de listări
+## 24. Recordable Christmas Tree Message Bottle — scor 33/50 — val nou de listări
 
 Ce e: Small bottle ornament with a snowy tree inside and a voice recorder: record a message, press to play it back.
 
@@ -482,7 +526,7 @@ Riscuri: Needs sound to be understood. One title says glass, so breakage is a ri
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 9 / 5 / 8 / 4 / 7
 
 
-## 23. Glowing Crochet Door Strands — scor 33/50 — val nou de listări
+## 25. Glowing Crochet Door Strands — scor 33/50 — val nou de listări
 
 Ce e: Long lighted hanging strands topped with a crochet-look Santa, snowman, reindeer or gingerbread figure, for the front door or wall.
 
@@ -499,7 +543,7 @@ Riscuri: Copies are rated 1 to 3.2, which suggests they do not match the photo: 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 5 / 9 / 6
 
 
-## 24. Snowman Magic Fountain Light — scor 31/50 — val nou de listări
+## 26. Snowman Magic Fountain Light — scor 31/50 — val nou de listări
 
 Ce e: Snowman garden stake holding a glowing ball, with strands of light pouring down like a fountain. Solar.
 
@@ -516,7 +560,7 @@ Riscuri: Low order counts. Solar brightness in winter is unknown. Weakest emotio
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 6 / 5 / 9 / 5
 
 
-## 25. Christmas Tree Cat Tower With Caves — scor 40/50 — foarte nou, aproape fără comenzi
+## 27. Christmas Tree Cat Tower With Caves — scor 40/50 — foarte nou, aproape fără comenzi
 
 Ce e: Cat tower shaped like a Christmas tree, with two round caves the cat sits in and a scratching trunk.
 
@@ -533,7 +577,7 @@ Riscuri: No orders shown on any listing. Size and weight unclear; the big versio
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 8 / 9 / 8
 
 
-## 26. Campfire Friends Inflatable (8 to 10 ft) — scor 40/50 — foarte nou, aproape fără comenzi
+## 28. Campfire Friends Inflatable (8 to 10 ft) — scor 40/50 — foarte nou, aproape fără comenzi
 
 Ce e: LED yard inflatable of Santa, a polar bear, a reindeer and a dog sitting round a glowing campfire with mugs in hand.
 
@@ -550,7 +594,7 @@ Riscuri: No orders and no ratings at all. Large and heavy to ship, and expensive
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 8 / 7 / 10 / 8
 
 
-## 27. Tornado Vortex Lamp — scor 39/50 — foarte nou, aproape fără comenzi
+## 29. Tornado Vortex Lamp — scor 39/50 — foarte nou, aproape fără comenzi
 
 Ce e: Desk lamp with a column of water in which a spinning tornado is lit by colour-changing LEDs. About 35 cm, USB or battery.
 
@@ -567,7 +611,7 @@ Riscuri: Almost no orders, so no proof of demand. Unclear whether the tube is gl
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 7 / 10 / 7
 
 
-## 28. Dog Tissue Box Snuffle Toy — scor 39/50 — foarte nou, aproape fără comenzi
+## 30. Dog Tissue Box Snuffle Toy — scor 39/50 — foarte nou, aproape fără comenzi
 
 Ce e: Fabric tissue box with cloth tissues that hide treats. The dog pulls them out one by one.
 
@@ -584,7 +628,7 @@ Riscuri: Cheap item, around for several months already. Works only as a set.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 7 / 9 / 9 / 7
 
 
-## 29. Clamp-On Desk Cat Bed — scor 38/50 — foarte nou, aproape fără comenzi
+## 31. Clamp-On Desk Cat Bed — scor 38/50 — foarte nou, aproape fără comenzi
 
 Ce e: Plush cat bed on an arm that clamps to the edge of a desk, no drilling. Newer versions turn 360 degrees and adjust in height.
 
@@ -601,7 +645,7 @@ Riscuri: The type is not brand new: older listings have 1,000+ orders. Only the 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 6 / 8 / 9 / 7
 
 
-## 30. Duck Pedal Treat Dispenser — scor 38/50 — foarte nou, aproape fără comenzi
+## 32. Duck Pedal Treat Dispenser — scor 38/50 — foarte nou, aproape fără comenzi
 
 Ce e: Duck-shaped feeder: the cat or dog presses the pedal and treats drop out.
 
@@ -618,7 +662,7 @@ Riscuri: No orders shown. A similar duck dispenser with a new listing number sho
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 9 / 9 / 7
 
 
-## 31. Snowman Icicle Railing Light — scor 38/50 — foarte nou, aproape fără comenzi
+## 33. Snowman Icicle Railing Light — scor 38/50 — foarte nou, aproape fără comenzi
 
 Ce e: Glowing snowman figure that sits on a porch or balcony railing with lit icicles hanging below it. About 1 m tall with the icicles.
 
@@ -635,7 +679,7 @@ Riscuri: Listing photos look rendered, so the real glow and size need a sample. 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 6 / 10 / 7
 
 
-## 32. Christmas Tree With Legs — scor 38/50 — foarte nou, aproape fără comenzi
+## 34. Christmas Tree With Legs — scor 38/50 — foarte nou, aproape fără comenzi
 
 Ce e: Small decorated tree with a curled top that stands on two legs in red boots. Sold as a DIY light-up piece in two sizes.
 
@@ -652,7 +696,7 @@ Riscuri: The curled-top tree style is close to a well-known Christmas film look,
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 6 / 10 / 7
 
 
-## 33. Christmas Village Projection Centerpiece — scor 37/50 — foarte nou, aproape fără comenzi
+## 35. Christmas Village Projection Centerpiece — scor 37/50 — foarte nou, aproape fără comenzi
 
 Ce e: Tabletop gingerbread village in a tree shape with a light inside that throws gingerbread men, candy canes and stars onto the walls and ceiling.
 
@@ -669,7 +713,7 @@ Riscuri: The best-selling cheap copies are rated 1.5 and 2.0, which says the pro
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 7 / 9 / 6
 
 
-## 34. Remote-Control Blooming Rose Bouquet (building blocks) — scor 37/50 — foarte nou, aproape fără comenzi
+## 36. Remote-Control Blooming Rose Bouquet (building blocks) — scor 37/50 — foarte nou, aproape fără comenzi
 
 Ce e: Building-block rose bouquet in a pot whose flowers open and close by remote, with a glow.
 
@@ -686,7 +730,7 @@ Riscuri: One listing, no orders, no rating. The buyer has to build it. How the f
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 7 / 9 / 6
 
 
-## 35. Solar Santa Sleigh Light-Waterfall Stake — scor 36/50 — foarte nou, aproape fără comenzi
+## 37. Solar Santa Sleigh Light-Waterfall Stake — scor 36/50 — foarte nou, aproape fără comenzi
 
 Ce e: Garden stake about 70 cm tall with Santa's sleigh on top and strands of warm star lights pouring down from it. Solar.
 
@@ -703,7 +747,7 @@ Riscuri: No proof yet. Solar brightness in winter is unknown and the listing pho
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 7 / 6 / 10 / 6
 
 
-## 36. Rotating Santa Sleigh Tree Topper — scor 36/50 — foarte nou, aproape fără comenzi
+## 38. Rotating Santa Sleigh Tree Topper — scor 36/50 — foarte nou, aproape fără comenzi
 
 Ce e: Lit star tree topper with Santa's sleigh and reindeer on an arm that circles the top of the tree, with music.
 
@@ -720,7 +764,7 @@ Riscuri: Second-season product, not brand new, and still low volume after a year
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 7 / 7 / 9 / 6
 
 
-## 37. Infinity Cube Lamp — scor 35/50 — foarte nou, aproape fără comenzi
+## 39. Infinity Cube Lamp — scor 35/50 — foarte nou, aproape fără comenzi
 
 Ce e: Clear acrylic cube lamp with layered mirrors that looks like an endless tunnel of light.
 
@@ -737,7 +781,7 @@ Riscuri: The type has existed since earlier in 2026 and infinity mirrors are kno
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 10 / 6
 
 
-## 38. Valentine Squishy Box (24 pieces) — scor 35/50 — foarte nou, aproape fără comenzi
+## 40. Valentine Squishy Box (24 pieces) — scor 35/50 — foarte nou, aproape fără comenzi
 
 Ce e: Gift box of 24 small squeeze toys shaped like hearts, roses and sweets, sold as a Valentine countdown or surprise box.
 
@@ -754,7 +798,7 @@ Riscuri: No orders at all yet. Cheap unit price. Several titles say 'for kids', 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 7 / 8 / 7
 
 
-## 39. Gingerbread House Music Box With Train — scor 33/50 — foarte nou, aproape fără comenzi
+## 41. Gingerbread House Music Box With Train — scor 33/50 — foarte nou, aproape fără comenzi
 
 Ce e: Lit gingerbread candy-store house that plays music, with a small train or gingerbread man turning inside.
 
@@ -771,7 +815,7 @@ Riscuri: Zero orders and no ratings. Resin or ceramic can break in transit. Very
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 8 / 6
 
 
-## 40. Auto-Blooming Flower Lamp With Date — scor 33/50 — foarte nou, aproape fără comenzi
+## 42. Auto-Blooming Flower Lamp With Date — scor 33/50 — foarte nou, aproape fără comenzi
 
 Ce e: Flower-shaped lamp on a wood base whose petals open by themselves, with a warm glow and a date display in the centre.
 
@@ -788,7 +832,7 @@ Riscuri: One listing, no orders. Petals are called 'crystal', which may mean gla
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 9 / 5
 
 
-## 41. Inflatable Gingerbread Man With Gift (8 ft) — scor 39/50 — listare nouă, un singur vânzător
+## 43. Inflatable Gingerbread Man With Gift (8 ft) — scor 39/50 — listare nouă, un singur vânzător
 
 Ce e: 2.4 m LED yard inflatable gingerbread man in a Santa hat holding a candy cane and a present.
 
@@ -805,7 +849,7 @@ Riscuri: A fresh listing with 5,000+ orders can be an older product listed again
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 8 / 7 / 10 / 7
 
 
-## 42. Pet Stairs With a Hidden Cave — scor 38/50 — listare nouă, un singur vânzător
+## 44. Pet Stairs With a Hidden Cave — scor 38/50 — listare nouă, un singur vânzător
 
 Ce e: Felt steps for small dogs and cats to reach the bed or sofa, with a hiding cave inside.
 
@@ -822,7 +866,7 @@ Riscuri: Plain pet stairs are an old category; the cave is the fresh part. Felt 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 6 / 8 / 9 / 7
 
 
-## 43. Roller-Coaster Santa Train Music Box — scor 36/50 — listare nouă, un singur vânzător
+## 45. Roller-Coaster Santa Train Music Box — scor 36/50 — listare nouă, un singur vânzător
 
 Ce e: 32 cm tabletop loop track with a mini Santa train that runs the loop, with lights and 8 songs.
 
@@ -839,7 +883,7 @@ Riscuri: One seller and 17 orders: no proof yet. High supplier cost means a fail
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 7 / 7 / 9 / 6
 
 
-## 44. Santa Sleigh Flying Over a Snow Village (34 cm) — scor 34/50 — listare nouă, un singur vânzător
+## 46. Santa Sleigh Flying Over a Snow Village (34 cm) — scor 34/50 — listare nouă, un singur vânzător
 
 Ce e: Musical tabletop village with a Santa sleigh and reindeer that fly in a circle above the houses.
 
@@ -856,7 +900,7 @@ Riscuri: One seller, 37 orders. Moving parts can arrive broken.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 6 / 6 / 8 / 6
 
 
-## 45. Cat Window Hammock With Wooden Frame — scor 34/50 — listare nouă, un singur vânzător
+## 47. Cat Window Hammock With Wooden Frame — scor 34/50 — listare nouă, un singur vânzător
 
 Ce e: Plush cat bed on a wooden frame that mounts at the window or beside the bed.
 
@@ -873,7 +917,7 @@ Riscuri: Window perches are sold everywhere; only this frame design is fresh. Ho
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 5 / 8 / 8 / 6
 
 
-## 46. LED Ferris Wheel Christmas Scene — scor 33/50 — listare nouă, un singur vânzător
+## 48. LED Ferris Wheel Christmas Scene — scor 33/50 — listare nouă, un singur vânzător
 
 Ce e: Tabletop Christmas fairground with a lit ferris wheel, carousel and tiny stalls.
 
@@ -890,7 +934,7 @@ Riscuri: No rating shown. Unclear whether the wheel really turns: the video may 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 6 / 8 / 6
 
 
-## 47. 5 ft Snowman Inflatable With Rotating Lights — scor 32/50 — listare nouă, un singur vânzător
+## 49. 5 ft Snowman Inflatable With Rotating Lights — scor 32/50 — listare nouă, un singur vânzător
 
 Ce e: Indoor or outdoor inflatable snowman with coloured lights that turn inside it.
 
@@ -907,7 +951,7 @@ Riscuri: The $9.25 may be a promo price. Snowman inflatables are common; the rot
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 6 / 6 / 9 / 5
 
 
-## 48. Ceramic-Look Lit Tree With Train Base — scor 32/50 — listare nouă, un singur vânzător
+## 50. Ceramic-Look Lit Tree With Train Base — scor 32/50 — listare nouă, un singur vânzător
 
 Ce e: Tabletop lit Christmas tree with coloured bulbs and a small train turning around the base.
 
@@ -924,7 +968,7 @@ Riscuri: Ceramic breaks in transit. Lighted ceramic trees are an old US category
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 5 / 6 / 8 / 6
 
 
-## 49. Musical Carousel Tree With Climbing Santa — scor 31/50 — listare nouă, un singur vânzător
+## 51. Musical Carousel Tree With Climbing Santa — scor 31/50 — listare nouă, un singur vânzător
 
 Ce e: Tabletop carousel with a lit tree on top, turning figures and a Santa climbing a ladder.
 
@@ -941,7 +985,7 @@ Riscuri: Low orders and exactly 4.5. Close to the other village pieces, so test 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 5 / 6 / 8 / 5
 
 
-## 50. Santa Riding the Dog Costume — scor 44/50 — deja cunoscut
+## 52. Santa Riding the Dog Costume — scor 44/50 — deja cunoscut
 
 Ce e: Dog outfit with a small Santa figure on the dog's back, so Santa rides when the dog runs.
 
@@ -958,7 +1002,7 @@ Riscuri: Sold cheaply everywhere for years. Fails our price rule alone. Sizes ca
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 8 / 9 / 10 / 9
 
 
-## 51. Pop-Up Pre-Decorated Christmas Tree — scor 41/50 — deja cunoscut
+## 53. Pop-Up Pre-Decorated Christmas Tree — scor 41/50 — deja cunoscut
 
 Ce e: Flat collapsed tree that pulls up into a full tree with lights and ornaments already on it. 4 to 7 ft.
 
@@ -975,7 +1019,7 @@ Riscuri: At least one brand already sells it with paid marketing and Walmart lis
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 9 / 7 / 10 / 8
 
 
-## 52. Felt Christmas Tree Cat House — scor 40/50 — deja cunoscut
+## 54. Felt Christmas Tree Cat House — scor 40/50 — deja cunoscut
 
 Ce e: Cone-shaped felt cat cave that looks like a small Christmas tree with pom-pom ornaments.
 
@@ -992,7 +1036,7 @@ Riscuri: Sold by Walmart, Etsy (about $62) and Amazon ($49.88). Felt may arrive 
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 7 / 8 / 9 / 8
 
 
-## 53. Electric Climbing Santa (rope or ladder) — scor 36/50 — deja cunoscut
+## 55. Electric Climbing Santa (rope or ladder) — scor 36/50 — deja cunoscut
 
 Ce e: Small motorised Santa that climbs up and down a rope or a red ladder while music plays.
 
@@ -1009,7 +1053,7 @@ Riscuri: An old product. Thin margin, small motors break.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 7 / 6 / 8 / 9 / 6
 
 
-## 54. 10 ft Sitting Santa Inflatable With Reindeer — scor 36/50 — deja cunoscut
+## 56. 10 ft Sitting Santa Inflatable With Reindeer — scor 36/50 — deja cunoscut
 
 Ce e: 3 m LED inflatable Santa sitting with a reindeer and gift box, for roof or yard.
 
@@ -1026,7 +1070,7 @@ Riscuri: Older listing, big-box stores sell similar ones. Heavy to ship.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 9 / 6 / 9 / 6
 
 
-## 55. AI Talking Plush Pet — scor 35/50 — deja cunoscut
+## 57. AI Talking Plush Pet — scor 35/50 — deja cunoscut
 
 Ce e: Soft plush robot that listens and answers by voice over Wi-Fi. Several characters.
 
@@ -1043,7 +1087,7 @@ Riscuri: Hardest to film honestly: only answers the toy really gives. Needs Wi-F
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 8 / 6 / 8 / 5 / 8
 
 
-## 56. Inflatable Santa Climbing In Through the Window — scor 35/50 — deja cunoscut
+## 58. Inflatable Santa Climbing In Through the Window — scor 35/50 — deja cunoscut
 
 Ce e: LED inflatable Santa that hangs from a window or balcony so he looks like he is climbing in. 2 m and 3 m.
 
@@ -1060,7 +1104,7 @@ Riscuri: Lowe's, Target and Costway sell it for about $25 to $70.
 Scor (emoție / exagerare / reacție / fără sunet / comentarii): 6 / 8 / 6 / 9 / 6
 
 
-## 57. Plush Smart Hand Warmer — scor 31/50 — deja cunoscut
+## 59. Plush Smart Hand Warmer — scor 31/50 — deja cunoscut
 
 Ce e: Small rechargeable hand warmer in a soft plush cover with a temperature display.
 

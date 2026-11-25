@@ -22,6 +22,14 @@ Cel mai bun semn: tip de produs care există DOAR în listări noi, cu comenzi p
 
 Învățat la runda 3 (14 nov 2026, „apărute în ultimele zile”): listările cu cele mai mari numere (ultimele zile) sunt aproape toate marfă banală sau produse vechi relistate — din ~165 de căutări au ieșit 3 produse. Zona bună e cea de **2–6 săptămâni**: tip de produs care există doar în listări noi, cu zeci de comenzi, nu mii. Acolo se caută întâi.
 
+Învățat la rundele 4–5 (25 nov 2026):
+- **Calibrarea numărului de listare:** crește ~5,3 milioane pe zi (14 nov maxim ≈ `3256813444…`, 25 nov ≈ `3256813510…`). „Ultimele N zile” = maximul de azi minus N × 5,3 milioane. Maximul de azi se ia din 3–4 căutări cu `?SortType=create_desc`.
+- `?SortType=create_desc` (cele mai noi întâi) e sortarea bună pentru listări proaspete.
+- Szasz (25 nov): gândește ca un dropshipper care trebuie să scoată 10.000 $ repede, după playbook-uri (`playbooks/esteban.md` §Produs, `playbooks/od-produse.md` §0 și §5): wow fără sunet, mic și ușor, preț ≥ 39 $, nișă pasionată, nou. **Produse generale, nu doar de Crăciun.** Livrabilul include un **top 15** cu nișa potrivită la fiecare.
+- Nișare custom: caută baze care apar deja în mai multe teme/nișe la vânzători diferiți (ex. lumina cu aripi: câine, cal, alergători, motociclete) sau cu „custom/personalized” în titlu.
+- Căutările se fac cu agenți `web-fetch` (WebFetch nu mai e direct); fiecare se oprește la ~30 de pagini, deci max ~22 de căutări pe agent, cu lista de căutări scrisă în prompt.
+- Pozele produselor foarte noi sunt adesea generate pe calculator (una avea filigran de AI): nimic nu se filmează fără probă.
+
 ## 1. Semințe de căutare (15–25 de căutări, în engleză)
 Pornește de la **emoție**, nu de la categorie. Câte 2–4 căutări pe fiecare:
 

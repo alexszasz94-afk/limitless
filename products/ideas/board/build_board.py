@@ -4,6 +4,8 @@ OUT_MD, OUT_HTML, IMG = sys.argv[1], sys.argv[2], sys.argv[3]
 def U(k): return ("https://www.aliexpress.com/item/%s.html" if k.startswith("1005") else "https://www.aliexpress.us/item/%s.html") % k
 def P(n,img,fresh,tags,s,what,pot,cost,sold,rating,sell,links,concepts,risks):
     return dict(n=n,img=img,fresh=fresh,tags=tags,s=s,score=sum(s),what=what,pot=pot,cost=cost,sold=sold,rating=rating,sell=sell,links=links,concepts=concepts,risks=risks)
+def NP(custom,niches,p):
+    p["custom"]=custom; p["niches"]=niches; return p
 D=[
 # ---------- fresh waves ----------
 P("Christmas Sleigh Pet Bed","2.jpg","wave",["xmas","pets"],[9,8,9,9,9],
@@ -183,6 +185,107 @@ P("Musical Carousel Tree With Climbing Santa","carousel.jpg","single",["xmas"],[
  [("Pattern interrupt","He has been climbing since Thanksgiving. Somebody help him.","Close on the tiny Santa on the ladder, carousel turning under him."),
   ("Gifting reaction","The gift my mother-in-law actually kept on the table","Unwrap, switch on, she moves the fruit bowl to make room.")],
  "Low orders and exactly 4.5. Close to the other village pieces, so test only one of them."),
+# ---------- custom niche bases (round 4, 25 Nov; listed this week or in the last 2-3 weeks) ----------
+NP("Dog collar (angel or dragon wings), horse tack, runners and cyclists, motorcycles: the same light already sold in four niches.",
+ "Other wing shapes per group: eagle wings for hunters and bikers, butterfly for small dogs, breed-coloured sets; a horse-show version; a kids' scooter version.",
+ P("Clip-On LED Wing Light","wingdog.jpg","niche",["pets"],[8,8,8,10,8],
+ "Small light that clips to a dog collar, horse tack, a runner's belt or a bike and throws a pair of glowing wings on the ground behind.",
+ "The strongest find of this round: about 30 listings, every one from the last 2 to 3 weeks and none older. Orders are still small. Reads instantly at night.",
+ "$10.19 to $36.89","95, 49, 41, 30, 18 and less across about 30 listings","none shown","$39.99 to $49.99",
+ [("Dog, newest, $21.42","3256813494657967"),("Dog, 95 sold","3256813454540410"),("Horse version","3256813497935533"),("Runner version, 49 sold","3256813447514699")],
+ [("Pattern interrupt","People keep stopping their cars to ask what my dog is","Night walk filmed from behind: plain dog, click, red wings spread on the road. Driver slows down."),
+  ("Do NOT let… see this","Do NOT let a horse girl see this before the evening ride","Rider at dusk, wings glowing on the trail behind the horse.")],
+ "Every listing photo is computer-made, and one carries an AI watermark: the real projection will be smaller and dimmer. A sample must be filmed before any video, and we show only what it really throws. Cheap versions at $6 to $11 suggest quality varies.")),
+NP("Golden retriever now. Titles name the breed, so the breed is the part that changes.",
+ "Dachshund, corgi and French bulldog versions; a horse; a tractor for farm families. Needs a supplier who makes custom inflatables.",
+ P("Light-Up Inflatable Dog (5 ft)","infldog.png","niche",["xmas","pets"],[8,7,8,10,8],
+ "LED yard inflatable of a sitting golden retriever in a Santa hat with a gift box.",
+ "Breed owners buy anything with their breed on it, and an inflatable is filmed in one shot. 38 orders on a listing about two weeks old.",
+ "$25.32 to $38.89","38 and 6","none shown","$69 to $79",
+ [("38 sold, $25.32","3256813444222943"),("Older, 6 sold","3256813187163457")],
+ [("Do NOT let… see this","Do NOT let a golden retriever mom see this","Real golden sits next to the glowing one, tilts its head. Owner gasps."),
+  ("3-2-1 reveal","3… 2… 1… he has a twin now","Blower on, the inflatable rises beside the real dog.")],
+ "Only one breed exists today; other breeds mean a custom order with a minimum quantity, which is not confirmed. Christmas-only as it stands.")),
+NP("Golden retriever now. Dog figure on top, lit paw and icicles below.",
+ "Any breed head on the same hanger; cat version; a horse head for stable doors; a name plate under the paw.",
+ P("Dog Door Hanger With Lit Paw and Icicles","pawporch.png","niche",["xmas","pets"],[8,6,7,9,7],
+ "Golden retriever figure in a Santa hat that hangs on the front door, with a glowing paw and lit icicles under it.",
+ "Same idea as the snowman railing light, aimed at dog owners. One listing, about two weeks old, no orders shown.",
+ "$10.79","none shown","none shown","$39.99 to $49.99",
+ [("Only listing","3256813459522238")],
+ [("Do NOT let… see this","Do NOT let a dog mom see this before she decorates the door","She hangs it, the paw lights up, the real dog looks up at it."),
+  ("Day 1 vs now","Our front door last Christmas vs. this one","Plain wreath, then the dog hanger glowing at dusk.")],
+ "One seller and no orders. The listing was described to me as a projector, but the photo shows a hanging figure with lights: what it really does needs a sample. Cheap, so the price needs a larger size or a set.")),
+NP("Race car now; motorcycle version listed this week (separate card).",
+ "Pickup truck, tractor, semi truck, muscle car, fire engine. This is the same move as the racing alarm clock in our playbook.",
+ P("Car Alarm Clock With Engine Sound","caralarm.jpg","niche",[],[7,8,7,9,7],
+ "Model car that is an alarm clock: display in the windscreen, engine sound, doors open, remote. Some versions spray mist.",
+ "Already $40 to $57 at the supplier, so the price holds. About 8 listings in the last 2 to 3 weeks with 1 to 9 orders each.",
+ "$39.32 to $57.19","9, 3, 1 and less","none shown","$89 to $99",
+ [("Newest, $45.54","3256813446587334"),("9 sold, $40.67","3256813356740629")],
+ [("Pattern interrupt","My husband has not been late once since I bought this","6 a.m., the car revs on the nightstand, he sits straight up."),
+  ("Gifting reaction","He is 41. Look at his face.","He unwraps it, presses the remote, the doors lift.")],
+ "The body in the photo copies a real sports car, so only a generic shape may be used. Novelty alarm clocks are already in our product finder. No custom words in the titles: re-theming is my inference.")),
+NP("Red sport bike now, two listings this week.",
+ "Cruiser, dirt bike, ATV, and the same clock as a tractor or truck.",
+ P("Motorcycle Alarm Clock","motoalarm.jpg","niche",[],[6,6,6,9,6],
+ "Battery alarm clock shaped like a red motorcycle, clock face in the rear wheel.",
+ "Two listings from this week. Bikers buy bike-shaped gifts for themselves and get them from family.",
+ "$24.59","none shown","none shown","$39.99 to $49.99",
+ [("Newest","3256813498693750"),("Second listing","3256813479387936")],
+ [("Gifting reaction","Dad said he did not want anything this year","He opens it, sets it next to his helmet."),
+  ("Store find","If your dad rides, do not walk past this","Generic shelf, hand grabs it. Cut to it on his garage bench.")],
+ "It only tells the time: nothing moves or lights up, so it is weak on screen. Older motorcycle clocks sell for $1 to $10, which makes $39.99 hard.")),
+NP("Titles say 'Custom Music', 'Custom Engraving', 'Custom Picture Print', 'Custom Song'.",
+ "Wedding or first-dance song with names and date; lullaby with the baby's name; a pet memorial with a photo on the lid.",
+ P("Hand-Crank Music Box With Your Own Song","musicbox.jpg","niche",[],[8,5,8,4,7],
+ "Wooden box with a brass movement that plays a song punched into a paper strip when you turn the handle. The song can be chosen.",
+ "A gift that is different for every buyer, and $42 at the supplier already. The newest listing is about two weeks old.",
+ "$42.49","none shown on the newest; 1,000+ on an older custom-print box","4.8 on the older one","$89 to $99",
+ [("Newest, $42.49","3256813419323165"),("Older custom print, 1,000+ sold","3256810102531815")],
+ [("Gifting reaction","She turned the handle and it was our wedding song","Wife cranks slowly, recognises it, looks up."),
+  ("Story","The song my mom sang to me, for my daughter","Grandma, mother and baby, one box.")],
+ "Needs sound to be understood. Custom songs mean a wait and a supplier who answers messages. Music boxes are an old category; the paper-strip custom song is the angle.")),
+NP("Titles say 'Customized with Patterns, Names, and Dates', 'photo custom', and one is breed-specific.",
+ "Per-breed silhouette; cat; horse; a larger headstone size to reach our price.",
+ P("Personalised Pet Memorial Stone","memstone.png","niche",["pets"],[9,4,7,8,7],
+ "Heart-shaped stone for the garden with the pet's photo, name, dates, angel wings and paw prints.",
+ "The deepest emotion on the board, and every order is custom. Two listings in the last 2 to 3 weeks.",
+ "$20.09 to $22.06","1","none shown","$49.99 to $59.99",
+ [("Heart stone, $22.06","3256813459723988"),("Rectangular with photo","3256813446908283")],
+ [("Story","Fourteen years. He still has his spot in the garden.","Empty dog bed, then hands placing the stone under a tree."),
+  ("Gifting reaction","We gave this to my mom a month after Daisy","She reads the name, holds it to her chest.")],
+ "Grief is the subject, so the tone must stay gentle and nothing is exaggerated here. Memorial stones have been sold for years; only these listings are new. Each order needs a photo from the buyer.")),
+NP("Horse and foal now; a dog series exists in three breeds from another seller.",
+ "Dog breeds, deer for hunters, cattle for farm families.",
+ P("Glowing Animal Yard Statue","glowstatue.jpg","niche",["xmas"],[7,6,6,10,6],
+ "Animal figure covered in warm lights for the yard. The photo shows a horse.",
+ "A lit horse on the lawn is unusual and reads at night. About 7 listings; a dog series has 70 orders.",
+ "$24.52 to $63.39","70 on the dog series; none shown on the newest","none shown","$99 to $119",
+ [("Horse and foal, $54.19","3256813399585724"),("Dog series, 70 sold","3256810206041345")],
+ [("Do NOT let… see this","Do NOT let a horse girl see this in December","Dark yard, switch on, the horse glows. She runs out in slippers."),
+  ("Day 1 vs now","Everyone on our street has reindeer. We have this.","Row of lit reindeer, then our horse.")],
+ "The newest listing is about three weeks old, not this week. No custom words in titles. Large and probably fragile to ship.")),
+NP("Titles say 'Custom Text Neon Sign', 'Custom Personalized Garage Neon Signs'. Tractor, deer, dachshund and food shapes already exist.",
+ "Fish for fishing dads, golf, pickleball, a breed outline with the dog's name.",
+ P("LED Neon Shape Sign","neonmotif.jpg","niche",[],[6,5,5,10,5],
+ "USB neon-style sign in the shape of an object. The newest one is a bowl of noodles.",
+ "The most open base for custom: any shape and any name. One listing this week at $53.",
+ "$15.62 to $56.99","up to 121 on older shapes","none shown","$79 to $89",
+ [("Noodle sign, this week","3256813471630818"),("Custom garage sign","3256811709292369")],
+ [("Gifting reaction","He has wanted a sign for the garage since 2015","Lights off, plug in, his name and a truck glow on the wall."),
+  ("Day 1 vs now","The garage before vs. after one sign","Grey wall, then the lit sign over the workbench.")],
+ "Neon signs are an old, crowded product; only the shapes are new. Weak emotion on its own. Several listings use real truck brand names, which we cannot.")),
+NP("Titles say 'Custom Embroidered Name Text Logo', 'Monogrammed', 'Couples Robe'.",
+ "A name on OUR heated robes as an add-on; nurse or vet-tech name; bridal party sets; golf-club style crest.",
+ P("Embroidered Name Robe","namerobe.jpg","niche",[],[6,5,6,7,6],
+ "Terry bathrobe with a name, text or logo embroidered on the chest or back. Sold as couples sets.",
+ "Useful less as a new product than as proof that suppliers embroider names on robes: an upsell for the robes we already sell.",
+ "$18.69","1 on the newest; 100 and 33 on older ones","none shown","add-on of $10 to $15 on our robes",
+ [("Newest, $18.69","3256813402987680"),("Older, 100 sold","3256811853366368")],
+ [("Gifting reaction","It has her name on it. She has not taken it off.","She opens the box, finds her name on the chest."),
+  ("Unboxing + reaction","His and hers, and yes they are heated","Two robes, two names, same couch.")],
+ "Plain robes are an old product. The idea here is the name on our own robe, which needs our supplier to agree and a longer delivery time.")),
 # ---------- very new, almost no orders yet (round 2, 14 Nov) ----------
 P("Tornado Vortex Lamp","vortex.jpg","early",[],[8,7,7,10,7],
  "Desk lamp with a column of water in which a spinning tornado is lit by colour-changing LEDs. About 35 cm, USB or battery.",
@@ -387,7 +490,7 @@ P("Plush Smart Hand Warmer","10.jpg","known",[],[7,6,6,6,6],
  "Battery product. Heated items are already crowded in our product finder. Weakest on screen."),
 ]
 N=len(D)
-order={"wave":0,"early":1,"single":2,"known":3}
+order={"niche":0,"wave":1,"early":2,"single":3,"known":4}
 D.sort(key=lambda p:(order[p["fresh"]],-p["score"]))
 def lno(p):
     m=max(int(k)+(2251799813685248 if k.startswith("1005") else 0) for _,k in p["links"])
@@ -405,21 +508,22 @@ BETS=[("Tornado Vortex Lamp","Not seasonal. 12 recent listings, about 22 orders 
 def datauri(name):
     im=Image.open(os.path.join(IMG,name)).convert("RGB").resize((360,360),Image.LANCZOS)
     b=io.BytesIO(); im.save(b,"WEBP",quality=72); return "data:image/webp;base64,"+base64.b64encode(b.getvalue()).decode()
-DATE="14 Nov 2026"
-FR={"wave":"Fresh wave","early":"Very new, no proof yet","single":"Fresh, one seller","known":"Already known"}
-FRRO={"wave":"val nou de listări","early":"foarte nou, aproape fără comenzi","single":"listare nouă, un singur vânzător","known":"deja cunoscut"}
+DATE="25 Nov 2026"
+FR={"niche":"Custom niche base","wave":"Fresh wave","early":"Very new, no proof yet","single":"Fresh, one seller","known":"Already known"}
+FRRO={"niche":"bază de nișat custom","wave":"val nou de listări","early":"foarte nou, aproape fără comenzi","single":"listare nouă, un singur vânzător","known":"deja cunoscut"}
 # ---------- markdown ----------
 md=[f"# Research AliExpress — {N} de produse, mai ales de Crăciun ({DATE})\n",
 "Board cu poze: https://claude.ai/artifact/8XheU6FkHoaHgTLPfzZ32N\n",
 "Cifrele (preț, comenzi, rating) sunt din paginile de căutare AliExpress, 13 nov 2026. Toate produsele sunt **ipoteze** până la cifrele noastre (pilot → `rezultate`).\n",
 "**Neverificat:** livrarea în SUA (cost, zile), concurența pe Instagram/TikTok (trebuie Apify, cu acord pe cost), $/1M vizualizări. „Nou” = estimare după numărul listării și câte listări noi au apărut deodată; nou pe AliExpress NU înseamnă automat nesaturat pe Instagram.\n",
-"Ordinea: valuri noi (14), apoi foarte noi aproape fără comenzi (16, rundele 2–3 din 14 nov), apoi listări noi cu un singur vânzător (9), apoi deja cunoscute (8); fiecare grup după scor.\n",
+"Sus: baze de nișat custom (10, runda 4 din 25 nov; listate săptămâna asta sau în ultimele 2–3 săptămâni). Apoi: valuri noi (14), apoi foarte noi aproape fără comenzi (16, rundele 2–3 din 14 nov), apoi listări noi cu un singur vânzător (9), apoi deja cunoscute (8); fiecare grup după scor.\n",
 "| # | Produs | Cât de nou | Scor | Preț furnizor | Comenzi | Rating | Preț propus |","|---|---|---|---|---|---|---|---|"]
 for i,p in enumerate(D,1): md.append(f"| {i} | {p['n']} | {FRRO[p['fresh']]} | {p['score']}/50 | {p['cost']} | {p['sold']} | {p['rating']} | {p['sell']} |")
 for i,p in enumerate(D,1):
     md.append(f"\n## {i}. {p['n']} — scor {p['score']}/50 — {FRRO[p['fresh']]}\n")
     md.append(f"Ce e: {p['what']}\n\nPotențial: {p['pot']}\n")
     md.append("Link AliExpress: "+" · ".join(f"[{t}]({U(k)})" for t,k in p['links'])+"\n")
+    if p.get("niches"): md.append(f"Dovadă de custom: {p['custom']}\n\nVersiuni de nișă: {p['niches']}\n")
     for j,(f,h,v) in enumerate(p['concepts'],1): md.append(f"Concept {j} ({f}), hook EN: \"{h}\" — {v}\n")
     md.append(f"Riscuri: {p['risks']}\n")
     md.append("Scor (emoție / exagerare / reacție / fără sunet / comentarii): "+" / ".join(map(str,p['s']))+"\n")
@@ -437,11 +541,12 @@ for i,p in enumerate(D,1):
 <div class="hd"><div class="line"><span class="rank">{i}</span><div class="score"><strong>{p['score']}</strong><span>/50</span></div></div><h2>{e(p['n'])}</h2><div class="tags">{tags}</div><p class="what">{e(p['what'])}</p></div></div>
 <p class="row pot"><span class="lab">Potential</span>{e(p['pot'])}</p>
 <dl class="nums"><div><dt>Supplier price</dt><dd>{e(p['cost'])}</dd></div><div><dt>Orders</dt><dd>{e(p['sold'])}</dd></div><div><dt>Rating</dt><dd>{e(p['rating'])}</dd></div><div><dt>Our price</dt><dd>{e(p['sell'])}</dd></div><div><dt>Newest listing no.</dt><dd>{lno(p)}</dd></div></dl>
+{('<p class="row nv"><span class="lab">Custom evidence</span>'+e(p["custom"])+'</p><p class="row nv"><span class="lab">Niche versions</span>'+e(p["niches"])+'</p>') if p.get("niches") else ''}
 <div class="hooks"><span class="lab">Concept ideas</span><ol>{con}</ol></div>
 <p class="row"><span class="lab">Risks</span>{e(p['risks'])}</p>
 <div class="links"><span class="lab">AliExpress listings</span>{links}</div>
 </article>''')
-ne=sum(p['fresh']=="early" for p in D); nw=sum(p['fresh']=="wave" for p in D); ns=sum(p['fresh']=="single" for p in D); nk=sum(p['fresh']=="known" for p in D)
+ne=sum(p['fresh']=="early" for p in D); nn=sum(p['fresh']=="niche" for p in D); nw=sum(p['fresh']=="wave" for p in D); ns=sum(p['fresh']=="single" for p in D); nk=sum(p['fresh']=="known" for p in D)
 page=f'''<title>AliExpress Christmas Board</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
@@ -480,7 +585,7 @@ h1{{font-family:var(--display);font-size:clamp(26px,4vw,38px);line-height:1.1;ma
 h2{{font:700 18px/1.2 var(--display);margin:0;text-wrap:balance}}
 .tags{{display:flex;flex-wrap:wrap;gap:6px}}
 .tag{{font-size:11.5px;font-weight:600;letter-spacing:.03em;padding:2px 8px;border-radius:4px;background:var(--soft);color:var(--muted)}}
-.f-wave{{color:var(--bg);background:var(--pine)}} .f-early{{color:var(--bg);background:var(--gold)}} .f-single{{color:var(--pine)}} .f-known{{color:var(--berry)}}
+.f-wave{{color:var(--bg);background:var(--pine)}} .f-niche{{color:var(--bg);background:var(--berry)}} .nv{{background:var(--soft);border-radius:8px;padding:8px 10px}} .f-early{{color:var(--bg);background:var(--gold)}} .f-single{{color:var(--pine)}} .f-known{{color:var(--berry)}}
 .score{{white-space:nowrap;font-variant-numeric:tabular-nums}}
 .score strong{{font:700 24px/1 var(--display);color:var(--gold)}} .score span{{color:var(--muted);font-size:12px}}
 p{{margin:0}} .what{{color:var(--muted);font-size:13.5px}}
@@ -502,15 +607,16 @@ footer{{color:var(--muted);font-size:13px;max-width:86ch}}
 <div><div class="kicker">Product research · AliExpress · {DATE}</div><h1>{N} new products to test</h1></div>
 <p class="lede">Sorted by how new they are, then by score. Each card has the supplier photo, why it could work, and two concept ideas built on our method: a hook copied from a proven viral, then B-roll, then “Comment X for the link”. Every product is a hypothesis until our own pilot numbers come in.</p>
 <ul class="guide">
+<li><b>Custom niche base · {nn} products</b>Added 25 Nov. Listed this week or in the last 2 to 3 weeks, and the same item can be re-themed for a passionate group.</li>
 <li><b>Fresh wave · {nw} products</b>Several sellers listed the same product in the last weeks. The best sign we have that a product is new.</li>
-<li><b>Very new, no proof yet · {ne} products</b>Listed in the last weeks with almost no orders. Added 14 Nov. Earliest, and the least proven.</li>
+<li><b>Very new, no proof yet · {ne} products</b>Listed in the weeks before 14 Nov with almost no orders. Earliest, and the least proven.</li>
 <li><b>Fresh, one seller · {ns} products</b>A new listing with orders, but only one seller found. Newer, less proven.</li>
 <li><b>Already known · {nk} products</b>Older listings or already in US stores. Kept from the first board; expect competition.</li>
 </ul>
 <section class="bets"><h2 class="bh">Best bets: high potential, too new for anyone to be running</h2><ol>{''.join(f'<li><b>{e(n)}</b><span>{e(t)}</span></li>' for n,t in BETS)}</ol><p class="bn">Chosen by two things only: the listing number (higher means newer) and the order count (few means nobody has picked it up). Products with thousands of orders were left out even when they score well.</p></section>
-<p class="note"><b>Not verified yet:</b> shipping cost and delivery days to the US, and dollars per 1M views. AliExpress shows no listing date, so how new a product is comes from its listing number and its order count. Prices, orders and ratings were read from AliExpress search pages on {DATE}. Christmas items must reach buyers before Dec 25, so the selling window closes in early December; the Valentine and non-seasonal items are there for what comes after.</p>
+<p class="note"><b>Not verified yet:</b> shipping cost and delivery days to the US, and dollars per 1M views. AliExpress shows no listing date, so how new a product is comes from its listing number and its order count. Prices, orders and ratings were read from AliExpress search pages on 13, 14 and 25 Nov 2026. Listing numbers grow by about 5 million a day, so a number above 32568134650… means listed in the week of 25 Nov. Christmas items must reach buyers before Dec 25, so the selling window closes in early December; the Valentine and non-seasonal items are there for what comes after.</p>
 <div class="chips" role="group" aria-label="Filter products">
-<button id="f-all" data-f="" aria-pressed="true">All {N}</button><button id="f-wave" data-f="wave" aria-pressed="false">Fresh wave</button><button id="f-early" data-f="early" aria-pressed="false">Very new</button><button id="f-single" data-f="single" aria-pressed="false">Fresh, one seller</button><button id="f-known" data-f="known" aria-pressed="false">Already known</button><button id="f-xmas" data-f="xmas" aria-pressed="false">Christmas</button><button id="f-pets" data-f="pets" aria-pressed="false">Pets</button><button id="f-val" data-f="val" aria-pressed="false">Valentine</button>
+<button id="f-all" data-f="" aria-pressed="true">All {N}</button><button id="f-niche" data-f="niche" aria-pressed="false">Custom niche</button><button id="f-wave" data-f="wave" aria-pressed="false">Fresh wave</button><button id="f-early" data-f="early" aria-pressed="false">Very new</button><button id="f-single" data-f="single" aria-pressed="false">Fresh, one seller</button><button id="f-known" data-f="known" aria-pressed="false">Already known</button><button id="f-xmas" data-f="xmas" aria-pressed="false">Christmas</button><button id="f-pets" data-f="pets" aria-pressed="false">Pets</button><button id="f-val" data-f="val" aria-pressed="false">Valentine</button>
 </div>
 <div class="board">{''.join(cards)}</div>
 <footer>Score is the sum of five 0 to 10 marks: emotion in 3 seconds, can be exaggerated, filmable reaction, clear without sound, comments and shares. Exaggeration applies to the scene and the reaction, never to what the product does. Photos are the suppliers' own listing photos.</footer>

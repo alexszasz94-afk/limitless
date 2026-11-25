@@ -78,6 +78,8 @@ Potențial: Listed in the last 5 days, two listings, no orders yet. Custom, tiny
 
 Link AliExpress: [Newest, $25.29](https://www.aliexpress.us/item/3256813492939389.html) · [Second listing](https://www.aliexpress.us/item/3256813479870301.html)
 
+De inventat pe același principiu — Principiul: Your own name or face, written in light where people will see it. Produse noi: A front-door welcome light with the family name and the dog's face; a stroller light with the baby's name; a garage light with a truck outline and the owner's name; a dance-floor monogram for weddings. Pentru cine: Breed owners, new parents, truck and garage guys, brides.
+
 Dovadă de custom: Every unit is custom: the photo shows two dogs, each with its own face and name on the ground. Titles say custom photo.
 
 Versiuni de nișă: Any breed and any name; a cat version; a memorial version with dates; a horse name for riders.
@@ -98,6 +100,8 @@ Ce e: Small light that clips to a dog collar, horse tack, a runner's belt or a b
 Potențial: The strongest find so far: about 30 listings, all from the last 3 weeks, and 11 more dog listings appeared in the last 5 days alone. The biggest has about 247 orders. Reads instantly at night and is not seasonal.
 
 Link AliExpress: [Dog, newest, $36.89](https://www.aliexpress.us/item/3256813509831358.html) · [Dog, about 247 sold](https://www.aliexpress.us/item/3256813447494385.html) · [Dog, 95 sold](https://www.aliexpress.us/item/3256813454540410.html) · [Horse version](https://www.aliexpress.us/item/3256813497935533.html) · [Runner version, 49 sold](https://www.aliexpress.us/item/3256813447514699.html)
+
+De inventat pe același principiu — Principiul: A tiny clip-on projector that turns an ordinary night walk into a show on the ground. Produse noi: A stroller or kids' scooter clip that throws wings or a crown; an e-bike or golf-cart rear light that throws flames; a shoe clip that leaves a trail of stars for runners. Pentru cine: Big-dog owners, horse riders, parents of small kids, e-bike and golf-cart owners, night runners.
 
 Dovadă de custom: Dog collar (angel or dragon wings), horse tack, runners and cyclists, motorcycles: the same light already sold in four niches.
 
@@ -162,6 +166,8 @@ Potențial: Already $40 to $57 at the supplier, so the price holds. About 8 list
 
 Link AliExpress: [Newest, $45.54](https://www.aliexpress.us/item/3256813446587334.html) · [9 sold, $40.67](https://www.aliexpress.us/item/3256813356740629.html)
 
+De inventat pe același principiu — Principiul: An object from your hobby that wakes you with its real sound. Produse noi: A tractor that starts like a diesel; a pickup with a horn; a fishing reel whose drag screams; a fire engine with a siren; a cruiser bike with exhaust rumble. Pentru cine: Farmers, truck owners, fishermen, firefighters, bikers. No real vehicle brands.
+
 Dovadă de custom: Race car now; motorcycle version listed this week (separate card).
 
 Versiuni de nișă: Pickup truck, tractor, semi truck, muscle car, fire engine. This is the same move as the racing alarm clock in our playbook.
@@ -203,6 +209,8 @@ Ce e: Heart-shaped stone for the garden with the pet's photo, name, dates, angel
 Potențial: The deepest emotion on the board, and every order is custom. Two listings in the last 2 to 3 weeks.
 
 Link AliExpress: [Heart stone, $22.06](https://www.aliexpress.us/item/3256813459723988.html) · [Rectangular with photo](https://www.aliexpress.us/item/3256813446908283.html)
+
+De inventat pe același principiu — Principiul: A keepsake that carries the name and face of someone you lost. Produse noi: A solar lantern with the pet's photo that lights at dusk; a wind chime with the name and a paw; a horseshoe plaque for a horse; a tree ornament that holds the collar tag. Pentru cine: Pet loss, horse owners. Gentle tone only, nothing exaggerated.
 
 Dovadă de custom: Titles say 'Customized with Patterns, Names, and Dates', 'photo custom', and one is breed-specific.
 
@@ -266,6 +274,8 @@ Ce e: Wooden box with a brass movement that plays a song punched into a paper st
 Potențial: A gift that is different for every buyer, and $42 at the supplier already. The newest listing is about two weeks old.
 
 Link AliExpress: [Newest, $42.49](https://www.aliexpress.us/item/3256813419323165.html) · [Older custom print, 1,000+ sold](https://www.aliexpress.us/item/3256810102531815.html)
+
+De inventat pe același principiu — Principiul: Your own song turned into an object you can hold. Produse noi: A box with the baby's ultrasound on the lid and a lullaby; a first-dance box with the wedding photo; a box that plays the song from a parent's era as an anniversary gift. Pentru cine: Couples, new parents, grown children buying for parents.
 
 Dovadă de custom: Titles say 'Custom Music', 'Custom Engraving', 'Custom Picture Print', 'Custom Song'.
 
@@ -347,6 +357,8 @@ Potențial: The cat's reaction is the whole video and needs no words. 5 fresh li
 
 Link AliExpress: [365 sold, 4.9](https://www.aliexpress.com/item/1005013410725504.html) · [238 sold, 4.6](https://www.aliexpress.us/item/3256812887305081.html) · [3 in 1 version](https://www.aliexpress.us/item/3256812835738470.html)
 
+De inventat pe același principiu — Principiul: An arcade game sized for a pet. Produse noi: A dog version where treats pop up; a slot machine that pays in kibble; a claw machine the cat operates; a hoop that drops a treat when the ball goes in. Pentru cine: Cat owners, dog owners, people who work from home.
+
 Concept 1 (Pattern interrupt), hook EN: "My cat has not blinked in 11 minutes" — Top-down shot of the cat frozen over the box, then a burst of smacking. B-roll: unbox, charge, three cats around it.
 
 Concept 2 (Problem → solution), hook EN: "3 a.m. zoomies vs. 3 a.m. now" — Cat sprinting over the bed at night, cut to the cat busy with the toy in the hallway while the owner sleeps.
@@ -380,6 +392,8 @@ Ce e: Tall giraffe-shaped machine that sticks to a door and throws a rope out, t
 Potențial: The only fresh pet find with real orders: two new listings with 468 and 258, rated 4.9 and 4.6. A fast action loop that needs no words.
 
 Link AliExpress: [468 sold, 4.9](https://www.aliexpress.com/item/1005013423794603.html) · [258 sold, 4.6](https://www.aliexpress.com/item/1005013092548409.html)
+
+De inventat pe același principiu — Principiul: A machine that plays with the pet so you do not have to. Produse noi: A door-mounted tug rope for dogs that pulls back; a feather tower shaped like a tree; a window bird that flutters on a timer. Pentru cine: People who work from home, apartment cat owners, owners of high-energy dogs.
 
 Concept 1 (Pattern interrupt), hook EN: "I work from home. This is my cat's new coworker." — Cat leaping at the rope again and again by the door while the owner types. B-roll: stick it on, charge, two cats queueing.
 
@@ -431,6 +445,8 @@ Ce e: Glowing winding track that hangs on the wall with a small Christmas train 
 Potențial: The only find with a wave of fresh listings and big order counts already: about 10 sellers appeared at once, top two at 2,000+ and 1,000+.
 
 Link AliExpress: [2,000+ sold, 4.9](https://www.aliexpress.us/item/3256813237585599.html) · [1,000+ sold, 4.9](https://www.aliexpress.us/item/3256813406056769.html)
+
+De inventat pe același principiu — Principiul: A lit scene that climbs the wall. Produse noi: A ghost trail for Halloween; a bunny trail for Easter; a birthday trail with the child's name; a year-round fairy trail for kids' rooms; a lighthouse and boats version for lake houses. Pentru cine: Holiday moms in every season, kids' rooms, lake and beach homes.
 
 Concept 1 (3-2-1 reveal), hook EN: "POV: you turn the lights off and Christmas runs up your wall" — Dark room, kid flips the switch, the trail lights up from bottom to top.
 
@@ -602,6 +618,8 @@ Potențial: The only clear new wave outside Christmas: 12 recent listings, no bi
 
 Link AliExpress: [Main size, $34.69](https://www.aliexpress.us/item/3256813214453875.html) · [Larger, $67.79](https://www.aliexpress.us/item/3256813200555522.html) · [Small, 8 sold, 5.0](https://www.aliexpress.us/item/3256813086972932.html)
 
+De inventat pe același principiu — Principiul: A force of nature trapped in a lamp. Produse noi: Northern lights in a jar; a rain-cloud lamp that really drips in a loop; lightning in a bottle; a campfire lamp for RVs. Pentru cine: Gift for him, weather and storm fans, campers and RV owners, kids' rooms.
+
 Concept 1 (Pattern interrupt), hook EN: "There is a tornado on my nightstand and nobody warned me" — Dark bedroom, hand presses the button, the vortex spins up and changes colour. B-roll: unbox, fill, kid's face lit blue.
 
 Concept 2 (Gifting reaction), hook EN: "I got my dad the one lamp he cannot stop staring at" — Dad unwraps it, switches it on, pulls his chair closer.
@@ -619,6 +637,8 @@ Potențial: A dog doing the naughty thing it is finally allowed to do. 5 fresh l
 
 Link AliExpress: [Fresh, $25.89](https://www.aliexpress.us/item/3256813106529658.html) · [Older, 269 sold, 4.9](https://www.aliexpress.com/item/1005012619110494.html)
 
+De inventat pe același principiu — Principiul: The forbidden household thing, made legal for the pet. Produse noi: A toilet-roll toy that unrolls and rolls back; a delivery-box toy made to be shredded; a laundry basket of sock toys; a kitchen-bin treat puzzle. Pentru cine: Puppy owners, dog moms.
+
 Concept 1 (Pattern interrupt), hook EN: "He is allowed to do this. That is the whole point." — Dog yanking tissue after tissue, owner calmly watching. Then the real tissue box, untouched.
 
 Concept 2 (Problem → solution), hook EN: "What my living room looked like every time I left" — Shredded tissues everywhere, cut to the dog busy with his own box.
@@ -635,6 +655,8 @@ Ce e: Plush cat bed on an arm that clamps to the edge of a desk, no drilling. Ne
 Potențial: The cat next to the laptop instead of on the keyboard: instant relief for anyone working from home. Price already near our minimum.
 
 Link AliExpress: [Fresh, $31.09](https://www.aliexpress.us/item/3256813222572738.html) · [Older, 1,000+ sold, 4.8](https://www.aliexpress.us/item/3256810180159848.html) · [Older 360°, 700+ sold](https://www.aliexpress.us/item/3256809871990131.html)
+
+De inventat pe același principiu — Principiul: The pet next to you, exactly where you spend your day. Produse noi: A shelf that sits on top of the monitor; a sofa-arm perch for small dogs; a bedside bed at mattress height so an old dog sleeps level with you. Pentru cine: People who work from home, small-dog owners, seniors with dogs.
 
 Concept 1 (Problem → solution), hook EN: "Every meeting I have had this year vs. today" — Cat walking across the keyboard on a video call, cut to the cat asleep on the bed beside the screen.
 
@@ -670,6 +692,8 @@ Potențial: Made for the American front porch and clear in one second. About 15 
 
 Link AliExpress: [14 sold, $19.89](https://www.aliexpress.us/item/3256813159792452.html) · [25 sold, 5.0](https://www.aliexpress.us/item/3256813181193923.html) · [Newest, $18.99](https://www.aliexpress.us/item/3256813350369617.html)
 
+De inventat pe același principiu — Principiul: A character that sits on the railing with lights dripping below it. Produse noi: A dog-breed railing sitter; a Halloween ghost with purple drips; an Easter bunny with carrot lights; an eagle with red, white and blue for July 4th. Pentru cine: Porch decorators in every season, breed owners.
+
 Concept 1 (Day 1 vs now), hook EN: "Our porch on December 1st vs. tonight" — Bare railing in daylight, then three snowmen glowing along it at dusk with the icicles lit.
 
 Concept 2 (Do NOT let… see this), hook EN: "Do NOT let a Christmas mom see this before she finishes the porch" — She clips one on, steps back, immediately orders two more.
@@ -703,6 +727,8 @@ Ce e: Tabletop gingerbread village in a tree shape with a light inside that thro
 Potențial: Lights off, switch on, the whole room fills with shapes: a strong kid reaction. About 12 fresh listings and 260 orders.
 
 Link AliExpress: [67 sold, 5.0](https://www.aliexpress.us/item/3256813124222731.html) · [$42.89 version](https://www.aliexpress.us/item/3256813375389938.html) · [Rotating, $69.59](https://www.aliexpress.us/item/3256813172850638.html)
+
+De inventat pe același principiu — Principiul: A table piece that throws its scene onto the walls. Produse noi: A haunted house that projects bats; a nursery carousel that projects the baby's name; an aquarium piece that projects fish; a birthday centrepiece. Pentru cine: Holiday moms, new parents, birthday parties.
 
 Concept 1 (3-2-1 reveal), hook EN: "3… 2… 1… watch the ceiling" — Family at the table, lights off, the room fills with gingerbread men. Kids point up.
 
@@ -771,6 +797,8 @@ Ce e: Clear acrylic cube lamp with layered mirrors that looks like an endless tu
 Potențial: A small box that looks bottomless on camera. 6 fresh listings; an older listing of the same type has 276 orders at 4.9.
 
 Link AliExpress: [Fresh, $36.51](https://www.aliexpress.us/item/3256813276656536.html) · [Older, 276 sold, 4.9](https://www.aliexpress.us/item/3256810573323342.html)
+
+De inventat pe același principiu — Principiul: A small object that looks far deeper than it is. Produse noi: An infinity mirror with a name or a dog outline floating inside; an infinity wall clock; a 'deep lake' version with fish outlines for fishermen. Pentru cine: Gift for him, garage and den, breed owners, fishermen.
 
 Concept 1 (Pattern interrupt), hook EN: "How deep is this box? Wrong." — Finger pointing into the cube, camera moves round to show it is 10 cm thick.
 
@@ -856,6 +884,8 @@ Ce e: Felt steps for small dogs and cats to reach the bed or sofa, with a hiding
 Potențial: An old or small dog finally reaching the bed alone is a strong, honest moment. Two fresh listings, 115 and 48 orders, 4.9.
 
 Link AliExpress: [115 sold, 4.9](https://www.aliexpress.us/item/3256813008812524.html) · [Felt version, 48 sold](https://www.aliexpress.us/item/3256813164692404.html)
+
+De inventat pe același principiu — Principiul: Furniture that fixes an old pet's daily struggle and gives it a place to hide. Produse noi: A sofa ramp that folds into a footstool; a car-boot step that opens into a travel bed; bed stairs with a soft night-light strip. Pentru cine: Owners of senior dogs and of short-legged breeds. No health claims.
 
 Concept 1 (Problem → solution), hook EN: "He is 13 and he could not jump on the bed anymore" — Old dog looking up at the bed, then walking up the steps on his own. Owner tears up.
 

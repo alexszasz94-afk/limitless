@@ -30,6 +30,11 @@ Cel mai bun semn: tip de produs care există DOAR în listări noi, cu comenzi p
 - Căutările se fac cu agenți `web-fetch` (WebFetch nu mai e direct); fiecare se oprește la ~30 de pagini, deci max ~22 de căutări pe agent, cu lista de căutări scrisă în prompt.
 - Pozele produselor foarte noi sunt adesea generate pe calculator (una avea filigran de AI): nimic nu se filmează fără probă.
 
+Reguli de la Szasz (25 nov 2026, seara):
+- La fiecare produs din top scrii și **principiul din spatele lui**, **ce alte produse am putea inventa noi pe același principiu** și **nișele în care să le rulăm** (caseta „Invent next on the same principle” de pe board, dicționarul `INV` din `products/ideas/board/build_board.py`). Sunt idei: cer furnizor care chiar le poate face.
+- **1688 și Alibaba.com nu se pot căuta de aici**: pagina de căutare cere verificare cu glisor (CAPTCHA), testat 25 nov. Nu se ocolește. Căi: Szasz caută logat și trimite linkuri/capturi, un agent de sourcing, sau un scraper plătit cu acord pe cost.
+- Căutarea pe produse generale din ultimele 5 zile (casă, bucătărie, mașină, grădină, jucării, cadouri) a ieșit aproape goală în 2 runde: listările proaspete din zonele astea sunt marfă ieftină sau produse vechi. Lucrurile noi cu comenzi apar la animale și la decor cu lumină.
+
 ## 1. Semințe de căutare (15–25 de căutări, în engleză)
 Pornește de la **emoție**, nu de la categorie. Câte 2–4 căutări pe fiecare:
 

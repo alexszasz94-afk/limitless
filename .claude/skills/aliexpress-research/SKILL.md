@@ -37,6 +37,13 @@ Reguli de la Szasz (25 nov 2026, seara):
 
 **ȚINTA (regula 25 nov 2026, Szasz): femei 35+, organic pe Facebook, la tot.** Fiecare produs se judecă prin ochii ei: îl cumpără pentru animalul ei, pentru casă sau cadou (soț, copii, nepoți, părinți). „Cui i-l vinzi” se scrie din perspectiva ei (ex. nu „pasionați de mașini”, ci „soții care cumpără pentru el”). Se pot propune și produse mai scumpe (99–169 $) când produsul duce prețul.
 
+Învățat la runda 6 (26 nov 2026) — CUM SE CAUTĂ FĂRĂ PAGINI GOALE:
+- Agenții `web-fetch` trag paginile foarte repede; la 20+ căutări una după alta AliExpress întoarce pagini goale (în runda 6: 15–19 din 22 goale la fiecare agent). **Regula: tranșe de 7–10 căutări, UNA CÂTE UNA (nu două deodată), apoi pauză de 2,5–4 minute** (`sleep` în fundal) înainte de tranșa următoare. Așa s-au citit 33 din 33.
+- Căutările scurte merg (2–3 cuvinte: `cardinal-memorial-light`, `memorial-wind-chime`); cele lungi cu „new design / 2027” dau „did not match any products”.
+- Cere la fiecare pagină și cele 2 listări cele mai vândute de orice vârstă: așa vezi pe loc dacă tipul e vechi.
+- Szasz (26 nov): topul se face **fără produse de Crăciun** (și fără alte sărbători). Pe board există filtrul „Not Christmas”.
+- Pentru femei 35+ au ieșit cel mai bine: piese memoriale (cardinal, animale), amintiri personalizate, cozy, grădină și păsări.
+
 ## 1. Semințe de căutare (15–25 de căutări, în engleză)
 Pornește de la **emoție**, nu de la categorie. Câte 2–4 căutări pe fiecare:
 

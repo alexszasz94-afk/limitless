@@ -258,7 +258,7 @@ NP("Titles say 'Customized with Patterns, Names, and Dates', 'photo custom', and
  "Grief is the subject, so the tone must stay gentle and nothing is exaggerated here. Memorial stones have been sold for years; only these listings are new. Each order needs a photo from the buyer.")),
 NP("Horse and foal now; a dog series exists in three breeds from another seller.",
  "Dog breeds, deer for hunters, cattle for farm families.",
- P("Glowing Animal Yard Statue","glowstatue.jpg","niche",["xmas"],[7,6,6,10,6],
+ P("Glowing Animal Yard Statue","glowstatue.jpg","niche",[],[7,6,6,10,6],
  "Animal figure covered in warm lights for the yard. The photo shows a horse.",
  "A lit horse on the lawn is unusual and reads at night. About 7 listings; a dog series has 70 orders.",
  "$24.52 to $63.39","70 on the dog series; none shown on the newest","none shown","$99 to $119",
@@ -306,6 +306,75 @@ NP("Highland cow now, listed in the last 5 days. Dog breeds exist from other sel
  [("Do NOT let… see this","Do NOT let a highland cow girl see this","She pulls into the driveway, the cow is glowing on the lawn, she stays in the car with her hands on her face."),
   ("3-2-1 reveal","3… 2… 1… he said no more cows in this house","Blower on, the cow rises outside the window. Technically not in the house.")],
  "One listing, no orders. Christmas-only as it stands, and the window closes in early December. Bulky to ship. Expensive to test.")),
+# ---------- not Christmas, for women 35+ (round 6, 26 Nov) ----------
+NP("Sold as a sympathy gift 'for Mom, Grandma'. Three sellers listed cardinal lights in the same week: a candle arrangement and two lit wreaths.",
+ "A plaque with the loved one's name and dates; a hummingbird or butterfly version of the same saying; a pet version with a paw.",
+ P("Cardinal Memorial Light","cardinal.jpg","early",[],[9,5,8,8,8],
+ "Glowing arrangement of LED candles with red cardinals and a small plaque that reads 'When cardinals appear, loved ones are near'.",
+ "The cardinal as a sign from someone who passed is a belief many American women over 35 hold and share. Three listings appeared within a week and none has orders.",
+ "$20.05 to $31.39","none shown","none shown","$59 to $69",
+ [("Candle arrangement, $31.39","3256813482142010"),("Lit wreath, $21.33","3256813481654938"),("Lit wreath, $20.05","3256813463436214")],
+ [("Gifting reaction","My mom lost her sister in March. I gave her this.","She reads the plaque, switches it on, holds her hand to her mouth."),
+  ("Story","Every time a cardinal lands in the yard she says 'hi Dad'","Real cardinal at the window, then the light on the shelf beside his photo.")],
+ "No orders yet. The photo has frosted pine and pinecones, so it can read as winter decor; the video should set it on a shelf next to a framed photo. Grief is the subject: gentle tone, nothing exaggerated.")),
+NP("Custom name on every box, and the box is cut in the dog's shape. Titles say 'Custom Name'.",
+ "A box per breed outline; a cat shape; a horse-hair version for riders; a version with the collar tag set in the lid.",
+ P("Dog-Shaped Fur Keepsake Box With Name","hairbox.jpg","early",["pets"],[9,4,8,8,8],
+ "Small wooden box cut in the shape of a dog, with the name on a clear window, made to keep a lock of the pet's fur.",
+ "A quiet, very personal keepsake that women buy for themselves and for friends. Listed about two weeks ago, no orders shown.",
+ "$17.33","none shown","none shown","$49.99",
+ [("Only listing","3256813441266343")],
+ [("Story","I kept a little of her fur. Now it has a place.","Hands open the box, place the fur, close it, set it by the collar."),
+  ("Gifting reaction","My sister said nothing for a full minute","She opens the gift, sees the name and the shape of her dog.")],
+ "One listing, no orders. Every order needs the name, so messages and a longer wait. Gentle tone only.")),
+P("Angel-Wing Pet Memorial Statue (solar)","angelmem.jpg","early",["pets"],[9,4,7,9,7],
+ "Garden statue of a pet asleep inside angel wings, with a small solar light that comes on at dusk.",
+ "Reads in one second and needs no personalising, so it ships like any product. Older statues of this type show 84 and 120 orders.",
+ "$27.49 to $31.19","none shown on the new ones; 84 and 120 on older angel statues","none shown","$59 to $69",
+ [("Pet in wings, $27.49","3256813337439775"),("Angel statue, $31.19","3256813381770314")],
+ [("Story","He always slept in that corner of the garden","Empty spot under the tree at dusk, the statue's light comes on."),
+  ("Gifting reaction","Our neighbour lost her dog. We left this on her porch.","She finds the box, carries the statue to the flowerbed.")],
+ "Listed four to five weeks ago, so not the newest. Resin can chip in transit. Solar light is small. Gentle tone only."),
+P("LED Fireplace Lantern","firelantern.jpg","early",[],[7,6,6,10,6],
+ "Small lantern shaped like a fireplace with glowing logs and flickering LED flames. USB or batteries, touch switch.",
+ "Cozy in one second and it works all year, not only at Christmas. Four listings in the last three to five weeks, none with orders.",
+ "$9.95 to $19.69","none shown","none shown","$39.99 to $49.99",
+ [("Fireplace lantern, $19.69","3256813396403697"),("Flame lamp, $9.95","3256813419101014"),("Resin version, $14.29","3256813394584317")],
+ [("Day 1 vs now","My apartment has no fireplace. It does now.","Bare shelf, then the lantern glowing next to a book and a blanket."),
+  ("Gifting reaction","Grandma's room at the home is not allowed candles","She switches it on by her chair and warms her hands at it for fun.")],
+ "Cheap, so the price needs the larger version or a pair. It gives light only, no heat, and the video must not suggest warmth. Fireplace lamps in other shapes already sell."),
+P("Stained-Glass Style Block Lamp (2,365 pieces)","blocklamp.jpg","early",[],[7,6,7,9,7],
+ "Table lamp in the classic stained-glass style that you build yourself from 2,365 small blocks. For adults.",
+ "A high-priced pick: $100 at the supplier, so $179 to $199 is believable, and it is both a project and a lamp. One listing, about two weeks old.",
+ "$99.69","none shown","none shown","$179 to $199",
+ [("Only listing","3256813449474761")],
+ [("Day 1 vs now","Box of 2,365 pieces on Friday. This on Sunday night.","Pile of bags on the table, then the finished lamp switched on in a dark room."),
+  ("Gifting reaction","My mother-in-law builds puzzles. I may have started something.","She opens the box, puts her glasses on, does not look up again.")],
+ "One seller, no orders, and expensive to test. Not confirmed from the title that it lights up; the photo shows it lit. A long build is not for everyone, and missing pieces mean refunds."),
+P("Copper-Look Bird Bath and Feeder With Hummingbirds","birdbath.jpg","early",[],[7,5,7,9,6],
+ "Two-level bird bath and seed tray on a ground stake, with metal hummingbird and sunflower decorations.",
+ "Bird watching is a big hobby in this age group and live birds on it make the video. Listed about five days ago.",
+ "$12.05","none shown","none shown","$49.99",
+ [("Only listing","3256813486727606")],
+ [("Pattern interrupt","I put this out at 7. By 9 I had an audience.","Empty garden, then birds arriving one by one."),
+  ("Gifting reaction","Mom watches it from the kitchen window all morning","She fills the tray, goes back inside, coffee at the window.")],
+ "The $12 price looks too low for the size shown and may be an opening offer. Metal on a stake may arrive bent. Birds cannot be promised."),
+P("Flower and Cloud Cat Tower (72 in)","flowertree.jpg","early",["pets"],[7,6,8,9,7],
+ "Tall pink cat tower with flower and cloud-shaped platforms, condos and a hammock.",
+ "A second high-priced pick: cat furniture that looks like decor. $97 at the supplier.",
+ "$97.39","none shown","none shown","$179 to $199",
+ [("72 in tower, $97.39","3256813483844233")],
+ [("Do NOT let… see this","Do NOT let a cat mom see this","Three cats on three clouds, she walks in with the old beige tower in her arms."),
+  ("Day 1 vs now","The scratching post I hid from guests vs. this","Old carpet post in the corner, then the pink tower in the living room.")],
+ "Large and heavy: shipping cost can eat the margin, and returns are painful. Older flower cat trees exist at $153 to $390 with no orders shown."),
+P("Butterfly Projection Lamp","butterfly.jpg","early",[],[7,6,6,10,6],
+ "Cylinder lamp with cut-out butterflies that throws them across the walls and ceiling. 16 colours, remote.",
+ "A whole room changes in one click. Listed about eleven days ago, no orders.",
+ "$14.65","none shown","none shown","$39.99 to $49.99",
+ [("Only listing","3256813456422578")],
+ [("3-2-1 reveal","3… 2… 1… watch the ceiling","Lights off, switch on, butterflies everywhere. Granddaughter spins around."),
+  ("Gifting reaction","She said she was too old for a night light","Grandma turns it on beside her bed and leaves it on.")],
+ "The listing photo is computer-made, so the real pattern will be softer. Projection lamps are a crowded type; only this pattern is new."),
 # ---------- very new, almost no orders yet (round 2, 14 Nov) ----------
 P("Tornado Vortex Lamp","vortex.jpg","early",[],[8,7,7,10,7],
  "Desk lamp with a column of water in which a spinning tornado is lit by colour-changing LEDs. About 35 cm, USB or battery.",
@@ -516,21 +585,21 @@ def lno(p):
     m=max(int(k)+(2251799813685248 if k.startswith("1005") else 0) for _,k in p["links"])
     return str(m)[:11]+"…"
 BETS=[
-("Clip-On LED Wing Light","Dog moms who walk in the evening. Angel wings first, dragon for big dogs.","$44.99 to $49.99. New wave growing this week, tiny to ship, a dark-street wow that needs no words. Sells all year."),
-("Name-and-Face Collar Projector","Dog moms, by breed: frenchie, dachshund, golden, corgi.","$49.99 to $59.99. Days old and custom for every dog: her dog's face and name on the pavement. Unproven, sample first."),
-("Personalised Pet Memorial Stone","Women who lost a dog or cat, and friends buying for them.","$49.99 to $59.99. The deepest emotion on the board, custom per order, shared a lot on Facebook. Sells all year."),
-("Hand-Crank Music Box With Your Own Song","Mothers, daughters, wives: a gift for a wedding, a new baby, a parent.","$89 to $99. Custom per buyer and already $42 at the supplier, so the high price is believable. Needs sound."),
+("Clip-On LED Wing Light","Dog moms who walk in the evening. Angel wings first.","$44.99 to $49.99. New wave still growing, tiny to ship, a dark-street wow that needs no words."),
+("Name-and-Face Collar Projector","Dog moms, by breed.","$49.99 to $59.99. Days old and custom for every dog. Unproven: sample first."),
+("Personalised Pet Memorial Stone","Women who lost a dog or cat, and friends buying for them.","$49.99 to $59.99. Custom per order, shared a lot on Facebook."),
+("Cardinal Memorial Light","Women who lost a parent, a husband, a sister; daughters buying for their mothers.","$59 to $69. Three sellers listed it in one week and nobody has orders yet. Strongest fit for this audience."),
+("Dog-Shaped Fur Keepsake Box With Name","Women who lost a dog; friends buying a sympathy gift.","$49.99. Custom name and shape. One listing, two weeks old."),
+("Hand-Crank Music Box With Your Own Song","Mothers, daughters, wives: weddings, new babies, parents.","$89 to $99. Custom per buyer and $42 at the supplier. Needs sound."),
 ("Electric Cat Whack-a-Mole Toy","Cat moms.","$39.99 as a set. About 990 orders at 4.9. The cat's reaction is the whole video."),
-("Pet Stairs With a Hidden Cave","Women with an old or small dog.","$39.99 to $49.99. An honest problem-and-solution story: he can reach the bed again. 163 orders at 4.9."),
+("Pet Stairs With a Hidden Cave","Women with an old or small dog.","$39.99 to $49.99. He can reach the bed again. 163 orders at 4.9."),
 ("Clamp-On Desk Cat Bed","Cat moms who work from home.","$59 to $69. The base has 1,000+ orders at 4.8; the rotating version is new."),
-("Pop-Up Pre-Decorated Christmas Tree","Busy moms and grandmothers who decorate alone.","$129 to $149. The highest price that still makes sense: the whole tree is up in one pull. Short window, bulky to ship."),
-("Highland Cow Light-Up Inflatable (5 ft)","Highland cow lovers, almost all women.","$99 to $119. Days old, nobody on it, and this group buys the cow on everything. Short window."),
-("Glowing Animal Yard Statue","Horse women; then dog breeds.","$99 to $119. A lit horse on the lawn is rare. A dog series by breed already has 70 orders."),
-("Tornado Vortex Lamp","Women buying a gift for a husband, son or dad.","$69 to $99. A silent wow in a dark room, already $35 to $70 at the supplier. Sells all year."),
-("Car Alarm Clock With Engine Sound","Wives and moms buying for the car guy in the house.","$89 to $99. A gift that solves 'he has everything'. The base can move to trucks and tractors."),
-("Christmas Magic Trail Wall Light","Christmas moms. Short window: about two weeks.","$39.99 to $49.99. The only one with proven demand (3,000+ orders). Our Christmas hooks fit as they are."),
-("Snowman Icicle Railing Light","Christmas moms with a porch. Short window.","$59 to $69 for three. About 15 new listings, none above 25 orders."),
-("Christmas Village Projection Centerpiece","Christmas moms and grandmothers. Short window.","$79 to $99. Closest thing to the projector that made $25,817 in six days in our archive. Only after a sample.")]
+("Angel-Wing Pet Memorial Statue (solar)","Women who lost a pet; neighbours and friends.","$59 to $69. No personalising, so it ships like a normal product."),
+("LED Fireplace Lantern","Women who want cozy: apartments, bedrooms, a parent in a care home.","$39.99 to $49.99. Four new listings, no orders. Works all year."),
+("Stained-Glass Style Block Lamp (2,365 pieces)","Puzzle and craft lovers, and their daughters.","$179 to $199. The high-priced pick: a project and a lamp in one."),
+("Glowing Animal Yard Statue","Horse women; then dog breeds.","$99 to $119. A lit horse on the lawn is rare. A dog series already has 70 orders."),
+("Tornado Vortex Lamp","Women buying a gift for a husband, son or dad.","$69 to $99. A silent wow in a dark room, already $35 to $70 at the supplier."),
+("Car Alarm Clock With Engine Sound","Wives and moms buying for the car guy in the house.","$89 to $99. Solves 'he has everything'.")]
 INV={
 "Clip-On LED Wing Light":("A tiny clip-on projector that turns an ordinary night walk into a show on the ground.","A stroller or kids' scooter clip that throws wings or a crown; an e-bike or golf-cart rear light that throws flames; a shoe clip that leaves a trail of stars for runners.","Big-dog owners, horse riders, parents of small kids, e-bike and golf-cart owners, night runners."),
 "Name-and-Face Collar Projector":("Your own name or face, written in light where people will see it.","A front-door welcome light with the family name and the dog's face; a stroller light with the baby's name; a garage light with a truck outline and the owner's name; a dance-floor monogram for weddings.","Breed owners, new parents, truck and garage guys, brides."),
@@ -546,6 +615,11 @@ INV={
 "Dog Tissue Box Snuffle Toy":("The forbidden household thing, made legal for the pet.","A toilet-roll toy that unrolls and rolls back; a delivery-box toy made to be shredded; a laundry basket of sock toys; a kitchen-bin treat puzzle.","Puppy owners, dog moms."),
 "Christmas Magic Trail Wall Light":("A lit scene that climbs the wall.","A ghost trail for Halloween; a bunny trail for Easter; a birthday trail with the child's name; a year-round fairy trail for kids' rooms; a lighthouse and boats version for lake houses.","Holiday moms in every season, kids' rooms, lake and beach homes."),
 "Snowman Icicle Railing Light":("A character that sits on the railing with lights dripping below it.","A dog-breed railing sitter; a Halloween ghost with purple drips; an Easter bunny with carrot lights; an eagle with red, white and blue for July 4th.","Porch decorators in every season, breed owners."),
+"Cardinal Memorial Light":("A sign from someone who is gone, made into a light you switch on every evening.","The same piece with a hummingbird or a butterfly; a dragonfly lantern; a solar garden version; a plaque engraved with the name and dates.","Women who lost a parent, spouse or sibling; adult daughters buying for their mothers."),
+"Dog-Shaped Fur Keepsake Box With Name":("A small, beautiful place for the one thing you kept.","A box shaped like each breed; a shadow frame for the collar and tag; a horse-hair keepsake for riders; a baby's first-curl box for new mothers.","Pet loss, horse women, new mothers and grandmothers."),
+"Angel-Wing Pet Memorial Statue (solar)":("A memorial that lights itself every evening.","A cat version; a pair of wings with a name plate; a cardinal on a solar stake; a horse statue for a stable yard.","Pet loss, horse owners, garden lovers."),
+"LED Fireplace Lantern":("The feeling of a fire where a real one is not allowed.","A bookshelf insert that looks like a fireplace; a wall-mounted fire frame for bedrooms; a campfire lantern for RVs and porches; a pet bed with a fake hearth behind it.","Apartment renters, women buying for a parent in care, RV couples."),
+"Stained-Glass Style Block Lamp (2,365 pieces)":("A long, calm build that ends as something beautiful in the room.","A block lamp of the buyer's own dog breed; a hummingbird or cardinal lamp; a block bouquet lamp; a family-name lamp built letter by letter.","Puzzle and craft lovers, retirees, daughters buying for their mothers."),
 "Pop-Up Pre-Decorated Christmas Tree":("A big seasonal job done in one move.","A pop-up Halloween tree in black and orange; a pop-up Easter tree with eggs; a pull-up pre-lit porch garland; a pop-up birthday backdrop that stores flat.","Busy moms, grandmothers, anyone who decorates alone or has little storage."),
 "Highland Cow Light-Up Inflatable (5 ft)":("The animal this group loves, big and glowing in the yard.","The same cow for Halloween (witch hat) and for spring (flower crown); a highland-cow railing sitter with lights; a highland-cow door hanger; a chicken or goat for farm families.","Highland cow lovers, farmhouse-style decorators, hobby-farm women."),
 "Glowing Animal Yard Statue":("Her own animal, life-like and lit, where the neighbours can see it.","Breed statues that match the buyer's dog; a mare and foal for horse women; a cat on the windowsill that glows; a memorial version with a name plate.","Horse women, breed owners, pet loss."),
@@ -554,7 +628,7 @@ INV={
 def datauri(name):
     im=Image.open(os.path.join(IMG,name)).convert("RGB").resize((360,360),Image.LANCZOS)
     b=io.BytesIO(); im.save(b,"WEBP",quality=72); return "data:image/webp;base64,"+base64.b64encode(b.getvalue()).decode()
-DATE="25 Nov 2026"
+DATE="26 Nov 2026"
 FR={"niche":"Custom niche base","wave":"Fresh wave","early":"Very new, no proof yet","single":"Fresh, one seller","known":"Already known"}
 FRRO={"niche":"bază de nișat custom","wave":"val nou de listări","early":"foarte nou, aproape fără comenzi","single":"listare nouă, un singur vânzător","known":"deja cunoscut"}
 # ---------- markdown ----------
@@ -583,7 +657,7 @@ for i,p in enumerate(D,1):
     tags=f'<span class="tag f-{p["fresh"]}">{FR[p["fresh"]]}</span>'+"".join(f'<span class="tag">{TAG[t]}</span>' for t in p['tags'])
     links="".join(f'<a href="{U(k)}" target="_blank" rel="noopener">{e(t)}</a>' for t,k in p['links'])
     con="".join(f'<li><span class="fam">{e(f)}</span><q>{e(h)}</q><span class="see">{e(v)}</span></li>' for f,h,v in p['concepts'])
-    cards.append(f'''<article class="card" data-tags="{p['fresh']} {' '.join(p['tags'])}">
+    cards.append(f'''<article class="card" data-tags="{p['fresh']} {' '.join(p['tags'])}{'' if 'xmas' in p['tags'] else ' nox'}">
 <div class="top"><img src="{datauri(p['img'])}" alt="{e(p['n'])}, supplier photo" width="360" height="360" loading="lazy">
 <div class="hd"><div class="line"><span class="rank">{i}</span><div class="score"><strong>{p['score']}</strong><span>/50</span></div></div><h2>{e(p['n'])}</h2><div class="tags">{tags}</div><p class="what">{e(p['what'])}</p></div></div>
 <p class="row pot"><span class="lab">Potential</span>{e(p['pot'])}</p>
@@ -661,10 +735,10 @@ footer{{color:var(--muted);font-size:13px;max-width:86ch}}
 <li><b>Fresh, one seller · {ns} products</b>A new listing with orders, but only one seller found. Newer, less proven.</li>
 <li><b>Already known · {nk} products</b>Older listings or already in US stores. Kept from the first board; expect competition.</li>
 </ul>
-<section class="bets"><h2 class="bh">Top 15 for women 35+ on Facebook: what I would run to reach $10k fast</h2><ol>{''.join(f'<li><b>{e(n)}</b><em>{e(ni)}</em><span>{e(t)}</span></li>' for n,ni,t in BETS)}</ol><p class="bn">Every pick is aimed at women aged 35 and over, who buy the most: for their pets, their home, and as gifts. Ranked the way our playbooks rank a product: a wow you can see without sound, a strong feeling, a group that cares, and new on AliExpress by listing number and order count. Higher prices are included where the product can carry them. Seven sell all year; the Christmas ones have about two weeks left. Nothing here has our own sales numbers yet, so every line is a bet. Each of these 15 cards also has a box with the principle behind the product, new products we could invent on it, and who to run them for. Those are ideas and need a supplier who can really make them.</p></section>
-<p class="note"><b>Not verified yet:</b> shipping cost and delivery days to the US, and dollars per 1M views. AliExpress shows no listing date, so how new a product is comes from its listing number and its order count. Prices, orders and ratings were read from AliExpress search pages on 13, 14 and 25 Nov 2026. Listing numbers grow by about 5 million a day, so a number above 32568134650… means listed in the week of 25 Nov. Christmas items must reach buyers before Dec 25, so the selling window closes in early December; the Valentine and non-seasonal items are there for what comes after.</p>
+<section class="bets"><h2 class="bh">Top 15 for women 35+ on Facebook, no Christmas products</h2><ol>{''.join(f'<li><b>{e(n)}</b><em>{e(ni)}</em><span>{e(t)}</span></li>' for n,ni,t in BETS)}</ol><p class="bn">Every pick is aimed at women aged 35 and over, who buy the most: for their pets, their home, in memory of someone, and as gifts. None of the fifteen is a Christmas or holiday product, so all of them can run all year. Ranked the way our playbooks rank a product: a strong feeling, something you can see without sound, a group that cares, and new on AliExpress by listing number and order count. Higher prices are included where the product can carry them. Nothing here has our own sales numbers yet, so every line is a bet. Each of these 15 cards also has a box with the principle behind the product, new products we could invent on it, and who to run them for. Those are ideas and need a supplier who can really make them.</p></section>
+<p class="note"><b>Not verified yet:</b> shipping cost and delivery days to the US, and dollars per 1M views. AliExpress shows no listing date, so how new a product is comes from its listing number and its order count. Prices, orders and ratings were read from AliExpress search pages on 13, 14, 25 and 26 Nov 2026. Listing numbers grow by about 5 million a day, so a number above 32568134650… means listed in the week of 25 Nov. Christmas items must reach buyers before Dec 25, so the selling window closes in early December; the Valentine and non-seasonal items are there for what comes after.</p>
 <div class="chips" role="group" aria-label="Filter products">
-<button id="f-all" data-f="" aria-pressed="true">All {N}</button><button id="f-niche" data-f="niche" aria-pressed="false">Custom niche</button><button id="f-wave" data-f="wave" aria-pressed="false">Fresh wave</button><button id="f-early" data-f="early" aria-pressed="false">Very new</button><button id="f-single" data-f="single" aria-pressed="false">Fresh, one seller</button><button id="f-known" data-f="known" aria-pressed="false">Already known</button><button id="f-xmas" data-f="xmas" aria-pressed="false">Christmas</button><button id="f-pets" data-f="pets" aria-pressed="false">Pets</button><button id="f-val" data-f="val" aria-pressed="false">Valentine</button>
+<button id="f-all" data-f="" aria-pressed="true">All {N}</button><button id="f-niche" data-f="niche" aria-pressed="false">Custom niche</button><button id="f-wave" data-f="wave" aria-pressed="false">Fresh wave</button><button id="f-early" data-f="early" aria-pressed="false">Very new</button><button id="f-single" data-f="single" aria-pressed="false">Fresh, one seller</button><button id="f-known" data-f="known" aria-pressed="false">Already known</button><button id="f-nox" data-f="nox" aria-pressed="false">Not Christmas</button><button id="f-xmas" data-f="xmas" aria-pressed="false">Christmas</button><button id="f-pets" data-f="pets" aria-pressed="false">Pets</button><button id="f-val" data-f="val" aria-pressed="false">Valentine</button>
 </div>
 <div class="board">{''.join(cards)}</div>
 <footer>Score is the sum of five 0 to 10 marks: emotion in 3 seconds, can be exaggerated, filmable reaction, clear without sound, comments and shares. Exaggeration applies to the scene and the reaction, never to what the product does. Photos are the suppliers' own listing photos.</footer>

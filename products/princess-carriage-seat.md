@@ -71,3 +71,7 @@ Szasz: „mai caută și alte fete, tu tot astea le folosești” → fete noi d
 ## B-roll 2 (alt interior + alt câine): SUV crem + Pomeranian lila
 | ref6 SUV crem + Pomeranian | aae34eb1-033b-48c6-95d7-329dd89d2bfb | refs/ref6-suv-pomeranian.png |
 Video: Seedance video_edit draft 480p, job ce7589c6-50ca-4c59-ba71-fc9966b7db70 (în lucru).
+- B-roll 2 GATA: `video/broll2-suv-480p-draft.mp4` (SUV crem, Pomeranian lila, fără text; la final nu se vede șoferul).
+- Start frame v2 fără produs (Szasz: „să nu se vadă cutia la început”): job 40a3ab53-a6b8-441a-ad19-19399e87c9d6 → hook-target/startframe-v2-noproduct.png
+- Hook animat: Seedance 2.5 omni_reference, start_image = v2, refs = box-b-empty + startframe-v1 (raftul), 5 s, draft 480p, cu sunet. A = 6f95a492-b09c-4f67-a748-2cf238285fde (ALES: merge, observă, mâinile la gură, camera pe raft, aproape de cutii), B = eb906cb9-9303-4da7-9403-a4eb0bbd0b74 (mai lent).
+- Montaj: `hook-target/princess-target-v1-480p.mp4` = hook A 0–5 s + B-roll 2; text hook „Dog moms… RUN to Target 🏃‍♀️👑”, text B-roll „Jk, we make them 🤭 (link in bio) 🎀” (pattern dovedit „RUN to Costco” + „Jk, we make them” din library/insights). Sunet: doar sunetul hook-ului; muzica („Once Upon a December”) se pune din aplicație.

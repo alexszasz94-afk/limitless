@@ -54,3 +54,8 @@ Verificare (Claude):
 - `clips/unboxing-v1.mp4` (6 s): 0–1,0 ridică capacul și îl pune în stânga (logo corect, clar); 1,0–2,0 cutia deschisă, lampa în spumă ca în unboxing-v2; 2,3–3,3 apucă lampa. DEFECT de la 3,5 s: mărgelele dispar și în tub apare o „bulă” rotundă lângă capac. → `clips/unboxing-v1-cut.mp4` = 0–3,3 s (partea curată), fără sunet.
 - `clips/solution-closeup-v1.mp4` (10 s): mâna apasă la 0,5–1,0; lumina la 1,0; pâlnia completă la ~3,5 s = ~2,5 s de la apăsare, PREA REPEDE față de lampa reală (~6 s). Lampa rămâne identică, lumina moale, copilul închide ochii pe la 6,5 s. → `clips/solution-closeup-v1-realtime.mp4`: bucata 1,0–3,6 încetinită de 2,2 ori cu cadre interpolate (local, fără credite), formarea durează ~5,7 s; total 13,2 s. Diferență rămasă: la lampa reală apa se învârte ~4 s fără pâlnie și apoi pâlnia coboară în ~2 s; aici crește treptat.
 - Lecție pentru prompt: Kling comprimă formarea tornadei chiar cu timpi scriși; pentru formare se preferă bucata reală din `ref/how-it-works.mp4` sau încetinire la montaj.
+
+## Close-up cu camera în mișcare (27 nov, seara)
+Szasz: „mai trebuie un cadru close-up în timp ce merge, cum se mișcă pe lângă el camera”.
+- `lamp-macro-v1.png` — job 74392c68-c450-4127-98d8-77b1534d6c77 (gpt_image_2_6 2k; Image 1 = `ref/lamp-12.jpg` media 33e071bd, Image 2 = solution-closeup-v1 job 936f9f0a). Verificat: cilindru, capac, bază, inel, pâlnie cu inele de mărgele; pâlnia e ceva mai „ordonată” decât cea reală.
+- Clip: Kling 4.0 image-to-video 1080p, 5 s, job 480a0298-fd44-41ed-90d4-9c4aed4d3a73 — camera alunecă în arc ~40° în jurul lămpii, tornada se învârte.

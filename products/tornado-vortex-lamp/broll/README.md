@@ -10,9 +10,13 @@ Szasz: „ia ăla ca B-roll de după hook și refă-l cu Seedance să fie la fel
 | Set | Copil / cameră / masă / mâneci | Job ciornă | Stare |
 |---|---|---|---|
 | 1 | fetiță 4 ani, bucle blonde, pijama lavandă cu stele, miel de pluș · cameră crem, pat alb · blat de marmură albă · mâneci gri | a24d9bd5-951c-4ab0-a7d1-530c4b035efe | GATA: `draft-1.mp4` — cele 4 planuri la aceiași timpi, lampa/cutia/logoul ca în referințe; unboxing-ul ține ~0,3 s mai mult |
-| 2 | băiat 7 ani, păr castaniu, pijama bleumarin cu rachete, dinozaur de pluș · pereți albastru deschis, pat supraetajat · masă de stejar deschis · mâneci verde închis | a5c13f7a-4fe6-4f5f-beef-37d77b7c7458 | în lucru |
-| 3 | fetiță 6 ani, codițe șaten, pijama galben pal, vulpe de pluș · mansardă cu tavan înclinat alb · blat de piatră gri · mâneci albe | 3eb13f79-e153-4fb2-ad70-a0689fa825cc | în lucru |
-| 4 | băiat 3 ani, blond, pijama crem cu ursuleți, elefant de pluș · pereți gri deschis, pat mic alb · masă albă rotundă · mâneci roz pudră | 9b5791e9-468a-4f65-a601-3405227b33ca | în lucru |
-| 5 | băiat 9 ani, păr negru scurt, pijama gri, cățel de pluș · perete de cărămidă albă, pat de lemn închis · masă de nuc · mâneci negre | af619a0b-f98e-4df1-b3e7-8422fb8de989 | în lucru |
+| 2 | băiat 7 ani, păr castaniu, pijama bleumarin cu rachete, dinozaur de pluș · pereți albastru deschis, pat supraetajat · masă de stejar deschis · mâneci verde închis | a5c13f7a-4fe6-4f5f-beef-37d77b7c7458 | GATA: `draft-2.mp4` |
+| 3 | fetiță 6 ani, codițe șaten, pijama galben pal, vulpe de pluș · mansardă cu tavan înclinat alb · blat de piatră gri · mâneci albe | 3eb13f79-e153-4fb2-ad70-a0689fa825cc | GATA: `draft-3.mp4` |
+| 4 | băiat 3 ani, blond, pijama crem cu ursuleți, elefant de pluș · pereți gri deschis, pat mic alb · masă albă rotundă · mâneci roz pudră | 9b5791e9-468a-4f65-a601-3405227b33ca | GATA: `draft-4.mp4` |
+| 5 | băiat 9 ani, păr negru scurt, pijama gri, cățel de pluș · perete de cărămidă albă, pat de lemn închis · masă de nuc · mâneci negre | af619a0b-f98e-4df1-b3e7-8422fb8de989 | GATA: `draft-5.mp4` |
 
 De la setul 2 încolo, în TIMELINE scrie „the child” în loc de „the girl”, ca promptul să rămână fix; se schimbă doar blocul NEW PEOPLE AND PLACES.
+
+## Verificare ciorne 2–5 (27 nov, foaie de cadre lângă master)
+Toate: cele 4 planuri în aceeași ordine, lampa (cilindru, capac metalic, bază neagră, inel cyan, pâlnie în tub), cutia neagră și logoul VortiGlow păstrate; 11,0 s. Abateri comune: unboxing-ul ține până la ~2,6 s (în master 2,3) și planul cu priza e mai scurt (~1,3 s). Set 2: camera e luminată ca ziua în planul în care pornește lampa (nu noapte). Set 3: mansarda ia mult albastru de la lampă. La 480p detaliile fine (mărgele, litere mici) nu se pot judeca — se verifică din nou la 1080p.
+Cost: 5 × 33 = 165 credite. Finalul 1080p (176 credite/buc) doar la montaj, pe cele alese de Szasz.

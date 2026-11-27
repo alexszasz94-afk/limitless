@@ -18,4 +18,4 @@ cap("t1.png",["2:47 AM.","Every. Single. Night."], cam="CAM 02  11-27  02:47:13 
 cap("t2.png",["So I tried this..."])
 cap("t3.png",["So I tried this..."])
 cap("t4.png",["He couldn't stop","watching it"])
-cap("t5.png",['Comment "TORNADO"',"for the link"], y=820, size=76)
+cap("t5.png",['Comment "TORNADO"',"for the link"], y=250, size=70)

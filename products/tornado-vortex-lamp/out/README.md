@@ -39,3 +39,6 @@ Verificare lamp-macro-v1: lampa neschimbată, camera alunecă lin ~40°, fundalu
 
 ## Pilot v6 (27 nov) — pornirea lămpii la 1,1x
 `vortiglow-pilot-v6-music.mp4` / `-silent.mp4`, 15,5 s. Szasz: „pune 1.1x acolo când aprinde produsul”. Bucata `solution-closeup-v1.mp4` 0,4–4,8 redată la 1,1x (4,0 s în loc de 4,4); restul ca în v5, aceeași piesă, beat la 4,33 s.
+
+## Pilot v6 — piesa schimbată (27 nov)
+Szasz: „piesa asta de fapt” → Lady Gaga & Bruno Mars – „Die With A Smile” (mp3 urcat de el; nu e în git) în `vortiglow-pilot-v6-music.mp4` (înlocuiește Sean Paul). Piesa de la 36,32 s: sub hook finalul strofei + „If the world was ending” la volum 0,5; intrarea plină a refrenului (40,65 s în piesă) cade pe tăietura de la 4,33 s; fade-out 0,5 s la final. Potrivirea e făcută după nivelul sunetului, neascultată.

@@ -21,3 +21,6 @@ Ordine: problemă 0–4,8 · unboxing 4,8–8,1 · USB 8,1–10,4 · lampa 10,4�
 
 ## Pilot v3 (27 nov) — scurtat la 17,3 s
 `vortiglow-pilot-v3-silent.mp4`. Szasz: „mai scurtează spațiile moarte, vreo 17–18 secunde”. Tăieturi: problemă 0–4,3 (fără ultima jumătate de secundă neclară) · unboxing 0,3–1,2 + 1,9–3,3 din original (fără cutia nemișcată) = 2,3 s · USB 0,2–1,8 = 1,6 s · lampa 0,4–9,4 = 9,0 s, CTA de la 6,8 s.
+
+## Pilot v4 (27 nov) — 15,3 s
+`vortiglow-pilot-v4-silent.mp4`. Szasz: „taie ultimele 2 secunde”. Lampa 0,4–7,4 (7,0 s), CTA de la 4,8 s; restul ca în v3.

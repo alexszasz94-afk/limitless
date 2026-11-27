@@ -52,3 +52,8 @@ Szasz: „piesa asta de fapt” → Lady Gaga & Bruno Mars – „Die With A Smi
 - `vortiglow-cctv2-v1.mp4` (16,0 s) = `hooks/cctv2-v1` + `broll/broll-1-1080p`; „2:47 AM. Every. Single. Night.” + „She couldn't stop watching it”.
 - `vortiglow-reveal321-v1.mp4` (15,9 s) = `hooks/reveal321-v1` + `broll/broll-master-v1`; text hook jos („3... 2... 1... his reaction”), vocea păstrată.
 Toate: „Die With A Smile” la volum constant, refrenul pe tăietura hook → B-roll; B-roll: „So I tried this...” 0–3,9 · „He/She couldn't stop watching it” 3,9–8,8 · CTA „Comment "TORNADO" for the link” 8,8–11. Montajele de probă cu ciorne (`*-preview.mp4`) au fost șterse. B-roll-urile 3, 4, 5 sunt gata și nefolosite încă.
+
+## Text nou la hook-urile care nu sunt problemă → soluție (27 nov, noaptea)
+Szasz: „textul să fie la hook în aceeași poziție sus: DON'T SHOW THIS TO YOUR CHILDREN, cu emojiuri; dacă nu e problemă–soluție nu băga aia cu «I tried this»”.
+- `vortiglow-store-v2.mp4`, `vortiglow-reveal321-v2.mp4` (înlocuiesc v1): sus, tot videoul până la CTA: „DON'T SHOW THIS / TO YOUR CHILDREN 😳🌪” (2 emoji, regula 7 nov); fără „So I tried this...” și fără „He couldn't stop watching it”; CTA jos în ultimele 3,1 s. Text: `montage-text-emoji.py` (font emoji: fonts-noto-color-emoji, instalat cu apt).
+- Hook-urile problemă → soluție (camerele de supraveghere: `vortiglow-pilot-v6-music.mp4`, `vortiglow-cctv2-v1.mp4`) rămân cu „2:47 AM. Every. Single. Night.” + „So I tried this...”.

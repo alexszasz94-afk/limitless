@@ -42,3 +42,7 @@ Verificare lamp-macro-v1: lampa neschimbată, camera alunecă lin ~40°, fundalu
 
 ## Pilot v6 — piesa schimbată (27 nov)
 Szasz: „piesa asta de fapt” → Lady Gaga & Bruno Mars – „Die With A Smile” (mp3 urcat de el; nu e în git) în `vortiglow-pilot-v6-music.mp4` (înlocuiește Sean Paul). Piesa de la 36,32 s: sub hook finalul strofei + „If the world was ending” la volum 0,5; intrarea plină a refrenului (40,65 s în piesă) cade pe tăietura de la 4,33 s; fade-out 0,5 s la final. Potrivirea e făcută după nivelul sunetului, neascultată.
+
+## Muzica la volum constant + B-roll master (27 nov)
+- `vortiglow-pilot-v6-music.mp4` refăcut: „Die With A Smile” la același volum tot videoul (Szasz: „lasă piesa același volum tot videoul”).
+- `broll/broll-master-v1.mp4` — 11,2 s, fără text și fără sunet: tot ce vine după hook (unboxing 2,3 s · USB 1,6 s · lampa pornește la 1,1x 4,0 s · close-up în arc 3,2 s). E referința video pentru variantele Seedance cerute de Szasz (5 B-roll-uri cu alte camere / alți copii). Estimări Seedance 2.5 omni_reference, 11 s, 9:16, fără audio: draft 480p = 33 credite; final 1080p = 176 credite.

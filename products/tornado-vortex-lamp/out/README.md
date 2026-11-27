@@ -36,3 +36,6 @@ Verificare lamp-macro-v1: lampa neschimbată, camera alunecă lin ~40°, fundalu
 
 ## Pilot v5 cu muzică (27 nov)
 `vortiglow-pilot-v5-music.mp4` — același montaj v5 + piesa aleasă de Szasz: Sean Paul feat. Keyshia Cole – „Give It Up To Me” (mp3 urcat de el; nu e în git). Piesa de la 5,62 s: sub hook (0–4,3 s) intro-ul la volum 0,45, pauza scurtă a piesei cade chiar înainte de tăietură, beat-ul intră la 4,33 s (tăietura problemă → unboxing), volum 1,0; fade-out în ultima jumătate de secundă. Piesă cu drepturi: pusă în fișier poate fi scoasă/limitată de platformă.
+
+## Pilot v6 (27 nov) — pornirea lămpii la 1,1x
+`vortiglow-pilot-v6-music.mp4` / `-silent.mp4`, 15,5 s. Szasz: „pune 1.1x acolo când aprinde produsul”. Bucata `solution-closeup-v1.mp4` 0,4–4,8 redată la 1,1x (4,0 s în loc de 4,4); restul ca în v5, aceeași piesă, beat la 4,33 s.

@@ -1,0 +1,2 @@
+- character-44.jpg — Unsplash https://unsplash.com/photos/woman-wearing-red-and-black-scarf-e162aG538_k (Unsplash License, free) — brunetă, eșarfă roșie în carouri, 2000x1333 (27 nov 2026)
+- character-45.jpg — Unsplash https://unsplash.com/photos/woman-holding-shopping-bags-in-a-mall-Owv9aPPY_ns (Unsplash License, free) — blondă, pulover bej, pungi, mall, 2000x1125 (27 nov 2026)

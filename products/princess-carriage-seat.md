@@ -55,3 +55,19 @@ ref2-back-dog.png (fundă pe spate) = GREȘIT, nu se mai folosește.
 - `video/princess-v1-4k-letitgo.mp4` — text de prințesă + „Let It Go” (creator-kit/music/xmas, refrenul 58.5 s pe tăietura de la 1.54 → start 56.96).
 - `video/princess-v1-4k-nomusic.mp4` — fără muzică, pentru sunetul pus din aplicație.
 - Szasz vrea piesa cu „across my memory” = „Once Upon a December” (Anastasia) — nu e în repo; se pune din aplicație sau o trimite Szasz ca mp3.
+
+## 27 nov — cont Higgsfield nou (alt workspace): ID-urile vechi nu mai merg; referințe reîncărcate
+concept-v3a 2dbed5e6-287b-4b7c-b899-7d0cc5b83c0d · logo-b 2ec48442-d5de-4147-b6e1-606d605e0806 · ref1 66c28e09-2a16-41bc-bae4-19994ad82552 · ref2b-back-a e556eebf-9fc2-4a3f-822c-35662f07b802 · ref5-plastic 9face17e-a09f-4c68-b107-af787e0d3173 · original-notext.mp4 19f4b7b6-3073-4db2-970f-c944d22a5cb5 · character-44 (Unsplash, eșarfă roșie) 7894a551-7605-44b3-be6f-50762e4b97ca · character-45 (Unsplash, blondă pungi) ad5d8d97-79ef-489d-9fc3-6e853b8332e2
+
+## Cutia produsului
+| box-a (cutie dreptunghiulară, text „Princess” stricat) | 54d78369-acd5-4f8c-b8f8-b097431bc9a1 | box/box-a.png |
+| box-b (trăsură, avea câine înăuntru) | c4552914-8778-4ac3-8784-8659353dc31d | box/box-b.png |
+| **box-b-empty = ALES** (trăsură, doar scaunul) | 9d034530-59c3-4334-ad57-54e2b524dbfc | box/box-b-empty.png |
+
+## Hook Target (Szasz 27 nov: fată „de pe Pinterest” în Target de Crăciun vede cutia, se minunează, cadrul trece pe raft)
+Szasz: „mai caută și alte fete, tu tot astea le folosești” → fete noi de pe Unsplash (character-44/45 în creator-kit/library/characters, sursa în SOURCES.md).
+| start frame v1 (character-44 în Target, raft cu box-b) | 71697fd1-7dea-4595-b27a-f478fb654de6 | hook-target/startframe-v1.png |
+
+## B-roll 2 (alt interior + alt câine): SUV crem + Pomeranian lila
+| ref6 SUV crem + Pomeranian | aae34eb1-033b-48c6-95d7-329dd89d2bfb | refs/ref6-suv-pomeranian.png |
+Video: Seedance video_edit draft 480p, job ce7589c6-50ca-4c59-ba71-fc9966b7db70 (în lucru).

@@ -1,0 +1,19 @@
+# Start frames — Tornado Vortex Lamp (27 nov 2026)
+
+Concept (Szasz): THE PROBLEM (cameră de supraveghere, noaptea, copilul agitat trage de mama care doarme) vs. unboxing (close-up pe masă, cutie faină) → THE SOLUTION (copilul doarme liniștit lângă lampă).
+Model: `gpt_image_2_6`, 2k, 9:16, quality high, 2 credite / imagine (cerut de Szasz pentru cadrele astea).
+
+| Fișier | Job Higgsfield | Referințe |
+|---|---|---|
+| `problem-v1.png` | dd7c7b6a-f12a-4582-afe5-bec1d2af817d | fără |
+| `solution-v1.png` | 70084c75-84ed-4339-8912-eafbdcd2c62d | Image 1 = problem-v1 (job), Image 2 = `ref/lamp-12.jpg` (media 33e071bd-80ce-413a-85b8-5ef77fee15b8) |
+
+## Prompt problem-v1
+A real frame from a home security / baby monitor camera at night, infrared night-vision mode: black and white only, slightly soft, fine sensor noise, mild wide-angle lens distortion, flat grey infrared light with no visible lamps on, eyes slightly reflective like real IR footage. The camera is mounted high in the corner of the ceiling and looks down at the whole room. A real, ordinary master bedroom: a large bed with a duvet, two pillows, a nightstand with a phone and a glass of water, a dresser, the door slightly open. A woman in her late 30s is fast asleep on her side under the duvet, exhausted, mouth slightly open. A 5-year-old boy in pajamas, wide awake and restless, kneels on the bed beside her and pulls her arm with both hands, trying to wake her up. Messy sheets, a stuffed toy fallen on the floor. Completely realistic, candid, unstaged, looks like a screenshot from real monitor footage, nothing AI-looking. Vertical 9:16. No text, no timestamp, no logos, no watermarks, no borders.
+
+## Prompt solution-v1
+Edit Image 1. Keep EXACTLY the same room, the same camera position high in the ceiling corner, the same wide-angle framing, the same bed, headboard, dresser, door, rug, nightstand, phone and glass of water, the same woman and the same 5-year-old boy in the same dinosaur pajamas. CHANGES: 1) The camera is now in COLOUR low-light mode, not infrared: a real home security camera image in a dim bedroom at night, natural muted colours, slightly soft, fine sensor noise, no black and white. 2) The boy is now fast asleep, lying calmly on his side under the duvet next to his mother, head on the pillow, relaxed face, eyes closed, facing the nightstand. The mother sleeps peacefully on her side as before, both arms relaxed. The duvet is smooth and tidy; the stuffed toy is tucked beside the boy; nothing on the floor. 3) On the nightstand, next to the phone and the glass, stands the lamp of Image 2, switched on: REPRODUCE IT ONE TO ONE from Image 2 - the same straight clear cylinder, the same flat metal lid, the same round black base with the glowing light ring under it, the same thin funnel of tiny beads inside the water, wide at the top and thin at the bottom, glowing the same cyan-blue. Real size: about 28 cm tall, a small table lamp, clearly smaller than the pillow. Never a different lamp, never a bigger vortex, the funnel stays inside the cylinder. The lamp is the only light on in the room: a very soft, gentle cyan-blue glow that reaches only the nightstand, the edge of the pillow and faintly the two sleeping faces; the rest of the room stays dim. Very soft, very natural light, low contrast, no HDR, no bloom halos, no light rays, no CGI look. Completely realistic, candid, looks like a screenshot from real monitor footage. Vertical 9:16. No text, no timestamp, no logos, no watermarks, no borders.
+
+## Verificare (Claude)
+- problem-v1: unghi de sus, alb-negru IR, copil în genunchi trage de brațul mamei, mâini corecte, fără text. OK.
+- solution-v1: aceeași cameră și mobilă; lampa = cilindru + capac metalic + bază neagră + inel de lumină + pâlnie de mărgele, ca în `ref/lamp-12.jpg`. Abateri: lampa e puțin mai scundă/lată decât cea reală și fără cablu; noptiera s-a mutat puțin în cadru; băiatul e de partea cealaltă a mamei.

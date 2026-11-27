@@ -26,3 +26,15 @@ Edit Image 1. Keep EXACTLY the same room, the same camera position high in the c
 
 ## Logo VortiGlow (27 nov)
 `logo/logo-1..4.png` (gpt_image_2_6, 1:1, 2k, high, 8 credite; joburi 3d1f0b5e, f8ecf0fa, 5677ac1f, cea14d8f), grilă `logo/logo-options.jpg` (1 sus-stânga, 2 sus-dreapta, 3 jos-stânga, 4 jos-dreapta).
+
+## Unboxing + soluția close-up (27 nov)
+| Fișier | Job | Referințe |
+|---|---|---|
+| `unboxing-v1.png` | d4000071-b208-439f-8e35-1cf19944d142 | Image 1 = `ref/lamp-0.3.jpg` (media eae2cd9a-dee7-4e6e-9cf0-4939e4a566fb, lampa oprită), Image 2 = logo-3 (job 5677ac1f) |
+| `solution-closeup-v1.png` | 936f9f0a-0eea-4678-9833-374927b44018 | Image 1 = `ref/lamp-12.jpg` (media 33e071bd), Image 2 = problem-v1 (job dd7c7b6a) |
+
+Logo ales de Szasz: nr. 3 (`logo/logo-3.png`). Prompturile exacte sunt în joburile Higgsfield de mai sus (gpt_image_2_6, 2k, 9:16, high, 2 credite fiecare).
+
+Verificare (Claude):
+- unboxing-v1: logo și nume corecte pe capac; lampa = cilindru, capac metalic, bază neagră, mărgele colorate, oprită. Abateri: lampa stă culcată în cutie (cerusem în picioare) și mărgelele stau la capătul cu capacul, deși culcată ar pluti de-a lungul părții de sus; nu știm dacă lampa reală vine cu apă în ea.
+- solution-closeup-v1: lampa ca în referință (pâlnie cu inele, inel de lumină la bază), copilul același, lumina moale, fără raze. Capacul pare mai închis la culoare decât metalul real (e în penumbră).

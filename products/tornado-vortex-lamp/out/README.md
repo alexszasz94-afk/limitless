@@ -46,3 +46,9 @@ Szasz: „piesa asta de fapt” → Lady Gaga & Bruno Mars – „Die With A Smi
 ## Muzica la volum constant + B-roll master (27 nov)
 - `vortiglow-pilot-v6-music.mp4` refăcut: „Die With A Smile” la același volum tot videoul (Szasz: „lasă piesa același volum tot videoul”).
 - `broll/broll-master-v1.mp4` — 11,2 s, fără text și fără sunet: tot ce vine după hook (unboxing 2,3 s · USB 1,6 s · lampa pornește la 1,1x 4,0 s · close-up în arc 3,2 s). E referința video pentru variantele Seedance cerute de Szasz (5 B-roll-uri cu alte camere / alți copii). Estimări Seedance 2.5 omni_reference, 11 s, 9:16, fără audio: draft 480p = 33 credite; final 1080p = 176 credite.
+
+## Montaje cu hook-urile noi + B-roll 1080p (27 nov, noaptea)
+- `vortiglow-store-v1.mp4` (16,8 s) = `hooks/store-v1` + `broll/broll-2-1080p`; text hook „The only thing that stopped the tantrum”; vocea din hook păstrată.
+- `vortiglow-cctv2-v1.mp4` (16,0 s) = `hooks/cctv2-v1` + `broll/broll-1-1080p`; „2:47 AM. Every. Single. Night.” + „She couldn't stop watching it”.
+- `vortiglow-reveal321-v1.mp4` (15,9 s) = `hooks/reveal321-v1` + `broll/broll-master-v1`; text hook jos („3... 2... 1... his reaction”), vocea păstrată.
+Toate: „Die With A Smile” la volum constant, refrenul pe tăietura hook → B-roll; B-roll: „So I tried this...” 0–3,9 · „He/She couldn't stop watching it” 3,9–8,8 · CTA „Comment "TORNADO" for the link” 8,8–11. Montajele de probă cu ciorne (`*-preview.mp4`) au fost șterse. B-roll-urile 3, 4, 5 sunt gata și nefolosite încă.

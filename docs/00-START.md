@@ -19,6 +19,7 @@ Fișier scurt, ca un chat nou să nu se blocheze citind tot. Nimic nu s-a șters
 - Imagini DOAR **Nano Banana Pro** (`nano_banana_pro`, 9:16, 4k) — regula 7 nov (înainte GPT Image 2.6 / 2.5).
 
 **Înainte de orice generare**
+0. **Niciun credit fără „da” explicit al lui Szasz** la suma + unealta spuse în același mesaj (regula 27 nov). „Upscale” = Topaz, nu finalizare Seedance.
 1. Caută întâi în `recipes/` — ce a ieșit bine se copiază cuvânt cu cuvânt, se schimbă doar `<...>`. Orice modificare se scrie ÎNTÂI în rețetă, datată.
 2. Hook copiat: analiza Higgsfield (`video_analysis_create`) + transcriere locală, salvate în `products/<lot>/ref/analysis-<id>.json`. Fără fișierul ăsta nu se generează nimic. Cuvintele vin din analiză.
 3. Studiază originalul cadru cu cadru (0,1 s la tăieturi): încotro privește persoana, ce parte a produsului se vede, cine ține ce, harta obiectelor (produs / ambalaj / decor), logica scenei.

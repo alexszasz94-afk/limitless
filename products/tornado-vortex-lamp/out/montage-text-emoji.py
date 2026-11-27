@@ -16,3 +16,4 @@ def cap(path, lines, y=250, size=64):
     im.save(path)
 o=sys.argv[1]
 cap(o+"/h_dont.png",[("DON'T SHOW THIS",[]),("TO YOUR CHILDREN",["😳","🌪\ufe0f"])])
+cap(o+"/h_dont_high.png",[("DON'T SHOW THIS",[]),("TO YOUR CHILDREN",["😳","🌪️"])], y=90, size=60)

@@ -38,3 +38,8 @@ Logo ales de Szasz: nr. 3 (`logo/logo-3.png`). Prompturile exacte sunt în jobur
 Verificare (Claude):
 - unboxing-v1: logo și nume corecte pe capac; lampa = cilindru, capac metalic, bază neagră, mărgele colorate, oprită. Abateri: lampa stă culcată în cutie (cerusem în picioare) și mărgelele stau la capătul cu capacul, deși culcată ar pluti de-a lungul părții de sus; nu știm dacă lampa reală vine cu apă în ea.
 - solution-closeup-v1: lampa ca în referință (pâlnie cu inele, inel de lumină la bază), copilul același, lumina moale, fără raze. Capacul pare mai închis la culoare decât metalul real (e în penumbră).
+
+## Refaceri după corecturile lui Szasz (27 nov)
+- `unboxing-v2.png` — job 4afe5bc4-bafd-4fe9-9429-0023413b688d. Szasz: „n-are sens cutia, și trebuie să fie de sus”. Acum: cadru drept de sus, capac și bază de aceeași formă, lampa culcată în spumă, cablu USB. v1 rămâne doar ca istoric, nu se folosește. Abatere: mărgelele stau la capătul cu capacul (culcată ar pluti de-a lungul tubului).
+- `solution-closeup-off-v1.png` — job 825e6008-d5c2-4179-b8bb-202f8b4fc83a (edit pe solution-closeup-v1 + `ref/lamp-0.3.jpg`). Szasz: în close-up lampa NU e pornită încă; pornește în video și se vede tot efectul. Copilul e treaz, se uită la lampă; lumină caldă slabă din hol.
+- Regulă pentru video (din `ref/how-it-works.md`): de la apăsare la tornadă completă ~6 s reale; nu se scurtează.

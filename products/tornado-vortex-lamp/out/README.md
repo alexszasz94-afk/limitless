@@ -33,3 +33,6 @@ Muzică (propuneri, ipoteză): „Gonna Make You Sweat (Everybody Dance Now)” 
 `vortiglow-pilot-v5-silent.mp4` (1080p, fără sunet). Szasz: „mai trebuie un cadru close-up în timp ce merge, cum se mișcă pe lângă el camera… și dă-mi montajul”.
 Ordine: problemă 0–4,33 · unboxing 4,33–6,63 · USB 6,63–8,27 · lampa pornește (`solution-closeup-v1.mp4` 0,4–4,8) 8,27–12,67 · close-up în arc (`clips/lamp-macro-v1.mp4` 0,6–3,8, Kling job 480a0298, 5 s, ~19 credite) 12,67–15,9, cu CTA jos, pe baza lămpii, în ultimele 2,2 s.
 Verificare lamp-macro-v1: lampa neschimbată, camera alunecă lin ~40°, fundalul se mișcă; pâlnia se îngroașă puțin față de cadrul de start, rămâne în tub. 4K-ul existent (v4) NU conține cadrul ăsta.
+
+## Pilot v5 cu muzică (27 nov)
+`vortiglow-pilot-v5-music.mp4` — același montaj v5 + piesa aleasă de Szasz: Sean Paul feat. Keyshia Cole – „Give It Up To Me” (mp3 urcat de el; nu e în git). Piesa de la 5,62 s: sub hook (0–4,3 s) intro-ul la volum 0,45, pauza scurtă a piesei cade chiar înainte de tăietură, beat-ul intră la 4,33 s (tăietura problemă → unboxing), volum 1,0; fade-out în ultima jumătate de secundă. Piesă cu drepturi: pusă în fișier poate fi scoasă/limitată de platformă.

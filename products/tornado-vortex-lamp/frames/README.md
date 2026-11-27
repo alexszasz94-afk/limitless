@@ -49,3 +49,8 @@ Verificare (Claude):
 - `usb-plug-v1.png` — job e9649a1c-1045-44f8-bda3-640964343462: priza de lângă pat, mâna bagă USB-ul negru în încărcătorul alb. Szasz: „un cadru de la priză lângă pat cum bagă în USB”.
 - Clip unboxing: Kling job 34203cbe-9db1-4e7a-8a79-13058f8b5bb0, 6 s, start = unboxing-closed-v1, cadru de mijloc = unboxing-v2 (22,5 credite).
 - Clip soluția close-up (lampa pornește): Kling job 82492b75-7d07-453c-b3ac-67c8b6aa6122, 10 s, start = solution-closeup-off-v1, end = solution-closeup-v1 (37,5 credite). Timpi: 0–1 apasă butonul, 1–4 lumină + apa se învârte, 4–7 pâlnia coboară, 7–10 tornadă completă.
+
+## Verificarea clipurilor unboxing + pornire (27 nov)
+- `clips/unboxing-v1.mp4` (6 s): 0–1,0 ridică capacul și îl pune în stânga (logo corect, clar); 1,0–2,0 cutia deschisă, lampa în spumă ca în unboxing-v2; 2,3–3,3 apucă lampa. DEFECT de la 3,5 s: mărgelele dispar și în tub apare o „bulă” rotundă lângă capac. → `clips/unboxing-v1-cut.mp4` = 0–3,3 s (partea curată), fără sunet.
+- `clips/solution-closeup-v1.mp4` (10 s): mâna apasă la 0,5–1,0; lumina la 1,0; pâlnia completă la ~3,5 s = ~2,5 s de la apăsare, PREA REPEDE față de lampa reală (~6 s). Lampa rămâne identică, lumina moale, copilul închide ochii pe la 6,5 s. → `clips/solution-closeup-v1-realtime.mp4`: bucata 1,0–3,6 încetinită de 2,2 ori cu cadre interpolate (local, fără credite), formarea durează ~5,7 s; total 13,2 s. Diferență rămasă: la lampa reală apa se învârte ~4 s fără pâlnie și apoi pâlnia coboară în ~2 s; aici crește treptat.
+- Lecție pentru prompt: Kling comprimă formarea tornadei chiar cu timpi scriși; pentru formare se preferă bucata reală din `ref/how-it-works.mp4` sau încetinire la montaj.

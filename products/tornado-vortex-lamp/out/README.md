@@ -28,3 +28,8 @@ Ordine: problemă 0–4,8 · unboxing 4,8–8,1 · USB 8,1–10,4 · lampa 10,4�
 ## Pilot v4 la 4K (27 nov)
 `vortiglow-pilot-v4-4k.mp4` — 2160x3840, 15,3 s, fără sunet. Upscale Topaz 2160p în Higgsfield pe `vortiglow-pilot-v4-notext.mp4` (job 68b738c3-fd5a-41f5-a371-9ad237623c4b, ~240 credite după sold — unealta nu are estimare de cost înainte), apoi textul pus local la 4K. Verificat lângă 1080p: partea alb-negru arată tot a cameră de supraveghere, lampa și fețele neschimbate, doar mai clare. Fișierul 4K fără text (68 MB) nu e în git.
 Muzică (propuneri, ipoteză): „Gonna Make You Sweat (Everybody Dance Now)” pe hook, tăiată la 4,3 s; se pune din aplicație la postare.
+
+## Pilot v5 (27 nov) — cu close-up în mișcare, 15,9 s
+`vortiglow-pilot-v5-silent.mp4` (1080p, fără sunet). Szasz: „mai trebuie un cadru close-up în timp ce merge, cum se mișcă pe lângă el camera… și dă-mi montajul”.
+Ordine: problemă 0–4,33 · unboxing 4,33–6,63 · USB 6,63–8,27 · lampa pornește (`solution-closeup-v1.mp4` 0,4–4,8) 8,27–12,67 · close-up în arc (`clips/lamp-macro-v1.mp4` 0,6–3,8, Kling job 480a0298, 5 s, ~19 credite) 12,67–15,9, cu CTA jos, pe baza lămpii, în ultimele 2,2 s.
+Verificare lamp-macro-v1: lampa neschimbată, camera alunecă lin ~40°, fundalul se mișcă; pâlnia se îngroașă puțin față de cadrul de start, rămâne în tub. 4K-ul existent (v4) NU conține cadrul ăsta.

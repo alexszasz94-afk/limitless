@@ -17,3 +17,12 @@ Edit Image 1. Keep EXACTLY the same room, the same camera position high in the c
 ## Verificare (Claude)
 - problem-v1: unghi de sus, alb-negru IR, copil în genunchi trage de brațul mamei, mâini corecte, fără text. OK.
 - solution-v1: aceeași cameră și mobilă; lampa = cilindru + capac metalic + bază neagră + inel de lumină + pâlnie de mărgele, ca în `ref/lamp-12.jpg`. Abateri: lampa e puțin mai scundă/lată decât cea reală și fără cablu; noptiera s-a mutat puțin în cadru; băiatul e de partea cealaltă a mamei.
+
+## Clip „problema” (27 nov)
+- `clips/problem-v1.mp4` — Kling 4.0 image-to-video, 1080p, 9:16, 6 s, 22,5 credite, job 8ddcb0d3-e259-4553-ba27-8563fee655e3, start_image = problem-v1.
+- Verificare pe cadre (0,25 s): 0–1,3 trage de braț; 1,5–2,2 sare pe pat cu mâinile sus; 2,3–2,9 sare jos din pat și iese din cadru (stânga-jos); 3,0–4,2 camera goală (copilul nu se vede); 4,3–4,8 revine din spatele patului cu jucăria; 5,0–6,0 se urcă pe pat, mama își pune perna pe cap. Camera fixă, alb-negru, fără text. Minusuri: 1,2 s fără copil; nu se vede alergatul până la ușă; finalul puțin neclar.
+- `clips/problem-v1-cut.mp4` — tăiat local (fără credite): 0–2,95 + 4,2–6,04, fără sunet.
+- Prompt: vezi jobul (TIMING pe secunde: braț / sărit / fugă la ușă + jucărie / aruncă jucăria, perna pe cap).
+
+## Logo VortiGlow (27 nov)
+`logo/logo-1..4.png` (gpt_image_2_6, 1:1, 2k, high, 8 credite; joburi 3d1f0b5e, f8ecf0fa, 5677ac1f, cea14d8f), grilă `logo/logo-options.jpg` (1 sus-stânga, 2 sus-dreapta, 3 jos-stânga, 4 jos-dreapta).

@@ -82,3 +82,10 @@ Video: Seedance video_edit draft 480p, job ce7589c6-50ca-4c59-ba71-fc9966b7db70 
 - `hook-target/princess-target-4k-letitgo.mp4` (2160x3840, 14.6 s): hook 4 s + B-roll 10.6 s; text „“Babe she’s a DOG, not a princess”🙄” + „Me: 👑🎀” tot videoul; sunetul fetei din hook + „Let It Go” (încet sub hook, refrenul 58.5 s pe tăietura de la 4 s → start 54.5).
 - „Once Upon a December”: YouTube cere login (bot check) → nu se descarcă; Szasz poate trimite mp3-ul.
 - Finalizarea Seedance la 4K (140 + 373 credite) NU s-a pornit (Szasz: „nu da drumu”, „mereu upscale facem”).
+
+## 27 nov — Gift reel (copiat după @ruhrohrides DgOo043xRwT, Scooby van seat, 32.354 like-uri / 246 comentarii)
+- Original + analiză: `ref2/original.mp4`, `ref2/analysis-23d86586.json`; input fără text `ref2/original-notext.mp4` (delogo x10 y215 1060x225), media d065aea5-4a36-4479-a333-9e247aba2474.
+- Seedance video_edit draft 480p: cce7691a-6039-4561-a90c-c26398c8f10f — dormitor roz de prințesă, blonda character-45 aruncă un cadou roz cu fundă aurie, Cavalier King Charles în pulover roz, mașină cu interior gri, fără text.
+- Upscale 4K: 2987b065-098d-4c87-b443-b92c917033db → `gift-reel/gift-4k-upscale.mp4`
+- FINAL: `gift-reel/princess-gift-4k-letitgo.mp4` (2160x3840, 12 s): text „“The perfect gift for a dog mom doesn’t exi-” 🤭👑” până la 10.33 s, apoi „Comment “PRINCESS” to get one 🎀 or tap the link in bio”; „Let It Go” cu refrenul pe deschiderea cadoului (2.67 s → start 55.83).
+- Atenție: tabloul cu castel din dormitor seamănă cu castelul Disney.

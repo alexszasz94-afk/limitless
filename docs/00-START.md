@@ -15,6 +15,7 @@ Fișier scurt, ca un chat nou să nu se blocheze citind tot. Nimic nu s-a șters
 - Halate / creator-kit: video DOAR **Kling 4.0 (`kling4_0`) 1080p** — `video-edit` pe clipul original FĂRĂ sunet; vocea o face tot Kling. Seedance și Genjutsu NU.
 - Proiectul `seedance-method/`: Seedance 2.5 PERMIS; dacă dă `ip_detected` (Grinch, Snoopy) → Kling 4.0 `video-edit`.
 - Imagini DOAR **Nano Banana Pro** (`nano_banana_pro`, 9:16, 4k) — regula 7 nov (înainte GPT Image 2.6 / 2.5).
+- 4K final = MEREU `upscale_video` (bytedance 4k aigc) pe draftul 480p aprobat, nu finalizare Seedance (regula 27 nov).
 
 **Înainte de orice generare**
 1. Caută întâi în `recipes/` — ce a ieșit bine se copiază cuvânt cu cuvânt, se schimbă doar `<...>`. Orice modificare se scrie ÎNTÂI în rețetă, datată.

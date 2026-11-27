@@ -75,3 +75,10 @@ Video: Seedance video_edit draft 480p, job ce7589c6-50ca-4c59-ba71-fc9966b7db70 
 - Start frame v2 fără produs (Szasz: „să nu se vadă cutia la început”): job 40a3ab53-a6b8-441a-ad19-19399e87c9d6 → hook-target/startframe-v2-noproduct.png
 - Hook animat: Seedance 2.5 omni_reference, start_image = v2, refs = box-b-empty + startframe-v1 (raftul), 5 s, draft 480p, cu sunet. A = 6f95a492-b09c-4f67-a748-2cf238285fde (ALES: merge, observă, mâinile la gură, camera pe raft, aproape de cutii), B = eb906cb9-9303-4da7-9403-a4eb0bbd0b74 (mai lent).
 - Montaj: `hook-target/princess-target-v1-480p.mp4` = hook A 0–5 s + B-roll 2; text hook „Dog moms… RUN to Target 🏃‍♀️👑”, text B-roll „Jk, we make them 🤭 (link in bio) 🎀” (pattern dovedit „RUN to Costco” + „Jk, we make them” din library/insights). Sunet: doar sunetul hook-ului; muzica („Once Upon a December”) se pune din aplicație.
+
+## 27 nov — FINAL Target 4K (Szasz: „al doilea e bun dar trage prima secundă”, text ca înainte, 4K = upscale)
+- Hook B (eb906cb9) tăiat de la 1.0 s → upscale bytedance 4k aigc 30 fps: c21118ed-3900-4ae2-afa2-58bd330a268b → hook-target/hook-b-4k.mp4
+- B-roll SUV upscale 4k: ce441a06-1d6d-42ac-bd2c-610f651cf54e → video/broll2-suv-4k.mp4
+- `hook-target/princess-target-4k-letitgo.mp4` (2160x3840, 14.6 s): hook 4 s + B-roll 10.6 s; text „“Babe she’s a DOG, not a princess”🙄” + „Me: 👑🎀” tot videoul; sunetul fetei din hook + „Let It Go” (încet sub hook, refrenul 58.5 s pe tăietura de la 4 s → start 54.5).
+- „Once Upon a December”: YouTube cere login (bot check) → nu se descarcă; Szasz poate trimite mp3-ul.
+- Finalizarea Seedance la 4K (140 + 373 credite) NU s-a pornit (Szasz: „nu da drumu”, „mereu upscale facem”).

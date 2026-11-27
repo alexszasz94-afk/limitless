@@ -18,3 +18,6 @@ Cost total sesiune: 112,5 credite Higgsfield. Totul e ipoteză până la cifre.
 ## Pilot v2 (27 nov, după corecturile lui Szasz)
 `vortiglow-pilot-v2-silent.mp4` — 20,2 s, fără sunet. Schimbări față de v1: (1) clipul cu lampa = ORIGINALUL `clips/solution-closeup-v1.mp4` 0,3–10,0 (Szasz îl preferă celui încetinit; în el tornada se formează în ~2,5 s, la lampa reală ~6 s); (2) fără cadrul final cu camera de sus color; CTA „Comment "TORNADO" for the link” sus, peste ultimele 2,5 s; (3) priza cu USB e animată: `clips/usb-plug-v1.mp4` (Kling 4.0, 3 s, job 03b15484-8908-44e9-8bb9-549e109b3e67, start = usb-plug-v1.png), folosit 0–2,3 s.
 Ordine: problemă 0–4,8 · unboxing 4,8–8,1 · USB 8,1–10,4 · lampa 10,4–20,2.
+
+## Pilot v3 (27 nov) — scurtat la 17,3 s
+`vortiglow-pilot-v3-silent.mp4`. Szasz: „mai scurtează spațiile moarte, vreo 17–18 secunde”. Tăieturi: problemă 0–4,3 (fără ultima jumătate de secundă neclară) · unboxing 0,3–1,2 + 1,9–3,3 din original (fără cutia nemișcată) = 2,3 s · USB 0,2–1,8 = 1,6 s · lampa 0,4–9,4 = 9,0 s, CTA de la 6,8 s.

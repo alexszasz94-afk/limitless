@@ -24,3 +24,7 @@ Ordine: problemă 0–4,8 · unboxing 4,8–8,1 · USB 8,1–10,4 · lampa 10,4�
 
 ## Pilot v4 (27 nov) — 15,3 s
 `vortiglow-pilot-v4-silent.mp4`. Szasz: „taie ultimele 2 secunde”. Lampa 0,4–7,4 (7,0 s), CTA de la 4,8 s; restul ca în v3.
+
+## Pilot v4 la 4K (27 nov)
+`vortiglow-pilot-v4-4k.mp4` — 2160x3840, 15,3 s, fără sunet. Upscale Topaz 2160p în Higgsfield pe `vortiglow-pilot-v4-notext.mp4` (job 68b738c3-fd5a-41f5-a371-9ad237623c4b, ~240 credite după sold — unealta nu are estimare de cost înainte), apoi textul pus local la 4K. Verificat lângă 1080p: partea alb-negru arată tot a cameră de supraveghere, lampa și fețele neschimbate, doar mai clare. Fișierul 4K fără text (68 MB) nu e în git.
+Muzică (propuneri, ipoteză): „Gonna Make You Sweat (Everybody Dance Now)” pe hook, tăiată la 4,3 s; se pune din aplicație la postare.

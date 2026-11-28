@@ -58,3 +58,8 @@ Szasz: „textul să fie la hook în aceeași poziție sus: DON'T SHOW THIS TO Y
 - `vortiglow-store-v2.mp4`, `vortiglow-reveal321-v2.mp4` (înlocuiesc v1): sus, tot videoul până la CTA: „DON'T SHOW THIS / TO YOUR CHILDREN 😳🌪” (2 emoji, regula 7 nov); fără „So I tried this...” și fără „He couldn't stop watching it”; CTA jos în ultimele 3,1 s. Text: `montage-text-emoji.py` (font emoji: fonts-noto-color-emoji, instalat cu apt).
 - Hook-urile problemă → soluție (camerele de supraveghere: `vortiglow-pilot-v6-music.mp4`, `vortiglow-cctv2-v1.mp4`) rămân cu „2:47 AM. Every. Single. Night.” + „So I tried this...”.
 - 27 nov, corectură Szasz („textul îi acoperă ochiul”): la `vortiglow-reveal321-v2.mp4` textul de sus e urcat la y=90 (font 60), deasupra capului mamei, tot videoul. Verificat pe 4 cadre din hook: ochii și fața sunt libere. De reținut: la hook-uri cu fața mare în cadru, textul de sus se pune deasupra capului, nu la y=250.
+
+## cctv2 la 4K (28 nov)
+`vortiglow-cctv2-v1-4k.mp4` — 2160x3840, 16,0 s, cu piesa. Upscale Topaz 2160p (job c66192c0-b4d0-4e38-a311-b1749bde18a3) pe varianta fără text, textul și muzica puse local la 4K. Verificat lângă 1080p: hook-ul arată tot a cameră de supraveghere, fața fetiței și lampa neschimbate; câștigul de detaliu e mic.
+COST REAL, din sold: 6381,84 înainte → 6341,58 imediat după pornire → 5877,58 la final = 504 credite (~31,5 credite/secundă). Topaz taxează puțin la pornire și restul la final. Estimarea dată lui Szasz (≈250) a fost greșită. Refăcut calculul și pentru upscale-ul din 27 nov (15,3 s): cel mai probabil ~470 credite, nu 240.
+REGULĂ DE PREȚ: Topaz 4K ≈ 31 credite/s (un video de 16 s ≈ 500 credite). Finalizarea Seedance la 1080p = 16 credite/s.

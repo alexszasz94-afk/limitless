@@ -1,2 +1,5 @@
 - character-44.jpg — Unsplash https://unsplash.com/photos/woman-wearing-red-and-black-scarf-e162aG538_k (Unsplash License, free) — brunetă, eșarfă roșie în carouri, 2000x1333 (27 nov 2026)
 - character-45.jpg — Unsplash https://unsplash.com/photos/woman-holding-shopping-bags-in-a-mall-Owv9aPPY_ns (Unsplash License, free) — blondă, pulover bej, pungi, mall, 2000x1125 (27 nov 2026)
+- character-46.jpg — Unsplash https://unsplash.com/photos/woman-in-black-jacket-and-knit-cap-standing-on-snow-covered-ground-during-daytime-4_SfTecQE9M (free) — roșcat-blondă, căciulă neagră (28 nov 2026, full res)
+- character-47.jpg — Unsplash https://unsplash.com/photos/woman-in-green-sweater-sits-by-christmas-tree-G7zZJ4GAIzM (free) — blondă, pulover verde, brad (28 nov 2026, full res)
+- character-48.jpg — Unsplash https://unsplash.com/photos/mt2UHoaYxlM (free) — blondă, hanorac mentă, look american, 4000x6000 (28 nov 2026, full res)
